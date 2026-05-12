@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     title: "Living Dental Health — Family Dentist in Bend, Oregon",
     description:
       "Customized care, with a gentle touch. Dr. Andy Engel, DDS — a private dental studio in Bend since 1998.",
-    images: ["/hero-couple.png"],
+    images: ["/hero-couple.webp"],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Living Dental Health — Family Dentist in Bend, Oregon",
     description: "Customized care, with a gentle touch. Dr. Andy Engel, DDS.",
-    images: ["/hero-couple.png"],
+    images: ["/hero-couple.webp"],
   },
 };
 
@@ -41,7 +41,7 @@ const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "Dentist",
   name: "Living Dental Health",
-  image: "https://livingdentalhealth.com/hero-couple.png",
+  image: "https://livingdentalhealth.com/hero-couple.webp",
   url: "https://livingdentalhealth.com",
   telephone: "+1-541-550-5311",
   address: {

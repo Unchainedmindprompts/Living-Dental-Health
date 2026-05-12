@@ -79,7 +79,7 @@ export default function HomePage() {
         <section className="relative">
           <div className="relative aspect-[16/9] w-full overflow-hidden bg-cream-deep sm:aspect-[3/2] md:aspect-[16/9] lg:aspect-[1920/900]">
             <Image
-              src="/hero-couple.png"
+              src="/hero-couple.webp"
               alt="A relaxed couple smiling in soft Bend, Oregon light"
               fill
               priority
@@ -162,7 +162,7 @@ export default function HomePage() {
                 <p className="eyebrow">Dr. Andy · Portrait</p>
               </div>
               <Image
-                src="/dr-andy.png"
+                src="/dr-andy.webp"
                 alt="Dr. Andy Engel, DDS"
                 fill
                 sizes="(min-width: 1024px) 380px, 100vw"
