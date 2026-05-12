@@ -58,13 +58,13 @@ export default function HomePage() {
         <TopNav />
 
         {/* HEADER — wordmark */}
-        <header className="mx-auto max-w-[1320px] px-6 pt-14 pb-10 text-center">
-          <p className="font-serif-italic text-[15px] text-warm-gray">
+        <header className="mx-auto max-w-[1320px] px-6 pt-10 pb-8 text-center sm:pt-14 sm:pb-10">
+          <p className="font-serif-italic text-[13px] text-warm-gray sm:text-[15px]">
             — a private dental studio —
           </p>
-          <div className="mt-4 flex items-center justify-center gap-3">
+          <div className="mt-4 flex items-center justify-center gap-2 sm:gap-3">
             <LeafToothMark />
-            <h1 className="font-serif text-[44px] leading-none text-charcoal sm:text-[56px]">
+            <h1 className="font-serif text-[32px] leading-none text-charcoal sm:text-[44px] lg:text-[56px]">
               Living Dental Health
             </h1>
           </div>
@@ -77,7 +77,7 @@ export default function HomePage() {
 
         {/* HERO */}
         <section className="relative">
-          <div className="relative aspect-[16/9] w-full overflow-hidden bg-cream-deep sm:aspect-[3/2] md:aspect-[16/9] lg:aspect-[1920/900]">
+          <div className="relative aspect-[4/3] w-full overflow-hidden bg-cream-deep sm:aspect-[3/2] lg:aspect-[16/9] xl:aspect-[1920/900]">
             <Image
               src="/hero-couple.webp"
               alt="A relaxed couple smiling in soft Bend, Oregon light"
@@ -88,11 +88,11 @@ export default function HomePage() {
             />
           </div>
           <div className="pointer-events-none absolute inset-0">
-            <div className="mx-auto h-full max-w-[1320px] px-6">
-              <div className="flex h-full items-center">
-                <div className="max-w-[420px] bg-cream/85 p-7 backdrop-blur-[2px]">
-                  <p className="eyebrow mb-4">— our guiding principle —</p>
-                  <p className="font-serif-italic text-[28px] leading-[1.25] text-charcoal">
+            <div className="mx-auto h-full max-w-[1320px] px-4 sm:px-6">
+              <div className="flex h-full items-end sm:items-center">
+                <div className="mb-4 w-full max-w-[420px] bg-cream/90 p-5 backdrop-blur-[2px] sm:mb-0 sm:p-7">
+                  <p className="eyebrow mb-2 sm:mb-4">— our guiding principle —</p>
+                  <p className="font-serif-italic text-[20px] leading-[1.25] text-charcoal sm:text-[24px] lg:text-[28px]">
                     “Focused on customized care, with a gentle touch.”
                   </p>
                 </div>
@@ -102,11 +102,11 @@ export default function HomePage() {
         </section>
 
         {/* TAGLINE BAR */}
-        <section className="mx-auto max-w-[1320px] px-6 py-16 text-center">
-          <p className="font-serif-italic text-[15px] text-warm-gray">
+        <section className="mx-auto max-w-[1320px] px-5 py-10 text-center sm:px-6 sm:py-16">
+          <p className="font-serif-italic text-[13px] text-warm-gray sm:text-[15px]">
             — our practice in three lines —
           </p>
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 tagline text-charcoal">
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 tagline text-charcoal sm:mt-6 sm:gap-x-5">
             <span>Customized Care</span>
             <span className="text-sage">·</span>
             <span>A Gentle Touch</span>
@@ -118,16 +118,16 @@ export default function HomePage() {
         <Rule />
 
         {/* SERVICES */}
-        <section id="services" className="mx-auto max-w-[1320px] px-6 py-20">
-          <div className="grid gap-12 lg:grid-cols-[1fr_1.4fr] lg:items-end">
+        <section id="services" className="mx-auto max-w-[1320px] px-5 py-14 sm:px-6 sm:py-20">
+          <div className="grid gap-8 lg:grid-cols-[1fr_1.4fr] lg:items-end lg:gap-12">
             <div>
-              <p className="eyebrow mb-4">Our Services</p>
-              <h2 className="font-serif text-[44px] leading-[1.05] text-charcoal sm:text-[56px]">
+              <p className="eyebrow mb-3 sm:mb-4">Our Services</p>
+              <h2 className="font-serif text-[32px] leading-[1.05] text-charcoal sm:text-[44px] lg:text-[56px]">
                 Comprehensive care,{" "}
                 <span className="font-serif-italic">under one calm roof.</span>
               </h2>
             </div>
-            <p className="max-w-[480px] text-warm-gray">
+            <p className="max-w-[480px] text-[14px] text-warm-gray sm:text-[15.5px]">
               We see Central Oregonians age 12 and up — families, professionals,
               and longtime neighbors — across the full spectrum of preventive,
               cosmetic, and surgical care. One practice, one team, one
@@ -135,7 +135,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="mt-12 grid gap-6 sm:grid-cols-1 md:grid-cols-3">
+          <div className="mt-8 grid gap-4 sm:mt-12 sm:gap-6 md:grid-cols-3">
             {SERVICES.map((s) => (
               <ServiceCard
                 key={s.title}
@@ -153,10 +153,10 @@ export default function HomePage() {
         {/* MEET THE DENTIST */}
         <section
           id="dentist"
-          className="mx-auto max-w-[1320px] px-6 py-20"
+          className="mx-auto max-w-[1320px] px-5 py-14 sm:px-6 sm:py-20"
         >
-          <div className="grid gap-12 lg:grid-cols-[auto_1fr] lg:items-start">
-            <div className="relative aspect-[4/5] w-full max-w-[380px] overflow-hidden bg-cream-deep lg:w-[380px]">
+          <div className="grid gap-8 lg:grid-cols-[auto_1fr] lg:items-start lg:gap-12">
+            <div className="relative mx-auto aspect-[4/5] w-full max-w-[320px] overflow-hidden bg-cream-deep sm:max-w-[380px] lg:mx-0 lg:w-[380px]">
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-warm-gray">
                 <LeafToothMark color="var(--sage-soft)" />
                 <p className="eyebrow">Dr. Andy · Portrait</p>
@@ -165,20 +165,20 @@ export default function HomePage() {
                 src="/dr-andy.webp"
                 alt="Dr. Andy Engel, DMD"
                 fill
-                sizes="(min-width: 1024px) 380px, 100vw"
+                sizes="(min-width: 1024px) 380px, (min-width: 640px) 380px, 320px"
                 className="relative object-cover object-center"
               />
             </div>
 
             <div>
-              <p className="eyebrow mb-4">Meet your dentist</p>
-              <h2 className="font-serif text-[44px] leading-[1.05] text-charcoal sm:text-[56px]">
+              <p className="eyebrow mb-3 sm:mb-4">Meet your dentist</p>
+              <h2 className="font-serif text-[32px] leading-[1.05] text-charcoal sm:text-[44px] lg:text-[56px]">
                 Dr. <span className="font-serif-italic">Andy Engel</span>, DMD
               </h2>
-              <p className="mt-4 font-serif-italic text-[18px] text-warm-gray">
+              <p className="mt-3 font-serif-italic text-[15px] text-warm-gray sm:mt-4 sm:text-[18px]">
                 — in Bend, Oregon since 1998 · known to patients as Dr. Andy —
               </p>
-              <span className="my-7 block h-px w-14 bg-sage" />
+              <span className="my-5 block h-px w-14 bg-sage sm:my-7" />
 
               <div className="space-y-5 text-charcoal-soft">
                 <p>
@@ -216,16 +216,16 @@ export default function HomePage() {
             {TRUST.map((t, i) => (
               <div
                 key={t.bottom}
-                className={`flex flex-col items-center gap-2 px-6 py-10 text-center ${
-                  i !== 0 ? "md:border-l border-line" : ""
-                } ${i % 2 === 1 ? "border-l border-line md:border-l" : ""} ${
+                className={`flex flex-col items-center gap-1.5 px-3 py-7 text-center sm:gap-2 sm:px-6 sm:py-10 ${
+                  i !== 0 ? "md:border-l md:border-line" : ""
+                } ${i % 2 === 1 ? "border-l border-line" : ""} ${
                   i >= 2 ? "border-t border-line md:border-t-0" : ""
                 }`}
               >
-                <p className="font-serif-italic text-[28px] leading-none text-charcoal">
+                <p className="font-serif-italic text-[22px] leading-tight text-charcoal sm:text-[28px] sm:leading-none">
                   {t.top}
                 </p>
-                <p className="eyebrow">{t.bottom}</p>
+                <p className="eyebrow text-[10px] sm:text-[11px]">{t.bottom}</p>
               </div>
             ))}
           </div>
@@ -233,7 +233,7 @@ export default function HomePage() {
 
         {/* FOOTER */}
         <footer className="bg-charcoal text-cream-soft">
-          <div className="mx-auto grid max-w-[1320px] gap-12 px-6 py-20 md:grid-cols-[1.2fr_1fr_1fr_1fr]">
+          <div className="mx-auto grid max-w-[1320px] gap-8 px-5 py-14 sm:px-6 sm:py-20 sm:gap-12 md:grid-cols-[1.2fr_1fr_1fr_1fr]">
             <div>
               <div className="flex items-center gap-3">
                 <LeafToothMark color="var(--sage-soft)" />

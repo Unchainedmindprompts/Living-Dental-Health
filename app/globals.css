@@ -35,16 +35,33 @@ body {
 
 .eyebrow {
   font-size: 11px;
-  letter-spacing: 0.32em;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
   color: var(--sage);
   font-weight: 500;
 }
+@media (min-width: 640px) {
+  .eyebrow {
+    letter-spacing: 0.32em;
+  }
+}
 
 .tagline {
-  font-size: 16px;
-  letter-spacing: 0.34em;
+  font-size: 12px;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
+}
+@media (min-width: 640px) {
+  .tagline {
+    font-size: 14px;
+    letter-spacing: 0.3em;
+  }
+}
+@media (min-width: 1024px) {
+  .tagline {
+    font-size: 16px;
+    letter-spacing: 0.34em;
+  }
 }
 
 /* Underline sweep used on nav + footer links */
