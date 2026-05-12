@@ -163,7 +163,7 @@ export default function HomePage() {
               </div>
               <Image
                 src="/dr-andy.webp"
-                alt="Dr. Andy Engel, DDS"
+                alt="Dr. Andy Engel, DMD"
                 fill
                 sizes="(min-width: 1024px) 380px, 100vw"
                 className="relative object-cover object-center"
@@ -173,7 +173,7 @@ export default function HomePage() {
             <div>
               <p className="eyebrow mb-4">Meet your dentist</p>
               <h2 className="font-serif text-[44px] leading-[1.05] text-charcoal sm:text-[56px]">
-                Dr. <span className="font-serif-italic">Andy Engel</span>, DDS
+                Dr. <span className="font-serif-italic">Andy Engel</span>, DMD
               </h2>
               <p className="mt-4 font-serif-italic text-[18px] text-warm-gray">
                 — in Bend, Oregon since 1998 · known to patients as Dr. Andy —

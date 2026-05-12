@@ -21,18 +21,18 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://livingdentalhealth.com"),
   title: "Living Dental Health — Family Dentist in Bend, Oregon",
   description:
-    "Customized care, with a gentle touch. Dr. Andy Engel, DDS — a private dental studio serving Central Oregonians age 12+ in Bend since 1998.",
+    "Customized care, with a gentle touch. Dr. Andy Engel, DMD — a private dental studio serving Central Oregonians age 12+ in Bend since 1998.",
   openGraph: {
     title: "Living Dental Health — Family Dentist in Bend, Oregon",
     description:
-      "Customized care, with a gentle touch. Dr. Andy Engel, DDS — a private dental studio in Bend since 1998.",
+      "Customized care, with a gentle touch. Dr. Andy Engel, DMD — a private dental studio in Bend since 1998.",
     images: ["/hero-couple.webp"],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Living Dental Health — Family Dentist in Bend, Oregon",
-    description: "Customized care, with a gentle touch. Dr. Andy Engel, DDS.",
+    description: "Customized care, with a gentle touch. Dr. Andy Engel, DMD.",
     images: ["/hero-couple.webp"],
   },
 };
@@ -79,7 +79,7 @@ const localBusinessJsonLd = {
   },
   founder: {
     "@type": "Person",
-    name: "Dr. Andy Engel, DDS",
+    name: "Dr. Andy Engel, DMD",
   },
   foundingDate: "1998",
   areaServed: "Bend, Oregon",
