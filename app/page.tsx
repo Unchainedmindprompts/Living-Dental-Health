@@ -77,9 +77,9 @@ export default function HomePage() {
 
         {/* HERO */}
         <section className="relative">
-          <div className="relative aspect-[1920/860] w-full overflow-hidden bg-cream-deep">
+          <div className="relative aspect-[16/9] w-full overflow-hidden bg-cream-deep sm:aspect-[3/2] md:aspect-[16/9] lg:aspect-[1920/900]">
             <Image
-              src="/hero-couple.webp"
+              src="/hero-couple.png"
               alt="A relaxed couple smiling in soft Bend, Oregon light"
               fill
               priority
