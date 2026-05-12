@@ -155,8 +155,8 @@ export default function HomePage() {
           id="dentist"
           className="mx-auto max-w-[1320px] px-6 py-20"
         >
-          <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
-            <div className="relative aspect-[4/5] w-full overflow-hidden bg-cream-deep">
+          <div className="grid gap-12 lg:grid-cols-[auto_1fr] lg:items-start">
+            <div className="relative aspect-[4/5] w-full max-w-[380px] overflow-hidden bg-cream-deep lg:w-[380px]">
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-warm-gray">
                 <LeafToothMark color="var(--sage-soft)" />
                 <p className="eyebrow">Dr. Andy · Portrait</p>
@@ -165,7 +165,7 @@ export default function HomePage() {
                 src="/dr-andy.png"
                 alt="Dr. Andy Engel, DDS"
                 fill
-                sizes="(min-width: 1024px) 50vw, 100vw"
+                sizes="(min-width: 1024px) 380px, 100vw"
                 className="relative object-cover object-center"
               />
             </div>
