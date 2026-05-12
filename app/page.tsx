@@ -87,17 +87,25 @@ export default function HomePage() {
               className="object-cover object-center"
             />
           </div>
-          <div className="pointer-events-none absolute inset-0">
-            <div className="mx-auto h-full max-w-[1320px] px-4 sm:px-6">
-              <div className="flex h-full items-end sm:items-center">
-                <div className="mb-4 w-full max-w-[420px] bg-cream/90 p-5 backdrop-blur-[2px] sm:mb-0 sm:p-7">
-                  <p className="eyebrow mb-2 sm:mb-4">— our guiding principle —</p>
-                  <p className="font-serif-italic text-[20px] leading-[1.25] text-charcoal sm:text-[24px] lg:text-[28px]">
+          {/* overlaid quote — tablet & desktop only */}
+          <div className="pointer-events-none absolute inset-0 hidden sm:block">
+            <div className="mx-auto h-full max-w-[1320px] px-6">
+              <div className="flex h-full items-center">
+                <div className="w-full max-w-[420px] bg-cream/90 p-7 backdrop-blur-[2px]">
+                  <p className="eyebrow mb-4">— our guiding principle —</p>
+                  <p className="font-serif-italic text-[24px] leading-[1.25] text-charcoal lg:text-[28px]">
                     “Focused on customized care, with a gentle touch.”
                   </p>
                 </div>
               </div>
             </div>
+          </div>
+          {/* stacked quote — phone only, sits below the photo so the image isn't covered */}
+          <div className="border-b border-line bg-cream-deep px-5 py-8 text-center sm:hidden">
+            <p className="eyebrow mb-3">— our guiding principle —</p>
+            <p className="font-serif-italic text-[22px] leading-[1.3] text-charcoal">
+              “Focused on customized care, with a gentle touch.”
+            </p>
           </div>
         </section>
 
