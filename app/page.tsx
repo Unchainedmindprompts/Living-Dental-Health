@@ -1,6 +1,6 @@
 import Image from "next/image";
 import BookingProvider from "@/components/BookingProvider";
-import TopNav from "@/components/TopNav";
+import Nav from "@/components/Nav";
 import StickyBook from "@/components/StickyBook";
 import ServiceCard from "@/components/ServiceCard";
 
@@ -55,7 +55,7 @@ export default function HomePage() {
   return (
     <BookingProvider>
       <main id="top" className="min-h-screen bg-cream text-charcoal">
-        <TopNav />
+        <Nav />
 
         {/* HEADER — wordmark */}
         <header className="mx-auto max-w-[1320px] px-6 pt-10 pb-8 text-center sm:pt-14 sm:pb-10">
