@@ -9,6 +9,53 @@ export type JsonLdGraph = {
   "@graph": JsonLdNode[];
 };
 
+const PLACEHOLDER_TOKEN = /^[A-Z][A-Z0-9]*(_[A-Z0-9]+)+$/;
+const PLACEHOLDER_IMAGE_PATH = /\/images\/[^/]+\.(jpg|jpeg|png|webp|svg)$/i;
+
+function isPlaceholderValue(value: unknown): boolean {
+  if (typeof value !== "string") return false;
+  if (PLACEHOLDER_TOKEN.test(value)) return true;
+  if (PLACEHOLDER_IMAGE_PATH.test(value)) return true;
+  return false;
+}
+
+function isStubObject(value: unknown): boolean {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return false;
+  const keys = Object.keys(value as object);
+  if (keys.length === 0) return true;
+  // Pure reference (only @id, no @type, no data) → keep as a pointer.
+  if (keys.includes("@id") && !keys.includes("@type")) return false;
+  // Otherwise we need at least one non-@ key to be meaningful.
+  return !keys.some((k) => !k.startsWith("@"));
+}
+
+function shouldDrop(value: unknown): boolean {
+  if (value === null || value === undefined) return true;
+  if (typeof value === "string" && value === "") return true;
+  if (isPlaceholderValue(value)) return true;
+  if (Array.isArray(value) && value.length === 0) return true;
+  if (isStubObject(value)) return true;
+  return false;
+}
+
+export function sanitizeJsonLd<T>(value: T): T {
+  if (Array.isArray(value)) {
+    const cleaned = value
+      .map((v) => sanitizeJsonLd(v))
+      .filter((v) => !shouldDrop(v));
+    return cleaned as unknown as T;
+  }
+  if (value && typeof value === "object") {
+    const out: Record<string, unknown> = {};
+    for (const [key, v] of Object.entries(value as object)) {
+      const cleaned = sanitizeJsonLd(v);
+      if (!shouldDrop(cleaned)) out[key] = cleaned;
+    }
+    return out as unknown as T;
+  }
+  return value;
+}
+
 export const livingDentalHealthSchema: JsonLdGraph = {
   "@context": "https://schema.org",
   "@graph": [
