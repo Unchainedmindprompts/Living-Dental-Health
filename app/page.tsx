@@ -8,7 +8,6 @@ const SERVICES = [
   {
     index: "i.",
     title: "Preventive Dentistry",
-    reason: "Cleaning & Exam",
     items: [
       { label: "Cleanings & Exams", meta: "60 min" },
       { label: "Digital X-Rays", meta: "on-site" },
@@ -18,7 +17,6 @@ const SERVICES = [
   {
     index: "ii.",
     title: "Cosmetic Dentistry",
-    reason: "Smile Consult",
     items: [
       { label: "Whitening", meta: "in-office" },
       { label: "ClearCorrect", meta: "clear aligners" },
@@ -28,7 +26,6 @@ const SERVICES = [
   {
     index: "iii.",
     title: "Oral Surgery",
-    reason: "Something Else",
     items: [
       { label: "Wisdom Teeth", meta: "local anesth." },
       { label: "Dental Implants", meta: "single → full" },
@@ -150,7 +147,6 @@ export default function HomePage() {
                 index={s.index}
                 title={s.title}
                 items={s.items}
-                reason={s.reason}
               />
             ))}
           </div>

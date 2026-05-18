@@ -1,6 +1,4 @@
-"use client";
-
-import { useBooking } from "./BookingProvider";
+import Link from "next/link";
 
 type Item = { label: string; meta: string };
 
@@ -8,18 +6,14 @@ export default function ServiceCard({
   index,
   title,
   items,
-  reason,
 }: {
   index: string;
   title: string;
   items: Item[];
-  reason: string;
 }) {
-  const { open } = useBooking();
   return (
-    <button
-      type="button"
-      onClick={() => open(reason)}
+    <Link
+      href="/contact"
       className="service-card group flex w-full flex-col items-start gap-5 px-5 pt-7 pb-6 text-left sm:gap-7 sm:px-7 sm:pt-9 sm:pb-8"
     >
       <div className="flex w-full items-start justify-between">
@@ -52,6 +46,6 @@ export default function ServiceCard({
           </li>
         ))}
       </ul>
-    </button>
+    </Link>
   );
 }
