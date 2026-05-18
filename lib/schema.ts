@@ -88,8 +88,8 @@ export const livingDentalHealthSchema: JsonLdGraph = {
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": null,
-        "longitude": null,
+        "latitude": 44.0413898,
+        "longitude": -121.3340262,
       },
       "openingHoursSpecification": [
         {
@@ -162,7 +162,7 @@ export const livingDentalHealthSchema: JsonLdGraph = {
         },
       ],
       "sameAs": [
-        "GOOGLE_BUSINESS_PROFILE_URL",
+        "https://www.google.com/maps/place/Living+Dental+Health/@44.0413898,-121.3340262,17z/data=!3m1!4b1!4m6!3m5!1s0x54b8c7c4d1e44381:0xd160c3863d913f92!8m2!3d44.0413898!4d-121.3340262!16s%2Fg%2F1q2w9q7d5",
         "BING_PLACES_URL",
         "APPLE_BUSINESS_CONNECT_URL",
         "YELP_URL",
