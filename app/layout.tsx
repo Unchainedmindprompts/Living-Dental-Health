@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans, Inter } from "next/font/google";
 import "./globals.css";
+import { livingDentalHealthSchema } from "@/lib/schema";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -44,54 +45,6 @@ export const metadata: Metadata = {
   },
 };
 
-const localBusinessJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Dentist",
-  name: "Living Dental Health",
-  image: "https://livingdentalhealth.com/hero-couple.webp",
-  url: "https://livingdentalhealth.com",
-  telephone: "+1-541-550-5311",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "930 SW Yates Drive",
-    addressLocality: "Bend",
-    addressRegion: "OR",
-    postalCode: "97702",
-    addressCountry: "US",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 44.0294,
-    longitude: -121.3331,
-  },
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
-      opens: "08:00",
-      closes: "17:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: "Friday",
-      opens: "08:00",
-      closes: "14:00",
-    },
-  ],
-  priceRange: "$$",
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "210",
-  },
-  founder: {
-    "@type": "Person",
-    name: "Dr. Andy Engel, DMD",
-  },
-  foundingDate: "1998",
-  areaServed: "Bend, Oregon",
-};
-
 export default function RootLayout({
   children,
 }: {
@@ -99,15 +52,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${cormorant.variable} ${dmSans.variable} ${inter.variable}`}>
-      <body>
+      <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(localBusinessJsonLd),
+            __html: JSON.stringify(livingDentalHealthSchema),
           }}
         />
-        {children}
-      </body>
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
