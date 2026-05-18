@@ -21,6 +21,7 @@ const config: Config = {
       fontFamily: {
         serif: ["var(--font-cormorant)", "Cormorant Garamond", "serif"],
         sans: ["var(--font-dm-sans)", "DM Sans", "ui-sans-serif", "system-ui"],
+        inter: ["var(--font-inter)", "Inter", "ui-sans-serif", "system-ui"],
       },
       letterSpacing: {
         eyebrow: "0.32em",
