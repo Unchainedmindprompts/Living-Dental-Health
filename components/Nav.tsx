@@ -36,6 +36,7 @@ const SAGE_DEEP = "#556649";
 const SAGE_LABEL = "#9CAF88";
 const CREAM = "#F5F0E8";
 const FOREST = "#2C3B2D";
+const CHARCOAL = "#1C1A17";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -104,7 +105,7 @@ export default function Nav() {
           onClick={() => setOpen(true)}
           aria-label="Open menu"
           className="group flex items-center gap-3 font-inter text-[12px] font-light uppercase tracking-widest"
-          style={{ color: CREAM }}
+          style={{ color: CHARCOAL }}
         >
           <span
             aria-hidden
