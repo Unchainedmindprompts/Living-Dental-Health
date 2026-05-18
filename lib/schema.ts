@@ -106,6 +106,13 @@ export const livingDentalHealthSchema: JsonLdGraph = {
         },
       ],
       "priceRange": "$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "211",
+        "bestRating": "5",
+        "worstRating": "1",
+      },
       "founder": {
         "@id": "https://www.livingdentalhealth.com/#doctor",
       },
@@ -258,6 +265,29 @@ export const livingDentalHealthSchema: JsonLdGraph = {
           },
         },
       ],
+    },
+  ],
+};
+
+export const contactPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      "@id": "https://www.livingdentalhealth.com/contact#contactpage",
+      "url": "https://www.livingdentalhealth.com/contact",
+      "name": "Contact Living Dental Health",
+      "description":
+        "Phone, email, address, and hours for Living Dental Health, a dental practice in Bend, Oregon led by Dr. Andrew W. Engel, DMD.",
+      "isPartOf": {
+        "@id": "https://www.livingdentalhealth.com/#website",
+      },
+      "about": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+      "mainEntity": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
     },
   ],
 };
