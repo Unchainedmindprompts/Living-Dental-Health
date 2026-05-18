@@ -8,7 +8,6 @@ const SERVICES: Link[] = [
   { label: "General Dentistry", href: "#" },
   { label: "Cosmetic Dentistry", href: "#" },
   { label: "Implants & Surgery", href: "#" },
-  { label: "Oral Surgery", href: "#" },
 ];
 
 const ABOUT: Link[] = [
