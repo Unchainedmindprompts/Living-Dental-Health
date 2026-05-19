@@ -11,6 +11,7 @@ const SERVICES: Link[] = [
 ];
 
 const ABOUT: Link[] = [
+  { label: "Home", href: "/" },
   { label: "Meet Dr. Engel", href: "#" },
   { label: "Our Philosophy", href: "#" },
   { label: "The Team", href: "#" },
@@ -66,9 +67,12 @@ export default function Nav() {
         className="fixed inset-x-0 top-0 z-50 flex h-9 items-center justify-between px-4 font-inter text-[11px] font-light uppercase tracking-widest sm:px-6"
         style={{ backgroundColor: SAGE, color: CREAM }}
       >
-        <span className="whitespace-nowrap">
+        <a
+          href="/"
+          className="whitespace-nowrap transition-opacity hover:opacity-70"
+        >
           Living Dental Health <span className="opacity-60">·</span> Bend, OR
-        </span>
+        </a>
         <nav
           aria-label="Quick links"
           className="hidden items-center gap-5 md:flex"
