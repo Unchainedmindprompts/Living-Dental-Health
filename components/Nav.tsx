@@ -107,16 +107,16 @@ export default function Nav() {
           type="button"
           onClick={() => setOpen(true)}
           aria-label="Open menu"
-          className="group flex items-center gap-3 font-inter text-[12px] font-light uppercase tracking-widest"
+          className="group flex items-center gap-3 font-inter text-[14px] font-light uppercase tracking-widest sm:gap-4 sm:text-[16px]"
           style={{ color: CHARCOAL }}
         >
           <span
             aria-hidden
-            className="relative flex h-[14px] w-[22px] flex-col items-start justify-between"
+            className="relative flex h-[18px] w-[28px] flex-col items-start justify-between sm:h-[20px] sm:w-[32px]"
           >
-            <span className="block h-px w-full origin-left bg-current transition-all duration-300 ease-out group-hover:w-[80%]" />
-            <span className="block h-px w-[70%] origin-left bg-current transition-all duration-300 ease-out group-hover:w-full" />
-            <span className="block h-px w-full origin-left bg-current transition-all duration-300 ease-out group-hover:w-[80%]" />
+            <span className="block h-[1.5px] w-full origin-left bg-current transition-all duration-300 ease-out group-hover:w-[80%]" />
+            <span className="block h-[1.5px] w-[70%] origin-left bg-current transition-all duration-300 ease-out group-hover:w-full" />
+            <span className="block h-[1.5px] w-full origin-left bg-current transition-all duration-300 ease-out group-hover:w-[80%]" />
           </span>
           <span>Menu</span>
         </button>
