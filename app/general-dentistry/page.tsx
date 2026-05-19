@@ -178,7 +178,7 @@ export default function GeneralDentistryPage() {
 
                 {/* Image column */}
                 <div className="lg:flex-1">
-                  <div className="relative h-[220px] w-full overflow-hidden rounded-xl bg-cream-deep md:h-[280px]">
+                  <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-cream-deep">
                     <Image
                       src={s.image}
                       alt={s.imageAlt}
