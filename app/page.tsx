@@ -43,7 +43,7 @@ const CREDS = [
 
 const TRUST = [
   { top: "4.9 ★★★★★", bottom: "210 Google Reviews" },
-  { top: "25+", bottom: "Years in Practice" },
+  { top: "28", bottom: "Years in Practice" },
   { top: "✓ Yes", bottom: "Accepting New Patients" },
   { top: "In-Office", bottom: "Dental Savings Plan" },
 ];
@@ -187,7 +187,7 @@ export default function HomePage() {
               <div className="space-y-5 text-charcoal-soft">
                 <p>
                   Andy opened Living Dental Health the year he graduated from
-                  OHSU and has been here ever since — a quarter-century in the
+                  OHSU and has been here ever since — twenty-eight years in the
                   same chair, on the same block, with many of the same
                   families. The practice grew the way good neighborhoods do:
                   slowly, by referral, around a small team that learned each
@@ -260,9 +260,9 @@ export default function HomePage() {
             <FooterCol
               title="Hours"
               lines={[
-                "Mon–Thu · 8a–5p",
-                "Fri · 8a–2p",
-                "Closed Sat / Sun",
+                "Tue–Thu · 8a–5p",
+                "Fri · 8a–1p",
+                "Closed Mon / Sat / Sun",
               ]}
             />
             <FooterCol
