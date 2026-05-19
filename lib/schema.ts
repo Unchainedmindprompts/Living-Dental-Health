@@ -195,6 +195,11 @@ export const livingDentalHealthSchema: JsonLdGraph = {
           "abbreviation": "DMD",
         },
       ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "NPI",
+        "value": "1700144870",
+      },
       "knowsAbout": [
         "general dentistry",
         "cosmetic dentistry",
