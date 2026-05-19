@@ -208,7 +208,7 @@ export const livingDentalHealthSchema: JsonLdGraph = {
         "wisdom teeth removal",
       ],
       "sameAs": [
-        "DOCTOR_HEALTHGRADES_URL",
+        "https://www.healthgrades.com/dentist/dr-andrew-engel-yyh3w",
         "DOCTOR_NPI_OR_LICENSE_URL_IF_PUBLIC",
         "DOCTOR_LINKEDIN_URL_IF_AVAILABLE",
       ],
