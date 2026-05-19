@@ -184,7 +184,7 @@ export default function GeneralDentistryPage() {
                       alt={s.imageAlt}
                       fill
                       sizes="(min-width: 1024px) 50vw, 100vw"
-                      className="object-cover object-center"
+                      className="object-cover object-[center_25%]"
                     />
                   </div>
                 </div>
