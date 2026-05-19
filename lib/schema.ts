@@ -215,7 +215,6 @@ export const livingDentalHealthSchema: JsonLdGraph = {
       "sameAs": [
         "https://www.healthgrades.com/dentist/dr-andrew-engel-yyh3w",
         "https://npiregistry.cms.hhs.gov/provider-view/1700144870",
-        "DOCTOR_LINKEDIN_URL_IF_AVAILABLE",
       ],
     },
     {
