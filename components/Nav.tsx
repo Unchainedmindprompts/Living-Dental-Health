@@ -151,6 +151,16 @@ export default function Nav() {
         }`}
         style={{ backgroundColor: FOREST }}
       >
+        {/* Brand wordmark — top left */}
+        <a
+          href="/"
+          onClick={() => setOpen(false)}
+          className="absolute left-4 top-6 z-10 font-serif text-[18px] italic leading-none transition-opacity hover:opacity-70 sm:left-8 sm:top-8 sm:text-[20px]"
+          style={{ color: CREAM }}
+        >
+          Living Dental Health
+        </a>
+
         {/* Close button */}
         <button
           type="button"
@@ -215,9 +225,9 @@ export default function Nav() {
           ))}
         </div>
 
-        {/* Bottom row */}
+        {/* Est. 1998 — bottom right, balances brand top-left */}
         <div
-          className="absolute inset-x-0 bottom-0 flex flex-col items-start justify-between gap-3 px-6 pb-6 sm:flex-row sm:items-end sm:px-12 sm:pb-8 md:px-20 lg:px-28"
+          className="absolute inset-x-0 bottom-0 flex items-end justify-end px-6 pb-6 sm:px-12 sm:pb-8 md:px-20 lg:px-28"
           style={{
             opacity: revealed ? 1 : 0,
             transform: revealed ? "translateY(0)" : "translateY(10px)",
@@ -225,13 +235,6 @@ export default function Nav() {
             transitionDelay: revealed ? "600ms" : "0ms",
           }}
         >
-          <div
-            className="font-inter text-[12px] font-light leading-[1.6]"
-            style={{ color: SAGE_LABEL }}
-          >
-            <p>930 SW Yates Drive · Bend, OR 97702</p>
-            <p>(541) 550-5311</p>
-          </div>
           <p
             className="font-serif text-[20px] italic"
             style={{ color: CREAM }}
