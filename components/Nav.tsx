@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 type Link = { label: string; href: string };
 
@@ -11,6 +12,7 @@ const SERVICES: Link[] = [
 ];
 
 const ABOUT: Link[] = [
+  { label: "Home", href: "/" },
   { label: "Meet Dr. Engel", href: "#" },
   { label: "Our Philosophy", href: "#" },
   { label: "The Team", href: "#" },
@@ -21,7 +23,7 @@ const PATIENT: Link[] = [
   { label: "New Patients", href: "#" },
   { label: "Insurance & Financing", href: "#" },
   { label: "Post-Op Instructions", href: "#" },
-  { label: "Book a Visit", href: "#" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const COLUMNS: { label: string; items: Link[] }[] = [
@@ -40,6 +42,8 @@ const CHARCOAL = "#1C1A17";
 export default function Nav() {
   const [open, setOpen] = useState(false);
   const [revealed, setRevealed] = useState(false);
+  const pathname = usePathname();
+  const onContactPage = pathname === "/contact";
 
   useEffect(() => {
     if (!open) {
@@ -66,9 +70,12 @@ export default function Nav() {
         className="fixed inset-x-0 top-0 z-50 flex h-9 items-center justify-between px-4 font-inter text-[11px] font-light uppercase tracking-widest sm:px-6"
         style={{ backgroundColor: SAGE, color: CREAM }}
       >
-        <span className="whitespace-nowrap">
+        <a
+          href="/"
+          className="whitespace-nowrap transition-opacity hover:opacity-70"
+        >
           Living Dental Health <span className="opacity-60">·</span> Bend, OR
-        </span>
+        </a>
         <nav
           aria-label="Quick links"
           className="hidden items-center gap-5 md:flex"
@@ -88,8 +95,8 @@ export default function Nav() {
           <span aria-hidden className="opacity-40">
             |
           </span>
-          <a href="#" className="transition-opacity hover:opacity-70">
-            Book
+          <a href="/contact" className="transition-opacity hover:opacity-70">
+            Contact
           </a>
         </nav>
         <span className="hidden whitespace-nowrap sm:inline">
@@ -117,17 +124,19 @@ export default function Nav() {
           <span>Menu</span>
         </button>
 
-        <a
-          href="#"
-          className="rounded-full px-5 py-2 font-inter text-[12px] font-normal uppercase tracking-[0.2em] transition-colors"
-          style={{ backgroundColor: SAGE, color: CREAM }}
-          onMouseEnter={(e) =>
-            (e.currentTarget.style.backgroundColor = SAGE_DEEP)
-          }
-          onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = SAGE)}
-        >
-          Book a Visit
-        </a>
+        {!onContactPage && (
+          <a
+            href="/contact"
+            className="rounded-full px-5 py-2 font-inter text-[12px] font-normal uppercase tracking-[0.2em] transition-colors"
+            style={{ backgroundColor: SAGE, color: CREAM }}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.backgroundColor = SAGE_DEEP)
+            }
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = SAGE)}
+          >
+            Contact
+          </a>
+        )}
       </div>
 
       {/* FULL-SCREEN OVERLAY */}
