@@ -12,7 +12,6 @@ const SERVICES: Link[] = [
 ];
 
 const ABOUT: Link[] = [
-  { label: "Home", href: "/" },
   { label: "Meet Dr. Engel", href: "/about" },
   { label: "Our Philosophy", href: "#" },
   { label: "The Team", href: "#" },
@@ -34,9 +33,7 @@ const COLUMNS: { label: string; items: Link[] }[] = [
 
 const SAGE = "#6B7C5C";
 const SAGE_DEEP = "#556649";
-const SAGE_LABEL = "#9CAF88";
 const CREAM = "#F5F0E8";
-const FOREST = "#2C3B2D";
 const CHARCOAL = "#1C1A17";
 
 export default function Nav() {
@@ -149,7 +146,7 @@ export default function Nav() {
             ? "pointer-events-auto opacity-100"
             : "pointer-events-none opacity-0"
         }`}
-        style={{ backgroundColor: FOREST }}
+        style={{ backgroundColor: SAGE }}
       >
         {/* Brand wordmark — top left */}
         <a
@@ -196,7 +193,7 @@ export default function Nav() {
             >
               <p
                 className="mb-6 font-inter text-[11px] font-light uppercase tracking-widest"
-                style={{ color: SAGE_LABEL }}
+                style={{ color: "rgba(245,240,232,0.7)" }}
               >
                 {col.label}
               </p>
