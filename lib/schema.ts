@@ -165,7 +165,7 @@ export const livingDentalHealthSchema: JsonLdGraph = {
         "https://www.google.com/maps/place/Living+Dental+Health/@44.0413898,-121.3340262,17z/data=!3m1!4b1!4m6!3m5!1s0x54b8c7c4d1e44381:0xd160c3863d913f92!8m2!3d44.0413898!4d-121.3340262!16s%2Fg%2F1q2w9q7d5",
         "https://www.bing.com/maps?ss=id.ypid%3AYN37673BB561363F36&q=Living+Dental+Health",
         "APPLE_BUSINESS_CONNECT_URL",
-        "YELP_URL",
+        "https://www.yelp.com/biz/living-dental-health-bend",
         "https://www.bbb.org/us/or/bend/profile/dentist/living-dental-health-llc-1296-1000184711",
         "HEALTHGRADES_OR_PATIENTCONNECT365_URL",
         "FACEBOOK_URL",
