@@ -163,25 +163,23 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* PLACEHOLDER · Team or office photo */}
+      {/* TEAM PHOTO */}
       <section className="mx-auto max-w-[1320px] px-6 pb-24 sm:pb-32">
-        <div
-          className="mx-auto flex aspect-[16/9] max-w-[960px] items-center justify-center border border-dashed"
-          style={{
-            borderColor: SAGE_LABEL,
-            backgroundColor: "rgba(156,175,136,0.06)",
-          }}
-        >
-          <div className="text-center">
-            <p
-              className="font-inter text-[10px] font-light uppercase tracking-[0.32em]"
-              style={{ color: SAGE }}
-            >
-              Placeholder &middot; Team or office photo
-            </p>
-            <p className="mt-3 font-serif-italic text-[15px] text-warm-gray">
-              16:9 image, drops in here.
-            </p>
+        <div className="mx-auto max-w-[960px]">
+          <p
+            className="mb-5 text-center font-inter text-[11px] font-light uppercase tracking-widest"
+            style={{ color: SAGE }}
+          >
+            The Team
+          </p>
+          <div className="relative aspect-[4/3] w-full overflow-hidden bg-cream-deep">
+            <Image
+              src="/team.webp"
+              alt="The Living Dental Health team — Dr. Andy Engel with the dental hygienists and front-office team at the Bend, Oregon office"
+              fill
+              sizes="(min-width: 1024px) 960px, 100vw"
+              className="object-cover object-center"
+            />
           </div>
         </div>
       </section>
