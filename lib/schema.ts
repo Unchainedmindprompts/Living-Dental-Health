@@ -178,7 +178,9 @@ export const livingDentalHealthSchema: JsonLdGraph = {
       "name": "Andrew W. Engel, DMD",
       "alternateName": ["Dr. Andy Engel", "Dr. Andrew Engel"],
       "jobTitle": "Dentist",
-      "url": "https://www.livingdentalhealth.com/meet-us/",
+      "description":
+        "Dr. Andrew W. Engel has cared for Bend, Oregon families since 1998. A graduate of Oregon Health Sciences University School of Dentistry, he completed advanced studies in full mouth reconstruction and oral surgery, offering comprehensive care under one roof without referrals to outside specialists. In 28 years of practice he has become one of Central Oregon's most trusted dentists for complex cases including dental implants, full mouth reconstruction, and oral surgery.",
+      "url": "https://www.livingdentalhealth.com/about",
       "image": "https://www.livingdentalhealth.com/images/dr-andy-engel.jpg",
       "worksFor": {
         "@id": "https://www.livingdentalhealth.com/#business",
