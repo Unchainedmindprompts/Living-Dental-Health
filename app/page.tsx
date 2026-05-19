@@ -6,8 +6,10 @@ import ServiceCard from "@/components/ServiceCard";
 
 const SERVICES = [
   {
-    index: "i.",
     title: "Preventive Dentistry",
+    image: "/service-preventive.webp",
+    imageAlt:
+      "A dental hygienist at Living Dental Health caring for a patient in the cleaning chair",
     items: [
       { label: "Cleanings & Exams", meta: "60 min" },
       { label: "Digital X-Rays", meta: "on-site" },
@@ -15,8 +17,10 @@ const SERVICES = [
     ],
   },
   {
-    index: "ii.",
     title: "Cosmetic Dentistry",
+    image: "/service-cosmetic.webp",
+    imageAlt:
+      "A Living Dental Health patient laughing over coffee in Bend, Oregon",
     items: [
       { label: "Whitening", meta: "in-office" },
       { label: "ClearCorrect", meta: "clear aligners" },
@@ -24,8 +28,10 @@ const SERVICES = [
     ],
   },
   {
-    index: "iii.",
     title: "Oral Surgery",
+    image: "/service-implants.webp",
+    imageAlt:
+      "Dr. Andy Engel consulting with a patient about oral surgery and dental implants",
     items: [
       { label: "Wisdom Teeth", meta: "local anesth." },
       { label: "Dental Implants", meta: "single → full" },
@@ -145,9 +151,10 @@ export default function HomePage() {
             {SERVICES.map((s) => (
               <ServiceCard
                 key={s.title}
-                index={s.index}
                 title={s.title}
                 items={s.items}
+                image={s.image}
+                imageAlt={s.imageAlt}
               />
             ))}
           </div>
