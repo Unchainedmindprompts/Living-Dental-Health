@@ -21,7 +21,7 @@ const PATIENT: Link[] = [
   { label: "New Patients", href: "#" },
   { label: "Insurance & Financing", href: "#" },
   { label: "Post-Op Instructions", href: "#" },
-  { label: "Book a Visit", href: "#" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const COLUMNS: { label: string; items: Link[] }[] = [
@@ -88,8 +88,8 @@ export default function Nav() {
           <span aria-hidden className="opacity-40">
             |
           </span>
-          <a href="#" className="transition-opacity hover:opacity-70">
-            Book
+          <a href="/contact" className="transition-opacity hover:opacity-70">
+            Contact
           </a>
         </nav>
         <span className="hidden whitespace-nowrap sm:inline">
@@ -118,7 +118,7 @@ export default function Nav() {
         </button>
 
         <a
-          href="#"
+          href="/contact"
           className="rounded-full px-5 py-2 font-inter text-[12px] font-normal uppercase tracking-[0.2em] transition-colors"
           style={{ backgroundColor: SAGE, color: CREAM }}
           onMouseEnter={(e) =>
@@ -126,7 +126,7 @@ export default function Nav() {
           }
           onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = SAGE)}
         >
-          Book a Visit
+          Contact
         </a>
       </div>
 
