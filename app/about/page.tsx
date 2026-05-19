@@ -122,19 +122,19 @@ export default function AboutPage() {
       {/* PLACEHOLDER · Personal quote */}
       <section className="mx-auto max-w-[1320px] px-6 pb-10 sm:pb-14">
         <div
-          className="mx-auto max-w-[720px] border border-dashed p-8 text-center sm:p-12"
-          style={{
-            borderColor: SAGE_LABEL,
-            backgroundColor: "rgba(156,175,136,0.06)",
-          }}
+          className="mx-auto max-w-[720px] p-8 text-center sm:p-12"
+          style={{ backgroundColor: SAGE, color: "#F5F0E8" }}
         >
           <p
             className="font-inter text-[10px] font-light uppercase tracking-[0.32em]"
-            style={{ color: SAGE }}
+            style={{ color: SAGE_LABEL }}
           >
             Placeholder &middot; Personal quote
           </p>
-          <p className="mt-4 font-serif-italic text-[18px] leading-[1.55] text-warm-gray sm:text-[20px]">
+          <p
+            className="mt-4 font-serif-italic text-[18px] leading-[1.55] sm:text-[20px]"
+            style={{ color: "#F5F0E8" }}
+          >
             Dr. Engel&rsquo;s philosophy statement in his own voice &mdash;
             something about why he practices the way he does.
           </p>
@@ -144,19 +144,19 @@ export default function AboutPage() {
       {/* PLACEHOLDER · Hobbies & Bend connection */}
       <section className="mx-auto max-w-[1320px] px-6 pb-10 sm:pb-14">
         <div
-          className="mx-auto max-w-[720px] border border-dashed p-8 text-center sm:p-12"
-          style={{
-            borderColor: SAGE_LABEL,
-            backgroundColor: "rgba(156,175,136,0.06)",
-          }}
+          className="mx-auto max-w-[720px] p-8 text-center sm:p-12"
+          style={{ backgroundColor: SAGE, color: "#F5F0E8" }}
         >
           <p
             className="font-inter text-[10px] font-light uppercase tracking-[0.32em]"
-            style={{ color: SAGE }}
+            style={{ color: SAGE_LABEL }}
           >
             Placeholder &middot; Hobbies &amp; Bend connection
           </p>
-          <p className="mt-4 font-serif-italic text-[18px] leading-[1.55] text-warm-gray sm:text-[20px]">
+          <p
+            className="mt-4 font-serif-italic text-[18px] leading-[1.55] sm:text-[20px]"
+            style={{ color: "#F5F0E8" }}
+          >
             A short paragraph on Dr. Engel&rsquo;s life outside the office
             &mdash; family, hobbies, why he loves Central Oregon.
           </p>
