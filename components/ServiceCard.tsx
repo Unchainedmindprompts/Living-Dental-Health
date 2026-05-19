@@ -19,7 +19,7 @@ export default function ServiceCard({
       href="/contact"
       className="service-card group flex w-full flex-col overflow-hidden text-left"
     >
-      <div className="relative h-[240px] w-full overflow-hidden bg-cream-deep">
+      <div className="relative aspect-[4/3] w-full overflow-hidden bg-cream-deep">
         <Image
           src={image}
           alt={imageAlt}
