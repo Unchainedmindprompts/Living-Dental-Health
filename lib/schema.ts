@@ -167,7 +167,7 @@ export const livingDentalHealthSchema: JsonLdGraph = {
         "APPLE_BUSINESS_CONNECT_URL",
         "https://www.yelp.com/biz/living-dental-health-bend",
         "https://www.bbb.org/us/or/bend/profile/dentist/living-dental-health-llc-1296-1000184711",
-        "HEALTHGRADES_OR_PATIENTCONNECT365_URL",
+        "https://www.patientconnect365.com/Dentists/Oregon/Bend/97702/Living_Dental_Health",
         "FACEBOOK_URL",
         "https://www.linkedin.com/company/living-dental-health/",
       ],
