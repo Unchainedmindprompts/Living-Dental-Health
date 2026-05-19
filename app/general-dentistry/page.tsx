@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import { generalDentistryPageSchema, sanitizeJsonLd } from "@/lib/schema";
@@ -19,8 +20,9 @@ const SERVICES = [
     body:
       "A professional cleaning does what brushing and flossing can’t — remove built-up tartar, check for early signs of decay, and give Dr. Engel a chance to catch small problems before they become expensive ones. We recommend visits every six months. Most appointments run about 60 minutes.",
     detail: "60 min · digital x-rays on-site · ages 12 and up",
+    image: "/patient-cleanings.webp",
     imageAlt:
-      "Hygienist at Living Dental Health performing a cleaning and exam in Bend, Oregon",
+      "Patient smiling after dental cleaning at Living Dental Health Bend Oregon",
   },
   {
     id: "fillings",
@@ -28,8 +30,9 @@ const SERVICES = [
     body:
       "When decay happens, tooth-colored composite fillings restore the tooth to full function without the silver. They bond directly to the tooth structure, look natural, and are completed in a single visit.",
     detail: "tooth-colored composite · single visit · no metal",
+    image: "/patient-fillings.webp",
     imageAlt:
-      "Tooth-colored composite filling being placed at Living Dental Health",
+      "Man smiling after dental filling at Living Dental Health Bend Oregon",
   },
   {
     id: "crowns",
@@ -38,8 +41,9 @@ const SERVICES = [
       "A crown fully covers a damaged or weakened tooth, restoring its shape, strength, and appearance. Dr. Engel uses crowns to protect teeth after root canals, repair cracked teeth, or anchor a dental bridge. Custom-fitted and natural looking.",
     detail:
       "porcelain or ceramic · custom fitted · protects and restores",
+    image: "/patient-crowns.webp",
     imageAlt:
-      "Custom porcelain crown fitting at Living Dental Health in Bend, Oregon",
+      "Woman smiling after dental crown at Living Dental Health Bend Oregon",
   },
   {
     id: "bridges",
@@ -48,7 +52,9 @@ const SERVICES = [
       "A bridge fills the gap left by a missing tooth using the surrounding teeth as anchors. It restores your bite, prevents neighboring teeth from shifting, and looks completely natural. A reliable, non-surgical option for tooth replacement.",
     detail:
       "fixed restoration · natural appearance · prevents shifting",
-    imageAlt: "Dental bridge restoration at Living Dental Health",
+    image: "/patient-bridges.webp",
+    imageAlt:
+      "Man smiling after dental bridge at Living Dental Health Bend Oregon",
   },
   {
     id: "dentures",
@@ -57,8 +63,9 @@ const SERVICES = [
       "Whether you need a full or partial denture, Dr. Engel custom fits every appliance to your mouth for comfort and function. We also work with implant-supported dentures for patients who want a more permanent solution.",
     detail:
       "full and partial · implant-supported options · custom fitted",
+    image: "/patient-dentures.webp",
     imageAlt:
-      "Custom denture fitting at Living Dental Health in Bend, Oregon",
+      "Woman smiling after dentures at Living Dental Health Bend Oregon",
   },
 ];
 
@@ -169,23 +176,16 @@ export default function GeneralDentistryPage() {
                   </p>
                 </div>
 
-                {/* Image placeholder column */}
+                {/* Image column */}
                 <div className="lg:flex-1">
-                  <div
-                    className="relative aspect-[4/3] w-full overflow-hidden border border-dashed bg-cream-deep"
-                    style={{ borderColor: SAGE_LABEL }}
-                  >
-                    <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 px-6 text-center">
-                      <p
-                        className="font-inter text-[10px] font-light uppercase tracking-[0.32em]"
-                        style={{ color: SAGE }}
-                      >
-                        Photo placeholder
-                      </p>
-                      <p className="max-w-[320px] font-serif-italic text-[14px] leading-[1.45] text-warm-gray">
-                        {s.imageAlt}
-                      </p>
-                    </div>
+                  <div className="relative h-[220px] w-full overflow-hidden rounded-xl bg-cream-deep md:h-[280px]">
+                    <Image
+                      src={s.image}
+                      alt={s.imageAlt}
+                      fill
+                      sizes="(min-width: 1024px) 50vw, 100vw"
+                      className="object-cover object-center"
+                    />
                   </div>
                 </div>
               </div>
