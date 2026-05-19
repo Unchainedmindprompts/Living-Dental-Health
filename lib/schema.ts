@@ -106,6 +106,7 @@ export const livingDentalHealthSchema: JsonLdGraph = {
         },
       ],
       "priceRange": "$$",
+      "foundingDate": "1998",
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
@@ -175,10 +176,12 @@ export const livingDentalHealthSchema: JsonLdGraph = {
     {
       "@type": "Dentist",
       "@id": "https://www.livingdentalhealth.com/#doctor",
-      "name": "Andrew W. Engel, DMD",
+      "name": "Andrew W. Engel DMD",
       "alternateName": ["Dr. Andy Engel", "Dr. Andrew Engel"],
       "jobTitle": "Dentist",
-      "url": "https://www.livingdentalhealth.com/meet-us/",
+      "description":
+        "Dr. Andrew W. Engel is the founder of Living Dental Health in Bend, Oregon, and has cared for Bend families since 1998. A graduate of Oregon Health Sciences University School of Dentistry, he completed advanced training in full mouth reconstruction, oral surgery, dental implants, ClearCorrect, and tissue and bone grafting, offering comprehensive care under one roof. In 28 years of practice he has become one of Central Oregon's most trusted dentists for complex cases.",
+      "url": "https://www.livingdentalhealth.com/about",
       "image": "https://www.livingdentalhealth.com/images/dr-andy-engel.jpg",
       "worksFor": {
         "@id": "https://www.livingdentalhealth.com/#business",
@@ -201,16 +204,12 @@ export const livingDentalHealthSchema: JsonLdGraph = {
         "value": "1700144870",
       },
       "knowsAbout": [
-        "general dentistry",
-        "cosmetic dentistry",
-        "full-mouth reconstruction",
+        "full mouth reconstruction",
         "oral surgery",
         "dental implants",
         "ClearCorrect",
         "tissue grafting",
         "bone grafting",
-        "dental anxiety",
-        "wisdom teeth removal",
       ],
       "sameAs": [
         "https://www.healthgrades.com/dentist/dr-andrew-engel-yyh3w",

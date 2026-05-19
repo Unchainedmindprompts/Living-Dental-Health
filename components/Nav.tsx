@@ -12,8 +12,7 @@ const SERVICES: Link[] = [
 ];
 
 const ABOUT: Link[] = [
-  { label: "Home", href: "/" },
-  { label: "Meet Dr. Engel", href: "#" },
+  { label: "Meet Dr. Engel", href: "/about" },
   { label: "Our Philosophy", href: "#" },
   { label: "The Team", href: "#" },
   { label: "Smile Gallery", href: "#" },
@@ -34,9 +33,7 @@ const COLUMNS: { label: string; items: Link[] }[] = [
 
 const SAGE = "#6B7C5C";
 const SAGE_DEEP = "#556649";
-const SAGE_LABEL = "#9CAF88";
 const CREAM = "#F5F0E8";
-const FOREST = "#2C3B2D";
 const CHARCOAL = "#1C1A17";
 
 export default function Nav() {
@@ -110,16 +107,16 @@ export default function Nav() {
           type="button"
           onClick={() => setOpen(true)}
           aria-label="Open menu"
-          className="group flex items-center gap-3 font-inter text-[12px] font-light uppercase tracking-widest"
+          className="group flex items-center gap-3 font-inter text-[14px] font-light uppercase tracking-widest sm:gap-4 sm:text-[16px]"
           style={{ color: CHARCOAL }}
         >
           <span
             aria-hidden
-            className="relative flex h-[14px] w-[22px] flex-col items-start justify-between"
+            className="relative flex h-[18px] w-[28px] flex-col items-start justify-between sm:h-[20px] sm:w-[32px]"
           >
-            <span className="block h-px w-full origin-left bg-current transition-all duration-300 ease-out group-hover:w-[80%]" />
-            <span className="block h-px w-[70%] origin-left bg-current transition-all duration-300 ease-out group-hover:w-full" />
-            <span className="block h-px w-full origin-left bg-current transition-all duration-300 ease-out group-hover:w-[80%]" />
+            <span className="block h-[1.5px] w-full origin-left bg-current transition-all duration-300 ease-out group-hover:w-[80%]" />
+            <span className="block h-[1.5px] w-[70%] origin-left bg-current transition-all duration-300 ease-out group-hover:w-full" />
+            <span className="block h-[1.5px] w-full origin-left bg-current transition-all duration-300 ease-out group-hover:w-[80%]" />
           </span>
           <span>Menu</span>
         </button>
@@ -149,8 +146,18 @@ export default function Nav() {
             ? "pointer-events-auto opacity-100"
             : "pointer-events-none opacity-0"
         }`}
-        style={{ backgroundColor: FOREST }}
+        style={{ backgroundColor: SAGE }}
       >
+        {/* Brand wordmark — top left */}
+        <a
+          href="/"
+          onClick={() => setOpen(false)}
+          className="absolute left-4 top-6 z-10 font-serif text-[18px] italic leading-none transition-opacity hover:opacity-70 sm:left-8 sm:top-8 sm:text-[20px]"
+          style={{ color: CREAM }}
+        >
+          Living Dental Health
+        </a>
+
         {/* Close button */}
         <button
           type="button"
@@ -186,7 +193,7 @@ export default function Nav() {
             >
               <p
                 className="mb-6 font-inter text-[11px] font-light uppercase tracking-widest"
-                style={{ color: SAGE_LABEL }}
+                style={{ color: "rgba(245,240,232,0.7)" }}
               >
                 {col.label}
               </p>
@@ -215,9 +222,9 @@ export default function Nav() {
           ))}
         </div>
 
-        {/* Bottom row */}
+        {/* Est. 1998 — bottom right, balances brand top-left */}
         <div
-          className="absolute inset-x-0 bottom-0 flex flex-col items-start justify-between gap-3 px-6 pb-6 sm:flex-row sm:items-end sm:px-12 sm:pb-8 md:px-20 lg:px-28"
+          className="absolute inset-x-0 bottom-0 flex items-end justify-end px-6 pb-6 sm:px-12 sm:pb-8 md:px-20 lg:px-28"
           style={{
             opacity: revealed ? 1 : 0,
             transform: revealed ? "translateY(0)" : "translateY(10px)",
@@ -225,13 +232,6 @@ export default function Nav() {
             transitionDelay: revealed ? "600ms" : "0ms",
           }}
         >
-          <div
-            className="font-inter text-[12px] font-light leading-[1.6]"
-            style={{ color: SAGE_LABEL }}
-          >
-            <p>930 SW Yates Drive · Bend, OR 97702</p>
-            <p>(541) 550-5311</p>
-          </div>
           <p
             className="font-serif text-[20px] italic"
             style={{ color: CREAM }}
