@@ -62,14 +62,15 @@ export default function HomePage() {
           <div className="mt-4 flex items-center justify-center gap-2 sm:gap-3">
             <LeafToothMark />
             <h1 className="font-serif text-[32px] leading-none text-charcoal sm:text-[44px] lg:text-[56px]">
-              Living Dental Health
+              Bend&rsquo;s dentist since 1998.
             </h1>
           </div>
-          <div className="mx-auto mt-6 flex max-w-[420px] items-center gap-4">
-            <span className="h-px flex-1 bg-line" />
-            <span className="eyebrow tracking-[0.32em]">est. 1998</span>
-            <span className="h-px flex-1 bg-line" />
-          </div>
+          <p className="mx-auto mt-6 max-w-[640px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:mt-8 sm:text-[17px]">
+            Some patients have been with us since the beginning. Families,
+            neighbors, people we see at the mountain and wave to at
+            Phil&rsquo;s Trailhead. If you&rsquo;re looking for a dentist who
+            will still know your name in ten years, you&rsquo;ve found him.
+          </p>
         </header>
 
         {/* HERO */}
@@ -89,9 +90,9 @@ export default function HomePage() {
             <div className="mx-auto h-full max-w-[1320px] px-6">
               <div className="flex h-full items-center">
                 <div className="w-full max-w-[420px] bg-cream/90 p-7 backdrop-blur-[2px]">
-                  <p className="eyebrow mb-4">— our guiding principle —</p>
+                  <p className="eyebrow mb-4">— why it works —</p>
                   <p className="font-serif-italic text-[24px] leading-[1.25] text-charcoal lg:text-[28px]">
-                    “Focused on customized care, with a gentle touch.”
+                    “28 years. 4.9 stars. The same dentist, the same town, the same commitment.”
                   </p>
                 </div>
               </div>
@@ -99,9 +100,9 @@ export default function HomePage() {
           </div>
           {/* stacked quote — phone only, sits below the photo so the image isn't covered */}
           <div className="border-b border-line bg-cream-deep px-5 py-8 text-center sm:hidden">
-            <p className="eyebrow mb-3">— our guiding principle —</p>
+            <p className="eyebrow mb-3">— why it works —</p>
             <p className="font-serif-italic text-[22px] leading-[1.3] text-charcoal">
-              “Focused on customized care, with a gentle touch.”
+              “28 years. 4.9 stars. The same dentist, the same town, the same commitment.”
             </p>
           </div>
         </section>
