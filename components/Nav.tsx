@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 type Link = { label: string; href: string };
 
@@ -41,6 +42,8 @@ const CHARCOAL = "#1C1A17";
 export default function Nav() {
   const [open, setOpen] = useState(false);
   const [revealed, setRevealed] = useState(false);
+  const pathname = usePathname();
+  const onContactPage = pathname === "/contact";
 
   useEffect(() => {
     if (!open) {
@@ -121,17 +124,19 @@ export default function Nav() {
           <span>Menu</span>
         </button>
 
-        <a
-          href="/contact"
-          className="rounded-full px-5 py-2 font-inter text-[12px] font-normal uppercase tracking-[0.2em] transition-colors"
-          style={{ backgroundColor: SAGE, color: CREAM }}
-          onMouseEnter={(e) =>
-            (e.currentTarget.style.backgroundColor = SAGE_DEEP)
-          }
-          onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = SAGE)}
-        >
-          Contact
-        </a>
+        {!onContactPage && (
+          <a
+            href="/contact"
+            className="rounded-full px-5 py-2 font-inter text-[12px] font-normal uppercase tracking-[0.2em] transition-colors"
+            style={{ backgroundColor: SAGE, color: CREAM }}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.backgroundColor = SAGE_DEEP)
+            }
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = SAGE)}
+          >
+            Contact
+          </a>
+        )}
       </div>
 
       {/* FULL-SCREEN OVERLAY */}
