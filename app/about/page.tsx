@@ -3,12 +3,11 @@ import Image from "next/image";
 import Nav from "@/components/Nav";
 
 const SAGE = "#6B7C5C";
-const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {
   title: "Meet Dr. Andy Engel — Living Dental Health",
   description:
-    "Dr. Andrew W. Engel, DMD has been caring for Bend, Oregon families since 1998. A graduate of OHSU with advanced training in full mouth reconstruction and oral surgery.",
+    "Dr. Andrew W. Engel DMD, founder of Living Dental Health in Bend, Oregon. OHSU graduate with advanced training in full mouth reconstruction, oral surgery, dental implants, ClearCorrect, and tissue and bone grafting.",
 };
 
 const CREDENTIALS = [
@@ -17,6 +16,11 @@ const CREDENTIALS = [
     label: "Advanced training",
     detail: "Full Mouth Reconstruction & Oral Surgery",
   },
+  {
+    label: "Advanced training",
+    detail: "Implants, ClearCorrect, Tissue & Bone Grafting",
+  },
+  { label: "Founder", detail: "Living Dental Health" },
   { label: "Practice", detail: "28 years serving Bend, Oregon" },
   { label: "New patients", detail: "Accepting ages 12 and up" },
 ];
@@ -50,7 +54,7 @@ export default function AboutPage() {
           <div className="relative mx-auto aspect-[4/5] w-full max-w-[340px] overflow-hidden bg-cream-deep sm:max-w-[420px] lg:mx-0 lg:w-[420px]">
             <Image
               src="/dr-andy.webp"
-              alt="Dr. Andy Engel, dentist at Living Dental Health in Bend Oregon"
+              alt="Dr. Andy Engel, founder of Living Dental Health in Bend Oregon"
               fill
               sizes="(min-width: 1024px) 420px, (min-width: 640px) 420px, 340px"
               className="object-cover object-center"
@@ -67,28 +71,64 @@ export default function AboutPage() {
             </p>
             <div className="mt-5 space-y-5 font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft sm:text-[16px]">
               <p>
-                Dr. Andrew W. Engel has been caring for Bend families since
-                1998 &mdash; before the city&rsquo;s growth, through every
-                change, and with the same commitment to personalized care he
-                started with.
+                Dr. Andrew W. Engel grew up in Boise, Idaho before his family
+                relocated to Oregon in 1988. An avid athlete from an early
+                age, he had his sights set on Olympic mogul skiing at Mt.
+                Bachelor &mdash; he decided dentistry was the safer option.
+                Bend&rsquo;s loss, his patients&rsquo; gain.
               </p>
               <p>
-                A graduate of Oregon Health Sciences University School of
-                Dentistry, Dr. Engel completed advanced studies in full mouth
-                reconstruction and oral surgery &mdash; training that allows
-                him to offer his patients comprehensive care under one roof,
-                without referrals to outside specialists.
+                He knew he wanted to be a dentist in the eighth grade. He
+                loved fixing things &mdash; taking apart toys, putting them
+                back together &mdash; and wanted to help people. That
+                combination led him straight to Oregon Health Sciences
+                University, where he graduated early and pursued advanced
+                training in full mouth reconstruction, oral surgery,
+                implants, ClearCorrect, and tissue and bone grafting.
               </p>
               <p>
-                In 28 years of practice, Dr. Engel has become one of Central
-                Oregon&rsquo;s most trusted dentists for complex cases
-                including dental implants, full mouth reconstruction, and oral
-                surgery. His approach is simple: take the time to listen,
-                explain every option clearly, and never rush a patient through
-                a decision.
+                Dr. Engel moved to Bend in 1998, helped establish Century
+                Dental Group, then founded Living Dental Health to fulfill a
+                lifelong goal of building something of his own. The name says
+                it all &mdash; helping patients address oral health issues so
+                they can live healthy, full, active lives in Central Oregon.
+              </p>
+              <p>
+                His approach to patient care is part detective, part
+                craftsman. No cookie-cutter treatment plans. He listens
+                first, then pulls from a tool belt that most dentists simply
+                don&rsquo;t have. His dream patient: a good communicator who
+                wants to be involved in their own care &mdash; someone he can
+                get to know by name and wave to around town.
+              </p>
+              <p>
+                When he&rsquo;s not in the office, you might find him up at
+                Mt. Bachelor skiing with friends, or out on one of his
+                motorcycles. His greatest joy is family &mdash; wife Francie,
+                son Sean, daughters Ally and Rhone, and Murphy the Corgi.
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* PULL QUOTE */}
+      <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-28">
+        <div className="mx-auto max-w-[920px] text-center">
+          <span
+            className="mx-auto block h-px w-14"
+            style={{ backgroundColor: SAGE }}
+            aria-hidden
+          />
+          <blockquote className="mt-8 font-serif-italic text-[28px] leading-[1.2] text-charcoal sm:mt-10 sm:text-[40px] md:text-[52px]">
+            &ldquo;To Dr. Engel, there is no cookie-cutter approach to
+            dentistry.&rdquo;
+          </blockquote>
+          <span
+            className="mx-auto mt-8 block h-px w-14 sm:mt-10"
+            style={{ backgroundColor: SAGE }}
+            aria-hidden
+          />
         </div>
       </section>
 
@@ -105,8 +145,8 @@ export default function AboutPage() {
             Credentials
           </p>
           <dl className="grid gap-8 sm:grid-cols-2 sm:gap-x-12 sm:gap-y-10">
-            {CREDENTIALS.map((c) => (
-              <div key={c.label}>
+            {CREDENTIALS.map((c, i) => (
+              <div key={`${c.label}-${i}`}>
                 <dt className="font-serif-italic text-[20px] leading-tight text-charcoal sm:text-[22px]">
                   {c.label}
                 </dt>
@@ -116,50 +156,6 @@ export default function AboutPage() {
               </div>
             ))}
           </dl>
-        </div>
-      </section>
-
-      {/* PLACEHOLDER · Personal quote */}
-      <section className="mx-auto max-w-[1320px] px-6 pb-10 sm:pb-14">
-        <div
-          className="mx-auto max-w-[720px] p-8 text-center sm:p-12"
-          style={{ backgroundColor: SAGE, color: "#F5F0E8" }}
-        >
-          <p
-            className="font-inter text-[10px] font-light uppercase tracking-[0.32em]"
-            style={{ color: SAGE_LABEL }}
-          >
-            Placeholder &middot; Personal quote
-          </p>
-          <p
-            className="mt-4 font-serif-italic text-[18px] leading-[1.55] sm:text-[20px]"
-            style={{ color: "#F5F0E8" }}
-          >
-            Dr. Engel&rsquo;s philosophy statement in his own voice &mdash;
-            something about why he practices the way he does.
-          </p>
-        </div>
-      </section>
-
-      {/* PLACEHOLDER · Hobbies & Bend connection */}
-      <section className="mx-auto max-w-[1320px] px-6 pb-10 sm:pb-14">
-        <div
-          className="mx-auto max-w-[720px] p-8 text-center sm:p-12"
-          style={{ backgroundColor: SAGE, color: "#F5F0E8" }}
-        >
-          <p
-            className="font-inter text-[10px] font-light uppercase tracking-[0.32em]"
-            style={{ color: SAGE_LABEL }}
-          >
-            Placeholder &middot; Hobbies &amp; Bend connection
-          </p>
-          <p
-            className="mt-4 font-serif-italic text-[18px] leading-[1.55] sm:text-[20px]"
-            style={{ color: "#F5F0E8" }}
-          >
-            A short paragraph on Dr. Engel&rsquo;s life outside the office
-            &mdash; family, hobbies, why he loves Central Oregon.
-          </p>
         </div>
       </section>
 
