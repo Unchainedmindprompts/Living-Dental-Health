@@ -169,7 +169,7 @@ export const livingDentalHealthSchema: JsonLdGraph = {
         "https://www.bbb.org/us/or/bend/profile/dentist/living-dental-health-llc-1296-1000184711",
         "HEALTHGRADES_OR_PATIENTCONNECT365_URL",
         "FACEBOOK_URL",
-        "LINKEDIN_URL",
+        "https://www.linkedin.com/company/living-dental-health/",
       ],
     },
     {
