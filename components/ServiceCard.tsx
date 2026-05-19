@@ -25,7 +25,7 @@ export default function ServiceCard({
           alt={imageAlt}
           fill
           sizes="(min-width: 768px) 33vw, 100vw"
-          className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+          className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
         />
       </div>
 
