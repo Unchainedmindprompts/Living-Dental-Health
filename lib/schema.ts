@@ -294,3 +294,98 @@ export const contactPageSchema: JsonLdGraph = {
     },
   ],
 };
+
+export const generalDentistryPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id":
+        "https://www.livingdentalhealth.com/general-dentistry#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "General Dentistry",
+          "item": "https://www.livingdentalhealth.com/general-dentistry",
+        },
+      ],
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/general-dentistry#cleanings",
+      "name": "Dental Cleanings & Exams",
+      "description":
+        "Professional dental cleaning that removes built-up tartar, checks for early signs of decay, and gives Dr. Engel a chance to catch small problems before they become expensive ones. Recommended every six months; most appointments run about 60 minutes.",
+      "url":
+        "https://www.livingdentalhealth.com/general-dentistry#cleanings",
+      "procedureType": "https://schema.org/TherapeuticProcedure",
+      "provider": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/general-dentistry#fillings",
+      "name": "Dental Fillings",
+      "description":
+        "Tooth-colored composite fillings restore a decayed tooth to full function without metal. They bond directly to the tooth structure, look natural, and are completed in a single visit.",
+      "url":
+        "https://www.livingdentalhealth.com/general-dentistry#fillings",
+      "procedureType": "https://schema.org/TherapeuticProcedure",
+      "provider": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/general-dentistry#crowns",
+      "name": "Dental Crowns",
+      "description":
+        "A custom-fitted porcelain or ceramic crown that fully covers a damaged or weakened tooth, restoring its shape, strength, and appearance. Used to protect teeth after root canals, repair cracked teeth, or anchor a dental bridge.",
+      "url":
+        "https://www.livingdentalhealth.com/general-dentistry#crowns",
+      "procedureType": "https://schema.org/TherapeuticProcedure",
+      "provider": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/general-dentistry#bridges",
+      "name": "Dental Bridges",
+      "description":
+        "A fixed bridge fills the gap left by a missing tooth using the surrounding teeth as anchors. It restores the bite, prevents neighboring teeth from shifting, and looks natural — a reliable non-surgical option for tooth replacement.",
+      "url":
+        "https://www.livingdentalhealth.com/general-dentistry#bridges",
+      "procedureType": "https://schema.org/TherapeuticProcedure",
+      "provider": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/general-dentistry#dentures",
+      "name": "Dentures",
+      "description":
+        "Custom-fitted full and partial dentures designed for comfort and function. Implant-supported dentures are available for patients who want a more permanent solution.",
+      "url":
+        "https://www.livingdentalhealth.com/general-dentistry#dentures",
+      "procedureType": "https://schema.org/TherapeuticProcedure",
+      "provider": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+  ],
+};

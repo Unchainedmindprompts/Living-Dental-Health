@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 type Link = { label: string; href: string };
 
 const SERVICES: Link[] = [
-  { label: "General Dentistry", href: "#" },
+  { label: "General Dentistry", href: "/general-dentistry" },
   { label: "Cosmetic Dentistry", href: "#" },
   { label: "Implants & Surgery", href: "#" },
 ];
