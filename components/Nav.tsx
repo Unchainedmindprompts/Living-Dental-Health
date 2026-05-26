@@ -13,9 +13,8 @@ const SERVICES: Link[] = [
 
 const ABOUT: Link[] = [
   { label: "Meet Dr. Engel", href: "/about" },
-  { label: "Our Philosophy", href: "#" },
   { label: "The Team", href: "#" },
-  { label: "Smile Gallery", href: "#" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const PATIENT: Link[] = [
