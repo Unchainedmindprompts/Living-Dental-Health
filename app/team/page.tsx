@@ -73,6 +73,9 @@ const TEAM: {
     name: "Christy Spencer",
     role: "Dental Assistant",
     bio: "Christy works chairside with Dr. Andy, making sure every procedure runs smoothly and every patient feels comfortable from start to finish. [Full bio coming soon]",
+    image: "/team-christy.webp",
+    imageAlt:
+      "Christy Spencer, Dental Assistant at Living Dental Health in Bend, Oregon",
   },
 ];
 
