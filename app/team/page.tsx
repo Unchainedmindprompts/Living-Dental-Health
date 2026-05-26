@@ -122,43 +122,52 @@ export default function TeamPage() {
           </ol>
         </nav>
 
-        {/* HEADER */}
-        <section className="mx-auto max-w-[1320px] px-6 pt-8 pb-10 text-center sm:pt-12">
-          <p
-            className="font-inter text-[11px] font-light uppercase tracking-widest"
-            style={{ color: SAGE }}
-          >
-            &mdash; the people behind your smile &mdash;
-          </p>
-          <h1 className="mt-5 font-serif text-[44px] leading-[1.02] text-charcoal sm:mt-6 sm:text-[72px] md:text-[88px]">
-            Meet the <span className="font-serif-italic">team.</span>
-          </h1>
-          <p className="mx-auto mt-6 max-w-[600px] font-inter text-[16px] font-light leading-[1.7] text-warm-gray sm:text-[18px]">
-            Twenty-eight years in Bend. The same faces, the same care, the
-            same commitment to knowing you by name.
-          </p>
-          <p className="mt-7 font-inter text-[12px] font-light uppercase tracking-[0.2em] text-charcoal-soft">
-            28 years in Bend <span style={{ color: SAGE_LABEL }}>·</span> 4.9
-            ★ <span style={{ color: SAGE_LABEL }}>·</span> 211 Google reviews
-          </p>
-        </section>
+        {/* HERO — headline overlaid on the photo's negative space (desktop),
+            stacked above the photo (mobile). Single H1, repositioned by CSS. */}
+        <div className="relative">
+          <div className="px-6 pt-6 pb-10 text-center lg:absolute lg:inset-0 lg:z-10 lg:flex lg:items-center lg:py-0 lg:text-left">
+            <div className="mx-auto w-full max-w-[1320px] lg:px-6">
+              <div className="lg:max-w-[540px]">
+                <p
+                  className="font-inter text-[11px] font-light uppercase tracking-widest"
+                  style={{ color: SAGE }}
+                >
+                  &mdash; the people behind your smile &mdash;
+                </p>
+                <h1 className="mt-5 font-serif text-[44px] leading-[1.02] text-charcoal sm:text-[60px] lg:text-[68px]">
+                  Meet the <span className="font-serif-italic">team.</span>
+                </h1>
+                <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:text-[17px] lg:mx-0 lg:max-w-[440px]">
+                  Twenty-eight years in Bend. The same faces, the same care,
+                  the same commitment to knowing you by name.
+                </p>
+                <p className="mt-6 font-inter text-[12px] font-light uppercase tracking-[0.2em] text-charcoal-soft">
+                  28 years in Bend{" "}
+                  <span style={{ color: SAGE_LABEL }}>·</span> 4.9 ★{" "}
+                  <span style={{ color: SAGE_LABEL }}>·</span> 211 Google
+                  reviews
+                </p>
+              </div>
+            </div>
+          </div>
 
-        {/* HERO — placeholder (warm editorial team / office photo) */}
-        <div
-          className="relative flex h-[320px] w-full items-center justify-center overflow-hidden border-y border-dashed bg-cream-deep md:h-[480px]"
-          style={{ borderColor: SAGE_LABEL }}
-        >
-          <div className="px-6 text-center">
-            <p
-              className="font-inter text-[10px] font-light uppercase tracking-[0.32em]"
-              style={{ color: SAGE }}
-            >
-              Hero photo placeholder
-            </p>
-            <p className="mx-auto mt-3 max-w-[460px] font-serif-italic text-[15px] leading-[1.45] text-warm-gray">
-              Warm editorial team or office photo &mdash; full-bleed (to be
-              generated)
-            </p>
+          <div className="relative h-[380px] w-full overflow-hidden sm:h-[460px] lg:h-[560px]">
+            <Image
+              src="/team-hero.webp"
+              alt="The Living Dental Health team — Dr. Andy Engel with the front-office team and dental hygienists at the Bend, Oregon office"
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover object-[74%_center] lg:object-center"
+            />
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-0 hidden lg:block"
+              style={{
+                background:
+                  "linear-gradient(to right, rgba(245,240,232,0.94) 0%, rgba(245,240,232,0.74) 32%, rgba(245,240,232,0) 58%)",
+              }}
+            />
           </div>
         </div>
 
