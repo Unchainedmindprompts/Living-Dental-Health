@@ -200,23 +200,16 @@ export default function ImplantsSurgeryPage() {
           </section>
         ))}
 
-        {/* SECONDARY IMAGE — placeholder */}
+        {/* SECONDARY IMAGE */}
         <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">
-          <div
-            className="relative flex h-[360px] w-full items-center justify-center overflow-hidden rounded-xl border border-dashed bg-cream-deep"
-            style={{ borderColor: SAGE_LABEL }}
-          >
-            <div className="px-6 text-center">
-              <p
-                className="font-inter text-[10px] font-light uppercase tracking-[0.32em]"
-                style={{ color: SAGE }}
-              >
-                Photo placeholder
-              </p>
-              <p className="mt-3 font-serif-italic text-[15px] text-warm-gray">
-                Optional secondary image
-              </p>
-            </div>
+          <div className="relative h-[360px] w-full overflow-hidden rounded-xl bg-cream-deep">
+            <Image
+              src="/implants-secondary.webp"
+              alt="Patient enjoying life with a restored smile after implant and surgical care at Living Dental Health in Bend, Oregon"
+              fill
+              sizes="(min-width: 1320px) 1320px, 100vw"
+              className="object-cover object-center"
+            />
           </div>
         </section>
 
