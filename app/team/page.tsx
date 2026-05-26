@@ -151,14 +151,14 @@ export default function TeamPage() {
             </div>
           </div>
 
-          <div className="relative h-[380px] w-full overflow-hidden sm:h-[460px] lg:h-[560px]">
+          <div className="relative h-[320px] w-full overflow-hidden sm:h-[460px] lg:h-[560px]">
             <Image
               src="/team-hero.webp"
               alt="The Living Dental Health team — Dr. Andy Engel with the front-office team and dental hygienists at the Bend, Oregon office"
               fill
               priority
               sizes="100vw"
-              className="object-cover object-[74%_center] lg:object-center"
+              className="object-cover object-right lg:object-center"
             />
             <div
               aria-hidden
