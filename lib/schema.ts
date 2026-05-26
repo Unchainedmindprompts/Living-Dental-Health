@@ -502,3 +502,147 @@ export const implantsSurgeryPageSchema: JsonLdGraph = {
     },
   ],
 };
+
+export const cosmeticDentistryPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id":
+        "https://www.livingdentalhealth.com/cosmetic-dentistry#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cosmetic Dentistry",
+          "item": "https://www.livingdentalhealth.com/cosmetic-dentistry",
+        },
+      ],
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/cosmetic-dentistry#whitening",
+      "name": "Teeth Whitening",
+      "description":
+        "Professional in-office whitening that brightens the smile several shades in a single visit using a controlled, safe process — results over-the-counter products can’t match.",
+      "url":
+        "https://www.livingdentalhealth.com/cosmetic-dentistry#whitening",
+      "procedureType": "https://schema.org/TherapeuticProcedure",
+      "provider": {
+        "@id": "https://www.livingdentalhealth.com/#doctor",
+      },
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/cosmetic-dentistry#veneers",
+      "name": "Porcelain Veneers",
+      "description":
+        "Ultra-thin custom-crafted porcelain shells bonded to the front of the teeth to permanently correct chips, discoloration, gaps, and uneven shapes. Each veneer is designed to complement the patient’s facial features and natural tooth color.",
+      "url":
+        "https://www.livingdentalhealth.com/cosmetic-dentistry#veneers",
+      "procedureType": "https://schema.org/TherapeuticProcedure",
+      "provider": {
+        "@id": "https://www.livingdentalhealth.com/#doctor",
+      },
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/cosmetic-dentistry#bonding",
+      "name": "Dental Bonding",
+      "description":
+        "Tooth-colored resin applied and sculpted directly onto a chipped, cracked, discolored, or misaligned tooth, then polished to a natural finish — often in a single visit. Mercury-free and conservative.",
+      "url":
+        "https://www.livingdentalhealth.com/cosmetic-dentistry#bonding",
+      "procedureType": "https://schema.org/TherapeuticProcedure",
+      "provider": {
+        "@id": "https://www.livingdentalhealth.com/#doctor",
+      },
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/cosmetic-dentistry#clearcorrect",
+      "name": "ClearCorrect Clear Aligners",
+      "description":
+        "Custom-fitted removable clear aligners that gradually shift the teeth with no metal or wires. Dr. Engel is a certified ClearCorrect provider and manages the entire process in-house, typically over 12–18 months.",
+      "url":
+        "https://www.livingdentalhealth.com/cosmetic-dentistry#clearcorrect",
+      "procedureType": "https://schema.org/TherapeuticProcedure",
+      "provider": {
+        "@id": "https://www.livingdentalhealth.com/#doctor",
+      },
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/cosmetic-dentistry#smile-design",
+      "name": "Smile Design",
+      "description":
+        "The planning process behind a complete cosmetic transformation. Dr. Engel evaluates the teeth, gums, bite, and facial proportions and coordinates whitening, veneers, bonding, crowns, or ClearCorrect into a single harmonious plan.",
+      "url":
+        "https://www.livingdentalhealth.com/cosmetic-dentistry#smile-design",
+      "procedureType": "https://schema.org/TherapeuticProcedure",
+      "provider": {
+        "@id": "https://www.livingdentalhealth.com/#doctor",
+      },
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/cosmetic-dentistry#reconstruction",
+      "name": "Full Mouth Reconstruction",
+      "description":
+        "A coordinated rebuild of the entire mouth for patients with significant damage, bone loss, missing teeth, or severe bite issues. Drawing on advanced OHSU training, Dr. Engel combines implants, bone grafting, crowns, veneers, and orthodontia in-house — the complex case most dentists refer out.",
+      "url":
+        "https://www.livingdentalhealth.com/cosmetic-dentistry#reconstruction",
+      "procedureType": "https://schema.org/SurgicalProcedure",
+      "provider": {
+        "@id": "https://www.livingdentalhealth.com/#doctor",
+      },
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.livingdentalhealth.com/cosmetic-dentistry#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Dr. Engel offer cosmetic dentistry in Bend Oregon?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. Dr. Andrew Engel at Living Dental Health provides cosmetic dentistry including teeth whitening, porcelain veneers, dental bonding, ClearCorrect clear aligners, smile design, and full mouth reconstruction at 930 SW Yates Dr, Bend OR 97702.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name":
+            "What is ClearCorrect and how is it different from Invisalign?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "ClearCorrect was developed by the founders of Invisalign who left to build a product they believed was better. Dr. Engel is a certified ClearCorrect provider and manages the entire process in-house.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name":
+            "Does Living Dental Health offer full mouth reconstruction?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. Dr. Engel completed advanced training at Oregon Health Sciences University in full mouth reconstruction and oral surgery. He performs complex reconstructive cases in-house including bone and tissue grafting, implants, crowns, and veneers.",
+          },
+        },
+      ],
+    },
+  ],
+};
