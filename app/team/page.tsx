@@ -30,11 +30,20 @@ const FUN_FACTS = [
   "Almost chose the Olympics over dentistry",
 ];
 
-const TEAM = [
+const TEAM: {
+  name: string;
+  role: string;
+  bio: string;
+  image?: string;
+  imageAlt?: string;
+}[] = [
   {
     name: "Samantha Gassman",
     role: "Office Manager",
     bio: "Samantha keeps Living Dental Health running smoothly. From scheduling to insurance to making sure every patient feels welcome the moment they walk in, she’s the steady hand behind the front office. [Full bio coming soon]",
+    image: "/team-samantha.webp",
+    imageAlt:
+      "Samantha Gassman, Office Manager at Living Dental Health in Bend, Oregon",
   },
   {
     name: "Francie Engel",
@@ -283,17 +292,29 @@ export default function TeamPage() {
             <div className="mt-10 grid gap-x-10 gap-y-12 sm:grid-cols-2">
               {TEAM.map((m) => (
                 <div key={m.name}>
-                  <div
-                    className="relative flex aspect-[4/3] w-full items-center justify-center overflow-hidden rounded-xl border border-dashed bg-cream-deep"
-                    style={{ borderColor: SAGE_LABEL }}
-                  >
-                    <p
-                      className="font-inter text-[10px] font-light uppercase tracking-[0.32em]"
-                      style={{ color: SAGE }}
+                  {m.image ? (
+                    <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-cream-deep">
+                      <Image
+                        src={m.image}
+                        alt={m.imageAlt ?? m.name}
+                        fill
+                        sizes="(min-width: 640px) 50vw, 100vw"
+                        className="object-cover object-center"
+                      />
+                    </div>
+                  ) : (
+                    <div
+                      className="relative flex aspect-[4/3] w-full items-center justify-center overflow-hidden rounded-xl border border-dashed bg-cream-deep"
+                      style={{ borderColor: SAGE_LABEL }}
                     >
-                      Photo placeholder
-                    </p>
-                  </div>
+                      <p
+                        className="font-inter text-[10px] font-light uppercase tracking-[0.32em]"
+                        style={{ color: SAGE }}
+                      >
+                        Photo placeholder
+                      </p>
+                    </div>
+                  )}
                   <h3 className="mt-5 font-serif text-[24px] leading-tight text-charcoal sm:text-[28px]">
                     {m.name}
                   </h3>
