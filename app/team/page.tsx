@@ -49,6 +49,9 @@ const TEAM: {
     name: "Francie Engel",
     role: "Operations Administrator",
     bio: "Francie handles operations behind the scenes at Living Dental Health. [Full bio coming soon]",
+    image: "/team-francie.webp",
+    imageAlt:
+      "Francie Engel, Operations Administrator at Living Dental Health in Bend, Oregon",
   },
   {
     name: "Nicole Tarpey",
