@@ -129,7 +129,7 @@ const businessEnrichment: Record<string, unknown> = {
     },
   ],
   "priceRange": "$$",
-  "foundingDate": "1998",
+  "foundingDate": "2013",
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",
@@ -185,8 +185,6 @@ const businessFull: JsonLdNode = {
   ...businessEnrichment,
 };
 
-// Dr. Engel — the person/author node. (Type is currently "Dentist";
-// a future change retypes this to "Person" with jobTitle "Dentist".)
 const doctorEntity: JsonLdNode = {
   "@type": "Dentist",
   "@id": "https://www.livingdentalhealth.com/#doctor",
