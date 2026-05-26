@@ -13,7 +13,7 @@ const SERVICES: Link[] = [
 
 const ABOUT: Link[] = [
   { label: "Meet Dr. Engel", href: "/about" },
-  { label: "The Team", href: "#" },
+  { label: "The Team", href: "/team" },
   { label: "Contact", href: "/contact" },
 ];
 
