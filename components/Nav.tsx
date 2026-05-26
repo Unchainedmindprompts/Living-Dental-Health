@@ -111,19 +111,19 @@ export default function Nav() {
         >
           <span
             aria-hidden
-            className="relative flex h-[18px] w-[28px] flex-col items-start justify-between sm:h-[20px] sm:w-[32px]"
+            className="relative flex h-[14px] w-[22px] flex-col items-start justify-between sm:h-[20px] sm:w-[32px]"
           >
             <span className="block h-[1.5px] w-full origin-left bg-current transition-all duration-300 ease-out group-hover:w-[80%]" />
             <span className="block h-[1.5px] w-[70%] origin-left bg-current transition-all duration-300 ease-out group-hover:w-full" />
             <span className="block h-[1.5px] w-full origin-left bg-current transition-all duration-300 ease-out group-hover:w-[80%]" />
           </span>
-          <span>Menu</span>
+          <span className="hidden sm:inline">Menu</span>
         </button>
 
         {!onContactPage && (
           <a
             href="/contact"
-            className="rounded-full px-5 py-2 font-inter text-[12px] font-normal uppercase tracking-[0.2em] transition-colors"
+            className="rounded-full px-3.5 py-1.5 font-inter text-[10px] font-normal uppercase tracking-[0.16em] transition-colors sm:px-5 sm:py-2 sm:text-[12px] sm:tracking-[0.2em]"
             style={{ backgroundColor: SAGE, color: CREAM }}
             onMouseEnter={(e) =>
               (e.currentTarget.style.backgroundColor = SAGE_DEEP)
