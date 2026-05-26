@@ -2,80 +2,71 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
-import { generalDentistryPageSchema, sanitizeJsonLd } from "@/lib/schema";
+import { implantsSurgeryPageSchema, sanitizeJsonLd } from "@/lib/schema";
 
 const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {
-  title: "General Dentistry — Living Dental Health, Bend Oregon",
+  title: "Implants & Oral Surgery — Living Dental Health, Bend Oregon",
   description:
-    "Cleanings, exams, fillings, crowns, bridges, and dentures at Living Dental Health. Dr. Andy Engel has provided foundational dental care to Bend, Oregon families for 28 years.",
+    "Dental implants, bone and tissue grafting, wisdom teeth, and extractions — all performed in-house by Dr. Andy Engel in Bend, Oregon. Advanced surgical training, no referrals to outside specialists.",
 };
 
 const SERVICES = [
   {
-    id: "cleanings",
-    heading: "Cleanings & Exams",
+    id: "implants",
+    heading: "Dental Implants",
     body:
-      "A professional cleaning does what brushing and flossing can’t — remove built-up tartar, check for early signs of decay, and give Dr. Engel a chance to catch small problems before they become expensive ones. We recommend visits every six months. Most appointments run about 60 minutes.",
-    detail: "60 min · digital x-rays on-site · ages 12 and up",
-    image: "/patient-cleanings.webp",
-    imageAlt:
-      "Patient smiling after dental cleaning at Living Dental Health Bend Oregon",
-  },
-  {
-    id: "fillings",
-    heading: "Dental Fillings",
-    body:
-      "When decay happens, tooth-colored composite fillings restore the tooth to full function without the silver. They bond directly to the tooth structure, look natural, and are completed in a single visit.",
-    detail: "tooth-colored composite · single visit · no metal",
-    image: "/patient-fillings.webp",
-    imageAlt:
-      "Man smiling after dental filling at Living Dental Health Bend Oregon",
-  },
-  {
-    id: "crowns",
-    heading: "Dental Crowns",
-    body:
-      "A crown fully covers a damaged or weakened tooth, restoring its shape, strength, and appearance. Dr. Engel uses crowns to protect teeth after root canals, repair cracked teeth, or anchor a dental bridge. Custom-fitted and natural looking.",
+      "A dental implant is the closest thing dentistry has to a natural tooth. A titanium post is placed directly into the jawbone, fuses with the bone over time, and supports a custom crown that looks and functions like the real thing. Dr. Engel places and restores implants entirely in-house — from the initial consultation through the final crown. Single tooth or full arch, the process stays with one doctor who knows your case.",
     detail:
-      "porcelain or ceramic · custom fitted · protects and restores",
-    image: "/patient-crowns.webp",
+      "single → full arch · placed and restored in-house · titanium post · custom crown",
+    image: "/surgery-implants.webp",
     imageAlt:
-      "Woman smiling after dental crown at Living Dental Health Bend Oregon",
+      "Patient smiling after dental implant at Living Dental Health Bend Oregon",
   },
   {
-    id: "bridges",
-    heading: "Dental Bridges",
+    id: "bone-grafting",
+    heading: "Bone & Tissue Grafting",
     body:
-      "A bridge fills the gap left by a missing tooth using the surrounding teeth as anchors. It restores your bite, prevents neighboring teeth from shifting, and looks completely natural. A reliable, non-surgical option for tooth replacement.",
+      "Successful implants require adequate bone density. When bone loss has occurred — through tooth loss, gum disease, or time — grafting rebuilds the foundation before implant placement. Unlike most general dentists in Central Oregon, Dr. Engel performs bone and tissue grafting himself. No separate specialist, no additional referral, no starting over with someone who doesn’t know your history.",
     detail:
-      "fixed restoration · natural appearance · prevents shifting",
-    image: "/patient-bridges.webp",
+      "in-house · implant prep · bone and tissue · advanced training OHSU",
+    image: "/surgery-bone-grafting.webp",
     imageAlt:
-      "Man smiling after dental bridge at Living Dental Health Bend Oregon",
+      "Dr. Andy Engel performing bone grafting procedure at Living Dental Health Bend Oregon",
   },
   {
-    id: "dentures",
-    heading: "Dentures",
+    id: "wisdom-teeth",
+    heading: "Wisdom Teeth",
     body:
-      "Whether you need a full or partial denture, Dr. Engel custom fits every appliance to your mouth for comfort and function. We also work with implant-supported dentures for patients who want a more permanent solution.",
+      "Wisdom teeth removal is one of the most common surgical procedures Dr. Engel performs. Whether one tooth or all four, impacted or straightforward, extractions are handled in-office under local anesthesia. Patients are seen promptly and given clear post-op instructions so recovery is as smooth as possible.",
     detail:
-      "full and partial · implant-supported options · custom fitted",
-    image: "/patient-dentures.webp",
+      "local anesthesia · single or all four · impacted and straightforward · post-op care included",
+    image: "/surgery-wisdom-teeth.webp",
     imageAlt:
-      "Woman smiling after dentures at Living Dental Health Bend Oregon",
+      "Dental team member welcoming patient at Living Dental Health Bend Oregon",
+  },
+  {
+    id: "extractions",
+    heading: "Dental Extractions",
+    body:
+      "When a tooth cannot be saved, removal is sometimes the healthiest option. Dr. Engel performs extractions with the same care and precision as any procedure in his practice — and always discusses replacement options, including implants, at the time of extraction so patients leave with a clear plan forward.",
+    detail:
+      "gentle technique · same-day planning · implant discussion included · local anesthesia",
+    image: "/surgery-extractions.webp",
+    imageAlt:
+      "Dr. Andy Engel consulting with patient at Living Dental Health Bend Oregon",
   },
 ];
 
-export default function GeneralDentistryPage() {
+export default function ImplantsSurgeryPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(sanitizeJsonLd(generalDentistryPageSchema)),
+          __html: JSON.stringify(sanitizeJsonLd(implantsSurgeryPageSchema)),
         }}
       />
       <main
@@ -102,7 +93,7 @@ export default function GeneralDentistryPage() {
             <li aria-hidden style={{ color: SAGE_LABEL }}>
               /
             </li>
-            <li style={{ color: SAGE }}>General Dentistry</li>
+            <li style={{ color: SAGE }}>Implants &amp; Surgery</li>
           </ol>
         </nav>
 
@@ -116,16 +107,19 @@ export default function GeneralDentistryPage() {
                   className="font-inter text-[11px] font-light uppercase tracking-widest"
                   style={{ color: SAGE }}
                 >
-                  &mdash; general dentistry &mdash;
+                  &mdash; implants &amp; surgery &mdash;
                 </p>
-                <h1 className="mt-5 font-serif text-[40px] leading-[1.05] text-charcoal sm:text-[56px] lg:text-[64px]">
-                  Your foundation for a{" "}
-                  <span className="font-serif-italic">healthy life.</span>
+                <h1 className="mt-5 font-serif text-[36px] leading-[1.05] text-charcoal sm:text-[52px] lg:text-[60px]">
+                  Everything in-house.{" "}
+                  <span className="font-serif-italic">
+                    Nothing referred out.
+                  </span>
                 </h1>
                 <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:text-[17px] lg:mx-0 lg:max-w-[440px]">
-                  Most dental problems are preventable. We see patients every
-                  six months not because it&rsquo;s routine &mdash; because it
-                  works. 28 years of Bend smiles started with a cleaning.
+                  Most general dentists send you to an oral surgeon. Dr. Engel
+                  does it himself — implants, extractions, wisdom teeth, and
+                  bone and tissue grafting. One dentist, one relationship, one
+                  roof.
                 </p>
               </div>
             </div>
@@ -133,13 +127,15 @@ export default function GeneralDentistryPage() {
 
           <div className="relative h-[380px] w-full overflow-hidden sm:h-[460px] lg:h-[560px]">
             <Image
-              src="/general-hero.webp"
-              alt="A dental team member welcoming a patient at Living Dental Health in Bend, Oregon"
+              src="/implants-hero.webp"
+              alt="Dr. Andy Engel performing a procedure with loupes on a patient at Living Dental Health in Bend, Oregon"
               fill
               priority
               sizes="100vw"
               className="object-cover object-[74%_center] lg:object-center"
             />
+            {/* left scrim — keeps the charcoal headline legible over the
+                bright wall (desktop only) */}
             <div
               aria-hidden
               className="pointer-events-none absolute inset-0 hidden lg:block"
@@ -158,11 +154,12 @@ export default function GeneralDentistryPage() {
             style={{ borderColor: "rgba(28,26,23,0.18)" }}
           >
             <p className="font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft sm:text-[16px]">
-              At Living Dental Health, general dentistry is the foundation of
-              everything we do. Dr. Engel takes the time to understand your
-              full oral health picture before recommending any treatment. No
-              upselling, no unnecessary procedures. Just honest, thorough
-              care for patients 12 and up.
+              Dr. Andrew Engel completed advanced surgical training at Oregon
+              Health Sciences University specifically in oral surgery and full
+              mouth reconstruction. In 28 years of practice in Bend, he has
+              built a surgical skill set that most general dentists simply
+              don&rsquo;t have — which means his patients never get handed off
+              to a stranger for the hard part.
             </p>
           </div>
         </section>
@@ -184,7 +181,7 @@ export default function GeneralDentistryPage() {
                     className="font-inter text-[11px] font-light uppercase tracking-widest"
                     style={{ color: SAGE }}
                   >
-                    0{i + 1} &nbsp;/&nbsp; 05
+                    0{i + 1} &nbsp;/&nbsp; 04
                   </p>
                   <h2 className="mt-4 font-serif text-[32px] leading-[1.05] text-charcoal sm:text-[44px] md:text-[52px]">
                     {s.heading}
@@ -230,12 +227,13 @@ export default function GeneralDentistryPage() {
             style={{ borderColor: "rgba(28,26,23,0.18)" }}
           >
             <h2 className="font-serif text-[32px] leading-[1.05] text-charcoal sm:text-[44px]">
-              Ready to{" "}
-              <span className="font-serif-italic">get started?</span>
+              Have questions about{" "}
+              <span className="font-serif-italic">implants?</span>
             </h2>
-            <p className="mx-auto mt-5 max-w-[460px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:text-[16px]">
-              New patients are always welcome. Give us a call and we&rsquo;ll
-              find a time that works.
+            <p className="mx-auto mt-5 max-w-[480px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:text-[16px]">
+              The best next step is a conversation. Call us and Dr. Engel will
+              walk you through your options personally — no pressure, no hard
+              sell.
             </p>
             <a
               href="tel:5415505311"

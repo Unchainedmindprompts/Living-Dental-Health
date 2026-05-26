@@ -7,8 +7,8 @@ type Link = { label: string; href: string };
 
 const SERVICES: Link[] = [
   { label: "General Dentistry", href: "/general-dentistry" },
-  { label: "Cosmetic Dentistry", href: "#" },
-  { label: "Implants & Surgery", href: "#" },
+  { label: "Cosmetic Dentistry", href: "/cosmetic-dentistry" },
+  { label: "Implants & Surgery", href: "/implants-surgery" },
 ];
 
 const ABOUT: Link[] = [

@@ -3,6 +3,7 @@ import BookingProvider from "@/components/BookingProvider";
 import Nav from "@/components/Nav";
 import StickyBook from "@/components/StickyBook";
 import ServiceCard from "@/components/ServiceCard";
+import { homeSchema, sanitizeJsonLd } from "@/lib/schema";
 
 const SERVICES = [
   {
@@ -57,6 +58,12 @@ const TRUST = [
 export default function HomePage() {
   return (
     <BookingProvider>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(sanitizeJsonLd(homeSchema)),
+        }}
+      />
       <main id="top" className="min-h-screen bg-cream text-charcoal">
         <Nav />
 
