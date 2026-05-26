@@ -644,3 +644,79 @@ export const cosmeticDentistryPageSchema: JsonLdGraph = {
     },
   ],
 };
+
+export const patientInfoPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.livingdentalhealth.com/patient-info#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "New Patients",
+          "item": "https://www.livingdentalhealth.com/patient-info",
+        },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.livingdentalhealth.com/patient-info#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Living Dental Health accepting new patients?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. Living Dental Health welcomes new patients at 930 SW Yates Dr, Bend OR 97702. Call (541) 550-5311 to schedule your first visit.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name":
+            "What should I bring to my first dental appointment at Living Dental Health?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Bring any recent dental x-rays, a list of current medications, your insurance card, and completed forms if applicable. A parent or guardian must accompany patients under 18.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Does Living Dental Health accept dental insurance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. Living Dental Health is in-network with multiple dental insurance plans and accepts out-of-network patients as well.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "What if I don't have dental insurance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Living Dental Health offers an in-office dental plan for patients without insurance, covering preventive care and more comprehensive treatment options. Call (541) 550-5311 to learn more.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Does Living Dental Health offer financing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. CareCredit financing is available for larger treatment plans. Most major credit cards are also accepted.",
+          },
+        },
+      ],
+    },
+  ],
+};
