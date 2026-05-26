@@ -179,6 +179,7 @@ export const livingDentalHealthSchema: JsonLdGraph = {
       "name": "Andrew W. Engel DMD",
       "alternateName": ["Dr. Andy Engel", "Dr. Andrew Engel"],
       "jobTitle": "Dentist",
+      "medicalSpecialty": ["Oral Surgery", "Dental Implants"],
       "description":
         "Dr. Andrew W. Engel is the founder of Living Dental Health in Bend, Oregon, and has cared for Bend families since 1998. A graduate of Oregon Health Sciences University School of Dentistry, he completed advanced training in full mouth reconstruction, oral surgery, dental implants, ClearCorrect, and tissue and bone grafting, offering comprehensive care under one roof. In 28 years of practice he has become one of Central Oregon's most trusted dentists for complex cases.",
       "url": "https://www.livingdentalhealth.com/about",
@@ -385,6 +386,90 @@ export const generalDentistryPageSchema: JsonLdGraph = {
       "procedureType": "https://schema.org/TherapeuticProcedure",
       "provider": {
         "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+  ],
+};
+
+export const implantsSurgeryPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id":
+        "https://www.livingdentalhealth.com/implants-surgery#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Implants & Surgery",
+          "item": "https://www.livingdentalhealth.com/implants-surgery",
+        },
+      ],
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/implants-surgery#implants",
+      "name": "Dental Implants",
+      "description":
+        "A titanium post placed directly into the jawbone that fuses with the bone over time and supports a custom crown. Dr. Engel places and restores implants entirely in-house, from initial consultation through the final crown — single tooth or full arch.",
+      "url":
+        "https://www.livingdentalhealth.com/implants-surgery#implants",
+      "procedureType": "https://schema.org/SurgicalProcedure",
+      "howPerformed":
+        "Placed and restored in-house by Dr. Engel under local anesthesia.",
+      "provider": {
+        "@id": "https://www.livingdentalhealth.com/#doctor",
+      },
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/implants-surgery#bone-grafting",
+      "name": "Bone & Tissue Grafting",
+      "description":
+        "Grafting rebuilds bone density lost through tooth loss, gum disease, or time so the jaw can support a dental implant. Dr. Engel performs bone and tissue grafting himself, with no separate specialist or additional referral.",
+      "url":
+        "https://www.livingdentalhealth.com/implants-surgery#bone-grafting",
+      "procedureType": "https://schema.org/SurgicalProcedure",
+      "provider": {
+        "@id": "https://www.livingdentalhealth.com/#doctor",
+      },
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/implants-surgery#wisdom-teeth",
+      "name": "Wisdom Teeth Removal",
+      "description":
+        "Removal of one or all four wisdom teeth, impacted or straightforward, handled in-office under local anesthesia. Patients are seen promptly and given clear post-op instructions for a smooth recovery.",
+      "url":
+        "https://www.livingdentalhealth.com/implants-surgery#wisdom-teeth",
+      "procedureType": "https://schema.org/SurgicalProcedure",
+      "howPerformed": "Performed in-office under local anesthesia.",
+      "provider": {
+        "@id": "https://www.livingdentalhealth.com/#doctor",
+      },
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/implants-surgery#extractions",
+      "name": "Dental Extractions",
+      "description":
+        "Removal of a tooth that cannot be saved, performed with gentle technique under local anesthesia. Dr. Engel discusses replacement options, including implants, at the time of extraction so patients leave with a clear plan.",
+      "url":
+        "https://www.livingdentalhealth.com/implants-surgery#extractions",
+      "procedureType": "https://schema.org/SurgicalProcedure",
+      "provider": {
+        "@id": "https://www.livingdentalhealth.com/#doctor",
       },
     },
   ],
