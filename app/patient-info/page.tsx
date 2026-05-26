@@ -86,7 +86,7 @@ export default function PatientInfoPage() {
         {/* HERO — headline overlaid on the photo's negative space (desktop),
             stacked above the photo (mobile). Single H1, repositioned by CSS. */}
         <div className="relative">
-          <div className="px-6 pt-6 pb-10 text-center lg:absolute lg:inset-0 lg:z-10 lg:flex lg:items-center lg:py-0 lg:text-left">
+          <div className="px-6 pt-6 pb-10 text-center lg:absolute lg:inset-0 lg:z-10 lg:flex lg:items-start lg:pt-16 lg:pb-0 lg:text-left">
             <div className="mx-auto w-full max-w-[1320px] lg:px-6">
               <div className="lg:max-w-[420px]">
                 <p
