@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans, Inter } from "next/font/google";
 import "./globals.css";
-import { livingDentalHealthSchema, sanitizeJsonLd } from "@/lib/schema";
+import { napStubSchema, sanitizeJsonLd } from "@/lib/schema";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -56,7 +56,7 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(sanitizeJsonLd(livingDentalHealthSchema)),
+            __html: JSON.stringify(sanitizeJsonLd(napStubSchema)),
           }}
         />
       </head>
