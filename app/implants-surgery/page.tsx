@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import { implantsSurgeryPageSchema, sanitizeJsonLd } from "@/lib/schema";
@@ -20,8 +21,9 @@ const SERVICES = [
       "A dental implant is the closest thing dentistry has to a natural tooth. A titanium post is placed directly into the jawbone, fuses with the bone over time, and supports a custom crown that looks and functions like the real thing. Dr. Engel places and restores implants entirely in-house — from the initial consultation through the final crown. Single tooth or full arch, the process stays with one doctor who knows your case.",
     detail:
       "single → full arch · placed and restored in-house · titanium post · custom crown",
+    image: "/surgery-implants.webp",
     imageAlt:
-      "Patient smiling after dental implant treatment at Living Dental Health Bend Oregon",
+      "Patient smiling after dental implant at Living Dental Health Bend Oregon",
   },
   {
     id: "bone-grafting",
@@ -30,8 +32,9 @@ const SERVICES = [
       "Successful implants require adequate bone density. When bone loss has occurred — through tooth loss, gum disease, or time — grafting rebuilds the foundation before implant placement. Unlike most general dentists in Central Oregon, Dr. Engel performs bone and tissue grafting himself. No separate specialist, no additional referral, no starting over with someone who doesn’t know your history.",
     detail:
       "in-house · implant prep · bone and tissue · advanced training OHSU",
+    image: "/surgery-bone-grafting.webp",
     imageAlt:
-      "Patient consultation about bone and tissue grafting at Living Dental Health Bend Oregon",
+      "Dr. Andy Engel performing bone grafting procedure at Living Dental Health Bend Oregon",
   },
   {
     id: "wisdom-teeth",
@@ -40,8 +43,9 @@ const SERVICES = [
       "Wisdom teeth removal is one of the most common surgical procedures Dr. Engel performs. Whether one tooth or all four, impacted or straightforward, extractions are handled in-office under local anesthesia. Patients are seen promptly and given clear post-op instructions so recovery is as smooth as possible.",
     detail:
       "local anesthesia · single or all four · impacted and straightforward · post-op care included",
+    image: "/surgery-wisdom-teeth.webp",
     imageAlt:
-      "Patient after wisdom teeth removal at Living Dental Health Bend Oregon",
+      "Dental team member welcoming patient at Living Dental Health Bend Oregon",
   },
   {
     id: "extractions",
@@ -50,8 +54,9 @@ const SERVICES = [
       "When a tooth cannot be saved, removal is sometimes the healthiest option. Dr. Engel performs extractions with the same care and precision as any procedure in his practice — and always discusses replacement options, including implants, at the time of extraction so patients leave with a clear plan forward.",
     detail:
       "gentle technique · same-day planning · implant discussion included · local anesthesia",
+    image: "/surgery-extractions.webp",
     imageAlt:
-      "Patient smiling after a dental extraction at Living Dental Health Bend Oregon",
+      "Dr. Andy Engel consulting with patient at Living Dental Health Bend Oregon",
   },
 ];
 
@@ -163,23 +168,16 @@ export default function ImplantsSurgeryPage() {
                   </p>
                 </div>
 
-                {/* Image placeholder column */}
+                {/* Image column */}
                 <div className="lg:flex-1">
-                  <div
-                    className="relative aspect-[4/3] w-full overflow-hidden rounded-xl border border-dashed bg-cream-deep"
-                    style={{ borderColor: SAGE_LABEL }}
-                  >
-                    <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 px-6 text-center">
-                      <p
-                        className="font-inter text-[10px] font-light uppercase tracking-[0.32em]"
-                        style={{ color: SAGE }}
-                      >
-                        Photo placeholder
-                      </p>
-                      <p className="max-w-[320px] font-serif-italic text-[14px] leading-[1.45] text-warm-gray">
-                        {s.imageAlt}
-                      </p>
-                    </div>
+                  <div className="relative h-[220px] w-full overflow-hidden rounded-xl bg-cream-deep md:h-[280px]">
+                    <Image
+                      src={s.image}
+                      alt={s.imageAlt}
+                      fill
+                      sizes="(min-width: 1024px) 50vw, 100vw"
+                      className="object-cover object-[center_25%]"
+                    />
                   </div>
                 </div>
               </div>
