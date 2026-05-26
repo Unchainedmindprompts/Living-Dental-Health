@@ -97,43 +97,54 @@ export default function ImplantsSurgeryPage() {
           </ol>
         </nav>
 
-        {/* HEADER */}
-        <section className="mx-auto max-w-[1320px] px-6 pt-8 pb-12 text-center sm:pt-12 sm:pb-16">
-          <p
-            className="font-inter text-[11px] font-light uppercase tracking-widest"
-            style={{ color: SAGE }}
-          >
-            &mdash; implants &amp; surgery &mdash;
-          </p>
-          <h1 className="mt-5 font-serif text-[36px] leading-[1.05] text-charcoal sm:mt-6 sm:text-[58px] md:text-[72px]">
-            Everything in-house.{" "}
-            <span className="font-serif-italic">Nothing referred out.</span>
-          </h1>
-          <p className="mx-auto mt-6 max-w-[660px] font-inter text-[16px] font-light leading-[1.7] text-warm-gray sm:mt-8 sm:text-[18px]">
-            Most general dentists send you to an oral surgeon. Dr. Engel does
-            it himself — implants, extractions, wisdom teeth, and bone and
-            tissue grafting. One dentist, one relationship, one roof.
-          </p>
-        </section>
+        {/* HERO — headline overlaid on the photo's negative space (desktop),
+            stacked above the photo (mobile). Single H1, repositioned by CSS. */}
+        <div className="relative">
+          <div className="px-6 pt-6 pb-10 text-center lg:absolute lg:inset-0 lg:z-10 lg:flex lg:items-center lg:py-0 lg:text-left">
+            <div className="mx-auto w-full max-w-[1320px] lg:px-6">
+              <div className="lg:max-w-[540px]">
+                <p
+                  className="font-inter text-[11px] font-light uppercase tracking-widest"
+                  style={{ color: SAGE }}
+                >
+                  &mdash; implants &amp; surgery &mdash;
+                </p>
+                <h1 className="mt-5 font-serif text-[36px] leading-[1.05] text-charcoal sm:text-[52px] lg:text-[60px]">
+                  Everything in-house.{" "}
+                  <span className="font-serif-italic">
+                    Nothing referred out.
+                  </span>
+                </h1>
+                <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:text-[17px] lg:mx-0 lg:max-w-[440px]">
+                  Most general dentists send you to an oral surgeon. Dr. Engel
+                  does it himself — implants, extractions, wisdom teeth, and
+                  bone and tissue grafting. One dentist, one relationship, one
+                  roof.
+                </p>
+              </div>
+            </div>
+          </div>
 
-        {/* HERO — full-bleed */}
-        <div className="relative h-[320px] w-full overflow-hidden md:h-[480px]">
-          <Image
-            src="/surgery-bone-grafting.webp"
-            alt="Dr. Andy Engel performing a surgical procedure with loupes at Living Dental Health Bend Oregon"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-center"
-          />
-          <div
-            aria-hidden
-            className="pointer-events-none absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(to bottom, transparent 80%, #F5F0E8 100%)",
-            }}
-          />
+          <div className="relative h-[380px] w-full overflow-hidden sm:h-[460px] lg:h-[560px]">
+            <Image
+              src="/implants-hero.webp"
+              alt="Dr. Andy Engel performing a procedure with loupes on a patient at Living Dental Health in Bend, Oregon"
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover object-[74%_center] lg:object-center"
+            />
+            {/* left scrim — keeps the charcoal headline legible over the
+                bright wall (desktop only) */}
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-0 hidden lg:block"
+              style={{
+                background:
+                  "linear-gradient(to right, rgba(245,240,232,0.94) 0%, rgba(245,240,232,0.74) 32%, rgba(245,240,232,0) 58%)",
+              }}
+            />
+          </div>
         </div>
 
         {/* INTRO */}
