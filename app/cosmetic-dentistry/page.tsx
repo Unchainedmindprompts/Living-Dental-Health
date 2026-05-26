@@ -157,6 +157,25 @@ export default function CosmeticDentistryPage() {
           </p>
         </section>
 
+        {/* HERO — full-bleed placeholder (image to be generated) */}
+        <div
+          className="relative flex h-[320px] w-full items-center justify-center overflow-hidden border-y border-dashed bg-cream-deep md:h-[480px]"
+          style={{ borderColor: SAGE_LABEL }}
+        >
+          <div className="px-6 text-center">
+            <p
+              className="font-inter text-[10px] font-light uppercase tracking-[0.32em]"
+              style={{ color: SAGE }}
+            >
+              Hero photo placeholder
+            </p>
+            <p className="mx-auto mt-3 max-w-[460px] font-serif-italic text-[15px] leading-[1.45] text-warm-gray">
+              Cosmetic dentistry hero &mdash; full-bleed smile / lifestyle
+              photo (to be generated)
+            </p>
+          </div>
+        </div>
+
         {/* INTRO */}
         <section className="mx-auto max-w-[1320px] px-6 pb-16 sm:pb-20">
           <div
@@ -185,13 +204,8 @@ export default function CosmeticDentistryPage() {
               className="mx-auto max-w-[1100px] border-t pt-12 sm:pt-14"
               style={{ borderColor: "rgba(28,26,23,0.18)" }}
             >
-              <div
-                className={`flex flex-col gap-10 lg:items-center lg:gap-16 ${
-                  i % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"
-                }`}
-              >
-                {/* Text column */}
-                <div className="lg:flex-1">
+              <div className="grid gap-6 lg:grid-cols-[1fr_1.5fr] lg:gap-16">
+                <div>
                   <p
                     className="font-inter text-[11px] font-light uppercase tracking-widest"
                     style={{ color: SAGE }}
@@ -201,32 +215,14 @@ export default function CosmeticDentistryPage() {
                   <h2 className="mt-4 font-serif text-[32px] leading-[1.05] text-charcoal sm:text-[44px] md:text-[52px]">
                     {s.heading}
                   </h2>
-                  <p className="mt-6 font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft sm:text-[16px]">
+                </div>
+                <div>
+                  <p className="font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft sm:text-[16px]">
                     {s.body}
                   </p>
                   <p className="mt-6 font-inter text-[13px] font-light uppercase tracking-[0.18em] text-warm-gray sm:text-[14px]">
                     {s.detail}
                   </p>
-                </div>
-
-                {/* Image placeholder column */}
-                <div className="lg:flex-1">
-                  <div
-                    className="relative aspect-[4/3] w-full overflow-hidden rounded-xl border border-dashed bg-cream-deep"
-                    style={{ borderColor: SAGE_LABEL }}
-                  >
-                    <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 px-6 text-center">
-                      <p
-                        className="font-inter text-[10px] font-light uppercase tracking-[0.32em]"
-                        style={{ color: SAGE }}
-                      >
-                        Photo placeholder
-                      </p>
-                      <p className="max-w-[320px] font-serif-italic text-[14px] leading-[1.45] text-warm-gray">
-                        {s.imageAlt}
-                      </p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -329,6 +325,26 @@ export default function CosmeticDentistryPage() {
                 </div>
               ))}
             </dl>
+          </div>
+        </section>
+
+        {/* SECONDARY IMAGE — placeholder */}
+        <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">
+          <div
+            className="relative flex h-[360px] w-full items-center justify-center overflow-hidden rounded-xl border border-dashed bg-cream-deep"
+            style={{ borderColor: SAGE_LABEL }}
+          >
+            <div className="px-6 text-center">
+              <p
+                className="font-inter text-[10px] font-light uppercase tracking-[0.32em]"
+                style={{ color: SAGE }}
+              >
+                Photo placeholder
+              </p>
+              <p className="mt-3 font-serif-italic text-[15px] text-warm-gray">
+                Optional secondary image
+              </p>
+            </div>
           </div>
         </section>
 

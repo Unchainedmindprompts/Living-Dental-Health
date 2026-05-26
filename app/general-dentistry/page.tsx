@@ -125,6 +125,26 @@ export default function GeneralDentistryPage() {
           </p>
         </section>
 
+        {/* HERO — full-bleed */}
+        <div className="relative h-[320px] w-full overflow-hidden md:h-[480px]">
+          <Image
+            src="/patient-cleanings.webp"
+            alt="Patient smiling after a dental cleaning at Living Dental Health in Bend, Oregon"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(to bottom, transparent 80%, #F5F0E8 100%)",
+            }}
+          />
+        </div>
+
         {/* INTRO */}
         <section className="mx-auto max-w-[1320px] px-6 pb-16 sm:pb-20">
           <div
@@ -152,13 +172,8 @@ export default function GeneralDentistryPage() {
               className="mx-auto max-w-[1100px] border-t pt-12 sm:pt-14"
               style={{ borderColor: "rgba(28,26,23,0.18)" }}
             >
-              <div
-                className={`flex flex-col gap-10 lg:items-center lg:gap-16 ${
-                  i % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"
-                }`}
-              >
-                {/* Text column */}
-                <div className="lg:flex-1">
+              <div className="grid gap-6 lg:grid-cols-[1fr_1.5fr] lg:gap-16">
+                <div>
                   <p
                     className="font-inter text-[11px] font-light uppercase tracking-widest"
                     style={{ color: SAGE }}
@@ -168,30 +183,39 @@ export default function GeneralDentistryPage() {
                   <h2 className="mt-4 font-serif text-[32px] leading-[1.05] text-charcoal sm:text-[44px] md:text-[52px]">
                     {s.heading}
                   </h2>
-                  <p className="mt-6 font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft sm:text-[16px]">
+                </div>
+                <div>
+                  <p className="font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft sm:text-[16px]">
                     {s.body}
                   </p>
                   <p className="mt-6 font-inter text-[13px] font-light uppercase tracking-[0.18em] text-warm-gray sm:text-[14px]">
                     {s.detail}
                   </p>
                 </div>
-
-                {/* Image column */}
-                <div className="lg:flex-1">
-                  <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-cream-deep">
-                    <Image
-                      src={s.image}
-                      alt={s.imageAlt}
-                      fill
-                      sizes="(min-width: 1024px) 50vw, 100vw"
-                      className="object-cover object-[center_25%]"
-                    />
-                  </div>
-                </div>
               </div>
             </div>
           </section>
         ))}
+
+        {/* SECONDARY IMAGE — placeholder */}
+        <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">
+          <div
+            className="relative flex h-[360px] w-full items-center justify-center overflow-hidden rounded-xl border border-dashed bg-cream-deep"
+            style={{ borderColor: SAGE_LABEL }}
+          >
+            <div className="px-6 text-center">
+              <p
+                className="font-inter text-[10px] font-light uppercase tracking-[0.32em]"
+                style={{ color: SAGE }}
+              >
+                Photo placeholder
+              </p>
+              <p className="mt-3 font-serif-italic text-[15px] text-warm-gray">
+                Optional secondary image
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* CTA */}
         <section className="mx-auto max-w-[1320px] px-6 pb-24 sm:pb-32">
