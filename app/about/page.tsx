@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
-import { aboutPageSchema, sanitizeJsonLd } from "@/lib/schema";
 
 const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
@@ -77,17 +76,10 @@ const REVIEWS = [
 
 export default function AboutPage() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(sanitizeJsonLd(aboutPageSchema)),
-        }}
-      />
-      <main
-        className="min-h-screen text-charcoal"
-        style={{ backgroundColor: "#F5F0E8" }}
-      >
+    <main
+      className="min-h-screen text-charcoal"
+      style={{ backgroundColor: "#F5F0E8" }}
+    >
         <Nav />
         <div className="h-[100px]" aria-hidden />
 
@@ -382,6 +374,5 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
-    </>
   );
 }
