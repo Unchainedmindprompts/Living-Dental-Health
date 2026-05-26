@@ -57,6 +57,9 @@ const TEAM: {
     name: "Nicole Tarpey",
     role: "Dental Hygienist",
     bio: "Nicole is one of the gentle, detail-oriented hygienists who make cleanings at Living Dental Health something patients actually look forward to. [Full bio coming soon]",
+    image: "/team-nicole.webp",
+    imageAlt:
+      "Nicole Tarpey, Dental Hygienist at Living Dental Health in Bend, Oregon",
   },
   {
     name: "Sacha Lodge",
