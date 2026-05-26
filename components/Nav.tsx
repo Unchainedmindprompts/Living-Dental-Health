@@ -221,7 +221,7 @@ export default function Nav() {
           ))}
         </div>
 
-        {/* Est. 1998 — bottom right, balances brand top-left */}
+        {/* Est. 2013 — bottom right, balances brand top-left */}
         <div
           className="absolute inset-x-0 bottom-0 flex items-end justify-end px-6 pb-6 sm:px-12 sm:pb-8 md:px-20 lg:px-28"
           style={{
@@ -235,7 +235,7 @@ export default function Nav() {
             className="font-serif text-[20px] italic"
             style={{ color: CREAM }}
           >
-            Est. 1998
+            Est. 2013
           </p>
         </div>
       </div>
