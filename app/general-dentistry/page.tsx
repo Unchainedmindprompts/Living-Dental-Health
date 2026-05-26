@@ -133,7 +133,7 @@ export default function GeneralDentistryPage() {
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center"
+            className="object-cover object-top"
           />
           <div
             aria-hidden
