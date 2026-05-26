@@ -20,7 +20,7 @@ const ABOUT: Link[] = [
 const PATIENT: Link[] = [
   { label: "New Patients", href: "/patient-info" },
   { label: "Insurance & Financing", href: "/patient-info#insurance" },
-  { label: "Post-Op Instructions", href: "#" },
+  { label: "Post-Op Instructions", href: "/patient-info/post-op" },
   { label: "Contact", href: "/contact" },
 ];
 
