@@ -88,18 +88,18 @@ export default function PatientInfoPage() {
         <div className="relative">
           <div className="px-6 pt-6 pb-10 text-center lg:absolute lg:inset-0 lg:z-10 lg:flex lg:items-center lg:py-0 lg:text-left">
             <div className="mx-auto w-full max-w-[1320px] lg:px-6">
-              <div className="lg:max-w-[540px]">
+              <div className="lg:max-w-[420px]">
                 <p
                   className="font-inter text-[11px] font-light uppercase tracking-widest"
                   style={{ color: SAGE }}
                 >
                   &mdash; new patients &mdash;
                 </p>
-                <h1 className="mt-5 font-serif text-[40px] leading-[1.05] text-charcoal sm:text-[56px] lg:text-[64px]">
+                <h1 className="mt-5 font-serif text-[40px] leading-[1.05] text-charcoal sm:text-[56px] lg:text-[54px]">
                   We&rsquo;ve been{" "}
                   <span className="font-serif-italic">expecting you.</span>
                 </h1>
-                <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:text-[17px] lg:mx-0 lg:max-w-[440px]">
+                <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:text-[17px] lg:mx-0 lg:max-w-[380px]">
                   Whether you haven&rsquo;t seen a dentist in two years or
                   twenty, you&rsquo;ll be treated with respect, never
                   judgment. Here&rsquo;s everything you need to know before
