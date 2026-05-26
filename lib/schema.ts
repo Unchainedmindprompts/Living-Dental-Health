@@ -185,15 +185,15 @@ const businessFull: JsonLdNode = {
   ...businessEnrichment,
 };
 
-// Dr. Engel — the person/author node. (Type is currently "Dentist";
-// a future change retypes this to "Person" with jobTitle "Dentist".)
-const doctorEntity: JsonLdNode = {
-  "@type": "Dentist",
+// Dr. Engel — the person/author node, typed Person (not the org type
+// Dentist). Identity (credentials etc.) travels with him wherever he's
+// featured; sameAs is kept canonical and lives only on the home node.
+const doctorIdentity: JsonLdNode = {
+  "@type": "Person",
   "@id": "https://www.livingdentalhealth.com/#doctor",
   "name": "Andrew W. Engel DMD",
   "alternateName": ["Dr. Andy Engel", "Dr. Andrew Engel"],
   "jobTitle": "Dentist",
-  "medicalSpecialty": ["Oral Surgery", "Dental Implants"],
   "description":
     "Dr. Andrew W. Engel is the founder of Living Dental Health in Bend, Oregon, and has cared for Bend families since 1998. A graduate of Oregon Health Sciences University School of Dentistry, he completed advanced training in full mouth reconstruction, oral surgery, dental implants, ClearCorrect, and tissue and bone grafting, offering comprehensive care under one roof. In 28 years of practice he has become one of Central Oregon's most trusted dentists for complex cases.",
   "url": "https://www.livingdentalhealth.com/about",
@@ -226,6 +226,11 @@ const doctorEntity: JsonLdNode = {
     "tissue grafting",
     "bone grafting",
   ],
+};
+
+// Home-page #doctor: identity + the canonical sameAs.
+const doctorEntity: JsonLdNode = {
+  ...doctorIdentity,
   "sameAs": [
     "https://www.healthgrades.com/dentist/dr-andrew-engel-yyh3w",
     "https://npiregistry.cms.hhs.gov/provider-view/1700144870",
@@ -643,6 +648,78 @@ export const cosmeticDentistryPageSchema: JsonLdGraph = {
           },
         },
       ],
+    },
+  ],
+};
+
+export const aboutPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.livingdentalhealth.com/about#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://www.livingdentalhealth.com/about",
+        },
+      ],
+    },
+    // Self-contained Dr. Engel Person node (credentials travel; no sameAs —
+    // that stays canonical on the home #doctor node).
+    doctorIdentity,
+    {
+      "@type": "Person",
+      "@id": "https://www.livingdentalhealth.com/about#team-samantha-gassman",
+      "name": "Samantha Gassman",
+      "jobTitle": "Office Manager",
+      "worksFor": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.livingdentalhealth.com/about#team-francie-engel",
+      "name": "Francie Engel",
+      "jobTitle": "Operations Administrator",
+      "worksFor": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.livingdentalhealth.com/about#team-nicole-tarpey",
+      "name": "Nicole Tarpey",
+      "jobTitle": "Dental Hygienist",
+      "worksFor": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.livingdentalhealth.com/about#team-sacha-lodge",
+      "name": "Sacha Lodge",
+      "jobTitle": "Dental Hygienist",
+      "worksFor": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.livingdentalhealth.com/about#team-christy-spencer",
+      "name": "Christy Spencer",
+      "jobTitle": "Dental Assistant",
+      "worksFor": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
     },
   ],
 };
