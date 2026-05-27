@@ -1,0 +1,35 @@
+---
+title: "The Connection Between Oral Health and Whole Health"
+slug: "the-connection-between-oral-health-and-whole-health"
+datePublished: "2023-02-07T13:15:03"
+dateModified: "2023-02-07T13:15:03"
+excerpt: "The health of your body is directly linked to the health of your mouth. This is called oral health. And while most of us are good about brushing and flossing every day, others aren’t. That’s why we sat down with Dental Hygienist, Nicole Nolan, to get the dirt on how oral health impacts overall health"
+featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2023/02/gum-disease-facts.jpg"
+status: "migrated-as-is"
+---
+The health of your body is directly linked to the health of your mouth. This is called oral health.
+
+And while most of us are good about brushing and flossing every day, others aren’t. That’s why we sat down with [Dental Hygienist, Nicole Nolan](http://www.livingdentalhealth.com/meet-us/), to get the dirt on how oral health impacts overall health and why you should care. 
+
+“Inflammation can cause harm throughout your body,” said Nicole. “And inflammation in the mouth typically happens when oral hygiene isn’t good enough.” 
+
+You may brush your teeth every morning and night…and maybe even brush for the full two minutes, but skimping on your teeth today can lead to chronic health conditions tomorrow. Here’s the latest research into oral health and whole health.
+
+1.  1.  **Bacteria in your mouth can travel to other parts of your body via your bloodstream.** (Source: AAOSH) According to Nicole, gum disease is the most preventable thing she sees from an oral health perspective. If you keep inflammation in your mouth down with proper home care, which includes brushing your teeth twice a day with a Sonicare toothbrush and flossing once daily, you will decrease the bacterial load in your mouth. This limits the bacteria that can travel to other parts of the body. 
+    2.  **Kissing spreads bacteria.** (source: AAOSH) Yeah, this one is tough to swallow (pun intended) in the month of LOVE. But really, when you kiss someone, you are sharing bacteria – including cavity bacteria. Even kissing your sweet, precious baby can be harmful to THEIR health. You can pass on your cavity bacteria to their perfect little bodies. We aren’t saying not to kiss. We are saying that you need to take care of your mouth to take care of others. 
+    3.  **People with severe gum disease have an increased risk of heart attacks, strokes, lung disease, and premature or low-weight babies.** (source: Mayo Clinic) Because bacteria can travel via your bloodstream, they can visit the heart, triggering inflammation in the heart’s vessels and infection in the heart’s valves. This is especially important for people with heart disease or artificial heart valves. 80-90% of heart disease can be prevented. Do what you can to prevent heart disease from happening to you. And if you already have heart disease, do what you can to manage it by taking extra care of your teeth.
+    4.  **Chronic gum disease is linked to a four times higher head and neck cancer risk.** (Tezal, M. Cancer Epidemiology Bio Markers, and Prevention) Bacteria in the mouth will eat away at bone below the gum line, resulting in bone loss. That is why people with severe periodontal (gum) disease have a much higher risk of tooth loss. For every millimeter of bone loss caused by chronic gum disease, you increase your risk of head and neck cancer by 400%.
+    5.  **The CDC reports that 70.1% of adults 65 and up have some form of periodontal disease.** As you age, the risk of health conditions increases. Receding gum lines is a normal part of aging, but gum recession also increases your risk of periodontal disease. Good home care and regular visits to the dentist can reduce this. You don’t have to wear dentures like your grandparents. If you want to keep your teeth as you age, take care of them now. 
+    6.  **Pregnant women with gum disease have only a 1 in 7 chance of giving birth to a healthy child.** (Source: AAOSH) Every pregnant person wants to deliver a healthy baby. But by not taking care of your teeth, the chance of this happening decreases significantly. 
+    7.  **Bad breath is often caused by gum disease.** When anaerobic bacteria travel below the gumline, it produces an acid with a distinct smell called perio breath. You may brush daily, but you can only clean to around 3 mm below your gumline. With time, bacteria travel deeper, making them untouchable…unless you are a dental hygienist with a tray of tools. So, if you love fresh-smelling breath, give your dental hygienist some love and get a cleaning at least every six months. 
+    8.  **There is a causal relationship between oral bacteria pathogens and Alzheimer’s disease.** (Source: Mayo Clinic) I don’t know about you, but the idea of getting Alzheimer’s is terrifying. Take care of your teeth and lower your risk of getting Alzheimer’s in the future.
+    9.  **If you have bleeding gums and diabetes, you have a higher risk of premature death.** (Source: AAOSH) 95% of adults with diabetes also have periodontal disease. **And 93% of people with gum disease are at risk for diabetes.** (Source: American Diabetes Association) Periodontal disease makes it more difficult to control blood sugars. Diabetes increases the risk of infection in the body. Can you see the cycle here? 
+    10.  **Gum disease increases your risk of pancreatic and kidney cancer by 63%.** (Source: Harvard). Is that whole ‘bacteria from your mouth traveling to other parts of your body’ starting to sink in? 
+    11.  **Gum disease can impact fertility.** (Source: NIH) Women with gum disease take longer to conceive than those without it. Studies have shown that men with gum disease can have a lower sperm count and reduced sperm motility. 
+    12.  **Herpes (aka cold sores) are contagious.** While not gum related, definitely kissing-related. If you have an active herpes outbreak, avoid kissing or sharing food or drinks until it is completely healed, as it can easily spread to others while in its active phase.
+
+Our mouths are the gateway to whole health. If you want to be your healthiest, start with your mouth. Take care of it by brushing twice daily for two minutes and flossing once daily. Nicole highly recommends getting a Sonicare toothbrush because it is the most effective. She also recommends a water pik for people with restorative work, such as [dental implants](http://www.livingdentalhealth.com/dental-implants/), bridges, or wider spaces between their teeth. And if you just don’t like to floss, using a water pik is better than nothing, so give it a go. 
+
+And don’t forget to see the dentist. Insurance typically covers cleanings every six months, but some people need them more frequently. In 90 days, bacteria can survive below the gum line. Since you can’t clean this area effectively, it is imperative that you take the extra time to get cleanings. 
+
+For more oral health tips, visit our website. If you are due for a dental cleaning, [schedule an appointmen](http://www.livingdentalhealth.com/contact-us/)t at Living Dental Health today.
