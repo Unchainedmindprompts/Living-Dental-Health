@@ -118,6 +118,105 @@ body {
   color: var(--cream);
 }
 
+/* Article body — markdown rendered from content/articles/*.md */
+.article-prose {
+  font-family: var(--font-dm-sans), "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--charcoal-soft);
+}
+.article-prose > * + * {
+  margin-top: 1.5em;
+}
+.article-prose h2,
+.article-prose h3,
+.article-prose h4 {
+  font-family: var(--font-cormorant), "Cormorant Garamond", serif;
+  color: var(--charcoal);
+  line-height: 1.15;
+  margin-top: 1.8em;
+}
+.article-prose h2 {
+  font-size: 32px;
+}
+.article-prose h3 {
+  font-size: 26px;
+}
+.article-prose h4 {
+  font-size: 21px;
+  font-style: italic;
+}
+.article-prose p {
+  margin-top: 1.4em;
+}
+.article-prose a {
+  color: var(--sage-deep);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: opacity 0.2s ease;
+}
+.article-prose a:hover {
+  opacity: 0.7;
+}
+.article-prose strong {
+  color: var(--charcoal);
+  font-weight: 600;
+}
+.article-prose ul,
+.article-prose ol {
+  padding-left: 1.4em;
+}
+.article-prose ul {
+  list-style: disc;
+}
+.article-prose ol {
+  list-style: decimal;
+}
+.article-prose li {
+  margin-top: 0.6em;
+  padding-left: 0.3em;
+}
+.article-prose li::marker {
+  color: var(--sage);
+}
+.article-prose img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  margin: 2em 0;
+}
+.article-prose blockquote {
+  border-left: 2px solid var(--sage);
+  padding-left: 1.2em;
+  font-family: var(--font-cormorant), "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 22px;
+  color: var(--charcoal);
+}
+.article-prose hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 2.5em 0;
+}
+.article-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+.article-prose th,
+.article-prose td {
+  border: 1px solid var(--line);
+  padding: 0.6em 0.8em;
+  text-align: left;
+}
+.article-prose th {
+  background: var(--cream-deep);
+  font-weight: 600;
+  color: var(--charcoal);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

@@ -755,3 +755,57 @@ export const articlesPageSchema: JsonLdGraph = {
     },
   ],
 };
+
+export function articlePostSchema(input: {
+  slug: string;
+  title: string;
+  excerpt: string;
+  datePublished: string;
+  dateModified: string;
+  featuredImage: string;
+}): JsonLdGraph {
+  const url = `https://www.livingdentalhealth.com/articles/${input.slug}`;
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${url}#breadcrumbs`,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.livingdentalhealth.com/",
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Articles",
+            "item": "https://www.livingdentalhealth.com/articles",
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": input.title,
+            "item": url,
+          },
+        ],
+      },
+      {
+        "@type": "BlogPosting",
+        "@id": `${url}#article`,
+        "headline": input.title,
+        "description": input.excerpt,
+        "datePublished": input.datePublished,
+        "dateModified": input.dateModified,
+        "url": url,
+        "image": input.featuredImage,
+        "mainEntityOfPage": { "@id": url },
+        "isPartOf": { "@id": "https://www.livingdentalhealth.com/articles#blog" },
+        "author": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+        "publisher": { "@id": "https://www.livingdentalhealth.com/#business" },
+      },
+    ],
+  };
+}
