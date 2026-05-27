@@ -1,0 +1,14 @@
+{
+  "name": "ldh-wp-migration",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "One-off: migrate livingdentalhealth.com WordPress posts to local markdown.",
+  "scripts": {
+    "migrate": "node migrate.mjs"
+  },
+  "dependencies": {
+    "turndown": "^7.2.0",
+    "turndown-plugin-gfm": "^1.0.2"
+  }
+}
