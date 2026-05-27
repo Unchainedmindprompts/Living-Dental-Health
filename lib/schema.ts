@@ -720,3 +720,38 @@ export const patientInfoPageSchema: JsonLdGraph = {
     },
   ],
 };
+
+export const articlesPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.livingdentalhealth.com/articles#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Articles",
+          "item": "https://www.livingdentalhealth.com/articles",
+        },
+      ],
+    },
+    {
+      "@type": "Blog",
+      "@id": "https://www.livingdentalhealth.com/articles#blog",
+      "name": "Living Dental Health Articles",
+      "url": "https://www.livingdentalhealth.com/articles",
+      "description":
+        "Practical dental health information from Dr. Andy Engel and the Living Dental Health team in Bend, Oregon.",
+      "publisher": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+  ],
+};
