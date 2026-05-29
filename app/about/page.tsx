@@ -133,7 +133,7 @@ export default function AboutPage() {
       </section>
 
       {/* CREDENTIALS */}
-      <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">
+      <section className="mx-auto max-w-[1320px] px-6 pb-24 sm:pb-32">
         <div
           className="mx-auto max-w-[960px] border-t pt-12 sm:pt-14"
           style={{ borderColor: "rgba(28,26,23,0.18)" }}
@@ -156,27 +156,6 @@ export default function AboutPage() {
               </div>
             ))}
           </dl>
-        </div>
-      </section>
-
-      {/* TEAM PHOTO */}
-      <section className="mx-auto max-w-[1320px] px-6 pb-24 sm:pb-32">
-        <div className="mx-auto max-w-[960px]">
-          <p
-            className="mb-5 text-center font-inter text-[11px] font-light uppercase tracking-widest"
-            style={{ color: SAGE }}
-          >
-            The Team
-          </p>
-          <div className="relative aspect-[4/3] w-full overflow-hidden bg-cream-deep">
-            <Image
-              src="/team.webp"
-              alt="The Living Dental Health team — Dr. Andy Engel with the dental hygienists and front-office team at the Bend, Oregon office"
-              fill
-              sizes="(min-width: 1024px) 960px, 100vw"
-              className="object-cover object-center"
-            />
-          </div>
         </div>
       </section>
     </main>
