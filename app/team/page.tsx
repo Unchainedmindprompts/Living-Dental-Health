@@ -312,9 +312,12 @@ export default function TeamPage() {
             </h2>
             <div className="mt-10 grid gap-x-10 gap-y-12 sm:grid-cols-2">
               {TEAM.map((m) => (
-                <div key={m.name}>
+                <div
+                  key={m.name}
+                  className="overflow-hidden rounded-xl bg-cream-deep"
+                >
                   {m.image ? (
-                    <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-cream-deep">
+                    <div className="relative aspect-[4/3] w-full">
                       <Image
                         src={m.image}
                         alt={m.imageAlt ?? m.name}
@@ -325,7 +328,7 @@ export default function TeamPage() {
                     </div>
                   ) : (
                     <div
-                      className="relative flex aspect-[4/3] w-full items-center justify-center overflow-hidden rounded-xl border border-dashed bg-cream-deep"
+                      className="relative flex aspect-[4/3] w-full items-center justify-center border border-dashed"
                       style={{ borderColor: SAGE_LABEL }}
                     >
                       <p
@@ -336,18 +339,23 @@ export default function TeamPage() {
                       </p>
                     </div>
                   )}
-                  <h3 className="mt-5 font-serif text-[24px] leading-tight text-charcoal sm:text-[28px]">
-                    {m.name}
-                  </h3>
-                  <p
-                    className="mt-1 font-inter text-[12px] font-light uppercase tracking-[0.18em]"
-                    style={{ color: SAGE }}
+                  <div
+                    className="px-6 pb-7 pt-6 sm:px-7 sm:pb-8 sm:pt-7"
+                    style={{ backgroundColor: "#EAE0CF" }}
                   >
-                    {m.role}
-                  </p>
-                  <p className="mt-3 font-inter text-[14px] font-light leading-[1.7] text-charcoal-soft sm:text-[15px]">
-                    {m.bio}
-                  </p>
+                    <h3 className="font-serif text-[24px] leading-tight text-charcoal sm:text-[28px]">
+                      {m.name}
+                    </h3>
+                    <p
+                      className="mt-1 font-inter text-[12px] font-light uppercase tracking-[0.18em]"
+                      style={{ color: SAGE }}
+                    >
+                      {m.role}
+                    </p>
+                    <p className="mt-3 font-inter text-[14px] font-light leading-[1.7] text-charcoal-soft sm:text-[15px]">
+                      {m.bio}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>
