@@ -31,7 +31,7 @@ export default function ServiceCard({
         />
       </div>
 
-      <div className="flex flex-col items-start gap-5 px-5 pt-6 pb-6 sm:gap-6 sm:px-7 sm:pt-7 sm:pb-8">
+      <div className="service-card-body flex flex-col items-start gap-5 px-5 pt-6 pb-6 sm:gap-6 sm:px-7 sm:pt-7 sm:pb-8">
         <h3 className="font-serif-italic text-[28px] leading-[1.05] text-charcoal sm:text-[34px]">
           {title}
         </h3>
