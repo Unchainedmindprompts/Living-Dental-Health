@@ -75,12 +75,6 @@ export default function Nav() {
           aria-label="Quick links"
           className="hidden items-center gap-5 md:flex"
         >
-          <a href="#" className="transition-opacity hover:opacity-70">
-            Smile Gallery
-          </a>
-          <span aria-hidden className="opacity-40">
-            |
-          </span>
           <a
             href="tel:5415505311"
             className="transition-opacity hover:opacity-70"
