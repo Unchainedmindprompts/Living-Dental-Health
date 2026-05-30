@@ -375,7 +375,7 @@ export default function TeamPage() {
               {REVIEWS.map((r) => (
                 <figure
                   key={r.author}
-                  className="flex flex-col gap-5 border-l-2 bg-cream p-7"
+                  className="flex flex-col gap-5 border-l-2 bg-charcoal p-7"
                   style={{ borderColor: SAGE }}
                 >
                   <span
@@ -384,10 +384,10 @@ export default function TeamPage() {
                   >
                     ★★★★★
                   </span>
-                  <blockquote className="font-serif-italic text-[19px] leading-[1.4] text-charcoal">
+                  <blockquote className="font-serif-italic text-[19px] leading-[1.4] text-cream-soft">
                     “{r.quote}”
                   </blockquote>
-                  <figcaption className="mt-auto font-inter text-[12px] font-light uppercase tracking-[0.16em] text-warm-gray">
+                  <figcaption className="mt-auto font-inter text-[12px] font-light uppercase tracking-[0.16em] text-cream-soft/65">
                     {r.author} <span style={{ color: SAGE_LABEL }}>·</span>{" "}
                     Google
                   </figcaption>
