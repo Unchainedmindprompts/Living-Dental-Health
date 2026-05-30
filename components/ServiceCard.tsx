@@ -8,15 +8,17 @@ export default function ServiceCard({
   items,
   image,
   imageAlt,
+  href,
 }: {
   title: string;
   items: Item[];
   image: string;
   imageAlt: string;
+  href: string;
 }) {
   return (
     <Link
-      href="/contact"
+      href={href}
       className="service-card group flex w-full flex-col overflow-hidden text-left"
     >
       <div className="relative aspect-[4/3] w-full overflow-hidden bg-cream-deep">

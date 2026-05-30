@@ -8,6 +8,7 @@ import { homeSchema, sanitizeJsonLd } from "@/lib/schema";
 const SERVICES = [
   {
     title: "Preventive Dentistry",
+    href: "/general-dentistry",
     image: "/service-preventive.webp",
     imageAlt:
       "A dental hygienist at Living Dental Health caring for a patient in the cleaning chair",
@@ -19,6 +20,7 @@ const SERVICES = [
   },
   {
     title: "Cosmetic Dentistry",
+    href: "/cosmetic-dentistry",
     image: "/service-cosmetic.webp",
     imageAlt:
       "A Living Dental Health patient laughing over coffee in Bend, Oregon",
@@ -30,6 +32,7 @@ const SERVICES = [
   },
   {
     title: "Oral Surgery",
+    href: "/implants-surgery",
     image: "/service-implants.webp",
     imageAlt:
       "Dr. Andy Engel consulting with a patient about oral surgery and dental implants",
@@ -162,6 +165,7 @@ export default function HomePage() {
                 items={s.items}
                 image={s.image}
                 imageAlt={s.imageAlt}
+                href={s.href}
               />
             ))}
           </div>
