@@ -15,14 +15,12 @@ const ABOUT: Link[] = [
   { label: "Meet Dr. Engel", href: "/about" },
   { label: "The Team", href: "/team" },
   { label: "Articles", href: "/articles" },
-  { label: "Contact", href: "/contact" },
 ];
 
 const PATIENT: Link[] = [
   { label: "New Patients", href: "/patient-info" },
   { label: "Insurance & Financing", href: "/patient-info#insurance" },
   { label: "Post-Op Instructions", href: "/patient-info/post-op" },
-  { label: "Contact", href: "/contact" },
 ];
 
 const COLUMNS: { label: string; items: Link[] }[] = [
@@ -221,6 +219,36 @@ export default function Nav() {
             </div>
           ))}
         </div>
+
+        {/* Contact CTA — centered along the bottom; mirrors the top-bar pill */}
+        {!onContactPage && (
+          <div
+            className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-center px-6 pb-16 sm:pb-20"
+            style={{
+              opacity: revealed ? 1 : 0,
+              transform: revealed ? "translateY(0)" : "translateY(10px)",
+              transition: "opacity 500ms ease-out, transform 500ms ease-out",
+              transitionDelay: revealed ? "700ms" : "0ms",
+            }}
+          >
+            <a
+              href="/contact"
+              onClick={() => setOpen(false)}
+              className="pointer-events-auto inline-flex items-center rounded-full border px-7 py-3 font-inter text-[12px] uppercase tracking-[0.2em] transition-colors sm:px-9 sm:py-3.5 sm:text-[13px]"
+              style={{ borderColor: CREAM, color: CREAM }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = CREAM;
+                e.currentTarget.style.color = SAGE_DEEP;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "transparent";
+                e.currentTarget.style.color = CREAM;
+              }}
+            >
+              Contact
+            </a>
+          </div>
+        )}
 
         {/* Est. 2013 — bottom right, balances brand top-left */}
         <div
