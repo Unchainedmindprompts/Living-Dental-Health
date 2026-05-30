@@ -62,8 +62,12 @@ export default function Nav() {
     <>
       {/* UTILITY BAR */}
       <div
-        className="fixed inset-x-0 top-0 z-50 flex h-9 items-center justify-between px-4 font-inter text-[11px] font-light uppercase tracking-widest sm:px-6"
-        style={{ backgroundColor: SAGE, color: CREAM }}
+        className="fixed inset-x-0 top-0 z-50 flex h-9 items-center justify-between border-b px-4 font-inter text-[11px] font-light uppercase tracking-widest sm:px-6"
+        style={{
+          backgroundColor: SAGE,
+          color: CREAM,
+          borderBottomColor: CHARCOAL,
+        }}
       >
         <a
           href="/"
