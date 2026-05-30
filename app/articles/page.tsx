@@ -30,7 +30,7 @@ function ArticleCard({ slug, title, datePublished, excerpt, featuredImage }: Art
           />
         </div>
       ) : null}
-      <div className="flex flex-1 flex-col gap-3 px-7 pt-6 pb-7">
+      <div className="service-card-body flex flex-1 flex-col gap-3 px-7 pt-6 pb-7">
         <p className="eyebrow">{formatDate(datePublished)}</p>
         <h2 className="font-serif-italic text-[25px] leading-[1.12] text-charcoal sm:text-[28px]">
           {title}

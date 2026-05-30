@@ -15,14 +15,12 @@ const ABOUT: Link[] = [
   { label: "Meet Dr. Engel", href: "/about" },
   { label: "The Team", href: "/team" },
   { label: "Articles", href: "/articles" },
-  { label: "Contact", href: "/contact" },
 ];
 
 const PATIENT: Link[] = [
   { label: "New Patients", href: "/patient-info" },
   { label: "Insurance & Financing", href: "/patient-info#insurance" },
   { label: "Post-Op Instructions", href: "/patient-info/post-op" },
-  { label: "Contact", href: "/contact" },
 ];
 
 const COLUMNS: { label: string; items: Link[] }[] = [
@@ -64,8 +62,12 @@ export default function Nav() {
     <>
       {/* UTILITY BAR */}
       <div
-        className="fixed inset-x-0 top-0 z-50 flex h-9 items-center justify-between px-4 font-inter text-[11px] font-light uppercase tracking-widest sm:px-6"
-        style={{ backgroundColor: SAGE, color: CREAM }}
+        className="fixed inset-x-0 top-0 z-50 flex h-9 items-center justify-between border-b px-4 font-inter text-[11px] font-light uppercase tracking-widest sm:px-6"
+        style={{
+          backgroundColor: SAGE,
+          color: CREAM,
+          borderBottomColor: CHARCOAL,
+        }}
       >
         <a
           href="/"
@@ -77,12 +79,6 @@ export default function Nav() {
           aria-label="Quick links"
           className="hidden items-center gap-5 md:flex"
         >
-          <a href="#" className="transition-opacity hover:opacity-70">
-            Smile Gallery
-          </a>
-          <span aria-hidden className="opacity-40">
-            |
-          </span>
           <a
             href="tel:5415505311"
             className="transition-opacity hover:opacity-70"
@@ -108,7 +104,7 @@ export default function Nav() {
           onClick={() => setOpen(true)}
           aria-label="Open menu"
           className="group flex items-center gap-3 font-inter text-[14px] font-light uppercase tracking-widest sm:gap-4 sm:text-[16px]"
-          style={{ color: CHARCOAL }}
+          style={{ color: onContactPage ? CREAM : CHARCOAL }}
         >
           <span
             aria-hidden
@@ -221,6 +217,36 @@ export default function Nav() {
             </div>
           ))}
         </div>
+
+        {/* Contact CTA — centered along the bottom; mirrors the top-bar pill */}
+        {!onContactPage && (
+          <div
+            className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-center px-6 pb-16 sm:pb-20"
+            style={{
+              opacity: revealed ? 1 : 0,
+              transform: revealed ? "translateY(0)" : "translateY(10px)",
+              transition: "opacity 500ms ease-out, transform 500ms ease-out",
+              transitionDelay: revealed ? "700ms" : "0ms",
+            }}
+          >
+            <a
+              href="/contact"
+              onClick={() => setOpen(false)}
+              className="pointer-events-auto inline-flex items-center rounded-full border px-7 py-3 font-inter text-[12px] uppercase tracking-[0.2em] transition-colors sm:px-9 sm:py-3.5 sm:text-[13px]"
+              style={{ borderColor: CREAM, color: CREAM }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = CREAM;
+                e.currentTarget.style.color = SAGE_DEEP;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "transparent";
+                e.currentTarget.style.color = CREAM;
+              }}
+            >
+              Contact
+            </a>
+          </div>
+        )}
 
         {/* Est. 2013 — bottom right, balances brand top-left */}
         <div

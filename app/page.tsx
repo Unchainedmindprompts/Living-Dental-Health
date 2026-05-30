@@ -1,13 +1,12 @@
 import Image from "next/image";
-import BookingProvider from "@/components/BookingProvider";
 import Nav from "@/components/Nav";
-import StickyBook from "@/components/StickyBook";
 import ServiceCard from "@/components/ServiceCard";
 import { homeSchema, sanitizeJsonLd } from "@/lib/schema";
 
 const SERVICES = [
   {
     title: "Preventive Dentistry",
+    href: "/general-dentistry",
     image: "/service-preventive.webp",
     imageAlt:
       "A dental hygienist at Living Dental Health caring for a patient in the cleaning chair",
@@ -19,6 +18,7 @@ const SERVICES = [
   },
   {
     title: "Cosmetic Dentistry",
+    href: "/cosmetic-dentistry",
     image: "/service-cosmetic.webp",
     imageAlt:
       "A Living Dental Health patient laughing over coffee in Bend, Oregon",
@@ -30,6 +30,7 @@ const SERVICES = [
   },
   {
     title: "Oral Surgery",
+    href: "/implants-surgery",
     image: "/service-implants.webp",
     imageAlt:
       "Dr. Andy Engel consulting with a patient about oral surgery and dental implants",
@@ -57,7 +58,7 @@ const TRUST = [
 
 export default function HomePage() {
   return (
-    <BookingProvider>
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -75,7 +76,7 @@ export default function HomePage() {
           <div className="mt-4 flex items-center justify-center gap-2 sm:gap-3">
             <LeafToothMark />
             <h1 className="font-serif text-[32px] leading-none text-charcoal sm:text-[44px] lg:text-[56px]">
-              Bend&rsquo;s dentist since 1998.
+              Bend&rsquo;s Dentist Since 1998.
             </h1>
           </div>
           <p className="mx-auto mt-6 max-w-[640px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:mt-8 sm:text-[17px]">
@@ -102,20 +103,30 @@ export default function HomePage() {
           <div className="pointer-events-none absolute inset-0 hidden sm:block">
             <div className="mx-auto h-full max-w-[1320px] px-6">
               <div className="flex h-full items-center">
-                <div className="w-full max-w-[420px] bg-cream/90 p-7 backdrop-blur-[2px]">
-                  <p className="eyebrow mb-4">— why it works —</p>
-                  <p className="font-serif-italic text-[24px] leading-[1.25] text-charcoal lg:text-[28px]">
-                    “28 years. 4.9 stars. The same dentist, the same town, the same commitment.”
+                <div className="w-full max-w-[420px] bg-charcoal/90 p-7 backdrop-blur-[2px]">
+                  <p
+                    className="eyebrow mb-4"
+                    style={{ color: "rgba(245,240,232,0.7)" }}
+                  >
+                    — why it works —
+                  </p>
+                  <p className="font-serif-italic text-[24px] leading-[1.25] text-cream-soft lg:text-[28px]">
+                    “28 years. 4.9 Stars. The same Dentist, the same town, the same commitment.”
                   </p>
                 </div>
               </div>
             </div>
           </div>
           {/* stacked quote — phone only, sits below the photo so the image isn't covered */}
-          <div className="border-b border-line bg-cream-deep px-5 py-8 text-center sm:hidden">
-            <p className="eyebrow mb-3">— why it works —</p>
-            <p className="font-serif-italic text-[22px] leading-[1.3] text-charcoal">
-              “28 years. 4.9 stars. The same dentist, the same town, the same commitment.”
+          <div className="bg-charcoal px-5 py-8 text-center sm:hidden">
+            <p
+              className="eyebrow mb-3"
+              style={{ color: "rgba(245,240,232,0.7)" }}
+            >
+              — why it works —
+            </p>
+            <p className="font-serif-italic text-[22px] leading-[1.3] text-cream-soft">
+              “28 years. 4.9 Stars. The same Dentist, the same town, the same commitment.”
             </p>
           </div>
         </section>
@@ -162,6 +173,7 @@ export default function HomePage() {
                 items={s.items}
                 image={s.image}
                 imageAlt={s.imageAlt}
+                href={s.href}
               />
             ))}
           </div>
@@ -229,8 +241,11 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* TRUST BAR */}
-        <section className="border-y border-line">
+        {/* TRUST BAR — mocha band bridges the cream page to the dark footer */}
+        <section
+          className="border-y border-line"
+          style={{ backgroundColor: "#EAE0CF" }}
+        >
           <div className="mx-auto grid max-w-[1320px] grid-cols-2 md:grid-cols-4">
             {TRUST.map((t, i) => (
               <div
@@ -304,10 +319,8 @@ export default function HomePage() {
             </div>
           </div>
         </footer>
-
-        <StickyBook />
       </main>
-    </BookingProvider>
+    </>
   );
 }
 
