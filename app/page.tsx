@@ -105,9 +105,14 @@ export default function HomePage() {
           <div className="pointer-events-none absolute inset-0 hidden sm:block">
             <div className="mx-auto h-full max-w-[1320px] px-6">
               <div className="flex h-full items-center">
-                <div className="w-full max-w-[420px] bg-cream/90 p-7 backdrop-blur-[2px]">
-                  <p className="eyebrow mb-4">— why it works —</p>
-                  <p className="font-serif-italic text-[24px] leading-[1.25] text-charcoal lg:text-[28px]">
+                <div className="w-full max-w-[420px] bg-charcoal/90 p-7 backdrop-blur-[2px]">
+                  <p
+                    className="eyebrow mb-4"
+                    style={{ color: "rgba(245,240,232,0.7)" }}
+                  >
+                    — why it works —
+                  </p>
+                  <p className="font-serif-italic text-[24px] leading-[1.25] text-cream-soft lg:text-[28px]">
                     “28 years. 4.9 stars. The same dentist, the same town, the same commitment.”
                   </p>
                 </div>
@@ -115,9 +120,14 @@ export default function HomePage() {
             </div>
           </div>
           {/* stacked quote — phone only, sits below the photo so the image isn't covered */}
-          <div className="border-b border-line bg-cream-deep px-5 py-8 text-center sm:hidden">
-            <p className="eyebrow mb-3">— why it works —</p>
-            <p className="font-serif-italic text-[22px] leading-[1.3] text-charcoal">
+          <div className="bg-charcoal px-5 py-8 text-center sm:hidden">
+            <p
+              className="eyebrow mb-3"
+              style={{ color: "rgba(245,240,232,0.7)" }}
+            >
+              — why it works —
+            </p>
+            <p className="font-serif-italic text-[22px] leading-[1.3] text-cream-soft">
               “28 years. 4.9 stars. The same dentist, the same town, the same commitment.”
             </p>
           </div>
