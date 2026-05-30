@@ -233,8 +233,11 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* TRUST BAR */}
-        <section className="border-y border-line">
+        {/* TRUST BAR — mocha band bridges the cream page to the dark footer */}
+        <section
+          className="border-y border-line"
+          style={{ backgroundColor: "#EAE0CF" }}
+        >
           <div className="mx-auto grid max-w-[1320px] grid-cols-2 md:grid-cols-4">
             {TRUST.map((t, i) => (
               <div
