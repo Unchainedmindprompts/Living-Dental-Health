@@ -1,7 +1,5 @@
 import Image from "next/image";
-import BookingProvider from "@/components/BookingProvider";
 import Nav from "@/components/Nav";
-import StickyBook from "@/components/StickyBook";
 import ServiceCard from "@/components/ServiceCard";
 import { homeSchema, sanitizeJsonLd } from "@/lib/schema";
 
@@ -60,7 +58,7 @@ const TRUST = [
 
 export default function HomePage() {
   return (
-    <BookingProvider>
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -73,12 +71,12 @@ export default function HomePage() {
         {/* HEADER — wordmark */}
         <header className="mx-auto max-w-[1320px] px-6 pt-10 pb-8 text-center sm:pt-14 sm:pb-10">
           <p className="font-serif-italic text-[13px] text-warm-gray sm:text-[15px]">
-            — a private dental Studio —
+            — a private dental studio —
           </p>
           <div className="mt-4 flex items-center justify-center gap-2 sm:gap-3">
             <LeafToothMark />
             <h1 className="font-serif text-[32px] leading-none text-charcoal sm:text-[44px] lg:text-[56px]">
-              Bend&rsquo;s Dentist since 1998.
+              Bend&rsquo;s Dentist Since 1998.
             </h1>
           </div>
           <p className="mx-auto mt-6 max-w-[640px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:mt-8 sm:text-[17px]">
@@ -321,10 +319,8 @@ export default function HomePage() {
             </div>
           </div>
         </footer>
-
-        <StickyBook />
       </main>
-    </BookingProvider>
+    </>
   );
 }
 
