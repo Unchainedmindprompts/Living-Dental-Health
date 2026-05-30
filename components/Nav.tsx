@@ -106,7 +106,7 @@ export default function Nav() {
           onClick={() => setOpen(true)}
           aria-label="Open menu"
           className="group flex items-center gap-3 font-inter text-[14px] font-light uppercase tracking-widest sm:gap-4 sm:text-[16px]"
-          style={{ color: CHARCOAL }}
+          style={{ color: onContactPage ? CREAM : CHARCOAL }}
         >
           <span
             aria-hidden
