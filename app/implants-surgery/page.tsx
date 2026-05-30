@@ -169,11 +169,11 @@ export default function ImplantsSurgeryPage() {
           <section
             key={s.id}
             id={s.id}
-            className="mx-auto max-w-[1320px] scroll-mt-[120px] px-6 pb-20 sm:pb-24"
+            className="mx-auto max-w-[1320px] scroll-mt-[120px] px-6 pb-12 sm:pb-16"
           >
             <div
-              className="mx-auto max-w-[1100px] border-t pt-12 sm:pt-14"
-              style={{ borderColor: "rgba(28,26,23,0.18)" }}
+              className="mx-auto max-w-[1100px] rounded-xl px-6 py-10 sm:px-10 sm:py-12 md:px-14 md:py-14"
+              style={{ backgroundColor: "#EAE0CF" }}
             >
               <div className="grid gap-6 lg:grid-cols-[1fr_1.5fr] lg:gap-16">
                 <div>
