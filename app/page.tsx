@@ -113,7 +113,7 @@ export default function HomePage() {
                     — why it works —
                   </p>
                   <p className="font-serif-italic text-[24px] leading-[1.25] text-cream-soft lg:text-[28px]">
-                    “28 years. 4.9 stars. The same dentist, the same town, the same commitment.”
+                    “28 years. 4.9 Stars. The same Dentist, the same town, the same commitment.”
                   </p>
                 </div>
               </div>
@@ -128,7 +128,7 @@ export default function HomePage() {
               — why it works —
             </p>
             <p className="font-serif-italic text-[22px] leading-[1.3] text-cream-soft">
-              “28 years. 4.9 stars. The same dentist, the same town, the same commitment.”
+              “28 years. 4.9 Stars. The same Dentist, the same town, the same commitment.”
             </p>
           </div>
         </section>
