@@ -89,7 +89,7 @@ export default function HomePage() {
 
         {/* HERO */}
         <section className="relative">
-          <div className="relative aspect-[4/3] w-full overflow-hidden bg-cream-deep sm:aspect-[3/2] lg:aspect-[16/9] xl:aspect-[1920/900]">
+          <div className="relative aspect-[4/3] w-full overflow-hidden bg-cream-deep sm:aspect-[3/2] lg:aspect-[16/9] xl:aspect-[1920/900] xl:max-h-[760px]">
             <Image
               src="/hero-couple.webp"
               alt="A relaxed couple smiling in soft Bend, Oregon light"

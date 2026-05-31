@@ -109,7 +109,7 @@ export default function PatientInfoPage() {
             </div>
           </div>
 
-          <div className="relative h-[320px] w-full overflow-hidden sm:h-[460px] lg:h-[560px]">
+          <div className="relative h-[320px] w-full overflow-hidden sm:h-[460px] lg:h-[55vh] lg:min-h-[560px] lg:max-h-[760px]">
             <Image
               src="/patient-info-hero.webp"
               alt="Dr. Andy Engel and a team member chatting with a relaxed patient at Living Dental Health in Bend, Oregon"
