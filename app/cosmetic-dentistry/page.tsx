@@ -164,7 +164,7 @@ export default function CosmeticDentistryPage() {
             </div>
           </div>
 
-          <div className="relative h-[380px] w-full overflow-hidden sm:h-[460px] lg:h-[560px]">
+          <div className="relative h-[380px] w-full overflow-hidden sm:h-[460px] lg:h-[55vh] lg:min-h-[560px] lg:max-h-[760px]">
             <Image
               src="/cosmetic-hero.webp"
               alt="Dr. Andy Engel discussing cosmetic dentistry options with a patient at Living Dental Health in Bend, Oregon"

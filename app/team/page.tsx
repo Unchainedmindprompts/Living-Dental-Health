@@ -151,7 +151,7 @@ export default function TeamPage() {
             </div>
           </div>
 
-          <div className="relative h-[320px] w-full overflow-hidden sm:h-[460px] lg:h-[560px]">
+          <div className="relative h-[320px] w-full overflow-hidden sm:h-[460px] lg:h-[55vh] lg:min-h-[560px] lg:max-h-[760px]">
             <Image
               src="/team-hero.png"
               alt="The Living Dental Health team — Dr. Andy Engel with the front-office team and dental hygienists at the Bend, Oregon office"
