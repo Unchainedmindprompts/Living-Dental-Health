@@ -1,6 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import Nav from "@/components/Nav";
 import ServiceCard from "@/components/ServiceCard";
+import ArticleCard from "@/components/ArticleCard";
+import { getAllArticles } from "@/lib/articles";
 import { homeSchema, sanitizeJsonLd } from "@/lib/schema";
 
 const SERVICES = [
@@ -57,6 +60,8 @@ const TRUST = [
 ];
 
 export default function HomePage() {
+  const latestArticles = getAllArticles().slice(0, 3);
+
   return (
     <>
       <script
@@ -176,6 +181,49 @@ export default function HomePage() {
                 href={s.href}
               />
             ))}
+          </div>
+        </section>
+
+        {/* ARTICLES TEASER */}
+        <section
+          id="articles-teaser"
+          className="mx-auto max-w-[1320px] px-5 pt-6 pb-14 sm:px-6 sm:pt-10 sm:pb-20"
+        >
+          <div className="text-center">
+            <p className="eyebrow">— from the articles —</p>
+            <p className="mx-auto mt-5 max-w-[520px] font-serif-italic text-[20px] leading-[1.35] text-charcoal sm:text-[22px]">
+              Practical dental health, written down by Dr. Engel.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-4 sm:mt-12 sm:gap-6 md:grid-cols-3">
+            {latestArticles.map((a) => (
+              <ArticleCard key={a.slug} {...a} />
+            ))}
+          </div>
+          <div className="mt-10 text-center sm:mt-12">
+            <Link
+              href="/articles"
+              className="group inline-flex items-center gap-2 font-inter text-[12px] uppercase tracking-[0.2em] transition-opacity hover:opacity-70 sm:text-[13px]"
+              style={{ color: "#6B7C5C" }}
+            >
+              View all articles
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                aria-hidden
+                className="transition-transform duration-300 ease-out group-hover:translate-x-0.5"
+              >
+                <path
+                  d="M3 11L11 3M11 3H4.5M11 3V9.5"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </Link>
           </div>
         </section>
 
