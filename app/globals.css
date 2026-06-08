@@ -103,11 +103,11 @@ body {
   transition: width 0.6s cubic-bezier(0.2, 0.7, 0, 1);
 }
 .service-card .service-card-body {
-  background-color: #3A3025;
+  background-color: #403328;
   transition: background-color 0.45s ease;
 }
 .service-card:hover .service-card-body {
-  background-color: #4A4032;
+  background-color: #504233;
 }
 .service-card .article-card-body {
   background-color: #1C1A17;
