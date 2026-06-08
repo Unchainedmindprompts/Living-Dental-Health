@@ -2,9 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import ServiceCard from "@/components/ServiceCard";
-import ArticleCard from "@/components/ArticleCard";
-import { getAllArticles } from "@/lib/articles";
+import { formatDate, getAllArticles } from "@/lib/articles";
 import { homeSchema, sanitizeJsonLd } from "@/lib/schema";
+
+const SAGE = "#6B7C5C";
 
 const SERVICES = [
   {
@@ -195,16 +196,50 @@ export default function HomePage() {
               Practical dental health, written down by Dr. Engel.
             </p>
           </div>
-          <div className="mt-10 grid gap-4 sm:mt-12 sm:gap-6 md:grid-cols-3">
+          <div className="mt-12 grid divide-y divide-line md:grid-cols-3 md:divide-x md:divide-y-0 sm:mt-14">
             {latestArticles.map((a) => (
-              <ArticleCard key={a.slug} {...a} />
+              <Link
+                key={a.slug}
+                href={`/articles/${a.slug}`}
+                className="group block py-8 first:pt-0 last:pb-0 md:px-8 md:py-2 md:first:pt-0 md:first:pl-0 md:last:pr-0"
+              >
+                <p className="eyebrow">{formatDate(a.datePublished)}</p>
+                <h3 className="mt-4 font-serif-italic text-[24px] leading-[1.15] text-charcoal transition-opacity group-hover:opacity-80 sm:text-[26px]">
+                  {a.title}
+                </h3>
+                <p className="mt-4 line-clamp-3 font-inter text-[14px] font-light leading-[1.7] text-charcoal-soft sm:text-[15px]">
+                  {a.excerpt}
+                </p>
+                <span
+                  className="mt-5 inline-flex items-center gap-2 font-inter text-[12px] uppercase tracking-[0.18em]"
+                  style={{ color: SAGE }}
+                >
+                  Read more
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    aria-hidden
+                    className="transition-transform duration-300 ease-out group-hover:translate-x-0.5"
+                  >
+                    <path
+                      d="M3 11L11 3M11 3H4.5M11 3V9.5"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </Link>
             ))}
           </div>
-          <div className="mt-10 text-center sm:mt-12">
+          <div className="mt-12 text-center sm:mt-14">
             <Link
               href="/articles"
               className="group inline-flex items-center gap-2 font-inter text-[12px] uppercase tracking-[0.2em] transition-opacity hover:opacity-70 sm:text-[13px]"
-              style={{ color: "#6B7C5C" }}
+              style={{ color: SAGE }}
             >
               View all articles
               <svg
