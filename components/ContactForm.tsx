@@ -143,12 +143,12 @@ export default function ContactForm() {
           type="submit"
           disabled={submitting}
           className="inline-flex items-center rounded-full px-9 py-3.5 font-inter text-[12px] uppercase tracking-[0.2em] transition-colors disabled:cursor-not-allowed disabled:opacity-60 sm:text-[13px]"
-          style={{ backgroundColor: "#403328", color: CREAM }}
+          style={{ backgroundColor: "#3A3025", color: CREAM }}
           onMouseEnter={(e) => {
-            if (!submitting) e.currentTarget.style.backgroundColor = "#504233";
+            if (!submitting) e.currentTarget.style.backgroundColor = "#4A4032";
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = "#403328";
+            e.currentTarget.style.backgroundColor = "#3A3025";
           }}
         >
           {submitting ? "Sending…" : "Send message"}
