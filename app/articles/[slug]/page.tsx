@@ -5,7 +5,7 @@ import Nav from "@/components/Nav";
 import { articlePostSchema, sanitizeJsonLd } from "@/lib/schema";
 import { formatDate, getArticle, getArticleSlugs } from "@/lib/articles";
 
-const SAGE = "#6B7C5C";
+const SAGE = "#B6C0A6";
 const SAGE_LABEL = "#9CAF88";
 
 export const dynamicParams = false;

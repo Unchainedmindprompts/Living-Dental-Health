@@ -3,10 +3,11 @@
 import { useState } from "react";
 
 const CREAM = "#F5F0E8";
-const SAGE_DEEP = "#556649";
-const FIELD_BORDER = "rgba(245,240,232,0.45)";
-const FIELD_BORDER_FOCUS = "rgba(245,240,232,1)";
-const LABEL_COLOR = "rgba(245,240,232,0.72)";
+const SAGE_DEEP = "#95A484";
+const CHARCOAL = "#1C1A17";
+const FIELD_BORDER = "rgba(28,26,23,0.45)";
+const FIELD_BORDER_FOCUS = "rgba(28,26,23,1)";
+const LABEL_COLOR = "rgba(28,26,23,0.72)";
 
 type Status = "idle" | "submitting" | "sent" | "error";
 
@@ -51,7 +52,7 @@ export default function ContactForm() {
     return (
       <div
         className="mx-auto max-w-[560px] border px-8 py-12 text-center"
-        style={{ borderColor: FIELD_BORDER, color: CREAM }}
+        style={{ borderColor: FIELD_BORDER, color: CHARCOAL }}
         role="status"
         aria-live="polite"
       >
@@ -66,7 +67,7 @@ export default function ContactForm() {
         </p>
         <p
           className="mx-auto mt-4 max-w-[380px] font-inter text-[14px] font-light leading-[1.7]"
-          style={{ color: "rgba(245,240,232,0.8)" }}
+          style={{ color: "rgba(28,26,23,0.8)" }}
         >
           Someone from the front desk will reach out within one business day.
           For anything urgent, please call (541) 550&#8209;5311.
@@ -142,12 +143,12 @@ export default function ContactForm() {
           type="submit"
           disabled={submitting}
           className="inline-flex items-center rounded-full px-9 py-3.5 font-inter text-[12px] uppercase tracking-[0.2em] transition-colors disabled:cursor-not-allowed disabled:opacity-60 sm:text-[13px]"
-          style={{ backgroundColor: CREAM, color: SAGE_DEEP }}
+          style={{ backgroundColor: "#403328", color: CREAM }}
           onMouseEnter={(e) => {
-            if (!submitting) e.currentTarget.style.backgroundColor = "#FFFFFF";
+            if (!submitting) e.currentTarget.style.backgroundColor = "#504233";
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = CREAM;
+            e.currentTarget.style.backgroundColor = "#403328";
           }}
         >
           {submitting ? "Sending…" : "Send message"}
@@ -187,7 +188,7 @@ function Field({
   const [focused, setFocused] = useState(false);
   const borderColor = focused ? FIELD_BORDER_FOCUS : FIELD_BORDER;
   const baseInputClass =
-    "w-full bg-transparent pb-3 pt-2 font-inter text-[15px] font-light text-cream placeholder:text-cream/40 focus:outline-none disabled:opacity-60";
+    "w-full bg-transparent pb-3 pt-2 font-inter text-[15px] font-light text-charcoal placeholder:text-charcoal/40 focus:outline-none disabled:opacity-60";
 
   return (
     <label htmlFor={name} className="block">
@@ -197,7 +198,7 @@ function Field({
       >
         {label}
         {required ? (
-          <span aria-hidden style={{ marginLeft: 6, color: CREAM }}>
+          <span aria-hidden style={{ marginLeft: 6, color: CHARCOAL }}>
             *
           </span>
         ) : null}
@@ -218,7 +219,7 @@ function Field({
             required={required}
             disabled={disabled}
             className={`${baseInputClass} resize-none`}
-            style={{ color: CREAM }}
+            style={{ color: CHARCOAL }}
           />
         ) : (
           <input
@@ -233,7 +234,7 @@ function Field({
             disabled={disabled}
             autoComplete={autoComplete}
             className={baseInputClass}
-            style={{ color: CREAM }}
+            style={{ color: CHARCOAL }}
           />
         )}
       </div>

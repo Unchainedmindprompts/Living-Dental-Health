@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 
-const SAGE = "#6B7C5C";
+const SAGE = "#B6C0A6";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {
@@ -375,7 +375,7 @@ export default function TeamPage() {
               {REVIEWS.map((r) => (
                 <figure
                   key={r.author}
-                  className="flex flex-col gap-5 border-l-2 bg-charcoal p-7"
+                  className="flex flex-col gap-5 border-l-2 bg-[#403328] p-7"
                   style={{ borderColor: SAGE }}
                 >
                   <span

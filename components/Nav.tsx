@@ -29,8 +29,8 @@ const COLUMNS: { label: string; items: Link[] }[] = [
   { label: "Patient Info", items: PATIENT },
 ];
 
-const SAGE = "#6B7C5C";
-const SAGE_DEEP = "#556649";
+const SAGE = "#B6C0A6";
+const SAGE_DEEP = "#95A484";
 const CREAM = "#F5F0E8";
 const CHARCOAL = "#1C1A17";
 
@@ -65,8 +65,8 @@ export default function Nav() {
         className="fixed inset-x-0 top-0 z-50 flex h-9 items-center justify-between border-b px-4 font-inter text-[11px] font-light uppercase tracking-widest sm:px-6"
         style={{
           backgroundColor: SAGE,
-          color: CREAM,
-          borderBottomColor: CHARCOAL,
+          color: CHARCOAL,
+          borderBottomColor: "#95A484",
         }}
       >
         <a
@@ -121,7 +121,7 @@ export default function Nav() {
           <a
             href="/contact"
             className="rounded-full px-3.5 py-1.5 font-inter text-[10px] font-normal uppercase tracking-[0.16em] transition-colors sm:px-5 sm:py-2 sm:text-[12px] sm:tracking-[0.2em]"
-            style={{ backgroundColor: SAGE, color: CREAM }}
+            style={{ backgroundColor: SAGE, color: CHARCOAL }}
             onMouseEnter={(e) =>
               (e.currentTarget.style.backgroundColor = SAGE_DEEP)
             }
@@ -149,7 +149,7 @@ export default function Nav() {
           href="/"
           onClick={() => setOpen(false)}
           className="absolute left-4 top-6 z-10 font-serif text-[18px] italic leading-none transition-opacity hover:opacity-70 sm:left-8 sm:top-8 sm:text-[20px]"
-          style={{ color: CREAM }}
+          style={{ color: CHARCOAL }}
         >
           Living Dental Health
         </a>
@@ -160,7 +160,7 @@ export default function Nav() {
           onClick={() => setOpen(false)}
           aria-label="Close menu"
           className="absolute right-4 top-6 z-10 flex items-center gap-3 font-inter text-[12px] font-light uppercase tracking-widest transition-opacity hover:opacity-70 sm:right-8 sm:top-8"
-          style={{ color: CREAM }}
+          style={{ color: CHARCOAL }}
         >
           <span
             aria-hidden
@@ -189,7 +189,7 @@ export default function Nav() {
             >
               <p
                 className="mb-6 font-inter text-[11px] font-light uppercase tracking-widest"
-                style={{ color: "rgba(245,240,232,0.7)" }}
+                style={{ color: "rgba(28,26,23,0.7)" }}
               >
                 {col.label}
               </p>
@@ -200,14 +200,14 @@ export default function Nav() {
                       href={item.href}
                       onClick={() => setOpen(false)}
                       className="group relative inline-block font-serif text-[32px] font-light leading-[1.1] sm:text-[38px] md:text-[42px]"
-                      style={{ color: CREAM }}
+                      style={{ color: CHARCOAL }}
                     >
                       <span className="relative inline-block">
                         {item.label}
                         <span
                           aria-hidden
                           className="pointer-events-none absolute -bottom-1 left-0 block h-px w-0 transition-[width] duration-300 ease-out group-hover:w-full"
-                          style={{ backgroundColor: CREAM }}
+                          style={{ backgroundColor: CHARCOAL }}
                         />
                       </span>
                     </a>
@@ -233,7 +233,7 @@ export default function Nav() {
               href="/contact"
               onClick={() => setOpen(false)}
               className="pointer-events-auto inline-flex items-center rounded-full border px-7 py-3 font-inter text-[12px] uppercase tracking-[0.2em] transition-colors sm:px-9 sm:py-3.5 sm:text-[13px]"
-              style={{ borderColor: CREAM, color: CREAM }}
+              style={{ borderColor: CHARCOAL, color: CHARCOAL }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.backgroundColor = CREAM;
                 e.currentTarget.style.color = SAGE_DEEP;
@@ -260,7 +260,7 @@ export default function Nav() {
         >
           <p
             className="font-serif text-[20px] italic"
-            style={{ color: CREAM }}
+            style={{ color: CHARCOAL }}
           >
             Est. 2013
           </p>

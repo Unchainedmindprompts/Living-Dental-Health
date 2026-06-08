@@ -5,7 +5,7 @@ import ArticleCard from "@/components/ArticleCard";
 import { articlesPageSchema, sanitizeJsonLd } from "@/lib/schema";
 import { getAllArticles } from "@/lib/articles";
 
-const SAGE = "#6B7C5C";
+const SAGE = "#B6C0A6";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {

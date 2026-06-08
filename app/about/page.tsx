@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Nav from "@/components/Nav";
 
-const SAGE = "#6B7C5C";
+const SAGE = "#B6C0A6";
 
 export const metadata: Metadata = {
   title: "Meet Dr. Andy Engel — Living Dental Health",
