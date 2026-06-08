@@ -5,7 +5,7 @@ import ServiceCard from "@/components/ServiceCard";
 import { formatDate, getAllArticles } from "@/lib/articles";
 import { homeSchema, sanitizeJsonLd } from "@/lib/schema";
 
-const SAGE = "#6B7C5C";
+const SAGE = "#B6C0A6";
 
 const SERVICES = [
   {
