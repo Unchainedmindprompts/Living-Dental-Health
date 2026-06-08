@@ -32,18 +32,30 @@ export default function ServiceCard({
       </div>
 
       <div className="service-card-body flex flex-col items-start gap-5 px-5 pt-6 pb-6 sm:gap-6 sm:px-7 sm:pt-7 sm:pb-8">
-        <h3 className="font-serif-italic text-[28px] leading-[1.05] text-charcoal sm:text-[34px]">
+        <h3
+          className="font-serif-italic text-[28px] leading-[1.05] sm:text-[34px]"
+          style={{ color: "#F5F0E8" }}
+        >
           {title}
         </h3>
 
-        <ul className="w-full divide-y divide-rule border-t border-rule">
+        <ul
+          className="w-full divide-y border-t"
+          style={{ borderColor: "rgba(245,240,232,0.15)" }}
+        >
           {items.map((it) => (
             <li
               key={it.label}
               className="flex items-baseline justify-between gap-4 py-3 text-[14px]"
+              style={{ borderColor: "rgba(245,240,232,0.15)" }}
             >
-              <span className="text-charcoal">{it.label}</span>
-              <span className="text-warm-gray text-[12px]">{it.meta}</span>
+              <span style={{ color: "#F5F0E8" }}>{it.label}</span>
+              <span
+                className="text-[12px]"
+                style={{ color: "rgba(245,240,232,0.6)" }}
+              >
+                {it.meta}
+              </span>
             </li>
           ))}
         </ul>
