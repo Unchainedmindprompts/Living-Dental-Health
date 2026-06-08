@@ -198,56 +198,68 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* FEATURED ARTICLE — wide mocha card with portrait image */}
+          {/* FEATURED ARTICLE — full-image hero with overlaid headline */}
           {featured ? (
             <Link
               href={`/articles/${featured.slug}`}
-              className="group mt-12 grid items-center gap-8 rounded-xl bg-[#EAE0CF] p-7 transition-colors hover:bg-[#EFE6D6] sm:mt-14 sm:gap-10 sm:p-10 md:grid-cols-[1fr_320px] md:p-12 lg:grid-cols-[1fr_400px] lg:gap-14 lg:p-14"
+              className="group relative mt-12 block aspect-[4/3] w-full overflow-hidden rounded-xl sm:mt-14 sm:aspect-[2/1] md:aspect-[1916/821]"
             >
-              <div>
-                <p
-                  className="font-inter text-[11px] font-light uppercase tracking-[0.2em]"
-                  style={{ color: SAGE }}
-                >
-                  Featured &middot; {formatDate(featured.datePublished)}
-                </p>
-                <h3 className="mt-5 font-serif-italic text-[28px] leading-[1.1] text-charcoal transition-opacity group-hover:opacity-90 sm:text-[38px] md:text-[42px]">
-                  {featured.title}
-                </h3>
-                <p className="mt-5 line-clamp-3 font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:mt-6 sm:text-[16px]">
-                  {featured.excerpt}
-                </p>
-                <span
-                  className="mt-6 inline-flex items-center gap-2 font-inter text-[12px] uppercase tracking-[0.2em] sm:text-[13px]"
-                  style={{ color: SAGE }}
-                >
-                  Read featured article
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    aria-hidden
-                    className="transition-transform duration-300 ease-out group-hover:translate-x-0.5"
+              <Image
+                src="/cosmetic-secondary.webp"
+                alt=""
+                fill
+                sizes="(min-width: 1024px) 1320px, 100vw"
+                className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+              />
+              {/* readability gradient — vertical on mobile, horizontal on desktop */}
+              <div
+                aria-hidden
+                className="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/55 to-charcoal/0 md:bg-gradient-to-r md:from-charcoal/85 md:via-charcoal/45 md:to-transparent"
+              />
+              {/* text */}
+              <div className="absolute inset-0 flex flex-col justify-end p-7 sm:p-10 md:justify-center md:p-14 lg:p-20">
+                <div className="max-w-[540px]">
+                  <p
+                    className="font-inter text-[11px] font-light uppercase tracking-[0.2em]"
+                    style={{ color: "#9CAF88" }}
                   >
-                    <path
-                      d="M3 11L11 3M11 3H4.5M11 3V9.5"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </span>
-              </div>
-              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-lg bg-cream-deep md:aspect-[4/5]">
-                <Image
-                  src="/cosmetic-secondary.webp"
-                  alt=""
-                  fill
-                  sizes="(min-width: 1024px) 400px, (min-width: 768px) 320px, 100vw"
-                  className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-                />
+                    Featured &middot; {formatDate(featured.datePublished)}
+                  </p>
+                  <h3
+                    className="mt-4 font-serif-italic text-[28px] leading-[1.08] transition-opacity group-hover:opacity-95 sm:mt-5 sm:text-[36px] md:text-[44px] lg:text-[52px]"
+                    style={{ color: "#F5F0E8" }}
+                  >
+                    {featured.title}
+                  </h3>
+                  <p
+                    className="mt-4 line-clamp-3 font-inter text-[14px] font-light leading-[1.7] sm:mt-5 sm:text-[15px] md:text-[16px]"
+                    style={{ color: "rgba(245,240,232,0.85)" }}
+                  >
+                    {featured.excerpt}
+                  </p>
+                  <span
+                    className="mt-5 inline-flex items-center gap-2 font-inter text-[12px] uppercase tracking-[0.2em] sm:mt-6 sm:text-[13px]"
+                    style={{ color: "#9CAF88" }}
+                  >
+                    Read featured article
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      aria-hidden
+                      className="transition-transform duration-300 ease-out group-hover:translate-x-0.5"
+                    >
+                      <path
+                        d="M3 11L11 3M11 3H4.5M11 3V9.5"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
               </div>
             </Link>
           ) : null}
