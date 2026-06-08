@@ -110,7 +110,7 @@ export default function HomePage() {
           <div className="pointer-events-none absolute inset-0 hidden sm:block">
             <div className="mx-auto h-full max-w-[1320px] px-6">
               <div className="flex h-full items-center">
-                <div className="w-full max-w-[420px] bg-charcoal/90 p-7 backdrop-blur-[2px]">
+                <div className="w-full max-w-[420px] bg-[#403328]/90 p-7 backdrop-blur-[2px]">
                   <p
                     className="eyebrow mb-4"
                     style={{ color: "rgba(245,240,232,0.7)" }}
@@ -125,7 +125,7 @@ export default function HomePage() {
             </div>
           </div>
           {/* stacked quote — phone only, sits below the photo so the image isn't covered */}
-          <div className="bg-charcoal px-5 py-8 text-center sm:hidden">
+          <div className="bg-[#403328] px-5 py-8 text-center sm:hidden">
             <p
               className="eyebrow mb-3"
               style={{ color: "rgba(245,240,232,0.7)" }}
@@ -214,7 +214,7 @@ export default function HomePage() {
               {/* readability gradient — vertical on mobile, horizontal on desktop */}
               <div
                 aria-hidden
-                className="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/55 to-charcoal/0 md:bg-gradient-to-r md:from-charcoal/85 md:via-charcoal/45 md:to-transparent"
+                className="absolute inset-0 bg-gradient-to-t from-[#403328]/85 via-[#403328]/55 to-[#403328]/0 md:bg-gradient-to-r md:from-[#403328]/85 md:via-[#403328]/45 md:to-transparent"
               />
               {/* text */}
               <div className="absolute inset-0 flex flex-col justify-end p-7 sm:p-10 md:justify-center md:p-14 lg:p-20">
@@ -432,7 +432,7 @@ export default function HomePage() {
         </section>
 
         {/* FOOTER */}
-        <footer className="bg-charcoal text-cream-soft">
+        <footer className="bg-[#403328] text-cream-soft">
           <div className="mx-auto grid max-w-[1320px] gap-8 px-5 py-14 sm:px-6 sm:py-20 sm:gap-12 md:grid-cols-[1.2fr_1fr_1fr_1fr]">
             <div>
               <div className="flex items-center gap-3">

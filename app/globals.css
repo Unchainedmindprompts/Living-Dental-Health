@@ -110,11 +110,11 @@ body {
   background-color: #504233;
 }
 .service-card .article-card-body {
-  background-color: #1C1A17;
+  background-color: #403328;
   transition: background-color 0.45s ease;
 }
 .service-card:hover .article-card-body {
-  background-color: #2A2722;
+  background-color: #504233;
 }
 .service-card:hover::before {
   width: 100%;

@@ -66,7 +66,7 @@ export default function Nav() {
         style={{
           backgroundColor: SAGE,
           color: CHARCOAL,
-          borderBottomColor: CHARCOAL,
+          borderBottomColor: "#403328",
         }}
       >
         <a
