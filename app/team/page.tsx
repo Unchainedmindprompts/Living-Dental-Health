@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 
-const SAGE = "#B6C0A6";
+const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {

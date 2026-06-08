@@ -4,7 +4,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import { implantsSurgeryPageSchema, sanitizeJsonLd } from "@/lib/schema";
 
-const SAGE = "#B6C0A6";
+const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {
