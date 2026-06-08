@@ -198,36 +198,27 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* FEATURED ARTICLE — wide charcoal card */}
+          {/* FEATURED ARTICLE — wide mocha card */}
           {featured ? (
             <Link
               href={`/articles/${featured.slug}`}
-              className="group mt-12 block rounded-xl bg-charcoal px-7 py-9 transition-opacity sm:mt-14 sm:px-12 sm:py-14"
+              className="group mt-12 block rounded-xl bg-[#EAE0CF] px-7 py-9 transition-colors hover:bg-[#EFE6D6] sm:mt-14 sm:px-12 sm:py-14"
             >
               <p
                 className="font-inter text-[11px] font-light uppercase tracking-[0.2em]"
-                style={{ color: "#9CAF88" }}
+                style={{ color: SAGE }}
               >
-                Featured &middot;{" "}
-                <span style={{ color: "rgba(245,240,232,0.65)" }}>
-                  {formatDate(featured.datePublished)}
-                </span>
+                Featured &middot; {formatDate(featured.datePublished)}
               </p>
-              <h3
-                className="mt-5 max-w-[920px] font-serif-italic text-[28px] leading-[1.1] transition-opacity group-hover:opacity-90 sm:text-[38px] md:text-[44px]"
-                style={{ color: "#F5F0E8" }}
-              >
+              <h3 className="mt-5 max-w-[920px] font-serif-italic text-[28px] leading-[1.1] text-charcoal transition-opacity group-hover:opacity-90 sm:text-[38px] md:text-[44px]">
                 {featured.title}
               </h3>
-              <p
-                className="mt-5 max-w-[820px] line-clamp-3 font-inter text-[15px] font-light leading-[1.7] sm:mt-6 sm:text-[16px]"
-                style={{ color: "rgba(245,240,232,0.78)" }}
-              >
+              <p className="mt-5 max-w-[820px] line-clamp-3 font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:mt-6 sm:text-[16px]">
                 {featured.excerpt}
               </p>
               <span
                 className="mt-6 inline-flex items-center gap-2 font-inter text-[12px] uppercase tracking-[0.2em] sm:text-[13px]"
-                style={{ color: "#9CAF88" }}
+                style={{ color: SAGE }}
               >
                 Read featured article
                 <svg
@@ -257,29 +248,23 @@ export default function HomePage() {
                 <Link
                   key={a.slug}
                   href={`/articles/${a.slug}`}
-                  className="group flex flex-col rounded-xl bg-charcoal px-7 py-7 transition-opacity sm:px-8 sm:py-8"
+                  className="group flex flex-col rounded-xl bg-[#EAE0CF] px-7 py-7 transition-colors hover:bg-[#EFE6D6] sm:px-8 sm:py-8"
                 >
                   <p
                     className="font-inter text-[11px] font-light uppercase tracking-[0.2em]"
-                    style={{ color: "#9CAF88" }}
+                    style={{ color: SAGE }}
                   >
                     {formatDate(a.datePublished)}
                   </p>
-                  <h3
-                    className="mt-4 font-serif-italic text-[20px] leading-[1.18] transition-opacity group-hover:opacity-90 sm:text-[22px]"
-                    style={{ color: "#F5F0E8" }}
-                  >
+                  <h3 className="mt-4 font-serif-italic text-[20px] leading-[1.18] text-charcoal transition-opacity group-hover:opacity-90 sm:text-[22px]">
                     {a.title}
                   </h3>
-                  <p
-                    className="mt-3 line-clamp-3 font-inter text-[13px] font-light leading-[1.65] sm:text-[14px]"
-                    style={{ color: "rgba(245,240,232,0.72)" }}
-                  >
+                  <p className="mt-3 line-clamp-3 font-inter text-[13px] font-light leading-[1.65] text-charcoal-soft sm:text-[14px]">
                     {a.excerpt}
                   </p>
                   <span
                     className="mt-auto inline-flex items-center gap-2 pt-5 font-inter text-[11px] uppercase tracking-[0.18em]"
-                    style={{ color: "#9CAF88" }}
+                    style={{ color: SAGE }}
                   >
                     Read article
                     <svg
