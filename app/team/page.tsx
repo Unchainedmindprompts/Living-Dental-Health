@@ -375,7 +375,7 @@ export default function TeamPage() {
               {REVIEWS.map((r) => (
                 <figure
                   key={r.author}
-                  className="flex flex-col gap-5 border-l-2 bg-[#3A3025] p-7"
+                  className="flex flex-col gap-5 border-l-2 bg-[#1C1A17] p-7"
                   style={{ borderColor: SAGE }}
                 >
                   <span
