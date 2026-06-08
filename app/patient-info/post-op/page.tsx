@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 
-const SAGE = "#B6C0A6";
+const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
 const WARN = "#B5654A";
 const RULE = "rgba(28,26,23,0.18)";

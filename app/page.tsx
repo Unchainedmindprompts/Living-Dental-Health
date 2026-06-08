@@ -5,7 +5,7 @@ import ServiceCard from "@/components/ServiceCard";
 import { formatDate, getAllArticles } from "@/lib/articles";
 import { homeSchema, sanitizeJsonLd } from "@/lib/schema";
 
-const SAGE = "#B6C0A6";
+const SAGE = "#6B7C5C";
 
 const SERVICES = [
   {
@@ -110,7 +110,7 @@ export default function HomePage() {
           <div className="pointer-events-none absolute inset-0 hidden sm:block">
             <div className="mx-auto h-full max-w-[1320px] px-6">
               <div className="flex h-full items-center">
-                <div className="w-full max-w-[420px] bg-[#3A3025]/90 p-7 backdrop-blur-[2px]">
+                <div className="w-full max-w-[420px] bg-[#1C1A17]/90 p-7 backdrop-blur-[2px]">
                   <p
                     className="eyebrow mb-4"
                     style={{ color: "rgba(245,240,232,0.7)" }}
@@ -125,7 +125,7 @@ export default function HomePage() {
             </div>
           </div>
           {/* stacked quote — phone only, sits below the photo so the image isn't covered */}
-          <div className="bg-[#3A3025] px-5 py-8 text-center sm:hidden">
+          <div className="bg-[#1C1A17] px-5 py-8 text-center sm:hidden">
             <p
               className="eyebrow mb-3"
               style={{ color: "rgba(245,240,232,0.7)" }}
@@ -214,7 +214,7 @@ export default function HomePage() {
               {/* readability gradient — vertical on mobile, horizontal on desktop */}
               <div
                 aria-hidden
-                className="absolute inset-0 bg-gradient-to-t from-[#3A3025]/85 via-[#3A3025]/55 to-[#3A3025]/0 md:bg-gradient-to-r md:from-[#3A3025]/85 md:via-[#3A3025]/45 md:to-transparent"
+                className="absolute inset-0 bg-gradient-to-t from-[#1C1A17]/85 via-[#1C1A17]/55 to-[#1C1A17]/0 md:bg-gradient-to-r md:from-[#1C1A17]/85 md:via-[#1C1A17]/45 md:to-transparent"
               />
               {/* text */}
               <div className="absolute inset-0 flex flex-col justify-end p-7 sm:p-10 md:justify-center md:p-14 lg:p-20">
@@ -271,7 +271,7 @@ export default function HomePage() {
                 <Link
                   key={a.slug}
                   href={`/articles/${a.slug}`}
-                  className="group flex flex-col rounded-xl bg-[#3A3025] px-7 py-7 transition-colors hover:bg-[#4A4032] sm:px-8 sm:py-8"
+                  className="group flex flex-col rounded-xl bg-[#1C1A17] px-7 py-7 transition-colors hover:bg-[#2A2722] sm:px-8 sm:py-8"
                 >
                   <p
                     className="font-inter text-[11px] font-light uppercase tracking-[0.2em]"
@@ -432,7 +432,7 @@ export default function HomePage() {
         </section>
 
         {/* FOOTER */}
-        <footer className="bg-[#3A3025] text-cream-soft">
+        <footer className="bg-[#1C1A17] text-cream-soft">
           <div className="mx-auto grid max-w-[1320px] gap-8 px-5 py-14 sm:px-6 sm:py-20 sm:gap-12 md:grid-cols-[1.2fr_1fr_1fr_1fr]">
             <div>
               <div className="flex items-center gap-3">

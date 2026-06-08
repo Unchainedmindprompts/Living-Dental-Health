@@ -3,12 +3,11 @@ import Nav from "@/components/Nav";
 import ContactForm from "@/components/ContactForm";
 import { contactPageSchema, sanitizeJsonLd } from "@/lib/schema";
 
-const SAGE = "#B6C0A6";
-const CHARCOAL = "#1C1A17";
+const SAGE = "#6B7C5C";
 const CREAM = "#F5F0E8";
-const LABEL = "rgba(28,26,23,0.72)";
-const SOFT = "rgba(28,26,23,0.85)";
-const RULE = "rgba(28,26,23,0.18)";
+const LABEL = "rgba(245,240,232,0.72)";
+const SOFT = "rgba(245,240,232,0.85)";
+const RULE = "rgba(245,240,232,0.18)";
 
 export const metadata: Metadata = {
   title: "Contact — Living Dental Health",
@@ -27,7 +26,7 @@ export default function ContactPage() {
       />
       <main
         className="min-h-screen"
-        style={{ backgroundColor: SAGE, color: CHARCOAL }}
+        style={{ backgroundColor: SAGE, color: CREAM }}
       >
         <Nav />
 
@@ -44,7 +43,7 @@ export default function ContactPage() {
           </p>
           <h1
             className="mt-6 font-serif text-[56px] leading-[1.02] sm:text-[88px] md:text-[112px]"
-            style={{ color: CHARCOAL }}
+            style={{ color: CREAM }}
           >
             Let&rsquo;s <span className="font-serif-italic">talk.</span>
           </h1>
@@ -75,7 +74,7 @@ export default function ContactPage() {
             href="tel:+15415505311"
             aria-label="Call Living Dental Health at (541) 550-5311"
             className="mt-4 inline-block font-serif text-[34px] leading-none transition-opacity hover:opacity-80 sm:text-[44px]"
-            style={{ color: CHARCOAL, letterSpacing: "-0.01em" }}
+            style={{ color: CREAM, letterSpacing: "-0.01em" }}
           >
             (541) 550&#8209;5311
           </a>
@@ -97,7 +96,7 @@ export default function ContactPage() {
               <a
                 href="mailto:info@livingdentalhealth.com"
                 className="mt-4 inline-block font-serif-italic text-[20px] leading-tight transition-opacity hover:opacity-80 sm:text-[22px]"
-                style={{ color: CHARCOAL }}
+                style={{ color: CREAM }}
               >
                 info@livingdentalhealth.com
               </a>
@@ -112,7 +111,7 @@ export default function ContactPage() {
               </p>
               <address
                 className="mt-4 font-serif-italic text-[20px] not-italic leading-[1.35] sm:text-[22px]"
-                style={{ color: CHARCOAL }}
+                style={{ color: CREAM }}
               >
                 930 SW Yates Dr
                 <br />
@@ -129,7 +128,7 @@ export default function ContactPage() {
               </p>
               <dl
                 className="mx-auto mt-4 inline-grid grid-cols-[auto_auto] gap-x-6 gap-y-1.5 font-inter text-[14px] font-light"
-                style={{ color: CHARCOAL }}
+                style={{ color: CREAM }}
               >
                 <dt className="text-left" style={{ color: LABEL }}>
                   Mon
