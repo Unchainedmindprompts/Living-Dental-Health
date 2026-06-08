@@ -271,7 +271,7 @@ export default function HomePage() {
                 <Link
                   key={a.slug}
                   href={`/articles/${a.slug}`}
-                  className="group flex flex-col rounded-xl bg-charcoal px-7 py-7 transition-colors hover:bg-[#2A2722] sm:px-8 sm:py-8"
+                  className="group flex flex-col rounded-xl bg-[#2A2622] px-7 py-7 transition-colors hover:bg-[#3A3530] sm:px-8 sm:py-8"
                 >
                   <p
                     className="font-inter text-[11px] font-light uppercase tracking-[0.2em]"
