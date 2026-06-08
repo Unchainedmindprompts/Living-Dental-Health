@@ -61,7 +61,8 @@ const TRUST = [
 ];
 
 export default function HomePage() {
-  const latestArticles = getAllArticles().slice(0, 3);
+  const latest = getAllArticles().slice(0, 5);
+  const [featured, ...rest] = latest;
 
   return (
     <>
@@ -185,80 +186,165 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ARTICLES TEASER */}
+        {/* ARTICLES TEASER — charcoal band, 1 featured + 4 below */}
         <section
           id="articles-teaser"
-          className="mx-auto max-w-[1320px] px-5 pt-6 pb-14 sm:px-6 sm:pt-10 sm:pb-20"
+          className="bg-charcoal py-16 sm:py-24"
         >
-          <div className="text-center">
-            <p className="eyebrow">— from the articles —</p>
-            <p className="mx-auto mt-5 max-w-[520px] font-serif-italic text-[20px] leading-[1.35] text-charcoal sm:text-[22px]">
-              Practical dental health, written down by Dr. Engel.
-            </p>
-          </div>
-          <div className="mt-12 grid divide-y divide-line md:grid-cols-3 md:divide-x md:divide-y-0 sm:mt-14">
-            {latestArticles.map((a) => (
+          <div className="mx-auto max-w-[1320px] px-5 sm:px-6">
+            <div className="text-center">
+              <p
+                className="font-inter text-[11px] font-light uppercase tracking-widest"
+                style={{ color: "rgba(245,240,232,0.65)" }}
+              >
+                — from the articles —
+              </p>
+              <p
+                className="mx-auto mt-5 max-w-[520px] font-serif-italic text-[20px] leading-[1.35] sm:text-[22px]"
+                style={{ color: "#F5F0E8" }}
+              >
+                Practical dental health, written down by Dr. Engel.
+              </p>
+            </div>
+
+            {/* FEATURED ARTICLE */}
+            {featured ? (
               <Link
-                key={a.slug}
-                href={`/articles/${a.slug}`}
-                className="group block py-8 first:pt-0 last:pb-0 md:px-8 md:py-2 md:first:pt-0 md:first:pl-0 md:last:pr-0"
+                href={`/articles/${featured.slug}`}
+                className="group mt-12 grid items-center gap-6 sm:mt-16 md:grid-cols-2 md:gap-10 lg:gap-14"
               >
-                <p className="eyebrow">{formatDate(a.datePublished)}</p>
-                <h3 className="mt-4 font-serif-italic text-[24px] leading-[1.15] text-charcoal transition-opacity group-hover:opacity-80 sm:text-[26px]">
-                  {a.title}
-                </h3>
-                <p className="mt-4 line-clamp-3 font-inter text-[14px] font-light leading-[1.7] text-charcoal-soft sm:text-[15px]">
-                  {a.excerpt}
-                </p>
-                <span
-                  className="mt-5 inline-flex items-center gap-2 font-inter text-[12px] uppercase tracking-[0.18em]"
-                  style={{ color: SAGE }}
-                >
-                  Read more
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    aria-hidden
-                    className="transition-transform duration-300 ease-out group-hover:translate-x-0.5"
-                  >
-                    <path
-                      d="M3 11L11 3M11 3H4.5M11 3V9.5"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
+                {featured.featuredImage ? (
+                  <div className="aspect-[4/3] w-full overflow-hidden bg-charcoal-soft">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={featured.featuredImage}
+                      alt=""
+                      loading="lazy"
+                      className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                     />
-                  </svg>
-                </span>
+                  </div>
+                ) : null}
+                <div>
+                  <p
+                    className="font-inter text-[11px] font-light uppercase tracking-widest"
+                    style={{ color: "rgba(245,240,232,0.65)" }}
+                  >
+                    Featured &middot; {formatDate(featured.datePublished)}
+                  </p>
+                  <h3
+                    className="mt-4 font-serif-italic text-[28px] leading-[1.1] transition-opacity group-hover:opacity-85 sm:text-[36px] md:text-[42px]"
+                    style={{ color: "#F5F0E8" }}
+                  >
+                    {featured.title}
+                  </h3>
+                  <p
+                    className="mt-5 line-clamp-3 font-inter text-[15px] font-light leading-[1.7] sm:text-[16px]"
+                    style={{ color: "rgba(245,240,232,0.78)" }}
+                  >
+                    {featured.excerpt}
+                  </p>
+                  <span
+                    className="mt-6 inline-flex items-center gap-2 font-inter text-[12px] uppercase tracking-[0.2em] sm:text-[13px]"
+                    style={{ color: "#9CAF88" }}
+                  >
+                    Read featured article
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      aria-hidden
+                      className="transition-transform duration-300 ease-out group-hover:translate-x-0.5"
+                    >
+                      <path
+                        d="M3 11L11 3M11 3H4.5M11 3V9.5"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
               </Link>
-            ))}
-          </div>
-          <div className="mt-12 text-center sm:mt-14">
-            <Link
-              href="/articles"
-              className="group inline-flex items-center gap-2 font-inter text-[12px] uppercase tracking-[0.2em] transition-opacity hover:opacity-70 sm:text-[13px]"
-              style={{ color: SAGE }}
-            >
-              View all articles
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-                aria-hidden
-                className="transition-transform duration-300 ease-out group-hover:translate-x-0.5"
+            ) : null}
+
+            {/* 4-UP EDITORIAL RAIL */}
+            {rest.length > 0 ? (
+              <div className="mt-16 grid md:grid-cols-4">
+                {rest.map((a, i) => (
+                  <Link
+                    key={a.slug}
+                    href={`/articles/${a.slug}`}
+                    className={`group block py-7 md:px-6 md:py-2 ${
+                      i > 0 ? "border-t md:border-l md:border-t-0" : ""
+                    }`}
+                    style={{ borderColor: "rgba(245,240,232,0.15)" }}
+                  >
+                    <p
+                      className="font-inter text-[11px] font-light uppercase tracking-widest"
+                      style={{ color: "rgba(245,240,232,0.6)" }}
+                    >
+                      {formatDate(a.datePublished)}
+                    </p>
+                    <h3
+                      className="mt-3 font-serif-italic text-[18px] leading-[1.2] transition-opacity group-hover:opacity-80 sm:text-[20px]"
+                      style={{ color: "#F5F0E8" }}
+                    >
+                      {a.title}
+                    </h3>
+                    <span
+                      className="mt-4 inline-flex items-center gap-2 font-inter text-[11px] uppercase tracking-[0.18em]"
+                      style={{ color: "#9CAF88" }}
+                    >
+                      Read
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        aria-hidden
+                        className="transition-transform duration-300 ease-out group-hover:translate-x-0.5"
+                      >
+                        <path
+                          d="M3 11L11 3M11 3H4.5M11 3V9.5"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            ) : null}
+
+            <div className="mt-12 text-center sm:mt-14">
+              <Link
+                href="/articles"
+                className="group inline-flex items-center gap-2 font-inter text-[12px] uppercase tracking-[0.2em] transition-opacity hover:opacity-70 sm:text-[13px]"
+                style={{ color: "#9CAF88" }}
               >
-                <path
-                  d="M3 11L11 3M11 3H4.5M11 3V9.5"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </Link>
+                View all articles
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  aria-hidden
+                  className="transition-transform duration-300 ease-out group-hover:translate-x-0.5"
+                >
+                  <path
+                    d="M3 11L11 3M11 3H4.5M11 3V9.5"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </Link>
+            </div>
           </div>
         </section>
 
