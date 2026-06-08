@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { formatDate, type ArticleMeta } from "@/lib/articles";
 
-const SAGE = "#6B7C5C";
+const SAGE_LABEL = "#9CAF88";
+const CREAM_SOFT = "#F5F0E8";
 
 export default function ArticleCard({
   slug,
@@ -26,17 +27,28 @@ export default function ArticleCard({
           />
         </div>
       ) : null}
-      <div className="service-card-body flex flex-1 flex-col gap-3 px-7 pt-6 pb-7">
-        <p className="eyebrow">{formatDate(datePublished)}</p>
-        <h3 className="font-serif-italic text-[25px] leading-[1.12] text-charcoal sm:text-[28px]">
+      <div className="article-card-body flex flex-1 flex-col gap-3 px-7 pt-6 pb-7">
+        <p
+          className="font-inter text-[11px] font-light uppercase tracking-widest"
+          style={{ color: "rgba(245,240,232,0.65)" }}
+        >
+          {formatDate(datePublished)}
+        </p>
+        <h3
+          className="font-serif-italic text-[25px] leading-[1.12] sm:text-[28px]"
+          style={{ color: CREAM_SOFT }}
+        >
           {title}
         </h3>
-        <p className="line-clamp-3 font-inter text-[14px] font-light leading-[1.7] text-charcoal-soft sm:text-[15px]">
+        <p
+          className="line-clamp-3 font-inter text-[14px] font-light leading-[1.7] sm:text-[15px]"
+          style={{ color: "rgba(245,240,232,0.78)" }}
+        >
           {excerpt}
         </p>
         <span
           className="mt-auto inline-flex items-center gap-2 pt-2 font-inter text-[12px] uppercase tracking-[0.18em]"
-          style={{ color: SAGE }}
+          style={{ color: SAGE_LABEL }}
         >
           Read more
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>
