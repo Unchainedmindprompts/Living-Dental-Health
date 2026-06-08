@@ -271,23 +271,29 @@ export default function HomePage() {
                 <Link
                   key={a.slug}
                   href={`/articles/${a.slug}`}
-                  className="group flex flex-col rounded-xl bg-[#EAE0CF] px-7 py-7 transition-colors hover:bg-[#EFE6D6] sm:px-8 sm:py-8"
+                  className="group flex flex-col rounded-xl bg-charcoal px-7 py-7 transition-colors hover:bg-[#2A2722] sm:px-8 sm:py-8"
                 >
                   <p
                     className="font-inter text-[11px] font-light uppercase tracking-[0.2em]"
-                    style={{ color: SAGE }}
+                    style={{ color: "#9CAF88" }}
                   >
                     {formatDate(a.datePublished)}
                   </p>
-                  <h3 className="mt-4 font-serif-italic text-[20px] leading-[1.18] text-charcoal transition-opacity group-hover:opacity-90 sm:text-[22px]">
+                  <h3
+                    className="mt-4 font-serif-italic text-[20px] leading-[1.18] transition-opacity group-hover:opacity-90 sm:text-[22px]"
+                    style={{ color: "#F5F0E8" }}
+                  >
                     {a.title}
                   </h3>
-                  <p className="mt-3 line-clamp-3 font-inter text-[13px] font-light leading-[1.65] text-charcoal-soft sm:text-[14px]">
+                  <p
+                    className="mt-3 line-clamp-3 font-inter text-[13px] font-light leading-[1.65] sm:text-[14px]"
+                    style={{ color: "rgba(245,240,232,0.72)" }}
+                  >
                     {a.excerpt}
                   </p>
                   <span
                     className="mt-auto inline-flex items-center gap-2 pt-5 font-inter text-[11px] uppercase tracking-[0.18em]"
-                    style={{ color: SAGE }}
+                    style={{ color: "#9CAF88" }}
                   >
                     Read article
                     <svg
