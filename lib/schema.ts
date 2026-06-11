@@ -199,16 +199,41 @@ const doctorEntity: JsonLdNode = {
   "worksFor": {
     "@id": "https://www.livingdentalhealth.com/#business",
   },
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "Oregon Health Sciences University",
-  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Oregon",
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Oregon Health Sciences University",
+    },
+  ],
   "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Undergraduate Degree",
+      "name": "Bachelor of Science in General Science, Minor in Chemistry",
+      "educationalLevel": "Bachelor's",
+      "recognizedBy": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Oregon",
+      },
+    },
     {
       "@type": "EducationalOccupationalCredential",
       "credentialCategory": "Professional Degree",
       "name": "Doctor of Dental Medicine",
       "abbreviation": "DMD",
+      "recognizedBy": {
+        "@type": "CollegeOrUniversity",
+        "name": "Oregon Health Sciences University",
+      },
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Continuing Education",
+      "name": "Over 4,000 hours of continuing education in Smile Design, Cosmetic Dentistry, and Full Mouth Reconstruction",
     },
   ],
   "identifier": {
