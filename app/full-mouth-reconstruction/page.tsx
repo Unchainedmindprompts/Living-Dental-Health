@@ -200,41 +200,35 @@ export default function FullMouthReconstructionPage() {
           </div>
         </section>
 
-        {/* PHASES — alternating mocha panels */}
-        {PHASES.map((s, i) => (
-          <section
-            key={s.id}
-            id={s.id}
-            className="mx-auto max-w-[1320px] scroll-mt-[120px] px-6 pb-12 sm:pb-16"
-          >
-            <div
-              className="mx-auto max-w-[1100px] rounded-xl px-6 py-10 sm:px-10 sm:py-12 md:px-14 md:py-14"
-              style={{ backgroundColor: "#EAE0CF" }}
-            >
-              <div className="grid gap-6 lg:grid-cols-[1fr_1.5fr] lg:gap-16">
-                <div>
-                  <p
-                    className="font-inter text-[11px] font-light uppercase tracking-widest"
-                    style={{ color: SAGE }}
-                  >
-                    0{i + 1} &nbsp;/&nbsp; 0{PHASES.length}
-                  </p>
-                  <h2 className="mt-4 font-serif text-[32px] leading-[1.05] text-charcoal sm:text-[44px] md:text-[52px]">
-                    {s.heading}
-                  </h2>
-                </div>
-                <div>
-                  <p className="font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft sm:text-[16px]">
-                    {s.body}
-                  </p>
-                  <p className="mt-6 font-inter text-[13px] font-light uppercase tracking-[0.18em] text-warm-gray sm:text-[14px]">
-                    {s.detail}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-        ))}
+        {/* PHASES — 2-up mocha panel grid */}
+        <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">
+          <div className="mx-auto grid max-w-[1100px] gap-4 sm:gap-6 md:grid-cols-2">
+            {PHASES.map((s, i) => (
+              <article
+                key={s.id}
+                id={s.id}
+                className="rounded-xl px-6 py-8 scroll-mt-[120px] sm:px-8 sm:py-10"
+                style={{ backgroundColor: "#EAE0CF" }}
+              >
+                <p
+                  className="font-inter text-[11px] font-light uppercase tracking-widest"
+                  style={{ color: SAGE }}
+                >
+                  0{i + 1} &nbsp;/&nbsp; 0{PHASES.length}
+                </p>
+                <h2 className="mt-3 font-serif text-[26px] leading-[1.1] text-charcoal sm:text-[30px] md:text-[34px]">
+                  {s.heading}
+                </h2>
+                <p className="mt-4 font-inter text-[14px] font-light leading-[1.7] text-charcoal-soft sm:text-[15px]">
+                  {s.body}
+                </p>
+                <p className="mt-5 font-inter text-[12px] font-light uppercase tracking-[0.18em] text-warm-gray sm:text-[13px]">
+                  {s.detail}
+                </p>
+              </article>
+            ))}
+          </div>
+        </section>
 
         {/* COMMON CONCERNS */}
         <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">
