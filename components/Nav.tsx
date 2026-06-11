@@ -23,8 +23,13 @@ const PATIENT: Link[] = [
   { label: "Post-Op Instructions", href: "/patient-info/post-op" },
 ];
 
+const TREATMENTS: Link[] = [
+  { label: "Full Mouth Reconstruction", href: "/full-mouth-reconstruction" },
+];
+
 const COLUMNS: { label: string; items: Link[] }[] = [
   { label: "Services", items: SERVICES },
+  { label: "Treatments", items: TREATMENTS },
   { label: "About", items: ABOUT },
   { label: "Patient Info", items: PATIENT },
 ];
@@ -174,7 +179,7 @@ export default function Nav() {
 
         {/* Columns */}
         <div
-          className="grid h-full grid-cols-1 content-center gap-y-12 overflow-y-auto px-6 pb-32 pt-24 sm:px-12 md:grid-cols-3 md:gap-x-12 md:px-20 md:pt-28 lg:px-28"
+          className="grid h-full grid-cols-1 content-center gap-y-12 overflow-y-auto px-6 pb-32 pt-24 sm:px-12 md:grid-cols-2 md:gap-x-12 md:px-20 md:pt-28 lg:grid-cols-4 lg:gap-x-10 lg:px-20 xl:px-28"
         >
           {COLUMNS.map((col, idx) => (
             <div
@@ -199,7 +204,7 @@ export default function Nav() {
                     <a
                       href={item.href}
                       onClick={() => setOpen(false)}
-                      className="group relative inline-block font-serif text-[32px] font-light leading-[1.1] sm:text-[38px] md:text-[42px]"
+                      className="group relative inline-block font-serif text-[32px] font-light leading-[1.1] sm:text-[38px] md:text-[40px] lg:text-[30px] xl:text-[34px]"
                       style={{ color: CREAM }}
                     >
                       <span className="relative inline-block">
