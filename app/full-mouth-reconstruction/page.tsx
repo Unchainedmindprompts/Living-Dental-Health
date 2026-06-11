@@ -1,0 +1,394 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import Nav from "@/components/Nav";
+import {
+  fullMouthReconstructionPageSchema,
+  sanitizeJsonLd,
+} from "@/lib/schema";
+
+const SAGE = "#6B7C5C";
+const SAGE_LABEL = "#9CAF88";
+
+export const metadata: Metadata = {
+  title:
+    "Full Mouth Reconstruction — Living Dental Health, Bend Oregon",
+  description:
+    "Full mouth reconstruction with Dr. Andy Engel in Bend, Oregon. Over 4,000 hours of continuing education in smile design, cosmetic dentistry, and full mouth reconstruction. Precision-driven rebuilds that protect your bite, jaw, and long-term oral health.",
+};
+
+// PLACEHOLDER COPY — structured to show layout. Replace with Andy's voice once layout is approved.
+const PHASES = [
+  {
+    id: "diagnosis",
+    heading: "Comprehensive Diagnosis",
+    body:
+      "Every reconstruction begins long before any treatment. Dr. Engel performs a complete evaluation of every tooth, the surrounding bone, the gums, and — critically — the bite. He maps how the upper and lower teeth meet, where wear patterns came from, and what the rebuild needs to do for the mouth to function properly again. [PLACEHOLDER: Andy's voice on the diagnostic process and tools used.]",
+    detail:
+      "full mouth evaluation · bite analysis · imaging · written treatment plan",
+  },
+  {
+    id: "planning",
+    heading: "Precision Planning",
+    body:
+      "This is where reconstruction succeeds or fails. Andy maps the final result first — the exact bite, the tooth proportions, the muscle and joint relationships — and reverse-engineers the work from there. A reconstruction without this step is a series of procedures hoping to add up. With it, every implant, crown, and graft has a single coordinated target. [PLACEHOLDER: Andy's voice on the planning step and why it's the difference.]",
+    detail:
+      "reverse-engineered from the bite · coordinated multi-procedure plan · written and reviewed with you",
+  },
+  {
+    id: "implants-grafting",
+    heading: "Implants & Grafting",
+    body:
+      "For patients missing teeth or with bone loss, structural work comes first. Dr. Engel places implants and performs bone and tissue grafting in-house — work that many practices refer out. Keeping the work under one roof means the same dentist who planned the rebuild executes the foundation. [PLACEHOLDER: Andy's voice on his surgical training and what makes in-house grafting different.]",
+    detail:
+      "dental implants · bone grafting · tissue grafting · all performed in-house",
+  },
+  {
+    id: "crowns-veneers",
+    heading: "Crowns & Veneers",
+    body:
+      "Once the foundation is set, the visible smile is rebuilt with crowns and veneers designed to match the planned bite and your facial proportions. Andy designs each piece to function correctly first, look right second — the order matters, and getting the order wrong is how patients end up with cosmetic work that breaks down within a few years. [PLACEHOLDER: Andy's voice on materials, ceramicists, and the design process.]",
+    detail:
+      "porcelain crowns · veneers · designed to the planned bite · long-lasting materials",
+  },
+  {
+    id: "bite-calibration",
+    heading: "Bite Calibration",
+    body:
+      "This is the step that separates a real reconstruction from cosmetic dentistry that looks good for a year and causes problems for a decade. A poorly calibrated bite can cause TMJ pain, chronic headaches, speech changes, and difficulty chewing. Andy spends real time here, in multiple short appointments, refining how the teeth meet until the entire system is in balance. [PLACEHOLDER: Andy's voice on how he calibrates and how patients can tell when it's right.]",
+    detail:
+      "TMJ-aware adjustment · multi-visit refinement · the precision step that protects your investment",
+  },
+  {
+    id: "long-term",
+    heading: "Long-Term Maintenance",
+    body:
+      "A well-done reconstruction can last decades — but it needs maintenance the way any precision system does. Dr. Engel and the hygiene team see reconstruction patients on a tailored schedule, watch for early signs of trouble, and make small adjustments before they become problems. [PLACEHOLDER: Andy's voice on the recall schedule, nightguards, and what patients should watch for.]",
+    detail:
+      "tailored recall schedule · nightguard if needed · early adjustments before issues",
+  },
+];
+
+const CONCERNS = [
+  "Severely worn or ground-down teeth",
+  "Multiple missing teeth",
+  "Past dental work that's failing",
+  "TMJ pain or chronic headaches",
+  "Speech difficulties from past reconstruction",
+  "Difficulty chewing",
+  "Bone loss in the upper or lower jaw",
+  "Low confidence in your smile",
+];
+
+const FAQ = [
+  {
+    q: "What is full mouth reconstruction?",
+    a: "Full mouth reconstruction is a comprehensive process of rebuilding the teeth, bite, and oral function for patients with severe wear, multiple missing teeth, bone loss, or failed past dental work. It commonly combines dental implants, bone and tissue grafting, crowns, veneers, and precise bite calibration into a coordinated treatment plan.",
+  },
+  {
+    q: "Does Dr. Andy Engel perform full mouth reconstruction in Bend, Oregon?",
+    a: "Yes. Dr. Andy Engel performs full mouth reconstruction in-house at Living Dental Health in Bend, Oregon. He has completed advanced training at Oregon Health Sciences University and over 4,000 hours of continuing education in smile design, cosmetic dentistry, and full mouth reconstruction.",
+  },
+  {
+    q: "Why does precision matter in full mouth reconstruction?",
+    a: "A poorly executed reconstruction can cause TMJ pain, chronic headaches, speech difficulties, and chewing problems. The bite must be calibrated with precision so the new teeth function in harmony with the jaw joints, muscles, and surrounding teeth. This is why Dr. Engel approaches each case as a planning exercise before any treatment begins.",
+  },
+];
+
+export default function FullMouthReconstructionPage() {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            sanitizeJsonLd(fullMouthReconstructionPageSchema)
+          ),
+        }}
+      />
+      <main
+        className="min-h-screen text-charcoal"
+        style={{ backgroundColor: "#F5F0E8" }}
+      >
+        <Nav />
+        <div className="h-[100px]" aria-hidden />
+
+        {/* Breadcrumb */}
+        <nav
+          aria-label="Breadcrumb"
+          className="mx-auto max-w-[1320px] px-6 pt-4"
+        >
+          <ol className="flex items-center gap-2 font-inter text-[11px] font-light uppercase tracking-widest text-warm-gray">
+            <li>
+              <Link href="/" className="transition-colors hover:text-charcoal">
+                Home
+              </Link>
+            </li>
+            <li aria-hidden style={{ color: SAGE_LABEL }}>
+              /
+            </li>
+            <li style={{ color: SAGE }}>Full Mouth Reconstruction</li>
+          </ol>
+        </nav>
+
+        {/* HERO */}
+        <div className="relative">
+          <div className="px-6 pt-6 pb-10 text-center lg:absolute lg:inset-0 lg:z-10 lg:flex lg:items-center lg:py-0 lg:text-left">
+            <div className="mx-auto w-full max-w-[1320px] lg:px-6">
+              <div className="lg:max-w-[560px]">
+                <p
+                  className="font-inter text-[11px] font-light uppercase tracking-widest"
+                  style={{ color: SAGE }}
+                >
+                  &mdash; full mouth reconstruction &mdash;
+                </p>
+                <h1 className="mt-5 font-serif text-[40px] leading-[1.05] text-charcoal sm:text-[56px] lg:text-[64px]">
+                  Built right,{" "}
+                  <span className="font-serif-italic">the first time.</span>
+                </h1>
+                <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:text-[17px] lg:mx-0 lg:max-w-[460px]">
+                  Full mouth reconstruction is a precise endeavor. A poorly
+                  executed rebuild causes TMJ pain, headaches, speech
+                  difficulties, and chewing problems — for life. Dr. Engel has
+                  spent over 4,000 hours of continuing education learning how
+                  to do it right.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative h-[380px] w-full overflow-hidden sm:h-[460px] lg:h-[55vh] lg:min-h-[560px] lg:max-h-[760px]">
+            {/* PLACEHOLDER IMAGE — swap for a true FMR-themed hero when one is available */}
+            <Image
+              src="/cosmetic-hero.webp"
+              alt="Dr. Andy Engel discussing a treatment plan with a patient at Living Dental Health in Bend, Oregon"
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover object-[74%_center] lg:object-center"
+            />
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-0 hidden lg:block"
+              style={{
+                background:
+                  "linear-gradient(to right, rgba(245,240,232,0.94) 0%, rgba(245,240,232,0.74) 32%, rgba(245,240,232,0) 58%)",
+              }}
+            />
+          </div>
+        </div>
+
+        {/* INTRO — the "ground down over 20-30 years" framing */}
+        <section className="mx-auto max-w-[1320px] px-6 pb-16 sm:pb-20">
+          <div
+            className="mx-auto max-w-[720px] border-t pt-12 sm:pt-14"
+            style={{ borderColor: "rgba(28,26,23,0.18)" }}
+          >
+            <p className="font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft sm:text-[16px]">
+              Picture a patient who has ground down their teeth over the
+              last twenty or thirty years. There&rsquo;s still enough bone
+              and there are still enough teeth to rebuild — but the bite
+              has shifted, the muscles have adapted around it, and the jaw
+              joints have learned to work in a way that isn&rsquo;t
+              healthy. Reconstructing that mouth without precision
+              doesn&rsquo;t fix the problem. It locks the problem in.
+              That&rsquo;s why every full mouth reconstruction at Living
+              Dental Health begins as a planning exercise — not a procedure.
+              [PLACEHOLDER: Andy&rsquo;s voice on the diagnostic philosophy
+              and what he&rsquo;s looking for in the first appointment.]
+            </p>
+          </div>
+        </section>
+
+        {/* PHASES — alternating mocha panels */}
+        {PHASES.map((s, i) => (
+          <section
+            key={s.id}
+            id={s.id}
+            className="mx-auto max-w-[1320px] scroll-mt-[120px] px-6 pb-12 sm:pb-16"
+          >
+            <div
+              className="mx-auto max-w-[1100px] rounded-xl px-6 py-10 sm:px-10 sm:py-12 md:px-14 md:py-14"
+              style={{ backgroundColor: "#EAE0CF" }}
+            >
+              <div className="grid gap-6 lg:grid-cols-[1fr_1.5fr] lg:gap-16">
+                <div>
+                  <p
+                    className="font-inter text-[11px] font-light uppercase tracking-widest"
+                    style={{ color: SAGE }}
+                  >
+                    0{i + 1} &nbsp;/&nbsp; 0{PHASES.length}
+                  </p>
+                  <h2 className="mt-4 font-serif text-[32px] leading-[1.05] text-charcoal sm:text-[44px] md:text-[52px]">
+                    {s.heading}
+                  </h2>
+                </div>
+                <div>
+                  <p className="font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft sm:text-[16px]">
+                    {s.body}
+                  </p>
+                  <p className="mt-6 font-inter text-[13px] font-light uppercase tracking-[0.18em] text-warm-gray sm:text-[14px]">
+                    {s.detail}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        ))}
+
+        {/* COMMON CONCERNS */}
+        <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">
+          <div
+            className="mx-auto max-w-[1100px] border-t pt-12 sm:pt-14"
+            style={{ borderColor: "rgba(28,26,23,0.18)" }}
+          >
+            <h2 className="font-serif text-[32px] leading-[1.05] text-charcoal sm:text-[44px]">
+              Who full mouth reconstruction{" "}
+              <span className="font-serif-italic">helps</span>
+            </h2>
+            <ul className="mt-8 grid gap-x-12 gap-y-4 sm:grid-cols-2">
+              {CONCERNS.map((c) => (
+                <li
+                  key={c}
+                  className="flex items-baseline gap-3 border-b pb-4 font-inter text-[15px] font-light text-charcoal-soft sm:text-[16px]"
+                  style={{ borderColor: "rgba(28,26,23,0.1)" }}
+                >
+                  <span
+                    aria-hidden
+                    className="text-[12px]"
+                    style={{ color: SAGE }}
+                  >
+                    ✦
+                  </span>
+                  {c}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* TRUST BLOCK — 4,000 CE hours */}
+        <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">
+          <div
+            className="mx-auto max-w-[860px] p-10 text-center sm:p-16"
+            style={{ backgroundColor: SAGE, color: "#F5F0E8" }}
+          >
+            <h2 className="font-serif text-[36px] leading-[1.05] sm:text-[52px]">
+              4,000 hours.{" "}
+              <span className="font-serif-italic">Then we begin.</span>
+            </h2>
+            <p className="mx-auto mt-6 max-w-[620px] font-inter text-[15px] font-light leading-[1.75] sm:text-[16px]">
+              On top of his OHSU degree and surgical training, Dr. Engel has
+              completed over 4,000 hours of continuing education focused
+              specifically on smile design, cosmetic dentistry, and full
+              mouth reconstruction. For context, most dentists complete
+              20&ndash;40 continuing-education hours per year.
+              That&rsquo;s the depth of preparation behind every
+              reconstruction we do. [PLACEHOLDER: Andy&rsquo;s voice on
+              what those 4,000 hours actually taught him and why it matters
+              to the patient in the chair.]
+            </p>
+          </div>
+        </section>
+
+        {/* RELATED — bridge to TMJ pillar (when it exists) */}
+        <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">
+          <div
+            className="mx-auto max-w-[720px] border-t pt-12 sm:pt-14"
+            style={{ borderColor: "rgba(28,26,23,0.18)" }}
+          >
+            <h2 className="font-serif text-[28px] leading-[1.05] text-charcoal sm:text-[36px]">
+              Already living with{" "}
+              <span className="font-serif-italic">TMJ symptoms?</span>
+            </h2>
+            <p className="mt-6 font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft sm:text-[16px]">
+              TMJ pain, jaw clicking, and chronic headaches are often the
+              direct result of a bite that&rsquo;s out of balance &mdash;
+              sometimes from past dental work, sometimes from years of
+              grinding, sometimes from injury. The same precision
+              principles that govern a full mouth reconstruction apply to
+              TMJ treatment. [PLACEHOLDER LINK: TMJ pillar page when
+              built.]
+            </p>
+          </div>
+        </section>
+
+        {/* FINANCING */}
+        <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">
+          <div
+            className="mx-auto max-w-[720px] border-t pt-12 sm:pt-14"
+            style={{ borderColor: "rgba(28,26,23,0.18)" }}
+          >
+            <h2 className="font-serif text-[28px] leading-[1.05] text-charcoal sm:text-[36px]">
+              Insurance &amp;{" "}
+              <span className="font-serif-italic">financing</span>
+            </h2>
+            <p className="mt-6 font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft sm:text-[16px]">
+              Full mouth reconstruction is typically planned and phased
+              over months, which makes financing manageable. We accept
+              most major insurance plans in-network and provide the same
+              quality of care out-of-network. We accept CareCredit
+              financing and offer an in-office dental plan for patients
+              without insurance. [PLACEHOLDER: Andy&rsquo;s voice on how
+              reconstructions are phased and what most patients pay.]
+            </p>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">
+          <div
+            className="mx-auto max-w-[820px] border-t pt-12 sm:pt-14"
+            style={{ borderColor: "rgba(28,26,23,0.18)" }}
+          >
+            <h2 className="font-serif text-[28px] leading-[1.05] text-charcoal sm:text-[36px]">
+              Common <span className="font-serif-italic">questions</span>
+            </h2>
+            <dl className="mt-8 space-y-8">
+              {FAQ.map((item) => (
+                <div
+                  key={item.q}
+                  className="border-b pb-8"
+                  style={{ borderColor: "rgba(28,26,23,0.1)" }}
+                >
+                  <dt className="font-serif-italic text-[20px] leading-snug text-charcoal sm:text-[22px]">
+                    {item.q}
+                  </dt>
+                  <dd className="mt-3 font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft sm:text-[16px]">
+                    {item.a}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="mx-auto max-w-[1320px] px-6 pb-24 sm:pb-32">
+          <div
+            className="mx-auto max-w-[720px] border-t pt-14 text-center sm:pt-16"
+            style={{ borderColor: "rgba(28,26,23,0.18)" }}
+          >
+            <h2 className="font-serif text-[32px] leading-[1.05] text-charcoal sm:text-[44px]">
+              Start with a{" "}
+              <span className="font-serif-italic">conversation.</span>
+            </h2>
+            <p className="mx-auto mt-5 max-w-[480px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:text-[16px]">
+              Every reconstruction begins with a diagnostic appointment.
+              Dr. Engel will walk you through exactly what your case
+              involves &mdash; what&rsquo;s realistic, what it takes, and
+              what it doesn&rsquo;t. No pressure, no hard sell.
+            </p>
+            <a
+              href="tel:5415505311"
+              className="mt-8 inline-block rounded-full px-7 py-3 font-inter text-[12px] uppercase tracking-[0.24em] transition-colors"
+              style={{ backgroundColor: SAGE, color: "#F5F0E8" }}
+            >
+              Call (541) 550&#8209;5311
+            </a>
+          </div>
+        </section>
+      </main>
+    </>
+  );
+}

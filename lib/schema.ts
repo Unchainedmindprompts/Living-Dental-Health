@@ -809,3 +809,78 @@ export function articlePostSchema(input: {
     ],
   };
 }
+
+export const fullMouthReconstructionPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id":
+        "https://www.livingdentalhealth.com/full-mouth-reconstruction#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Full Mouth Reconstruction",
+          "item":
+            "https://www.livingdentalhealth.com/full-mouth-reconstruction",
+        },
+      ],
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/full-mouth-reconstruction#procedure",
+      "name": "Full Mouth Reconstruction",
+      "description":
+        "Comprehensive rebuild of teeth, bite, and oral function for patients with severe wear, multiple missing teeth, or failed past dental work. Performed in-house by Dr. Andy Engel, who has completed over 4,000 hours of continuing education focused on smile design, cosmetic dentistry, and full mouth reconstruction.",
+      "url":
+        "https://www.livingdentalhealth.com/full-mouth-reconstruction",
+      "procedureType": "https://schema.org/TherapeuticProcedure",
+      "bodyLocation": "Mouth",
+      "provider": { "@id": "https://www.livingdentalhealth.com/#business" },
+      "performer": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+    },
+    {
+      "@type": "FAQPage",
+      "@id":
+        "https://www.livingdentalhealth.com/full-mouth-reconstruction#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is full mouth reconstruction?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Full mouth reconstruction is a comprehensive process of rebuilding the teeth, bite, and oral function for patients with severe wear, multiple missing teeth, bone loss, or failed past dental work. It commonly combines dental implants, bone and tissue grafting, crowns, veneers, and precise bite calibration into a coordinated treatment plan.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Does Dr. Andy Engel perform full mouth reconstruction in Bend, Oregon?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. Dr. Andy Engel performs full mouth reconstruction in-house at Living Dental Health in Bend, Oregon. He has completed advanced training at Oregon Health Sciences University and over 4,000 hours of continuing education in smile design, cosmetic dentistry, and full mouth reconstruction.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Why does precision matter in full mouth reconstruction?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "A poorly executed reconstruction can cause TMJ pain, chronic headaches, speech difficulties, and chewing problems. The bite must be calibrated with precision so the new teeth function in harmony with the jaw joints, muscles, and surrounding teeth. This is why Dr. Engel approaches each case as a planning exercise before any treatment begins.",
+          },
+        },
+      ],
+    },
+  ],
+};
+
