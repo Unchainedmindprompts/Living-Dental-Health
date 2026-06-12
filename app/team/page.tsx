@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import { teamPageSchema, sanitizeJsonLd } from "@/lib/schema";
 
 const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
@@ -97,10 +98,17 @@ const REVIEWS = [
 
 export default function TeamPage() {
   return (
-    <main
-      className="min-h-screen text-charcoal"
-      style={{ backgroundColor: "#F5F0E8" }}
-    >
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(sanitizeJsonLd(teamPageSchema)),
+        }}
+      />
+      <main
+        className="min-h-screen text-charcoal"
+        style={{ backgroundColor: "#F5F0E8" }}
+      >
         <Nav />
         <div className="h-[100px]" aria-hidden />
 
@@ -424,5 +432,6 @@ export default function TeamPage() {
           </div>
         </section>
       </main>
+    </>
   );
 }

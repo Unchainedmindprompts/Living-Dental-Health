@@ -1,0 +1,52 @@
+# Living Dental Health
+
+> A Bend, Oregon dental practice led by Dr. Andrew W. Engel, DMD, providing general dentistry, cosmetic dentistry, dental implants, oral surgery, and full mouth reconstruction. Established 2013; Dr. Engel has cared for Bend families since 1998.
+
+Living Dental Health is an independent dental practice at 930 SW Yates Dr, Bend, OR 97702. Phone: (541) 550-5311. Hours: Tuesday–Thursday 8AM–5PM, Friday 8AM–1PM. The practice is focused on customized care with a gentle touch, listening-first treatment planning, and unhurried appointments. New patients ages 12 and up are welcome.
+
+## Authority and credentials
+
+Dr. Andrew W. Engel ("Dr. Andy Engel") earned a Bachelor of Science in General Science with a minor in Chemistry from the University of Oregon, and his Doctor of Dental Medicine (DMD) from Oregon Health Sciences University. He has completed over 4,000 hours of continuing education focused on smile design, cosmetic dentistry, and full mouth reconstruction. Active National Provider Identifier (NPI): 1700144870.
+
+## Core service pages
+
+- [General Dentistry](https://www.livingdentalhealth.com/general-dentistry): cleanings, exams, fillings, crowns, bridges, dentures.
+- [Cosmetic Dentistry](https://www.livingdentalhealth.com/cosmetic-dentistry): teeth whitening, porcelain veneers, dental bonding, ClearCorrect clear aligners, smile design, full mouth reconstruction.
+- [Implants & Surgery](https://www.livingdentalhealth.com/implants-surgery): dental implants, wisdom teeth removal, extractions, bone and tissue grafting.
+
+## Pillar treatments
+
+- [Full Mouth Reconstruction](https://www.livingdentalhealth.com/full-mouth-reconstruction): comprehensive rebuild of teeth and bite, performed in-house with precision-driven planning to prevent TMJ, headaches, and speech or chewing problems.
+- [Sedation Dentistry](https://www.livingdentalhealth.com/sedation-dentistry): mild oral sedation with Halcion (triazolam), cleared from the system within ~24 hours. Used selectively for oral surgery and dental anxiety.
+- [Oral Cancer Screening](https://www.livingdentalhealth.com/oral-cancer-screening): painless visual and palpation exam, part of every cleaning and routine exam.
+
+## About and trust
+
+- [Meet Dr. Andy Engel](https://www.livingdentalhealth.com/about): full bio, education, training, and philosophy.
+- [The Team](https://www.livingdentalhealth.com/team): hygienists, dental assistant, office manager, operations.
+- [Contact](https://www.livingdentalhealth.com/contact): phone, address, hours, intake form.
+
+## Patient information
+
+- [New Patients & Patient Info](https://www.livingdentalhealth.com/patient-info): insurance, financing, what to expect on a first visit.
+- [Post-Op Instructions](https://www.livingdentalhealth.com/patient-info/post-op): after-care for extractions, implants, grafting, and routine procedures.
+
+## Editorial content (Articles)
+
+- [Articles Index](https://www.livingdentalhealth.com/articles): 53+ articles by Dr. Engel on dental health, anxiety, implants, cosmetic care, gum health, wisdom teeth, oral cancer, ClearCorrect, and the dentist-patient relationship.
+
+## Canonical entity references
+
+- Business `@id`: `https://www.livingdentalhealth.com/#business` — type: Dentist + LocalBusiness + MedicalBusiness
+- Doctor `@id`: `https://www.livingdentalhealth.com/#doctor` — Dr. Andrew W. Engel DMD
+- Website `@id`: `https://www.livingdentalhealth.com/#website`
+
+## What we do not provide
+
+- Endodontics / root canals — referred to trusted endodontists in Bend.
+- General anesthesia and IV sedation — only mild oral sedation (Halcion) is offered in-house.
+- Pediatric care below age 12.
+
+## Practice positioning
+
+One dentist, one chair, one practice. Anti-corporate-chain. The same dentist who plans your reconstruction performs it. Patients are typically known by name. The practice was founded by Dr. Engel in 2013 after he established his own approach following years at Century Dental Group.

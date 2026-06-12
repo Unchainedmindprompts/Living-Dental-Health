@@ -199,16 +199,41 @@ const doctorEntity: JsonLdNode = {
   "worksFor": {
     "@id": "https://www.livingdentalhealth.com/#business",
   },
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "Oregon Health Sciences University",
-  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Oregon",
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Oregon Health Sciences University",
+    },
+  ],
   "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Undergraduate Degree",
+      "name": "Bachelor of Science in General Science, Minor in Chemistry",
+      "educationalLevel": "Bachelor's",
+      "recognizedBy": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Oregon",
+      },
+    },
     {
       "@type": "EducationalOccupationalCredential",
       "credentialCategory": "Professional Degree",
       "name": "Doctor of Dental Medicine",
       "abbreviation": "DMD",
+      "recognizedBy": {
+        "@type": "CollegeOrUniversity",
+        "name": "Oregon Health Sciences University",
+      },
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Continuing Education",
+      "name": "Over 4,000 hours of continuing education in Smile Design, Cosmetic Dentistry, and Full Mouth Reconstruction",
     },
   ],
   "identifier": {
@@ -809,3 +834,465 @@ export function articlePostSchema(input: {
     ],
   };
 }
+
+export const fullMouthReconstructionPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id":
+        "https://www.livingdentalhealth.com/full-mouth-reconstruction#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Full Mouth Reconstruction",
+          "item":
+            "https://www.livingdentalhealth.com/full-mouth-reconstruction",
+        },
+      ],
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/full-mouth-reconstruction#procedure",
+      "name": "Full Mouth Reconstruction",
+      "description":
+        "Comprehensive rebuild of teeth, bite, and oral function for patients with severe wear, multiple missing teeth, or failed past dental work. Performed in-house by Dr. Andy Engel, who has completed over 4,000 hours of continuing education focused on smile design, cosmetic dentistry, and full mouth reconstruction.",
+      "url":
+        "https://www.livingdentalhealth.com/full-mouth-reconstruction",
+      "procedureType": "https://schema.org/TherapeuticProcedure",
+      "bodyLocation": "Mouth",
+      "provider": { "@id": "https://www.livingdentalhealth.com/#business" },
+      "performer": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+    },
+    {
+      "@type": "FAQPage",
+      "@id":
+        "https://www.livingdentalhealth.com/full-mouth-reconstruction#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is full mouth reconstruction?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Full mouth reconstruction is a comprehensive process of rebuilding the teeth, bite, and oral function for patients with severe wear, multiple missing teeth, bone loss, or failed past dental work. It commonly combines dental implants, bone and tissue grafting, crowns, veneers, and precise bite calibration into a coordinated treatment plan.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Does Dr. Andy Engel perform full mouth reconstruction in Bend, Oregon?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. Dr. Andy Engel performs full mouth reconstruction in-house at Living Dental Health in Bend, Oregon. He has completed advanced training at Oregon Health Sciences University and over 4,000 hours of continuing education in smile design, cosmetic dentistry, and full mouth reconstruction.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Why does precision matter in full mouth reconstruction?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "A poorly executed reconstruction can cause TMJ pain, chronic headaches, speech difficulties, and chewing problems. The bite must be calibrated with precision so the new teeth function in harmony with the jaw joints, muscles, and surrounding teeth. This is why Dr. Engel approaches each case as a planning exercise before any treatment begins.",
+          },
+        },
+      ],
+    },
+  ],
+};
+
+export const sedationDentistryPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id":
+        "https://www.livingdentalhealth.com/sedation-dentistry#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Sedation Dentistry",
+          "item":
+            "https://www.livingdentalhealth.com/sedation-dentistry",
+        },
+      ],
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/sedation-dentistry#procedure",
+      "name": "Sedation Dentistry",
+      "alternateName": "Oral Sedation Dentistry",
+      "description":
+        "Mild oral sedation with Halcion (triazolam) for patients with dental anxiety, those scheduled for oral surgery, or anyone who would prefer a more relaxed visit. Used selectively at Living Dental Health alongside a calm, unhurried approach to every appointment. Halcion is fully cleared from the system within about 24 hours.",
+      "url":
+        "https://www.livingdentalhealth.com/sedation-dentistry",
+      "procedureType": "https://schema.org/TherapeuticProcedure",
+      "drug": {
+        "@type": "Drug",
+        "name": "Halcion",
+        "alternateName": "triazolam",
+      },
+      "provider": { "@id": "https://www.livingdentalhealth.com/#business" },
+      "performer": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+    },
+    {
+      "@type": "FAQPage",
+      "@id":
+        "https://www.livingdentalhealth.com/sedation-dentistry#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Halcion and how does it work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Halcion is the brand name for triazolam, a mild oral sedative in the benzodiazepine class. It is taken as a pill before the appointment so patients arrive deeply relaxed. Patients remain conscious and can respond to instructions, but typically feel calm enough to rest comfortably through their visit. Many patients end up taking a cozy nap in the chair.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "How long does Halcion stay in my system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Halcion is short-acting and is generally cleared from the body within about 24 hours of the dose. Patients are advised not to drive, operate machinery, or make important decisions for the rest of the day after taking it.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Will I need someone to drive me home?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. Because Halcion remains active for several hours after the appointment, every patient who takes oral sedation needs a responsible adult to drive them to and from Living Dental Health and stay with them for the rest of the day.",
+          },
+        },
+      ],
+    },
+  ],
+};
+
+export const oralCancerScreeningPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id":
+        "https://www.livingdentalhealth.com/oral-cancer-screening#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Oral Cancer Screening",
+          "item":
+            "https://www.livingdentalhealth.com/oral-cancer-screening",
+        },
+      ],
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/oral-cancer-screening#procedure",
+      "name": "Oral Cancer Screening",
+      "description":
+        "Routine oral cancer screening performed at every cleaning and exam at Living Dental Health in Bend, Oregon. A short, painless visual and physical examination of the lips, tongue, cheeks, palate, throat, and neck to identify early signs of oral or oropharyngeal cancer when it is most treatable.",
+      "url":
+        "https://www.livingdentalhealth.com/oral-cancer-screening",
+      "procedureType": "https://schema.org/DiagnosticProcedure",
+      "bodyLocation": ["Mouth", "Throat", "Neck"],
+      "provider": { "@id": "https://www.livingdentalhealth.com/#business" },
+      "performer": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+    },
+    {
+      "@type": "FAQPage",
+      "@id":
+        "https://www.livingdentalhealth.com/oral-cancer-screening#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is oral cancer screening part of a normal dental exam?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. At Living Dental Health, oral cancer screening is part of every routine cleaning and exam. Most patients aren't aware it's happening — it's built into the normal visit.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "What does the dentist look for during an oral cancer screening?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Dr. Engel and the hygiene team look for sores that haven't healed, white or red patches, lumps or thickening of tissue, unusual asymmetry, and any changes in the lips, tongue, cheeks, palate, throat, or neck. The exam includes both visual inspection and gentle palpation.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Does an oral cancer screening hurt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "No. The screening is painless and takes about one to two minutes. It is a visual examination combined with gentle palpation of the tissues in and around the mouth and neck.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Who is at higher risk for oral cancer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Tobacco use of any kind (cigarettes, cigars, pipes, chewing tobacco, vaping), heavy alcohol use, HPV infection, prolonged sun exposure (for lip cancer), and being over age 40 are all risk factors. That said, oral cancer can occur in patients with no risk factors at all, which is why routine screening matters for everyone.",
+          },
+        },
+      ],
+    },
+  ],
+};
+
+export const aboutPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.livingdentalhealth.com/about#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Meet Dr. Engel",
+          "item": "https://www.livingdentalhealth.com/about",
+        },
+      ],
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://www.livingdentalhealth.com/about#aboutpage",
+      "url": "https://www.livingdentalhealth.com/about",
+      "name": "Meet Dr. Andy Engel — Living Dental Health",
+      "description":
+        "Dr. Andrew W. Engel DMD is the founder of Living Dental Health in Bend, Oregon. OHSU graduate with a chemistry minor from the University of Oregon and over 4,000 hours of continuing education in smile design, cosmetic dentistry, and full mouth reconstruction.",
+      "isPartOf": {
+        "@id": "https://www.livingdentalhealth.com/#website",
+      },
+      "about": {
+        "@id": "https://www.livingdentalhealth.com/#doctor",
+      },
+      "mainEntity": {
+        "@id": "https://www.livingdentalhealth.com/#doctor",
+      },
+      "publisher": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+  ],
+};
+
+// Team page: AboutPage + Person entities for the team + Review entities
+// for the patient testimonials displayed on the page.
+export const teamPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.livingdentalhealth.com/team#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "The Team",
+          "item": "https://www.livingdentalhealth.com/team",
+        },
+      ],
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://www.livingdentalhealth.com/team#aboutpage",
+      "url": "https://www.livingdentalhealth.com/team",
+      "name": "Meet the Team — Living Dental Health",
+      "description":
+        "Meet Dr. Andy Engel and the Living Dental Health team in Bend, Oregon — hygienists, dental assistant, office manager, and operations.",
+      "isPartOf": { "@id": "https://www.livingdentalhealth.com/#website" },
+      "about": { "@id": "https://www.livingdentalhealth.com/#business" },
+      "publisher": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.livingdentalhealth.com/team#samantha-gassman",
+      "name": "Samantha Gassman",
+      "jobTitle": "Office Manager",
+      "worksFor": { "@id": "https://www.livingdentalhealth.com/#business" },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.livingdentalhealth.com/team#francie-engel",
+      "name": "Francie Engel",
+      "jobTitle": "Operations Administrator",
+      "worksFor": { "@id": "https://www.livingdentalhealth.com/#business" },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.livingdentalhealth.com/team#nicole-tarpey",
+      "name": "Nicole Tarpey",
+      "jobTitle": "Dental Hygienist",
+      "worksFor": { "@id": "https://www.livingdentalhealth.com/#business" },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.livingdentalhealth.com/team#sacha-lodge",
+      "name": "Sacha Lodge",
+      "jobTitle": "Dental Hygienist",
+      "worksFor": { "@id": "https://www.livingdentalhealth.com/#business" },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.livingdentalhealth.com/team#christy-spencer",
+      "name": "Christy Spencer",
+      "jobTitle": "Dental Assistant",
+      "worksFor": { "@id": "https://www.livingdentalhealth.com/#business" },
+    },
+    {
+      "@type": "Review",
+      "@id": "https://www.livingdentalhealth.com/team#review-mcnall",
+      "reviewBody":
+        "Great service and treatment, very helpful and kind employees!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1",
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Dylan McNall",
+      },
+      "publisher": { "@type": "Organization", "name": "Google" },
+      "itemReviewed": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+    {
+      "@type": "Review",
+      "@id": "https://www.livingdentalhealth.com/team#review-bollinger",
+      "reviewBody":
+        "Excellent care and personable, caring staff and dentist!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1",
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Gail Bollinger",
+      },
+      "publisher": { "@type": "Organization", "name": "Google" },
+      "itemReviewed": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+    {
+      "@type": "Review",
+      "@id": "https://www.livingdentalhealth.com/team#review-cardenas",
+      "reviewBody":
+        "It is never a rushed experience, and I appreciate the quality care.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1",
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Amanda Cardenas",
+      },
+      "publisher": { "@type": "Organization", "name": "Google" },
+      "itemReviewed": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+  ],
+};
+
+export const postOpPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id":
+        "https://www.livingdentalhealth.com/patient-info/post-op#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Patient Info",
+          "item": "https://www.livingdentalhealth.com/patient-info",
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Post-Op Instructions",
+          "item":
+            "https://www.livingdentalhealth.com/patient-info/post-op",
+        },
+      ],
+    },
+    {
+      "@type": "WebPage",
+      "@id":
+        "https://www.livingdentalhealth.com/patient-info/post-op#webpage",
+      "url": "https://www.livingdentalhealth.com/patient-info/post-op",
+      "name": "Post-Op Instructions — Living Dental Health",
+      "description":
+        "After-care instructions following dental procedures at Living Dental Health in Bend, Oregon — covering extractions, dental implants, bone and tissue grafting, and routine care.",
+      "isPartOf": {
+        "@id": "https://www.livingdentalhealth.com/#website",
+      },
+      "publisher": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+  ],
+};
+

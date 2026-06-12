@@ -1,0 +1,72 @@
+{
+  "$schema": "https://agentprotocol.org/agent.json",
+  "name": "Living Dental Health",
+  "alternateName": "Living Dental Health Bend Oregon",
+  "description": "A Bend, Oregon dental practice led by Dr. Andrew W. Engel, DMD. Independent, single-dentist practice founded in 2013, with Dr. Engel caring for Bend families since 1998. Services include general dentistry, cosmetic dentistry, dental implants, oral surgery, full mouth reconstruction, and sedation dentistry.",
+  "url": "https://www.livingdentalhealth.com",
+  "canonical": {
+    "business": "https://www.livingdentalhealth.com/#business",
+    "doctor": "https://www.livingdentalhealth.com/#doctor",
+    "website": "https://www.livingdentalhealth.com/#website"
+  },
+  "type": ["Dentist", "LocalBusiness", "MedicalBusiness"],
+  "contact": {
+    "telephone": "+1-541-550-5311",
+    "email": "info@livingdentalhealth.com",
+    "address": {
+      "streetAddress": "930 SW Yates Dr",
+      "addressLocality": "Bend",
+      "addressRegion": "OR",
+      "postalCode": "97702",
+      "addressCountry": "US"
+    },
+    "hours": {
+      "monday": "Closed",
+      "tuesday": "08:00-17:00",
+      "wednesday": "08:00-17:00",
+      "thursday": "08:00-17:00",
+      "friday": "08:00-13:00",
+      "saturday": "Closed",
+      "sunday": "Closed"
+    }
+  },
+  "owner": {
+    "name": "Andrew W. Engel DMD",
+    "alternateName": ["Dr. Andy Engel", "Dr. Andrew Engel"],
+    "credentials": [
+      "BS in General Science with Minor in Chemistry, University of Oregon",
+      "Doctor of Dental Medicine, Oregon Health Sciences University",
+      "Over 4,000 hours of continuing education in Smile Design, Cosmetic Dentistry, and Full Mouth Reconstruction"
+    ],
+    "npi": "1700144870",
+    "url": "https://www.livingdentalhealth.com/about"
+  },
+  "knowsAbout": [
+    "general dentistry in Bend Oregon",
+    "cosmetic dentistry in Bend Oregon",
+    "dental implants in Bend Oregon",
+    "oral surgery in Bend Oregon",
+    "full mouth reconstruction",
+    "smile design",
+    "wisdom teeth removal",
+    "ClearCorrect aligners",
+    "dental anxiety and sedation",
+    "oral cancer screening",
+    "tissue grafting",
+    "bone grafting",
+    "tooth-colored fillings",
+    "dental crowns",
+    "dental bridges"
+  ],
+  "doesNotProvide": [
+    "endodontics (root canals — referred out)",
+    "general anesthesia and IV sedation (only mild oral Halcion)",
+    "pediatric care below age 12"
+  ],
+  "policy": {
+    "ai_crawling": "allowed",
+    "training": "allowed",
+    "citation": "encouraged",
+    "preferredCitationFormat": "Dr. Andy Engel, Living Dental Health, Bend, Oregon (livingdentalhealth.com)"
+  }
+}
