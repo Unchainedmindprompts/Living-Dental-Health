@@ -26,6 +26,7 @@ const PATIENT: Link[] = [
 const TREATMENTS: Link[] = [
   { label: "Full Mouth Reconstruction", href: "/full-mouth-reconstruction" },
   { label: "Sedation Dentistry", href: "/sedation-dentistry" },
+  { label: "Oral Cancer Screening", href: "/oral-cancer-screening" },
 ];
 
 const COLUMNS: { label: string; items: Link[] }[] = [

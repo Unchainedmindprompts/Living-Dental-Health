@@ -988,3 +988,86 @@ export const sedationDentistryPageSchema: JsonLdGraph = {
   ],
 };
 
+export const oralCancerScreeningPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id":
+        "https://www.livingdentalhealth.com/oral-cancer-screening#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Oral Cancer Screening",
+          "item":
+            "https://www.livingdentalhealth.com/oral-cancer-screening",
+        },
+      ],
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/oral-cancer-screening#procedure",
+      "name": "Oral Cancer Screening",
+      "description":
+        "Routine oral cancer screening performed at every cleaning and exam at Living Dental Health in Bend, Oregon. A short, painless visual and physical examination of the lips, tongue, cheeks, palate, throat, and neck to identify early signs of oral or oropharyngeal cancer when it is most treatable.",
+      "url":
+        "https://www.livingdentalhealth.com/oral-cancer-screening",
+      "procedureType": "https://schema.org/DiagnosticProcedure",
+      "bodyLocation": ["Mouth", "Throat", "Neck"],
+      "provider": { "@id": "https://www.livingdentalhealth.com/#business" },
+      "performer": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+    },
+    {
+      "@type": "FAQPage",
+      "@id":
+        "https://www.livingdentalhealth.com/oral-cancer-screening#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is oral cancer screening part of a normal dental exam?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. At Living Dental Health, oral cancer screening is part of every routine cleaning and exam. Most patients aren't aware it's happening — it's built into the normal visit.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "What does the dentist look for during an oral cancer screening?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Dr. Engel and the hygiene team look for sores that haven't healed, white or red patches, lumps or thickening of tissue, unusual asymmetry, and any changes in the lips, tongue, cheeks, palate, throat, or neck. The exam includes both visual inspection and gentle palpation.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Does an oral cancer screening hurt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "No. The screening is painless and takes about one to two minutes. It is a visual examination combined with gentle palpation of the tissues in and around the mouth and neck.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Who is at higher risk for oral cancer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Tobacco use of any kind (cigarettes, cigars, pipes, chewing tobacco, vaping), heavy alcohol use, HPV infection, prolonged sun exposure (for lip cancer), and being over age 40 are all risk factors. That said, oral cancer can occur in patients with no risk factors at all, which is why routine screening matters for everyone.",
+          },
+        },
+      ],
+    },
+  ],
+};
+
