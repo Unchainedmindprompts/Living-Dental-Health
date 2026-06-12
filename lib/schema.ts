@@ -909,3 +909,82 @@ export const fullMouthReconstructionPageSchema: JsonLdGraph = {
   ],
 };
 
+export const sedationDentistryPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id":
+        "https://www.livingdentalhealth.com/sedation-dentistry#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Sedation Dentistry",
+          "item":
+            "https://www.livingdentalhealth.com/sedation-dentistry",
+        },
+      ],
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/sedation-dentistry#procedure",
+      "name": "Sedation Dentistry",
+      "alternateName": "Oral Sedation Dentistry",
+      "description":
+        "Mild oral sedation with Halcion (triazolam) for patients with dental anxiety, those scheduled for oral surgery, or anyone who would prefer a more relaxed visit. Used selectively at Living Dental Health alongside a calm, unhurried approach to every appointment. Halcion is fully cleared from the system within about 24 hours.",
+      "url":
+        "https://www.livingdentalhealth.com/sedation-dentistry",
+      "procedureType": "https://schema.org/TherapeuticProcedure",
+      "drug": {
+        "@type": "Drug",
+        "name": "Halcion",
+        "alternateName": "triazolam",
+      },
+      "provider": { "@id": "https://www.livingdentalhealth.com/#business" },
+      "performer": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+    },
+    {
+      "@type": "FAQPage",
+      "@id":
+        "https://www.livingdentalhealth.com/sedation-dentistry#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Halcion and how does it work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Halcion is the brand name for triazolam, a mild oral sedative in the benzodiazepine class. It is taken as a pill before the appointment so patients arrive deeply relaxed. Patients remain conscious and can respond to instructions, but typically feel calm enough to rest comfortably through their visit. Many patients end up taking a cozy nap in the chair.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "How long does Halcion stay in my system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Halcion is short-acting and is generally cleared from the body within about 24 hours of the dose. Patients are advised not to drive, operate machinery, or make important decisions for the rest of the day after taking it.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Will I need someone to drive me home?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. Because Halcion remains active for several hours after the appointment, every patient who takes oral sedation needs a responsible adult to drive them to and from Living Dental Health and stay with them for the rest of the day.",
+          },
+        },
+      ],
+    },
+  ],
+};
+
