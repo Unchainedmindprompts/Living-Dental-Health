@@ -1071,3 +1071,228 @@ export const oralCancerScreeningPageSchema: JsonLdGraph = {
   ],
 };
 
+export const aboutPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.livingdentalhealth.com/about#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Meet Dr. Engel",
+          "item": "https://www.livingdentalhealth.com/about",
+        },
+      ],
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://www.livingdentalhealth.com/about#aboutpage",
+      "url": "https://www.livingdentalhealth.com/about",
+      "name": "Meet Dr. Andy Engel — Living Dental Health",
+      "description":
+        "Dr. Andrew W. Engel DMD is the founder of Living Dental Health in Bend, Oregon. OHSU graduate with a chemistry minor from the University of Oregon and over 4,000 hours of continuing education in smile design, cosmetic dentistry, and full mouth reconstruction.",
+      "isPartOf": {
+        "@id": "https://www.livingdentalhealth.com/#website",
+      },
+      "about": {
+        "@id": "https://www.livingdentalhealth.com/#doctor",
+      },
+      "mainEntity": {
+        "@id": "https://www.livingdentalhealth.com/#doctor",
+      },
+      "publisher": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+  ],
+};
+
+// Team page: AboutPage + Person entities for the team + Review entities
+// for the patient testimonials displayed on the page.
+export const teamPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.livingdentalhealth.com/team#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "The Team",
+          "item": "https://www.livingdentalhealth.com/team",
+        },
+      ],
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://www.livingdentalhealth.com/team#aboutpage",
+      "url": "https://www.livingdentalhealth.com/team",
+      "name": "Meet the Team — Living Dental Health",
+      "description":
+        "Meet Dr. Andy Engel and the Living Dental Health team in Bend, Oregon — hygienists, dental assistant, office manager, and operations.",
+      "isPartOf": { "@id": "https://www.livingdentalhealth.com/#website" },
+      "about": { "@id": "https://www.livingdentalhealth.com/#business" },
+      "publisher": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.livingdentalhealth.com/team#samantha-gassman",
+      "name": "Samantha Gassman",
+      "jobTitle": "Office Manager",
+      "worksFor": { "@id": "https://www.livingdentalhealth.com/#business" },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.livingdentalhealth.com/team#francie-engel",
+      "name": "Francie Engel",
+      "jobTitle": "Operations Administrator",
+      "worksFor": { "@id": "https://www.livingdentalhealth.com/#business" },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.livingdentalhealth.com/team#nicole-tarpey",
+      "name": "Nicole Tarpey",
+      "jobTitle": "Dental Hygienist",
+      "worksFor": { "@id": "https://www.livingdentalhealth.com/#business" },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.livingdentalhealth.com/team#sacha-lodge",
+      "name": "Sacha Lodge",
+      "jobTitle": "Dental Hygienist",
+      "worksFor": { "@id": "https://www.livingdentalhealth.com/#business" },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.livingdentalhealth.com/team#christy-spencer",
+      "name": "Christy Spencer",
+      "jobTitle": "Dental Assistant",
+      "worksFor": { "@id": "https://www.livingdentalhealth.com/#business" },
+    },
+    {
+      "@type": "Review",
+      "@id": "https://www.livingdentalhealth.com/team#review-mcnall",
+      "reviewBody":
+        "Great service and treatment, very helpful and kind employees!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1",
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Dylan McNall",
+      },
+      "publisher": { "@type": "Organization", "name": "Google" },
+      "itemReviewed": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+    {
+      "@type": "Review",
+      "@id": "https://www.livingdentalhealth.com/team#review-bollinger",
+      "reviewBody":
+        "Excellent care and personable, caring staff and dentist!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1",
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Gail Bollinger",
+      },
+      "publisher": { "@type": "Organization", "name": "Google" },
+      "itemReviewed": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+    {
+      "@type": "Review",
+      "@id": "https://www.livingdentalhealth.com/team#review-cardenas",
+      "reviewBody":
+        "It is never a rushed experience, and I appreciate the quality care.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1",
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Amanda Cardenas",
+      },
+      "publisher": { "@type": "Organization", "name": "Google" },
+      "itemReviewed": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+  ],
+};
+
+export const postOpPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id":
+        "https://www.livingdentalhealth.com/patient-info/post-op#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Patient Info",
+          "item": "https://www.livingdentalhealth.com/patient-info",
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Post-Op Instructions",
+          "item":
+            "https://www.livingdentalhealth.com/patient-info/post-op",
+        },
+      ],
+    },
+    {
+      "@type": "WebPage",
+      "@id":
+        "https://www.livingdentalhealth.com/patient-info/post-op#webpage",
+      "url": "https://www.livingdentalhealth.com/patient-info/post-op",
+      "name": "Post-Op Instructions — Living Dental Health",
+      "description":
+        "After-care instructions following dental procedures at Living Dental Health in Bend, Oregon — covering extractions, dental implants, bone and tissue grafting, and routine care.",
+      "isPartOf": {
+        "@id": "https://www.livingdentalhealth.com/#website",
+      },
+      "publisher": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+    },
+  ],
+};
+

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import { postOpPageSchema, sanitizeJsonLd } from "@/lib/schema";
 
 const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
@@ -133,12 +134,19 @@ const EXTRACTION_EXPECT = [
 
 export default function PostOpPage() {
   return (
-    <main
-      className="min-h-screen text-charcoal"
-      style={{ backgroundColor: "#F5F0E8" }}
-    >
-      <Nav />
-      <div className="h-[100px]" aria-hidden />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(sanitizeJsonLd(postOpPageSchema)),
+        }}
+      />
+      <main
+        className="min-h-screen text-charcoal"
+        style={{ backgroundColor: "#F5F0E8" }}
+      >
+        <Nav />
+        <div className="h-[100px]" aria-hidden />
 
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="mx-auto max-w-[1320px] px-6 pt-4">
@@ -492,6 +500,7 @@ export default function PostOpPage() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+    </>
   );
 }
