@@ -38,7 +38,6 @@ const TEAM: {
   image?: string;
   imageAlt?: string;
   imageObjectPosition?: string;
-  imageInset?: string;
 }[] = [
   {
     name: "Samantha Gassman",
@@ -47,8 +46,7 @@ const TEAM: {
     image: "/team-samantha.png",
     imageAlt:
       "Samantha Gassman, Office Manager at Living Dental Health in Bend, Oregon",
-    imageObjectPosition: "center 15%",
-    imageInset: "6%",
+    imageObjectPosition: "center 20%",
   },
   {
     name: "Francie Engel",
@@ -329,22 +327,17 @@ export default function TeamPage() {
                   className="overflow-hidden rounded-xl bg-cream-deep"
                 >
                   {m.image ? (
-                    <div className="relative aspect-[4/3] w-full bg-cream-deep">
-                      <div
-                        className="absolute"
-                        style={{ inset: m.imageInset ?? 0 }}
-                      >
-                        <Image
-                          src={m.image}
-                          alt={m.imageAlt ?? m.name}
-                          fill
-                          sizes="(min-width: 640px) 50vw, 100vw"
-                          className="object-cover"
-                          style={{
-                            objectPosition: m.imageObjectPosition ?? "center",
-                          }}
-                        />
-                      </div>
+                    <div className="relative aspect-[4/3] w-full">
+                      <Image
+                        src={m.image}
+                        alt={m.imageAlt ?? m.name}
+                        fill
+                        sizes="(min-width: 640px) 50vw, 100vw"
+                        className="object-cover"
+                        style={{
+                          objectPosition: m.imageObjectPosition ?? "center",
+                        }}
+                      />
                     </div>
                   ) : (
                     <div
