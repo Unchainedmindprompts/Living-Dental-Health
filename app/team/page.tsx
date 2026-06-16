@@ -37,6 +37,7 @@ const TEAM: {
   bio: string;
   image?: string;
   imageAlt?: string;
+  imageObjectPosition?: string;
 }[] = [
   {
     name: "Samantha Gassman",
@@ -45,6 +46,7 @@ const TEAM: {
     image: "/team-samantha.png",
     imageAlt:
       "Samantha Gassman, Office Manager at Living Dental Health in Bend, Oregon",
+    imageObjectPosition: "center 15%",
   },
   {
     name: "Francie Engel",
@@ -331,7 +333,10 @@ export default function TeamPage() {
                         alt={m.imageAlt ?? m.name}
                         fill
                         sizes="(min-width: 640px) 50vw, 100vw"
-                        className="object-cover object-center"
+                        className="object-cover"
+                        style={{
+                          objectPosition: m.imageObjectPosition ?? "center",
+                        }}
                       />
                     </div>
                   ) : (
