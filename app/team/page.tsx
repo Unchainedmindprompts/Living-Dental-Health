@@ -37,14 +37,16 @@ const TEAM: {
   bio: string;
   image?: string;
   imageAlt?: string;
+  imageObjectPosition?: string;
 }[] = [
   {
     name: "Samantha Gassman",
     role: "Office Manager",
     bio: "Samantha keeps Living Dental Health running smoothly. From scheduling to insurance to making sure every patient feels welcome the moment they walk in, she’s the steady hand behind the front office. [Full bio coming soon]",
-    image: "/team-samantha.webp",
+    image: "/team-samantha.png",
     imageAlt:
       "Samantha Gassman, Office Manager at Living Dental Health in Bend, Oregon",
+    imageObjectPosition: "center 20%",
   },
   {
     name: "Francie Engel",
@@ -66,7 +68,7 @@ const TEAM: {
     name: "Sacha Lodge",
     role: "Dental Hygienist",
     bio: "Sacha brings warmth and a steady hand to every cleaning and periodontal visit. [Full bio coming soon]",
-    image: "/team-sacha.webp",
+    image: "/team-sacha.png",
     imageAlt:
       "Sacha Lodge, Dental Hygienist at Living Dental Health in Bend, Oregon",
   },
@@ -331,7 +333,10 @@ export default function TeamPage() {
                         alt={m.imageAlt ?? m.name}
                         fill
                         sizes="(min-width: 640px) 50vw, 100vw"
-                        className="object-cover object-center"
+                        className="object-cover"
+                        style={{
+                          objectPosition: m.imageObjectPosition ?? "center",
+                        }}
                       />
                     </div>
                   ) : (
