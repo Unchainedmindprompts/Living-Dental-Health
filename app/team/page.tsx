@@ -42,7 +42,7 @@ const TEAM: {
     name: "Samantha Gassman",
     role: "Office Manager",
     bio: "Samantha keeps Living Dental Health running smoothly. From scheduling to insurance to making sure every patient feels welcome the moment they walk in, she’s the steady hand behind the front office. [Full bio coming soon]",
-    image: "/team-samantha.webp",
+    image: "/team-samantha.png",
     imageAlt:
       "Samantha Gassman, Office Manager at Living Dental Health in Bend, Oregon",
   },
