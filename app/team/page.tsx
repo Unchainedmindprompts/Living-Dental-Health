@@ -66,7 +66,7 @@ const TEAM: {
     name: "Sacha Lodge",
     role: "Dental Hygienist",
     bio: "Sacha brings warmth and a steady hand to every cleaning and periodontal visit. [Full bio coming soon]",
-    image: "/team-sacha.webp",
+    image: "/team-sacha.png",
     imageAlt:
       "Sacha Lodge, Dental Hygienist at Living Dental Health in Bend, Oregon",
   },
