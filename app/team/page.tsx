@@ -13,24 +13,6 @@ export const metadata: Metadata = {
     "Meet Dr. Andy Engel and the Living Dental Health team in Bend, Oregon. Twenty-eight years of personalized dental care, the same faces, and a commitment to knowing every patient by name.",
 };
 
-const CREDENTIALS = [
-  "Doctor of Dental Medicine, OHSU 1998",
-  "Advanced training: Full Mouth Reconstruction",
-  "Advanced training: Oral Surgery",
-  "Advanced training: Implants & Bone Grafting",
-  "Certified ClearCorrect Provider",
-  "Founder, Living Dental Health 2013",
-  "28 years serving Bend, Oregon",
-  "Accepting patients ages 12 and up",
-];
-
-const FUN_FACTS = [
-  "Skis moguls at Mt. Bachelor",
-  "Motorsports enthusiast",
-  "Corgi dad (Murphy)",
-  "Almost chose the Olympics over dentistry",
-];
-
 const TEAM: {
   name: string;
   role: string;
@@ -39,6 +21,15 @@ const TEAM: {
   imageAlt?: string;
   imageObjectPosition?: string;
 }[] = [
+  {
+    name: "Dr. Andy Engel",
+    role: "Founder & Dentist",
+    bio: "Founder of Living Dental Health, caring for Bend families since 1998. OHSU-trained, with over 4,000 hours of continuing education in smile design, cosmetic dentistry, and full mouth reconstruction. Full bio on the Meet Dr. Engel page.",
+    image: "/dr-andy.webp",
+    imageAlt:
+      "Dr. Andy Engel DMD, founder of Living Dental Health in Bend, Oregon",
+    imageObjectPosition: "center 15%",
+  },
   {
     name: "Samantha Gassman",
     role: "Office Manager",
@@ -152,136 +143,6 @@ export default function TeamPage() {
             <span style={{ color: SAGE_LABEL }}>·</span> 4.9 ★{" "}
             <span style={{ color: SAGE_LABEL }}>·</span> 211 Google reviews
           </p>
-        </section>
-
-        {/* HOW WE WORK */}
-        <section className="mx-auto max-w-[1320px] px-6 pt-16 pb-16 sm:pt-20 sm:pb-20">
-          <div className="mx-auto max-w-[720px] text-center">
-            <h2 className="font-serif text-[32px] leading-[1.05] text-charcoal sm:text-[44px]">
-              How we <span className="font-serif-italic">work</span>
-            </h2>
-            <p className="mt-6 font-inter text-[15px] font-light leading-[1.8] text-charcoal-soft sm:text-[17px]">
-              Dr. Engel is a bit of a detective. He listens first, asks
-              questions, and spends time understanding your goals before
-              recommending anything. No cookie-cutter treatment plans. No
-              procedures you didn’t ask for. Just honest, personalized care
-              from a team that wants to know you on a first-name basis — and
-              say hi when they see you at Mt. Bachelor.
-            </p>
-          </div>
-        </section>
-
-        {/* DR. ANDY ENGEL */}
-        <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">
-          <div
-            className="mx-auto max-w-[1100px] border-t pt-12 sm:pt-14"
-            style={{ borderColor: "rgba(28,26,23,0.18)" }}
-          >
-            <div className="grid gap-10 lg:grid-cols-[auto_1fr] lg:items-start lg:gap-16">
-              <div className="relative mx-auto aspect-[4/5] w-full max-w-[340px] overflow-hidden rounded-xl bg-cream-deep sm:max-w-[400px] lg:mx-0 lg:w-[400px]">
-                <Image
-                  src="/dr-andy.webp"
-                  alt="Dr. Andy Engel DMD founder of Living Dental Health Bend Oregon"
-                  fill
-                  sizes="(min-width: 1024px) 400px, (min-width: 640px) 400px, 340px"
-                  className="object-cover object-center"
-                />
-              </div>
-
-              <div>
-                <p
-                  className="font-inter text-[11px] font-light uppercase tracking-widest"
-                  style={{ color: SAGE }}
-                >
-                  Meet your dentist
-                </p>
-                <h2 className="mt-4 font-serif text-[32px] leading-[1.05] text-charcoal sm:text-[44px]">
-                  Dr. Andrew W. <span className="font-serif-italic">Engel</span>
-                  , DMD
-                </h2>
-                <p className="mt-2 font-inter text-[13px] font-light uppercase tracking-[0.18em] text-warm-gray">
-                  Known to patients as Dr. Andy
-                </p>
-
-                <div className="mt-6 space-y-5 font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft sm:text-[16px]">
-                  <p>
-                    Dr. Andy grew up in Boise, Idaho before his family
-                    relocated to Oregon in 1988. He knew he wanted to be a
-                    dentist in the eighth grade — he loved fixing things and
-                    wanted to help people. That combination led him straight
-                    to Oregon Health Sciences University, where he graduated
-                    early and pursued advanced training in full mouth
-                    reconstruction, oral surgery, implants, ClearCorrect, and
-                    tissue and bone grafting.
-                  </p>
-                  <p>
-                    He moved to Bend in 1998, helped establish Century Dental
-                    Group, then founded Living Dental Health in 2013 to
-                    fulfill a lifelong goal of building something of his own.
-                    In 28 years of practice he has become one of Central
-                    Oregon’s most trusted dentists for complex cases — the
-                    kind most general dentists refer out. Dr. Andy does them
-                    here.
-                  </p>
-                  <p>
-                    His approach is simple: listen first, never rush a patient
-                    through a decision, and build a relationship that lasts.
-                    His dream patient is a good communicator — someone he can
-                    work with as a team and wave to around town.
-                  </p>
-                  <p>
-                    When he’s not in the office you might find him skiing
-                    moguls at Mt. Bachelor, out on one of his motorcycles, or
-                    at home with wife Francie, son Sean, daughters Ally and
-                    Rhone, and Murphy the Corgi.
-                  </p>
-                </div>
-
-                {/* Credentials */}
-                <div
-                  className="mt-10 border-t pt-8"
-                  style={{ borderColor: "rgba(28,26,23,0.14)" }}
-                >
-                  <p
-                    className="font-inter text-[11px] font-light uppercase tracking-widest"
-                    style={{ color: SAGE }}
-                  >
-                    Credentials
-                  </p>
-                  <ul className="mt-5 grid gap-x-10 gap-y-3 sm:grid-cols-2">
-                    {CREDENTIALS.map((c) => (
-                      <li
-                        key={c}
-                        className="flex items-baseline gap-3 font-inter text-[14px] font-light text-charcoal-soft sm:text-[15px]"
-                      >
-                        <span
-                          aria-hidden
-                          className="text-[11px]"
-                          style={{ color: SAGE }}
-                        >
-                          ✦
-                        </span>
-                        {c}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Fun facts */}
-                <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2">
-                  {FUN_FACTS.map((f) => (
-                    <li
-                      key={f}
-                      className="font-serif-italic text-[15px]"
-                      style={{ color: SAGE }}
-                    >
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
         </section>
 
         {/* THE TEAM */}
