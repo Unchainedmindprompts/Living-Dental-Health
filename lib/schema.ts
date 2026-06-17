@@ -469,7 +469,7 @@ export const generalDentistryPageSchema: JsonLdGraph = {
           "acceptedAnswer": {
             "@type": "Answer",
             "text":
-              "Yes. Digital X-rays are taken on-site for every routine exam. For more complex cases, Dr. Engel uses in-house cone-beam CT (CBCT), a true three-dimensional scan of the teeth, jaw, and sinuses — without referring patients to an outside imaging center.",
+              "Yes. Digital X-rays are taken on-site for every routine exam. For more complex cases, Dr. Engel uses in-house cone-beam CT (CBCT) — a true three-dimensional scan of the teeth, jaw, and sinuses — without referring patients to an outside imaging center.",
           },
         },
         {
