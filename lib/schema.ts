@@ -1095,7 +1095,7 @@ export const sedationDentistryPageSchema: JsonLdGraph = {
           "acceptedAnswer": {
             "@type": "Answer",
             "text":
-              "Halcion is the brand name for triazolam, a mild oral sedative in the benzodiazepine class. It is taken as a pill before the appointment so patients arrive deeply relaxed. Patients remain conscious and can respond to instructions, but typically feel calm enough to rest comfortably through their visit. Many patients end up taking a cozy nap in the chair.",
+              "Halcion is the brand name for triazolam, a mild oral sedative in the benzodiazepine class. You take it as a pill before your appointment so you arrive already relaxed. You stay conscious and can respond to instructions, but most patients feel calm enough to rest comfortably — many end up taking a cozy nap in the chair.",
           },
         },
         {
@@ -1104,7 +1104,7 @@ export const sedationDentistryPageSchema: JsonLdGraph = {
           "acceptedAnswer": {
             "@type": "Answer",
             "text":
-              "Halcion is short-acting and is generally cleared from the body within about 24 hours of the dose. Patients are advised not to drive, operate machinery, or make important decisions for the rest of the day after taking it.",
+              "Halcion is short-acting and generally clears your body within about 24 hours. You'll feel like yourself by the next day. Don't drive, operate machinery, or make important decisions for the rest of the day after taking it.",
           },
         },
         {
@@ -1113,7 +1113,7 @@ export const sedationDentistryPageSchema: JsonLdGraph = {
           "acceptedAnswer": {
             "@type": "Answer",
             "text":
-              "Yes. Because Halcion remains active for several hours after the appointment, every patient who takes oral sedation needs a responsible adult to drive them to and from Living Dental Health and stay with them for the rest of the day.",
+              "Yes. Because Halcion is active for several hours after the appointment, every patient who takes oral sedation needs a responsible adult to drive them to and from Living Dental Health and stay with them for the rest of the day.",
           },
         },
       ],
@@ -1187,7 +1187,7 @@ export const oralCancerScreeningPageSchema: JsonLdGraph = {
           "acceptedAnswer": {
             "@type": "Answer",
             "text":
-              "No. The screening is painless and takes about one to two minutes. It is a visual examination combined with gentle palpation of the tissues in and around the mouth and neck.",
+              "No. The screening is painless and takes about one to two minutes. It's a visual examination combined with gentle palpation of the tissues in and around the mouth and neck.",
           },
         },
         {
@@ -1196,7 +1196,7 @@ export const oralCancerScreeningPageSchema: JsonLdGraph = {
           "acceptedAnswer": {
             "@type": "Answer",
             "text":
-              "Tobacco use of any kind (cigarettes, cigars, pipes, chewing tobacco, vaping), heavy alcohol use, HPV infection, prolonged sun exposure (for lip cancer), and being over age 40 are all risk factors. That said, oral cancer can occur in patients with no risk factors at all, which is why routine screening matters for everyone.",
+              "Tobacco use of any kind, heavy alcohol use, HPV infection, prolonged sun exposure to the lips, and being over age 40 are all risk factors. That said, oral cancer can occur in patients with no risk factors at all, which is why routine screening matters for everyone.",
           },
         },
       ],
