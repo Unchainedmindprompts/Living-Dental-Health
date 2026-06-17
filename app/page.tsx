@@ -384,11 +384,12 @@ export default function HomePage() {
 
               <div className="space-y-5 text-charcoal-soft">
                 <p>
-                  Andy opened Living Dental Health the year he graduated from
-                  OHSU and has been here ever since — twenty-eight years in the
-                  same chair, on the same block, with many of the same
-                  families. The practice grew the way good neighborhoods do:
-                  slowly, by referral, around a small team that learned each
+                  Andy has cared for Bend families since 1998, the year he
+                  graduated from OHSU. He founded Living Dental Health in
+                  2013 to build something of his own — twenty-eight years
+                  now in the same town, with many of the same families. The
+                  practice grew the way good neighborhoods do: slowly, by
+                  referral, around a small team that learned each
                   other's rhythms.
                 </p>
                 <p>
