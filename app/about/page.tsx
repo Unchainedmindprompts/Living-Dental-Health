@@ -8,7 +8,7 @@ const SAGE = "#6B7C5C";
 export const metadata: Metadata = {
   title: "Meet Dr. Andy Engel — Living Dental Health",
   description:
-    "Dr. Andrew W. Engel DMD, founder of Living Dental Health in Bend, Oregon. OHSU graduate with advanced training in full mouth reconstruction, oral surgery, dental implants, ClearCorrect, and tissue and bone grafting.",
+    "Dr. Andrew W. Engel DMD, founder of Living Dental Health in Bend, Oregon. OHSU graduate with 28 years caring for Bend families and complex cases.",
 };
 
 const CREDENTIALS = [

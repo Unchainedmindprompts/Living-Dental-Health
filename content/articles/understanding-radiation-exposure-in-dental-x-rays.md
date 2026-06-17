@@ -25,6 +25,6 @@ Radiation exposure is all around us. A set of 4 bitewing X-rays (which you typic
 
 Dental imaging has changed over the years. Most dentists now use digital X-rays, which reduce your exposure to radiation by around 90 percent. Plus, they are fast and much better quality, allowing your dentist to pinpoint issues quickly. And the speed factor gives you more time to chit-chat about fun stuff with Dr. Andy (you’re welcome).
 
-Your health is a top priority. We like to be transparent with our patients and always invite questions or concerns. If this topic has been brought up for you, please [give us a call](http://www.livingdentalhealth.com/contact-us/) or talk to Dr. Andy at your next appointment.
+Your health is a top priority. We like to be transparent with our patients and always invite questions or concerns. If this topic has been brought up for you, please [give us a call](/contact) or talk to Dr. Andy at your next appointment.
 
 We look forward to seeing you soon.

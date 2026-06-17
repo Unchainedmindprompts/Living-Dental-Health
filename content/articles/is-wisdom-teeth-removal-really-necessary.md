@@ -41,4 +41,4 @@ The good news in all of this is that wisdom teeth removal is very common. Evolut
 
 Have you ever heard that if you take care of a problem when it is small, it is easier to fix? Well, that is true for wisdom teeth removal. Often, people wait until their teeth become a problem before having them removed. Perhaps they were hoping they wouldn’t need surgery. Whatever the reason, putting off wisdom teeth removal is a bad idea. So when should you get them removed? Dr. Andy says the ideal time for most people is around age 16-19. This is when the roots aren’t fully grown and are easier to remove with less pain and swelling. Dr. Andy says his patients typically only have two days of downtime. Do it on a Friday, and your weekday schedule will be minimally impacted.
 
-If you have questions about wisdom teeth removal, give us a call or [schedule an appointment](http://www.livingdentalhealth.com/contact-us/) with Dr. Andy. We look forward to hearing from you.
+If you have questions about wisdom teeth removal, give us a call or [schedule an appointment](/contact) with Dr. Andy. We look forward to hearing from you.

@@ -15,7 +15,7 @@ Continuing education is critical for medical professionals because it allows the
 
 Why should this matter to you? In healthcare, as a patient, having a dentist proficient in the latest dentistry advancements improves your experience. Not only will it result in better results, but often less discomfort too. Why not make the time at the dentist one that is the highest quality as possible? If you agree, finding a dentist who prioritizes CE is important. But how do you know this? It is virtually impossible unless you ask. A dentist’s bio should explain their education and advanced training. Advanced training is what you want to see – that they continually advance their knowledge in specific areas. 
 
-At Living Dental Health, CE is a priority. [Dr. Andy Engel](http://www.livingdentalhealth.com/meet-us/) (Dr. Andy) has advanced training in full mouth reconstruction, oral surgery, aesthetics, dental implants, ClearCorrect, and tissue and bone grafting surgeries. This comprehensive training means he is well qualified to serve as your dentist and address various surgical procedures you may need throughout your life. But CE doesn’t stop with the dentist. You should also know that your Hygienist and Dental Assistant (DA) are well-educated. 
+At Living Dental Health, CE is a priority. [Dr. Andy Engel](/about) (Dr. Andy) has advanced training in full mouth reconstruction, oral surgery, aesthetics, dental implants, ClearCorrect, and tissue and bone grafting surgeries. This comprehensive training means he is well qualified to serve as your dentist and address various surgical procedures you may need throughout your life. But CE doesn’t stop with the dentist. You should also know that your Hygienist and Dental Assistant (DA) are well-educated. 
 
 In Oregon, DAs are not licensed but must be certified to take x-rays and perform certain expanded functions. Most DAs receive “on-the-job” training. Some graduate from an accredited school, but most learn how to do their job by working at a dental office. We sat down with DA Christy Spencer to get her take on training. 
 
@@ -33,4 +33,4 @@ Freeing up the doctor’s time means patients can see the dentist sooner. With t
 
 And Dr. Andy couldn’t be happier with the well-rounded skillset that Christy has. 
 
-If you’re looking for a [dentist in Bend, OR](http://www.livingdentalhealth.com/contact-us/), who makes continuing education a priority and wants to give you the very best dental care around, schedule an appointment with Dr. Andy today.
+If you’re looking for a [dentist in Bend, OR](/contact), who makes continuing education a priority and wants to give you the very best dental care around, schedule an appointment with Dr. Andy today.

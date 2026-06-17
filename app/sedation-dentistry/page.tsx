@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title:
     "Sedation Dentistry — Living Dental Health, Bend Oregon",
   description:
-    "Mild oral sedation with Halcion for anxious patients and oral surgery visits at Living Dental Health in Bend, Oregon. Calm pace, gentle approach, fully out of your system in about 24 hours.",
+    "Mild oral Halcion sedation for anxious patients and oral surgery in Bend, Oregon. Calm pace, gentle approach, out of your system in about 24 hours.",
 };
 
 // PLACEHOLDER COPY — structured to show layout. Andy's voice fills the gaps.
@@ -144,7 +144,7 @@ export default function SedationDentistryPage() {
             {/* PLACEHOLDER IMAGE — patient-info-hero shows a relaxed patient chatting with Dr. Andy and a team member; swap when a dedicated sedation photo exists */}
             <Image
               src="/patient-info-hero.webp"
-              alt="Dr. Andy Engel and a team member chatting with a relaxed patient at Living Dental Health in Bend, Oregon"
+              alt="Dr. Andy Engel and a Living Dental Health team member putting a relaxed patient at ease in Bend, Oregon"
               fill
               priority
               sizes="100vw"

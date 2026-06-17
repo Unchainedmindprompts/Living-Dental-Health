@@ -13,7 +13,7 @@ Many options exist when you need a new dentist in Bend, OR. And while it is good
 
 “I began seeing Dr. Andy Engel about ten years ago, and over that time, he has renovated my entire mouth,” said Mary Lou Granite-Meyer. “He takes his time and is warm and gentle. Dr. Engel is the best dentist I have ever gone to.”
 
-It stands to reason that competence is a desired trait Americans want in their chosen service providers. This couldn’t be farther from the truth when selecting a dentist. Competence as a dentist is directly related to experience in the field. The more practice you have doing something, the more proficient you become. And when it comes to experienced dentists in Central Oregon, not many can say they’ve been honing their craft for a quarter century. But [Dr. Engel](http://www.livingdentalhealth.com/meet-us/) can. He is celebrating his 25th year as a dentist in Bend, OR. 
+It stands to reason that competence is a desired trait Americans want in their chosen service providers. This couldn’t be farther from the truth when selecting a dentist. Competence as a dentist is directly related to experience in the field. The more practice you have doing something, the more proficient you become. And when it comes to experienced dentists in Central Oregon, not many can say they’ve been honing their craft for a quarter century. But [Dr. Engel](/about) can. He is celebrating his 25th year as a dentist in Bend, OR. 
 
 “I started seeing Dr. Engel in 1998 when I had just moved to Bend,” said Butch Hansen. “He’s had to fix many mistakes other dentists have made, and I would not let anyone else touch my teeth. I spent ten years working out of town and came to Bend to have Dr. Engel care for my teeth.”
 

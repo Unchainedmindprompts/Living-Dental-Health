@@ -11,7 +11,7 @@ const RULE = "rgba(28,26,23,0.18)";
 export const metadata: Metadata = {
   title: "Post-Op Instructions — Living Dental Health, Bend Oregon",
   description:
-    "Recovery instructions after gum and tissue graft surgery, dental implant placement, and surgical tooth extraction at Living Dental Health in Bend, Oregon. Questions after your procedure? Call (541) 550-5311.",
+    "Recovery instructions after extractions, implants, and tissue or bone graft surgery at Living Dental Health, Bend Oregon. Questions? Call (541) 550-5311.",
 };
 
 function Callout({

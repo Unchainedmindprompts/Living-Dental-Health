@@ -9,7 +9,7 @@ status: "migrated-as-is"
 ---
 We all remember the dread of having our wisdom teeth removed when we were in our late teens or early twenties. It’s a rite of passage that many of us have to go through. But what can we really expect when facing this common dental procedure? 
 
-I recently spoke with [Christy Spencer](http://www.livingdentalhealth.com/meet-us/), a dental assistant at Living Dental Health, about what patients can expect when getting their wisdom teeth removed. She shed some light on the process, the common complications, and important post-operative care tips.
+I recently spoke with [Christy Spencer](/about), a dental assistant at Living Dental Health, about what patients can expect when getting their wisdom teeth removed. She shed some light on the process, the common complications, and important post-operative care tips.
 
 According to Christy, the average patient age for wisdom teeth removal hovers around the late teens and early twenties, but the ideal time falls between 17 and 26. However, the timeline might shift if your teeth are fashionably early bloomers. Who knew wisdom teeth had a sense of fashion, right?
 
@@ -23,6 +23,6 @@ After the procedure, patients are provided with detailed post-operative care ins
 
 To promote proper and fast healing, it’s crucial to avoid hot foods and drinks, hard foods, drinking from a straw, smoking or vaping, and strenuous activities. Additionally, patients are advised to use ice packs to reduce swelling, rinse with salt water after 72 hours to aid in healing, take prescribed pain medication, and be mindful of their diet and oral care during recovery. Soft foods are on the menu, my friend!
 
-In closing, getting your wisdom teeth removed is an adventure! Under the skilled hands of Dr. Engel, surgery is a breeze for most patients, especially if you have good direction-following skills. If wisdom teeth removal is in your future, talk with [Dr. Engel](http://www.livingdentalhealth.com/meet-us/) to find out when you should plan on getting it done. He’ll be monitoring your wisdom teeth’ entrance into the world and will keep you in the loop regarding when they should get the boot. 
+In closing, getting your wisdom teeth removed is an adventure! Under the skilled hands of Dr. Engel, surgery is a breeze for most patients, especially if you have good direction-following skills. If wisdom teeth removal is in your future, talk with [Dr. Engel](/about) to find out when you should plan on getting it done. He’ll be monitoring your wisdom teeth’ entrance into the world and will keep you in the loop regarding when they should get the boot. 
 
-If you are hungry for more info, you can read another insightful blog we’ve written on wisdom teeth removal [here](http://www.livingdentalhealth.com/some-wise-advice-on-wisdom-teeth-removal/).
+If you are hungry for more info, you can read another insightful blog we’ve written on wisdom teeth removal [here](/articles/some-wise-advice-on-wisdom-teeth-removal).

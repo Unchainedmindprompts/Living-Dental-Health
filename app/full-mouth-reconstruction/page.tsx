@@ -11,10 +11,9 @@ const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {
-  title:
-    "Full Mouth Reconstruction — Living Dental Health, Bend Oregon",
+  title: "Full Mouth Reconstruction — Living Dental Health, Bend",
   description:
-    "Full mouth reconstruction with Dr. Andy Engel in Bend, Oregon. Over 4,000 hours of continuing education in smile design, cosmetic dentistry, and full mouth reconstruction. Precision-driven rebuilds that protect your bite, jaw, and long-term oral health.",
+    "Full mouth reconstruction in Bend, Oregon with Dr. Andy Engel. Over 4,000 CE hours and precision planning that protects your bite, jaw, and oral health.",
 };
 
 // PLACEHOLDER COPY — structured to show layout. Replace with Andy's voice once layout is approved.

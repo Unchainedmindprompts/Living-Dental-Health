@@ -11,7 +11,7 @@ Gut health is directly linked to overall health. People with a healthy gut tend 
 
 Stomach acid is quite acidic, with a pH between 1 and 2. Battery acid is also quite acidic, with a pH of around 0.8. If battery acid can dissolve metal, surely stomach acid can dissolve teeth. And it does. Sadly, many people don’t realize it is happening, or the onset is so fast they don’t have a warning.
 
-[Dr. Andy Engel](http://www.livingdentalhealth.com/meet-your-new-dentist/) (Dr. Andy) has been treating patients as a dentist for over 25 years, and he has never seen a surge in tooth erosion cases as he is right now. And he is bound and determined to get to the bottom of it, or at least help prevent you from getting it (hence this blog). 
+[Dr. Andy Engel](/articles/meet-your-new-dentist) (Dr. Andy) has been treating patients as a dentist for over 25 years, and he has never seen a surge in tooth erosion cases as he is right now. And he is bound and determined to get to the bottom of it, or at least help prevent you from getting it (hence this blog). 
 
 “The first time I saw a handful of cases of tooth erosion in patients who were otherwise healthy, I was surprised,” said Dr. Andy. “But recently, the cases have increased, and the damage is happening much more aggressively. I have seen cases where the patient was doing great six months ago and now has significant damage to their teeth.”
 
@@ -43,4 +43,4 @@ There are some treatments available that can help rebalance your mouth’s pH, b
 
 The heart of the matter is that this issue is happening suddenly and without warning. If you are due for a dental exam and cleaning, don’t put it off. The costs of ignoring your oral health far outweigh a short visit to your friendly dentist’s office. And if you have any of the red flags we mentioned above, talk to Dr. Andy so you can work together to prevent it from happening to you. 
 
-We want you to be healthy so you can enjoy a long and beautiful life. If you have questions or concerns about enamel erosion, please contact us or [schedule an appointment](http://www.livingdentalhealth.com/contact-us/) with Dr. Andy. He can’t wait to see you.
+We want you to be healthy so you can enjoy a long and beautiful life. If you have questions or concerns about enamel erosion, please contact us or [schedule an appointment](/contact) with Dr. Andy. He can’t wait to see you.

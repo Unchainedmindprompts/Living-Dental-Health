@@ -37,8 +37,8 @@ As one of our satisfied patients, Spencer, noted, “I choose to go here outside
 
 **Alternative Solutions to Dental Insurance**
 
-For those without insurance, we offer an in-office savings plan through Quality Dental Plan. This comprehensive plan covers all preventive care, including cleanings, x-rays, and exams at 100%. It also provides exclusive benefits on restorative and even cosmetic treatments. It’s a great and affordable option for families looking to manage costs while receiving quality dental care. You can learn more about it [here](http://www.livingdentalhealth.com/in-office-dental-plan/).
+For those without insurance, we offer an in-office savings plan through Quality Dental Plan. This comprehensive plan covers all preventive care, including cleanings, x-rays, and exams at 100%. It also provides exclusive benefits on restorative and even cosmetic treatments. It’s a great and affordable option for families looking to manage costs while receiving quality dental care. You can learn more about it [here](/patient-info).
 
 Ultimately, your oral health is too important to leave to the constraints of insurance networks. Evaluate the quality of care available, consider your options, and don’t hesitate to choose a dentist you feel comfortable with. Whether you utilize your insurance, pay out-of-pocket, or explore our in-office savings plan, what truly matters is that you can achieve the smile you’ve always wanted without unnecessary stress. 
 
-If you have questions about your coverage or our services, [please ask us](http://www.livingdentalhealth.com/contact-us/)! We are here to help you navigate the mysterious world of dental insurance.
+If you have questions about your coverage or our services, [please ask us](/contact)! We are here to help you navigate the mysterious world of dental insurance.

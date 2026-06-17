@@ -10,7 +10,7 @@ const SAGE_LABEL = "#9CAF88";
 export const metadata: Metadata = {
   title: "Meet the Team — Living Dental Health, Bend Oregon",
   description:
-    "Meet Dr. Andy Engel and the Living Dental Health team in Bend, Oregon. Twenty-eight years of personalized dental care, the same faces, and a commitment to knowing every patient by name.",
+    "Meet Dr. Andy Engel and the Living Dental Health team in Bend, Oregon. 28 years of personalized care from a team that knows every patient by name.",
 };
 
 const TEAM: {

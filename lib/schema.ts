@@ -449,6 +449,58 @@ export const generalDentistryPageSchema: JsonLdGraph = {
         "@id": "https://www.livingdentalhealth.com/#business",
       },
     },
+    {
+      "@type": "FAQPage",
+      "@id":
+        "https://www.livingdentalhealth.com/general-dentistry#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How often should I get a dental cleaning and exam at Living Dental Health?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "We recommend a professional cleaning and exam every six months. Most appointments run about 60 minutes and include a routine oral cancer screening at no extra cost.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Does Living Dental Health offer digital X-rays and 3D CBCT imaging in-house?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. Digital X-rays are taken on-site for every routine exam. For more complex cases, Dr. Engel uses in-house cone-beam CT (CBCT), a true three-dimensional scan of the teeth, jaw, and sinuses — without referring patients to an outside imaging center.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Are tooth-colored fillings safe and how long do they last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Tooth-colored composite fillings are safe, contain no mercury, and bond directly to the tooth structure. With normal care, composite fillings typically last 7 to 10 years or longer.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Is Dr. Andy Engel accepting new patients in Bend, Oregon?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. Living Dental Health is accepting new patients ages 12 and up. Call (541) 550-5311 to schedule a first visit.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "What ages do you treat at Living Dental Health?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Living Dental Health serves patients ages 12 and up — teens, adults, families, and longtime patients alike. Younger children are referred to a pediatric dentist for age-appropriate care.",
+          },
+        },
+      ],
+    },
   ],
 };
 
@@ -551,6 +603,58 @@ export const implantsSurgeryPageSchema: JsonLdGraph = {
       "provider": {
         "@id": "https://www.livingdentalhealth.com/#doctor",
       },
+    },
+    {
+      "@type": "FAQPage",
+      "@id":
+        "https://www.livingdentalhealth.com/implants-surgery#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Dr. Andy Engel place dental implants in-house?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. Dr. Engel places and restores dental implants entirely in-house at Living Dental Health in Bend, Oregon — from the initial CBCT scan and planning through implant placement and the final crown. Patients are not referred to an outside oral surgeon.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "What is CBCT 3D imaging and why does it matter for dental implants?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Cone-beam computed tomography (CBCT) produces a true three-dimensional image of the teeth, jaw, sinuses, and surrounding structures. CBCT lets Dr. Engel plan implant placement to the millimeter, evaluate bone density before grafting, and locate impacted wisdom teeth precisely. Most general dentists in Central Oregon refer patients out for CBCT; Living Dental Health performs it in-house.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Does Living Dental Health perform bone and tissue grafting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. Dr. Engel performs bone and tissue grafting in-house. Grafting is often required before an implant can be placed in an area that has lost bone density due to tooth loss, gum disease, or time.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Are wisdom teeth extractions handled in the office?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. Wisdom teeth removal — one tooth or all four, impacted or straightforward — is one of the most common surgical procedures performed at Living Dental Health, handled in-office under local anesthesia. Patients are seen promptly and given clear post-op care instructions.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Will I be referred to an outside specialist for surgery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Most of the surgical work general dentists refer out — implants, bone grafting, tissue grafting, extractions, wisdom teeth — Dr. Engel performs in-house. The exception is endodontics (root canals), which are referred to a trusted endodontist in Bend.",
+          },
+        },
+      ],
     },
   ],
 };

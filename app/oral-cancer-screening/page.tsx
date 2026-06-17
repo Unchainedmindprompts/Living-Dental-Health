@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title:
     "Oral Cancer Screening — Living Dental Health, Bend Oregon",
   description:
-    "Routine oral cancer screening at every cleaning and exam at Living Dental Health in Bend, Oregon. Painless, takes about a minute, and dramatically improves outcomes when cancer is caught early.",
+    "Routine oral cancer screening at every cleaning at Living Dental Health, Bend Oregon. Painless, one minute, and dramatically improves early outcomes.",
 };
 
 const PHASES = [

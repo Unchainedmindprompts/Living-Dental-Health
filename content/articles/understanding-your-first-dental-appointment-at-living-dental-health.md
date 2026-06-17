@@ -11,7 +11,7 @@ For over 25 years, we’ve proudly served the Bend community, helping them achie
 
 ## What Happens During the Initial Comprehensive Dental Exam?
 
-The first step in ensuring your oral health is an in-depth examination with [Dr. Andy](http://www.livingdentalhealth.com/meet-us/). This visit is an excellent opportunity to get to know him – and he genuinely enjoys connecting with his patients (be prepared to share your hobbies!). It’s also his chance to thoroughly assess your oral health. 
+The first step in ensuring your oral health is an in-depth examination with [Dr. Andy](/about). This visit is an excellent opportunity to get to know him – and he genuinely enjoys connecting with his patients (be prepared to share your hobbies!). It’s also his chance to thoroughly assess your oral health. 
 
 During this comprehensive exam, our team will take digital X-rays to provide a detailed “under the hood” view of your teeth, gums, jaw, and bone structure. Next, Dr. Andy will complete a thorough dental exam, evaluating the health of your gums, bite alignment, and overall oral health. Dr. Andy will also want to know about any concerns you have, including seemingly unrelated issues like chronic headaches, as well as your goals for your smile. 
 
@@ -29,4 +29,4 @@ We are big proponents of transparency and clear communication. Once you’ve com
 
 In some cases, depending on what you and Dr. Andy discussed, further treatment may be needed. If so, we will provide you with a detailed treatment plan and review your dental benefits to ensure there are no surprises in your coverage. If needed, we can also discuss financial options and address any other questions you may have to help you feel confident about moving forward. 
 
-We understand that visiting the dentist might not be your favorite appointment. Our goal at Living Dental Health is to ensure our patients leave our office with a smile. If it has been a while since your last exam and cleaning, now is the perfect time to [schedule an appointment](http://www.livingdentalhealth.com/contact-us/). We look forward to seeing you!
+We understand that visiting the dentist might not be your favorite appointment. Our goal at Living Dental Health is to ensure our patients leave our office with a smile. If it has been a while since your last exam and cleaning, now is the perfect time to [schedule an appointment](/contact). We look forward to seeing you!

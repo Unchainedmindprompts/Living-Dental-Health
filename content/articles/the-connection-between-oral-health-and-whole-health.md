@@ -9,7 +9,7 @@ status: "migrated-as-is"
 ---
 The health of your body is directly linked to the health of your mouth. This is called oral health.
 
-And while most of us are good about brushing and flossing every day, others aren’t. That’s why we sat down with [Dental Hygienist, Nicole Nolan](http://www.livingdentalhealth.com/meet-us/), to get the dirt on how oral health impacts overall health and why you should care. 
+And while most of us are good about brushing and flossing every day, others aren’t. That’s why we sat down with [Dental Hygienist, Nicole Nolan](/about), to get the dirt on how oral health impacts overall health and why you should care. 
 
 “Inflammation can cause harm throughout your body,” said Nicole. “And inflammation in the mouth typically happens when oral hygiene isn’t good enough.” 
 
@@ -28,8 +28,8 @@ You may brush your teeth every morning and night…and maybe even brush for the 
     11.  **Gum disease can impact fertility.** (Source: NIH) Women with gum disease take longer to conceive than those without it. Studies have shown that men with gum disease can have a lower sperm count and reduced sperm motility. 
     12.  **Herpes (aka cold sores) are contagious.** While not gum related, definitely kissing-related. If you have an active herpes outbreak, avoid kissing or sharing food or drinks until it is completely healed, as it can easily spread to others while in its active phase.
 
-Our mouths are the gateway to whole health. If you want to be your healthiest, start with your mouth. Take care of it by brushing twice daily for two minutes and flossing once daily. Nicole highly recommends getting a Sonicare toothbrush because it is the most effective. She also recommends a water pik for people with restorative work, such as [dental implants](http://www.livingdentalhealth.com/dental-implants/), bridges, or wider spaces between their teeth. And if you just don’t like to floss, using a water pik is better than nothing, so give it a go. 
+Our mouths are the gateway to whole health. If you want to be your healthiest, start with your mouth. Take care of it by brushing twice daily for two minutes and flossing once daily. Nicole highly recommends getting a Sonicare toothbrush because it is the most effective. She also recommends a water pik for people with restorative work, such as [dental implants](/implants-surgery), bridges, or wider spaces between their teeth. And if you just don’t like to floss, using a water pik is better than nothing, so give it a go. 
 
 And don’t forget to see the dentist. Insurance typically covers cleanings every six months, but some people need them more frequently. In 90 days, bacteria can survive below the gum line. Since you can’t clean this area effectively, it is imperative that you take the extra time to get cleanings. 
 
-For more oral health tips, visit our website. If you are due for a dental cleaning, [schedule an appointmen](http://www.livingdentalhealth.com/contact-us/)t at Living Dental Health today.
+For more oral health tips, visit our website. If you are due for a dental cleaning, [schedule an appointmen](/contact)t at Living Dental Health today.
