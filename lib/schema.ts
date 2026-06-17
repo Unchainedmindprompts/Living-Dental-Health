@@ -277,49 +277,6 @@ const websiteEntity: JsonLdNode = {
   },
 };
 
-const faqEntity: JsonLdNode = {
-  "@type": "FAQPage",
-  "@id": "https://www.livingdentalhealth.com/#faq",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Who is Living Dental Health in Bend, Oregon?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text":
-          "Living Dental Health is a Bend, Oregon dental practice led by Dr. Andrew W. Engel, DMD. The practice provides general dentistry, cosmetic dentistry, dental implants, oral surgery, preventive care, and patient-focused dental treatment for adults and families.",
-      },
-    },
-    {
-      "@type": "Question",
-      "name": "Where is Living Dental Health located?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text":
-          "Living Dental Health is located at 930 SW Yates Dr, Bend, OR 97702.",
-      },
-    },
-    {
-      "@type": "Question",
-      "name": "What dental services does Living Dental Health provide?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text":
-          "Living Dental Health provides general dentistry, dental cleanings, exams, X-rays, fillings, crowns, bridges, cosmetic dentistry, teeth whitening, veneers, ClearCorrect aligners, oral surgery, dental extractions, dental implants, wisdom teeth removal, tissue grafting, and bone grafting.",
-      },
-    },
-    {
-      "@type": "Question",
-      "name": "Does Living Dental Health help patients with dental anxiety?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text":
-          "Yes. Living Dental Health emphasizes gentle, customized dental care and patient comfort. For some oral surgery procedures, Dr. Andy Engel may use oral sedation when appropriate.",
-      },
-    },
-  ],
-};
-
 // Emitted on EVERY page via app/layout.tsx — NAP only.
 export const napStubSchema: JsonLdGraph = {
   "@context": "https://schema.org",
@@ -331,7 +288,7 @@ export const napStubSchema: JsonLdGraph = {
 // complete #business node; aggregateRating and sameAs live here alone.
 export const homeSchema: JsonLdGraph = {
   "@context": "https://schema.org",
-  "@graph": [businessFull, doctorEntity, websiteEntity, faqEntity],
+  "@graph": [businessFull, doctorEntity, websiteEntity],
 };
 
 export const contactPageSchema: JsonLdGraph = {
