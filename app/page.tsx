@@ -53,11 +53,16 @@ const CREDS = [
   { label: "Also Trained In", value: "Implants · ClearCorrect · Grafting" },
 ];
 
-const TRUST = [
+const TRUST: { top: string; bottom: string; href?: string }[] = [
   { top: "4.9 ★★★★★", bottom: "210 Google Reviews" },
   { top: "28", bottom: "Years in Practice" },
   { top: "✓ Yes", bottom: "Accepting New Patients" },
-  { top: "In-Office", bottom: "Dental Savings Plan" },
+  {
+    top: "Platinum Winner",
+    bottom:
+      "CommunityVotes Bend Dental Hygiene Clinic · 2025 + 2026",
+    href: "https://bend.communityvotes.com/2026/01/healthcare/dental-hygiene-clinic",
+  },
 ];
 
 export default function HomePage() {
@@ -413,21 +418,38 @@ export default function HomePage() {
           style={{ backgroundColor: "#EAE0CF" }}
         >
           <div className="mx-auto grid max-w-[1320px] grid-cols-2 md:grid-cols-4">
-            {TRUST.map((t, i) => (
-              <div
-                key={t.bottom}
-                className={`flex flex-col items-center gap-1.5 px-3 py-7 text-center sm:gap-2 sm:px-6 sm:py-10 ${
-                  i !== 0 ? "md:border-l md:border-line" : ""
-                } ${i % 2 === 1 ? "border-l border-line" : ""} ${
-                  i >= 2 ? "border-t border-line md:border-t-0" : ""
-                }`}
-              >
-                <p className="font-serif-italic text-[22px] leading-tight text-charcoal sm:text-[28px] sm:leading-none">
-                  {t.top}
-                </p>
-                <p className="eyebrow text-[10px] sm:text-[11px]">{t.bottom}</p>
-              </div>
-            ))}
+            {TRUST.map((t, i) => {
+              const cellClass = `flex flex-col items-center gap-1.5 px-3 py-7 text-center sm:gap-2 sm:px-6 sm:py-10 ${
+                i !== 0 ? "md:border-l md:border-line" : ""
+              } ${i % 2 === 1 ? "border-l border-line" : ""} ${
+                i >= 2 ? "border-t border-line md:border-t-0" : ""
+              }`;
+              const inner = (
+                <>
+                  <p className="font-serif-italic text-[22px] leading-tight text-charcoal sm:text-[28px] sm:leading-none">
+                    {t.top}
+                  </p>
+                  <p className="eyebrow text-[10px] sm:text-[11px]">
+                    {t.bottom}
+                  </p>
+                </>
+              );
+              return t.href ? (
+                <a
+                  key={t.bottom}
+                  href={t.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${cellClass} transition-opacity hover:opacity-70`}
+                >
+                  {inner}
+                </a>
+              ) : (
+                <div key={t.bottom} className={cellClass}>
+                  {inner}
+                </div>
+              );
+            })}
           </div>
         </section>
 

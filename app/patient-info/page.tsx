@@ -10,7 +10,7 @@ const SAGE_LABEL = "#9CAF88";
 export const metadata: Metadata = {
   title: "New Patients — Living Dental Health, Bend Oregon",
   description:
-    "Everything new patients need to know before a first visit to Living Dental Health in Bend, Oregon — what to bring, scheduling, insurance and financing, our in-office dental plan, and our financial policy.",
+    "What new patients need to know before a first visit to Living Dental Health, Bend Oregon — scheduling, insurance, financing, and the in-office plan.",
 };
 
 const FAQ = [
@@ -112,7 +112,7 @@ export default function PatientInfoPage() {
           <div className="relative h-[320px] w-full overflow-hidden sm:h-[460px] lg:h-[55vh] lg:min-h-[560px] lg:max-h-[760px]">
             <Image
               src="/patient-info-hero.webp"
-              alt="Dr. Andy Engel and a team member chatting with a relaxed patient at Living Dental Health in Bend, Oregon"
+              alt="Dr. Andy Engel and a Living Dental Health team member welcoming a new patient in Bend, Oregon"
               fill
               priority
               sizes="100vw"

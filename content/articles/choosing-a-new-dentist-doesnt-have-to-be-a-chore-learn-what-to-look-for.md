@@ -15,13 +15,13 @@ When moving to a new area, there are many things to do before you’re fully set
 
 ### On Dental Anxiety
 
-Finding a new dentist can be stressful. Not only do you want someone you can trust, but you also want someone with an excellent chairside manner. Dental anxiety is a genuine concern for many Americans. Choosing a dentist that gets to know you before getting “to business” can mean the difference between a good or a negative experience. [Dr. Engel](http://www.livingdentalhealth.com/meet-us/) schedules extra time for his new patients so they can just talk. That may be just what you need. Or maybe it isn’t. The point is that communication builds trust and respect. We like that. So, we like to talk with our patients. 
+Finding a new dentist can be stressful. Not only do you want someone you can trust, but you also want someone with an excellent chairside manner. Dental anxiety is a genuine concern for many Americans. Choosing a dentist that gets to know you before getting “to business” can mean the difference between a good or a negative experience. [Dr. Engel](/about) schedules extra time for his new patients so they can just talk. That may be just what you need. Or maybe it isn’t. The point is that communication builds trust and respect. We like that. So, we like to talk with our patients. 
 
 “Getting to know my patients is important because it helps me better understand their concerns, past experiences, and goals,” said Dr. Engel. “These initial conversations are critical to establishing a relationship with patients built on trust and respect. I want patients to feel comfortable asking me anything.” 
 
 ### On Experience
 
-Some may say that a dentist is a dentist. For those with this viewpoint, we ask, does the dentist who graduated at the bottom of their class have the same knowledge as the one who graduated at the top? Um, no! Experience matters. The more experience a dentist has, the more proficient they are at identifying and treating oral health issues. Dr. Andy is [celebrating his 25th year](http://www.livingdentalhealth.com/celebrating-25-years-as-a-dentist-in-bend-or/) as a dentist. Enough said. 
+Some may say that a dentist is a dentist. For those with this viewpoint, we ask, does the dentist who graduated at the bottom of their class have the same knowledge as the one who graduated at the top? Um, no! Experience matters. The more experience a dentist has, the more proficient they are at identifying and treating oral health issues. Dr. Andy is [celebrating his 25th year](/articles/celebrating-25-years-as-a-dentist-in-bend-or) as a dentist. Enough said. 
 
 ### On Vibe
 

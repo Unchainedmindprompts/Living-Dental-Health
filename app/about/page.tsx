@@ -8,7 +8,7 @@ const SAGE = "#6B7C5C";
 export const metadata: Metadata = {
   title: "Meet Dr. Andy Engel — Living Dental Health",
   description:
-    "Dr. Andrew W. Engel DMD, founder of Living Dental Health in Bend, Oregon. OHSU graduate with advanced training in full mouth reconstruction, oral surgery, dental implants, ClearCorrect, and tissue and bone grafting.",
+    "Dr. Andrew W. Engel DMD, founder of Living Dental Health in Bend, Oregon. OHSU graduate with 28 years caring for Bend families and complex cases.",
 };
 
 const CREDENTIALS = [
@@ -86,13 +86,23 @@ export default function AboutPage() {
                 Bend&rsquo;s loss, his patients&rsquo; gain.
               </p>
               <p>
-                He knew he wanted to be a dentist in the eighth grade. He
-                loved fixing things &mdash; taking apart toys, putting them
-                back together &mdash; and wanted to help people. That
-                combination led him straight to Oregon Health Sciences
-                University, where he graduated early and pursued advanced
-                training in full mouth reconstruction, oral surgery,
-                implants, ClearCorrect, and tissue and bone grafting.
+                He knew he wanted to be a dentist in the eighth grade. As a
+                child Andy was insatiably curious &mdash; he took things
+                apart not just to understand how they worked, but to figure
+                out how to make them better. That instinct led him straight
+                to Oregon Health Sciences University, where he graduated
+                early and pursued advanced training in full mouth
+                reconstruction, oral surgery, implants, ClearCorrect, and
+                tissue and bone grafting.
+              </p>
+              <p>
+                The same curiosity drives his career today. With over 4,000
+                hours of continuing education in smile design, cosmetic
+                dentistry, and full mouth reconstruction, Andy is wired to
+                keep learning and improving &mdash; fueled by a constant
+                desire to be the best dentist he can be and to deliver the
+                best possible experience and outcomes for the patients in
+                his chair.
               </p>
               <p>
                 Dr. Engel moved to Bend in 1998, helped establish Century
@@ -111,9 +121,10 @@ export default function AboutPage() {
               </p>
               <p>
                 When he&rsquo;s not in the office, you might find him up at
-                Mt. Bachelor skiing with friends, or out on one of his
-                motorcycles. His greatest joy is family &mdash; wife Francie,
-                son Sean, daughters Ally and Rhone, and Murphy the Corgi.
+                Mt. Bachelor skiing with friends, or with Bend&rsquo;s local
+                car community &mdash; cars have been a lifelong passion. His
+                greatest joy is family &mdash; wife Francie, son Sean,
+                daughters Ally and Rhone, and Murphy the Corgi.
               </p>
             </div>
           </div>

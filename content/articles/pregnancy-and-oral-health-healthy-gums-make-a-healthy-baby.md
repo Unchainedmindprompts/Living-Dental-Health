@@ -7,7 +7,7 @@ excerpt: "Pregnancy is a time of beautiful changes within the body. However, the
 featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2024/12/pregnancy-and-oral-health.jpg"
 status: "migrated-as-is"
 ---
-Pregnancy is a time of beautiful changes within the body. However, the changes that occur to grow a fetus impact parts of the body that may surprise you. As a dental office, we are particularly interested in how pregnancy affects oral health, which, if not addressed, can snowball and affect the health of the developing fetus. We sat down with Living Dental Health dental hygienist [Nicole Tarpey, RDH](http://www.livingdentalhealth.com/meet-us/), who happens to be in her third trimester of pregnancy, to discuss why maintaining good oral health can be challenging for pregnant women.
+Pregnancy is a time of beautiful changes within the body. However, the changes that occur to grow a fetus impact parts of the body that may surprise you. As a dental office, we are particularly interested in how pregnancy affects oral health, which, if not addressed, can snowball and affect the health of the developing fetus. We sat down with Living Dental Health dental hygienist [Nicole Tarpey, RDH](/about), who happens to be in her third trimester of pregnancy, to discuss why maintaining good oral health can be challenging for pregnant women.
 
 ## Why are pregnant women more susceptible to gum problems?
 
@@ -37,4 +37,4 @@ Nicole advises against sharing food, drinks, and utensils with your baby. Doing 
 -   **Diabetes:** Uncontrolled blood sugar levels can increase the risk of gum disease.
 -   **Nutritional deficiencies:** Vitamin C and K deficiency can also contribute to gum problems. Ensure you take prenatal vitamins to give your body and baby what they need to be healthy.
 
-If you are pregnant, [schedule an appointment](http://www.livingdentalhealth.com/contact-us/) with your dentist and hygienist today. Dr. Andy and our dental hygienists are here to support you and your baby throughout this exciting journey.
+If you are pregnant, [schedule an appointment](/contact) with your dentist and hygienist today. Dr. Andy and our dental hygienists are here to support you and your baby throughout this exciting journey.

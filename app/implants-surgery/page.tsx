@@ -8,9 +8,9 @@ const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {
-  title: "Implants & Oral Surgery — Living Dental Health, Bend Oregon",
+  title: "Implants & Oral Surgery — Living Dental Health, Bend",
   description:
-    "Dental implants, bone and tissue grafting, wisdom teeth, and extractions — all performed in-house by Dr. Andy Engel in Bend, Oregon. Advanced surgical training, no referrals to outside specialists.",
+    "Dental implants, bone and tissue grafting, wisdom teeth, and in-house CBCT 3D imaging in Bend, Oregon with Dr. Andy Engel. No outside referrals.",
 };
 
 const SERVICES = [
@@ -57,6 +57,40 @@ const SERVICES = [
     image: "/surgery-extractions.webp",
     imageAlt:
       "Dr. Andy Engel consulting with patient at Living Dental Health Bend Oregon",
+  },
+  {
+    id: "cbct-imaging",
+    heading: "CBCT 3D Imaging",
+    body:
+      "Most general dentists rely on two-dimensional panoramic X-rays and refer patients out for 3D imaging. Living Dental Health performs cone-beam CT (CBCT) in-house — a true three-dimensional view of the teeth, jaw, sinuses, and surrounding structures. CBCT lets Dr. Engel plan implant placement to the millimeter, evaluate bone density before grafting, locate impacted wisdom teeth precisely, and catch problems a flat image would miss. Same visit, no second appointment, no referral.",
+    detail:
+      "in-house 3D imaging · implant planning to the millimeter · used for grafting and wisdom teeth · most dentists refer out",
+    image: "/surgery-implants.webp",
+    imageAlt:
+      "CBCT 3D dental imaging at Living Dental Health Bend Oregon",
+  },
+];
+
+const FAQ = [
+  {
+    q: "Does Dr. Andy Engel place dental implants in-house?",
+    a: "Yes. Dr. Engel places and restores dental implants entirely in-house at Living Dental Health in Bend, Oregon — from the initial CBCT scan and planning through implant placement and the final crown. Patients are not referred to an outside oral surgeon.",
+  },
+  {
+    q: "What is CBCT 3D imaging and why does it matter for dental implants?",
+    a: "Cone-beam computed tomography (CBCT) produces a true three-dimensional image of the teeth, jaw, sinuses, and surrounding structures. CBCT lets Dr. Engel plan implant placement to the millimeter, evaluate bone density before grafting, and locate impacted wisdom teeth precisely. Most general dentists in Central Oregon refer patients out for CBCT; Living Dental Health performs it in-house.",
+  },
+  {
+    q: "Does Living Dental Health perform bone and tissue grafting?",
+    a: "Yes. Dr. Engel performs bone and tissue grafting in-house. Grafting is often required before an implant can be placed in an area that has lost bone density due to tooth loss, gum disease, or time.",
+  },
+  {
+    q: "Are wisdom teeth extractions handled in the office?",
+    a: "Yes. Wisdom teeth removal — one tooth or all four, impacted or straightforward — is one of the most common surgical procedures performed at Living Dental Health, handled in-office under local anesthesia. Patients are seen promptly and given clear post-op care instructions.",
+  },
+  {
+    q: "Will I be referred to an outside specialist for surgery?",
+    a: "Most of the surgical work general dentists refer out — implants, bone grafting, tissue grafting, extractions, wisdom teeth — Dr. Engel performs in-house. The exception is endodontics (root canals), which are referred to a trusted endodontist in Bend.",
   },
 ];
 
@@ -178,7 +212,7 @@ export default function ImplantsSurgeryPage() {
                   className="font-inter text-[11px] font-light uppercase tracking-widest"
                   style={{ color: SAGE }}
                 >
-                  0{i + 1} &nbsp;/&nbsp; 04
+                  0{i + 1} &nbsp;/&nbsp; 05
                 </p>
                 <h2 className="mt-3 font-serif text-[26px] leading-[1.1] text-charcoal sm:text-[30px] md:text-[34px]">
                   {s.heading}
@@ -204,6 +238,34 @@ export default function ImplantsSurgeryPage() {
               sizes="(min-width: 1320px) 1320px, 100vw"
               className="object-cover object-center"
             />
+          </div>
+        </section>
+
+        {/* FAQ — visible, mirrors FAQPage schema */}
+        <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">
+          <div
+            className="mx-auto max-w-[820px] border-t pt-12 sm:pt-14"
+            style={{ borderColor: "rgba(28,26,23,0.18)" }}
+          >
+            <h2 className="font-serif text-[28px] leading-[1.05] text-charcoal sm:text-[36px]">
+              Common <span className="font-serif-italic">questions</span>
+            </h2>
+            <dl className="mt-8 space-y-8">
+              {FAQ.map((item) => (
+                <div
+                  key={item.q}
+                  className="border-b pb-8"
+                  style={{ borderColor: "rgba(28,26,23,0.1)" }}
+                >
+                  <dt className="font-serif-italic text-[20px] leading-snug text-charcoal sm:text-[22px]">
+                    {item.q}
+                  </dt>
+                  <dd className="mt-3 font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft sm:text-[16px]">
+                    {item.a}
+                  </dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </section>
 

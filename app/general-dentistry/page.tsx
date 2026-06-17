@@ -10,7 +10,7 @@ const SAGE_LABEL = "#9CAF88";
 export const metadata: Metadata = {
   title: "General Dentistry — Living Dental Health, Bend Oregon",
   description:
-    "Cleanings, exams, fillings, crowns, bridges, and dentures at Living Dental Health. Dr. Andy Engel has provided foundational dental care to Bend, Oregon families for 28 years.",
+    "Cleanings, exams, fillings, crowns, and bridges in Bend, Oregon. Foundational care from Dr. Andy Engel with in-house digital X-rays and 3D CBCT imaging.",
 };
 
 const SERVICES = [
@@ -18,8 +18,8 @@ const SERVICES = [
     id: "cleanings",
     heading: "Cleanings & Exams",
     body:
-      "A professional cleaning does what brushing and flossing can’t — remove built-up tartar, check for early signs of decay, and give Dr. Engel a chance to catch small problems before they become expensive ones. We recommend visits every six months. Most appointments run about 60 minutes.",
-    detail: "60 min · digital x-rays on-site · ages 12 and up",
+      "A professional cleaning does what brushing and flossing can’t — remove built-up tartar, check for early signs of decay, and give Dr. Engel a chance to catch small problems before they become expensive ones. We recommend visits every six months. Most appointments run about 60 minutes. Digital X-rays and, when needed, in-house 3D CBCT imaging mean we can catch what flat X-rays would miss — without sending you to a separate imaging center.",
+    detail: "60 min · digital x-rays + 3D CBCT in-house · ages 12 and up",
     image: "/patient-cleanings.webp",
     imageAlt:
       "Patient smiling after dental cleaning at Living Dental Health Bend Oregon",
@@ -66,6 +66,29 @@ const SERVICES = [
     image: "/patient-dentures.webp",
     imageAlt:
       "Woman smiling after dentures at Living Dental Health Bend Oregon",
+  },
+];
+
+const FAQ = [
+  {
+    q: "How often should I get a dental cleaning and exam at Living Dental Health?",
+    a: "We recommend a professional cleaning and exam every six months. Most appointments run about 60 minutes and include a routine oral cancer screening at no extra cost.",
+  },
+  {
+    q: "Does Living Dental Health offer digital X-rays and 3D CBCT imaging in-house?",
+    a: "Yes. Digital X-rays are taken on-site for every routine exam. For more complex cases, Dr. Engel uses in-house cone-beam CT (CBCT) — a true three-dimensional scan of the teeth, jaw, and sinuses — without referring patients to an outside imaging center.",
+  },
+  {
+    q: "Are tooth-colored fillings safe and how long do they last?",
+    a: "Tooth-colored composite fillings are safe, contain no mercury, and bond directly to the tooth structure. With normal care, composite fillings typically last 7 to 10 years or longer.",
+  },
+  {
+    q: "Is Dr. Andy Engel accepting new patients in Bend, Oregon?",
+    a: "Yes. Living Dental Health is accepting new patients ages 12 and up. Call (541) 550-5311 to schedule a first visit.",
+  },
+  {
+    q: "What ages do you treat at Living Dental Health?",
+    a: "Living Dental Health serves patients ages 12 and up — teens, adults, families, and longtime patients alike. Younger children are referred to a pediatric dentist for age-appropriate care.",
   },
 ];
 
@@ -207,6 +230,34 @@ export default function GeneralDentistryPage() {
               sizes="(min-width: 1320px) 1320px, 100vw"
               className="object-cover object-center"
             />
+          </div>
+        </section>
+
+        {/* FAQ — visible, mirrors FAQPage schema */}
+        <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">
+          <div
+            className="mx-auto max-w-[820px] border-t pt-12 sm:pt-14"
+            style={{ borderColor: "rgba(28,26,23,0.18)" }}
+          >
+            <h2 className="font-serif text-[28px] leading-[1.05] text-charcoal sm:text-[36px]">
+              Common <span className="font-serif-italic">questions</span>
+            </h2>
+            <dl className="mt-8 space-y-8">
+              {FAQ.map((item) => (
+                <div
+                  key={item.q}
+                  className="border-b pb-8"
+                  style={{ borderColor: "rgba(28,26,23,0.1)" }}
+                >
+                  <dt className="font-serif-italic text-[20px] leading-snug text-charcoal sm:text-[22px]">
+                    {item.q}
+                  </dt>
+                  <dd className="mt-3 font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft sm:text-[16px]">
+                    {item.a}
+                  </dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </section>
 

@@ -130,6 +130,12 @@ const businessEnrichment: Record<string, unknown> = {
   ],
   "priceRange": "$$",
   "foundingDate": "2013",
+  "award": [
+    "CommunityVotes Bend 2026 Platinum Winner — Dental Hygiene Clinic",
+    "CommunityVotes Bend 2026 Gold Winner — Dental Clinic",
+    "CommunityVotes Bend 2025 Platinum Winner — Dental Hygiene Clinic",
+    "CommunityVotes Bend 2025 Gold Winner — Dental Clinic",
+  ],
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",
@@ -166,6 +172,8 @@ const businessEnrichment: Record<string, unknown> = {
     "dental bridges",
     "gum tissue grafting",
     "bone grafting",
+    "in-house 3D CBCT dental imaging",
+    "panoramic dental X-rays",
   ],
   "sameAs": [
     "https://www.google.com/maps/place/Living+Dental+Health/@44.0413898,-121.3340262,17z/data=!3m1!4b1!4m6!3m5!1s0x54b8c7c4d1e44381:0xd160c3863d913f92!8m2!3d44.0413898!4d-121.3340262!16s%2Fg%2F1q2w9q7d5",
@@ -248,6 +256,8 @@ const doctorEntity: JsonLdNode = {
     "ClearCorrect",
     "tissue grafting",
     "bone grafting",
+    "CBCT cone-beam dental imaging",
+    "3D diagnostic imaging for implant planning",
   ],
   "sameAs": [
     "https://www.healthgrades.com/dentist/dr-andrew-engel-yyh3w",
@@ -267,49 +277,6 @@ const websiteEntity: JsonLdNode = {
   },
 };
 
-const faqEntity: JsonLdNode = {
-  "@type": "FAQPage",
-  "@id": "https://www.livingdentalhealth.com/#faq",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Who is Living Dental Health in Bend, Oregon?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text":
-          "Living Dental Health is a Bend, Oregon dental practice led by Dr. Andrew W. Engel, DMD. The practice provides general dentistry, cosmetic dentistry, dental implants, oral surgery, preventive care, and patient-focused dental treatment for adults and families.",
-      },
-    },
-    {
-      "@type": "Question",
-      "name": "Where is Living Dental Health located?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text":
-          "Living Dental Health is located at 930 SW Yates Dr, Bend, OR 97702.",
-      },
-    },
-    {
-      "@type": "Question",
-      "name": "What dental services does Living Dental Health provide?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text":
-          "Living Dental Health provides general dentistry, dental cleanings, exams, X-rays, fillings, crowns, bridges, cosmetic dentistry, teeth whitening, veneers, ClearCorrect aligners, oral surgery, dental extractions, dental implants, wisdom teeth removal, tissue grafting, and bone grafting.",
-      },
-    },
-    {
-      "@type": "Question",
-      "name": "Does Living Dental Health help patients with dental anxiety?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text":
-          "Yes. Living Dental Health emphasizes gentle, customized dental care and patient comfort. For some oral surgery procedures, Dr. Andy Engel may use oral sedation when appropriate.",
-      },
-    },
-  ],
-};
-
 // Emitted on EVERY page via app/layout.tsx — NAP only.
 export const napStubSchema: JsonLdGraph = {
   "@context": "https://schema.org",
@@ -321,7 +288,7 @@ export const napStubSchema: JsonLdGraph = {
 // complete #business node; aggregateRating and sameAs live here alone.
 export const homeSchema: JsonLdGraph = {
   "@context": "https://schema.org",
-  "@graph": [businessFull, doctorEntity, websiteEntity, faqEntity],
+  "@graph": [businessFull, doctorEntity, websiteEntity],
 };
 
 export const contactPageSchema: JsonLdGraph = {
@@ -439,6 +406,58 @@ export const generalDentistryPageSchema: JsonLdGraph = {
         "@id": "https://www.livingdentalhealth.com/#business",
       },
     },
+    {
+      "@type": "FAQPage",
+      "@id":
+        "https://www.livingdentalhealth.com/general-dentistry#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How often should I get a dental cleaning and exam at Living Dental Health?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "We recommend a professional cleaning and exam every six months. Most appointments run about 60 minutes and include a routine oral cancer screening at no extra cost.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Does Living Dental Health offer digital X-rays and 3D CBCT imaging in-house?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. Digital X-rays are taken on-site for every routine exam. For more complex cases, Dr. Engel uses in-house cone-beam CT (CBCT) — a true three-dimensional scan of the teeth, jaw, and sinuses — without referring patients to an outside imaging center.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Are tooth-colored fillings safe and how long do they last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Tooth-colored composite fillings are safe, contain no mercury, and bond directly to the tooth structure. With normal care, composite fillings typically last 7 to 10 years or longer.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Is Dr. Andy Engel accepting new patients in Bend, Oregon?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. Living Dental Health is accepting new patients ages 12 and up. Call (541) 550-5311 to schedule a first visit.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "What ages do you treat at Living Dental Health?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Living Dental Health serves patients ages 12 and up — teens, adults, families, and longtime patients alike. Younger children are referred to a pediatric dentist for age-appropriate care.",
+          },
+        },
+      ],
+    },
   ],
 };
 
@@ -522,6 +541,77 @@ export const implantsSurgeryPageSchema: JsonLdGraph = {
       "provider": {
         "@id": "https://www.livingdentalhealth.com/#doctor",
       },
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/implants-surgery#cbct-imaging",
+      "name": "CBCT 3D Dental Imaging",
+      "alternateName": [
+        "Cone Beam Computed Tomography",
+        "3D Dental CT Scan",
+      ],
+      "description":
+        "In-house cone-beam CT (CBCT) provides a true three-dimensional image of the teeth, jaw, sinuses, and surrounding structures. Used to plan dental implants with precision, evaluate bone density before grafting, locate impacted wisdom teeth, and catch problems that two-dimensional panoramic X-rays cannot show. Most general dentists refer patients out for CBCT — Dr. Engel performs it here.",
+      "url":
+        "https://www.livingdentalhealth.com/implants-surgery#cbct-imaging",
+      "procedureType": "https://schema.org/DiagnosticProcedure",
+      "bodyLocation": ["Jaw", "Teeth", "Sinuses"],
+      "provider": {
+        "@id": "https://www.livingdentalhealth.com/#doctor",
+      },
+    },
+    {
+      "@type": "FAQPage",
+      "@id":
+        "https://www.livingdentalhealth.com/implants-surgery#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Dr. Andy Engel place dental implants in-house?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. Dr. Engel places and restores dental implants entirely in-house at Living Dental Health in Bend, Oregon — from the initial CBCT scan and planning through implant placement and the final crown. Patients are not referred to an outside oral surgeon.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "What is CBCT 3D imaging and why does it matter for dental implants?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Cone-beam computed tomography (CBCT) produces a true three-dimensional image of the teeth, jaw, sinuses, and surrounding structures. CBCT lets Dr. Engel plan implant placement to the millimeter, evaluate bone density before grafting, and locate impacted wisdom teeth precisely. Most general dentists in Central Oregon refer patients out for CBCT; Living Dental Health performs it in-house.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Does Living Dental Health perform bone and tissue grafting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. Dr. Engel performs bone and tissue grafting in-house. Grafting is often required before an implant can be placed in an area that has lost bone density due to tooth loss, gum disease, or time.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Are wisdom teeth extractions handled in the office?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. Wisdom teeth removal — one tooth or all four, impacted or straightforward — is one of the most common surgical procedures performed at Living Dental Health, handled in-office under local anesthesia. Patients are seen promptly and given clear post-op care instructions.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Will I be referred to an outside specialist for surgery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Most of the surgical work general dentists refer out — implants, bone grafting, tissue grafting, extractions, wisdom teeth — Dr. Engel performs in-house. The exception is endodontics (root canals), which are referred to a trusted endodontist in Bend.",
+          },
+        },
+      ],
     },
   ],
 };
@@ -864,7 +954,7 @@ export const fullMouthReconstructionPageSchema: JsonLdGraph = {
         "https://www.livingdentalhealth.com/full-mouth-reconstruction#procedure",
       "name": "Full Mouth Reconstruction",
       "description":
-        "Comprehensive rebuild of teeth, bite, and oral function for patients with severe wear, multiple missing teeth, or failed past dental work. Performed in-house by Dr. Andy Engel, who has completed over 4,000 hours of continuing education focused on smile design, cosmetic dentistry, and full mouth reconstruction.",
+        "Comprehensive rebuild of teeth, bite, and oral function for patients with severe wear, multiple missing teeth, or failed past dental work. Performed in-house by Dr. Andy Engel, who has completed over 4,000 hours of continuing education focused on smile design, cosmetic dentistry, and full mouth reconstruction. Diagnostic planning uses in-house CBCT 3D imaging for precise mapping of teeth, bite, and bone before any treatment begins.",
       "url":
         "https://www.livingdentalhealth.com/full-mouth-reconstruction",
       "procedureType": "https://schema.org/TherapeuticProcedure",
@@ -962,7 +1052,7 @@ export const sedationDentistryPageSchema: JsonLdGraph = {
           "acceptedAnswer": {
             "@type": "Answer",
             "text":
-              "Halcion is the brand name for triazolam, a mild oral sedative in the benzodiazepine class. It is taken as a pill before the appointment so patients arrive deeply relaxed. Patients remain conscious and can respond to instructions, but typically feel calm enough to rest comfortably through their visit. Many patients end up taking a cozy nap in the chair.",
+              "Halcion is the brand name for triazolam, a mild oral sedative in the benzodiazepine class. You take it as a pill before your appointment so you arrive already relaxed. You stay conscious and can respond to instructions, but most patients feel calm enough to rest comfortably — many end up taking a cozy nap in the chair.",
           },
         },
         {
@@ -971,7 +1061,7 @@ export const sedationDentistryPageSchema: JsonLdGraph = {
           "acceptedAnswer": {
             "@type": "Answer",
             "text":
-              "Halcion is short-acting and is generally cleared from the body within about 24 hours of the dose. Patients are advised not to drive, operate machinery, or make important decisions for the rest of the day after taking it.",
+              "Halcion is short-acting and generally clears your body within about 24 hours. You'll feel like yourself by the next day. Don't drive, operate machinery, or make important decisions for the rest of the day after taking it.",
           },
         },
         {
@@ -980,7 +1070,7 @@ export const sedationDentistryPageSchema: JsonLdGraph = {
           "acceptedAnswer": {
             "@type": "Answer",
             "text":
-              "Yes. Because Halcion remains active for several hours after the appointment, every patient who takes oral sedation needs a responsible adult to drive them to and from Living Dental Health and stay with them for the rest of the day.",
+              "Yes. Because Halcion is active for several hours after the appointment, every patient who takes oral sedation needs a responsible adult to drive them to and from Living Dental Health and stay with them for the rest of the day.",
           },
         },
       ],
@@ -1054,7 +1144,7 @@ export const oralCancerScreeningPageSchema: JsonLdGraph = {
           "acceptedAnswer": {
             "@type": "Answer",
             "text":
-              "No. The screening is painless and takes about one to two minutes. It is a visual examination combined with gentle palpation of the tissues in and around the mouth and neck.",
+              "No. The screening is painless and takes about one to two minutes. It's a visual examination combined with gentle palpation of the tissues in and around the mouth and neck.",
           },
         },
         {
@@ -1063,7 +1153,7 @@ export const oralCancerScreeningPageSchema: JsonLdGraph = {
           "acceptedAnswer": {
             "@type": "Answer",
             "text":
-              "Tobacco use of any kind (cigarettes, cigars, pipes, chewing tobacco, vaping), heavy alcohol use, HPV infection, prolonged sun exposure (for lip cancer), and being over age 40 are all risk factors. That said, oral cancer can occur in patients with no risk factors at all, which is why routine screening matters for everyone.",
+              "Tobacco use of any kind, heavy alcohol use, HPV infection, prolonged sun exposure to the lips, and being over age 40 are all risk factors. That said, oral cancer can occur in patients with no risk factors at all, which is why routine screening matters for everyone.",
           },
         },
       ],

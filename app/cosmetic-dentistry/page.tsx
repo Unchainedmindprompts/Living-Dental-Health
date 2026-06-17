@@ -10,7 +10,7 @@ const SAGE_LABEL = "#9CAF88";
 export const metadata: Metadata = {
   title: "Cosmetic Dentistry — Living Dental Health, Bend Oregon",
   description:
-    "Teeth whitening, porcelain veneers, dental bonding, ClearCorrect, smile design, and full mouth reconstruction with Dr. Andy Engel in Bend, Oregon. 28 years of aesthetic training, a listening-first approach, and no upsell.",
+    "Teeth whitening, porcelain veneers, ClearCorrect, smile design, and full mouth reconstruction with Dr. Andy Engel in Bend, Oregon. No upsell, ever.",
 };
 
 const SERVICES = [

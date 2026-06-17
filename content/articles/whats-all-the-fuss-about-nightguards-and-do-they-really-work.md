@@ -9,7 +9,7 @@ status: "migrated-as-is"
 ---
 If you’ve ever experienced jaw pain or chronic headaches, or your dentist informed you that your teeth were being worn down because of grinding, you may have been advised to consider using a nightguard. But what is all the fuss about nightguards, and do they actually help stop tooth destruction? 
 
-I spoke with [Dr. Andy Engel](http://www.livingdentalhealth.com/meet-us/) to shed some light on this topic. According to Dr. Engel, nightguards are dental appliances designed to protect teeth and jaws from the detrimental effects of teeth grinding and clenching, also known as [bruxism](https://my.clevelandclinic.org/health/diseases/10955-teeth-grinding-bruxism).
+I spoke with [Dr. Andy Engel](/about) to shed some light on this topic. According to Dr. Engel, nightguards are dental appliances designed to protect teeth and jaws from the detrimental effects of teeth grinding and clenching, also known as [bruxism](https://my.clevelandclinic.org/health/diseases/10955-teeth-grinding-bruxism).
 
 Grinding and clenching are often caused by stress. Sadly, his practice sees an increasing number of patients who need nightguards each year. 
 

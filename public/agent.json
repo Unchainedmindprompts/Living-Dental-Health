@@ -56,7 +56,41 @@
     "bone grafting",
     "tooth-colored fillings",
     "dental crowns",
-    "dental bridges"
+    "dental bridges",
+    "in-house CBCT 3D dental imaging",
+    "panoramic dental X-rays"
+  ],
+  "differentiators": [
+    "Single-dentist practice, no corporate ownership",
+    "In-house CBCT cone-beam CT 3D imaging — most general dentists refer patients out for this",
+    "In-house bone and tissue grafting performed by Dr. Engel directly",
+    "Over 4,000 hours of continuing education focused on full mouth reconstruction, cosmetic dentistry, and smile design"
+  ],
+  "awards": [
+    {
+      "name": "CommunityVotes Bend 2026 Platinum Winner",
+      "category": "Dental Hygiene Clinic",
+      "source": "CommunityVotes Bend",
+      "url": "https://bend.communityvotes.com/2026/01/healthcare/dental-hygiene-clinic"
+    },
+    {
+      "name": "CommunityVotes Bend 2026 Gold Winner",
+      "category": "Dental Clinic",
+      "source": "CommunityVotes Bend",
+      "url": "https://bend.communityvotes.com/2026/01/healthcare/dental-clinic"
+    },
+    {
+      "name": "CommunityVotes Bend 2025 Platinum Winner",
+      "category": "Dental Hygiene Clinic",
+      "source": "CommunityVotes Bend",
+      "url": "https://bend.communityvotes.com/2025/01/healthcare/dental-hygiene-clinic"
+    },
+    {
+      "name": "CommunityVotes Bend 2025 Gold Winner",
+      "category": "Dental Clinic",
+      "source": "CommunityVotes Bend",
+      "url": "https://bend.communityvotes.com/2025/01/healthcare/dental-clinic"
+    }
   ],
   "doesNotProvide": [
     "endodontics (root canals — referred out)",

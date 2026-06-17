@@ -11,10 +11,9 @@ const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {
-  title:
-    "Full Mouth Reconstruction — Living Dental Health, Bend Oregon",
+  title: "Full Mouth Reconstruction — Living Dental Health, Bend",
   description:
-    "Full mouth reconstruction with Dr. Andy Engel in Bend, Oregon. Over 4,000 hours of continuing education in smile design, cosmetic dentistry, and full mouth reconstruction. Precision-driven rebuilds that protect your bite, jaw, and long-term oral health.",
+    "Full mouth reconstruction in Bend, Oregon with Dr. Andy Engel. Over 4,000 CE hours and precision planning that protects your bite, jaw, and oral health.",
 };
 
 // PLACEHOLDER COPY — structured to show layout. Replace with Andy's voice once layout is approved.
@@ -23,9 +22,9 @@ const PHASES = [
     id: "diagnosis",
     heading: "Comprehensive Diagnosis",
     body:
-      "Every reconstruction begins long before any treatment. Dr. Engel performs a complete evaluation of every tooth, the surrounding bone, the gums, and — critically — the bite. He maps how the upper and lower teeth meet, where wear patterns came from, and what the rebuild needs to do for the mouth to function properly again. [PLACEHOLDER: Andy's voice on the diagnostic process and tools used.]",
+      "Every reconstruction begins long before any treatment. Dr. Engel performs a complete evaluation of every tooth, the surrounding bone, the gums, and — critically — the bite. Diagnosis is supported by in-house CBCT 3D imaging — a cone-beam CT scan that produces a true three-dimensional model of the teeth, jaw, and bone, well beyond what a flat panoramic X-ray can show. He maps how the upper and lower teeth meet, where wear patterns came from, and what the rebuild needs to do for the mouth to function properly again. [PLACEHOLDER: Andy's voice on the diagnostic process.]",
     detail:
-      "full mouth evaluation · bite analysis · imaging · written treatment plan",
+      "full mouth evaluation · bite analysis · in-house CBCT 3D imaging · written treatment plan",
   },
   {
     id: "planning",

@@ -41,4 +41,4 @@ When someone calls the office inquiring about a new patient appointment and shar
 
 Even if it is just the dentist, a test drive is good, especially for those with dental anxiety. 
 
-If you or someone you know has dental anxiety, Dr. Andy wants to know. The more people who can experience positive dentistry, the better. A healthy mouth makes for a healthy body. Learn more on our [website](http://www.livingdentalhealth.com/).
+If you or someone you know has dental anxiety, Dr. Andy wants to know. The more people who can experience positive dentistry, the better. A healthy mouth makes for a healthy body. Learn more on our [website](/).

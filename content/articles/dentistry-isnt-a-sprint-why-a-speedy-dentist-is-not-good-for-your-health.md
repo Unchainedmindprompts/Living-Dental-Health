@@ -9,7 +9,7 @@ status: "migrated-as-is"
 ---
 You probably don’t think much about the purpose of a dental exam. Perhaps your experiences have consisted of an “adequate” cleaning by a dental hygienist and a quick peek in the mouth by the dentist to ensure you don’t have any cavities. A dental exam – at least if done right – is much more than mere minutes with the dentist. If your last visit with the dentist was short and sweet, consider this a cautionary tale of why being thorough matters. 
 
-So, what is a thorough dental exam, you ask? A thorough dental exam involves a whole lot of looking and a little Q&A between you and your dentist. And while we cannot attest to what other Bend, Oregon, dentists are doing, we can share what [Dr. Andy Engel](http://www.livingdentalhealth.com/meet-us/) is doing. So, without further ado, let’s get to it.
+So, what is a thorough dental exam, you ask? A thorough dental exam involves a whole lot of looking and a little Q&A between you and your dentist. And while we cannot attest to what other Bend, Oregon, dentists are doing, we can share what [Dr. Andy Engel](/about) is doing. So, without further ado, let’s get to it.
 
 ## Importance of a Medical History and a Thorough Dental Exam
 
@@ -25,4 +25,4 @@ Let’s get back on track. During your exam, Dr. Andy will ask lots of questions
 
 The moral of the story is that if your dentist is in and out of your exam in five minutes flat, they are not taking enough time to examine your oral health thoroughly. Going to the dentist isn’t quite a marathon, but it is definitely not a sprint. A thorough dentist is a proactive dentist, and taking the time to identify issues before they become a problem saves you time and money on expensive dental treatments down the line.  
 
-If you are looking for a [family dentist in Bend, Oregon](http://www.livingdentalhealth.com/family-dentist-in-bend-or/), we invite you to discover why Dr. Andy has so many 5-star reviews. Call us and discover what makes Living Dental Health one of the best dentists in Bend, Oregon. And there are a lot of dentists in town.
+If you are looking for a [family dentist in Bend, Oregon](/general-dentistry), we invite you to discover why Dr. Andy has so many 5-star reviews. Call us and discover what makes Living Dental Health one of the best dentists in Bend, Oregon. And there are a lot of dentists in town.
