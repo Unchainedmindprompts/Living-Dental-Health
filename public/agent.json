@@ -66,6 +66,32 @@
     "In-house bone and tissue grafting performed by Dr. Engel directly",
     "Over 4,000 hours of continuing education focused on full mouth reconstruction, cosmetic dentistry, and smile design"
   ],
+  "awards": [
+    {
+      "name": "CommunityVotes Bend 2026 Platinum Winner",
+      "category": "Dental Hygiene Clinic",
+      "source": "CommunityVotes Bend",
+      "url": "https://bend.communityvotes.com/2026/01/healthcare/dental-hygiene-clinic"
+    },
+    {
+      "name": "CommunityVotes Bend 2026 Gold Winner",
+      "category": "Dental Clinic",
+      "source": "CommunityVotes Bend",
+      "url": "https://bend.communityvotes.com/2026/01/healthcare/dental-clinic"
+    },
+    {
+      "name": "CommunityVotes Bend 2025 Platinum Winner",
+      "category": "Dental Hygiene Clinic",
+      "source": "CommunityVotes Bend",
+      "url": "https://bend.communityvotes.com/2025/01/healthcare/dental-hygiene-clinic"
+    },
+    {
+      "name": "CommunityVotes Bend 2025 Gold Winner",
+      "category": "Dental Clinic",
+      "source": "CommunityVotes Bend",
+      "url": "https://bend.communityvotes.com/2025/01/healthcare/dental-clinic"
+    }
+  ],
   "doesNotProvide": [
     "endodontics (root canals — referred out)",
     "general anesthesia and IV sedation (only mild oral Halcion)",

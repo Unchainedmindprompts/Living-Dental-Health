@@ -130,6 +130,12 @@ const businessEnrichment: Record<string, unknown> = {
   ],
   "priceRange": "$$",
   "foundingDate": "2013",
+  "award": [
+    "CommunityVotes Bend 2026 Platinum Winner — Dental Hygiene Clinic",
+    "CommunityVotes Bend 2026 Gold Winner — Dental Clinic",
+    "CommunityVotes Bend 2025 Platinum Winner — Dental Hygiene Clinic",
+    "CommunityVotes Bend 2025 Gold Winner — Dental Clinic",
+  ],
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",
