@@ -10,9 +10,13 @@ Dr. Andrew W. Engel ("Dr. Andy Engel") earned a Bachelor of Science in General S
 
 ## Core service pages
 
-- [General Dentistry](https://www.livingdentalhealth.com/general-dentistry): cleanings, exams, fillings, crowns, bridges, dentures.
+- [General Dentistry](https://www.livingdentalhealth.com/general-dentistry): cleanings, exams, fillings, crowns, bridges, dentures. Digital X-rays + in-house 3D CBCT imaging.
 - [Cosmetic Dentistry](https://www.livingdentalhealth.com/cosmetic-dentistry): teeth whitening, porcelain veneers, dental bonding, ClearCorrect clear aligners, smile design, full mouth reconstruction.
-- [Implants & Surgery](https://www.livingdentalhealth.com/implants-surgery): dental implants, wisdom teeth removal, extractions, bone and tissue grafting.
+- [Implants & Surgery](https://www.livingdentalhealth.com/implants-surgery): dental implants, wisdom teeth removal, extractions, bone and tissue grafting, and in-house CBCT (cone-beam CT) 3D imaging.
+
+## Differentiator: in-house CBCT 3D imaging
+
+Most general dentists in Bend take two-dimensional panoramic X-rays in-house and refer patients out to imaging centers or oral surgeons for cone-beam CT (CBCT). Living Dental Health performs CBCT in-house. CBCT produces a true three-dimensional image of the teeth, jaw, sinuses, and surrounding structures, and is used to plan dental implants to the millimeter, evaluate bone density before grafting, locate impacted wisdom teeth precisely, and catch problems that flat panoramic X-rays cannot show — all in the same visit, with no referral.
 
 ## Pillar treatments
 

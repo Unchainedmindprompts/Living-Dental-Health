@@ -166,6 +166,8 @@ const businessEnrichment: Record<string, unknown> = {
     "dental bridges",
     "gum tissue grafting",
     "bone grafting",
+    "in-house 3D CBCT dental imaging",
+    "panoramic dental X-rays",
   ],
   "sameAs": [
     "https://www.google.com/maps/place/Living+Dental+Health/@44.0413898,-121.3340262,17z/data=!3m1!4b1!4m6!3m5!1s0x54b8c7c4d1e44381:0xd160c3863d913f92!8m2!3d44.0413898!4d-121.3340262!16s%2Fg%2F1q2w9q7d5",
@@ -248,6 +250,8 @@ const doctorEntity: JsonLdNode = {
     "ClearCorrect",
     "tissue grafting",
     "bone grafting",
+    "CBCT cone-beam dental imaging",
+    "3D diagnostic imaging for implant planning",
   ],
   "sameAs": [
     "https://www.healthgrades.com/dentist/dr-andrew-engel-yyh3w",
@@ -519,6 +523,25 @@ export const implantsSurgeryPageSchema: JsonLdGraph = {
       "url":
         "https://www.livingdentalhealth.com/implants-surgery#extractions",
       "procedureType": "https://schema.org/SurgicalProcedure",
+      "provider": {
+        "@id": "https://www.livingdentalhealth.com/#doctor",
+      },
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id":
+        "https://www.livingdentalhealth.com/implants-surgery#cbct-imaging",
+      "name": "CBCT 3D Dental Imaging",
+      "alternateName": [
+        "Cone Beam Computed Tomography",
+        "3D Dental CT Scan",
+      ],
+      "description":
+        "In-house cone-beam CT (CBCT) provides a true three-dimensional image of the teeth, jaw, sinuses, and surrounding structures. Used to plan dental implants with precision, evaluate bone density before grafting, locate impacted wisdom teeth, and catch problems that two-dimensional panoramic X-rays cannot show. Most general dentists refer patients out for CBCT — Dr. Engel performs it here.",
+      "url":
+        "https://www.livingdentalhealth.com/implants-surgery#cbct-imaging",
+      "procedureType": "https://schema.org/DiagnosticProcedure",
+      "bodyLocation": ["Jaw", "Teeth", "Sinuses"],
       "provider": {
         "@id": "https://www.livingdentalhealth.com/#doctor",
       },
@@ -864,7 +887,7 @@ export const fullMouthReconstructionPageSchema: JsonLdGraph = {
         "https://www.livingdentalhealth.com/full-mouth-reconstruction#procedure",
       "name": "Full Mouth Reconstruction",
       "description":
-        "Comprehensive rebuild of teeth, bite, and oral function for patients with severe wear, multiple missing teeth, or failed past dental work. Performed in-house by Dr. Andy Engel, who has completed over 4,000 hours of continuing education focused on smile design, cosmetic dentistry, and full mouth reconstruction.",
+        "Comprehensive rebuild of teeth, bite, and oral function for patients with severe wear, multiple missing teeth, or failed past dental work. Performed in-house by Dr. Andy Engel, who has completed over 4,000 hours of continuing education focused on smile design, cosmetic dentistry, and full mouth reconstruction. Diagnostic planning uses in-house CBCT 3D imaging for precise mapping of teeth, bite, and bone before any treatment begins.",
       "url":
         "https://www.livingdentalhealth.com/full-mouth-reconstruction",
       "procedureType": "https://schema.org/TherapeuticProcedure",

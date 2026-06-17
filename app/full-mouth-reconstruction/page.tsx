@@ -23,9 +23,9 @@ const PHASES = [
     id: "diagnosis",
     heading: "Comprehensive Diagnosis",
     body:
-      "Every reconstruction begins long before any treatment. Dr. Engel performs a complete evaluation of every tooth, the surrounding bone, the gums, and — critically — the bite. He maps how the upper and lower teeth meet, where wear patterns came from, and what the rebuild needs to do for the mouth to function properly again. [PLACEHOLDER: Andy's voice on the diagnostic process and tools used.]",
+      "Every reconstruction begins long before any treatment. Dr. Engel performs a complete evaluation of every tooth, the surrounding bone, the gums, and — critically — the bite. Diagnosis is supported by in-house CBCT 3D imaging — a cone-beam CT scan that produces a true three-dimensional model of the teeth, jaw, and bone, well beyond what a flat panoramic X-ray can show. He maps how the upper and lower teeth meet, where wear patterns came from, and what the rebuild needs to do for the mouth to function properly again. [PLACEHOLDER: Andy's voice on the diagnostic process.]",
     detail:
-      "full mouth evaluation · bite analysis · imaging · written treatment plan",
+      "full mouth evaluation · bite analysis · in-house CBCT 3D imaging · written treatment plan",
   },
   {
     id: "planning",

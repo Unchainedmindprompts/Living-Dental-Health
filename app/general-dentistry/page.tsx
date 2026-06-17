@@ -18,8 +18,8 @@ const SERVICES = [
     id: "cleanings",
     heading: "Cleanings & Exams",
     body:
-      "A professional cleaning does what brushing and flossing can’t — remove built-up tartar, check for early signs of decay, and give Dr. Engel a chance to catch small problems before they become expensive ones. We recommend visits every six months. Most appointments run about 60 minutes.",
-    detail: "60 min · digital x-rays on-site · ages 12 and up",
+      "A professional cleaning does what brushing and flossing can’t — remove built-up tartar, check for early signs of decay, and give Dr. Engel a chance to catch small problems before they become expensive ones. We recommend visits every six months. Most appointments run about 60 minutes. Digital X-rays and, when needed, in-house 3D CBCT imaging mean we can catch what flat X-rays would miss — without sending you to a separate imaging center.",
+    detail: "60 min · digital x-rays + 3D CBCT in-house · ages 12 and up",
     image: "/patient-cleanings.webp",
     imageAlt:
       "Patient smiling after dental cleaning at Living Dental Health Bend Oregon",

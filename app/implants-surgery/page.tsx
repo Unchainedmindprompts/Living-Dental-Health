@@ -58,6 +58,17 @@ const SERVICES = [
     imageAlt:
       "Dr. Andy Engel consulting with patient at Living Dental Health Bend Oregon",
   },
+  {
+    id: "cbct-imaging",
+    heading: "CBCT 3D Imaging",
+    body:
+      "Most general dentists rely on two-dimensional panoramic X-rays and refer patients out for 3D imaging. Living Dental Health performs cone-beam CT (CBCT) in-house — a true three-dimensional view of the teeth, jaw, sinuses, and surrounding structures. CBCT lets Dr. Engel plan implant placement to the millimeter, evaluate bone density before grafting, locate impacted wisdom teeth precisely, and catch problems a flat image would miss. Same visit, no second appointment, no referral.",
+    detail:
+      "in-house 3D imaging · implant planning to the millimeter · used for grafting and wisdom teeth · most dentists refer out",
+    image: "/surgery-implants.webp",
+    imageAlt:
+      "CBCT 3D dental imaging at Living Dental Health Bend Oregon",
+  },
 ];
 
 export default function ImplantsSurgeryPage() {
@@ -178,7 +189,7 @@ export default function ImplantsSurgeryPage() {
                   className="font-inter text-[11px] font-light uppercase tracking-widest"
                   style={{ color: SAGE }}
                 >
-                  0{i + 1} &nbsp;/&nbsp; 04
+                  0{i + 1} &nbsp;/&nbsp; 05
                 </p>
                 <h2 className="mt-3 font-serif text-[26px] leading-[1.1] text-charcoal sm:text-[30px] md:text-[34px]">
                   {s.heading}
