@@ -14,6 +14,14 @@ export const metadata: Metadata = {
 const CREDENTIALS = [
   { label: "Doctor of Dental Medicine", detail: "OHSU, 1998" },
   {
+    label: "Bachelor of Science",
+    detail: "University of Oregon, Chemistry Minor",
+  },
+  {
+    label: "Continuing Education",
+    detail: "4,000+ hours · Smile Design, Cosmetic, FMR",
+  },
+  {
     label: "Advanced training",
     detail: "Full Mouth Reconstruction & Oral Surgery",
   },
