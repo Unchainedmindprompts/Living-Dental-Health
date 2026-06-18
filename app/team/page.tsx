@@ -25,10 +25,10 @@ const TEAM: {
     name: "Dr. Andy Engel",
     role: "Founder & Dentist",
     bio: "Founder of Living Dental Health, caring for Bend families since 1998. OHSU-trained, with over 4,000 hours of continuing education in smile design, cosmetic dentistry, and full mouth reconstruction. Full bio on the Meet Dr. Engel page.",
-    image: "/dr-andy.webp",
+    image: "/dr-andy.png",
     imageAlt:
       "Dr. Andy Engel DMD, founder of Living Dental Health in Bend, Oregon",
-    imageObjectPosition: "center 15%",
+    imageObjectPosition: "center 0%",
   },
   {
     name: "Samantha Gassman",
