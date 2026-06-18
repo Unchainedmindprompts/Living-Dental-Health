@@ -61,7 +61,7 @@ export default function AboutPage() {
         <div className="grid gap-10 lg:grid-cols-[auto_1fr] lg:items-start lg:gap-16">
           <div className="relative mx-auto aspect-[4/5] w-full max-w-[340px] overflow-hidden bg-cream-deep sm:max-w-[420px] lg:mx-0 lg:w-[420px]">
             <Image
-              src="/dr-andy.webp"
+              src="/dr-andy.png"
               alt="Dr. Andy Engel, founder of Living Dental Health in Bend Oregon"
               fill
               sizes="(min-width: 1024px) 420px, (min-width: 640px) 420px, 340px"
