@@ -149,7 +149,7 @@ export default function ImplantsSurgeryPage() {
                     One dentist, one roof.
                   </span>
                 </h1>
-                <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:text-[17px] lg:mx-0 lg:max-w-[440px]">
+                <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:text-[17px] lg:mx-0 lg:max-w-[440px]">
                   Most general dentists send you to an oral surgeon. Dr. Engel
                   does it himself — implants, extractions, wisdom teeth, and
                   bone and tissue grafting. One dentist, one relationship, one

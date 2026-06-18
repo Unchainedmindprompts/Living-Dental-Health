@@ -145,7 +145,7 @@ export default function GeneralDentistryPage() {
                   Your foundation for a{" "}
                   <span className="font-serif-italic">healthy life.</span>
                 </h1>
-                <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:text-[17px] lg:mx-0 lg:max-w-[440px]">
+                <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:text-[17px] lg:mx-0 lg:max-w-[440px]">
                   Most dental problems are preventable. We see patients every
                   six months not because it&rsquo;s routine &mdash; because it
                   works. 28 years of Bend smiles started with a cleaning.
