@@ -145,7 +145,7 @@ export default function FullMouthReconstructionPage() {
                   Built right,{" "}
                   <span className="font-serif-italic">the first time.</span>
                 </h1>
-                <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:text-[17px] lg:mx-0 lg:max-w-[460px]">
+                <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:text-[17px] lg:mx-0 lg:max-w-[460px]">
                   Full mouth reconstruction is a precise endeavor. A poorly
                   executed rebuild causes TMJ pain, headaches, speech
                   difficulties, and chewing problems — for life. Dr. Engel has
@@ -157,9 +157,8 @@ export default function FullMouthReconstructionPage() {
           </div>
 
           <div className="relative h-[380px] w-full overflow-hidden sm:h-[460px] lg:h-[55vh] lg:min-h-[560px] lg:max-h-[760px]">
-            {/* PLACEHOLDER IMAGE — swap for a true FMR-themed hero when one is available */}
             <Image
-              src="/cosmetic-hero.webp"
+              src="/fmr-hero.webp"
               alt="Dr. Andy Engel discussing a treatment plan with a patient at Living Dental Health in Bend, Oregon"
               fill
               priority

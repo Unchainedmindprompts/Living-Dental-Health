@@ -154,7 +154,7 @@ export default function CosmeticDentistryPage() {
                   Your smile,{" "}
                   <span className="font-serif-italic">redesigned.</span>
                 </h1>
-                <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:text-[17px] lg:mx-0 lg:max-w-[440px]">
+                <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:text-[17px] lg:mx-0 lg:max-w-[440px]">
                   From a single whitening treatment to a complete smile
                   makeover, Dr. Engel combines 28 years of aesthetic training
                   with a listening-first approach. No procedures you
@@ -167,7 +167,7 @@ export default function CosmeticDentistryPage() {
           <div className="relative h-[380px] w-full overflow-hidden sm:h-[460px] lg:h-[55vh] lg:min-h-[560px] lg:max-h-[760px]">
             <Image
               src="/cosmetic-hero.webp"
-              alt="Dr. Andy Engel discussing cosmetic dentistry options with a patient at Living Dental Health in Bend, Oregon"
+              alt="A confident patient with a bright smile in the operatory at Living Dental Health in Bend, Oregon"
               fill
               priority
               sizes="100vw"

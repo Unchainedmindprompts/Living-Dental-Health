@@ -130,7 +130,7 @@ export default function SedationDentistryPage() {
                   A calmer{" "}
                   <span className="font-serif-italic">way through.</span>
                 </h1>
-                <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:text-[17px] lg:mx-0 lg:max-w-[460px]">
+                <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:text-[17px] lg:mx-0 lg:max-w-[460px]">
                   Mild oral sedation with Halcion, used selectively, alongside
                   a calm and unhurried approach that&rsquo;s standard at
                   Living Dental Health. You arrive relaxed, the visit passes
@@ -141,9 +141,8 @@ export default function SedationDentistryPage() {
           </div>
 
           <div className="relative h-[380px] w-full overflow-hidden sm:h-[460px] lg:h-[55vh] lg:min-h-[560px] lg:max-h-[760px]">
-            {/* PLACEHOLDER IMAGE — patient-info-hero shows a relaxed patient chatting with Dr. Andy and a team member; swap when a dedicated sedation photo exists */}
             <Image
-              src="/patient-info-hero.webp"
+              src="/sedation-hero.webp"
               alt="Dr. Andy Engel and a Living Dental Health team member putting a relaxed patient at ease in Bend, Oregon"
               fill
               priority
