@@ -130,7 +130,7 @@ export default function SedationDentistryPage() {
                   A calmer{" "}
                   <span className="font-serif-italic">way through.</span>
                 </h1>
-                <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:text-[17px] lg:mx-0 lg:max-w-[460px]">
+                <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:text-[17px] lg:mx-0 lg:max-w-[460px]">
                   Mild oral sedation with Halcion, used selectively, alongside
                   a calm and unhurried approach that&rsquo;s standard at
                   Living Dental Health. You arrive relaxed, the visit passes
