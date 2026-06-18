@@ -133,7 +133,7 @@ export default function OralCancerScreeningPage() {
                   Early. Painless.{" "}
                   <span className="font-serif-italic">Every visit.</span>
                 </h1>
-                <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:text-[17px] lg:mx-0 lg:max-w-[460px]">
+                <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:text-[17px] lg:mx-0 lg:max-w-[460px]">
                   Oral cancer screening is part of every cleaning and exam at
                   Living Dental Health &mdash; a quick, painless check that
                   most patients don&rsquo;t even realize is happening. When
