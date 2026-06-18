@@ -141,9 +141,8 @@ export default function SedationDentistryPage() {
           </div>
 
           <div className="relative h-[380px] w-full overflow-hidden sm:h-[460px] lg:h-[55vh] lg:min-h-[560px] lg:max-h-[760px]">
-            {/* PLACEHOLDER IMAGE — patient-info-hero shows a relaxed patient chatting with Dr. Andy and a team member; swap when a dedicated sedation photo exists */}
             <Image
-              src="/patient-info-hero.webp"
+              src="/sedation-hero.webp"
               alt="Dr. Andy Engel and a Living Dental Health team member putting a relaxed patient at ease in Bend, Oregon"
               fill
               priority
