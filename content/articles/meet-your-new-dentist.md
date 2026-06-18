@@ -27,7 +27,7 @@ Dr. Engel knew he wanted to become a dentist when he was in the eighth grade. He
 
 When he first moved to Bend in 1998, he helped establish Century Dental Group. He then founded Living Dental Health to fulfill his dream of being an entrepreneur. The name Living Dental Health is synonymous with Dr. Engel’s desire to help his patients quickly and safely address any oral health issues so they can live a healthy, full, and active life here in Central Oregon. 
 
-When it comes to patient care, Dr. Engel is a bit of a detective. He strives to understand each patient’s needs and then provides recommendations to help them achieve their desired results. To Dr. Engel, there is no cookie-cutter approach to dentistry. He’s been trained in so many ways that he can pull options from his tool belt that may be foreign to other dentists. 
+When it comes to patient care, Dr. Engel is a bit of a detective. He strives to understand each patient’s needs and then provides recommendations to help them achieve their desired results. He’s been trained in so many ways that he can pull options from his tool belt that may be foreign to other dentists. 
 
 His dream patient: someone who is a good communicator. 
 

@@ -157,8 +157,8 @@ export default function CosmeticDentistryPage() {
                 <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:text-[17px] lg:mx-0 lg:max-w-[440px]">
                   From a single whitening treatment to a complete smile
                   makeover, Dr. Engel combines 28 years of aesthetic training
-                  with a listening-first approach. No cookie-cutter results.
-                  No procedures you don&rsquo;t want. Just your best smile.
+                  with a listening-first approach. No procedures you
+                  don&rsquo;t want. Just your best smile.
                 </p>
               </div>
             </div>

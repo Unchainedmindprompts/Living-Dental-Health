@@ -113,11 +113,11 @@ export default function AboutPage() {
               </p>
               <p>
                 His approach to patient care is part detective, part
-                craftsman. No cookie-cutter treatment plans. He listens
-                first, then pulls from a tool belt that most dentists simply
-                don&rsquo;t have. His dream patient: a good communicator who
-                wants to be involved in their own care &mdash; someone he can
-                get to know by name and wave to around town.
+                craftsman. He listens first, then pulls from a tool belt
+                that most dentists simply don&rsquo;t have. His dream
+                patient: a good communicator who wants to be involved in
+                their own care &mdash; someone he can get to know by name
+                and wave to around town.
               </p>
               <p>
                 When he&rsquo;s not in the office, you might find him up at
@@ -140,8 +140,7 @@ export default function AboutPage() {
             aria-hidden
           />
           <blockquote className="mt-8 font-serif-italic text-[28px] leading-[1.2] text-charcoal sm:mt-10 sm:text-[40px] md:text-[52px]">
-            &ldquo;To Dr. Engel, there is no cookie-cutter approach to
-            dentistry.&rdquo;
+            &ldquo;Listens first. Plans the whole case around you.&rdquo;
           </blockquote>
           <span
             className="mx-auto mt-8 block h-px w-14 sm:mt-10"
