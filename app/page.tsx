@@ -50,7 +50,7 @@ const CREDS = [
   { label: "Doctorate", value: "OHSU School of Dentistry, 1998" },
   { label: "Undergraduate", value: "Univ. of Oregon · Gen. Science, Chem. Minor" },
   { label: "Advanced Training", value: "Full Mouth Reconstruction · Implants · ClearCorrect · Grafting" },
-  { label: "Continuing Ed", value: "4,000+ hours · Smile Design · Cosmetic" },
+  { label: "Continuing Ed", value: "4,000+ hours" },
 ];
 
 const TRUST: { top: string; bottom: string; href?: string }[] = [
