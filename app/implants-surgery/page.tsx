@@ -10,7 +10,7 @@ const SAGE_LABEL = "#9CAF88";
 export const metadata: Metadata = {
   title: "Implants & Oral Surgery — Living Dental Health, Bend",
   description:
-    "Dental implants, bone and tissue grafting, wisdom teeth, and in-house CBCT 3D imaging in Bend, Oregon with Dr. Andy Engel. No outside referrals.",
+    "Dental implants, bone and tissue grafting, wisdom teeth, and in-house CBCT 3D imaging in Bend, Oregon with Dr. Andy Engel. Surgical work handled in-house.",
 };
 
 const SERVICES = [
@@ -144,9 +144,9 @@ export default function ImplantsSurgeryPage() {
                   &mdash; implants &amp; surgery &mdash;
                 </p>
                 <h1 className="mt-5 font-serif text-[36px] leading-[1.05] text-charcoal sm:text-[52px] lg:text-[60px]">
-                  Everything in-house.{" "}
+                  Surgical work, in-house.{" "}
                   <span className="font-serif-italic">
-                    Nothing referred out.
+                    One dentist, one roof.
                   </span>
                 </h1>
                 <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:text-[17px] lg:mx-0 lg:max-w-[440px]">
@@ -192,8 +192,8 @@ export default function ImplantsSurgeryPage() {
               Health Sciences University specifically in oral surgery and full
               mouth reconstruction. In 28 years of practice in Bend, he has
               built a surgical skill set that most general dentists simply
-              don&rsquo;t have — which means his patients never get handed off
-              to a stranger for the hard part.
+              don&rsquo;t have — which means his patients rarely get handed
+              off to a stranger for the hard part.
             </p>
           </div>
         </section>
