@@ -157,9 +157,8 @@ export default function FullMouthReconstructionPage() {
           </div>
 
           <div className="relative h-[380px] w-full overflow-hidden sm:h-[460px] lg:h-[55vh] lg:min-h-[560px] lg:max-h-[760px]">
-            {/* PLACEHOLDER IMAGE — swap for a true FMR-themed hero when one is available */}
             <Image
-              src="/cosmetic-hero.webp"
+              src="/fmr-hero.webp"
               alt="Dr. Andy Engel discussing a treatment plan with a patient at Living Dental Health in Bend, Oregon"
               fill
               priority
