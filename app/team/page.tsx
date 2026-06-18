@@ -135,8 +135,9 @@ export default function TeamPage() {
             Meet the <span className="font-serif-italic">team.</span>
           </h1>
           <p className="mx-auto mt-6 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:mt-8 sm:text-[17px]">
-            Twenty-eight years in Bend. The same faces, the same care, the
-            same commitment to knowing you by name.
+            Dr. Engel has been caring for Bend families for twenty-eight
+            years. His team brings the same commitment to knowing you by
+            name.
           </p>
           <p className="mt-6 font-inter text-[12px] font-light uppercase tracking-[0.2em] text-charcoal-soft sm:mt-8">
             28 years in Bend{" "}
