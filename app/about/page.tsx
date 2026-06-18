@@ -19,7 +19,7 @@ const CREDENTIALS = [
   },
   {
     label: "Continuing Education",
-    detail: "4,000+ hours · Smile Design, Cosmetic, FMR",
+    detail: "4,000+ hours · Smile Design, Cosmetic, Full Mouth Reconstruction",
   },
   {
     label: "Advanced training",
