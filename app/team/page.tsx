@@ -140,7 +140,8 @@ export default function TeamPage() {
             name.
           </p>
           <p className="mt-6 font-inter text-[12px] font-light uppercase tracking-[0.2em] text-charcoal-soft sm:mt-8">
-            28 years in Bend{" "}
+            Dr. Engel{" "}
+            <span style={{ color: SAGE_LABEL }}>·</span> 28 years in Bend{" "}
             <span style={{ color: SAGE_LABEL }}>·</span> 4.9 ★{" "}
             <span style={{ color: SAGE_LABEL }}>·</span> 211 Google reviews
           </p>
