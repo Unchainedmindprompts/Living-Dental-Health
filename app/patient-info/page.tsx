@@ -112,7 +112,7 @@ export default function PatientInfoPage() {
           <div className="relative h-[320px] w-full overflow-hidden sm:h-[460px] lg:h-[55vh] lg:min-h-[560px] lg:max-h-[760px]">
             <Image
               src="/patient-info-hero.webp"
-              alt="Dr. Andy Engel and a Living Dental Health team member welcoming a new patient in Bend, Oregon"
+              alt="A relaxed, smiling new patient in the operatory at Living Dental Health in Bend, Oregon"
               fill
               priority
               sizes="100vw"
