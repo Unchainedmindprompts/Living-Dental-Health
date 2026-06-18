@@ -28,7 +28,7 @@ const TEAM: {
     image: "/dr-andy.png",
     imageAlt:
       "Dr. Andy Engel DMD, founder of Living Dental Health in Bend, Oregon",
-    imageObjectPosition: "center 10%",
+    imageObjectPosition: "center 0%",
   },
   {
     name: "Samantha Gassman",
