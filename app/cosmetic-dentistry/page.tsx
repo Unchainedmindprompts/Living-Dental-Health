@@ -338,7 +338,7 @@ export default function CosmeticDentistryPage() {
               alt="Woman with a bright, confident smile after cosmetic dentistry at Living Dental Health in Bend, Oregon"
               fill
               sizes="(min-width: 1320px) 1320px, 100vw"
-              className="object-cover object-center"
+              className="object-cover object-[75%_center] sm:object-center"
             />
           </div>
         </section>
