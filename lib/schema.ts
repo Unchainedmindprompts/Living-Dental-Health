@@ -1386,3 +1386,135 @@ export const postOpPageSchema: JsonLdGraph = {
   ],
 };
 
+export const beforeAndAfterPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id":
+        "https://www.livingdentalhealth.com/before-and-after#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "The Work",
+          "item": "https://www.livingdentalhealth.com/before-and-after",
+        },
+      ],
+    },
+    {
+      "@type": "CollectionPage",
+      "@id":
+        "https://www.livingdentalhealth.com/before-and-after#collectionpage",
+      "url": "https://www.livingdentalhealth.com/before-and-after",
+      "name": "The Work — Before & After Cases",
+      "description":
+        "Six real before-and-after dental cases from Dr. Andy Engel at Living Dental Health in Bend, Oregon — whitening, veneers, and full mouth reconstruction, planned and finished in-house.",
+      "isPartOf": { "@id": "https://www.livingdentalhealth.com/#website" },
+      "about": { "@id": "https://www.livingdentalhealth.com/#business" },
+      "creator": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+      "publisher": {
+        "@id": "https://www.livingdentalhealth.com/#business",
+      },
+      "hasPart": [
+        { "@id": "https://www.livingdentalhealth.com/before-and-after#case-01" },
+        { "@id": "https://www.livingdentalhealth.com/before-and-after#case-02" },
+        { "@id": "https://www.livingdentalhealth.com/before-and-after#case-03" },
+        { "@id": "https://www.livingdentalhealth.com/before-and-after#case-04" },
+        { "@id": "https://www.livingdentalhealth.com/before-and-after#case-05" },
+        { "@id": "https://www.livingdentalhealth.com/before-and-after#case-06" },
+      ],
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.livingdentalhealth.com/before-and-after#case-01",
+      "contentUrl": "https://www.livingdentalhealth.com/case-01.webp",
+      "name": "Case 01",
+      "caption":
+        "Before and after dental work by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 01",
+      "creator": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+      "creditText": "Dr. Andy Engel, Living Dental Health",
+      "isPartOf": {
+        "@id":
+          "https://www.livingdentalhealth.com/before-and-after#collectionpage",
+      },
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.livingdentalhealth.com/before-and-after#case-02",
+      "contentUrl": "https://www.livingdentalhealth.com/case-02.webp",
+      "name": "Case 02",
+      "caption":
+        "Before and after dental work by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 02",
+      "creator": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+      "creditText": "Dr. Andy Engel, Living Dental Health",
+      "isPartOf": {
+        "@id":
+          "https://www.livingdentalhealth.com/before-and-after#collectionpage",
+      },
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.livingdentalhealth.com/before-and-after#case-03",
+      "contentUrl": "https://www.livingdentalhealth.com/case-03.webp",
+      "name": "Case 03",
+      "caption":
+        "Before and after dental work by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 03",
+      "creator": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+      "creditText": "Dr. Andy Engel, Living Dental Health",
+      "isPartOf": {
+        "@id":
+          "https://www.livingdentalhealth.com/before-and-after#collectionpage",
+      },
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.livingdentalhealth.com/before-and-after#case-04",
+      "contentUrl": "https://www.livingdentalhealth.com/case-04.webp",
+      "name": "Case 04",
+      "caption":
+        "Before and after dental work by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 04",
+      "creator": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+      "creditText": "Dr. Andy Engel, Living Dental Health",
+      "isPartOf": {
+        "@id":
+          "https://www.livingdentalhealth.com/before-and-after#collectionpage",
+      },
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.livingdentalhealth.com/before-and-after#case-05",
+      "contentUrl": "https://www.livingdentalhealth.com/case-05.webp",
+      "name": "Case 05",
+      "caption":
+        "Before and after dental work by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 05",
+      "creator": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+      "creditText": "Dr. Andy Engel, Living Dental Health",
+      "isPartOf": {
+        "@id":
+          "https://www.livingdentalhealth.com/before-and-after#collectionpage",
+      },
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.livingdentalhealth.com/before-and-after#case-06",
+      "contentUrl": "https://www.livingdentalhealth.com/case-06.webp",
+      "name": "Case 06",
+      "caption":
+        "Before and after dental work by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 06",
+      "creator": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+      "creditText": "Dr. Andy Engel, Living Dental Health",
+      "isPartOf": {
+        "@id":
+          "https://www.livingdentalhealth.com/before-and-after#collectionpage",
+      },
+    },
+  ],
+};
+
