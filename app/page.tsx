@@ -59,7 +59,7 @@ const TRUST: { top: string; bottom: string; href?: string }[] = [
   {
     top: "✓ Yes",
     bottom: "Accepting New Patients",
-    href: "/patient-info#scheduling",
+    href: "/contact",
   },
   {
     top: "Platinum Winner",
