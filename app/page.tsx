@@ -54,9 +54,13 @@ const CREDS = [
 ];
 
 const TRUST: { top: string; bottom: string; href?: string }[] = [
-  { top: "4.9 ★★★★★", bottom: "210 Google Reviews" },
+  { top: "4.9 ★★★★★", bottom: "211 Google Reviews" },
   { top: "28", bottom: "Years in Practice" },
-  { top: "✓ Yes", bottom: "Accepting New Patients" },
+  {
+    top: "✓ Yes",
+    bottom: "Accepting New Patients",
+    href: "/patient-info#scheduling",
+  },
   {
     top: "Platinum Winner",
     bottom:
@@ -435,12 +439,14 @@ export default function HomePage() {
                   </p>
                 </>
               );
+              const isExternal = t.href?.startsWith("http");
               return t.href ? (
                 <a
                   key={t.bottom}
                   href={t.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  {...(isExternal
+                    ? { target: "_blank", rel: "noopener noreferrer" }
+                    : {})}
                   className={`${cellClass} transition-opacity hover:opacity-70`}
                 >
                   {inner}
