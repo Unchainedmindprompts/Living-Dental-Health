@@ -33,7 +33,7 @@ const TEAM: {
   {
     name: "Samantha Gassman",
     role: "Office Manager",
-    bio: "Samantha keeps Living Dental Health running smoothly. From scheduling to insurance to making sure every patient feels welcome the moment they walk in, she’s the steady hand behind the front office. [Full bio coming soon]",
+    bio: "Samantha keeps Living Dental Health running smoothly. From scheduling to insurance to making sure every patient feels welcome the moment they walk in, she’s the steady hand behind the front office.",
     image: "/team-samantha.png",
     imageAlt:
       "Samantha Gassman, Office Manager at Living Dental Health in Bend, Oregon",
@@ -42,7 +42,7 @@ const TEAM: {
   {
     name: "Francie Engel",
     role: "Operations Administrator",
-    bio: "Francie handles operations behind the scenes at Living Dental Health. [Full bio coming soon]",
+    bio: "Francie handles operations behind the scenes at Living Dental Health.",
     image: "/team-francie.webp",
     imageAlt:
       "Francie Engel, Operations Administrator at Living Dental Health in Bend, Oregon",
@@ -50,7 +50,7 @@ const TEAM: {
   {
     name: "Nicole Tarpey",
     role: "Dental Hygienist",
-    bio: "Nicole is one of the gentle, detail-oriented hygienists who make cleanings at Living Dental Health something patients actually look forward to. [Full bio coming soon]",
+    bio: "Nicole is one of the gentle, detail-oriented hygienists who make cleanings at Living Dental Health something patients actually look forward to.",
     image: "/team-nicole.webp",
     imageAlt:
       "Nicole Tarpey, Dental Hygienist at Living Dental Health in Bend, Oregon",
@@ -58,7 +58,7 @@ const TEAM: {
   {
     name: "Sacha Lodge",
     role: "Dental Hygienist",
-    bio: "Sacha brings warmth and a steady hand to every cleaning and periodontal visit. [Full bio coming soon]",
+    bio: "Sacha brings warmth and a steady hand to every cleaning and periodontal visit.",
     image: "/team-sacha.png",
     imageAlt:
       "Sacha Lodge, Dental Hygienist at Living Dental Health in Bend, Oregon",
@@ -66,7 +66,7 @@ const TEAM: {
   {
     name: "Christy Spencer",
     role: "Dental Assistant",
-    bio: "Christy works chairside with Dr. Andy, making sure every procedure runs smoothly and every patient feels comfortable from start to finish. [Full bio coming soon]",
+    bio: "Christy works chairside with Dr. Andy, making sure every procedure runs smoothly and every patient feels comfortable from start to finish.",
     image: "/team-christy.webp",
     imageAlt:
       "Christy Spencer, Dental Assistant at Living Dental Health in Bend, Oregon",
