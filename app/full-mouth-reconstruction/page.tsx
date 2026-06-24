@@ -16,13 +16,13 @@ export const metadata: Metadata = {
     "Full mouth reconstruction in Bend, Oregon with Dr. Andy Engel. Over 4,000 CE hours and precision planning that protects your bite, jaw, and oral health.",
 };
 
-// PLACEHOLDER COPY — structured to show layout. Replace with Andy's voice once layout is approved.
+// Live phase copy. Andy's personal voice can be woven into these blocks later.
 const PHASES = [
   {
     id: "diagnosis",
     heading: "Comprehensive Diagnosis",
     body:
-      "Every reconstruction begins long before any treatment. Dr. Engel performs a complete evaluation of every tooth, the surrounding bone, the gums, and — critically — the bite. Diagnosis is supported by in-house CBCT 3D imaging — a cone-beam CT scan that produces a true three-dimensional model of the teeth, jaw, and bone, well beyond what a flat panoramic X-ray can show. He maps how the upper and lower teeth meet, where wear patterns came from, and what the rebuild needs to do for the mouth to function properly again. [PLACEHOLDER: Andy's voice on the diagnostic process.]",
+      "Every reconstruction begins long before any treatment. Dr. Engel performs a complete evaluation of every tooth, the surrounding bone, the gums, and — critically — the bite. Diagnosis is supported by in-house CBCT 3D imaging — a cone-beam CT scan that produces a true three-dimensional model of the teeth, jaw, and bone, well beyond what a flat panoramic X-ray can show. He maps how the upper and lower teeth meet, where wear patterns came from, and what the rebuild needs to do for the mouth to function properly again.",
     detail:
       "full mouth evaluation · bite analysis · in-house CBCT 3D imaging · written treatment plan",
   },
@@ -30,7 +30,7 @@ const PHASES = [
     id: "planning",
     heading: "Precision Planning",
     body:
-      "This is where reconstruction succeeds or fails. Andy maps the final result first — the exact bite, the tooth proportions, the muscle and joint relationships — and reverse-engineers the work from there. A reconstruction without this step is a series of procedures hoping to add up. With it, every implant, crown, and graft has a single coordinated target. [PLACEHOLDER: Andy's voice on the planning step and why it's the difference.]",
+      "This is where reconstruction succeeds or fails. Andy maps the final result first — the exact bite, the tooth proportions, the muscle and joint relationships — and reverse-engineers the work from there. A reconstruction without this step is a series of procedures hoping to add up. With it, every implant, crown, and graft has a single coordinated target.",
     detail:
       "reverse-engineered from the bite · coordinated multi-procedure plan · written and reviewed with you",
   },
@@ -38,7 +38,7 @@ const PHASES = [
     id: "implants-grafting",
     heading: "Implants & Grafting",
     body:
-      "For patients missing teeth or with bone loss, structural work comes first. Dr. Engel places implants and performs bone and tissue grafting in-house — work that many practices refer out. Keeping the work under one roof means the same dentist who planned the rebuild executes the foundation. [PLACEHOLDER: Andy's voice on his surgical training and what makes in-house grafting different.]",
+      "For patients missing teeth or with bone loss, structural work comes first. Dr. Engel places implants and performs bone and tissue grafting in-house — work that many practices refer out. Keeping the work under one roof means the same dentist who planned the rebuild executes the foundation.",
     detail:
       "dental implants · bone grafting · tissue grafting · all performed in-house",
   },
@@ -46,7 +46,7 @@ const PHASES = [
     id: "crowns-veneers",
     heading: "Crowns & Veneers",
     body:
-      "Once the foundation is set, the visible smile is rebuilt with crowns and veneers designed to match the planned bite and your facial proportions. Andy designs each piece to function correctly first, look right second — the order matters, and getting the order wrong is how patients end up with cosmetic work that breaks down within a few years. [PLACEHOLDER: Andy's voice on materials, ceramicists, and the design process.]",
+      "Once the foundation is set, the visible smile is rebuilt with crowns and veneers designed to match the planned bite and your facial proportions. Andy designs each piece to function correctly first, look right second — the order matters, and getting the order wrong is how patients end up with cosmetic work that breaks down within a few years.",
     detail:
       "porcelain crowns · veneers · designed to the planned bite · long-lasting materials",
   },
@@ -54,7 +54,7 @@ const PHASES = [
     id: "bite-calibration",
     heading: "Bite Calibration",
     body:
-      "This is the step that separates a real reconstruction from cosmetic dentistry that looks good for a year and causes problems for a decade. A poorly calibrated bite can cause TMJ pain, chronic headaches, speech changes, and difficulty chewing. Andy spends real time here, in multiple short appointments, refining how the teeth meet until the entire system is in balance. [PLACEHOLDER: Andy's voice on how he calibrates and how patients can tell when it's right.]",
+      "This is the step that separates a real reconstruction from cosmetic dentistry that looks good for a year and causes problems for a decade. A poorly calibrated bite can cause TMJ pain, chronic headaches, speech changes, and difficulty chewing. Andy spends real time here, in multiple short appointments, refining how the teeth meet until the entire system is in balance.",
     detail:
       "TMJ-aware adjustment · multi-visit refinement · the precision step that protects your investment",
   },
@@ -62,7 +62,7 @@ const PHASES = [
     id: "long-term",
     heading: "Long-Term Maintenance",
     body:
-      "A well-done reconstruction can last decades — but it needs maintenance the way any precision system does. Dr. Engel and the hygiene team see reconstruction patients on a tailored schedule, watch for early signs of trouble, and make small adjustments before they become problems. [PLACEHOLDER: Andy's voice on the recall schedule, nightguards, and what patients should watch for.]",
+      "A well-done reconstruction can last decades — but it needs maintenance the way any precision system does. Dr. Engel and the hygiene team see reconstruction patients on a tailored schedule, watch for early signs of trouble, and make small adjustments before they become problems.",
     detail:
       "tailored recall schedule · nightguard if needed · early adjustments before issues",
   },
@@ -314,9 +314,7 @@ export default function FullMouthReconstructionPage() {
               mouth reconstruction. For context, most dentists complete
               20&ndash;40 continuing-education hours per year.
               That&rsquo;s the depth of preparation behind every
-              reconstruction we do. [PLACEHOLDER: Andy&rsquo;s voice on
-              what those 4,000 hours actually taught him and why it matters
-              to the patient in the chair.]
+              reconstruction we do.
             </p>
           </div>
         </section>
@@ -337,8 +335,7 @@ export default function FullMouthReconstructionPage() {
               sometimes from past dental work, sometimes from years of
               grinding, sometimes from injury. The same precision
               principles that govern a full mouth reconstruction apply to
-              TMJ treatment. [PLACEHOLDER LINK: TMJ pillar page when
-              built.]
+              TMJ treatment.
             </p>
           </div>
         </section>
@@ -359,8 +356,7 @@ export default function FullMouthReconstructionPage() {
               most major insurance plans in-network and provide the same
               quality of care out-of-network. We accept CareCredit
               financing and offer an in-office dental plan for patients
-              without insurance. [PLACEHOLDER: Andy&rsquo;s voice on how
-              reconstructions are phased and what most patients pay.]
+              without insurance.
             </p>
           </div>
         </section>
