@@ -213,24 +213,6 @@ export default function PostOpPage() {
         </div>
       </section>
 
-      {/* HERO — placeholder */}
-      <div
-        className="relative flex h-[300px] w-full items-center justify-center overflow-hidden border-y border-dashed bg-cream-deep md:h-[440px]"
-        style={{ borderColor: SAGE_LABEL }}
-      >
-        <div className="px-6 text-center">
-          <p
-            className="font-inter text-[10px] font-light uppercase tracking-[0.32em]"
-            style={{ color: SAGE }}
-          >
-            Hero photo placeholder
-          </p>
-          <p className="mx-auto mt-3 max-w-[460px] font-serif-italic text-[15px] leading-[1.45] text-warm-gray">
-            Calm, warm editorial photo &mdash; full-bleed (to be generated)
-          </p>
-        </div>
-      </div>
-
       {/* UNIVERSAL INTRO */}
       <section className="mx-auto max-w-[820px] px-6 pt-16 pb-12 sm:pt-20">
         <h2 className={headingClass}>
