@@ -89,9 +89,10 @@ export default function AboutPage() {
               <p>
                 Dr. Andrew W. Engel grew up in Boise, Idaho before his family
                 relocated to Oregon in 1988. An avid athlete from an early
-                age, he had his sights set on Olympic mogul skiing at Mt.
-                Bachelor &mdash; he decided dentistry was the safer option.
-                Bend&rsquo;s loss, his patients&rsquo; gain.
+                age, he had his sights set on Olympic mogul skiing at
+                Idaho&rsquo;s Bogus Basin and Sun Valley &mdash; he decided
+                dentistry was the safer option. The mountains&rsquo; loss,
+                his patients&rsquo; gain.
               </p>
               <p>
                 He knew he wanted to be a dentist in the eighth grade. As a
@@ -104,8 +105,8 @@ export default function AboutPage() {
                 tissue and bone grafting. During that training he worked
                 directly alongside a prosthodontist &mdash; the specialist
                 focused on rebuilding the bite and how the whole mouth fits
-                together &mdash; learning the architecture of occlusion at
-                the chair, on real cases.
+                together &mdash; learning that architecture at the chair, on
+                real cases.
               </p>
               <p>
                 The same curiosity drives his career today. With over 4,000

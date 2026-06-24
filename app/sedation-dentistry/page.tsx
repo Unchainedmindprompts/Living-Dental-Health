@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "Mild oral Halcion sedation for anxious patients and oral surgery in Bend, Oregon. Calm pace, gentle approach, out of your system in about 24 hours.",
 };
 
-// PLACEHOLDER COPY — structured to show layout. Andy's voice fills the gaps.
+// Live phase copy. Andy's personal voice can be woven into these blocks later.
 const PHASES = [
   {
     id: "halcion",
     heading: "Halcion: Mild Oral Sedation",
     body:
-      "Halcion is the brand name for triazolam — a mild oral sedative taken as a single pill before your appointment. You arrive at the office already deeply relaxed. Unlike IV sedation or general anesthesia, you stay conscious and responsive throughout the visit. It's a gentle option for patients who would benefit from taking the edge off. [PLACEHOLDER: Andy's voice on why he chose Halcion specifically.]",
+      "Halcion is the brand name for triazolam — a mild oral sedative taken as a single pill before your appointment. You arrive at the office already deeply relaxed. Unlike IV sedation or general anesthesia, you stay conscious and responsive throughout the visit. It's a gentle option for patients who would benefit from taking the edge off.",
     detail:
       "oral pill · taken before the visit · mild · conscious sedation",
   },
@@ -31,7 +31,7 @@ const PHASES = [
     id: "experience",
     heading: "A Genuinely Nice Experience",
     body:
-      "Halcion is genuinely nice — that's how Dr. Engel describes it. You feel relaxed, time softens, and the appointment passes quickly. In fact, many patients become so relaxed they end up taking a cozy nap in the chair. You're aware enough to respond if needed; calm enough that the visit doesn't feel like one. [PLACEHOLDER: Andy's voice on what patients commonly report.]",
+      "Halcion is genuinely nice — that's how Dr. Engel describes it. You feel relaxed, time softens, and the appointment passes quickly. In fact, many patients become so relaxed they end up taking a cozy nap in the chair. You're aware enough to respond if needed; calm enough that the visit doesn't feel like one.",
     detail:
       "deeply relaxed · light sleep is common · awake and responsive",
   },
@@ -39,7 +39,7 @@ const PHASES = [
     id: "calm-pace",
     heading: "A Calm Pace First, Always",
     body:
-      "Sedation isn't our default — it's one tool. Most patients don't actually need a sedative. They need a dentist who doesn't rush, a team that doesn't make them feel judged, and an office that's quiet rather than clinical. That's how every visit at Living Dental Health is run, sedation or no sedation. [PLACEHOLDER: Andy's voice on the practice culture and how the team approaches anxious patients.]",
+      "Sedation isn't our default — it's one tool. Most patients don't actually need a sedative. They need a dentist who doesn't rush, a team that doesn't make them feel judged, and an office that's quiet rather than clinical. That's how every visit at Living Dental Health is run, sedation or no sedation.",
     detail:
       "unhurried care · no judgment · sedation only when it makes sense",
   },
@@ -47,7 +47,7 @@ const PHASES = [
     id: "twenty-four-hours",
     heading: "Out of Your System by Tomorrow",
     body:
-      "Halcion is short-acting. It's generally cleared from your system within about 24 hours of the dose, so you're back to yourself the next day. You will need a responsible adult to drive you to and from the appointment and stay with you for the rest of the day — that's the standard of care for any oral sedation. [PLACEHOLDER: Andy's voice on aftercare specifics.]",
+      "Halcion is short-acting. It's generally cleared from your system within about 24 hours of the dose, so you're back to yourself the next day. You will need a responsible adult to drive you to and from the appointment and stay with you for the rest of the day — that's the standard of care for any oral sedation.",
     detail:
       "~24-hour clearance · no driving same day · ride home required",
   },
@@ -175,8 +175,7 @@ export default function SedationDentistryPage() {
               judged, and a dentist who explains what&rsquo;s happening
               before it happens. When something more is helpful, Dr. Engel
               uses Halcion, a mild oral sedative he describes as
-              &ldquo;genuinely nice.&rdquo; [PLACEHOLDER: Andy&rsquo;s voice
-              on the practice&rsquo;s approach to anxious patients.]
+              &ldquo;genuinely nice.&rdquo;
             </p>
           </div>
         </section>
@@ -259,8 +258,6 @@ export default function SedationDentistryPage() {
               what would help you feel comfortable. Sedation is part of
               that toolkit when it&rsquo;s appropriate. So is going slowly,
               explaining each step, and never making you feel rushed.
-              [PLACEHOLDER: Andy&rsquo;s voice on what patients should
-              expect from a first visit when they&rsquo;re anxious.]
             </p>
           </div>
         </section>

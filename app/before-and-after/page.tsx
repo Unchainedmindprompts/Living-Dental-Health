@@ -19,7 +19,9 @@ export const metadata: Metadata = {
 type Case = {
   number: string;
   procedure: string;
-  description: string;
+  concern?: string;
+  solution?: string;
+  note?: string;
   image: string;
   alt: string;
 };
@@ -27,51 +29,54 @@ type Case = {
 const CASES: Case[] = [
   {
     number: "01",
-    procedure: "Procedure details forthcoming",
-    description:
-      "Dr. Engel's case notes coming soon.",
+    procedure: "Porcelain Veneers",
+    concern:
+      "Broken and chipped teeth that had yellowed and greyed over time. The patient wanted a fuller, wider smile.",
+    solution:
+      "Digital photography, a diagnostic wax-up, and cosmetic smile design, finished with porcelain veneers — for a brighter, broader, natural-looking smile.",
     image: "/case-01.webp",
-    alt: "Before and after dental work by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 01",
+    alt: "Before and after porcelain veneers by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 01",
   },
   {
     number: "02",
     procedure: "Procedure details forthcoming",
-    description:
-      "Dr. Engel's case notes coming soon.",
+    note: "Full case details coming soon.",
     image: "/case-02.webp",
     alt: "Before and after dental work by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 02",
   },
   {
     number: "03",
-    procedure: "Procedure details forthcoming",
-    description:
-      "Dr. Engel's case notes coming soon.",
+    procedure: "Porcelain Crowns",
+    concern:
+      "Broken, chipped teeth that had worn down over the years — shorter than they used to be. The patient wanted a healthy, natural-looking smile.",
+    solution:
+      "Digital photography, a diagnostic wax-up, and cosmetic smile design, rebuilt with porcelain crowns.",
     image: "/case-03.webp",
-    alt: "Before and after dental work by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 03",
+    alt: "Before and after porcelain crowns by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 03",
   },
   {
     number: "04",
     procedure: "Procedure details forthcoming",
-    description:
-      "Dr. Engel's case notes coming soon.",
+    note: "Full case details coming soon.",
     image: "/case-04.webp",
     alt: "Before and after dental work by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 04",
   },
   {
     number: "05",
-    procedure: "Procedure details forthcoming",
-    description:
-      "Dr. Engel's case notes coming soon.",
+    procedure: "Full Mouth Reconstruction",
+    note: "Full case details coming soon.",
     image: "/case-05.webp",
-    alt: "Before and after dental work by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 05",
+    alt: "Full mouth reconstruction by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 05",
   },
   {
     number: "06",
-    procedure: "Procedure details forthcoming",
-    description:
-      "Dr. Engel's case notes coming soon.",
+    procedure: "Crowns & Veneers",
+    concern:
+      "Mismatched teeth and old yellow composite fillings she found unsightly. She was embarrassed to smile and hesitant to show her teeth.",
+    solution:
+      "Digital photography, cosmetic smile design, and a diagnostic wax-up, then a combination of crowns and veneers on the upper teeth to meet her aesthetic and functional goals — with special attention to tissue health, symmetry, and phonetics.",
     image: "/case-06.webp",
-    alt: "Before and after dental work by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 06",
+    alt: "Before and after crowns and veneers by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 06",
   },
 ];
 
@@ -121,9 +126,9 @@ export default function BeforeAndAfterPage() {
             The <span className="font-serif-italic">work.</span>
           </h1>
           <p className="mx-auto mt-6 max-w-[640px] font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:mt-8 sm:text-[17px]">
-            Six real cases from Dr. Engel&rsquo;s chair. Whitening, veneers,
-            full mouth reconstruction &mdash; every case planned, executed,
-            and finished here in Bend.
+            Real cases from Dr. Engel&rsquo;s chair. Porcelain veneers,
+            crowns, full mouth reconstruction &mdash; every case planned,
+            executed, and finished here in Bend.
           </p>
           <p className="mt-6 font-inter text-[12px] font-light uppercase tracking-[0.2em] text-charcoal-soft sm:mt-8">
             Dr. Engel{" "}
@@ -167,9 +172,37 @@ export default function BeforeAndAfterPage() {
                   >
                     {c.procedure}
                   </p>
-                  <p className="mt-3 font-serif-italic text-[15px] leading-[1.7] text-charcoal-soft sm:text-[16px]">
-                    {c.description}
-                  </p>
+                  {c.concern || c.solution ? (
+                    <div className="mt-4 space-y-4">
+                      {c.concern ? (
+                        <div>
+                          <p className="font-inter text-[10px] font-light uppercase tracking-[0.2em] text-warm-gray">
+                            The concern
+                          </p>
+                          <p className="mt-1 font-inter text-[14px] font-light leading-[1.7] text-charcoal-soft sm:text-[15px]">
+                            {c.concern}
+                          </p>
+                        </div>
+                      ) : null}
+                      {c.solution ? (
+                        <div>
+                          <p
+                            className="font-inter text-[10px] font-light uppercase tracking-[0.2em]"
+                            style={{ color: SAGE }}
+                          >
+                            The solution
+                          </p>
+                          <p className="mt-1 font-inter text-[14px] font-light leading-[1.7] text-charcoal-soft sm:text-[15px]">
+                            {c.solution}
+                          </p>
+                        </div>
+                      ) : null}
+                    </div>
+                  ) : (
+                    <p className="mt-3 font-serif-italic text-[15px] leading-[1.7] text-warm-gray sm:text-[16px]">
+                      {c.note}
+                    </p>
+                  )}
                 </article>
               ))}
             </div>
