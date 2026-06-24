@@ -101,7 +101,11 @@ export default function AboutPage() {
                 to Oregon Health Sciences University, where he graduated
                 early and pursued advanced training in full mouth
                 reconstruction, oral surgery, implants, ClearCorrect, and
-                tissue and bone grafting.
+                tissue and bone grafting. During that training he worked
+                directly alongside a prosthodontist &mdash; the specialist
+                focused on rebuilding the bite and how the whole mouth fits
+                together &mdash; learning the architecture of occlusion at
+                the chair, on real cases.
               </p>
               <p>
                 The same curiosity drives his career today. With over 4,000

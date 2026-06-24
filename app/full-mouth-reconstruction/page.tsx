@@ -198,6 +198,53 @@ export default function FullMouthReconstructionPage() {
           </div>
         </section>
 
+        {/* THE TRAINING — prosthodontist mentorship, the page's lead
+            credibility proof. Placed after the problem framing and before
+            the phases so it earns the walkthrough that follows. */}
+        <section className="mx-auto max-w-[1320px] px-6 pb-16 sm:pb-20">
+          <div
+            className="mx-auto max-w-[820px] border-l-2 pl-6 sm:pl-10"
+            style={{ borderColor: SAGE }}
+          >
+            <p
+              className="font-inter text-[11px] font-light uppercase tracking-widest"
+              style={{ color: SAGE }}
+            >
+              &mdash; the training &mdash;
+            </p>
+            <h2 className="mt-4 font-serif text-[30px] leading-[1.08] text-charcoal sm:text-[40px] md:text-[44px]">
+              Trained beside a{" "}
+              <span className="font-serif-italic">prosthodontist.</span>
+            </h2>
+            <div className="mt-6 space-y-5 font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft sm:text-[16px]">
+              <p>
+                Full mouth reconstruction isn&rsquo;t a single procedure
+                &mdash; it&rsquo;s getting the whole system right: how your
+                teeth meet, how your bite distributes force, how every crown,
+                veneer, and implant works together so the result lasts and
+                feels natural instead of merely looking acceptable. It&rsquo;s
+                the hardest thing to get right in dentistry, and it&rsquo;s
+                where rebuilds most often fail in less experienced hands
+                &mdash; a bite that&rsquo;s &ldquo;off,&rdquo; restorations
+                that wear out early, work that has to be redone.
+              </p>
+              <p>
+                During his training, Dr. Engel had a rare opportunity: he
+                worked directly alongside a prosthodontist &mdash; the
+                specialist whose entire focus is rebuilding how the mouth fits
+                and functions, from the bite to the full structure of the
+                teeth. He learned the discipline the way it&rsquo;s actually
+                mastered: not from a textbook, but at the chair, on real cases,
+                over countless hours with a specialist who does this every
+                day. For you, that means the dentist planning your
+                reconstruction understands the full architecture of the bite
+                &mdash; the part that determines whether the result holds up
+                for decades or starts failing in a few years.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* PHASES — 2-up mocha panel grid */}
         <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">
           <div className="mx-auto grid max-w-[1100px] gap-4 sm:gap-6 md:grid-cols-2">
