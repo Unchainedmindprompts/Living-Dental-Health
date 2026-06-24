@@ -32,6 +32,12 @@ editing.
   (Dr. Engel's undergrad)
 - **4,000+ hours continuing education** in smile design, cosmetic
   dentistry, and full mouth reconstruction
+- **Trained alongside a prosthodontist** during his advanced training —
+  learned occlusion / bite architecture at the chair, on real cases.
+  He is NOT a prosthodontist and is NOT board-certified in
+  prosthodontics; never claim the specialty, and never add
+  "Prosthodontics" to the #doctor `medicalSpecialty`. The phrasing is
+  always "trained alongside" / "worked directly alongside."
 - **CommunityVotes Bend Dental Hygiene Clinic — Platinum Winner, 2025 +
   2026**
 - **Address:** 930 SW Yates Dr, Bend OR 97702
