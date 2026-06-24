@@ -22,7 +22,7 @@ const PHASES = [
     id: "what-we-look-for",
     heading: "What We Look For",
     body:
-      "Dr. Engel and the hygiene team examine your lips, tongue, the inside of your cheeks, the roof and floor of your mouth, your throat, and the lymph nodes in your neck. We're looking for sores that haven't healed, white or red patches, lumps or thickening of tissue, asymmetry, and anything that has changed since your last visit. Most patients don't notice it's happening — it's built into the routine exam. [PLACEHOLDER: Andy's voice on the specific checks he performs.]",
+      "Dr. Engel and the hygiene team examine your lips, tongue, the inside of your cheeks, the roof and floor of your mouth, your throat, and the lymph nodes in your neck. We're looking for sores that haven't healed, white or red patches, lumps or thickening of tissue, asymmetry, and anything that has changed since your last visit. Most patients don't notice it's happening — it's built into the routine exam.",
     detail:
       "lips · tongue · cheeks · palate · throat · neck lymph nodes",
   },
@@ -30,7 +30,7 @@ const PHASES = [
     id: "why-early-matters",
     heading: "Why Early Matters",
     body:
-      "Oral cancer is one of the most treatable cancers when caught early — and one of the least when caught late. Survival rates for oral and oropharyngeal cancer detected at a localized stage are dramatically higher than for cancer that has already spread. Most patients have no symptoms in the early stages. That's why a one-minute visual exam at every cleaning is one of the highest-leverage things we do. [PLACEHOLDER: Andy's voice on cases he has caught early and why he prioritizes this exam.]",
+      "Oral cancer is one of the most treatable cancers when caught early — and one of the least when caught late. Survival rates for oral and oropharyngeal cancer detected at a localized stage are dramatically higher than for cancer that has already spread. Most patients have no symptoms in the early stages. That's why a one-minute visual exam at every cleaning is one of the highest-leverage things we do.",
     detail:
       "early detection saves lives · most early cases have no symptoms",
   },
@@ -38,7 +38,7 @@ const PHASES = [
     id: "what-it-involves",
     heading: "What the Screening Involves",
     body:
-      "The exam takes about one to two minutes and is completely painless. It's a careful visual inspection combined with gentle palpation — feeling the tissues in and around your mouth and neck for anything unusual. There are no special tools required, no biopsy, and no preparation. It's part of the same appointment as your cleaning. [PLACEHOLDER: Andy's voice on tools used (e.g., VELscope) if any.]",
+      "The exam takes about one to two minutes and is completely painless. It's a careful visual inspection combined with gentle palpation — feeling the tissues in and around your mouth and neck for anything unusual. There are no special tools required, no biopsy, and no preparation. It's part of the same appointment as your cleaning.",
     detail:
       "1–2 minutes · painless · visual + palpation · part of every cleaning",
   },
@@ -46,7 +46,7 @@ const PHASES = [
     id: "higher-risk",
     heading: "Who's at Higher Risk",
     body:
-      "Tobacco use of any form — cigarettes, cigars, pipes, chew, vaping — is the largest risk factor. Heavy alcohol use, HPV infection, prolonged sun exposure to the lips, and being over age 40 also raise risk. That said, oral cancer can appear in patients with no risk factors at all, which is exactly why we screen every patient at every visit. [PLACEHOLDER: Andy's voice on what he tells higher-risk patients.]",
+      "Tobacco use of any form — cigarettes, cigars, pipes, chew, vaping — is the largest risk factor. Heavy alcohol use, HPV infection, prolonged sun exposure to the lips, and being over age 40 also raise risk. That said, oral cancer can appear in patients with no risk factors at all, which is exactly why we screen every patient at every visit.",
     detail:
       "tobacco · heavy alcohol · HPV · sun exposure · age 40+",
   },
@@ -181,8 +181,6 @@ export default function OralCancerScreeningPage() {
               cancer screening on every patient, every time &mdash; whether
               you&rsquo;re a long-term patient he&rsquo;s known for years
               or you&rsquo;re sitting in his chair for the first time.
-              [PLACEHOLDER: Andy&rsquo;s voice on why he never skips this
-              step.]
             </p>
           </div>
         </section>
