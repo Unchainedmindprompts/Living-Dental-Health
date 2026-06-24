@@ -1452,7 +1452,7 @@ export const beforeAndAfterPageSchema: JsonLdGraph = {
       "contentUrl": "https://www.livingdentalhealth.com/case-02.webp",
       "name": "Case 02",
       "caption":
-        "Close-up of porcelain veneers by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 02",
+        "Before and after dental work by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 02",
       "creator": { "@id": "https://www.livingdentalhealth.com/#doctor" },
       "creditText": "Dr. Andy Engel, Living Dental Health",
       "isPartOf": {

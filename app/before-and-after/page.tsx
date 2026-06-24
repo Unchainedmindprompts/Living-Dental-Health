@@ -39,11 +39,10 @@ const CASES: Case[] = [
   },
   {
     number: "02",
-    procedure: "Porcelain Veneers · Close-Up",
-    note:
-      "The same case as Case 01, photographed up close. A closer view shows the symmetry, tissue health, and the natural size and spacing of the finished veneers.",
+    procedure: "Procedure details forthcoming",
+    note: "Full case details coming soon.",
     image: "/case-02.webp",
-    alt: "Close-up of porcelain veneers by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 02",
+    alt: "Before and after dental work by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 02",
   },
   {
     number: "03",
