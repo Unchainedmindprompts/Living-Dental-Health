@@ -185,8 +185,6 @@ export default function FullMouthReconstructionPage() {
               doesn&rsquo;t fix the problem. It locks the problem in.
               That&rsquo;s why every full mouth reconstruction at Living
               Dental Health begins as a planning exercise — not a procedure.
-              [PLACEHOLDER: Andy&rsquo;s voice on the diagnostic philosophy
-              and what he&rsquo;s looking for in the first appointment.]
             </p>
           </div>
         </section>
