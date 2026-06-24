@@ -163,7 +163,7 @@ export default function FullMouthReconstructionPage() {
               fill
               priority
               sizes="100vw"
-              className="object-cover object-[74%_center] lg:object-center"
+              className="object-cover object-[74%_center] lg:object-top"
             />
             <div
               aria-hidden
