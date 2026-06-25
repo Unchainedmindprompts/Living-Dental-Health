@@ -251,6 +251,7 @@ const doctorEntity: JsonLdNode = {
   },
   "knowsAbout": [
     "full mouth reconstruction",
+    "cosmetic smile design",
     "occlusion and bite calibration",
     "oral surgery",
     "dental implants",
