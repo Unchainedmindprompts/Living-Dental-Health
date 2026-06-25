@@ -38,17 +38,17 @@ const PHASES = [
     id: "implants-grafting",
     heading: "Implants & Grafting",
     body:
-      "For patients missing teeth or with bone loss, structural work comes first. Dr. Engel places implants and performs bone and tissue grafting in-house — work that many practices refer out. Keeping the work under one roof means the same dentist who planned the rebuild executes the foundation.",
+      "For patients missing teeth or with bone loss, structural work comes first. Dr. Engel places implants and performs bone and tissue grafting in-house — work that many practices refer out. Implant placement starts with an in-house 3D CBCT scan that maps the jaw and surrounding bone in true three dimensions. From that scan, Dr. Engel designs a custom surgical guide and prints it on the office's 3D printer. Designed by him, made by him, placed by him — no guesswork on where the implant lands in the bone. Keeping every step under one roof means the same dentist who planned the rebuild executes the foundation.",
     detail:
-      "dental implants · bone grafting · tissue grafting · all performed in-house",
+      "dental implants · bone & tissue grafting · CBCT-guided · in-house 3D-printed surgical guides",
   },
   {
     id: "crowns-veneers",
     heading: "Crowns & Veneers",
     body:
-      "Once the foundation is set, the visible smile is rebuilt with crowns and veneers designed to match the planned bite and your facial proportions. Andy designs each piece to function correctly first, look right second — the order matters, and getting the order wrong is how patients end up with cosmetic work that breaks down within a few years.",
+      "Once the foundation is set, the visible smile is rebuilt with crowns and veneers designed to match the planned bite and your facial proportions. Dr. Engel designs each piece to function correctly first, look right second — the order matters, and getting the order wrong is how patients end up with cosmetic work that breaks down within a few years. For especially demanding shade work, custom shade matching can be arranged directly with the lab technician fabricating the porcelain, so the final color and translucency match your existing teeth.",
     detail:
-      "porcelain crowns · veneers · designed to the planned bite · long-lasting materials",
+      "porcelain crowns · veneers · designed to the planned bite · custom shade matching",
   },
   {
     id: "bite-calibration",
@@ -217,7 +217,10 @@ export default function FullMouthReconstructionPage() {
                 the hardest thing to get right in dentistry, and it&rsquo;s
                 where rebuilds most often fail in less experienced hands
                 &mdash; a bite that&rsquo;s &ldquo;off,&rdquo; restorations
-                that wear out early, work that has to be redone.
+                that wear out early, work that has to be redone. And the
+                consequences aren&rsquo;t only dental: a misaligned bite can
+                cause chronic headaches, migraines, TMJ pain, and other
+                symptoms that don&rsquo;t seem connected to the mouth at all.
               </p>
               <p>
                 During his training, Dr. Engel had a rare opportunity: he

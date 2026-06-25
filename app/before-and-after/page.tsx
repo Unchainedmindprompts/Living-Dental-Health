@@ -33,16 +33,19 @@ const CASES: Case[] = [
     concern:
       "Broken and chipped teeth that had yellowed and greyed over time. The patient wanted a fuller, wider smile.",
     solution:
-      "Digital photography, a diagnostic wax-up, and cosmetic smile design, finished with porcelain veneers — for a brighter, broader, natural-looking smile.",
+      "Digital photography, a diagnostic wax-up, and cosmetic smile design, finished with porcelain veneers on the upper teeth — for a brighter, broader, natural-looking smile.",
     image: "/case-01.webp",
     alt: "Before and after porcelain veneers by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 01",
   },
   {
     number: "02",
-    procedure: "Procedure details forthcoming",
-    note: "Full case details coming soon.",
+    procedure: "Full Mouth Reconstruction",
+    concern:
+      "Chipped and worn teeth throughout. The patient had also been sucking on Reese's peanut butter cups daily, leading to uncontrolled cavities across the entire mouth.",
+    solution:
+      "Digital photography, a diagnostic wax-up, and cosmetic smile design. A full mouth reconstruction, completed with a combination of porcelain crowns and veneers to restore both function and aesthetics.",
     image: "/case-02.webp",
-    alt: "Before and after dental work by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 02",
+    alt: "Before and after full mouth reconstruction by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 02",
   },
   {
     number: "03",
