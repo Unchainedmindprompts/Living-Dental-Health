@@ -130,41 +130,51 @@ export default function FullMouthReconstructionPage() {
           </ol>
         </nav>
 
-        {/* HERO — the photo has the eyebrow, headline, and supporting copy
-            baked into the design on desktop. Overlay text only renders on
-            mobile (where the photo is cropped to just Dr. Engel and the
-            patient via object-[74%_center]). */}
+        {/* HERO — headline overlaid on the photo's negative space (desktop),
+            stacked above the photo (mobile). Single H1, repositioned by CSS. */}
         <div className="relative">
-          <div className="px-6 pt-6 pb-10 text-center lg:hidden">
-            <div className="mx-auto w-full max-w-[1320px]">
-              <p
-                className="font-inter text-[11px] font-light uppercase tracking-widest"
-                style={{ color: SAGE }}
-              >
-                &mdash; full mouth reconstruction &mdash;
-              </p>
-              <h1 className="mt-5 font-serif text-[40px] leading-[1.05] text-charcoal sm:text-[56px]">
-                Built right,{" "}
-                <span className="font-serif-italic">the first time.</span>
-              </h1>
-              <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:text-[17px]">
-                Full mouth reconstruction is a precise endeavor. A poorly
-                executed rebuild causes TMJ pain, headaches, speech
-                difficulties, and chewing problems &mdash; for life. Dr.
-                Engel has spent over 4,000 hours of continuing education
-                learning how to do it right.
-              </p>
+          <div className="px-6 pt-6 pb-10 text-center lg:absolute lg:inset-0 lg:z-10 lg:flex lg:items-center lg:py-0 lg:text-left">
+            <div className="mx-auto w-full max-w-[1320px] lg:px-6">
+              <div className="lg:max-w-[560px]">
+                <p
+                  className="font-inter text-[11px] font-light uppercase tracking-widest"
+                  style={{ color: SAGE }}
+                >
+                  &mdash; full mouth reconstruction &mdash;
+                </p>
+                <h1 className="mt-5 font-serif text-[40px] leading-[1.05] text-charcoal sm:text-[56px] lg:text-[64px]">
+                  Built right,{" "}
+                  <span className="font-serif-italic">the first time.</span>
+                </h1>
+                <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:text-[17px] lg:mx-0 lg:max-w-[460px]">
+                  Full mouth reconstruction is a precise endeavor. A poorly
+                  executed rebuild causes TMJ pain, headaches, speech
+                  difficulties, and chewing problems &mdash; for life. Dr.
+                  Engel has spent over 4,000 hours of continuing education
+                  learning how to do it right.
+                </p>
+              </div>
             </div>
           </div>
 
           <div className="relative h-[380px] w-full overflow-hidden sm:h-[460px] lg:h-[55vh] lg:min-h-[560px] lg:max-h-[760px]">
             <Image
               src="/fmr-hero.webp"
-              alt="Dr. Andy Engel in conversation with a patient at Living Dental Health in Bend, Oregon, beside the hero text: Built right, the first time. Full mouth reconstruction is a precise endeavor. A poorly executed rebuild causes TMJ pain, headaches, speech difficulties, and chewing problems — for life. Dr. Engel has spent over 4,000 hours of continuing education learning how to do it right."
+              alt="Dr. Andy Engel in conversation with a patient at Living Dental Health in Bend, Oregon"
               fill
               priority
               sizes="100vw"
               className="object-cover object-[74%_center] lg:object-center"
+            />
+            {/* left scrim — keeps the charcoal headline legible over the
+                bright wall (desktop only) */}
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-0 hidden lg:block"
+              style={{
+                background:
+                  "linear-gradient(to right, rgba(245,240,232,0.94) 0%, rgba(245,240,232,0.74) 32%, rgba(245,240,232,0) 58%)",
+              }}
             />
           </div>
         </div>
