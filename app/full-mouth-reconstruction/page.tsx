@@ -38,17 +38,17 @@ const PHASES = [
     id: "implants-grafting",
     heading: "Implants & Grafting",
     body:
-      "For patients missing teeth or with bone loss, structural work comes first. Dr. Engel places implants and performs bone and tissue grafting in-house — work that many practices refer out. Keeping the work under one roof means the same dentist who planned the rebuild executes the foundation.",
+      "For patients missing teeth or with bone loss, structural work comes first. Dr. Engel places implants and performs bone and tissue grafting in-house — work that many practices refer out. Implant placement starts with an in-house 3D CBCT scan that maps the jaw and surrounding bone in true three dimensions. From that scan, Dr. Engel designs a custom surgical guide and prints it on the office's 3D printer. Designed by him, made by him, placed by him — no guesswork on where the implant lands in the bone. Keeping every step under one roof means the same dentist who planned the rebuild executes the foundation.",
     detail:
-      "dental implants · bone grafting · tissue grafting · all performed in-house",
+      "dental implants · bone & tissue grafting · CBCT-guided · in-house 3D-printed surgical guides",
   },
   {
     id: "crowns-veneers",
     heading: "Crowns & Veneers",
     body:
-      "Once the foundation is set, the visible smile is rebuilt with crowns and veneers designed to match the planned bite and your facial proportions. Andy designs each piece to function correctly first, look right second — the order matters, and getting the order wrong is how patients end up with cosmetic work that breaks down within a few years.",
+      "Once the foundation is set, the visible smile is rebuilt with crowns and veneers designed to match the planned bite and your facial proportions. Dr. Engel designs each piece to function correctly first, look right second — the order matters, and getting the order wrong is how patients end up with cosmetic work that breaks down within a few years. For especially demanding shade work, custom shade matching can be arranged directly with the lab technician fabricating the porcelain, so the final color and translucency match your existing teeth.",
     detail:
-      "porcelain crowns · veneers · designed to the planned bite · long-lasting materials",
+      "porcelain crowns · veneers · designed to the planned bite · custom shade matching",
   },
   {
     id: "bite-calibration",
@@ -130,41 +130,51 @@ export default function FullMouthReconstructionPage() {
           </ol>
         </nav>
 
-        {/* HERO — the photo has the eyebrow, headline, and supporting copy
-            baked into the design on desktop. Overlay text only renders on
-            mobile (where the photo is cropped to just Dr. Engel and the
-            patient via object-[74%_center]). */}
+        {/* HERO — headline overlaid on the photo's negative space (desktop),
+            stacked above the photo (mobile). Single H1, repositioned by CSS. */}
         <div className="relative">
-          <div className="px-6 pt-6 pb-10 text-center lg:hidden">
-            <div className="mx-auto w-full max-w-[1320px]">
-              <p
-                className="font-inter text-[11px] font-light uppercase tracking-widest"
-                style={{ color: SAGE }}
-              >
-                &mdash; full mouth reconstruction &mdash;
-              </p>
-              <h1 className="mt-5 font-serif text-[40px] leading-[1.05] text-charcoal sm:text-[56px]">
-                Built right,{" "}
-                <span className="font-serif-italic">the first time.</span>
-              </h1>
-              <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:text-[17px]">
-                Full mouth reconstruction is a precise endeavor. A poorly
-                executed rebuild causes TMJ pain, headaches, speech
-                difficulties, and chewing problems &mdash; for life. Dr.
-                Engel has spent over 4,000 hours of continuing education
-                learning how to do it right.
-              </p>
+          <div className="px-6 pt-6 pb-10 text-center lg:absolute lg:inset-0 lg:z-10 lg:flex lg:items-center lg:py-0 lg:text-left">
+            <div className="mx-auto w-full max-w-[1320px] lg:px-6">
+              <div className="lg:max-w-[560px]">
+                <p
+                  className="font-inter text-[11px] font-light uppercase tracking-widest"
+                  style={{ color: SAGE }}
+                >
+                  &mdash; full mouth reconstruction &mdash;
+                </p>
+                <h1 className="mt-5 font-serif text-[40px] leading-[1.05] text-charcoal sm:text-[56px] lg:text-[64px]">
+                  Built right,{" "}
+                  <span className="font-serif-italic">the first time.</span>
+                </h1>
+                <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:text-[17px] lg:mx-0 lg:max-w-[460px]">
+                  Full mouth reconstruction is a precise endeavor. A poorly
+                  executed rebuild causes TMJ pain, headaches, speech
+                  difficulties, and chewing problems &mdash; for life. Dr.
+                  Engel has spent over 4,000 hours of continuing education
+                  learning how to do it right.
+                </p>
+              </div>
             </div>
           </div>
 
           <div className="relative h-[380px] w-full overflow-hidden sm:h-[460px] lg:h-[55vh] lg:min-h-[560px] lg:max-h-[760px]">
             <Image
               src="/fmr-hero.webp"
-              alt="Dr. Andy Engel in conversation with a patient at Living Dental Health in Bend, Oregon, beside the hero text: Built right, the first time. Full mouth reconstruction is a precise endeavor. A poorly executed rebuild causes TMJ pain, headaches, speech difficulties, and chewing problems — for life. Dr. Engel has spent over 4,000 hours of continuing education learning how to do it right."
+              alt="Dr. Andy Engel in conversation with a patient at Living Dental Health in Bend, Oregon"
               fill
               priority
               sizes="100vw"
               className="object-cover object-[74%_center] lg:object-center"
+            />
+            {/* left scrim — keeps the charcoal headline legible over the
+                bright wall (desktop only) */}
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-0 hidden lg:block"
+              style={{
+                background:
+                  "linear-gradient(to right, rgba(245,240,232,0.94) 0%, rgba(245,240,232,0.74) 32%, rgba(245,240,232,0) 58%)",
+              }}
             />
           </div>
         </div>
@@ -217,7 +227,10 @@ export default function FullMouthReconstructionPage() {
                 the hardest thing to get right in dentistry, and it&rsquo;s
                 where rebuilds most often fail in less experienced hands
                 &mdash; a bite that&rsquo;s &ldquo;off,&rdquo; restorations
-                that wear out early, work that has to be redone.
+                that wear out early, work that has to be redone. And the
+                consequences aren&rsquo;t only dental: a misaligned bite can
+                cause chronic headaches, migraines, TMJ pain, and other
+                symptoms that don&rsquo;t seem connected to the mouth at all.
               </p>
               <p>
                 During his training, Dr. Engel had a rare opportunity: he

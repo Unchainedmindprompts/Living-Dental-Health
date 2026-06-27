@@ -15,9 +15,9 @@ const TREATMENTS: Link[] = [
 ];
 
 const ABOUT: Link[] = [
-  { label: "The Work", href: "/before-and-after" },
   { label: "Meet Dr. Engel", href: "/about" },
   { label: "The Team", href: "/team" },
+  { label: "The Work", href: "/before-and-after" },
   { label: "Articles", href: "/articles" },
 ];
 

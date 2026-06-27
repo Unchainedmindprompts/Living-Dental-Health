@@ -37,11 +37,11 @@ const PHASES = [
   },
   {
     id: "calm-pace",
-    heading: "A Calm Pace First, Always",
+    heading: "Gentle, Never Rushed",
     body:
-      "Sedation isn't our default — it's one tool. Most patients don't actually need a sedative. They need a dentist who doesn't rush, a team that doesn't make them feel judged, and an office that's quiet rather than clinical. That's how every visit at Living Dental Health is run, sedation or no sedation.",
+      "Sedation isn't our default — it's one tool. Most patients don't actually need a sedative. What they need is a dentist who doesn't make them feel rushed, a team that doesn't judge, and an office that's quiet rather than clinical. The work itself moves efficiently — Dr. Engel doesn't waste your time — but it never feels rushed because the focus is on you, not the clock.",
     detail:
-      "unhurried care · no judgment · sedation only when it makes sense",
+      "efficient but gentle · no judgment · sedation only when it makes sense",
   },
   {
     id: "twenty-four-hours",

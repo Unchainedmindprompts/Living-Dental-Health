@@ -29,6 +29,10 @@ const CREDENTIALS = [
     label: "Advanced training",
     detail: "Implants, ClearCorrect, Tissue & Bone Grafting",
   },
+  {
+    label: "Advanced training",
+    detail: "Cosmetic Smile Design",
+  },
   { label: "Founder", detail: "Living Dental Health" },
   { label: "Practice", detail: "28 years serving Bend, Oregon" },
   { label: "New patients", detail: "Accepting ages 12 and up" },
