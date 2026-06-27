@@ -59,17 +59,23 @@ const CASES: Case[] = [
   },
   {
     number: "04",
-    procedure: "Procedure details forthcoming",
-    note: "Full case details coming soon.",
+    procedure: "Porcelain Crowns",
+    concern:
+      "The patient's front teeth were too large and mismatched in color, while the side teeth were too small and left gaps. They had consulted other offices but never felt comfortable moving forward.",
+    solution:
+      "Cosmetic smile design, a diagnostic wax-up, and digital photography, finished with porcelain crowns on the upper teeth.",
     image: "/case-04.webp",
-    alt: "Before and after dental work by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 04",
+    alt: "Before and after porcelain crowns by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 04",
   },
   {
     number: "05",
     procedure: "Full Mouth Reconstruction",
-    note: "Full case details coming soon.",
+    concern:
+      "Broken, ground-down teeth with decay throughout both the upper and lower arches.",
+    solution:
+      "A full mouth reconstruction restoring both arches with porcelain crowns.",
     image: "/case-05.webp",
-    alt: "Full mouth reconstruction by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 05",
+    alt: "Before and after full mouth reconstruction by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 05",
   },
   {
     number: "06",

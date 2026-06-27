@@ -1481,7 +1481,7 @@ export const beforeAndAfterPageSchema: JsonLdGraph = {
       "contentUrl": "https://www.livingdentalhealth.com/case-04.webp",
       "name": "Case 04",
       "caption":
-        "Before and after dental work by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 04",
+        "Before and after porcelain crowns by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 04",
       "creator": { "@id": "https://www.livingdentalhealth.com/#doctor" },
       "creditText": "Dr. Andy Engel, Living Dental Health",
       "isPartOf": {
@@ -1495,7 +1495,7 @@ export const beforeAndAfterPageSchema: JsonLdGraph = {
       "contentUrl": "https://www.livingdentalhealth.com/case-05.webp",
       "name": "Case 05",
       "caption":
-        "Full mouth reconstruction by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 05",
+        "Before and after full mouth reconstruction by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 05",
       "creator": { "@id": "https://www.livingdentalhealth.com/#doctor" },
       "creditText": "Dr. Andy Engel, Living Dental Health",
       "isPartOf": {
