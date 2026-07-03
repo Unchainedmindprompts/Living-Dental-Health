@@ -509,7 +509,7 @@ export default function HomePage() {
               <div className="flex gap-6">
                 <a href="/privacy" className="sweep">Privacy</a>
                 <a href="#accessibility" className="sweep">Accessibility</a>
-                <a href="#hipaa" className="sweep">HIPAA Notice</a>
+                <a href="/privacy" className="sweep">HIPAA Notice</a>
               </div>
             </div>
           </div>

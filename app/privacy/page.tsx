@@ -43,12 +43,16 @@ export default function PrivacyPage() {
             provide to us. Please read the following carefully to understand
             our policies regarding your personal data and how we will treat it.
           </p>
-          {/* TODO: when the combined "Consent for Services, Insurance Coverage,
-              Financial Policy & HIPAA" PDF is hosted, wrap the document name
-              below in <a href="PDF_URL">…</a>. */}
           <p className={p}>
-            You can review our full Consent for Services, Insurance Coverage,
-            Financial Policy &amp; HIPAA document by request.
+            You can review our full{" "}
+            <a
+              href="/documents/consent-services-insurance-financial-hipaa.pdf"
+              className="underline"
+            >
+              Consent for Services, Insurance Coverage, Financial Policy &amp;
+              HIPAA document
+            </a>
+            .
           </p>
 
           <h2 className={h2}>Information we may collect from you</h2>
