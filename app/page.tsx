@@ -507,7 +507,7 @@ export default function HomePage() {
             <div className="mx-auto flex max-w-[1320px] flex-col items-start justify-between gap-3 px-6 py-6 text-[12px] text-cream-soft/60 md:flex-row md:items-center">
               <p>© 2026 Living Dental Health, PLLC</p>
               <div className="flex gap-6">
-                <a href="#privacy" className="sweep">Privacy</a>
+                <a href="/privacy" className="sweep">Privacy</a>
                 <a href="#accessibility" className="sweep">Accessibility</a>
                 <a href="#hipaa" className="sweep">HIPAA Notice</a>
               </div>
