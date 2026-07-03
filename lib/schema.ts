@@ -62,9 +62,9 @@ export function sanitizeJsonLd<T>(value: T): T {
 // duplicated across pages (one entity = one rating node, on home only).
 const businessNapStub: JsonLdNode = {
   "@type": ["Dentist", "LocalBusiness", "MedicalBusiness"],
-  "@id": "https://www.livingdentalhealth.com/#business",
+  "@id": "https://livingdentalhealth.com/#business",
   "name": "Living Dental Health",
-  "url": "https://www.livingdentalhealth.com",
+  "url": "https://livingdentalhealth.com/",
   "telephone": "+1-541-550-5311",
   "address": {
     "@type": "PostalAddress",
@@ -108,11 +108,11 @@ const businessEnrichment: Record<string, unknown> = {
   "email": "info@livingdentalhealth.com",
   "slogan": "Focused on customized care with a gentle touch",
   "image":
-    "https://www.livingdentalhealth.com/images/living-dental-health-office.jpg",
+    "https://livingdentalhealth.com/images/living-dental-health-office.jpg",
   "logo": {
     "@type": "ImageObject",
-    "@id": "https://www.livingdentalhealth.com/#logo",
-    "url": "https://www.livingdentalhealth.com/images/living-dental-health-logo.png",
+    "@id": "https://livingdentalhealth.com/#logo",
+    "url": "https://livingdentalhealth.com/images/living-dental-health-logo.png",
   },
   "openingHoursSpecification": [
     {
@@ -144,10 +144,10 @@ const businessEnrichment: Record<string, unknown> = {
     "worstRating": "1",
   },
   "founder": {
-    "@id": "https://www.livingdentalhealth.com/#doctor",
+    "@id": "https://livingdentalhealth.com/#doctor",
   },
   "employee": {
-    "@id": "https://www.livingdentalhealth.com/#doctor",
+    "@id": "https://livingdentalhealth.com/#doctor",
   },
   "medicalSpecialty": [
     "Dentistry",
@@ -195,17 +195,17 @@ const businessFull: JsonLdNode = {
 
 const doctorEntity: JsonLdNode = {
   "@type": "Dentist",
-  "@id": "https://www.livingdentalhealth.com/#doctor",
+  "@id": "https://livingdentalhealth.com/#doctor",
   "name": "Andrew W. Engel DMD",
   "alternateName": ["Dr. Andy Engel", "Dr. Andrew Engel"],
   "jobTitle": "Dentist",
   "medicalSpecialty": ["Oral Surgery", "Dental Implants"],
   "description":
     "Dr. Andrew W. Engel is the founder of Living Dental Health in Bend, Oregon, and has cared for Bend families since 1998. A graduate of Oregon Health Sciences University School of Dentistry, he completed advanced training in full mouth reconstruction, oral surgery, dental implants, ClearCorrect, and tissue and bone grafting, offering comprehensive care under one roof. During his training he worked directly alongside a prosthodontist, learning occlusion and bite architecture at the chair — the discipline that determines whether a full mouth reconstruction lasts for decades. In 28 years of practice he has become one of Central Oregon's most trusted dentists for complex cases.",
-  "url": "https://www.livingdentalhealth.com/about",
-  "image": "https://www.livingdentalhealth.com/images/dr-andy-engel.jpg",
+  "url": "https://livingdentalhealth.com/about",
+  "image": "https://livingdentalhealth.com/images/dr-andy-engel.jpg",
   "worksFor": {
-    "@id": "https://www.livingdentalhealth.com/#business",
+    "@id": "https://livingdentalhealth.com/#business",
   },
   "alumniOf": [
     {
@@ -269,13 +269,13 @@ const doctorEntity: JsonLdNode = {
 
 const websiteEntity: JsonLdNode = {
   "@type": "WebSite",
-  "@id": "https://www.livingdentalhealth.com/#website",
+  "@id": "https://livingdentalhealth.com/#website",
   "name": "Living Dental Health",
-  "url": "https://www.livingdentalhealth.com",
+  "url": "https://livingdentalhealth.com/",
   "description":
     "Bend, Oregon dental practice providing general dentistry, cosmetic dentistry, dental implants, oral surgery, ClearCorrect, and preventive dental care.",
   "publisher": {
-    "@id": "https://www.livingdentalhealth.com/#business",
+    "@id": "https://livingdentalhealth.com/#business",
   },
 };
 
@@ -298,19 +298,19 @@ export const contactPageSchema: JsonLdGraph = {
   "@graph": [
     {
       "@type": "ContactPage",
-      "@id": "https://www.livingdentalhealth.com/contact#contactpage",
-      "url": "https://www.livingdentalhealth.com/contact",
+      "@id": "https://livingdentalhealth.com/contact#contactpage",
+      "url": "https://livingdentalhealth.com/contact",
       "name": "Contact Living Dental Health",
       "description":
         "Phone, email, address, and hours for Living Dental Health, a dental practice in Bend, Oregon led by Dr. Andrew W. Engel, DMD.",
       "isPartOf": {
-        "@id": "https://www.livingdentalhealth.com/#website",
+        "@id": "https://livingdentalhealth.com/#website",
       },
       "about": {
-        "@id": "https://www.livingdentalhealth.com/#business",
+        "@id": "https://livingdentalhealth.com/#business",
       },
       "mainEntity": {
-        "@id": "https://www.livingdentalhealth.com/#business",
+        "@id": "https://livingdentalhealth.com/#business",
       },
     },
   ],
@@ -322,96 +322,96 @@ export const generalDentistryPageSchema: JsonLdGraph = {
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.livingdentalhealth.com/general-dentistry#breadcrumbs",
+        "https://livingdentalhealth.com/general-dentistry#breadcrumbs",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.livingdentalhealth.com/",
+          "item": "https://livingdentalhealth.com/",
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "General Dentistry",
-          "item": "https://www.livingdentalhealth.com/general-dentistry",
+          "item": "https://livingdentalhealth.com/general-dentistry",
         },
       ],
     },
     {
       "@type": "MedicalProcedure",
       "@id":
-        "https://www.livingdentalhealth.com/general-dentistry#cleanings",
+        "https://livingdentalhealth.com/general-dentistry#cleanings",
       "name": "Dental Cleanings & Exams",
       "description":
         "Professional dental cleaning that removes built-up tartar, checks for early signs of decay, and gives Dr. Engel a chance to catch small problems before they become expensive ones. Recommended every six months; most appointments run about 60 minutes.",
       "url":
-        "https://www.livingdentalhealth.com/general-dentistry#cleanings",
+        "https://livingdentalhealth.com/general-dentistry#cleanings",
       "procedureType": "https://schema.org/TherapeuticProcedure",
       "provider": {
-        "@id": "https://www.livingdentalhealth.com/#business",
+        "@id": "https://livingdentalhealth.com/#business",
       },
     },
     {
       "@type": "MedicalProcedure",
       "@id":
-        "https://www.livingdentalhealth.com/general-dentistry#fillings",
+        "https://livingdentalhealth.com/general-dentistry#fillings",
       "name": "Dental Fillings",
       "description":
         "Tooth-colored composite fillings restore a decayed tooth to full function without metal. They bond directly to the tooth structure, look natural, and are completed in a single visit.",
       "url":
-        "https://www.livingdentalhealth.com/general-dentistry#fillings",
+        "https://livingdentalhealth.com/general-dentistry#fillings",
       "procedureType": "https://schema.org/TherapeuticProcedure",
       "provider": {
-        "@id": "https://www.livingdentalhealth.com/#business",
+        "@id": "https://livingdentalhealth.com/#business",
       },
     },
     {
       "@type": "MedicalProcedure",
       "@id":
-        "https://www.livingdentalhealth.com/general-dentistry#crowns",
+        "https://livingdentalhealth.com/general-dentistry#crowns",
       "name": "Dental Crowns",
       "description":
         "A custom-fitted porcelain or ceramic crown that fully covers a damaged or weakened tooth, restoring its shape, strength, and appearance. Used to protect teeth after root canals, repair cracked teeth, or anchor a dental bridge.",
       "url":
-        "https://www.livingdentalhealth.com/general-dentistry#crowns",
+        "https://livingdentalhealth.com/general-dentistry#crowns",
       "procedureType": "https://schema.org/TherapeuticProcedure",
       "provider": {
-        "@id": "https://www.livingdentalhealth.com/#business",
+        "@id": "https://livingdentalhealth.com/#business",
       },
     },
     {
       "@type": "MedicalProcedure",
       "@id":
-        "https://www.livingdentalhealth.com/general-dentistry#bridges",
+        "https://livingdentalhealth.com/general-dentistry#bridges",
       "name": "Dental Bridges",
       "description":
         "A fixed bridge fills the gap left by a missing tooth using the surrounding teeth as anchors. It restores the bite, prevents neighboring teeth from shifting, and looks natural — a reliable non-surgical option for tooth replacement.",
       "url":
-        "https://www.livingdentalhealth.com/general-dentistry#bridges",
+        "https://livingdentalhealth.com/general-dentistry#bridges",
       "procedureType": "https://schema.org/TherapeuticProcedure",
       "provider": {
-        "@id": "https://www.livingdentalhealth.com/#business",
+        "@id": "https://livingdentalhealth.com/#business",
       },
     },
     {
       "@type": "MedicalProcedure",
       "@id":
-        "https://www.livingdentalhealth.com/general-dentistry#dentures",
+        "https://livingdentalhealth.com/general-dentistry#dentures",
       "name": "Dentures",
       "description":
         "Custom-fitted full and partial dentures designed for comfort and function. Implant-supported dentures are available for patients who want a more permanent solution.",
       "url":
-        "https://www.livingdentalhealth.com/general-dentistry#dentures",
+        "https://livingdentalhealth.com/general-dentistry#dentures",
       "procedureType": "https://schema.org/TherapeuticProcedure",
       "provider": {
-        "@id": "https://www.livingdentalhealth.com/#business",
+        "@id": "https://livingdentalhealth.com/#business",
       },
     },
     {
       "@type": "FAQPage",
       "@id":
-        "https://www.livingdentalhealth.com/general-dentistry#faq",
+        "https://livingdentalhealth.com/general-dentistry#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -469,85 +469,85 @@ export const implantsSurgeryPageSchema: JsonLdGraph = {
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.livingdentalhealth.com/implants-surgery#breadcrumbs",
+        "https://livingdentalhealth.com/implants-surgery#breadcrumbs",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.livingdentalhealth.com/",
+          "item": "https://livingdentalhealth.com/",
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Implants & Surgery",
-          "item": "https://www.livingdentalhealth.com/implants-surgery",
+          "item": "https://livingdentalhealth.com/implants-surgery",
         },
       ],
     },
     {
       "@type": "MedicalProcedure",
       "@id":
-        "https://www.livingdentalhealth.com/implants-surgery#implants",
+        "https://livingdentalhealth.com/implants-surgery#implants",
       "name": "Dental Implants",
       "description":
         "A titanium post placed directly into the jawbone that fuses with the bone over time and supports a custom crown. Dr. Engel places and restores implants entirely in-house, from initial consultation through the final crown — single tooth or full arch.",
       "url":
-        "https://www.livingdentalhealth.com/implants-surgery#implants",
+        "https://livingdentalhealth.com/implants-surgery#implants",
       "procedureType": "https://schema.org/SurgicalProcedure",
       "howPerformed":
         "Placed and restored in-house by Dr. Engel under local anesthesia.",
       "provider": {
-        "@id": "https://www.livingdentalhealth.com/#doctor",
+        "@id": "https://livingdentalhealth.com/#doctor",
       },
     },
     {
       "@type": "MedicalProcedure",
       "@id":
-        "https://www.livingdentalhealth.com/implants-surgery#bone-grafting",
+        "https://livingdentalhealth.com/implants-surgery#bone-grafting",
       "name": "Bone & Tissue Grafting",
       "description":
         "Grafting rebuilds bone density lost through tooth loss, gum disease, or time so the jaw can support a dental implant. Dr. Engel performs bone and tissue grafting himself, with no separate specialist or additional referral.",
       "url":
-        "https://www.livingdentalhealth.com/implants-surgery#bone-grafting",
+        "https://livingdentalhealth.com/implants-surgery#bone-grafting",
       "procedureType": "https://schema.org/SurgicalProcedure",
       "provider": {
-        "@id": "https://www.livingdentalhealth.com/#doctor",
+        "@id": "https://livingdentalhealth.com/#doctor",
       },
     },
     {
       "@type": "MedicalProcedure",
       "@id":
-        "https://www.livingdentalhealth.com/implants-surgery#wisdom-teeth",
+        "https://livingdentalhealth.com/implants-surgery#wisdom-teeth",
       "name": "Wisdom Teeth Removal",
       "description":
         "Removal of one or all four wisdom teeth, impacted or straightforward, handled in-office under local anesthesia. Patients are seen promptly and given clear post-op instructions for a smooth recovery.",
       "url":
-        "https://www.livingdentalhealth.com/implants-surgery#wisdom-teeth",
+        "https://livingdentalhealth.com/implants-surgery#wisdom-teeth",
       "procedureType": "https://schema.org/SurgicalProcedure",
       "howPerformed": "Performed in-office under local anesthesia.",
       "provider": {
-        "@id": "https://www.livingdentalhealth.com/#doctor",
+        "@id": "https://livingdentalhealth.com/#doctor",
       },
     },
     {
       "@type": "MedicalProcedure",
       "@id":
-        "https://www.livingdentalhealth.com/implants-surgery#extractions",
+        "https://livingdentalhealth.com/implants-surgery#extractions",
       "name": "Dental Extractions",
       "description":
         "Removal of a tooth that cannot be saved, performed with gentle technique under local anesthesia. Dr. Engel discusses replacement options, including implants, at the time of extraction so patients leave with a clear plan.",
       "url":
-        "https://www.livingdentalhealth.com/implants-surgery#extractions",
+        "https://livingdentalhealth.com/implants-surgery#extractions",
       "procedureType": "https://schema.org/SurgicalProcedure",
       "provider": {
-        "@id": "https://www.livingdentalhealth.com/#doctor",
+        "@id": "https://livingdentalhealth.com/#doctor",
       },
     },
     {
       "@type": "MedicalProcedure",
       "@id":
-        "https://www.livingdentalhealth.com/implants-surgery#cbct-imaging",
+        "https://livingdentalhealth.com/implants-surgery#cbct-imaging",
       "name": "CBCT 3D Dental Imaging",
       "alternateName": [
         "Cone Beam Computed Tomography",
@@ -556,17 +556,17 @@ export const implantsSurgeryPageSchema: JsonLdGraph = {
       "description":
         "In-house cone-beam CT (CBCT) provides a true three-dimensional image of the teeth, jaw, sinuses, and surrounding structures. Used to plan dental implants with precision, evaluate bone density before grafting, locate impacted wisdom teeth, and catch problems that two-dimensional panoramic X-rays cannot show. Most general dentists refer patients out for CBCT — Dr. Engel performs it here.",
       "url":
-        "https://www.livingdentalhealth.com/implants-surgery#cbct-imaging",
+        "https://livingdentalhealth.com/implants-surgery#cbct-imaging",
       "procedureType": "https://schema.org/DiagnosticProcedure",
       "bodyLocation": ["Jaw", "Teeth", "Sinuses"],
       "provider": {
-        "@id": "https://www.livingdentalhealth.com/#doctor",
+        "@id": "https://livingdentalhealth.com/#doctor",
       },
     },
     {
       "@type": "FAQPage",
       "@id":
-        "https://www.livingdentalhealth.com/implants-surgery#faq",
+        "https://livingdentalhealth.com/implants-surgery#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -624,109 +624,109 @@ export const cosmeticDentistryPageSchema: JsonLdGraph = {
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.livingdentalhealth.com/cosmetic-dentistry#breadcrumbs",
+        "https://livingdentalhealth.com/cosmetic-dentistry#breadcrumbs",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.livingdentalhealth.com/",
+          "item": "https://livingdentalhealth.com/",
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Cosmetic Dentistry",
-          "item": "https://www.livingdentalhealth.com/cosmetic-dentistry",
+          "item": "https://livingdentalhealth.com/cosmetic-dentistry",
         },
       ],
     },
     {
       "@type": "MedicalProcedure",
       "@id":
-        "https://www.livingdentalhealth.com/cosmetic-dentistry#whitening",
+        "https://livingdentalhealth.com/cosmetic-dentistry#whitening",
       "name": "Teeth Whitening",
       "description":
         "Professional in-office whitening that brightens the smile several shades in a single visit using a controlled, safe process — results over-the-counter products can’t match.",
       "url":
-        "https://www.livingdentalhealth.com/cosmetic-dentistry#whitening",
+        "https://livingdentalhealth.com/cosmetic-dentistry#whitening",
       "procedureType": "https://schema.org/TherapeuticProcedure",
       "provider": {
-        "@id": "https://www.livingdentalhealth.com/#doctor",
+        "@id": "https://livingdentalhealth.com/#doctor",
       },
     },
     {
       "@type": "MedicalProcedure",
       "@id":
-        "https://www.livingdentalhealth.com/cosmetic-dentistry#veneers",
+        "https://livingdentalhealth.com/cosmetic-dentistry#veneers",
       "name": "Porcelain Veneers",
       "description":
         "Ultra-thin custom-crafted porcelain shells bonded to the front of the teeth to permanently correct chips, discoloration, gaps, and uneven shapes. Each veneer is designed to complement the patient’s facial features and natural tooth color.",
       "url":
-        "https://www.livingdentalhealth.com/cosmetic-dentistry#veneers",
+        "https://livingdentalhealth.com/cosmetic-dentistry#veneers",
       "procedureType": "https://schema.org/TherapeuticProcedure",
       "provider": {
-        "@id": "https://www.livingdentalhealth.com/#doctor",
+        "@id": "https://livingdentalhealth.com/#doctor",
       },
     },
     {
       "@type": "MedicalProcedure",
       "@id":
-        "https://www.livingdentalhealth.com/cosmetic-dentistry#bonding",
+        "https://livingdentalhealth.com/cosmetic-dentistry#bonding",
       "name": "Dental Bonding",
       "description":
         "Tooth-colored resin applied and sculpted directly onto a chipped, cracked, discolored, or misaligned tooth, then polished to a natural finish — often in a single visit. Mercury-free and conservative.",
       "url":
-        "https://www.livingdentalhealth.com/cosmetic-dentistry#bonding",
+        "https://livingdentalhealth.com/cosmetic-dentistry#bonding",
       "procedureType": "https://schema.org/TherapeuticProcedure",
       "provider": {
-        "@id": "https://www.livingdentalhealth.com/#doctor",
+        "@id": "https://livingdentalhealth.com/#doctor",
       },
     },
     {
       "@type": "MedicalProcedure",
       "@id":
-        "https://www.livingdentalhealth.com/cosmetic-dentistry#clearcorrect",
+        "https://livingdentalhealth.com/cosmetic-dentistry#clearcorrect",
       "name": "ClearCorrect Clear Aligners",
       "description":
         "Custom-fitted removable clear aligners that gradually shift the teeth with no metal or wires. Dr. Engel is a certified ClearCorrect provider and manages the entire process in-house, typically over 12–18 months.",
       "url":
-        "https://www.livingdentalhealth.com/cosmetic-dentistry#clearcorrect",
+        "https://livingdentalhealth.com/cosmetic-dentistry#clearcorrect",
       "procedureType": "https://schema.org/TherapeuticProcedure",
       "provider": {
-        "@id": "https://www.livingdentalhealth.com/#doctor",
+        "@id": "https://livingdentalhealth.com/#doctor",
       },
     },
     {
       "@type": "MedicalProcedure",
       "@id":
-        "https://www.livingdentalhealth.com/cosmetic-dentistry#smile-design",
+        "https://livingdentalhealth.com/cosmetic-dentistry#smile-design",
       "name": "Smile Design",
       "description":
         "The planning process behind a complete cosmetic transformation. Dr. Engel evaluates the teeth, gums, bite, and facial proportions and coordinates whitening, veneers, bonding, crowns, or ClearCorrect into a single harmonious plan.",
       "url":
-        "https://www.livingdentalhealth.com/cosmetic-dentistry#smile-design",
+        "https://livingdentalhealth.com/cosmetic-dentistry#smile-design",
       "procedureType": "https://schema.org/TherapeuticProcedure",
       "provider": {
-        "@id": "https://www.livingdentalhealth.com/#doctor",
+        "@id": "https://livingdentalhealth.com/#doctor",
       },
     },
     {
       "@type": "MedicalProcedure",
       "@id":
-        "https://www.livingdentalhealth.com/cosmetic-dentistry#reconstruction",
+        "https://livingdentalhealth.com/cosmetic-dentistry#reconstruction",
       "name": "Full Mouth Reconstruction",
       "description":
         "A coordinated rebuild of the entire mouth for patients with significant damage, bone loss, missing teeth, or severe bite issues. Drawing on advanced OHSU training, Dr. Engel combines implants, bone grafting, crowns, veneers, and orthodontia in-house — the complex case most dentists refer out.",
       "url":
-        "https://www.livingdentalhealth.com/cosmetic-dentistry#reconstruction",
+        "https://livingdentalhealth.com/cosmetic-dentistry#reconstruction",
       "procedureType": "https://schema.org/SurgicalProcedure",
       "provider": {
-        "@id": "https://www.livingdentalhealth.com/#doctor",
+        "@id": "https://livingdentalhealth.com/#doctor",
       },
     },
     {
       "@type": "FAQPage",
-      "@id": "https://www.livingdentalhealth.com/cosmetic-dentistry#faq",
+      "@id": "https://livingdentalhealth.com/cosmetic-dentistry#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -767,25 +767,25 @@ export const patientInfoPageSchema: JsonLdGraph = {
   "@graph": [
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.livingdentalhealth.com/patient-info#breadcrumbs",
+      "@id": "https://livingdentalhealth.com/patient-info#breadcrumbs",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.livingdentalhealth.com/",
+          "item": "https://livingdentalhealth.com/",
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "New Patients",
-          "item": "https://www.livingdentalhealth.com/patient-info",
+          "item": "https://livingdentalhealth.com/patient-info",
         },
       ],
     },
     {
       "@type": "FAQPage",
-      "@id": "https://www.livingdentalhealth.com/patient-info#faq",
+      "@id": "https://livingdentalhealth.com/patient-info#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -843,31 +843,31 @@ export const articlesPageSchema: JsonLdGraph = {
   "@graph": [
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.livingdentalhealth.com/articles#breadcrumbs",
+      "@id": "https://livingdentalhealth.com/articles#breadcrumbs",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.livingdentalhealth.com/",
+          "item": "https://livingdentalhealth.com/",
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Articles",
-          "item": "https://www.livingdentalhealth.com/articles",
+          "item": "https://livingdentalhealth.com/articles",
         },
       ],
     },
     {
       "@type": "Blog",
-      "@id": "https://www.livingdentalhealth.com/articles#blog",
+      "@id": "https://livingdentalhealth.com/articles#blog",
       "name": "Living Dental Health Articles",
-      "url": "https://www.livingdentalhealth.com/articles",
+      "url": "https://livingdentalhealth.com/articles",
       "description":
         "Practical dental health information from Dr. Andy Engel and the Living Dental Health team in Bend, Oregon.",
       "publisher": {
-        "@id": "https://www.livingdentalhealth.com/#business",
+        "@id": "https://livingdentalhealth.com/#business",
       },
     },
   ],
@@ -881,7 +881,7 @@ export function articlePostSchema(input: {
   dateModified: string;
   featuredImage: string;
 }): JsonLdGraph {
-  const url = `https://www.livingdentalhealth.com/articles/${input.slug}`;
+  const url = `https://livingdentalhealth.com/articles/${input.slug}`;
   return {
     "@context": "https://schema.org",
     "@graph": [
@@ -893,13 +893,13 @@ export function articlePostSchema(input: {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://www.livingdentalhealth.com/",
+            "item": "https://livingdentalhealth.com/",
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Articles",
-            "item": "https://www.livingdentalhealth.com/articles",
+            "item": "https://livingdentalhealth.com/articles",
           },
           {
             "@type": "ListItem",
@@ -919,9 +919,9 @@ export function articlePostSchema(input: {
         "url": url,
         "image": input.featuredImage,
         "mainEntityOfPage": { "@id": url },
-        "isPartOf": { "@id": "https://www.livingdentalhealth.com/articles#blog" },
-        "author": { "@id": "https://www.livingdentalhealth.com/#doctor" },
-        "publisher": { "@id": "https://www.livingdentalhealth.com/#business" },
+        "isPartOf": { "@id": "https://livingdentalhealth.com/articles#blog" },
+        "author": { "@id": "https://livingdentalhealth.com/#doctor" },
+        "publisher": { "@id": "https://livingdentalhealth.com/#business" },
       },
     ],
   };
@@ -933,41 +933,41 @@ export const fullMouthReconstructionPageSchema: JsonLdGraph = {
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.livingdentalhealth.com/full-mouth-reconstruction#breadcrumbs",
+        "https://livingdentalhealth.com/full-mouth-reconstruction#breadcrumbs",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.livingdentalhealth.com/",
+          "item": "https://livingdentalhealth.com/",
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Full Mouth Reconstruction",
           "item":
-            "https://www.livingdentalhealth.com/full-mouth-reconstruction",
+            "https://livingdentalhealth.com/full-mouth-reconstruction",
         },
       ],
     },
     {
       "@type": "MedicalProcedure",
       "@id":
-        "https://www.livingdentalhealth.com/full-mouth-reconstruction#procedure",
+        "https://livingdentalhealth.com/full-mouth-reconstruction#procedure",
       "name": "Full Mouth Reconstruction",
       "description":
         "Comprehensive rebuild of teeth, bite, and oral function for patients with severe wear, multiple missing teeth, or failed past dental work. Performed in-house by Dr. Andy Engel, who trained directly alongside a prosthodontist in occlusion and bite architecture — the discipline that determines whether a reconstruction lasts for decades — and has completed over 4,000 hours of continuing education focused on smile design, cosmetic dentistry, and full mouth reconstruction. Diagnostic planning uses in-house CBCT 3D imaging for precise mapping of teeth, bite, and bone, and implant placement uses custom surgical guides designed and 3D-printed in-house for accurate positioning. Crown and veneer fabrication includes custom shade matching with the dental laboratory when needed.",
       "url":
-        "https://www.livingdentalhealth.com/full-mouth-reconstruction",
+        "https://livingdentalhealth.com/full-mouth-reconstruction",
       "procedureType": "https://schema.org/TherapeuticProcedure",
       "bodyLocation": "Mouth",
-      "provider": { "@id": "https://www.livingdentalhealth.com/#business" },
-      "performer": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+      "provider": { "@id": "https://livingdentalhealth.com/#business" },
+      "performer": { "@id": "https://livingdentalhealth.com/#doctor" },
     },
     {
       "@type": "FAQPage",
       "@id":
-        "https://www.livingdentalhealth.com/full-mouth-reconstruction#faq",
+        "https://livingdentalhealth.com/full-mouth-reconstruction#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -1007,46 +1007,46 @@ export const sedationDentistryPageSchema: JsonLdGraph = {
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.livingdentalhealth.com/sedation-dentistry#breadcrumbs",
+        "https://livingdentalhealth.com/sedation-dentistry#breadcrumbs",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.livingdentalhealth.com/",
+          "item": "https://livingdentalhealth.com/",
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Sedation Dentistry",
           "item":
-            "https://www.livingdentalhealth.com/sedation-dentistry",
+            "https://livingdentalhealth.com/sedation-dentistry",
         },
       ],
     },
     {
       "@type": "MedicalProcedure",
       "@id":
-        "https://www.livingdentalhealth.com/sedation-dentistry#procedure",
+        "https://livingdentalhealth.com/sedation-dentistry#procedure",
       "name": "Sedation Dentistry",
       "alternateName": "Oral Sedation Dentistry",
       "description":
         "Mild oral sedation with Halcion (triazolam) for patients with dental anxiety, those scheduled for oral surgery, or anyone who would prefer a more relaxed visit. Used selectively at Living Dental Health alongside a calm, unhurried approach to every appointment. Halcion is fully cleared from the system within about 24 hours.",
       "url":
-        "https://www.livingdentalhealth.com/sedation-dentistry",
+        "https://livingdentalhealth.com/sedation-dentistry",
       "procedureType": "https://schema.org/TherapeuticProcedure",
       "drug": {
         "@type": "Drug",
         "name": "Halcion",
         "alternateName": "triazolam",
       },
-      "provider": { "@id": "https://www.livingdentalhealth.com/#business" },
-      "performer": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+      "provider": { "@id": "https://livingdentalhealth.com/#business" },
+      "performer": { "@id": "https://livingdentalhealth.com/#doctor" },
     },
     {
       "@type": "FAQPage",
       "@id":
-        "https://www.livingdentalhealth.com/sedation-dentistry#faq",
+        "https://livingdentalhealth.com/sedation-dentistry#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -1086,41 +1086,41 @@ export const oralCancerScreeningPageSchema: JsonLdGraph = {
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.livingdentalhealth.com/oral-cancer-screening#breadcrumbs",
+        "https://livingdentalhealth.com/oral-cancer-screening#breadcrumbs",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.livingdentalhealth.com/",
+          "item": "https://livingdentalhealth.com/",
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Oral Cancer Screening",
           "item":
-            "https://www.livingdentalhealth.com/oral-cancer-screening",
+            "https://livingdentalhealth.com/oral-cancer-screening",
         },
       ],
     },
     {
       "@type": "MedicalProcedure",
       "@id":
-        "https://www.livingdentalhealth.com/oral-cancer-screening#procedure",
+        "https://livingdentalhealth.com/oral-cancer-screening#procedure",
       "name": "Oral Cancer Screening",
       "description":
         "Routine oral cancer screening performed at every cleaning and exam at Living Dental Health in Bend, Oregon. A short, painless visual and physical examination of the lips, tongue, cheeks, palate, throat, and neck to identify early signs of oral or oropharyngeal cancer when it is most treatable.",
       "url":
-        "https://www.livingdentalhealth.com/oral-cancer-screening",
+        "https://livingdentalhealth.com/oral-cancer-screening",
       "procedureType": "https://schema.org/DiagnosticProcedure",
       "bodyLocation": ["Mouth", "Throat", "Neck"],
-      "provider": { "@id": "https://www.livingdentalhealth.com/#business" },
-      "performer": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+      "provider": { "@id": "https://livingdentalhealth.com/#business" },
+      "performer": { "@id": "https://livingdentalhealth.com/#doctor" },
     },
     {
       "@type": "FAQPage",
       "@id":
-        "https://www.livingdentalhealth.com/oral-cancer-screening#faq",
+        "https://livingdentalhealth.com/oral-cancer-screening#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -1168,40 +1168,40 @@ export const aboutPageSchema: JsonLdGraph = {
   "@graph": [
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.livingdentalhealth.com/about#breadcrumbs",
+      "@id": "https://livingdentalhealth.com/about#breadcrumbs",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.livingdentalhealth.com/",
+          "item": "https://livingdentalhealth.com/",
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Meet Dr. Engel",
-          "item": "https://www.livingdentalhealth.com/about",
+          "item": "https://livingdentalhealth.com/about",
         },
       ],
     },
     {
       "@type": "AboutPage",
-      "@id": "https://www.livingdentalhealth.com/about#aboutpage",
-      "url": "https://www.livingdentalhealth.com/about",
+      "@id": "https://livingdentalhealth.com/about#aboutpage",
+      "url": "https://livingdentalhealth.com/about",
       "name": "Meet Dr. Andy Engel — Living Dental Health",
       "description":
         "Dr. Andrew W. Engel DMD is the founder of Living Dental Health in Bend, Oregon. OHSU graduate with a chemistry minor from the University of Oregon and over 4,000 hours of continuing education in smile design, cosmetic dentistry, and full mouth reconstruction.",
       "isPartOf": {
-        "@id": "https://www.livingdentalhealth.com/#website",
+        "@id": "https://livingdentalhealth.com/#website",
       },
       "about": {
-        "@id": "https://www.livingdentalhealth.com/#doctor",
+        "@id": "https://livingdentalhealth.com/#doctor",
       },
       "mainEntity": {
-        "@id": "https://www.livingdentalhealth.com/#doctor",
+        "@id": "https://livingdentalhealth.com/#doctor",
       },
       "publisher": {
-        "@id": "https://www.livingdentalhealth.com/#business",
+        "@id": "https://livingdentalhealth.com/#business",
       },
     },
   ],
@@ -1214,73 +1214,73 @@ export const teamPageSchema: JsonLdGraph = {
   "@graph": [
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.livingdentalhealth.com/team#breadcrumbs",
+      "@id": "https://livingdentalhealth.com/team#breadcrumbs",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.livingdentalhealth.com/",
+          "item": "https://livingdentalhealth.com/",
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "The Team",
-          "item": "https://www.livingdentalhealth.com/team",
+          "item": "https://livingdentalhealth.com/team",
         },
       ],
     },
     {
       "@type": "AboutPage",
-      "@id": "https://www.livingdentalhealth.com/team#aboutpage",
-      "url": "https://www.livingdentalhealth.com/team",
+      "@id": "https://livingdentalhealth.com/team#aboutpage",
+      "url": "https://livingdentalhealth.com/team",
       "name": "Meet the Team — Living Dental Health",
       "description":
         "Meet Dr. Andy Engel and the Living Dental Health team in Bend, Oregon — hygienists, dental assistant, office manager, and operations.",
-      "isPartOf": { "@id": "https://www.livingdentalhealth.com/#website" },
-      "about": { "@id": "https://www.livingdentalhealth.com/#business" },
+      "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
+      "about": { "@id": "https://livingdentalhealth.com/#business" },
       "publisher": {
-        "@id": "https://www.livingdentalhealth.com/#business",
+        "@id": "https://livingdentalhealth.com/#business",
       },
     },
     {
       "@type": "Person",
-      "@id": "https://www.livingdentalhealth.com/team#samantha-gassman",
+      "@id": "https://livingdentalhealth.com/team#samantha-gassman",
       "name": "Samantha Gassman",
       "jobTitle": "Office Manager",
-      "worksFor": { "@id": "https://www.livingdentalhealth.com/#business" },
+      "worksFor": { "@id": "https://livingdentalhealth.com/#business" },
     },
     {
       "@type": "Person",
-      "@id": "https://www.livingdentalhealth.com/team#francie-engel",
+      "@id": "https://livingdentalhealth.com/team#francie-engel",
       "name": "Francie Engel",
       "jobTitle": "Operations Administrator",
-      "worksFor": { "@id": "https://www.livingdentalhealth.com/#business" },
+      "worksFor": { "@id": "https://livingdentalhealth.com/#business" },
     },
     {
       "@type": "Person",
-      "@id": "https://www.livingdentalhealth.com/team#nicole-tarpey",
+      "@id": "https://livingdentalhealth.com/team#nicole-tarpey",
       "name": "Nicole Tarpey",
       "jobTitle": "Dental Hygienist",
-      "worksFor": { "@id": "https://www.livingdentalhealth.com/#business" },
+      "worksFor": { "@id": "https://livingdentalhealth.com/#business" },
     },
     {
       "@type": "Person",
-      "@id": "https://www.livingdentalhealth.com/team#sacha-lodge",
+      "@id": "https://livingdentalhealth.com/team#sacha-lodge",
       "name": "Sacha Lodge",
       "jobTitle": "Dental Hygienist",
-      "worksFor": { "@id": "https://www.livingdentalhealth.com/#business" },
+      "worksFor": { "@id": "https://livingdentalhealth.com/#business" },
     },
     {
       "@type": "Person",
-      "@id": "https://www.livingdentalhealth.com/team#christy-spencer",
+      "@id": "https://livingdentalhealth.com/team#christy-spencer",
       "name": "Christy Spencer",
       "jobTitle": "Dental Assistant",
-      "worksFor": { "@id": "https://www.livingdentalhealth.com/#business" },
+      "worksFor": { "@id": "https://livingdentalhealth.com/#business" },
     },
     {
       "@type": "Review",
-      "@id": "https://www.livingdentalhealth.com/team#review-mcnall",
+      "@id": "https://livingdentalhealth.com/team#review-mcnall",
       "reviewBody":
         "Great service and treatment, very helpful and kind employees!",
       "reviewRating": {
@@ -1295,12 +1295,12 @@ export const teamPageSchema: JsonLdGraph = {
       },
       "publisher": { "@type": "Organization", "name": "Google" },
       "itemReviewed": {
-        "@id": "https://www.livingdentalhealth.com/#business",
+        "@id": "https://livingdentalhealth.com/#business",
       },
     },
     {
       "@type": "Review",
-      "@id": "https://www.livingdentalhealth.com/team#review-bollinger",
+      "@id": "https://livingdentalhealth.com/team#review-bollinger",
       "reviewBody":
         "Excellent care and personable, caring staff and dentist!",
       "reviewRating": {
@@ -1315,12 +1315,12 @@ export const teamPageSchema: JsonLdGraph = {
       },
       "publisher": { "@type": "Organization", "name": "Google" },
       "itemReviewed": {
-        "@id": "https://www.livingdentalhealth.com/#business",
+        "@id": "https://livingdentalhealth.com/#business",
       },
     },
     {
       "@type": "Review",
-      "@id": "https://www.livingdentalhealth.com/team#review-cardenas",
+      "@id": "https://livingdentalhealth.com/team#review-cardenas",
       "reviewBody":
         "It is never a rushed experience, and I appreciate the quality care.",
       "reviewRating": {
@@ -1335,7 +1335,7 @@ export const teamPageSchema: JsonLdGraph = {
       },
       "publisher": { "@type": "Organization", "name": "Google" },
       "itemReviewed": {
-        "@id": "https://www.livingdentalhealth.com/#business",
+        "@id": "https://livingdentalhealth.com/#business",
       },
     },
   ],
@@ -1347,42 +1347,42 @@ export const postOpPageSchema: JsonLdGraph = {
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.livingdentalhealth.com/patient-info/post-op#breadcrumbs",
+        "https://livingdentalhealth.com/patient-info/post-op#breadcrumbs",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.livingdentalhealth.com/",
+          "item": "https://livingdentalhealth.com/",
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Patient Info",
-          "item": "https://www.livingdentalhealth.com/patient-info",
+          "item": "https://livingdentalhealth.com/patient-info",
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Post-Op Instructions",
           "item":
-            "https://www.livingdentalhealth.com/patient-info/post-op",
+            "https://livingdentalhealth.com/patient-info/post-op",
         },
       ],
     },
     {
       "@type": "WebPage",
       "@id":
-        "https://www.livingdentalhealth.com/patient-info/post-op#webpage",
-      "url": "https://www.livingdentalhealth.com/patient-info/post-op",
+        "https://livingdentalhealth.com/patient-info/post-op#webpage",
+      "url": "https://livingdentalhealth.com/patient-info/post-op",
       "name": "Post-Op Instructions — Living Dental Health",
       "description":
         "After-care instructions following dental procedures at Living Dental Health in Bend, Oregon — covering extractions, dental implants, bone and tissue grafting, and routine care.",
       "isPartOf": {
-        "@id": "https://www.livingdentalhealth.com/#website",
+        "@id": "https://livingdentalhealth.com/#website",
       },
       "publisher": {
-        "@id": "https://www.livingdentalhealth.com/#business",
+        "@id": "https://livingdentalhealth.com/#business",
       },
     },
   ],
@@ -1394,127 +1394,127 @@ export const beforeAndAfterPageSchema: JsonLdGraph = {
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.livingdentalhealth.com/before-and-after#breadcrumbs",
+        "https://livingdentalhealth.com/before-and-after#breadcrumbs",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.livingdentalhealth.com/",
+          "item": "https://livingdentalhealth.com/",
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "The Work",
-          "item": "https://www.livingdentalhealth.com/before-and-after",
+          "item": "https://livingdentalhealth.com/before-and-after",
         },
       ],
     },
     {
       "@type": "CollectionPage",
       "@id":
-        "https://www.livingdentalhealth.com/before-and-after#collectionpage",
-      "url": "https://www.livingdentalhealth.com/before-and-after",
+        "https://livingdentalhealth.com/before-and-after#collectionpage",
+      "url": "https://livingdentalhealth.com/before-and-after",
       "name": "The Work — Before & After Cases",
       "description":
         "Real before-and-after dental cases from Dr. Andy Engel at Living Dental Health in Bend, Oregon — porcelain veneers, crowns, and full mouth reconstruction, planned and finished in-house.",
-      "isPartOf": { "@id": "https://www.livingdentalhealth.com/#website" },
-      "about": { "@id": "https://www.livingdentalhealth.com/#business" },
-      "creator": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+      "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
+      "about": { "@id": "https://livingdentalhealth.com/#business" },
+      "creator": { "@id": "https://livingdentalhealth.com/#doctor" },
       "publisher": {
-        "@id": "https://www.livingdentalhealth.com/#business",
+        "@id": "https://livingdentalhealth.com/#business",
       },
       "hasPart": [
-        { "@id": "https://www.livingdentalhealth.com/before-and-after#case-01" },
-        { "@id": "https://www.livingdentalhealth.com/before-and-after#case-02" },
-        { "@id": "https://www.livingdentalhealth.com/before-and-after#case-03" },
-        { "@id": "https://www.livingdentalhealth.com/before-and-after#case-04" },
-        { "@id": "https://www.livingdentalhealth.com/before-and-after#case-05" },
-        { "@id": "https://www.livingdentalhealth.com/before-and-after#case-06" },
+        { "@id": "https://livingdentalhealth.com/before-and-after#case-01" },
+        { "@id": "https://livingdentalhealth.com/before-and-after#case-02" },
+        { "@id": "https://livingdentalhealth.com/before-and-after#case-03" },
+        { "@id": "https://livingdentalhealth.com/before-and-after#case-04" },
+        { "@id": "https://livingdentalhealth.com/before-and-after#case-05" },
+        { "@id": "https://livingdentalhealth.com/before-and-after#case-06" },
       ],
     },
     {
       "@type": "ImageObject",
-      "@id": "https://www.livingdentalhealth.com/before-and-after#case-01",
-      "contentUrl": "https://www.livingdentalhealth.com/case-01.webp",
+      "@id": "https://livingdentalhealth.com/before-and-after#case-01",
+      "contentUrl": "https://livingdentalhealth.com/case-01.webp",
       "name": "Case 01",
       "caption":
         "Before and after porcelain veneers by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 01",
-      "creator": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+      "creator": { "@id": "https://livingdentalhealth.com/#doctor" },
       "creditText": "Dr. Andy Engel, Living Dental Health",
       "isPartOf": {
         "@id":
-          "https://www.livingdentalhealth.com/before-and-after#collectionpage",
+          "https://livingdentalhealth.com/before-and-after#collectionpage",
       },
     },
     {
       "@type": "ImageObject",
-      "@id": "https://www.livingdentalhealth.com/before-and-after#case-02",
-      "contentUrl": "https://www.livingdentalhealth.com/case-02.webp",
+      "@id": "https://livingdentalhealth.com/before-and-after#case-02",
+      "contentUrl": "https://livingdentalhealth.com/case-02.webp",
       "name": "Case 02",
       "caption":
         "Before and after full mouth reconstruction by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 02",
-      "creator": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+      "creator": { "@id": "https://livingdentalhealth.com/#doctor" },
       "creditText": "Dr. Andy Engel, Living Dental Health",
       "isPartOf": {
         "@id":
-          "https://www.livingdentalhealth.com/before-and-after#collectionpage",
+          "https://livingdentalhealth.com/before-and-after#collectionpage",
       },
     },
     {
       "@type": "ImageObject",
-      "@id": "https://www.livingdentalhealth.com/before-and-after#case-03",
-      "contentUrl": "https://www.livingdentalhealth.com/case-03.webp",
+      "@id": "https://livingdentalhealth.com/before-and-after#case-03",
+      "contentUrl": "https://livingdentalhealth.com/case-03.webp",
       "name": "Case 03",
       "caption":
         "Before and after porcelain crowns by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 03",
-      "creator": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+      "creator": { "@id": "https://livingdentalhealth.com/#doctor" },
       "creditText": "Dr. Andy Engel, Living Dental Health",
       "isPartOf": {
         "@id":
-          "https://www.livingdentalhealth.com/before-and-after#collectionpage",
+          "https://livingdentalhealth.com/before-and-after#collectionpage",
       },
     },
     {
       "@type": "ImageObject",
-      "@id": "https://www.livingdentalhealth.com/before-and-after#case-04",
-      "contentUrl": "https://www.livingdentalhealth.com/case-04.webp",
+      "@id": "https://livingdentalhealth.com/before-and-after#case-04",
+      "contentUrl": "https://livingdentalhealth.com/case-04.webp",
       "name": "Case 04",
       "caption":
         "Before and after porcelain crowns by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 04",
-      "creator": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+      "creator": { "@id": "https://livingdentalhealth.com/#doctor" },
       "creditText": "Dr. Andy Engel, Living Dental Health",
       "isPartOf": {
         "@id":
-          "https://www.livingdentalhealth.com/before-and-after#collectionpage",
+          "https://livingdentalhealth.com/before-and-after#collectionpage",
       },
     },
     {
       "@type": "ImageObject",
-      "@id": "https://www.livingdentalhealth.com/before-and-after#case-05",
-      "contentUrl": "https://www.livingdentalhealth.com/case-05.webp",
+      "@id": "https://livingdentalhealth.com/before-and-after#case-05",
+      "contentUrl": "https://livingdentalhealth.com/case-05.webp",
       "name": "Case 05",
       "caption":
         "Before and after full mouth reconstruction by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 05",
-      "creator": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+      "creator": { "@id": "https://livingdentalhealth.com/#doctor" },
       "creditText": "Dr. Andy Engel, Living Dental Health",
       "isPartOf": {
         "@id":
-          "https://www.livingdentalhealth.com/before-and-after#collectionpage",
+          "https://livingdentalhealth.com/before-and-after#collectionpage",
       },
     },
     {
       "@type": "ImageObject",
-      "@id": "https://www.livingdentalhealth.com/before-and-after#case-06",
-      "contentUrl": "https://www.livingdentalhealth.com/case-06.webp",
+      "@id": "https://livingdentalhealth.com/before-and-after#case-06",
+      "contentUrl": "https://livingdentalhealth.com/case-06.webp",
       "name": "Case 06",
       "caption":
         "Before and after crowns and veneers by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 06",
-      "creator": { "@id": "https://www.livingdentalhealth.com/#doctor" },
+      "creator": { "@id": "https://livingdentalhealth.com/#doctor" },
       "creditText": "Dr. Andy Engel, Living Dental Health",
       "isPartOf": {
         "@id":
-          "https://www.livingdentalhealth.com/before-and-after#collectionpage",
+          "https://livingdentalhealth.com/before-and-after#collectionpage",
       },
     },
   ],
