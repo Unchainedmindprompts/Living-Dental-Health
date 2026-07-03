@@ -7,11 +7,14 @@ export const metadata: Metadata = {
   title: "Privacy Policy — Living Dental Health, Bend Oregon",
   description:
     "How Living Dental Health collects, uses, and protects patient information.",
-  // STUB: keep this page out of the index until the REAL, migrated legal copy
-  // replaces the placeholder below. Remove `robots` once the actual policy is
-  // live so the page can be indexed.
-  robots: { index: false, follow: true },
 };
+
+const h2 =
+  "mt-10 font-serif text-[24px] leading-tight text-charcoal sm:text-[28px]";
+const p =
+  "mt-4 font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft sm:text-[16px]";
+const li =
+  "font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft sm:text-[16px]";
 
 export default function PrivacyPage() {
   return (
@@ -34,37 +37,90 @@ export default function PrivacyPage() {
             Privacy <span className="font-serif-italic">Policy</span>
           </h1>
 
-          {/*
-            ────────────────────────────────────────────────────────────────
-            PLACEHOLDER — DO NOT SHIP AS-IS.
+          <p className={`${p} mt-8`}>
+            We&rsquo;re committed to protecting your privacy. Our Privacy Policy
+            will walk you through any personal data we may obtain or that you
+            provide to us. Please read the following carefully to understand
+            our policies regarding your personal data and how we will treat it.
+          </p>
+          {/* TODO: when the combined "Consent for Services, Insurance Coverage,
+              Financial Policy & HIPAA" PDF is hosted, wrap the document name
+              below in <a href="PDF_URL">…</a>. */}
+          <p className={p}>
+            You can review our full Consent for Services, Insurance Coverage,
+            Financial Policy &amp; HIPAA document by request.
+          </p>
 
-            Replace the block below with Living Dental Health's REAL Privacy
-            Policy (and HIPAA Notice of Privacy Practices), migrated verbatim
-            from the existing WordPress /privacy page. Never publish
-            AI-drafted legal text as the practice's actual policy.
+          <h2 className={h2}>Information we may collect from you</h2>
+          <ol className="mt-4 list-decimal space-y-2 pl-5">
+            <li className={li}>
+              If you email us or fill out a contact form, we may keep a record
+              of that correspondence.
+            </li>
+            <li className={li}>
+              If you contact us, we may keep a record of that correspondence.
+            </li>
+            <li className={li}>
+              We may also ask you to complete surveys that we use for research
+              purposes, although you do not have to respond to them.
+            </li>
+            <li className={li}>
+              Details of transactions you initiate through our website and the
+              personal information we need to collect to fulfil your orders.
+            </li>
+            <li className={li}>
+              We may track your visits to our site through our website
+              analytics. This anonymous data is used to track general traffic
+              behaviour.
+            </li>
+          </ol>
 
-            When the real copy is in place, ALSO remove the `robots: { index:
-            false }` line in the metadata above so the page can be indexed.
-            ────────────────────────────────────────────────────────────────
-          */}
-          <div className="mt-8 space-y-5 font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft sm:text-[16px]">
-            <p>
-              Our full privacy policy for the new site is being finalized. For
-              any questions about how Living Dental Health collects, uses, and
-              protects your health information, please call{" "}
-              <a href="tel:5415505311" className="underline">
-                (541) 550&#8209;5311
-              </a>{" "}
-              or email{" "}
-              <a
-                href="mailto:info@livingdentalhealth.com"
-                className="underline"
-              >
-                info@livingdentalhealth.com
-              </a>
-              .
-            </p>
-          </div>
+          <h2 className={h2}>Cookies</h2>
+          <p className={p}>
+            This site has the capability to track cookies which if used would
+            help us to distinguish you from other users of our website. This
+            helps us to provide you with a great customer experience when you
+            browse our website and also allows us to improve our site by
+            understanding our users&rsquo; online viewing behaviour.
+          </p>
+
+          <h2 className={h2}>Where we store your personal data</h2>
+          <p className={p}>
+            Once we have received your information, we will use strict
+            procedures and security features to try to prevent unauthorised
+            access.
+          </p>
+
+          <h2 className={h2}>Uses made of the information</h2>
+          <ol className="mt-4 list-decimal space-y-2 pl-5">
+            <li className={li}>
+              To provide you with information in the instances where you have
+              consented to be contacted for such purposes.
+            </li>
+            <li className={li}>
+              To fulfil any contracts entered into between you and us.
+            </li>
+            <li className={li}>To notify you about changes to our service.</li>
+          </ol>
+
+          <h2 className={h2}>Disclosure of your information</h2>
+          <p className={p}>
+            Our privacy means a great deal to us. We do not disclose your
+            personal information to any outside source.
+          </p>
+
+          <h2 className={h2}>Changes to our Privacy Policy</h2>
+          <p className={p}>
+            This Privacy Policy may be updated from time to time. We encourage
+            you to revisit this page on your next visit.
+          </p>
+
+          <h2 className={h2}>Contact</h2>
+          <p className={p}>
+            Please feel free to contact us at the number provided on the
+            website if you have any questions, comments or requests regarding
+            this Privacy Policy.
+          </p>
         </section>
       </main>
     </>
