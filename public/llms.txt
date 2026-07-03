@@ -19,9 +19,9 @@ Source: results published at bend.communityvotes.com (2025 and 2026 healthcare c
 
 ## Core service pages
 
-- [General Dentistry](https://www.livingdentalhealth.com/general-dentistry): cleanings, exams, fillings, crowns, bridges, dentures. Digital X-rays + in-house 3D CBCT imaging.
-- [Cosmetic Dentistry](https://www.livingdentalhealth.com/cosmetic-dentistry): teeth whitening, porcelain veneers, dental bonding, ClearCorrect clear aligners, smile design, full mouth reconstruction.
-- [Implants & Surgery](https://www.livingdentalhealth.com/implants-surgery): dental implants, wisdom teeth removal, extractions, bone and tissue grafting, and in-house CBCT (cone-beam CT) 3D imaging.
+- [General Dentistry](https://livingdentalhealth.com/general-dentistry): cleanings, exams, fillings, crowns, bridges, dentures. Digital X-rays + in-house 3D CBCT imaging.
+- [Cosmetic Dentistry](https://livingdentalhealth.com/cosmetic-dentistry): teeth whitening, porcelain veneers, dental bonding, ClearCorrect clear aligners, smile design, full mouth reconstruction.
+- [Implants & Surgery](https://livingdentalhealth.com/implants-surgery): dental implants, wisdom teeth removal, extractions, bone and tissue grafting, and in-house CBCT (cone-beam CT) 3D imaging.
 
 ## Differentiator: in-house CBCT 3D imaging
 
@@ -29,31 +29,31 @@ Most general dentists in Bend take two-dimensional panoramic X-rays in-house and
 
 ## Pillar treatments
 
-- [Full Mouth Reconstruction](https://www.livingdentalhealth.com/full-mouth-reconstruction): comprehensive rebuild of teeth and bite, performed in-house with precision-driven planning to prevent TMJ, headaches, and speech or chewing problems.
-- [Sedation Dentistry](https://www.livingdentalhealth.com/sedation-dentistry): mild oral sedation with Halcion (triazolam), cleared from the system within ~24 hours. Used selectively for oral surgery and dental anxiety.
-- [Oral Cancer Screening](https://www.livingdentalhealth.com/oral-cancer-screening): painless visual and palpation exam, part of every cleaning and routine exam.
+- [Full Mouth Reconstruction](https://livingdentalhealth.com/full-mouth-reconstruction): comprehensive rebuild of teeth and bite, performed in-house with precision-driven planning to prevent TMJ, headaches, and speech or chewing problems.
+- [Sedation Dentistry](https://livingdentalhealth.com/sedation-dentistry): mild oral sedation with Halcion (triazolam), cleared from the system within ~24 hours. Used selectively for oral surgery and dental anxiety.
+- [Oral Cancer Screening](https://livingdentalhealth.com/oral-cancer-screening): painless visual and palpation exam, part of every cleaning and routine exam.
 
 ## About and trust
 
-- [Meet Dr. Andy Engel](https://www.livingdentalhealth.com/about): full bio, education, training, and philosophy.
-- [The Team](https://www.livingdentalhealth.com/team): hygienists, dental assistant, office manager, operations.
-- [The Work](https://www.livingdentalhealth.com/before-and-after): before-and-after cases from Dr. Engel's chair — cosmetic dentistry, smile design, and full mouth reconstruction, planned and finished in-house.
-- [Contact](https://www.livingdentalhealth.com/contact): phone, address, hours, intake form.
+- [Meet Dr. Andy Engel](https://livingdentalhealth.com/about): full bio, education, training, and philosophy.
+- [The Team](https://livingdentalhealth.com/team): hygienists, dental assistant, office manager, operations.
+- [The Work](https://livingdentalhealth.com/before-and-after): before-and-after cases from Dr. Engel's chair — cosmetic dentistry, smile design, and full mouth reconstruction, planned and finished in-house.
+- [Contact](https://livingdentalhealth.com/contact): phone, address, hours, intake form.
 
 ## Patient information
 
-- [New Patients & Patient Info](https://www.livingdentalhealth.com/patient-info): insurance, financing, what to expect on a first visit.
-- [Post-Op Instructions](https://www.livingdentalhealth.com/patient-info/post-op): after-care for extractions, implants, grafting, and routine procedures.
+- [New Patients & Patient Info](https://livingdentalhealth.com/patient-info): insurance, financing, what to expect on a first visit.
+- [Post-Op Instructions](https://livingdentalhealth.com/patient-info/post-op): after-care for extractions, implants, grafting, and routine procedures.
 
 ## Editorial content (Articles)
 
-- [Articles Index](https://www.livingdentalhealth.com/articles): 53+ articles by Dr. Engel on dental health, anxiety, implants, cosmetic care, gum health, wisdom teeth, oral cancer, ClearCorrect, and the dentist-patient relationship.
+- [Articles Index](https://livingdentalhealth.com/articles): 53+ articles by Dr. Engel on dental health, anxiety, implants, cosmetic care, gum health, wisdom teeth, oral cancer, ClearCorrect, and the dentist-patient relationship.
 
 ## Canonical entity references
 
-- Business `@id`: `https://www.livingdentalhealth.com/#business` — type: Dentist + LocalBusiness + MedicalBusiness
-- Doctor `@id`: `https://www.livingdentalhealth.com/#doctor` — Dr. Andrew W. Engel DMD
-- Website `@id`: `https://www.livingdentalhealth.com/#website`
+- Business `@id`: `https://livingdentalhealth.com/#business` — type: Dentist + LocalBusiness + MedicalBusiness
+- Doctor `@id`: `https://livingdentalhealth.com/#doctor` — Dr. Andrew W. Engel DMD
+- Website `@id`: `https://livingdentalhealth.com/#website`
 
 ## What we do not provide
 

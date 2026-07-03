@@ -39,7 +39,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/"],
       },
     ],
-    host: "https://www.livingdentalhealth.com",
-    sitemap: "https://www.livingdentalhealth.com/sitemap.xml",
+    host: "https://livingdentalhealth.com",
+    sitemap: "https://livingdentalhealth.com/sitemap.xml",
   };
 }

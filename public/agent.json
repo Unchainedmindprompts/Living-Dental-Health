@@ -3,11 +3,11 @@
   "name": "Living Dental Health",
   "alternateName": "Living Dental Health Bend Oregon",
   "description": "A Bend, Oregon dental practice led by Dr. Andrew W. Engel, DMD. Independent, single-dentist practice founded in 2013, with Dr. Engel caring for Bend families since 1998. Services include general dentistry, cosmetic dentistry, dental implants, oral surgery, full mouth reconstruction, and sedation dentistry.",
-  "url": "https://www.livingdentalhealth.com",
+  "url": "https://livingdentalhealth.com/",
   "canonical": {
-    "business": "https://www.livingdentalhealth.com/#business",
-    "doctor": "https://www.livingdentalhealth.com/#doctor",
-    "website": "https://www.livingdentalhealth.com/#website"
+    "business": "https://livingdentalhealth.com/#business",
+    "doctor": "https://livingdentalhealth.com/#doctor",
+    "website": "https://livingdentalhealth.com/#website"
   },
   "type": ["Dentist", "LocalBusiness", "MedicalBusiness"],
   "contact": {
@@ -39,7 +39,7 @@
       "Over 4,000 hours of continuing education in Smile Design, Cosmetic Dentistry, and Full Mouth Reconstruction"
     ],
     "npi": "1700144870",
-    "url": "https://www.livingdentalhealth.com/about"
+    "url": "https://livingdentalhealth.com/about"
   },
   "knowsAbout": [
     "general dentistry in Bend Oregon",

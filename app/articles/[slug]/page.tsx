@@ -22,7 +22,7 @@ export function generateMetadata({
   const article = getArticle(params.slug);
   if (!article) return {};
   const { meta } = article;
-  const url = `https://www.livingdentalhealth.com/articles/${meta.slug}`;
+  const url = `https://livingdentalhealth.com/articles/${meta.slug}`;
   return {
     title: `${meta.title} — Living Dental Health, Bend Oregon`,
     description: meta.excerpt,
