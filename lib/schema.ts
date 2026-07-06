@@ -201,7 +201,7 @@ const doctorEntity: JsonLdNode = {
   "jobTitle": "Dentist",
   "medicalSpecialty": ["Oral Surgery", "Dental Implants"],
   "description":
-    "Dr. Andrew W. Engel is the founder of Living Dental Health in Bend, Oregon, and has cared for Bend families since 1998. A graduate of Oregon Health Sciences University School of Dentistry, he completed advanced training in full mouth reconstruction, oral surgery, dental implants, ClearCorrect, and tissue and bone grafting, offering comprehensive care under one roof. During his training he worked directly alongside a prosthodontist, learning occlusion and bite architecture at the chair — the discipline that determines whether a full mouth reconstruction lasts for decades. In 28 years of practice he has become one of Central Oregon's most trusted dentists for complex cases.",
+    "Dr. Andrew W. Engel is the founder of Living Dental Health in Bend, Oregon, and has cared for Bend families since 1998. A graduate of Oregon Health Sciences University School of Dentistry, he completed advanced training in full mouth reconstruction, oral surgery, dental implants, ClearCorrect, and tissue and bone grafting, offering comprehensive care under one roof. He has practiced cosmetic dentistry since 1999 and provided clear aligner therapy since 2001. During his training he worked directly alongside a prosthodontist, learning occlusion and bite architecture at the chair — the discipline that determines whether a full mouth reconstruction lasts for decades. In 28 years of practice he has become one of Central Oregon's most trusted dentists for complex cases.",
   "url": "https://livingdentalhealth.com/about",
   "image": "https://livingdentalhealth.com/images/brand/dr-andy-engel.jpg",
   "worksFor": {
@@ -646,7 +646,7 @@ export const cosmeticDentistryPageSchema: JsonLdGraph = {
         "https://livingdentalhealth.com/cosmetic-dentistry#whitening",
       "name": "Teeth Whitening",
       "description":
-        "Professional in-office whitening that brightens the smile several shades in a single visit using a controlled, safe process — results over-the-counter products can’t match.",
+        "Professional teeth whitening — prescription-strength whitening, custom bleaching, and other custom options — brightening the smile several shades in a controlled, safe process; results over-the-counter products can’t match.",
       "url":
         "https://livingdentalhealth.com/cosmetic-dentistry#whitening",
       "procedureType": "https://schema.org/TherapeuticProcedure",
@@ -688,7 +688,7 @@ export const cosmeticDentistryPageSchema: JsonLdGraph = {
         "https://livingdentalhealth.com/cosmetic-dentistry#clearcorrect",
       "name": "ClearCorrect Clear Aligners",
       "description":
-        "Custom-fitted removable clear aligners that gradually shift the teeth with no metal or wires. Dr. Engel is a certified ClearCorrect provider and manages the entire process in-house, typically over 12–18 months.",
+        "Custom-fitted removable clear aligners that gradually shift the teeth with no metal or wires. Dr. Engel has provided clear aligner therapy since 2001, is a certified ClearCorrect provider, and manages the entire process in-house, typically over 12–18 months.",
       "url":
         "https://livingdentalhealth.com/cosmetic-dentistry#clearcorrect",
       "procedureType": "https://schema.org/TherapeuticProcedure",
@@ -702,7 +702,7 @@ export const cosmeticDentistryPageSchema: JsonLdGraph = {
         "https://livingdentalhealth.com/cosmetic-dentistry#smile-design",
       "name": "Smile Design",
       "description":
-        "The planning process behind a complete cosmetic transformation. Dr. Engel evaluates the teeth, gums, bite, and facial proportions and coordinates whitening, veneers, bonding, crowns, or ClearCorrect into a single harmonious plan.",
+        "The planning process behind a complete cosmetic transformation, led by Dr. Engel, who has practiced cosmetic dentistry since 1999. He evaluates the teeth, gums, bite, and facial proportions and coordinates whitening, veneers, bonding, crowns, or ClearCorrect into a single harmonious plan.",
       "url":
         "https://livingdentalhealth.com/cosmetic-dentistry#smile-design",
       "procedureType": "https://schema.org/TherapeuticProcedure",

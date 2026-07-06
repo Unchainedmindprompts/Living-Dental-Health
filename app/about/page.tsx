@@ -34,7 +34,7 @@ const CREDENTIALS = [
     detail: "Cosmetic Smile Design",
   },
   { label: "Founder", detail: "Living Dental Health" },
-  { label: "Practice", detail: "28 years serving Bend, Oregon" },
+  { label: "Practice", detail: "28 years in Bend, since 1998" },
   { label: "New patients", detail: "Accepting ages 12 and up" },
 ];
 
