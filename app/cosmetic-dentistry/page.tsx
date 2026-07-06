@@ -15,16 +15,6 @@ export const metadata: Metadata = {
 
 const SERVICES = [
   {
-    id: "whitening",
-    heading: "Teeth Whitening",
-    body:
-      "Professional whitening delivers results that over-the-counter products simply can’t match. In a single visit Dr. Engel can brighten your smile several shades using a controlled, safe process. Fast, effective, and one of the most affordable ways to transform your appearance.",
-    detail:
-      "professional-grade · single visit · immediate results · safe and controlled",
-    imageAlt:
-      "Patient with a brighter smile after professional teeth whitening at Living Dental Health Bend Oregon",
-  },
-  {
     id: "veneers",
     heading: "Porcelain Veneers",
     body:
@@ -48,9 +38,9 @@ const SERVICES = [
     id: "clearcorrect",
     heading: "ClearCorrect",
     body:
-      "Dr. Engel chose ClearCorrect specifically because it was developed by the founders of Invisalign — who left to build a product they believed was better. We agree. Custom-fitted clear aligners gradually shift your teeth with no metal, no wires, and no adjustments. Remove them for meals, wear them through your day, and get on with your life. Dr. Engel manages the entire process in-house.",
+      "Dr. Engel has provided clear aligner therapy since 2001. He chose ClearCorrect specifically because it was developed by the founders of Invisalign — who left to build a product they believed was better. We agree. Custom-fitted clear aligners gradually shift your teeth with no metal, no wires, and no adjustments. Remove them for meals, wear them through your day, and get on with your life. Dr. Engel manages the entire process in-house.",
     detail:
-      "certified provider · clear aligners · removable · 12–18 months · in-house management",
+      "clear aligner therapy since 2001 · certified provider · removable · 12–18 months · in-house",
     imageAlt:
       "Patient holding ClearCorrect clear aligners at Living Dental Health Bend Oregon",
   },
@@ -58,11 +48,21 @@ const SERVICES = [
     id: "smile-design",
     heading: "Smile Design",
     body:
-      "Smile design is the planning process behind a complete cosmetic transformation. Before any procedure begins, Dr. Engel evaluates your teeth, gums, bite, and facial proportions to map out a result that works harmoniously. It may combine whitening, veneers, bonding, crowns, or ClearCorrect into a single coordinated plan. He won’t recommend a single procedure until he fully understands what you want and what will actually work for your face.",
+      "Dr. Engel has practiced cosmetic dentistry since 1999. Smile design is the planning process behind a complete cosmetic transformation. Before any procedure begins, he evaluates your teeth, gums, bite, and facial proportions to map out a result that works harmoniously. It may combine whitening, veneers, bonding, crowns, or ClearCorrect into a single coordinated plan. He won’t recommend a single procedure until he fully understands what you want and what will actually work for your face.",
     detail:
       "comprehensive planning · multi-treatment · customized · consultation required",
     imageAlt:
       "Dr. Andy Engel planning a smile design with a patient at Living Dental Health Bend Oregon",
+  },
+  {
+    id: "whitening",
+    heading: "Teeth Whitening",
+    body:
+      "Professional whitening delivers results that over-the-counter products simply can’t match — prescription-strength whitening, custom bleaching, and other custom options. In a single visit Dr. Engel can brighten your smile several shades using a controlled, safe process. Fast, effective, and one of the most affordable ways to transform your appearance.",
+    detail:
+      "prescription-strength · custom bleaching · professional-grade · safe and controlled",
+    imageAlt:
+      "Patient with a brighter smile after professional teeth whitening at Living Dental Health Bend Oregon",
   },
   {
     id: "reconstruction",

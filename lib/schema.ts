@@ -646,7 +646,7 @@ export const cosmeticDentistryPageSchema: JsonLdGraph = {
         "https://livingdentalhealth.com/cosmetic-dentistry#whitening",
       "name": "Teeth Whitening",
       "description":
-        "Professional in-office whitening that brightens the smile several shades in a single visit using a controlled, safe process — results over-the-counter products can’t match.",
+        "Professional teeth whitening — prescription-strength whitening, custom bleaching, and other custom options — brightening the smile several shades in a controlled, safe process; results over-the-counter products can’t match.",
       "url":
         "https://livingdentalhealth.com/cosmetic-dentistry#whitening",
       "procedureType": "https://schema.org/TherapeuticProcedure",
@@ -688,7 +688,7 @@ export const cosmeticDentistryPageSchema: JsonLdGraph = {
         "https://livingdentalhealth.com/cosmetic-dentistry#clearcorrect",
       "name": "ClearCorrect Clear Aligners",
       "description":
-        "Custom-fitted removable clear aligners that gradually shift the teeth with no metal or wires. Dr. Engel is a certified ClearCorrect provider and manages the entire process in-house, typically over 12–18 months.",
+        "Custom-fitted removable clear aligners that gradually shift the teeth with no metal or wires. Dr. Engel has provided clear aligner therapy since 2001, is a certified ClearCorrect provider, and manages the entire process in-house, typically over 12–18 months.",
       "url":
         "https://livingdentalhealth.com/cosmetic-dentistry#clearcorrect",
       "procedureType": "https://schema.org/TherapeuticProcedure",
@@ -702,7 +702,7 @@ export const cosmeticDentistryPageSchema: JsonLdGraph = {
         "https://livingdentalhealth.com/cosmetic-dentistry#smile-design",
       "name": "Smile Design",
       "description":
-        "The planning process behind a complete cosmetic transformation. Dr. Engel evaluates the teeth, gums, bite, and facial proportions and coordinates whitening, veneers, bonding, crowns, or ClearCorrect into a single harmonious plan.",
+        "The planning process behind a complete cosmetic transformation, led by Dr. Engel, who has practiced cosmetic dentistry since 1999. He evaluates the teeth, gums, bite, and facial proportions and coordinates whitening, veneers, bonding, crowns, or ClearCorrect into a single harmonious plan.",
       "url":
         "https://livingdentalhealth.com/cosmetic-dentistry#smile-design",
       "procedureType": "https://schema.org/TherapeuticProcedure",
