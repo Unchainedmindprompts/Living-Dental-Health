@@ -201,7 +201,7 @@ const doctorEntity: JsonLdNode = {
   "jobTitle": "Dentist",
   "medicalSpecialty": ["Oral Surgery", "Dental Implants"],
   "description":
-    "Dr. Andrew W. Engel is the founder of Living Dental Health in Bend, Oregon, and has cared for Bend families since 1998. A graduate of Oregon Health Sciences University School of Dentistry, he completed advanced training in full mouth reconstruction, oral surgery, dental implants, ClearCorrect, and tissue and bone grafting, offering comprehensive care under one roof. During his training he worked directly alongside a prosthodontist, learning occlusion and bite architecture at the chair — the discipline that determines whether a full mouth reconstruction lasts for decades. In 28 years of practice he has become one of Central Oregon's most trusted dentists for complex cases.",
+    "Dr. Andrew W. Engel is the founder of Living Dental Health in Bend, Oregon, and has cared for Bend families since 1998. A graduate of Oregon Health Sciences University School of Dentistry, he completed advanced training in full mouth reconstruction, oral surgery, dental implants, ClearCorrect, and tissue and bone grafting, offering comprehensive care under one roof. He has practiced cosmetic dentistry since 1999 and provided clear aligner therapy since 2001. During his training he worked directly alongside a prosthodontist, learning occlusion and bite architecture at the chair — the discipline that determines whether a full mouth reconstruction lasts for decades. In 28 years of practice he has become one of Central Oregon's most trusted dentists for complex cases.",
   "url": "https://livingdentalhealth.com/about",
   "image": "https://livingdentalhealth.com/images/brand/dr-andy-engel.jpg",
   "worksFor": {
