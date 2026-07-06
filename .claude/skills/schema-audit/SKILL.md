@@ -88,7 +88,7 @@ quote, attributed to the same `author.name`. Word-for-word.
 Cross-check all schema facts against the page:
 - `foundingDate` for the business (LDH = 2013)
 - `alumniOf` / `hasCredential` for the doctor (OHSU 1998, UO chem minor,
-  4,000+ CE hours)
+  1,000+ CE hours)
 - Tenure phrases ("28 years," "since 1998") — confirm whether attached to
   Dr. Engel or the practice; they are NOT interchangeable
 - Award entities (CommunityVotes 2025 + 2026 Platinum) — schema and trust

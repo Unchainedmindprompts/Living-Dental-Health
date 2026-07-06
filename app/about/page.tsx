@@ -19,7 +19,7 @@ const CREDENTIALS = [
   },
   {
     label: "Continuing Education",
-    detail: "4,000+ hours",
+    detail: "1,000+ hours",
   },
   {
     label: "Advanced training",
@@ -113,7 +113,7 @@ export default function AboutPage() {
                 real cases.
               </p>
               <p>
-                The same curiosity drives his career today. With over 4,000
+                The same curiosity drives his career today. With over 1,000
                 hours of continuing education in smile design, cosmetic
                 dentistry, and full mouth reconstruction, Andy is wired to
                 keep learning and improving &mdash; fueled by a constant
