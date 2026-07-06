@@ -13,7 +13,7 @@ const SAGE_LABEL = "#9CAF88";
 export const metadata: Metadata = {
   title: "Full Mouth Reconstruction — Living Dental Health, Bend",
   description:
-    "Full mouth reconstruction in Bend, Oregon with Dr. Andy Engel. Over 4,000 CE hours and precision planning that protects your bite, jaw, and oral health.",
+    "Full mouth reconstruction in Bend, Oregon with Dr. Andy Engel. Over 1,000 CE hours and precision planning that protects your bite, jaw, and oral health.",
 };
 
 // Live phase copy. Andy's personal voice can be woven into these blocks later.
@@ -86,7 +86,7 @@ const FAQ = [
   },
   {
     q: "Does Dr. Andy Engel perform full mouth reconstruction in Bend, Oregon?",
-    a: "Yes. Dr. Andy Engel performs full mouth reconstruction in-house at Living Dental Health in Bend, Oregon. He has completed advanced training at Oregon Health Sciences University and over 4,000 hours of continuing education in smile design, cosmetic dentistry, and full mouth reconstruction.",
+    a: "Yes. Dr. Andy Engel performs full mouth reconstruction in-house at Living Dental Health in Bend, Oregon. He has completed advanced training at Oregon Health Sciences University and over 1,000 hours of continuing education in smile design, cosmetic dentistry, and full mouth reconstruction.",
   },
   {
     q: "Why does precision matter in full mouth reconstruction?",
@@ -150,7 +150,7 @@ export default function FullMouthReconstructionPage() {
                   Full mouth reconstruction is a precise endeavor. A poorly
                   executed rebuild causes TMJ pain, headaches, speech
                   difficulties, and chewing problems &mdash; for life. Dr.
-                  Engel has spent over 4,000 hours of continuing education
+                  Engel has spent over 1,000 hours of continuing education
                   learning how to do it right.
                 </p>
               </div>
@@ -310,19 +310,19 @@ export default function FullMouthReconstructionPage() {
           </div>
         </section>
 
-        {/* TRUST BLOCK — 4,000 CE hours */}
+        {/* TRUST BLOCK — 1,000 CE hours */}
         <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">
           <div
             className="mx-auto max-w-[860px] p-10 text-center sm:p-16"
             style={{ backgroundColor: SAGE, color: "#F5F0E8" }}
           >
             <h2 className="font-serif text-[36px] leading-[1.05] sm:text-[52px]">
-              4,000 hours.{" "}
+              1,000 hours.{" "}
               <span className="font-serif-italic">Then we begin.</span>
             </h2>
             <p className="mx-auto mt-6 max-w-[620px] font-inter text-[15px] font-light leading-[1.75] sm:text-[16px]">
               On top of his OHSU degree and surgical training, Dr. Engel has
-              completed over 4,000 hours of continuing education focused
+              completed over 1,000 hours of continuing education focused
               specifically on smile design, cosmetic dentistry, and full
               mouth reconstruction. For context, most dentists complete
               20&ndash;40 continuing-education hours per year.

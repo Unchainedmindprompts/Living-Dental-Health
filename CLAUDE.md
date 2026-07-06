@@ -30,7 +30,7 @@ editing.
 - **OHSU School of Dentistry, 1998** (Dr. Engel's DMD)
 - **University of Oregon, B.S. General Science with Chemistry Minor**
   (Dr. Engel's undergrad)
-- **4,000+ hours continuing education** in smile design, cosmetic
+- **1,000+ hours continuing education** in smile design, cosmetic
   dentistry, and full mouth reconstruction
 - **Trained alongside a prosthodontist** during his advanced training —
   learned occlusion / bite architecture at the chair, on real cases.
