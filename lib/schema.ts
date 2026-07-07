@@ -140,13 +140,6 @@ const businessEnrichment: Record<string, unknown> = {
     "CommunityVotes Bend 2025 Platinum Winner — Dental Hygiene Clinic",
     "CommunityVotes Bend 2025 Gold Winner — Dental Clinic",
   ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "211",
-    "bestRating": "5",
-    "worstRating": "1",
-  },
   "founder": {
     "@id": "https://livingdentalhealth.com/#doctor",
   },
@@ -1392,66 +1385,6 @@ export const teamPageSchema: JsonLdGraph = {
       "name": "Christy Spencer",
       "jobTitle": "Dental Assistant",
       "worksFor": { "@id": "https://livingdentalhealth.com/#business" },
-    },
-    {
-      "@type": "Review",
-      "@id": "https://livingdentalhealth.com/team#review-mcnall",
-      "reviewBody":
-        "Great service and treatment, very helpful and kind employees!",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5",
-        "worstRating": "1",
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Dylan McNall",
-      },
-      "publisher": { "@type": "Organization", "name": "Google" },
-      "itemReviewed": {
-        "@id": "https://livingdentalhealth.com/#business",
-      },
-    },
-    {
-      "@type": "Review",
-      "@id": "https://livingdentalhealth.com/team#review-bollinger",
-      "reviewBody":
-        "Excellent care and personable, caring staff and dentist!",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5",
-        "worstRating": "1",
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Gail Bollinger",
-      },
-      "publisher": { "@type": "Organization", "name": "Google" },
-      "itemReviewed": {
-        "@id": "https://livingdentalhealth.com/#business",
-      },
-    },
-    {
-      "@type": "Review",
-      "@id": "https://livingdentalhealth.com/team#review-cardenas",
-      "reviewBody":
-        "It is never a rushed experience, and I appreciate the quality care.",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5",
-        "worstRating": "1",
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Amanda Cardenas",
-      },
-      "publisher": { "@type": "Organization", "name": "Google" },
-      "itemReviewed": {
-        "@id": "https://livingdentalhealth.com/#business",
-      },
     },
   ],
 };
