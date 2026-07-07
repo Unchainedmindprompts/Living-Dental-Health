@@ -14,7 +14,7 @@ description: |
 # Schema Audit
 
 Run this audit any time a page in `/app/**/page.tsx` changes. The goal is to
-guarantee three things are true at all times:
+guarantee four things are true at all times:
 
 1. **Schema-visible word-for-word alignment** on user-visible content where
    schema mirrors the page (FAQs, Reviews, page name/headline, descriptions).
@@ -22,6 +22,9 @@ guarantee three things are true at all times:
    (founding years, tenure, credentials, team members, awards).
 3. **Entity graph integrity** — every `@id` resolves, prominent people/places
    are present in the page's `@graph`, and cross-page references stay valid.
+4. **Correct entity typing** — every node's `@type` describes what the entity
+   *is*, not what it does. An individual human is always `@type: Person`;
+   the practice is the `Dentist`/`LocalBusiness`. See Check 8.
 
 ## Procedure
 
@@ -59,7 +62,7 @@ Open the matching export. Identify which graph nodes touch the content you
 changed (BreadcrumbList, WebPage/AboutPage/MedicalWebPage, FAQPage, Review,
 Person, MedicalProcedure, etc.).
 
-### Step 3 — Run the seven checks
+### Step 3 — Run the eight checks
 
 For each modified page, walk this checklist. Anything that fails MUST be
 fixed before committing.
@@ -112,6 +115,36 @@ Cross-check all schema facts against the page:
 If a hero image has baked-in text, the `alt` attribute must include that
 text (WCAG requirement for images-of-text). After swapping a hero image,
 re-read the alt to confirm.
+
+**Check 8 — Person vs. business type (the entity is what it *is*)**
+Every node's `@type` must describe what the entity *is*, not what it does.
+The most dangerous failure on a professional-practice site is typing the
+**individual human** with the **business** type that describes the practice.
+
+In schema.org, `Dentist` is a subtype of `LocalBusiness` / `MedicalBusiness`
+— it models the *office*, not the person. The same trap exists for every
+professional practice: `RealEstateAgent`, `Physician`, `Attorney`,
+`Accountant`, `Optometrian`, etc. are all business/organization types.
+
+- The **practice** node (`#business`) → the business type
+  (`Dentist`, `LocalBusiness`, `MedicalBusiness`).
+- The **individual human** node (`#doctor`, `#owner`, `#agent`, …) →
+  **always `@type: Person`**. Express their profession with `jobTitle`
+  (e.g. `"Dentist"`) and/or `hasOccupation` (an `Occupation` node) — never
+  by stamping the person with the `LocalBusiness` subtype.
+- Do **not** put business/physician-only properties on a `Person` node.
+  `medicalSpecialty`, `openingHoursSpecification`, `priceRange`,
+  `aggregateRating`, `areaServed`, `address`(as a business location) belong
+  on the practice node. If you need to convey a person's clinical focus,
+  use `knowsAbout` on the Person and `medicalSpecialty` on the practice.
+
+Why this is its own check: the `@id` is unique and resolves fine, so the
+duplicate-`@id` sweep and the dangling-reference check both pass. The node
+is simply the **wrong kind of thing** — a defect only a type-level read
+catches. A dentist's own site telling Google the dentist is a medical
+*building* is exactly the kind of error that quietly tanks a knowledge
+panel. Confirm in the **built** HTML, not just source: `#doctor` must
+render `@type: Person`, and only `#business` may carry `@type: Dentist`.
 
 ### Step 4 — Run the build
 
@@ -173,3 +206,7 @@ HTML and see two `#business` nodes, that is expected.
   years old — LDH = 2013)
 - Never swap a shared image file (e.g., `/public/cosmetic-hero.webp`)
   without first grepping for every page that references it
+- Never type an individual human with a business type. Dr. Engel is a
+  `Person` with `jobTitle`/`hasOccupation` "Dentist" — he is NOT
+  `@type: Dentist` (that type is the *practice*). Same trap for any
+  `RealEstateAgent`, `Physician`, `Attorney`, etc. (see Check 8)
