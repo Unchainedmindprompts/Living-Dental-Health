@@ -58,7 +58,7 @@ const SERVICES = [
     id: "whitening",
     heading: "Teeth Whitening",
     body:
-      "Professional whitening delivers results that over-the-counter products simply can’t match — prescription-strength whitening, custom bleaching, and other custom options. In a single visit Dr. Engel can brighten your smile several shades using a controlled, safe process. Fast, effective, and one of the most affordable ways to transform your appearance.",
+      "Professional whitening delivers results that over-the-counter products simply can’t match — prescription-strength whitening, custom bleaching, and other custom options. Dr. Engel can brighten your smile several shades using a controlled, safe process. Fast, effective, and one of the most affordable ways to transform your appearance.",
     detail:
       "prescription-strength · custom bleaching · professional-grade · safe and controlled",
     imageAlt:
