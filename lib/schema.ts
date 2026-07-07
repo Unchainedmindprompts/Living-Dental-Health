@@ -86,15 +86,19 @@ const businessNapStub: JsonLdNode = {
       "containedInPlace": {
         "@type": "State",
         "name": "Oregon",
+        "sameAs": "https://en.wikipedia.org/wiki/Oregon",
       },
+      "sameAs": "https://en.wikipedia.org/wiki/Bend,_Oregon",
     },
     {
       "@type": "AdministrativeArea",
       "name": "Deschutes County",
+      "sameAs": "https://en.wikipedia.org/wiki/Deschutes_County,_Oregon",
     },
     {
       "@type": "AdministrativeArea",
       "name": "Central Oregon",
+      "sameAs": "https://en.wikipedia.org/wiki/Central_Oregon",
     },
   ],
 };
