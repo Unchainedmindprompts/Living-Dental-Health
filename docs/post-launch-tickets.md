@@ -72,3 +72,68 @@ interpolate from `SITE`; schema properties reference it directly.
 - [ ] `npm run build` clean; rendered HTML byte-identical to pre-refactor
       for the affected facts (diff the built `.next/server/app/*.html`).
 - [ ] `@id` sweep still reports 0 dangling / 0 duplicate.
+
+---
+
+## TICKET P2-9 — Article `about` → subject map (per-article topical linking)
+
+**Priority:** Low (SEO/AEO enrichment; no rendered-content change)
+**Status:** Open — deferred during the launch-gate audit (owner decision)
+**Opened by:** entity-graph launch audit (2026-07)
+
+### Problem
+
+The 53 `BlogPosting` nodes (`articlePostSchema`) have `author`, `publisher`,
+and `isPartOf` but no `about`. That leaves each article topically
+disconnected from the procedure/condition it discusses. It must NOT be set
+reflexively to `#business` (that would be wrong — an article about bone
+grafts is *about* bone grafting, not about the practice).
+
+### Proposed fix
+
+Build a `slug → subject` map (procedure/condition entity or a
+`DefinedTerm`/`MedicalCondition`/`MedicalProcedure` with name + url) and set
+`about` on each `BlogPosting` from it. ~53 entries; needs a human pass to
+map each article to its real subject. Optionally add `keywords` and
+`articleSection` at the same time.
+
+### Acceptance criteria
+
+- [ ] Every `BlogPosting` has an `about` referencing its real subject.
+- [ ] No article's `about` is reflexively `#business`.
+- [ ] `@id` sweep clean; build clean.
+
+---
+
+## TICKET P2-8 — Publisher `#logo` width/height (blocked on brand asset)
+
+**Priority:** Low (Google Article logo guidance)
+**Status:** BLOCKED — brand image assets are not in the repo yet
+**Opened by:** entity-graph launch audit (2026-07)
+
+### Problem
+
+Google's Article structured-data guidance recommends the publisher `logo`
+`ImageObject` carry `width`/`height`. We cannot set accurate dimensions
+because the brand assets are missing (see launch task below): the files
+`#logo` and `#business.image` / `#doctor.image` point at do not exist in
+`public/images/brand/`. Setting invented dimensions would be fabrication.
+
+### Blocked on — LAUNCH TASK: brand image assets
+
+`public/images/brand/` does not exist. These schema URLs 404 until the real
+files are added:
+
+- `/images/brand/living-dental-health-logo.png`  (`#logo`)
+- `/images/brand/living-dental-health-office.jpg` (`#business.image`)
+- `/images/brand/dr-andy-engel.jpg`               (`#doctor.image`)
+
+This is the same class of task as the wp-content image localization (waiting
+on source files). Once the real logo file is added, set `#logo`
+`width`/`height` from its actual pixel dimensions and close this ticket.
+
+### Acceptance criteria
+
+- [ ] Brand assets present under `public/images/brand/`.
+- [ ] `#logo` has `width`/`height` matching the real file.
+- [ ] `@id` sweep clean; build clean.

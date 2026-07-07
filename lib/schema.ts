@@ -154,6 +154,38 @@ const businessEnrichment: Record<string, unknown> = {
     "Dental Implants",
     "Preventive Dentistry",
   ],
+  "availableService": [
+    {
+      "@type": "MedicalProcedure",
+      "name": "General Dentistry",
+      "url": "https://livingdentalhealth.com/general-dentistry",
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Cosmetic Dentistry",
+      "url": "https://livingdentalhealth.com/cosmetic-dentistry",
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Dental Implants & Oral Surgery",
+      "url": "https://livingdentalhealth.com/implants-surgery",
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Full Mouth Reconstruction",
+      "url": "https://livingdentalhealth.com/full-mouth-reconstruction",
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Sedation Dentistry",
+      "url": "https://livingdentalhealth.com/sedation-dentistry",
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Oral Cancer Screening",
+      "url": "https://livingdentalhealth.com/oral-cancer-screening",
+    },
+  ],
   "knowsAbout": [
     "general dentistry in Bend Oregon",
     "cosmetic dentistry in Bend Oregon",
@@ -471,6 +503,7 @@ export const generalDentistryPageSchema: JsonLdGraph = {
       "@type": "FAQPage",
       "@id":
         "https://livingdentalhealth.com/general-dentistry#faq",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/general-dentistry#webpage" },
       "mainEntity": [
         {
           "@type": "Question",
@@ -644,6 +677,7 @@ export const implantsSurgeryPageSchema: JsonLdGraph = {
       "@type": "FAQPage",
       "@id":
         "https://livingdentalhealth.com/implants-surgery#faq",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/implants-surgery#webpage" },
       "mainEntity": [
         {
           "@type": "Question",
@@ -822,6 +856,7 @@ export const cosmeticDentistryPageSchema: JsonLdGraph = {
     {
       "@type": "FAQPage",
       "@id": "https://livingdentalhealth.com/cosmetic-dentistry#faq",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/cosmetic-dentistry#webpage" },
       "mainEntity": [
         {
           "@type": "Question",
@@ -897,6 +932,7 @@ export const patientInfoPageSchema: JsonLdGraph = {
     {
       "@type": "FAQPage",
       "@id": "https://livingdentalhealth.com/patient-info#faq",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/patient-info#webpage" },
       "mainEntity": [
         {
           "@type": "Question",
@@ -1119,6 +1155,7 @@ export const fullMouthReconstructionPageSchema: JsonLdGraph = {
       "@type": "FAQPage",
       "@id":
         "https://livingdentalhealth.com/full-mouth-reconstruction#faq",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/full-mouth-reconstruction#webpage" },
       "mainEntity": [
         {
           "@type": "Question",
@@ -1216,6 +1253,7 @@ export const sedationDentistryPageSchema: JsonLdGraph = {
       "@type": "FAQPage",
       "@id":
         "https://livingdentalhealth.com/sedation-dentistry#faq",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/sedation-dentistry#webpage" },
       "mainEntity": [
         {
           "@type": "Question",
@@ -1310,6 +1348,7 @@ export const oralCancerScreeningPageSchema: JsonLdGraph = {
       "@type": "FAQPage",
       "@id":
         "https://livingdentalhealth.com/oral-cancer-screening#faq",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/oral-cancer-screening#webpage" },
       "mainEntity": [
         {
           "@type": "Question",
