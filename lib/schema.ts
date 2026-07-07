@@ -339,6 +339,23 @@ export const generalDentistryPageSchema: JsonLdGraph = {
       ],
     },
     {
+      "@type": "MedicalWebPage",
+      "@id": "https://livingdentalhealth.com/general-dentistry#webpage",
+      "url": "https://livingdentalhealth.com/general-dentistry",
+      "name": "General Dentistry — Living Dental Health, Bend Oregon",
+      "description":
+        "Cleanings, exams, fillings, crowns, and bridges in Bend, Oregon. Foundational care from Dr. Andy Engel with in-house digital X-rays and 3D CBCT imaging.",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
+      "about": { "@id": "https://livingdentalhealth.com/#business" },
+      "mainEntity": {
+        "@id": "https://livingdentalhealth.com/general-dentistry#cleanings",
+      },
+      "breadcrumb": {
+        "@id": "https://livingdentalhealth.com/general-dentistry#breadcrumbs",
+      },
+      "publisher": { "@id": "https://livingdentalhealth.com/#business" },
+    },
+    {
       "@type": "MedicalProcedure",
       "@id":
         "https://livingdentalhealth.com/general-dentistry#cleanings",
@@ -484,6 +501,23 @@ export const implantsSurgeryPageSchema: JsonLdGraph = {
           "item": "https://livingdentalhealth.com/implants-surgery",
         },
       ],
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://livingdentalhealth.com/implants-surgery#webpage",
+      "url": "https://livingdentalhealth.com/implants-surgery",
+      "name": "Implants & Oral Surgery — Living Dental Health, Bend",
+      "description":
+        "Dental implants, bone and tissue grafting, wisdom teeth, and in-house CBCT 3D imaging in Bend, Oregon with Dr. Andy Engel. Surgical work handled in-house.",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
+      "about": { "@id": "https://livingdentalhealth.com/#business" },
+      "mainEntity": {
+        "@id": "https://livingdentalhealth.com/implants-surgery#implants",
+      },
+      "breadcrumb": {
+        "@id": "https://livingdentalhealth.com/implants-surgery#breadcrumbs",
+      },
+      "publisher": { "@id": "https://livingdentalhealth.com/#business" },
     },
     {
       "@type": "MedicalProcedure",
@@ -639,6 +673,23 @@ export const cosmeticDentistryPageSchema: JsonLdGraph = {
           "item": "https://livingdentalhealth.com/cosmetic-dentistry",
         },
       ],
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://livingdentalhealth.com/cosmetic-dentistry#webpage",
+      "url": "https://livingdentalhealth.com/cosmetic-dentistry",
+      "name": "Cosmetic Dentistry — Living Dental Health, Bend Oregon",
+      "description":
+        "Teeth whitening, porcelain veneers, ClearCorrect, smile design, and full mouth reconstruction with Dr. Andy Engel in Bend, Oregon. No upsell, ever.",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
+      "about": { "@id": "https://livingdentalhealth.com/#business" },
+      "mainEntity": {
+        "@id": "https://livingdentalhealth.com/cosmetic-dentistry#veneers",
+      },
+      "breadcrumb": {
+        "@id": "https://livingdentalhealth.com/cosmetic-dentistry#breadcrumbs",
+      },
+      "publisher": { "@id": "https://livingdentalhealth.com/#business" },
     },
     {
       "@type": "MedicalProcedure",
@@ -951,6 +1002,26 @@ export const fullMouthReconstructionPageSchema: JsonLdGraph = {
       ],
     },
     {
+      "@type": "MedicalWebPage",
+      "@id":
+        "https://livingdentalhealth.com/full-mouth-reconstruction#webpage",
+      "url": "https://livingdentalhealth.com/full-mouth-reconstruction",
+      "name": "Full Mouth Reconstruction — Living Dental Health, Bend",
+      "description":
+        "Full mouth reconstruction in Bend, Oregon with Dr. Andy Engel. Over 1,000 CE hours and precision planning that protects your bite, jaw, and oral health.",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
+      "about": { "@id": "https://livingdentalhealth.com/#business" },
+      "mainEntity": {
+        "@id":
+          "https://livingdentalhealth.com/full-mouth-reconstruction#procedure",
+      },
+      "breadcrumb": {
+        "@id":
+          "https://livingdentalhealth.com/full-mouth-reconstruction#breadcrumbs",
+      },
+      "publisher": { "@id": "https://livingdentalhealth.com/#business" },
+    },
+    {
       "@type": "MedicalProcedure",
       "@id":
         "https://livingdentalhealth.com/full-mouth-reconstruction#procedure",
@@ -1023,6 +1094,23 @@ export const sedationDentistryPageSchema: JsonLdGraph = {
             "https://livingdentalhealth.com/sedation-dentistry",
         },
       ],
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://livingdentalhealth.com/sedation-dentistry#webpage",
+      "url": "https://livingdentalhealth.com/sedation-dentistry",
+      "name": "Sedation Dentistry — Living Dental Health, Bend Oregon",
+      "description":
+        "Mild oral Halcion sedation for anxious patients and oral surgery in Bend, Oregon. Calm pace, gentle approach, out of your system in about 24 hours.",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
+      "about": { "@id": "https://livingdentalhealth.com/#business" },
+      "mainEntity": {
+        "@id": "https://livingdentalhealth.com/sedation-dentistry#procedure",
+      },
+      "breadcrumb": {
+        "@id": "https://livingdentalhealth.com/sedation-dentistry#breadcrumbs",
+      },
+      "publisher": { "@id": "https://livingdentalhealth.com/#business" },
     },
     {
       "@type": "MedicalProcedure",
@@ -1102,6 +1190,25 @@ export const oralCancerScreeningPageSchema: JsonLdGraph = {
             "https://livingdentalhealth.com/oral-cancer-screening",
         },
       ],
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://livingdentalhealth.com/oral-cancer-screening#webpage",
+      "url": "https://livingdentalhealth.com/oral-cancer-screening",
+      "name": "Oral Cancer Screening — Living Dental Health, Bend Oregon",
+      "description":
+        "Routine oral cancer screening at every cleaning at Living Dental Health, Bend Oregon. Painless, one minute, and dramatically improves early outcomes.",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
+      "about": { "@id": "https://livingdentalhealth.com/#business" },
+      "mainEntity": {
+        "@id":
+          "https://livingdentalhealth.com/oral-cancer-screening#procedure",
+      },
+      "breadcrumb": {
+        "@id":
+          "https://livingdentalhealth.com/oral-cancer-screening#breadcrumbs",
+      },
+      "publisher": { "@id": "https://livingdentalhealth.com/#business" },
     },
     {
       "@type": "MedicalProcedure",
