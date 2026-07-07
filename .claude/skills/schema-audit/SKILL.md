@@ -167,6 +167,27 @@ In the chat reply, list:
 If no drift was found, say so explicitly — silence is not the same as
 confirmation.
 
+## Automated enforcement (schema-guard)
+
+A subset of these checks is enforced automatically by
+`scripts/schema-guard.mjs`, so drift cannot reach production:
+
+- **What it checks:** duplicate `@id` definitions, dangling `@id`
+  references, person-vs-business typing (`#doctor` must be `Person`;
+  business types only on `#business`), and www host leaks on the
+  canonical surfaces (`lib/`, `app/`, `public/agent.json`,
+  `public/llms.txt`). Article `wp-content` images in `content/**.md`
+  are intentionally out of scope (pending asset localization).
+- **When it runs:** `prebuild` (before every `next build`, so CI/Vercel
+  fails on drift), a Husky `pre-commit` hook (before every commit), and
+  it reinstalls on a fresh clone via `prepare: husky`.
+- **Run it by hand:** `npm run schema-guard`.
+
+The guard is the mechanical backstop; it does NOT replace this skill.
+The schema-visible alignment checks (FAQ/Review word-for-word, factual
+consistency, alt text, name/description) still require the human read
+described above — run this audit on every page change regardless.
+
 ## Accepted exceptions (do NOT flag these as drift)
 
 **Two `#business` nodes in the home page's rendered HTML.**
