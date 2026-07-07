@@ -134,6 +134,34 @@ In the chat reply, list:
 If no drift was found, say so explicitly — silence is not the same as
 confirmation.
 
+## Accepted exceptions (do NOT flag these as drift)
+
+**Two `#business` nodes in the home page's rendered HTML.**
+Every page emits a NAP-only `#business` stub via `app/layout.tsx`
+(`napStubSchema` → `businessNapStub`). The home page *additionally*
+emits the full `#business` node via `homeSchema` (`businessFull`, which
+is `{ ...businessNapStub, ...businessEnrichment }`). So the home page's
+combined JSON-LD contains **two nodes sharing `@id`
+`https://livingdentalhealth.com/#business`**.
+
+This is intentional and correct, not a duplicate-definition bug:
+
+- Per JSON-LD / schema.org semantics, nodes with the same `@id` are
+  merged into one logical entity by consumers, so the graph still
+  describes a single business.
+- The split exists on purpose: the NAP stub is a real local signal on
+  *every* page, while `aggregateRating`, `sameAs`, `award`, and the
+  other enrichment live in exactly one place (home) so they are never
+  duplicated across the site.
+- At the **source** level there is still only one literal `@id: #business`
+  (in `businessNapStub`); `businessFull` inherits it via spread. The
+  `@id` sweep is source-level and correctly reports 0 duplicate
+  definitions.
+
+Do not "fix" this by removing the stub from the home page or by giving
+the two nodes different `@id`s. If you are inspecting *rendered* home
+HTML and see two `#business` nodes, that is expected.
+
 ## Things to never do
 
 - Never push a page edit without running this audit
