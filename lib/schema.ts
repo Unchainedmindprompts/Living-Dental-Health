@@ -918,7 +918,7 @@ export function articlePostSchema(input: {
         "dateModified": input.dateModified,
         "url": url,
         "image": input.featuredImage,
-        "mainEntityOfPage": { "@id": url },
+        "mainEntityOfPage": url,
         "isPartOf": { "@id": "https://livingdentalhealth.com/articles#blog" },
         "author": { "@id": "https://livingdentalhealth.com/#doctor" },
         "publisher": { "@id": "https://livingdentalhealth.com/#business" },
