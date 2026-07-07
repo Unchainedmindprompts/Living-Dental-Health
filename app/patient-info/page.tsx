@@ -8,6 +8,7 @@ const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/patient-info" },
   title: "New Patients — Living Dental Health, Bend Oregon",
   description:
     "What new patients need to know before a first visit to Living Dental Health, Bend Oregon — scheduling, insurance, financing, and the in-office plan.",

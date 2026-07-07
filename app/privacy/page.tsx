@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
+import { privacyPageSchema, sanitizeJsonLd } from "@/lib/schema";
 
 const SAGE = "#6B7C5C";
 
@@ -7,6 +8,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy — Living Dental Health, Bend Oregon",
   description:
     "How Living Dental Health collects, uses, and protects patient information.",
+  alternates: { canonical: "/privacy" },
 };
 
 const h2 =
@@ -19,6 +21,12 @@ const li =
 export default function PrivacyPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(sanitizeJsonLd(privacyPageSchema)),
+        }}
+      />
       <main
         className="min-h-screen text-charcoal"
         style={{ backgroundColor: "#F5F0E8" }}

@@ -8,6 +8,7 @@ const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/general-dentistry" },
   title: "General Dentistry — Living Dental Health, Bend Oregon",
   description:
     "Cleanings, exams, fillings, crowns, and bridges in Bend, Oregon. Foundational care from Dr. Andy Engel with in-house digital X-rays and 3D CBCT imaging.",

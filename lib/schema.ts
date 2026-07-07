@@ -273,6 +273,7 @@ const websiteEntity: JsonLdNode = {
   "@id": "https://livingdentalhealth.com/#website",
   "name": "Living Dental Health",
   "url": "https://livingdentalhealth.com/",
+  "inLanguage": "en-US",
   "description":
     "Bend, Oregon dental practice providing general dentistry, cosmetic dentistry, dental implants, oral surgery, ClearCorrect, and preventive dental care.",
   "publisher": {
@@ -291,12 +292,47 @@ export const napStubSchema: JsonLdGraph = {
 // complete #business node; aggregateRating and sameAs live here alone.
 export const homeSchema: JsonLdGraph = {
   "@context": "https://schema.org",
-  "@graph": [businessFull, doctorEntity, websiteEntity],
+  "@graph": [
+    businessFull,
+    doctorEntity,
+    websiteEntity,
+    {
+      "@type": "WebPage",
+      "@id": "https://livingdentalhealth.com/#webpage",
+      "url": "https://livingdentalhealth.com/",
+      "name": "Living Dental Health — Family Dentist in Bend, Oregon",
+      "description":
+        "Customized care, with a gentle touch. Dr. Andy Engel, DMD — a private dental studio serving Central Oregonians age 12+ in Bend since 1998.",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
+      "about": { "@id": "https://livingdentalhealth.com/#business" },
+      "mainEntity": { "@id": "https://livingdentalhealth.com/#business" },
+      "inLanguage": "en-US",
+      "publisher": { "@id": "https://livingdentalhealth.com/#business" },
+    },
+  ],
 };
 
 export const contactPageSchema: JsonLdGraph = {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://livingdentalhealth.com/contact#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contact",
+          "item": "https://livingdentalhealth.com/contact",
+        },
+      ],
+    },
     {
       "@type": "ContactPage",
       "@id": "https://livingdentalhealth.com/contact#contactpage",
@@ -313,6 +349,10 @@ export const contactPageSchema: JsonLdGraph = {
       "mainEntity": {
         "@id": "https://livingdentalhealth.com/#business",
       },
+      "breadcrumb": {
+        "@id": "https://livingdentalhealth.com/contact#breadcrumbs",
+      },
+      "inLanguage": "en-US",
     },
   ],
 };
@@ -343,6 +383,7 @@ export const generalDentistryPageSchema: JsonLdGraph = {
       "@type": "MedicalWebPage",
       "@id": "https://livingdentalhealth.com/general-dentistry#webpage",
       "url": "https://livingdentalhealth.com/general-dentistry",
+      "inLanguage": "en-US",
       "name": "General Dentistry — Living Dental Health, Bend Oregon",
       "description":
         "Cleanings, exams, fillings, crowns, and bridges in Bend, Oregon. Foundational care from Dr. Andy Engel with in-house digital X-rays and 3D CBCT imaging.",
@@ -507,6 +548,7 @@ export const implantsSurgeryPageSchema: JsonLdGraph = {
       "@type": "MedicalWebPage",
       "@id": "https://livingdentalhealth.com/implants-surgery#webpage",
       "url": "https://livingdentalhealth.com/implants-surgery",
+      "inLanguage": "en-US",
       "name": "Implants & Oral Surgery — Living Dental Health, Bend",
       "description":
         "Dental implants, bone and tissue grafting, wisdom teeth, and in-house CBCT 3D imaging in Bend, Oregon with Dr. Andy Engel. Surgical work handled in-house.",
@@ -679,6 +721,7 @@ export const cosmeticDentistryPageSchema: JsonLdGraph = {
       "@type": "MedicalWebPage",
       "@id": "https://livingdentalhealth.com/cosmetic-dentistry#webpage",
       "url": "https://livingdentalhealth.com/cosmetic-dentistry",
+      "inLanguage": "en-US",
       "name": "Cosmetic Dentistry — Living Dental Health, Bend Oregon",
       "description":
         "Teeth whitening, porcelain veneers, ClearCorrect, smile design, and full mouth reconstruction with Dr. Andy Engel in Bend, Oregon. No upsell, ever.",
@@ -836,6 +879,22 @@ export const patientInfoPageSchema: JsonLdGraph = {
       ],
     },
     {
+      "@type": "WebPage",
+      "@id": "https://livingdentalhealth.com/patient-info#webpage",
+      "url": "https://livingdentalhealth.com/patient-info",
+      "name": "New Patients — Living Dental Health, Bend Oregon",
+      "description":
+        "What new patients need to know before a first visit to Living Dental Health, Bend Oregon — scheduling, insurance, financing, and the in-office plan.",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
+      "about": { "@id": "https://livingdentalhealth.com/#business" },
+      "mainEntity": { "@id": "https://livingdentalhealth.com/patient-info#faq" },
+      "breadcrumb": {
+        "@id": "https://livingdentalhealth.com/patient-info#breadcrumbs",
+      },
+      "inLanguage": "en-US",
+      "publisher": { "@id": "https://livingdentalhealth.com/#business" },
+    },
+    {
       "@type": "FAQPage",
       "@id": "https://livingdentalhealth.com/patient-info#faq",
       "mainEntity": [
@@ -912,12 +971,30 @@ export const articlesPageSchema: JsonLdGraph = {
       ],
     },
     {
+      "@type": "CollectionPage",
+      "@id": "https://livingdentalhealth.com/articles#webpage",
+      "url": "https://livingdentalhealth.com/articles",
+      "name": "Articles — Living Dental Health, Bend Oregon",
+      "description":
+        "Practical dental health information from Dr. Andy Engel and the Living Dental Health team in Bend, Oregon.",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
+      "about": { "@id": "https://livingdentalhealth.com/#business" },
+      "mainEntity": { "@id": "https://livingdentalhealth.com/articles#blog" },
+      "breadcrumb": {
+        "@id": "https://livingdentalhealth.com/articles#breadcrumbs",
+      },
+      "inLanguage": "en-US",
+      "publisher": { "@id": "https://livingdentalhealth.com/#business" },
+    },
+    {
       "@type": "Blog",
       "@id": "https://livingdentalhealth.com/articles#blog",
       "name": "Living Dental Health Articles",
       "url": "https://livingdentalhealth.com/articles",
       "description":
         "Practical dental health information from Dr. Andy Engel and the Living Dental Health team in Bend, Oregon.",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
+      "inLanguage": "en-US",
       "publisher": {
         "@id": "https://livingdentalhealth.com/#business",
       },
@@ -971,6 +1048,7 @@ export function articlePostSchema(input: {
         "url": url,
         "image": input.featuredImage,
         "mainEntityOfPage": url,
+        "inLanguage": "en-US",
         "isPartOf": { "@id": "https://livingdentalhealth.com/articles#blog" },
         "author": { "@id": "https://livingdentalhealth.com/#doctor" },
         "publisher": { "@id": "https://livingdentalhealth.com/#business" },
@@ -1007,6 +1085,7 @@ export const fullMouthReconstructionPageSchema: JsonLdGraph = {
       "@id":
         "https://livingdentalhealth.com/full-mouth-reconstruction#webpage",
       "url": "https://livingdentalhealth.com/full-mouth-reconstruction",
+      "inLanguage": "en-US",
       "name": "Full Mouth Reconstruction — Living Dental Health, Bend",
       "description":
         "Full mouth reconstruction in Bend, Oregon with Dr. Andy Engel. Over 1,000 CE hours and precision planning that protects your bite, jaw, and oral health.",
@@ -1100,6 +1179,7 @@ export const sedationDentistryPageSchema: JsonLdGraph = {
       "@type": "MedicalWebPage",
       "@id": "https://livingdentalhealth.com/sedation-dentistry#webpage",
       "url": "https://livingdentalhealth.com/sedation-dentistry",
+      "inLanguage": "en-US",
       "name": "Sedation Dentistry — Living Dental Health, Bend Oregon",
       "description":
         "Mild oral Halcion sedation for anxious patients and oral surgery in Bend, Oregon. Calm pace, gentle approach, out of your system in about 24 hours.",
@@ -1196,6 +1276,7 @@ export const oralCancerScreeningPageSchema: JsonLdGraph = {
       "@type": "MedicalWebPage",
       "@id": "https://livingdentalhealth.com/oral-cancer-screening#webpage",
       "url": "https://livingdentalhealth.com/oral-cancer-screening",
+      "inLanguage": "en-US",
       "name": "Oral Cancer Screening — Living Dental Health, Bend Oregon",
       "description":
         "Routine oral cancer screening at every cleaning at Living Dental Health, Bend Oregon. Painless, one minute, and dramatically improves early outcomes.",
@@ -1308,6 +1389,10 @@ export const aboutPageSchema: JsonLdGraph = {
       "mainEntity": {
         "@id": "https://livingdentalhealth.com/#doctor",
       },
+      "breadcrumb": {
+        "@id": "https://livingdentalhealth.com/about#breadcrumbs",
+      },
+      "inLanguage": "en-US",
       "publisher": {
         "@id": "https://livingdentalhealth.com/#business",
       },
@@ -1347,6 +1432,9 @@ export const teamPageSchema: JsonLdGraph = {
         "Meet Dr. Andy Engel and the Living Dental Health team in Bend, Oregon — hygienists, dental assistant, office manager, and operations.",
       "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
       "about": { "@id": "https://livingdentalhealth.com/#business" },
+      "mainEntity": { "@id": "https://livingdentalhealth.com/#business" },
+      "breadcrumb": { "@id": "https://livingdentalhealth.com/team#breadcrumbs" },
+      "inLanguage": "en-US",
       "publisher": {
         "@id": "https://livingdentalhealth.com/#business",
       },
@@ -1429,6 +1517,12 @@ export const postOpPageSchema: JsonLdGraph = {
       "isPartOf": {
         "@id": "https://livingdentalhealth.com/#website",
       },
+      "about": { "@id": "https://livingdentalhealth.com/#business" },
+      "mainEntity": { "@id": "https://livingdentalhealth.com/#business" },
+      "breadcrumb": {
+        "@id": "https://livingdentalhealth.com/patient-info/post-op#breadcrumbs",
+      },
+      "inLanguage": "en-US",
       "publisher": {
         "@id": "https://livingdentalhealth.com/#business",
       },
@@ -1468,7 +1562,12 @@ export const beforeAndAfterPageSchema: JsonLdGraph = {
         "Real before-and-after dental cases from Dr. Andy Engel at Living Dental Health in Bend, Oregon — porcelain veneers, crowns, and full mouth reconstruction, planned and finished in-house.",
       "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
       "about": { "@id": "https://livingdentalhealth.com/#business" },
+      "mainEntity": { "@id": "https://livingdentalhealth.com/#business" },
       "creator": { "@id": "https://livingdentalhealth.com/#doctor" },
+      "breadcrumb": {
+        "@id": "https://livingdentalhealth.com/before-and-after#breadcrumbs",
+      },
+      "inLanguage": "en-US",
       "publisher": {
         "@id": "https://livingdentalhealth.com/#business",
       },
@@ -1564,6 +1663,46 @@ export const beforeAndAfterPageSchema: JsonLdGraph = {
         "@id":
           "https://livingdentalhealth.com/before-and-after#collectionpage",
       },
+    },
+  ],
+};
+
+export const privacyPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://livingdentalhealth.com/privacy#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Privacy Policy",
+          "item": "https://livingdentalhealth.com/privacy",
+        },
+      ],
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://livingdentalhealth.com/privacy#webpage",
+      "url": "https://livingdentalhealth.com/privacy",
+      "name": "Privacy Policy — Living Dental Health, Bend Oregon",
+      "description":
+        "How Living Dental Health collects, uses, and protects patient information.",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
+      "about": { "@id": "https://livingdentalhealth.com/#business" },
+      "mainEntity": { "@id": "https://livingdentalhealth.com/#business" },
+      "breadcrumb": {
+        "@id": "https://livingdentalhealth.com/privacy#breadcrumbs",
+      },
+      "inLanguage": "en-US",
+      "publisher": { "@id": "https://livingdentalhealth.com/#business" },
     },
   ],
 };

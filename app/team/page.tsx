@@ -8,6 +8,7 @@ const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/team" },
   title: "Meet the Team — Living Dental Health, Bend Oregon",
   description:
     "Meet Dr. Andy Engel and the Living Dental Health team in Bend, Oregon. 28 years of personalized care from a team that knows every patient by name.",

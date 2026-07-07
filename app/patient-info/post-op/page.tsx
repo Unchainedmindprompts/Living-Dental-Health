@@ -9,6 +9,7 @@ const WARN = "#B5654A";
 const RULE = "rgba(28,26,23,0.18)";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/patient-info/post-op" },
   title: "Post-Op Instructions — Living Dental Health, Bend Oregon",
   description:
     "Recovery instructions after extractions, implants, and tissue or bone graft surgery at Living Dental Health, Bend Oregon. Questions? Call (541) 550-5311.",

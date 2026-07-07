@@ -11,6 +11,7 @@ const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/full-mouth-reconstruction" },
   title: "Full Mouth Reconstruction — Living Dental Health, Bend",
   description:
     "Full mouth reconstruction in Bend, Oregon with Dr. Andy Engel. Over 1,000 CE hours and precision planning that protects your bite, jaw, and oral health.",
