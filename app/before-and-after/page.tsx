@@ -11,6 +11,7 @@ const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/before-and-after" },
   title: "The Work — Before & After Cases | Living Dental Health, Bend Oregon",
   description:
     "Real before-and-after dental work from Dr. Andy Engel at Living Dental Health in Bend, Oregon. Cosmetic dentistry, smile design, and full mouth reconstruction cases — planned and finished in-house.",

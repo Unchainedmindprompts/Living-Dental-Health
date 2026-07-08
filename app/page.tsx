@@ -3,7 +3,12 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import ServiceCard from "@/components/ServiceCard";
 import { formatDate, getAllArticles } from "@/lib/articles";
+import type { Metadata } from "next";
 import { homeSchema, sanitizeJsonLd } from "@/lib/schema";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 const SAGE = "#6B7C5C";
 

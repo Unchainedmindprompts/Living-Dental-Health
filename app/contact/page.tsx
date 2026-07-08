@@ -10,6 +10,7 @@ const SOFT = "rgba(245,240,232,0.85)";
 const RULE = "rgba(245,240,232,0.18)";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/contact" },
   title: "Contact — Living Dental Health",
   description:
     "Phone, email, address, and hours for Living Dental Health in Bend, Oregon — plus a quick form to get in touch.",

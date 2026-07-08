@@ -8,6 +8,7 @@ const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/implants-surgery" },
   title: "Implants & Oral Surgery — Living Dental Health, Bend",
   description:
     "Dental implants, bone and tissue grafting, wisdom teeth, and in-house CBCT 3D imaging in Bend, Oregon with Dr. Andy Engel. Surgical work handled in-house.",

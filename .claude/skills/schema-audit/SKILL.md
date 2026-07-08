@@ -14,7 +14,7 @@ description: |
 # Schema Audit
 
 Run this audit any time a page in `/app/**/page.tsx` changes. The goal is to
-guarantee three things are true at all times:
+guarantee four things are true at all times:
 
 1. **Schema-visible word-for-word alignment** on user-visible content where
    schema mirrors the page (FAQs, Reviews, page name/headline, descriptions).
@@ -22,6 +22,9 @@ guarantee three things are true at all times:
    (founding years, tenure, credentials, team members, awards).
 3. **Entity graph integrity** — every `@id` resolves, prominent people/places
    are present in the page's `@graph`, and cross-page references stay valid.
+4. **Correct entity typing** — every node's `@type` describes what the entity
+   *is*, not what it does. An individual human is always `@type: Person`;
+   the practice is the `Dentist`/`LocalBusiness`. See Check 8.
 
 ## Procedure
 
@@ -59,7 +62,7 @@ Open the matching export. Identify which graph nodes touch the content you
 changed (BreadcrumbList, WebPage/AboutPage/MedicalWebPage, FAQPage, Review,
 Person, MedicalProcedure, etc.).
 
-### Step 3 — Run the seven checks
+### Step 3 — Run the eight checks
 
 For each modified page, walk this checklist. Anything that fails MUST be
 fixed before committing.
@@ -113,6 +116,36 @@ If a hero image has baked-in text, the `alt` attribute must include that
 text (WCAG requirement for images-of-text). After swapping a hero image,
 re-read the alt to confirm.
 
+**Check 8 — Person vs. business type (the entity is what it *is*)**
+Every node's `@type` must describe what the entity *is*, not what it does.
+The most dangerous failure on a professional-practice site is typing the
+**individual human** with the **business** type that describes the practice.
+
+In schema.org, `Dentist` is a subtype of `LocalBusiness` / `MedicalBusiness`
+— it models the *office*, not the person. The same trap exists for every
+professional practice: `RealEstateAgent`, `Physician`, `Attorney`,
+`Accountant`, `Optometrian`, etc. are all business/organization types.
+
+- The **practice** node (`#business`) → the business type
+  (`Dentist`, `LocalBusiness`, `MedicalBusiness`).
+- The **individual human** node (`#doctor`, `#owner`, `#agent`, …) →
+  **always `@type: Person`**. Express their profession with `jobTitle`
+  (e.g. `"Dentist"`) and/or `hasOccupation` (an `Occupation` node) — never
+  by stamping the person with the `LocalBusiness` subtype.
+- Do **not** put business/physician-only properties on a `Person` node.
+  `medicalSpecialty`, `openingHoursSpecification`, `priceRange`,
+  `aggregateRating`, `areaServed`, `address`(as a business location) belong
+  on the practice node. If you need to convey a person's clinical focus,
+  use `knowsAbout` on the Person and `medicalSpecialty` on the practice.
+
+Why this is its own check: the `@id` is unique and resolves fine, so the
+duplicate-`@id` sweep and the dangling-reference check both pass. The node
+is simply the **wrong kind of thing** — a defect only a type-level read
+catches. A dentist's own site telling Google the dentist is a medical
+*building* is exactly the kind of error that quietly tanks a knowledge
+panel. Confirm in the **built** HTML, not just source: `#doctor` must
+render `@type: Person`, and only `#business` may carry `@type: Dentist`.
+
 ### Step 4 — Run the build
 
 ```
@@ -134,6 +167,55 @@ In the chat reply, list:
 If no drift was found, say so explicitly — silence is not the same as
 confirmation.
 
+## Automated enforcement (schema-guard)
+
+A subset of these checks is enforced automatically by
+`scripts/schema-guard.mjs`, so drift cannot reach production:
+
+- **What it checks:** duplicate `@id` definitions, dangling `@id`
+  references, person-vs-business typing (`#doctor` must be `Person`;
+  business types only on `#business`), and www host leaks on the
+  canonical surfaces (`lib/`, `app/`, `public/agent.json`,
+  `public/llms.txt`). Article `wp-content` images in `content/**.md`
+  are intentionally out of scope (pending asset localization).
+- **When it runs:** `prebuild` (before every `next build`, so CI/Vercel
+  fails on drift), a Husky `pre-commit` hook (before every commit), and
+  it reinstalls on a fresh clone via `prepare: husky`.
+- **Run it by hand:** `npm run schema-guard`.
+
+The guard is the mechanical backstop; it does NOT replace this skill.
+The schema-visible alignment checks (FAQ/Review word-for-word, factual
+consistency, alt text, name/description) still require the human read
+described above — run this audit on every page change regardless.
+
+## Accepted exceptions (do NOT flag these as drift)
+
+**Two `#business` nodes in the home page's rendered HTML.**
+Every page emits a NAP-only `#business` stub via `app/layout.tsx`
+(`napStubSchema` → `businessNapStub`). The home page *additionally*
+emits the full `#business` node via `homeSchema` (`businessFull`, which
+is `{ ...businessNapStub, ...businessEnrichment }`). So the home page's
+combined JSON-LD contains **two nodes sharing `@id`
+`https://livingdentalhealth.com/#business`**.
+
+This is intentional and correct, not a duplicate-definition bug:
+
+- Per JSON-LD / schema.org semantics, nodes with the same `@id` are
+  merged into one logical entity by consumers, so the graph still
+  describes a single business.
+- The split exists on purpose: the NAP stub is a real local signal on
+  *every* page, while `aggregateRating`, `sameAs`, `award`, and the
+  other enrichment live in exactly one place (home) so they are never
+  duplicated across the site.
+- At the **source** level there is still only one literal `@id: #business`
+  (in `businessNapStub`); `businessFull` inherits it via spread. The
+  `@id` sweep is source-level and correctly reports 0 duplicate
+  definitions.
+
+Do not "fix" this by removing the stub from the home page or by giving
+the two nodes different `@id`s. If you are inspecting *rendered* home
+HTML and see two `#business` nodes, that is expected.
+
 ## Things to never do
 
 - Never push a page edit without running this audit
@@ -145,3 +227,7 @@ confirmation.
   years old — LDH = 2013)
 - Never swap a shared image file (e.g., `/public/cosmetic-hero.webp`)
   without first grepping for every page that references it
+- Never type an individual human with a business type. Dr. Engel is a
+  `Person` with `jobTitle`/`hasOccupation` "Dentist" — he is NOT
+  `@type: Dentist` (that type is the *practice*). Same trap for any
+  `RealEstateAgent`, `Physician`, `Attorney`, etc. (see Check 8)

@@ -34,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ["/patient-info/post-op", 0.4, "yearly"],
     ["/contact", 0.6, "yearly"],
     ["/articles", 0.6, "weekly"],
+    ["/privacy", 0.3, "yearly"],
   ];
 
   const staticEntries: Entry[] = staticRoutes.map(

@@ -11,6 +11,7 @@ const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/sedation-dentistry" },
   title:
     "Sedation Dentistry — Living Dental Health, Bend Oregon",
   description:

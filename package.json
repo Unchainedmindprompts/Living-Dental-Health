@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "schema-guard": "node scripts/schema-guard.mjs",
+    "prebuild": "node scripts/schema-guard.mjs",
+    "prepare": "husky"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
@@ -21,6 +24,7 @@
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
     "autoprefixer": "10.4.19",
+    "husky": "^9.1.7",
     "postcss": "8.4.39",
     "tailwindcss": "3.4.7",
     "typescript": "5.5.3"
