@@ -94,6 +94,10 @@ export default function HomePage() {
           <p className="font-serif-italic text-[13px] text-warm-gray sm:text-[15px]">
             — a private dental studio —
           </p>
+          <p className="eyebrow mt-5 flex items-center justify-center gap-2">
+            <LeafToothMark size={14} />
+            Now Welcoming New Patients
+          </p>
           <div className="mt-4 flex items-center justify-center gap-2 sm:gap-3">
             <LeafToothMark />
             <h1 className="font-serif text-[32px] leading-none text-charcoal sm:text-[44px] lg:text-[56px]">
@@ -564,11 +568,17 @@ function FooterCol({
   );
 }
 
-function LeafToothMark({ color = "var(--sage)" }: { color?: string }) {
+function LeafToothMark({
+  color = "var(--sage)",
+  size = 22,
+}: {
+  color?: string;
+  size?: number;
+}) {
   return (
     <svg
-      width="22"
-      height="22"
+      width={size}
+      height={size}
       viewBox="0 0 22 22"
       fill="none"
       aria-hidden
