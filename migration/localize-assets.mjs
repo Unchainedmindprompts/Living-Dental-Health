@@ -16,7 +16,8 @@
 //      OFFICE_URL below (grab them from the old site's header + an
 //      office/exterior photo).
 //   3. Downloads the Consent/HIPAA PDF → public/documents/.
-//   4. Reports counts, a "could not download" list, and leaves a grep for you.
+//   4. Reports four numbers every run: (1) unique files, (2) total references,
+//      (3) failed downloads, (4) external WordPress URLs still remaining.
 
 import fs from "node:fs";
 import path from "node:path";
@@ -76,12 +77,18 @@ const mdFiles = fs
   .map((f) => path.join(ARTICLES_DIR, f));
 
 const urlSet = new Set();
+let totalRefs = 0;
 for (const file of mdFiles) {
   const text = fs.readFileSync(file, "utf8");
-  for (const m of text.matchAll(WP_RE)) urlSet.add(m[0]);
+  for (const m of text.matchAll(WP_RE)) {
+    urlSet.add(m[0]);
+    totalRefs += 1;
+  }
 }
 const urls = [...urlSet];
-console.log(`Found ${urls.length} distinct wp-content asset URLs across ${mdFiles.length} articles.`);
+console.log(
+  `Found ${urls.length} distinct wp-content files (${totalRefs} total references) across ${mdFiles.length} articles.`
+);
 
 // 2) Download each → public/images/articles/<path-after-wp-content>; record the rewrite.
 const rewriteMap = new Map(); // oldUrl -> "/images/articles/<path>"
@@ -130,20 +137,57 @@ for (const b of BRAND) {
   console.log(size != null ? `pdf   ✓ ${PDF.dest}` : `pdf   ✗ ${PDF.dest}`);
 }
 
-// 5) Report.
-console.log("\n──────── REPORT ────────");
-console.log(`article files downloaded: ${downloaded}/${urls.length}`);
+// 5) Auto-count wp-content/www URLs still present in TEXT sources after rewrite
+//    (content/, lib/, app/, docs/ — never public/ binaries or the manifests).
+function countRemainingExternal() {
+  const EXT_RE = /https?:\/\/(?:www\.)?livingdentalhealth\.com\/wp-content\/[^\s"')]+/gi;
+  const SKIP_DIRS = new Set(["node_modules", ".next", ".git", "public", "migration"]);
+  const hits = [];
+  let n = 0;
+  (function walk(dir) {
+    for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+      if (SKIP_DIRS.has(e.name)) continue;
+      const p = path.join(dir, e.name);
+      if (e.isDirectory()) walk(p);
+      else if (/\.(md|ts|tsx|json|txt)$/.test(e.name)) {
+        const m = fs.readFileSync(p, "utf8").match(EXT_RE);
+        if (m) {
+          n += m.length;
+          hits.push(`${path.relative(ROOT, p)}: ${m.length}`);
+        }
+      }
+    }
+  })(ROOT);
+  return { n, hits };
+}
+const remaining = countRemainingExternal();
+const brandOk = BRAND.filter((b) => b.url && fs.existsSync(path.join(PUBLIC, b.dest))).length;
+const pdfOk = fs.existsSync(path.join(PUBLIC, PDF.dest)) ? 1 : 0;
+
+// 6) Report — the four numbers, every run.
+console.log("\n──────── LOCALIZATION REPORT ────────");
+console.log(`1. Unique files needed .......... ${urls.length} wp-content + 3 brand + 1 PDF = ${urls.length + 4}`);
+console.log(`2. Total references ............. ${totalRefs} article wp-content + 3 brand + 1 PDF = ${totalRefs + 4}`);
+console.log(`3. Failed downloads ............. ${failed.length}`);
+console.log(`4. Remaining external WP URLs ... ${remaining.n}  (target: 0)`);
+console.log("");
+console.log(`   downloaded: ${downloaded}/${urls.length} article files · brand ${brandOk}/3 · pdf ${pdfOk}/1`);
 if (failed.length) {
-  console.log(`\nCOULD NOT DOWNLOAD (${failed.length}):`);
-  for (const f of failed) console.log("  - " + f);
+  console.log(`\n   COULD NOT DOWNLOAD (${failed.length}) — these stay as external URLs:`);
+  for (const f of failed) console.log("     - " + f);
+}
+if (remaining.n) {
+  console.log(`\n   STILL EXTERNAL after rewrite (fix before launch):`);
+  for (const h of remaining.hits) console.log("     - " + h);
 } else {
-  console.log("could not download: none");
+  console.log("\n   ✓ no wp-content/www URLs remain in content/, lib/, app/, docs/.");
 }
 console.log(
-  "\nNow verify (expect 0):\n  grep -rn 'livingdentalhealth.com/wp-content' content/ public/ | grep -v public/images\n" +
-    "  npm run build && grep -rn 'livingdentalhealth.com/wp-content' .next || echo 'build clean'\n"
+  "\n   Final verification:\n" +
+    "     npm run build   (prebuild schema-guard fails on any www leak)\n" +
+    "     grep -rn 'livingdentalhealth.com/wp-content' .next || echo 'built HTML clean'\n"
 );
 console.log(
-  "NOTE: any .heic file won't render in most browsers — convert to .jpg\n" +
-    "  (e.g. `magick file.heic file.jpg`) and update its reference.\n"
+  "   NOTE: IMG_1739.heic won't render in browsers — convert to .jpg\n" +
+    "     (`magick file.heic file.jpg`) and update its reference.\n"
 );
