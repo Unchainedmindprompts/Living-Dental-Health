@@ -4,7 +4,7 @@ slug: "whats-all-the-fuss-about-nightguards-and-do-they-really-work"
 datePublished: "2024-09-01T05:31:21"
 dateModified: "2024-08-28T07:42:45"
 excerpt: "If you’ve ever experienced jaw pain or chronic headaches, or your dentist informed you that your teeth were being worn down because of grinding, you may have been advised to consider using a nightguard. But what is all the fuss about nightguards, and do they actually help stop tooth destruction? I spoke with Dr. Andy"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2024/08/nightguards-for-bruxism-in-bend-or.jpg"
+featuredImage: "/images/articles/uploads/2024/08/nightguards-for-bruxism-in-bend-or.jpg"
 status: "migrated-as-is"
 ---
 If you’ve ever experienced jaw pain or chronic headaches, or your dentist informed you that your teeth were being worn down because of grinding, you may have been advised to consider using a nightguard. But what is all the fuss about nightguards, and do they actually help stop tooth destruction? 

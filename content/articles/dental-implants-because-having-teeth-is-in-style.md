@@ -4,7 +4,7 @@ slug: "dental-implants-because-having-teeth-is-in-style"
 datePublished: "2023-08-01T03:00:00"
 dateModified: "2023-07-19T16:50:36"
 excerpt: "I remember going into my grandparent’s bathroom as a child and seeing their dentures soaking at night. Dentures were the norm until advancements in dentistry proved there was a longer-lasting and functional treatment available for missing teeth – dental implants. What is a Dental Implant? The majority of dental implants are made of medical-grade titanium."
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2021/10/home-surgery.jpg"
+featuredImage: "/images/articles/uploads/2021/10/home-surgery.jpg"
 status: "migrated-as-is"
 ---
 I remember going into my grandparent’s bathroom as a child and seeing their dentures soaking at night. Dentures were the norm until advancements in dentistry proved there was a longer-lasting and functional treatment available for missing teeth – dental implants. 

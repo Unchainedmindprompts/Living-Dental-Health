@@ -4,7 +4,7 @@ slug: "meet-your-new-dentist"
 datePublished: "2021-03-31T15:55:29"
 dateModified: "2021-10-22T02:19:51"
 excerpt: "Introducing Dr. Andy Engel of Living Dental Health When you first meet Dr. Andy Engel of Living Dental Health, you are entranced by his calm demeanor and genuine interest in listening and truly hearing what you have to say. He is a dentist, right? There are plenty of jokes about dentists who like to ask"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2021/08/Andrew-W.-Engel-DMD-horiz-web2.jpg"
+featuredImage: "/images/articles/uploads/2021/08/Andrew-W.-Engel-DMD-horiz-web2.jpg"
 status: "migrated-as-is"
 ---
 #### **_Introducing Dr. Andy Engel of Living Dental Health_**

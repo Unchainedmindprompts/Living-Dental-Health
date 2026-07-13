@@ -4,7 +4,7 @@ slug: "why-you-should-care-about-gum-disease"
 datePublished: "2021-07-26T16:22:19"
 dateModified: "2021-10-22T02:21:03"
 excerpt: "The importance of brushing your teeth twice a day is widely known and hard to debate. Even super busy and lackadaisical personalities eventually succumb to the calling of their lonely toothbrush. But flossing is thought by many to be something extra – and according to the ADA, around 55% of adults say that time is"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2021/08/gum-disease.jpg"
+featuredImage: "/images/articles/uploads/2021/08/gum-disease.jpg"
 status: "migrated-as-is"
 ---
 The importance of brushing your teeth twice a day is widely known and hard to debate. Even super busy and lackadaisical personalities eventually succumb to the calling of their lonely toothbrush. But flossing is thought by many to be something extra – and according to the ADA, around 55% of adults say that time is why they don’t do it. Only around ⅓ of Americans age 30 and older admit to flossing their teeth regularly. 

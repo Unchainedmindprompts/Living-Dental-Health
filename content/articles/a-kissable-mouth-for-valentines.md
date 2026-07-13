@@ -4,10 +4,10 @@ slug: "a-kissable-mouth-for-valentines"
 datePublished: "2021-11-01T19:35:58"
 dateModified: "2022-01-10T20:40:17"
 excerpt: "Tips for Having the Most Kissable Mouth This Valentine’s Day and Beyond February is affectionately (or not depending on your current relationship status) known as the month of love. It is also heart health month (go figure). So we wanted to provide some tips you could benefit from because who doesn’t love a good kiss?"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2021/10/smile-design-header.jpg"
+featuredImage: "/images/articles/uploads/2021/10/smile-design-header.jpg"
 status: "migrated-as-is"
 ---
-![](http://www.livingdentalhealth.com/wp-content/uploads/2021/10/smile-design-header.jpg "smile-design-header")
+![](/images/articles/uploads/2021/10/smile-design-header.jpg "smile-design-header")
 
 # Tips for Having the Most Kissable Mouth This Valentine’s Day and Beyond
 

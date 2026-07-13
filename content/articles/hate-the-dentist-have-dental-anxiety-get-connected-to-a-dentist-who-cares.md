@@ -4,7 +4,7 @@ slug: "hate-the-dentist-have-dental-anxiety-get-connected-to-a-dentist-who-cares
 datePublished: "2024-08-01T05:00:23"
 dateModified: "2024-07-26T13:20:59"
 excerpt: "If you were to rank the health care providers you had to see from the most enjoyable to the least enjoyable, visiting the dentist would likely be at the low end of the scale—hovering near the gynecologist. For many people, visiting the dentist isn’t a big deal. You go in, get a cleaning (hey, let’s"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2024/07/dental-anxiety.jpg"
+featuredImage: "/images/articles/uploads/2024/07/dental-anxiety.jpg"
 status: "migrated-as-is"
 ---
 If you were to rank the health care providers you had to see from the most enjoyable to the least enjoyable, visiting the dentist would likely be at the low end of the scale—hovering near the gynecologist. 

@@ -4,7 +4,7 @@ slug: "your-gut-health-could-be-ruining-your-teeth"
 datePublished: "2023-12-01T04:33:52"
 dateModified: "2023-11-30T11:11:15"
 excerpt: "Gut health is directly linked to overall health. People with a healthy gut tend to be sick less frequently than those with GI (gastrointestinal) issues. This is because most cells that make up the immune system are located in the gut. But gut health is also linked to oral health. If you are prone to"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2023/11/gut-health-and-teeth.jpg"
+featuredImage: "/images/articles/uploads/2023/11/gut-health-and-teeth.jpg"
 status: "migrated-as-is"
 ---
 Gut health is directly linked to overall health. People with a healthy gut tend to be sick less frequently than those with GI (gastrointestinal) issues. This is because most cells that make up the immune system are located in the gut. But gut health is also linked to oral health. If you are prone to stomach issues such as acid reflux, small intestine bacterial overgrowth (SIBO), heartburn, bloating, and gas, or if you’ve been diagnosed with leaky gut syndrome, your posterior (back) teeth may be eroding to the point that they have to be removed. We aren’t being dramatic by this statement. It is a growing problem raising more than a few eyebrows. Read on for the dirt. 

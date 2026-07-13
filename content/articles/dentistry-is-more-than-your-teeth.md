@@ -4,10 +4,10 @@ slug: "dentistry-is-more-than-your-teeth"
 datePublished: "2022-04-02T21:52:46"
 dateModified: "2022-05-06T21:56:55"
 excerpt: "Dentistry is More Than Your Teeth Sara knew something was wrong. The pain in her mouth wasn’t improving, and after a year of hoping it would get better, she knew it was well past time for help. She decided to see Dr. Andy Engel of Living Dental Health. Through his exam, Dr. Andy discovered that"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2022/05/Dentist-helping-patient.jpeg"
+featuredImage: "/images/articles/uploads/2022/05/Dentist-helping-patient.jpeg"
 status: "migrated-as-is"
 ---
-![Dentist helping patient](http://www.livingdentalhealth.com/wp-content/uploads/2022/05/Dentist-helping-patient.jpeg "Dentist helping patient")
+![Dentist helping patient](/images/articles/uploads/2022/05/Dentist-helping-patient.jpeg "Dentist helping patient")
 
 # Dentistry is More Than Your Teeth
 

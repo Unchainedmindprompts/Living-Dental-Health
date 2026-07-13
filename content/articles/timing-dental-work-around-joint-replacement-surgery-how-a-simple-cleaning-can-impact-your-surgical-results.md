@@ -4,7 +4,7 @@ slug: "timing-dental-work-around-joint-replacement-surgery-how-a-simple-cleaning
 datePublished: "2024-11-01T05:00:04"
 dateModified: "2024-10-28T20:40:36"
 excerpt: "Bend is home to some of the most active people in the world. Active communities typically have higher rates of total joint replacement surgeries, which is certainly true in our little corner of the world. Most people are surprised to learn that major surgeries like hip and knee replacements have specific rules and timings for"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2024/10/total-joint-replacement-surgery-and-dentistry.jpg"
+featuredImage: "/images/articles/uploads/2024/10/total-joint-replacement-surgery-and-dentistry.jpg"
 status: "migrated-as-is"
 ---
 Bend is home to some of the most active people in the world. Active communities typically have higher rates of total joint replacement surgeries, which is certainly true in our little corner of the world. Most people are surprised to learn that major surgeries like hip and knee replacements have specific rules and timings for dental treatments and even cleanings. In this month’s blog, we sat down with dental hygienist Nicole Tarpey to learn more about the connection between joint replacement surgery and dental care.

@@ -4,7 +4,7 @@ slug: "choosing-a-new-dentist-doesnt-have-to-be-a-chore-learn-what-to-look-for"
 datePublished: "2023-06-02T17:40:17"
 dateModified: "2023-06-02T17:40:17"
 excerpt: "Moving to a new city is fun and exciting. But it can also be overwhelming, especially when you’ve got to find new healthcare providers. The pandemic created workforce shortages that are felt all across the U.S., including Bend. Long wait times to establish care with a dentist can create issues, especially when you’re struggling with"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2023/06/how-to-find-a-new-dentist-in-bend-oregon.jpg"
+featuredImage: "/images/articles/uploads/2023/06/how-to-find-a-new-dentist-in-bend-oregon.jpg"
 status: "migrated-as-is"
 ---
 Moving to a new city is fun and exciting. But it can also be overwhelming, especially when you’ve got to find new healthcare providers. The pandemic created workforce shortages that are felt all across the U.S., including Bend. Long wait times to establish care with a dentist can create issues, especially when you’re struggling with a dental emergency. 

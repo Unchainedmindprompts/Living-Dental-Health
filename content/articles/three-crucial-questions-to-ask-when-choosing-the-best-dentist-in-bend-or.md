@@ -4,7 +4,7 @@ slug: "three-crucial-questions-to-ask-when-choosing-the-best-dentist-in-bend-or"
 datePublished: "2025-02-01T05:00:22"
 dateModified: "2025-01-29T10:07:45"
 excerpt: "Having choices is a beautiful thing. Can you imagine if everyone in town wore the same clothes or drove the same car – or – gulp – didn’t have a choice in where to go for their healthcare? While we may not have multiple options for hospitals or cancer centers, we do have a lot"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2021/08/HOME_ORALSURGERY-web-750x500-1.jpg"
+featuredImage: "/images/articles/uploads/2021/08/HOME_ORALSURGERY-web-750x500-1.jpg"
 status: "migrated-as-is"
 ---
 Having choices is a beautiful thing. Can you imagine if everyone in town wore the same clothes or drove the same car – or – gulp – didn’t have a choice in where to go for their healthcare? While we may not have multiple options for hospitals or cancer centers, we do have a lot of dentists, which means YOU have the power to choose the best dentist for you. 

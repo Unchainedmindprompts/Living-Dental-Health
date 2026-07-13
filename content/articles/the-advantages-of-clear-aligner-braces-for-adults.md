@@ -4,7 +4,7 @@ slug: "the-advantages-of-clear-aligner-braces-for-adults"
 datePublished: "2024-05-03T15:30:39"
 dateModified: "2024-05-03T15:30:39"
 excerpt: "For many, the thought of wearing braces as an adult is a complete and utter no-way! Braces are a right of passage for kids, but most adults outgrow the patience and willingness to undergo uncomfortable tooth movement. Do you want to be a brace face in your 40s or 50s? Not likely. Whether you’ve already"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2021/10/clear-correct-2a.jpg"
+featuredImage: "/images/articles/uploads/2021/10/clear-correct-2a.jpg"
 status: "migrated-as-is"
 ---
 For many, the thought of wearing braces as an adult is a complete and utter no-way! Braces are a right of passage for kids, but most adults outgrow the patience and willingness to undergo uncomfortable tooth movement. Do you want to be a brace face in your 40s or 50s? Not likely. 

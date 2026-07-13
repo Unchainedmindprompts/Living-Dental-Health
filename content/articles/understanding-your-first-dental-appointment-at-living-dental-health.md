@@ -4,7 +4,7 @@ slug: "understanding-your-first-dental-appointment-at-living-dental-health"
 datePublished: "2025-08-01T05:00:36"
 dateModified: "2025-07-31T17:10:10"
 excerpt: "For over 25 years, we’ve proudly served the Bend community, helping them achieve bright, healthy smiles. If you are new to our practice or are considering becoming a patient, you likely have questions. In this blog, we will address the most frequently asked questions from new patients. What Happens During the Initial Comprehensive Dental Exam?"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2025/07/LDH-Blog-Images.jpg"
+featuredImage: "/images/articles/uploads/2025/07/LDH-Blog-Images.jpg"
 status: "migrated-as-is"
 ---
 For over 25 years, we’ve proudly served the Bend community, helping them achieve bright, healthy smiles. If you are new to our practice or are considering becoming a patient, you likely have questions. In this blog, we will address the most frequently asked questions from new patients. 

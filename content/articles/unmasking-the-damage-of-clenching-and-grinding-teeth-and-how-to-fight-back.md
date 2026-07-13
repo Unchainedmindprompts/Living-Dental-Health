@@ -4,7 +4,7 @@ slug: "unmasking-the-damage-of-clenching-and-grinding-teeth-and-how-to-fight-bac
 datePublished: "2025-07-01T05:44:41"
 dateModified: "2025-06-30T15:03:12"
 excerpt: "Have you ever woken up with a headache you can’t quite explain? Or notice a persistent soreness in your jaw or neck? You might be unknowingly engaging in a nocturnal battle with your teeth – the insidious habits of clenching and grinding. At Living Dental Health, we recently had an enlightening chat with our fantastic"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2025/06/LDH-Blog-Images.jpg"
+featuredImage: "/images/articles/uploads/2025/06/LDH-Blog-Images.jpg"
 status: "migrated-as-is"
 ---
 Have you ever woken up with a [headache](/full-mouth-reconstruction) you can’t quite explain? Or notice a persistent soreness in your jaw or neck? You might be unknowingly engaging in a nocturnal battle with your teeth – the insidious habits of clenching and grinding. At [Living Dental Health](/), we recently had an enlightening chat with our fantastic dental assistant, Christy Spencer, who shed some serious light on this pervasive problem and, more importantly, how to protect your pearly whites from the havoc that can come from clenching and grinding teeth.

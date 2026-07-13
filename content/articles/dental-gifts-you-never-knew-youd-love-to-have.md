@@ -4,10 +4,10 @@ slug: "dental-gifts-you-never-knew-youd-love-to-have"
 datePublished: "2021-10-20T19:25:21"
 dateModified: "2022-01-10T20:37:57"
 excerpt: "Dental Gifts You Never Knew You’d Love to Have Yes! We have almost made it through another year. And as we pat ourselves on the back for a pandemic year survived (kind of), we gulp in earnest and realize that the start of December also means we are in the throes of the gift-giving season."
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2021/10/FAMILYDENTISTRY.jpg"
+featuredImage: "/images/articles/uploads/2021/10/FAMILYDENTISTRY.jpg"
 status: "migrated-as-is"
 ---
-![](http://www.livingdentalhealth.com/wp-content/uploads/2021/09/iStock-1139907631.jpg "Brushing my teeth")
+![](/images/articles/uploads/2021/09/iStock-1139907631.jpg "Brushing my teeth")
 
 # Dental Gifts You Never Knew You’d Love to Have
 

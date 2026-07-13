@@ -4,10 +4,10 @@ slug: "common-myths-surrounding-food-and-oral-health"
 datePublished: "2022-03-03T21:46:04"
 dateModified: "2022-05-06T21:47:16"
 excerpt: "Common Myths Surrounding Food and Oral Health An unknown author once said, “You don’t have to brush all your teeth, just the ones you want to keep.” This person was on to something. Yes, keeping your teeth is important because, well, a person’s smile is the first thing people notice, and most of us want"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2022/05/Dentist-checking-teeth.jpeg"
+featuredImage: "/images/articles/uploads/2022/05/Dentist-checking-teeth.jpeg"
 status: "migrated-as-is"
 ---
-![Dentist checking teeth](http://www.livingdentalhealth.com/wp-content/uploads/2022/05/Dentist-checking-teeth.jpeg "Dentist checking teeth")
+![Dentist checking teeth](/images/articles/uploads/2022/05/Dentist-checking-teeth.jpeg "Dentist checking teeth")
 
 # Common Myths Surrounding Food and Oral Health
 

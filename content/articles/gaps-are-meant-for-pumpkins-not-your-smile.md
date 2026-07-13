@@ -4,7 +4,7 @@ slug: "gaps-are-meant-for-pumpkins-not-your-smile"
 datePublished: "2023-10-01T04:00:03"
 dateModified: "2023-09-27T16:40:37"
 excerpt: "It’s that pumpkin spice time of year when the leaves are aglow with majestic hues of red and yellow, and fireplaces are dusted off and turned back on to keep us snuggly as we sip our coffee and tea. And while you consider how to carve your pumpkin, consider the mouth – and more specifically,"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2023/09/teeth-gaps-repair-in-bend-oregon.jpg"
+featuredImage: "/images/articles/uploads/2023/09/teeth-gaps-repair-in-bend-oregon.jpg"
 status: "migrated-as-is"
 ---
 It’s that pumpkin spice time of year when the leaves are aglow with majestic hues of red and yellow, and fireplaces are dusted off and turned back on to keep us snuggly as we sip our coffee and tea. And while you consider how to carve your pumpkin, consider the mouth – and more specifically, your smile. Teeth gaps look really neat in pumpkins but can be problematic in humans. While some may find teeth gaps endearing, read on to learn the hidden problems they can cause if left untreated.

@@ -4,7 +4,7 @@ slug: "the-benefits-of-cosmetic-dentistry-and-how-it-can-improve-your-smile-and-
 datePublished: "2024-01-11T15:01:21"
 dateModified: "2024-01-11T15:01:21"
 excerpt: "Smiles are good for the soul. When you smile, your brain releases endorphins, which are natural painkillers and mood elevators. This can help reduce stress and anxiety and even lower blood pressure. Smiling also boosts your immune system by increasing the production of white blood cells, which help fight off infections. Immune boosting is especially"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2024/01/cosmetic-dentistry-in-bend-oregon.jpg"
+featuredImage: "/images/articles/uploads/2024/01/cosmetic-dentistry-in-bend-oregon.jpg"
 status: "migrated-as-is"
 ---
 Smiles are good for the soul. When you smile, your brain releases endorphins, which are natural painkillers and mood elevators. This can help reduce stress and anxiety and even lower blood pressure. Smiling also boosts your immune system by increasing the production of white blood cells, which help fight off infections. Immune boosting is especially important this time of year! 

@@ -4,7 +4,7 @@ slug: "two-solutions-for-achieving-your-perfect-smile"
 datePublished: "2021-04-21T16:37:36"
 dateModified: "2021-10-22T02:20:10"
 excerpt: "The definition of a great smile will vary depending on who you ask. And while as dentists, we’d like to think we are the ‘great smile’ experts, we tend to find beauty in all kinds of smiles. However, over one-third of Americans are unhappy with something about their smile and want to have it fixed."
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2021/08/LivingDentalHealth-6922.jpg"
+featuredImage: "/images/articles/uploads/2021/08/LivingDentalHealth-6922.jpg"
 status: "migrated-as-is"
 ---
 ![](http://www.livingdentalhealth.com/wp-content/uploads/whitening-2-300x225.jpg)

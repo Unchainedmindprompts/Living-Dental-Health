@@ -4,7 +4,7 @@ slug: "dentistry-isnt-a-sprint-why-a-speedy-dentist-is-not-good-for-your-health"
 datePublished: "2024-04-01T05:00:46"
 dateModified: "2024-03-19T11:18:39"
 excerpt: "You probably don’t think much about the purpose of a dental exam. Perhaps your experiences have consisted of an “adequate” cleaning by a dental hygienist and a quick peek in the mouth by the dentist to ensure you don’t have any cavities. A dental exam – at least if done right – is much more"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2024/03/Untitled-design.jpg"
+featuredImage: "/images/articles/uploads/2024/03/Untitled-design.jpg"
 status: "migrated-as-is"
 ---
 You probably don’t think much about the purpose of a dental exam. Perhaps your experiences have consisted of an “adequate” cleaning by a dental hygienist and a quick peek in the mouth by the dentist to ensure you don’t have any cavities. A dental exam – at least if done right – is much more than mere minutes with the dentist. If your last visit with the dentist was short and sweet, consider this a cautionary tale of why being thorough matters. 

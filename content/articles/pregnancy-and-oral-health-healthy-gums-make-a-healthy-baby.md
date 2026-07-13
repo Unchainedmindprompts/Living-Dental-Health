@@ -4,7 +4,7 @@ slug: "pregnancy-and-oral-health-healthy-gums-make-a-healthy-baby"
 datePublished: "2025-01-02T05:03:03"
 dateModified: "2024-12-29T13:23:20"
 excerpt: "Pregnancy is a time of beautiful changes within the body. However, the changes that occur to grow a fetus impact parts of the body that may surprise you. As a dental office, we are particularly interested in how pregnancy affects oral health, which, if not addressed, can snowball and affect the health of the developing"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2024/12/pregnancy-and-oral-health.jpg"
+featuredImage: "/images/articles/uploads/2024/12/pregnancy-and-oral-health.jpg"
 status: "migrated-as-is"
 ---
 Pregnancy is a time of beautiful changes within the body. However, the changes that occur to grow a fetus impact parts of the body that may surprise you. As a dental office, we are particularly interested in how pregnancy affects oral health, which, if not addressed, can snowball and affect the health of the developing fetus. We sat down with Living Dental Health dental hygienist [Nicole Tarpey, RDH](/about), who happens to be in her third trimester of pregnancy, to discuss why maintaining good oral health can be challenging for pregnant women.

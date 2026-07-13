@@ -4,10 +4,10 @@ slug: "not-all-dentists-are-terrifying"
 datePublished: "2022-07-01T01:00:28"
 dateModified: "2022-06-28T21:24:08"
 excerpt: "Not All Dentists Are Terrifying Dental Anxiety, Dental Phobia, and Overcoming Fear Depending on a person’s childhood, their feelings about visiting the dentist vary significantly. Dental phobia, or a deep fear of the dentist, only affects around 10% of people. However, it is estimated that as many as 75% of adults in the U.S. have"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2022/05/Girl-in-dentist-office.jpeg"
+featuredImage: "/images/articles/uploads/2022/05/Girl-in-dentist-office.jpeg"
 status: "migrated-as-is"
 ---
-![Girl in dentist office](http://www.livingdentalhealth.com/wp-content/uploads/2022/05/Girl-in-dentist-office.jpeg "Girl in dentist office")
+![Girl in dentist office](/images/articles/uploads/2022/05/Girl-in-dentist-office.jpeg "Girl in dentist office")
 
 # Not All Dentists Are Terrifying
 

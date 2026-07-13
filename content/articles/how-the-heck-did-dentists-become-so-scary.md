@@ -4,7 +4,7 @@ slug: "how-the-heck-did-dentists-become-so-scary"
 datePublished: "2022-10-01T05:00:10"
 dateModified: "2022-09-19T17:34:33"
 excerpt: "When asked, “what do you want to be when you grow up,” most children don’t say, “a dentist.” Let’s face it, many people, and I mean many, have a love-hate relationship with their dentist. And that’s pretty sad because it takes a special kind of person to stare into a person’s mouth – breath and"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2022/09/dental-anxiety-4.png"
+featuredImage: "/images/articles/uploads/2022/09/dental-anxiety-4.png"
 status: "migrated-as-is"
 ---
 When asked, “what do you want to be when you grow up,” most children don’t say, “a dentist.” Let’s face it, many people, and I mean many, have a love-hate relationship with their dentist. And that’s pretty sad because it takes a special kind of person to stare into a person’s mouth – breath and all – all day long. 

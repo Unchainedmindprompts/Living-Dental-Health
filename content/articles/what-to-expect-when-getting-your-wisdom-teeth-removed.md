@@ -4,7 +4,7 @@ slug: "what-to-expect-when-getting-your-wisdom-teeth-removed"
 datePublished: "2024-10-01T13:01:28"
 dateModified: "2024-10-01T13:01:28"
 excerpt: "We all remember the dread of having our wisdom teeth removed when we were in our late teens or early twenties. It’s a rite of passage that many of us have to go through. But what can we really expect when facing this common dental procedure? I recently spoke with Christy Spencer, a dental assistant"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2024/10/wisdom-teeth-removal-in-bend-oregon.jpg"
+featuredImage: "/images/articles/uploads/2024/10/wisdom-teeth-removal-in-bend-oregon.jpg"
 status: "migrated-as-is"
 ---
 We all remember the dread of having our wisdom teeth removed when we were in our late teens or early twenties. It’s a rite of passage that many of us have to go through. But what can we really expect when facing this common dental procedure? 

@@ -4,7 +4,7 @@ slug: "three-tips-for-saving-money-on-your-health-and-dental-expenses"
 datePublished: "2022-12-01T05:04:35"
 dateModified: "2022-11-22T20:09:00"
 excerpt: "It is the most wonderful time of the year. It is the time of year for enjoying egg nog and candy canes and snuggling up by the fire. It is also time to make healthcare plans for the year ahead. Insurance is downright expensive, and the final quarter of the year is your last opportunity"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2022/11/money-saving-tips-for-dental-care.jpg"
+featuredImage: "/images/articles/uploads/2022/11/money-saving-tips-for-dental-care.jpg"
 status: "migrated-as-is"
 ---
 It is the most wonderful time of the year. It is the time of year for enjoying egg nog and candy canes and snuggling up by the fire. It is also time to make healthcare plans for the year ahead. Insurance is downright expensive, and the final quarter of the year is your last opportunity to make changes to your medical and dental plans. Insurance can be helpful, but if you aren’t getting the kind of services you need throughout the year, it may be time to explore other options. So if you’ve been considering making a switch, don’t delay. Here are some tips for saving money in 2023.

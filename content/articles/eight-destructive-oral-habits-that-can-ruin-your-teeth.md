@@ -4,7 +4,7 @@ slug: "eight-destructive-oral-habits-that-can-ruin-your-teeth"
 datePublished: "2024-06-01T05:00:48"
 dateModified: "2024-05-22T13:03:06"
 excerpt: "We live, we learn, or at least, hopefully, we learn. That’s one of the reasons we are given baby teeth as children—to learn how to take care of them before the official ones kick in. But old habits can die hard, and some of us are guilty of oral habits that destroy our teeth. And"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2024/05/destructive-oral-habits-to-stop-immediately.jpg"
+featuredImage: "/images/articles/uploads/2024/05/destructive-oral-habits-to-stop-immediately.jpg"
 status: "migrated-as-is"
 ---
 We live, we learn, or at least, hopefully, we learn. That’s one of the reasons we are given baby teeth as children—to learn how to take care of them before the official ones kick in. But old habits can die hard, and some of us are guilty of oral habits that destroy our teeth. And while we would love to say that all ends well, for some, it doesn’t. This blog is a cautionary tale of destructive habits and the damage they can cause to teeth. We call it the good, the bad, and the ugly. The consequences of these oral habits can be severe, leading to tooth decay, sensitivity, and even tooth loss. It’s essential to understand the gravity of these issues to motivate you to take action. 

@@ -4,7 +4,7 @@ slug: "why-not-all-dentists-are-created-equal"
 datePublished: "2021-03-31T15:54:17"
 dateModified: "2021-10-22T02:19:38"
 excerpt: "If you took a poll and asked how many people enjoyed going to the dentist, the majority would say no. The fear of needing dental work outside of a traditional cleaning and an exam can send some into a panic. But it doesn’t have to be that way. If you have the right dentist, it"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2021/08/iStock-1252359228.jpg"
+featuredImage: "/images/articles/uploads/2021/08/iStock-1252359228.jpg"
 status: "migrated-as-is"
 ---
 If you took a poll and asked how many people enjoyed going to the dentist, the majority would say no. The fear of needing dental work outside of a traditional cleaning and an exam can send some into a panic. But it doesn’t have to be that way. If you have the right dentist, it won’t. 
