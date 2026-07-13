@@ -1,0 +1,166 @@
+name: Localize WordPress assets (one-time)
+
+# One-time, manually-triggered job. GitHub runners have open internet, so this
+# fetches the remaining wp-content assets off the old WordPress host (which the
+# Claude Code sandbox is firewalled from) and commits them to this branch.
+#
+# It ONLY touches downloaded assets + the article reference rewrites. It does
+# NOT change DNS, deployment, or any production/config file (req 3).
+
+on:
+  workflow_dispatch:
+    inputs:
+      logo_url:
+        description: "Old-site header LOGO url (wp-content .png). Optional."
+        required: false
+        default: ""
+      office_url:
+        description: "Old-site office/exterior photo url. Optional."
+        required: false
+        default: ""
+      pdf_url:
+        description: "Consent/HIPAA PDF url (override the guessed one). Optional."
+        required: false
+        default: ""
+      min_success:
+        description: "Min % of article assets that must download, else abort without committing."
+        required: false
+        default: "90"
+
+# Only permission needed: write access so the run can push the asset commit
+# back to this branch. Uses the built-in GITHUB_TOKEN — no PAT, no secrets.
+permissions:
+  contents: write
+
+concurrency:
+  group: localize-assets
+  cancel-in-progress: false
+
+jobs:
+  localize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        # persist-credentials (default true) lets the final step push back.
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install HEIC converter (libheif)
+        run: sudo apt-get update && sudo apt-get install -y libheif-examples
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Download + localize assets
+        env:
+          LOGO_URL: ${{ inputs.logo_url }}
+          OFFICE_URL: ${{ inputs.office_url }}
+          PDF_URL: ${{ inputs.pdf_url }}
+        run: node migration/localize-assets.mjs
+
+      - name: Convert HEIC -> JPG and update references (req 7)
+        run: |
+          shopt -s globstar nullglob
+          converted=0
+          for f in public/images/articles/**/*.heic; do
+            jpg="${f%.heic}.jpg"
+            heif-convert "$f" "$jpg"
+            old="/${f#public/}"     # e.g. /images/articles/2023/11/IMG_1739.heic
+            new="/${jpg#public/}"
+            while IFS= read -r md; do
+              sed -i "s#${old}#${new}#g" "$md"
+            done < <(grep -rl --include='*.md' -- "$old" content/articles || true)
+            rm -f "$f"
+            converted=$((converted+1))
+            echo "converted $f -> $jpg"
+          done
+          echo "HEIC files converted: $converted"
+
+      - name: Gate on success rate (req 5)
+        id: gate
+        env:
+          MIN: ${{ inputs.min_success }}
+        run: |
+          node -e '
+            const r = require("./migration/localize-report.json");
+            const min = Number(process.env.MIN || "90");
+            const ok = r.successRate >= min;
+            console.log(`article success rate ${r.successRate}% (threshold ${min}%) — ${ok ? "PROCEED" : "ABORT"}`);
+            require("fs").appendFileSync(process.env.GITHUB_OUTPUT, `proceed=${ok}\n`);
+            if (!ok) console.log("::warning::Most downloads failed — not committing partial results.");
+          '
+
+      - name: Safety — only asset/reference paths changed (req 3, 4)
+        if: steps.gate.outputs.proceed == 'true'
+        run: |
+          bad=$(git status --porcelain --untracked-files=all | awk '{print $2}' \
+            | grep -vE '^(public/images/|public/documents/|content/articles/|migration/localize-report\.json)' || true)
+          if [ -n "$bad" ]; then
+            echo "::error::Unexpected changes outside allowed asset/reference paths:"; echo "$bad"; exit 1
+          fi
+          if git status --porcelain | grep -qE '^( D|D )'; then
+            echo "::error::Refusing to delete tracked files"; git status --porcelain | grep -E '^( D|D )'; exit 1
+          fi
+          echo "Safety check passed — only asset + reference paths changed."
+
+      - name: Build + schema guard (req 9)
+        if: steps.gate.outputs.proceed == 'true'
+        run: npm run build
+
+      - name: Commit localized assets (req 8)
+        if: steps.gate.outputs.proceed == 'true'
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/images public/documents content/articles
+          if git diff --cached --quiet; then
+            echo "No asset changes to commit."
+            echo "sha=" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit --no-verify -m "Localize WordPress assets off the old host (automated)
+
+          Fetched wp-content article images, brand images, and the consent PDF into
+          public/, rewrote article references to local paths, converted HEIC to JPG.
+          Produced by .github/workflows/localize-assets.yml. Schema-guard + build
+          passed before commit.
+
+          Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>"
+          git push origin HEAD:${{ github.ref_name }}
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Report (req 10)
+        if: always()
+        env:
+          SHA: ${{ steps.commit.outputs.sha }}
+          PROCEED: ${{ steps.gate.outputs.proceed }}
+        run: |
+          node -e '
+            const fs = require("fs");
+            let r = {}; try { r = require("./migration/localize-report.json"); } catch (e) {}
+            const sha = process.env.SHA && process.env.SHA.length ? process.env.SHA : "(not committed)";
+            const L = [];
+            L.push("## WordPress asset localization — report");
+            L.push("");
+            L.push("| metric | value |");
+            L.push("|---|---|");
+            L.push(`| unique files downloaded | ${r.articleDownloaded ?? "?"} / ${r.uniqueWpFiles ?? "?"} article + brand ${r.brandDownloaded ?? 0}/${r.brandTotal ?? 3} + pdf ${r.pdfDownloaded ?? 0}/1 |`);
+            L.push(`| failed downloads | ${r.failedCount ?? "?"} |`);
+            L.push(`| remaining external WordPress URLs | ${r.remainingExternalUrls ?? "?"} (target 0) |`);
+            L.push(`| committed? | ${process.env.PROCEED === "true" ? "yes" : "NO (gate/build not passed)"} |`);
+            L.push(`| commit hash | ${sha} |`);
+            L.push("");
+            const manual = r.manualRetrieval || [];
+            L.push(`### Files still requiring manual retrieval (${manual.length})`);
+            if (manual.length) manual.forEach((m) => L.push("- " + m));
+            else L.push("_none — everything localized._");
+            const out = L.join("\n") + "\n";
+            fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, out);
+            console.log(out);
+          '
