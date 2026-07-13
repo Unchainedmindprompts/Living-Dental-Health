@@ -50,17 +50,48 @@ const BRAND = [
 
 // ── Task 3: Consent / Insurance / Financial / HIPAA PDF.
 const PDF = {
-  url: "https://livingdentalhealth.com/wp-content/uploads/2022/12/CONSENT-FOR-SERVICES-INSURANCE-COVERAGE-FINANCIAL-POLICY-HIPAA.pdf",
+  url:
+    process.env.PDF_URL ||
+    "https://livingdentalhealth.com/wp-content/uploads/2022/12/CONSENT-FOR-SERVICES-INSURANCE-COVERAGE-FINANCIAL-POLICY-HIPAA.pdf",
   dest: "documents/consent-services-insurance-financial-hipaa.pdf",
 };
 
 const failed = [];
 
+// Req 6: verify the bytes are a real image/PDF, not an HTML "not found" page
+// that a misconfigured host may return with a 200. Checks magic numbers.
+function detectType(buf) {
+  if (buf.length < 12) return null;
+  const b = buf;
+  if (b[0] === 0xff && b[1] === 0xd8 && b[2] === 0xff) return "jpg";
+  if (b[0] === 0x89 && b[1] === 0x50 && b[2] === 0x4e && b[3] === 0x47) return "png";
+  if (b[0] === 0x47 && b[1] === 0x49 && b[2] === 0x46) return "gif";
+  if (
+    b[0] === 0x52 && b[1] === 0x49 && b[2] === 0x46 && b[3] === 0x46 &&
+    b[8] === 0x57 && b[9] === 0x45 && b[10] === 0x42 && b[11] === 0x50
+  )
+    return "webp";
+  if (b[0] === 0x25 && b[1] === 0x50 && b[2] === 0x44 && b[3] === 0x46) return "pdf";
+  // ISO-BMFF (HEIC/HEIF): bytes 4-7 == "ftyp"
+  if (b[4] === 0x66 && b[5] === 0x74 && b[6] === 0x79 && b[7] === 0x70) return "heic";
+  return null; // unknown / likely HTML or an error page
+}
+
 async function download(url, destAbs) {
   try {
     const res = await fetch(url, { redirect: "follow" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const ctype = (res.headers.get("content-type") || "").toLowerCase();
     const buf = Buffer.from(await res.arrayBuffer());
+    if (ctype.includes("text/html") || ctype.includes("application/xhtml"))
+      throw new Error(`server returned HTML (content-type ${ctype}) — likely an error page`);
+    const kind = detectType(buf);
+    if (!kind)
+      throw new Error(
+        `not a valid image/PDF (first bytes: ${buf.subarray(0, 8).toString("hex")}${
+          buf.subarray(0, 15).toString("utf8").replace(/[^\x20-\x7e]/g, ".").includes("<") ? ", looks like HTML" : ""
+        })`
+      );
     fs.mkdirSync(path.dirname(destAbs), { recursive: true });
     fs.writeFileSync(destAbs, buf);
     return buf.length;
@@ -164,7 +195,29 @@ const remaining = countRemainingExternal();
 const brandOk = BRAND.filter((b) => b.url && fs.existsSync(path.join(PUBLIC, b.dest))).length;
 const pdfOk = fs.existsSync(path.join(PUBLIC, PDF.dest)) ? 1 : 0;
 
-// 6) Report — the four numbers, every run.
+// 6) Machine-readable report so CI can gate on it (req 5) and print it (req 10).
+const reportJson = {
+  uniqueWpFiles: urls.length,
+  totalWpReferences: totalRefs,
+  articleDownloaded: downloaded,
+  articleFailed: urls.length - downloaded,
+  brandDownloaded: brandOk,
+  brandTotal: BRAND.length,
+  pdfDownloaded: pdfOk,
+  failedCount: failed.length,
+  failedList: failed,
+  remainingExternalUrls: remaining.n,
+  remainingList: remaining.hits,
+  // "still requiring manual retrieval" = anything that didn't download
+  manualRetrieval: failed,
+  successRate: urls.length ? Math.round((downloaded / urls.length) * 100) : 0,
+};
+fs.writeFileSync(
+  path.join(ROOT, "migration", "localize-report.json"),
+  JSON.stringify(reportJson, null, 2)
+);
+
+// 7) Human report — the four numbers, every run.
 console.log("\n──────── LOCALIZATION REPORT ────────");
 console.log(`1. Unique files needed .......... ${urls.length} wp-content + 3 brand + 1 PDF = ${urls.length + 4}`);
 console.log(`2. Total references ............. ${totalRefs} article wp-content + 3 brand + 1 PDF = ${totalRefs + 4}`);
