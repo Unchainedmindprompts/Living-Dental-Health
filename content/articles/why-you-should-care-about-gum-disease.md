@@ -9,8 +9,6 @@ status: "migrated-as-is"
 ---
 The importance of brushing your teeth twice a day is widely known and hard to debate. Even super busy and lackadaisical personalities eventually succumb to the calling of their lonely toothbrush. But flossing is thought by many to be something extra – and according to the ADA, around 55% of adults say that time is why they don’t do it. Only around ⅓ of Americans age 30 and older admit to flossing their teeth regularly. 
 
-![Dentist in Bend Helping Patient with Gum Disease](http://www.livingdentalhealth.com/wp-content/uploads/gum-disease.jpeg)
-
 During a routine cleaning, the dental hygienist will ask about flossing frequency. You can tell a lie (or exaggerate like 55% of American adults) or tell the truth. 
 
 But before your cross your fingers and claim religious flossing, understand that your gums TELL your hygienist about your flossing habits. Bleeding gums is a huge red flag that you aren’t flossing regularly—another red flag: tartar buildup. 

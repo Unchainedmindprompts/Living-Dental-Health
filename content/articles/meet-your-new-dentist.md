@@ -9,8 +9,6 @@ status: "migrated-as-is"
 ---
 #### **_Introducing Dr. Andy Engel of Living Dental Health_**
 
-![](http://www.livingdentalhealth.com/wp-content/uploads/Andrew-W.-Engel-DMD-web.jpg)
-
 When you first meet Dr. Andy Engel of Living Dental Health, you are entranced by his calm demeanor and genuine interest in listening and truly hearing what you have to say. He is a dentist, right? 
 
 There are plenty of jokes about dentists who like to ask you all sorts of questions when your mouth is wide open mid-exam. 

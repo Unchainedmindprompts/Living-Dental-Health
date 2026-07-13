@@ -37,4 +37,4 @@ When verifying eligibility, dental offices are provided a summary of your covera
 
 **Closing Thoughts**
 
-At Living Dental Health, we don’t compromise patient care due to insurance restrictions. We no longer contract with some of the worst offenders and now offer an [in-office savings plan](http://www.livingdentalhealth.com/wp-content/uploads/LivingDentalHealth-Savings-Programv3.pdf). Our plan takes the guesswork out of treatment planning and provides patients with peace of mind – knowing they are getting the best treatment for their condition without fear of replacement clauses or plan exclusions. Don’t compromise your care. Your teeth and your wallet depend on it.
+At Living Dental Health, we don’t compromise patient care due to insurance restrictions. We no longer contract with some of the worst offenders and now offer an in-office savings plan. Our plan takes the guesswork out of treatment planning and provides patients with peace of mind – knowing they are getting the best treatment for their condition without fear of replacement clauses or plan exclusions. Don’t compromise your care. Your teeth and your wallet depend on it.

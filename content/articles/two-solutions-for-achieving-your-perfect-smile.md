@@ -7,7 +7,6 @@ excerpt: "The definition of a great smile will vary depending on who you ask. An
 featuredImage: "/images/articles/uploads/2021/08/LivingDentalHealth-6922.jpg"
 status: "migrated-as-is"
 ---
-![](http://www.livingdentalhealth.com/wp-content/uploads/whitening-2-300x225.jpg)
 
 The definition of a great smile will vary depending on who you ask. And while as dentists, we’d like to think we are the ‘great smile’ experts, we tend to find beauty in all kinds of smiles. 
 
