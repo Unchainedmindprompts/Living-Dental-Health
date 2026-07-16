@@ -94,8 +94,10 @@ export default function HomePage() {
           <p className="font-serif-italic text-[13px] text-warm-gray sm:text-[15px]">
             — a private dental studio —
           </p>
-          <p className="eyebrow mt-5 flex items-center justify-center gap-2">
-            <LeafToothMark size={14} />
+          <p className="mt-6 flex items-center justify-center gap-2 text-[11px] font-medium uppercase text-sage tracking-[0.12em] sm:mt-5 sm:tracking-[0.32em]">
+            <span className="hidden sm:inline-flex">
+              <LeafToothMark size={14} />
+            </span>
             Now Welcoming New Patients
           </p>
           <div className="mt-4 flex items-center justify-center gap-2 sm:gap-3">
