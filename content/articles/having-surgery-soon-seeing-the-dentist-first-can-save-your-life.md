@@ -4,7 +4,7 @@ slug: "having-surgery-soon-seeing-the-dentist-first-can-save-your-life"
 datePublished: "2024-03-01T05:00:16"
 dateModified: "2024-02-23T15:24:00"
 excerpt: "When you think about needing surgery, you probably don’t consider how it will impact your teeth or how your oral health can impact your surgical outcomes, but your dentist does. Dental work can impact surgical outcomes in other parts of the body. This is because the mouth is a gateway to the rest of the"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2024/02/surgery-and-dental-work.jpg"
+featuredImage: "/images/articles/uploads/2024/02/surgery-and-dental-work.jpg"
 status: "migrated-as-is"
 ---
 When you think about needing surgery, you probably don’t consider how it will impact your teeth or how your oral health can impact your surgical outcomes, but your dentist does. 

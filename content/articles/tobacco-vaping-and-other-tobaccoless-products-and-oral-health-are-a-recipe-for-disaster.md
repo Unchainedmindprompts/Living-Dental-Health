@@ -4,7 +4,7 @@ slug: "tobacco-vaping-and-other-tobaccoless-products-and-oral-health-are-a-recip
 datePublished: "2025-05-01T05:00:32"
 dateModified: "2025-04-28T11:44:08"
 excerpt: "Smoking, a habit deeply ingrained in human culture for thousands of years, and vaping, a more recent trend, are both significant contributors to the deterioration of oral health. Despite the increasing awareness of the long-term dangers of smoking, such as emphysema and cancer, the impact on oral health is often overlooked. This month’s blog takes"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2025/04/smoking-and-vaping-and-oral-health.jpg"
+featuredImage: "/images/articles/uploads/2025/04/smoking-and-vaping-and-oral-health.jpg"
 status: "migrated-as-is"
 ---
 Smoking, a habit deeply ingrained in human culture for thousands of years, and vaping, a more recent trend, are both significant contributors to the deterioration of oral health. Despite the increasing awareness of the long-term dangers of smoking, such as emphysema and cancer, the impact on oral health is often overlooked. This month’s blog takes a closer look at these habits and their detrimental effects on your smile, teeth, and oral health. 

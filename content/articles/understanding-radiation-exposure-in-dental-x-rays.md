@@ -4,7 +4,7 @@ slug: "understanding-radiation-exposure-in-dental-x-rays"
 datePublished: "2023-07-03T13:13:34"
 dateModified: "2023-07-03T13:31:24"
 excerpt: "Wait, I don’t want that dental X-ray. Do you get a little nervous when you hear that X-rays are needed? While most people take getting X-rays with ease, some people have concerns about radiation and the risk of getting cancer from too much exposure. This is a valid concern we want to address in this"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2023/07/are-dental-X-rays-dangerous.jpg"
+featuredImage: "/images/articles/uploads/2023/07/are-dental-X-rays-dangerous.jpg"
 status: "migrated-as-is"
 ---
 Wait, I don’t want that dental X-ray.

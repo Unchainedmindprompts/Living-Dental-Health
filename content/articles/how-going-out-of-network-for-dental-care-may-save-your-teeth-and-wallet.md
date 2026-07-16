@@ -4,7 +4,7 @@ slug: "how-going-out-of-network-for-dental-care-may-save-your-teeth-and-wallet"
 datePublished: "2021-05-26T10:20:44"
 dateModified: "2021-10-22T02:20:21"
 excerpt: "Insurance is something ingrained in most of us as a necessity, a way to save money for the health services we need. It also protects us from the unexpected and ensures we can receive the highest quality of care by choosing the providers who care for our family and us. But what happens when you"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2021/08/mother-daughter.jpg"
+featuredImage: "/images/articles/uploads/2021/08/mother-daughter.jpg"
 status: "migrated-as-is"
 ---
 Insurance is something ingrained in most of us as a necessity, a way to save money for the health services we need. It also protects us from the unexpected and ensures we can receive the highest quality of care by choosing the providers who care for our family and us. 
@@ -37,4 +37,4 @@ When verifying eligibility, dental offices are provided a summary of your covera
 
 **Closing Thoughts**
 
-At Living Dental Health, we don’t compromise patient care due to insurance restrictions. We no longer contract with some of the worst offenders and now offer an [in-office savings plan](http://www.livingdentalhealth.com/wp-content/uploads/LivingDentalHealth-Savings-Programv3.pdf). Our plan takes the guesswork out of treatment planning and provides patients with peace of mind – knowing they are getting the best treatment for their condition without fear of replacement clauses or plan exclusions. Don’t compromise your care. Your teeth and your wallet depend on it.
+At Living Dental Health, we don’t compromise patient care due to insurance restrictions. We no longer contract with some of the worst offenders and now offer an in-office savings plan. Our plan takes the guesswork out of treatment planning and provides patients with peace of mind – knowing they are getting the best treatment for their condition without fear of replacement clauses or plan exclusions. Don’t compromise your care. Your teeth and your wallet depend on it.

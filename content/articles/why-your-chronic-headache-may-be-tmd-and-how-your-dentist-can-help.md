@@ -4,7 +4,7 @@ slug: "why-your-chronic-headache-may-be-tmd-and-how-your-dentist-can-help"
 datePublished: "2022-11-01T05:08:27"
 dateModified: "2022-10-26T13:08:44"
 excerpt: "Dentists are known for making beautiful smiles, but did you know that they can also make your headache disappear? Chronic headaches, such as migraines, affect more than 39 million men, women, and children throughout the country and more than 1 billion people worldwide. The prevalence of headaches is so significant that it is considered the"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2022/10/chronic-headaches-and-TMD-treatment-in-bend-or.jpg"
+featuredImage: "/images/articles/uploads/2022/10/chronic-headaches-and-TMD-treatment-in-bend-or.jpg"
 status: "migrated-as-is"
 ---
 Dentists are known for making beautiful smiles, but did you know that they can also make your headache disappear? 

@@ -16,7 +16,8 @@
 //      OFFICE_URL below (grab them from the old site's header + an
 //      office/exterior photo).
 //   3. Downloads the Consent/HIPAA PDF → public/documents/.
-//   4. Reports counts, a "could not download" list, and leaves a grep for you.
+//   4. Reports four numbers every run: (1) unique files, (2) total references,
+//      (3) failed downloads, (4) external WordPress URLs still remaining.
 
 import fs from "node:fs";
 import path from "node:path";
@@ -49,17 +50,48 @@ const BRAND = [
 
 // ── Task 3: Consent / Insurance / Financial / HIPAA PDF.
 const PDF = {
-  url: "https://livingdentalhealth.com/wp-content/uploads/2022/12/CONSENT-FOR-SERVICES-INSURANCE-COVERAGE-FINANCIAL-POLICY-HIPAA.pdf",
+  url:
+    process.env.PDF_URL ||
+    "https://livingdentalhealth.com/wp-content/uploads/2022/12/CONSENT-FOR-SERVICES-INSURANCE-COVERAGE-FINANCIAL-POLICY-HIPAA.pdf",
   dest: "documents/consent-services-insurance-financial-hipaa.pdf",
 };
 
 const failed = [];
 
+// Req 6: verify the bytes are a real image/PDF, not an HTML "not found" page
+// that a misconfigured host may return with a 200. Checks magic numbers.
+function detectType(buf) {
+  if (buf.length < 12) return null;
+  const b = buf;
+  if (b[0] === 0xff && b[1] === 0xd8 && b[2] === 0xff) return "jpg";
+  if (b[0] === 0x89 && b[1] === 0x50 && b[2] === 0x4e && b[3] === 0x47) return "png";
+  if (b[0] === 0x47 && b[1] === 0x49 && b[2] === 0x46) return "gif";
+  if (
+    b[0] === 0x52 && b[1] === 0x49 && b[2] === 0x46 && b[3] === 0x46 &&
+    b[8] === 0x57 && b[9] === 0x45 && b[10] === 0x42 && b[11] === 0x50
+  )
+    return "webp";
+  if (b[0] === 0x25 && b[1] === 0x50 && b[2] === 0x44 && b[3] === 0x46) return "pdf";
+  // ISO-BMFF (HEIC/HEIF): bytes 4-7 == "ftyp"
+  if (b[4] === 0x66 && b[5] === 0x74 && b[6] === 0x79 && b[7] === 0x70) return "heic";
+  return null; // unknown / likely HTML or an error page
+}
+
 async function download(url, destAbs) {
   try {
     const res = await fetch(url, { redirect: "follow" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const ctype = (res.headers.get("content-type") || "").toLowerCase();
     const buf = Buffer.from(await res.arrayBuffer());
+    if (ctype.includes("text/html") || ctype.includes("application/xhtml"))
+      throw new Error(`server returned HTML (content-type ${ctype}) — likely an error page`);
+    const kind = detectType(buf);
+    if (!kind)
+      throw new Error(
+        `not a valid image/PDF (first bytes: ${buf.subarray(0, 8).toString("hex")}${
+          buf.subarray(0, 15).toString("utf8").replace(/[^\x20-\x7e]/g, ".").includes("<") ? ", looks like HTML" : ""
+        })`
+      );
     fs.mkdirSync(path.dirname(destAbs), { recursive: true });
     fs.writeFileSync(destAbs, buf);
     return buf.length;
@@ -76,12 +108,18 @@ const mdFiles = fs
   .map((f) => path.join(ARTICLES_DIR, f));
 
 const urlSet = new Set();
+let totalRefs = 0;
 for (const file of mdFiles) {
   const text = fs.readFileSync(file, "utf8");
-  for (const m of text.matchAll(WP_RE)) urlSet.add(m[0]);
+  for (const m of text.matchAll(WP_RE)) {
+    urlSet.add(m[0]);
+    totalRefs += 1;
+  }
 }
 const urls = [...urlSet];
-console.log(`Found ${urls.length} distinct wp-content asset URLs across ${mdFiles.length} articles.`);
+console.log(
+  `Found ${urls.length} distinct wp-content files (${totalRefs} total references) across ${mdFiles.length} articles.`
+);
 
 // 2) Download each → public/images/articles/<path-after-wp-content>; record the rewrite.
 const rewriteMap = new Map(); // oldUrl -> "/images/articles/<path>"
@@ -130,20 +168,79 @@ for (const b of BRAND) {
   console.log(size != null ? `pdf   ✓ ${PDF.dest}` : `pdf   ✗ ${PDF.dest}`);
 }
 
-// 5) Report.
-console.log("\n──────── REPORT ────────");
-console.log(`article files downloaded: ${downloaded}/${urls.length}`);
+// 5) Auto-count wp-content/www URLs still present in TEXT sources after rewrite
+//    (content/, lib/, app/, docs/ — never public/ binaries or the manifests).
+function countRemainingExternal() {
+  const EXT_RE = /https?:\/\/(?:www\.)?livingdentalhealth\.com\/wp-content\/[^\s"')]+/gi;
+  const SKIP_DIRS = new Set(["node_modules", ".next", ".git", "public", "migration"]);
+  const hits = [];
+  let n = 0;
+  (function walk(dir) {
+    for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+      if (SKIP_DIRS.has(e.name)) continue;
+      const p = path.join(dir, e.name);
+      if (e.isDirectory()) walk(p);
+      else if (/\.(md|ts|tsx|json|txt)$/.test(e.name)) {
+        const m = fs.readFileSync(p, "utf8").match(EXT_RE);
+        if (m) {
+          n += m.length;
+          hits.push(`${path.relative(ROOT, p)}: ${m.length}`);
+        }
+      }
+    }
+  })(ROOT);
+  return { n, hits };
+}
+const remaining = countRemainingExternal();
+const brandOk = BRAND.filter((b) => b.url && fs.existsSync(path.join(PUBLIC, b.dest))).length;
+const pdfOk = fs.existsSync(path.join(PUBLIC, PDF.dest)) ? 1 : 0;
+
+// 6) Machine-readable report so CI can gate on it (req 5) and print it (req 10).
+const reportJson = {
+  uniqueWpFiles: urls.length,
+  totalWpReferences: totalRefs,
+  articleDownloaded: downloaded,
+  articleFailed: urls.length - downloaded,
+  brandDownloaded: brandOk,
+  brandTotal: BRAND.length,
+  pdfDownloaded: pdfOk,
+  failedCount: failed.length,
+  failedList: failed,
+  remainingExternalUrls: remaining.n,
+  remainingList: remaining.hits,
+  // "still requiring manual retrieval" = anything that didn't download
+  manualRetrieval: failed,
+  successRate: urls.length ? Math.round((downloaded / urls.length) * 100) : 0,
+};
+fs.writeFileSync(
+  path.join(ROOT, "migration", "localize-report.json"),
+  JSON.stringify(reportJson, null, 2)
+);
+
+// 7) Human report — the four numbers, every run.
+console.log("\n──────── LOCALIZATION REPORT ────────");
+console.log(`1. Unique files needed .......... ${urls.length} wp-content + 3 brand + 1 PDF = ${urls.length + 4}`);
+console.log(`2. Total references ............. ${totalRefs} article wp-content + 3 brand + 1 PDF = ${totalRefs + 4}`);
+console.log(`3. Failed downloads ............. ${failed.length}`);
+console.log(`4. Remaining external WP URLs ... ${remaining.n}  (target: 0)`);
+console.log("");
+console.log(`   downloaded: ${downloaded}/${urls.length} article files · brand ${brandOk}/3 · pdf ${pdfOk}/1`);
 if (failed.length) {
-  console.log(`\nCOULD NOT DOWNLOAD (${failed.length}):`);
-  for (const f of failed) console.log("  - " + f);
+  console.log(`\n   COULD NOT DOWNLOAD (${failed.length}) — these stay as external URLs:`);
+  for (const f of failed) console.log("     - " + f);
+}
+if (remaining.n) {
+  console.log(`\n   STILL EXTERNAL after rewrite (fix before launch):`);
+  for (const h of remaining.hits) console.log("     - " + h);
 } else {
-  console.log("could not download: none");
+  console.log("\n   ✓ no wp-content/www URLs remain in content/, lib/, app/, docs/.");
 }
 console.log(
-  "\nNow verify (expect 0):\n  grep -rn 'livingdentalhealth.com/wp-content' content/ public/ | grep -v public/images\n" +
-    "  npm run build && grep -rn 'livingdentalhealth.com/wp-content' .next || echo 'build clean'\n"
+  "\n   Final verification:\n" +
+    "     npm run build   (prebuild schema-guard fails on any www leak)\n" +
+    "     grep -rn 'livingdentalhealth.com/wp-content' .next || echo 'built HTML clean'\n"
 );
 console.log(
-  "NOTE: any .heic file won't render in most browsers — convert to .jpg\n" +
-    "  (e.g. `magick file.heic file.jpg`) and update its reference.\n"
+  "   NOTE: IMG_1739.heic won't render in browsers — convert to .jpg\n" +
+    "     (`magick file.heic file.jpg`) and update its reference.\n"
 );

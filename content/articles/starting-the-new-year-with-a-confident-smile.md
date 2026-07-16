@@ -4,10 +4,10 @@ slug: "starting-the-new-year-with-a-confident-smile"
 datePublished: "2022-01-01T19:19:40"
 dateModified: "2022-01-12T22:39:39"
 excerpt: "Transforming Your Year With a Confident Smile A smile is the universal sign of happiness. When we smile, we show others that we are happy, warm, and kind. The act of smiling makes us appear more approachable and likable and can even help us land a job and get promoted. And while we’ve had our"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2021/10/cosmetic-3.jpg"
+featuredImage: "/images/articles/uploads/2021/10/cosmetic-3.jpg"
 status: "migrated-as-is"
 ---
-![](http://www.livingdentalhealth.com/wp-content/uploads/2021/10/iStock-501917174.jpg "iStock-501917174")
+![](/images/articles/uploads/2021/10/iStock-501917174.jpg "iStock-501917174")
 
 # Transforming Your Year With a Confident Smile
 

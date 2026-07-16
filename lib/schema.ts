@@ -111,13 +111,6 @@ const businessEnrichment: Record<string, unknown> = {
   "faxNumber": "+1-541-317-5038",
   "email": "info@livingdentalhealth.com",
   "slogan": "Focused on customized care with a gentle touch",
-  "image":
-    "https://livingdentalhealth.com/images/brand/living-dental-health-office.jpg",
-  "logo": {
-    "@type": "ImageObject",
-    "@id": "https://livingdentalhealth.com/#logo",
-    "url": "https://livingdentalhealth.com/images/brand/living-dental-health-logo.png",
-  },
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",

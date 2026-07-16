@@ -4,10 +4,10 @@ slug: "not-all-dentists-are-created-equall"
 datePublished: "2022-05-06T22:07:29"
 dateModified: "2022-05-06T22:07:29"
 excerpt: "Not All Dentists Are Created Equal and Why You Should Care You may be surprised to learn that not all dentists are alike. While the focus of their career is to help patients maintain health through preventative oral care and treating conditions such as cavities and gum disease as they arise, the tools of their"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2022/05/giant-tooth.jpeg"
+featuredImage: "/images/articles/uploads/2022/05/giant-tooth.jpeg"
 status: "migrated-as-is"
 ---
-![Tooth](http://www.livingdentalhealth.com/wp-content/uploads/2022/05/giant-tooth.jpeg "Tooth")
+![Tooth](/images/articles/uploads/2022/05/giant-tooth.jpeg "Tooth")
 
 # Not All Dentists Are Created Equal and Why You Should Care
 

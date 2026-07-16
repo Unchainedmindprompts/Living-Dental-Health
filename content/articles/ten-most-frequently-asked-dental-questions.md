@@ -4,7 +4,7 @@ slug: "ten-most-frequently-asked-dental-questions"
 datePublished: "2022-09-01T05:11:50"
 dateModified: "2022-09-14T18:04:15"
 excerpt: "Our teeth are pretty spectacular. They’ve been a part of our lives for decades. They help us talk and eat and kiss. But despite our familiarity with our chompers, we consistently get some great questions. Here are the top ten questions we receive. Is an electric toothbrush really better? If you’re a patient of Dr."
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2022/08/dental-faqs.png"
+featuredImage: "/images/articles/uploads/2022/08/dental-faqs.png"
 status: "migrated-as-is"
 ---
 Our teeth are pretty spectacular. They’ve been a part of our lives for decades. They help us talk and eat and kiss. But despite our familiarity with our chompers, we consistently get some great questions. Here are the top ten questions we receive.

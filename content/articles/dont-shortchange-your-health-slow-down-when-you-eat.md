@@ -4,10 +4,10 @@ slug: "dont-shortchange-your-health-slow-down-when-you-eat"
 datePublished: "2022-06-01T00:00:51"
 dateModified: "2022-06-28T21:44:41"
 excerpt: "Don’t Shortchange Your Health – Slow Down When You Eat. You’ve heard the saying, “You are what you eat,” but did you know that the food you eat and even the speed with which you eat your food has been found to have significant life-saving benefits. The French and Italians had it right all along."
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2022/05/healthy-food.jpeg"
+featuredImage: "/images/articles/uploads/2022/05/healthy-food.jpeg"
 status: "migrated-as-is"
 ---
-![Health food for the teeth](http://www.livingdentalhealth.com/wp-content/uploads/2022/05/healthy-food.jpeg "Health food for the teeth")
+![Health food for the teeth](/images/articles/uploads/2022/05/healthy-food.jpeg "Health food for the teeth")
 
 # Don’t Shortchange Your Health – Slow Down When You Eat.
 

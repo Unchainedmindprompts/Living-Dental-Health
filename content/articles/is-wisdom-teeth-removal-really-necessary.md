@@ -4,7 +4,7 @@ slug: "is-wisdom-teeth-removal-really-necessary"
 datePublished: "2023-09-01T01:00:28"
 dateModified: "2023-08-28T11:07:34"
 excerpt: "We are creatures of evolution and are grateful for three significant evolutionary changes: opposable thumbs, losing body hair, and larger brains. An area that hasn’t entirely kept up with evolution is wisdom teeth, also known as third molars. Our ancestors had larger mandibles so they could tear and chew meat. We don’t. Evolution made our"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2023/08/wisdom-teeth-removal-in-bend-Oregon.jpg"
+featuredImage: "/images/articles/uploads/2023/08/wisdom-teeth-removal-in-bend-Oregon.jpg"
 status: "migrated-as-is"
 ---
 We are creatures of evolution and are grateful for three significant evolutionary changes: opposable thumbs, losing body hair, and larger brains. An area that hasn’t entirely kept up with evolution is wisdom teeth, also known as third molars. Our ancestors had larger mandibles so they could tear and chew meat. We don’t. 

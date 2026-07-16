@@ -4,7 +4,7 @@ slug: "some-wise-advice-on-wisdom-teeth-removal"
 datePublished: "2021-08-17T18:54:14"
 dateModified: "2021-10-22T02:18:42"
 excerpt: "Removing wisdom teeth is a rite of passage of sorts, something almost every high school or college student experiences. A good dentist will prepare the teen for what’s to come, providing updates on how their wisdom teeth are coming in and advising when to have them removed. But is removal really necessary? Wisdom teeth, also"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2021/08/wisdom_teeth.jpg"
+featuredImage: "/images/articles/uploads/2021/08/wisdom_teeth.jpg"
 status: "migrated-as-is"
 ---
 Removing wisdom teeth is a rite of passage of sorts, something almost every high school or college student experiences. A good dentist will prepare the teen for what’s to come, providing updates on how their wisdom teeth are coming in and advising when to have them removed. But is removal really necessary? 

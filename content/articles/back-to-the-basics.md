@@ -4,10 +4,10 @@ slug: "back-to-the-basics"
 datePublished: "2021-08-25T13:10:58"
 dateModified: "2022-01-06T20:20:51"
 excerpt: "Back to the Basics: Dental Tips from your Dentist From a young age, most people are taught the importance of oral hygiene – you know, brushing twice a day and even flossing. But have you ever wondered whether you were doing it right? Have you wondered whether or not the products you were using were"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2021/08/veneers2.jpg"
+featuredImage: "/images/articles/uploads/2021/08/veneers2.jpg"
 status: "migrated-as-is"
 ---
-![](http://www.livingdentalhealth.com/wp-content/uploads/2021/11/smilingfamily.jpg "So what do you guys want to watch?")
+![](/images/articles/uploads/2021/11/smilingfamily.jpg "So what do you guys want to watch?")
 
 # Back to the Basics: Dental Tips from your Dentist
 

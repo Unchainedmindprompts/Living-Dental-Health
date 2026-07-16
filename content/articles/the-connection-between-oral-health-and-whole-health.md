@@ -4,7 +4,7 @@ slug: "the-connection-between-oral-health-and-whole-health"
 datePublished: "2023-02-07T13:15:03"
 dateModified: "2023-02-07T13:15:03"
 excerpt: "The health of your body is directly linked to the health of your mouth. This is called oral health. And while most of us are good about brushing and flossing every day, others aren’t. That’s why we sat down with Dental Hygienist, Nicole Nolan, to get the dirt on how oral health impacts overall health"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2023/02/gum-disease-facts.jpg"
+featuredImage: "/images/articles/uploads/2023/02/gum-disease-facts.jpg"
 status: "migrated-as-is"
 ---
 The health of your body is directly linked to the health of your mouth. This is called oral health.

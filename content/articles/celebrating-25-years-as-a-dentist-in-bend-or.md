@@ -4,7 +4,7 @@ slug: "celebrating-25-years-as-a-dentist-in-bend-or"
 datePublished: "2023-03-13T16:26:43"
 dateModified: "2023-03-13T16:27:07"
 excerpt: "Living Dental Health: Customized Care with a Gentle Touch Many options exist when you need a new dentist in Bend, OR. And while it is good to have choices, sometimes too many can make the decision more difficult. We also don’t need to sugarcoat the reality that for the average person, visiting the dentist isn’t"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2021/10/LivingDentalHealth-6877-migrane.jpg"
+featuredImage: "/images/articles/uploads/2021/10/LivingDentalHealth-6877-migrane.jpg"
 status: "migrated-as-is"
 ---
 _Living Dental Health: Customized Care with a Gentle Touch_

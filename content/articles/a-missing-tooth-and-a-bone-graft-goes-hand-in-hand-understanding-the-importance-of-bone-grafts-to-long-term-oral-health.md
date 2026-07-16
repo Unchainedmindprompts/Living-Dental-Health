@@ -4,10 +4,10 @@ slug: "a-missing-tooth-and-a-bone-graft-goes-hand-in-hand-understanding-the-impo
 datePublished: "2023-01-17T09:33:57"
 dateModified: "2023-01-17T09:35:15"
 excerpt: "Missing teeth are super cute in kids but not so much in adults. Thankfully, there are ways to replace adult teeth, restoring your smile to its former glory. But, before this can happen, you must ensure the tooth’s former home doesn’t collapse. In this blog, learn the importance and significance of bone grafting. First off,"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2023/01/bone-graft-in-bend-oregon-for-dental-implant.jpg"
+featuredImage: "/images/articles/uploads/2023/01/bone-graft-in-bend-oregon-for-dental-implant.jpg"
 status: "migrated-as-is"
 ---
-![bone graft in bend oregon for dental implant](http://www.livingdentalhealth.com/wp-content/uploads/2023/01/bone-graft-in-bend-oregon-for-dental-implant-300x300.jpg)Missing teeth are super cute in kids but not so much in adults. Thankfully, there are ways to replace adult teeth, restoring your smile to its former glory. But, before this can happen, you must ensure the tooth’s former home doesn’t collapse. In this blog, learn the importance and significance of [bone grafting](/implants-surgery).
+![bone graft in bend oregon for dental implant](/images/articles/uploads/2023/01/bone-graft-in-bend-oregon-for-dental-implant-300x300.jpg)Missing teeth are super cute in kids but not so much in adults. Thankfully, there are ways to replace adult teeth, restoring your smile to its former glory. But, before this can happen, you must ensure the tooth’s former home doesn’t collapse. In this blog, learn the importance and significance of [bone grafting](/implants-surgery).
 
 First off, the body has a remarkable capacity for healing. When an adult tooth comes out – whether by extraction, trauma, or some other reason – the gap created will not stay that way without some help. The bones are the foundation. When a tooth comes out (as an adult), the integrity of the area where the tooth used to be is compromised. It can and will collapse and be reabsorbed – as will the gum tissue. This can lead to tremendous amounts of sensitivity. So, now you have a gap in your smile and the always-on feeling of an ice cream headache. And misery loves company, so this lovely scenario will spread to neighboring teeth over time. Doesn’t that sound glorious?
 

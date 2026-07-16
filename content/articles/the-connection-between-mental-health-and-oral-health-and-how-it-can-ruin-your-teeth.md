@@ -4,7 +4,7 @@ slug: "the-connection-between-mental-health-and-oral-health-and-how-it-can-ruin-
 datePublished: "2024-02-01T05:00:10"
 dateModified: "2024-01-17T17:23:15"
 excerpt: "Life can be stressful. Today’s fast-paced and demanding world expects so much of us. And, sadly, life isn’t getting any easier. Stress levels have been on the rise in the United States, with about three-quarters of adults reporting experiencing at least one symptom of stress in the past month. Understanding Bruxism Which brings us to"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2024/01/grinding-and-clenching-teeth.jpg"
+featuredImage: "/images/articles/uploads/2024/01/grinding-and-clenching-teeth.jpg"
 status: "migrated-as-is"
 ---
 Life can be stressful. Today’s fast-paced and demanding world expects so much of us. And, sadly, life isn’t getting any easier. Stress levels have been on the rise in the United States, with about three-quarters of adults reporting experiencing at least one symptom of stress in the past month. 

@@ -4,7 +4,7 @@ slug: "are-people-with-diabetes-doomed-to-have-dental-problems"
 datePublished: "2025-04-01T05:00:04"
 dateModified: "2025-03-28T11:36:59"
 excerpt: "When you think of diabetes, you probably envision blood sugar checks and eating the “right” foods. Oral health is probably low on your list of likely health risks of having the chronic disease. However, for people with diabetes, not managing blood sugar can wreak havoc on their smile. Diabetes is a condition in which the"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2025/03/diabetes-and-oral-health-risks.jpg"
+featuredImage: "/images/articles/uploads/2025/03/diabetes-and-oral-health-risks.jpg"
 status: "migrated-as-is"
 ---
 When you think of diabetes, you probably envision blood sugar checks and eating the “right” foods. Oral health is probably low on your list of likely health risks of having the chronic disease. However, for people with diabetes, not managing blood sugar can wreak havoc on their smile.  

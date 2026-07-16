@@ -4,7 +4,7 @@ slug: "not-all-dental-cleanings-are-the-same-understanding-the-difference-betwee
 datePublished: "2025-06-01T05:00:50"
 dateModified: "2025-05-30T10:44:50"
 excerpt: "Seeing our patients checking out their smiles in the mirror after a dental cleaning always tickles us. It is hard, if not impossible to beat the level of clean that your dental hygienist can achieve. However, not all patients receive the same type of dental cleaning, with some requiring a deeper cleaning. Let us explain"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2025/06/Dental-Cleaning-Difference.jpg"
+featuredImage: "/images/articles/uploads/2025/06/Dental-Cleaning-Difference.jpg"
 status: "migrated-as-is"
 ---
 Seeing our patients checking out their smiles in the mirror after a [dental cleaning](/general-dentistry) always tickles us. It is hard, if not impossible to beat the level of clean that your dental hygienist can achieve. However, not all patients receive the same type of dental cleaning, with some requiring a deeper cleaning. Let us explain before you feel you may be getting swindled out of the deepest clean possible. This month’s blog highlights the difference between prophy and perio cleanings. 

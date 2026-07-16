@@ -4,7 +4,7 @@ slug: "essential-updates-from-your-bend-oregon-dentist-plus-why-time-trust-and-t
 datePublished: "2023-11-02T12:05:09"
 dateModified: "2023-11-03T12:56:19"
 excerpt: "I am not sure about you, but time is lacking in many business relationships. This is especially true for healthcare relationships in Bend, Oregon. A 2018 study of 19,000 healthcare providers found that the time spent with a patient was between 13-24 minutes, with 25% of providers spending less than 12 minutes. The relationship between"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2023/11/IMG_1602-scaled-e1699041025397.jpeg"
+featuredImage: "/images/articles/uploads/2023/11/IMG_1602-scaled-e1699041025397.jpeg"
 status: "migrated-as-is"
 ---
 I am not sure about you, but time is lacking in many business relationships. This is especially true for healthcare relationships in Bend, Oregon. A 2018 study of 19,000 healthcare providers found that the time spent with a patient was between 13-24 minutes, with 25% of providers spending less than 12 minutes. 
@@ -21,7 +21,7 @@ I guess we have a fourth, and that is for team. We take a team approach with pat
 
 So, in the spirit of transparency, we thought this would be the perfect time to share a little info about some of our team. 
 
-![](http://www.livingdentalhealth.com/wp-content/uploads/2023/11/sara-300x200.jpg)Let’s start with our newest member, Sara. Born and raised in Crooked River Ranch, Sara attended Dental Assistant school at Central Oregon Community College, graduating in 2020. She’s passionate about many things, but the thing that gets her out of bed every morning is her ability to help others. 
+![](/images/articles/uploads/2023/11/sara-300x200.jpg)Let’s start with our newest member, Sara. Born and raised in Crooked River Ranch, Sara attended Dental Assistant school at Central Oregon Community College, graduating in 2020. She’s passionate about many things, but the thing that gets her out of bed every morning is her ability to help others. 
 
 “As a dental assistant, I get to touch the lives of a variety of patients positively, ” Sara shared. “Not only by giving them a reason to smile but enhancing their quality of life. Seeing the transformation of a patient’s smile and learning about them throughout their visits is one of the best feelings.”
 
@@ -31,9 +31,9 @@ This next feature is not a new employee, but for all you car lovers out there, g
 
 If you know anything about Dr. Andy outside of dentistry, you know he loves three things: his family, skiing, and race cars. Well, he loves more than that, but you get the picture. Dr. Andy and his former brother-in-law, Gary, recently attended Porsche’s Rennsport Reunion 7 Reunion at WeatherTech Raceway in Laguna Seca, California. Dr. Andy has been a car fan since seeing the Indy 500 at the ripe old age 3! His passion for cars that go fast never wavered. 
 
-[![](http://www.livingdentalhealth.com/wp-content/uploads/2023/11/IMG_1739.heic)](http://www.livingdentalhealth.com/wp-content/uploads/2023/11/IMG_1739.heic)Rennsport Reunion happens once a year, and this one happened to be Porsche’s 75th anniversary. The event featured rare cars, originals, and every model Porsche made. They even had many of the people who have raced these cars over the years. Man crush moment! Dr. Andy – not usually one to go gush over a celebrity – saw Alois Ruf and had to stop to get a photo with him. In case you don’t know who Alois Ruf is, he lives in Germany and is considered one of the greatest supercar builders. Maybe you’ve heard of Yellowbird? Well, that was created by Alois. You can read about him [here](https://www.thedrive.com/guides-and-gear/what-is-ruf-porsche).
+Rennsport Reunion happens once a year, and this one happened to be Porsche’s 75th anniversary. The event featured rare cars, originals, and every model Porsche made. They even had many of the people who have raced these cars over the years. Man crush moment! Dr. Andy – not usually one to go gush over a celebrity – saw Alois Ruf and had to stop to get a photo with him. In case you don’t know who Alois Ruf is, he lives in Germany and is considered one of the greatest supercar builders. Maybe you’ve heard of Yellowbird? Well, that was created by Alois. You can read about him [here](https://www.thedrive.com/guides-and-gear/what-is-ruf-porsche).
 
-![](http://www.livingdentalhealth.com/wp-content/uploads/2023/11/tamera-henderson-300x200.jpg)We are excited to introduce you to Tamera Henderson. Tamera is a registered dental hygienist and is such a blessing to have in our office. Originally from the Bay area, Tamera has been in Bend for six years. Tamera is a mom of two kids who are in their teens. In her free time, Tamera loves taking her dogs out, spending time with her kids in the outdoors, and travels as often as their schedules allow. 
+![](/images/articles/uploads/2023/11/tamera-henderson-300x200.jpg)We are excited to introduce you to Tamera Henderson. Tamera is a registered dental hygienist and is such a blessing to have in our office. Originally from the Bay area, Tamera has been in Bend for six years. Tamera is a mom of two kids who are in their teens. In her free time, Tamera loves taking her dogs out, spending time with her kids in the outdoors, and travels as often as their schedules allow. 
 
 We have some exciting stuff happening at Living Dental Health as we celebrate our anniversary. Have you submitted entries for our $500 gift card to Powder House yet? There’s still time. You will receive one entry for each of the items below:
 

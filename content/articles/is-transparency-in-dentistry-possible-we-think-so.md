@@ -4,7 +4,7 @@ slug: "is-transparency-in-dentistry-possible-we-think-so"
 datePublished: "2022-08-12T16:24:56"
 dateModified: "2022-08-12T16:24:56"
 excerpt: "Healthcare today seems shrouded in mystery and unknowns – especially if you’re a consumer. You think you will see one dentist and then get switched to another when you show up for your appointment. And all too frequently, those services that you thought were covered by insurance at 80% are only covered at 50%, unless"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2022/08/good-communication-in-dentistry-in-bend-oregon.png"
+featuredImage: "/images/articles/uploads/2022/08/good-communication-in-dentistry-in-bend-oregon.png"
 status: "migrated-as-is"
 ---
 Healthcare today seems shrouded in mystery and unknowns – especially if you’re a consumer.

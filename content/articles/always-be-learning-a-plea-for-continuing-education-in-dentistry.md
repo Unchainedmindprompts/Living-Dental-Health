@@ -4,7 +4,7 @@ slug: "always-be-learning-a-plea-for-continuing-education-in-dentistry"
 datePublished: "2023-03-21T17:24:54"
 dateModified: "2023-03-21T17:24:54"
 excerpt: "When you’ve been a dentist for 25 years, things change. That’s why staying on top of innovations in your field is essential. Most medical professions require Continuing Education or CE, and dentistry is no different, for the most part. When choosing a dentist in Bend, OR, it is crucial to consider their priority of continually"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2023/03/continuing-education-in-dentistry.jpg"
+featuredImage: "/images/articles/uploads/2023/03/continuing-education-in-dentistry.jpg"
 status: "migrated-as-is"
 ---
 When you’ve been a dentist for 25 years, things change. That’s why staying on top of innovations in your field is essential. 

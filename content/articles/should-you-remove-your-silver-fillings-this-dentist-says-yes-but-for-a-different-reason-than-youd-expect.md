@@ -4,7 +4,7 @@ slug: "should-you-remove-your-silver-fillings-this-dentist-says-yes-but-for-a-di
 datePublished: "2023-05-01T05:00:44"
 dateModified: "2023-04-13T13:02:57"
 excerpt: "Technology is wonderful. But the thing about technology is that it continues to evolve. Forms of toothbrushes have been around for over 3000 years, but it wasn’t until 1938 that the toothbrush that we are familiar with came into existence. I can tell you that brushing with frayed twigs in ancient Babylon was probably pretty"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2023/04/amalgam-filling.jpg"
+featuredImage: "/images/articles/uploads/2023/04/amalgam-filling.jpg"
 status: "migrated-as-is"
 ---
 Technology is wonderful. But the thing about technology is that it continues to evolve. Forms of toothbrushes have been around for over 3000 years, but it wasn’t until 1938 that the toothbrush that we are familiar with came into existence. I can tell you that brushing with frayed twigs in ancient Babylon was probably pretty progressive, but if you were to do that today, you’d be looked at with curiosity. Why? Because the toothbrush as we know it is different. It is more comfortable, durable, and effective. 

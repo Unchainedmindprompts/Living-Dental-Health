@@ -4,10 +4,10 @@ slug: "you-only-have-one-set-of-teeth-keep-them-for-life"
 datePublished: "2022-08-01T00:01:43"
 dateModified: "2022-06-28T21:45:27"
 excerpt: "You Only Have One Set of Teeth – Keep Them for Life Unless you’re a small child, your teeth are all you have. But as human nature has it, we often don’t treasure those wonderful gifts until they’re at risk…or are gone. A perfect example is a teen who never had a cavity and had"
-featuredImage: "https://livingdentalhealth.com/wp-content/uploads/2022/06/Girl-Smiling-With-Nice-Teeth-1.jpeg"
+featuredImage: "/images/articles/uploads/2022/06/Girl-Smiling-With-Nice-Teeth-1.jpeg"
 status: "migrated-as-is"
 ---
-![Girl in dentist office](http://www.livingdentalhealth.com/wp-content/uploads/2022/06/Girl-Smiling-With-Nice-Teeth-1.jpeg)
+![Girl in dentist office](/images/articles/uploads/2022/06/Girl-Smiling-With-Nice-Teeth-1.jpeg)
 
 # You Only Have One Set of Teeth – Keep Them for Life
 
