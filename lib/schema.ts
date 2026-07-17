@@ -58,8 +58,8 @@ export function sanitizeJsonLd<T>(value: T): T {
 
 // NAP stub — emitted on EVERY page via the layout. Identity + name,
 // address, phone, geo, areaServed: enough to be a real local signal.
-// Deliberately omits aggregateRating and sameAs so those are never
-// duplicated across pages (one entity = one rating node, on home only).
+// Deliberately omits sameAs so it is never duplicated across pages
+// (one entity = one sameAs set, defined on the home page only).
 const businessNapStub: JsonLdNode = {
   "@type": ["Dentist", "LocalBusiness", "MedicalBusiness"],
   "@id": "https://livingdentalhealth.com/#business",
@@ -314,7 +314,7 @@ export const napStubSchema: JsonLdGraph = {
 
 // Emitted on the home page only — the full source of truth. On the home
 // page this merges with the layout's NAP stub (same @id) into one
-// complete #business node; aggregateRating and sameAs live here alone.
+// complete #business node; sameAs and the enrichment live here alone.
 export const homeSchema: JsonLdGraph = {
   "@context": "https://schema.org",
   "@graph": [
