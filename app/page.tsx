@@ -101,7 +101,9 @@ export default function HomePage() {
             Now Welcoming New Patients
           </p>
           <div className="mt-4 flex items-center justify-center gap-2 sm:gap-3">
-            <LeafToothMark />
+            <span className="hidden sm:inline-flex">
+              <LeafToothMark />
+            </span>
             <h1 className="font-serif text-[32px] leading-none text-charcoal sm:text-[44px] lg:text-[56px]">
               Bend&rsquo;s Dentist Since 1998.
             </h1>
