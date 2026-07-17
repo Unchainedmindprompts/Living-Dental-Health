@@ -4,7 +4,7 @@ import Nav from "@/components/Nav";
 import ServiceCard from "@/components/ServiceCard";
 import { formatDate, getAllArticles } from "@/lib/articles";
 import type { Metadata } from "next";
-import { homeSchema, sanitizeJsonLd } from "@/lib/schema";
+import { homeSchema, homeFaq, sanitizeJsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -426,6 +426,34 @@ export default function HomePage() {
               </dl>
             </div>
           </div>
+        </section>
+
+        <Rule />
+
+        {/* FAQ */}
+        <section
+          id="faq"
+          className="mx-auto max-w-[900px] px-5 py-14 sm:px-6 sm:py-20"
+        >
+          <div className="text-center">
+            <p className="eyebrow mb-3 sm:mb-4">Common Questions</p>
+            <h2 className="font-serif text-[32px] leading-[1.05] text-charcoal sm:text-[44px]">
+              Answers for{" "}
+              <span className="font-serif-italic">new patients.</span>
+            </h2>
+          </div>
+          <dl className="mt-10 border-t border-rule sm:mt-14">
+            {homeFaq.map((f) => (
+              <div key={f.q} className="border-b border-rule py-6 sm:py-8">
+                <dt className="font-serif text-[19px] leading-snug text-charcoal sm:text-[22px]">
+                  {f.q}
+                </dt>
+                <dd className="mt-3 font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:text-[16px]">
+                  {f.a}
+                </dd>
+              </div>
+            ))}
+          </dl>
         </section>
 
         {/* TRUST BAR — mocha band bridges the cream page to the dark footer */}
