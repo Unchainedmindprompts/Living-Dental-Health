@@ -58,8 +58,8 @@ export function sanitizeJsonLd<T>(value: T): T {
 
 // NAP stub — emitted on EVERY page via the layout. Identity + name,
 // address, phone, geo, areaServed: enough to be a real local signal.
-// Deliberately omits aggregateRating and sameAs so those are never
-// duplicated across pages (one entity = one rating node, on home only).
+// Deliberately omits sameAs so it is never duplicated across pages
+// (one entity = one sameAs set, defined on the home page only).
 const businessNapStub: JsonLdNode = {
   "@type": ["Dentist", "LocalBusiness", "MedicalBusiness"],
   "@id": "https://livingdentalhealth.com/#business",
@@ -312,9 +312,39 @@ export const napStubSchema: JsonLdGraph = {
   "@graph": [businessNapStub],
 };
 
+// Homepage FAQ — the SINGLE source of truth for BOTH the visible FAQ
+// section (app/page.tsx) and the FAQPage schema below, so the two always
+// match word-for-word (Google structured-data policy + the schema-audit rule).
+export const homeFaq: { q: string; a: string }[] = [
+  {
+    q: "Is Living Dental Health accepting new patients?",
+    a: "Yes. Living Dental Health is welcoming new patients age 12 and up in Bend, Oregon. The practice provides preventive, cosmetic, restorative, implant, and surgical dental care in a private dental studio setting. Call (541) 550-5311 to schedule a first visit.",
+  },
+  {
+    q: "Who is Dr. Andy Engel?",
+    a: "Dr. Andrew W. Engel, known to many patients as Dr. Andy, is the founder of Living Dental Health. He has cared for Bend families since 1998 and founded Living Dental Health in 2013. A graduate of Oregon Health Sciences University, he has completed over 1,000 hours of continuing education and advanced training in cosmetic dentistry, full mouth reconstruction, oral surgery, dental implants, ClearCorrect, tissue grafting, and bone grafting.",
+  },
+  {
+    q: "What dental services does Living Dental Health provide?",
+    a: "Living Dental Health provides general dentistry, preventive care, cosmetic dentistry, dental implants, oral surgery, full mouth reconstruction, sedation dentistry, oral cancer screening, ClearCorrect aligners, crowns, bridges, fillings, and advanced diagnostic imaging.",
+  },
+  {
+    q: "Does Living Dental Health offer dental implants in Bend?",
+    a: "Yes. Living Dental Health offers dental implant care in Bend, including implant planning, oral surgery, bone grafting when needed, and restoration-focused treatment planning under the care of Dr. Andy Engel. Diagnostic planning uses in-house 3D CBCT imaging.",
+  },
+  {
+    q: "Does Living Dental Health offer cosmetic dentistry in Bend?",
+    a: "Yes. Living Dental Health provides cosmetic dentistry in Bend, including smile design, whitening, ClearCorrect aligners, tooth-colored restorations, crowns, bridges, and full mouth reconstruction for more complex cases.",
+  },
+  {
+    q: "Where is Living Dental Health located?",
+    a: "Living Dental Health is located at 930 SW Yates Dr in Bend, Oregon. The practice serves patients from Bend, Deschutes County, and Central Oregon.",
+  },
+];
+
 // Emitted on the home page only — the full source of truth. On the home
 // page this merges with the layout's NAP stub (same @id) into one
-// complete #business node; aggregateRating and sameAs live here alone.
+// complete #business node; sameAs and the enrichment live here alone.
 export const homeSchema: JsonLdGraph = {
   "@context": "https://schema.org",
   "@graph": [
@@ -333,6 +363,17 @@ export const homeSchema: JsonLdGraph = {
       "mainEntity": { "@id": "https://livingdentalhealth.com/#business" },
       "inLanguage": "en-US",
       "publisher": { "@id": "https://livingdentalhealth.com/#business" },
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://livingdentalhealth.com/#faq",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/#webpage" },
+      "inLanguage": "en-US",
+      "mainEntity": homeFaq.map((f) => ({
+        "@type": "Question",
+        "name": f.q,
+        "acceptedAnswer": { "@type": "Answer", "text": f.a },
+      })),
     },
   ],
 };
