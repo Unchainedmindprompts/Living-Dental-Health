@@ -211,8 +211,7 @@ export default function PatientInfoPage() {
                   style={{ borderColor: "rgba(28,26,23,0.14)" }}
                 >
                   {[
-                    ["Tuesday – Thursday", "8:00 AM – 5:00 PM"],
-                    ["Friday", "8:00 AM – 1:00 PM"],
+                    ["Tuesday – Friday", "8:00 AM – 5:00 PM"],
                     ["Mon, Sat, Sun", "Closed"],
                   ].map(([day, hrs]) => (
                     <div

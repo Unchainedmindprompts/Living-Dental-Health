@@ -114,15 +114,9 @@ const businessEnrichment: Record<string, unknown> = {
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Tuesday", "Wednesday", "Thursday"],
+      "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
       "opens": "08:00",
       "closes": "17:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Friday",
-      "opens": "08:00",
-      "closes": "13:00",
     },
   ],
   "priceRange": "$$",

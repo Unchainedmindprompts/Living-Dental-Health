@@ -526,8 +526,7 @@ export default function HomePage() {
             <FooterCol
               title="Hours"
               lines={[
-                "Tue–Thu · 8a–5p",
-                "Fri · 8a–1p",
+                "Tue–Fri · 8a–5p",
                 "Closed Mon / Sat / Sun",
               ]}
             />
