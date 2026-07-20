@@ -42,7 +42,7 @@ editing.
   2026**
 - **Address:** 930 SW Yates Dr, Bend OR 97702
 - **Phone:** (541) 550-5311
-- **Hours:** Tue–Thu 8AM–5PM, Fri 8AM–1PM
+- **Hours:** Tue–Fri 8AM–5PM
 - **New patients:** accepting ages 12 and up
 - **4.9 ★ · 211 Google reviews** (update as the count grows)
 

@@ -96,9 +96,6 @@ export default function Nav() {
             Contact
           </a>
         </nav>
-        <span className="hidden whitespace-nowrap sm:inline">
-          Open Today <span className="opacity-60">·</span> 8A–5P
-        </span>
       </div>
 
       {/* MAIN NAV BAR */}

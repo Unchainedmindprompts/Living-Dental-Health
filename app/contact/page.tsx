@@ -136,13 +136,9 @@ export default function ContactPage() {
                 </dt>
                 <dd className="text-right">Closed</dd>
                 <dt className="text-left" style={{ color: LABEL }}>
-                  Tue&ndash;Thu
+                  Tue&ndash;Fri
                 </dt>
                 <dd className="text-right">8a&ndash;5p</dd>
-                <dt className="text-left" style={{ color: LABEL }}>
-                  Fri
-                </dt>
-                <dd className="text-right">8a&ndash;1p</dd>
                 <dt className="text-left" style={{ color: LABEL }}>
                   Sat&ndash;Sun
                 </dt>

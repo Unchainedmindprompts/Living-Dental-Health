@@ -209,7 +209,7 @@ export default function PostOpPage() {
             (541) 550&#8209;5311
           </a>
           <p className="font-inter text-[11px] font-light uppercase tracking-[0.18em]">
-            Tue–Thu 8AM–5PM &middot; Fri 8AM–1PM
+            Tue–Fri 8AM–5PM
           </p>
         </div>
       </section>
@@ -479,7 +479,7 @@ export default function PostOpPage() {
               </a>
             </p>
             <p>930 SW Yates Dr, Bend, OR 97702</p>
-            <p>Tue–Thu 8AM–5PM · Fri 8AM–1PM</p>
+            <p>Tue–Fri 8AM–5PM</p>
           </div>
         </div>
       </section>

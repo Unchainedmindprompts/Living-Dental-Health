@@ -258,7 +258,7 @@ export default function TeamPage() {
             </h2>
             <div className="mt-6 space-y-1 font-inter text-[15px] font-light text-charcoal-soft sm:text-[16px]">
               <p>930 SW Yates Dr, Bend, OR 97702</p>
-              <p>Tue–Thu 8AM–5PM · Fri 8AM–1PM</p>
+              <p>Tue–Fri 8AM–5PM</p>
             </div>
             <p className="mx-auto mt-5 max-w-[440px] font-inter text-[14px] font-light leading-[1.7] text-warm-gray">
               New patients welcome. Same-day appointments available — just
