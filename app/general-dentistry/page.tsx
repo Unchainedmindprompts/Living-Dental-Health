@@ -229,7 +229,7 @@ export default function GeneralDentistryPage() {
               alt="Friends laughing together outside, enjoying healthy active lives in Central Oregon"
               fill
               sizes="(min-width: 1320px) 1320px, 100vw"
-              className="object-cover object-center"
+              className="object-cover object-[72%_center] sm:object-center"
             />
           </div>
         </section>
