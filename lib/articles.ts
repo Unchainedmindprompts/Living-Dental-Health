@@ -5,6 +5,20 @@ import { marked } from "marked";
 
 const ARTICLES_DIR = path.join(process.cwd(), "content", "articles");
 
+// Optional graph-enrichment fields. Present only on articles that have been
+// through the SEO upgrade pass; absent on "migrated-as-is" posts, which keep
+// working exactly as before (every field below is optional).
+export type ArticleAbout = { name: string; sameAs?: string };
+export type ArticleMention = { name?: string; sameAs?: string; id?: string };
+export type ArticleCitation = {
+  name: string;
+  url: string;
+  publisher?: string;
+  publisherType?: string;
+  description?: string;
+};
+export type ArticleFaq = { q: string; a: string };
+
 export type ArticleMeta = {
   slug: string;
   title: string;
@@ -12,10 +26,21 @@ export type ArticleMeta = {
   dateModified: string;
   excerpt: string;
   featuredImage: string;
+  alternativeHeadline?: string;
+  articleSection?: string;
+  keywords?: string[];
+  about?: ArticleAbout[];
+  mentions?: ArticleMention[];
+  citations?: ArticleCitation[];
+  faq?: ArticleFaq[];
 };
 
+function nonEmptyArray<T>(v: unknown): T[] | undefined {
+  return Array.isArray(v) && v.length > 0 ? (v as T[]) : undefined;
+}
+
 function metaFrom(slug: string, data: Record<string, unknown>): ArticleMeta {
-  return {
+  const meta: ArticleMeta = {
     slug,
     title: String(data.title ?? ""),
     datePublished: String(data.datePublished ?? ""),
@@ -23,6 +48,16 @@ function metaFrom(slug: string, data: Record<string, unknown>): ArticleMeta {
     excerpt: String(data.excerpt ?? ""),
     featuredImage: String(data.featuredImage ?? ""),
   };
+  if (data.alternativeHeadline)
+    meta.alternativeHeadline = String(data.alternativeHeadline);
+  if (data.articleSection) meta.articleSection = String(data.articleSection);
+  const keywords = nonEmptyArray<unknown>(data.keywords);
+  if (keywords) meta.keywords = keywords.map(String);
+  meta.about = nonEmptyArray<ArticleAbout>(data.about);
+  meta.mentions = nonEmptyArray<ArticleMention>(data.mentions);
+  meta.citations = nonEmptyArray<ArticleCitation>(data.citations);
+  meta.faq = nonEmptyArray<ArticleFaq>(data.faq);
+  return meta;
 }
 
 export function getArticleSlugs(): string[] {

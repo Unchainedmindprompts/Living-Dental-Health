@@ -190,9 +190,15 @@ for (const [id, lines] of defMap) {
 }
 
 // ── Check 2: dangling references ──
+// Real @id references are always absolute URLs. A reference built from a
+// runtime variable — e.g. `{ "@id": m.id }`, where an enhanced article injects
+// a mention target from its frontmatter — is not a static literal and can't be
+// resolved here, so it's skipped (same spirit as resolving the `url` local).
 const defined = new Set(defMap.keys());
 const seen = new Set();
+const isStaticIdRef = (id) => id.includes("://");
 for (const r of refs) {
+  if (!isStaticIdRef(r.id)) continue;
   if (!defined.has(r.id) && !seen.has(r.id)) {
     seen.add(r.id);
     fail(`DANGLING @id ref: ${r.id} (L${r.line}) resolves to no definition`);

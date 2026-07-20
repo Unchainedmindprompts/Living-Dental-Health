@@ -53,6 +53,13 @@ export default function ArticlePage({
     datePublished: meta.datePublished,
     dateModified: meta.dateModified,
     featuredImage: meta.featuredImage,
+    alternativeHeadline: meta.alternativeHeadline,
+    articleSection: meta.articleSection,
+    keywords: meta.keywords,
+    about: meta.about,
+    mentions: meta.mentions,
+    citations: meta.citations,
+    faq: meta.faq,
   });
 
   return (
@@ -114,9 +121,40 @@ export default function ArticlePage({
 
         {/* BODY */}
         <article
-          className="article-prose mx-auto max-w-[680px] px-6 pb-24 pt-10 sm:pt-12 sm:pb-32"
+          className="article-prose mx-auto max-w-[680px] px-6 pb-16 pt-10 sm:pt-12 sm:pb-20"
           dangerouslySetInnerHTML={{ __html: html }}
         />
+
+        {/* FAQ — visible companion to the FAQPage schema (only on upgraded posts) */}
+        {meta.faq && meta.faq.length > 0 ? (
+          <section className="mx-auto max-w-[680px] px-6 pb-24 sm:pb-28">
+            <div
+              className="border-t pt-12 sm:pt-14"
+              style={{ borderColor: "rgba(28,26,23,0.18)" }}
+            >
+              <h2 className="font-serif text-[28px] leading-[1.1] text-charcoal sm:text-[34px]">
+                Frequently asked{" "}
+                <span className="font-serif-italic">questions</span>
+              </h2>
+              <dl className="mt-8">
+                {meta.faq.map((f) => (
+                  <div
+                    key={f.q}
+                    className="border-t py-6 first:border-t-0 first:pt-0"
+                    style={{ borderColor: "rgba(28,26,23,0.12)" }}
+                  >
+                    <dt className="font-serif text-[19px] leading-snug text-charcoal sm:text-[21px]">
+                      {f.q}
+                    </dt>
+                    <dd className="mt-3 font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft">
+                      {f.a}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+          </section>
+        ) : null}
 
         {/* BACK LINK */}
         <div className="mx-auto max-w-[680px] px-6 pb-28">
