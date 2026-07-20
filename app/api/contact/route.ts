@@ -23,7 +23,7 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const TO_EMAIL = process.env.CONTACT_TO_EMAIL || "info@livingdentalhealth.com";
 const FROM_EMAIL =
   process.env.CONTACT_FROM_EMAIL ||
-  "Living Dental Health <onboarding@resend.dev>";
+  "Living Dental Health <noreply@livingdentalhealth.com>";
 
 function escapeHtml(value: string): string {
   return value
