@@ -133,11 +133,17 @@ export default function Nav() {
         )}
       </div>
 
-      {/* FULL-SCREEN OVERLAY */}
+      {/* FULL-SCREEN OVERLAY — when closed, `inert` removes its links and Close
+          button from the tab order and the accessibility tree, so they aren't
+          focusable inside an aria-hidden element. React 18's DOM only honors the
+          string form `inert=""` (typed boolean `inert` shipped in React 19), so
+          it's spread in only when closed; the cast satisfies the boolean type.
+          The overlay stays mounted while closed so it can fade out. */}
       <div
         role="dialog"
         aria-modal="true"
         aria-hidden={!open}
+        {...(open ? {} : ({ inert: "" } as unknown as { inert?: boolean }))}
         className={`fixed inset-0 z-[60] transition-opacity duration-300 ease-out ${
           open
             ? "pointer-events-auto opacity-100"
