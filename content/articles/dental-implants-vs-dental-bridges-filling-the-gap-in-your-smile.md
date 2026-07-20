@@ -59,7 +59,7 @@ faq:
   - q: "What should I do if a tooth gets knocked out?"
     a: "Act quickly — contact your dentist or an oral surgeon immediately, because prompt care preserves the socket and improves the odds of successful re-implantation or a future implant. Dr. Andy Engel is available by phone after hours for emergencies and will refer you to an oral surgeon if the situation calls for it."
 ---
-Losing a tooth can be a daunting experience, impacting both your oral health and confidence. At Living Dental Health, we understand the importance of finding the right solution to restore your smile while honoring your time and budget. Two popular options for replacing missing teeth are [dental implants](/implants-surgery) and dental bridges — both recognized tooth-replacement approaches by the [American Dental Association](https://www.mouthhealthy.org/all-topics-a-z/implants). We sat down with our [Dental Assistant, Christy Spencer,](/about) to discuss the key differences and help you determine which might be the best fit for you.
+Losing a tooth can be a daunting experience, impacting both your oral health and confidence. At Living Dental Health, we understand the importance of finding the right solution to restore your smile while honoring your time and budget. Two popular options for replacing missing teeth are [dental implants](/implants-surgery) and dental bridges — both recognized tooth-replacement approaches by the [American Dental Association](https://www.mouthhealthy.org/all-topics-a-z/implants). We sat down with our [Dental Assistant, Christy Spencer,](/team) to discuss the key differences and help you determine which might be the best fit for you.
 
 ## Dentures: A Thing of the Past or Still Relevant Today?
 
