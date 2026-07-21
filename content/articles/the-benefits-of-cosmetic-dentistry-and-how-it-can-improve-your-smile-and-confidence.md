@@ -3,7 +3,7 @@ title: "The Benefits of Cosmetic Dentistry and How it Can Improve Your Smile and
 slug: "the-benefits-of-cosmetic-dentistry-and-how-it-can-improve-your-smile-and-confidence"
 datePublished: "2024-01-11T15:01:21"
 dateModified: "2026-07-21T00:00:00"
-excerpt: "Smiles are good for the soul. When you smile, your brain releases endorphins, which are natural painkillers and mood elevators. This can help reduce stress and anxiety and even lower blood pressure. Smiling also boosts your immune system by increasing the production of white blood cells, which help fight off infections. Immune boosting is especially"
+excerpt: "Smiling releases endorphins that ease stress and can give your immune system a boost — but the biggest benefit of cosmetic dentistry is confidence. How whitening, veneers, bonding, and smile design improve not just your smile, but your oral health and how others see you, with Dr. Andy Engel in Bend, Oregon."
 featuredImage: "/images/articles/uploads/2024/01/cosmetic-dentistry-in-bend-oregon.jpg"
 imageAlt: "A confident, natural smile after cosmetic dentistry with Dr. Andy Engel at Living Dental Health in Bend, Oregon."
 status: "enhanced"
@@ -29,6 +29,27 @@ mentions:
   - id: "https://livingdentalhealth.com/cosmetic-dentistry#whitening"
   - id: "https://livingdentalhealth.com/cosmetic-dentistry#veneers"
   - id: "https://livingdentalhealth.com/cosmetic-dentistry#bonding"
+citations:
+  - name: "Stress Relief from Laughter? It's No Joke — Mayo Clinic"
+    url: "https://www.mayoclinic.org/healthy-lifestyle/stress-management/in-depth/stress-relief/art-20044456"
+    publisher: "Mayo Clinic"
+    publisherType: "MedicalOrganization"
+    description: "Mayo Clinic on how laughter and a positive response boost endorphins and can ease stress, heart rate, and blood pressure."
+  - name: "Laugh It Up! 5 Benefits of Laughter for Older Adults — UCLA Health"
+    url: "https://www.uclahealth.org/news/article/laugh-it-up-5-benefits-laughter-older-adults"
+    publisher: "UCLA Health"
+    publisherType: "MedicalOrganization"
+    description: "UCLA Health notes that laughter increases immune cells and antibodies, helping the body respond to germs and infections."
+  - name: "Malocclusion (Misaligned Bite): Types & Treatment — Cleveland Clinic"
+    url: "https://my.clevelandclinic.org/health/diseases/22010-malocclusion"
+    publisher: "Cleveland Clinic"
+    publisherType: "MedicalOrganization"
+    description: "Cleveland Clinic notes that untreated misaligned teeth can lead to tooth decay and gum disease."
+  - name: "Adult Jaundice — Cleveland Clinic"
+    url: "https://my.clevelandclinic.org/health/symptoms/15367-adult-jaundice"
+    publisher: "Cleveland Clinic"
+    publisherType: "MedicalOrganization"
+    description: "Cleveland Clinic explains that a yellow tint to the skin and sclera (jaundice) reflects the liver's inability to process bilirubin."
 faq:
   - q: "What can cosmetic dentistry fix?"
     a: "Cosmetic dentistry is customized to what bothers you about your smile. Whitening addresses yellowed or discolored teeth; veneers, bonding, and crowns correct chips, cracks, and gaps; clear aligners straighten crooked teeth; and implants or bridges replace missing teeth. The right treatment depends on your goals, which a consultation sorts out."
@@ -39,7 +60,7 @@ faq:
   - q: "Is cosmetic dentistry expensive?"
     a: "It's more accessible and affordable than most people expect. Advances in dental technology have brought costs down, and a good dentist will lay out several options at different price points so you can choose what fits your budget and your goals."
 ---
-Smiles are good for the soul. When you smile, your brain releases endorphins, which are natural painkillers and mood elevators. This can help reduce stress and anxiety and even lower blood pressure. Smiling also boosts your immune system by increasing the production of white blood cells, which help fight off infections. Immune boosting is especially important this time of year! 
+Smiles are good for the soul. When you smile, your brain releases endorphins, which are natural painkillers and mood elevators. As the [Mayo Clinic](https://www.mayoclinic.org/healthy-lifestyle/stress-management/in-depth/stress-relief/art-20044456) notes, that kind of positive response can help reduce stress and anxiety and even ease your heart rate and blood pressure. Smiling and laughter may also give your immune system a boost — [UCLA Health](https://www.uclahealth.org/news/article/laugh-it-up-5-benefits-laughter-older-adults) points out that laughing increases immune cells and antibodies, helping your body fight off germs and infections. Immune boosting is especially important this time of year! 
 
 ## Most People Notice Your Smile First
 
@@ -55,13 +76,13 @@ The best thing about cosmetic dentistry is that it is customized according to th
 
 ## It’s Not Just About Looks — It’s About Health
 
-Besides improving the appearance of your teeth, cosmetic dentistry can also improve your oral health. When your teeth are correctly aligned and free of cracks or chips, cleaning them and avoiding decay or other dental problems becomes easier. Treatments like [dental implants or dental bridges](/articles/dental-implants-vs-dental-bridges-filling-the-gap-in-your-smile) can help restore missing teeth, improving your ability to chew and speak properly.
+Besides improving the appearance of your teeth, cosmetic dentistry can also improve your oral health. When your teeth are correctly aligned and free of cracks or chips, cleaning them and avoiding decay or other dental problems becomes easier. In fact, the [Cleveland Clinic](https://my.clevelandclinic.org/health/diseases/22010-malocclusion) notes that untreated misalignment can raise the risk of tooth decay and gum disease. Treatments like [dental implants or dental bridges](/articles/dental-implants-vs-dental-bridges-filling-the-gap-in-your-smile) can help restore missing teeth, improving your ability to chew and speak properly.
 
 ## The Biggest Benefit Is Confidence
 
 However, the most significant benefit of cosmetic dentistry is the boost in confidence it can provide. When you feel proud of your smile, you’re more likely to smile and laugh freely, which can positively impact your mental health and social interactions. Studies have shown that people who smile more often are perceived as more attractive, trustworthy, and confident than those who don’t. 
 
-People with white teeth are perceived as healthier than those with discolored teeth. This goes back to the global indicator of health as having a white sclera. The white part of the eye called the sclera, is an indicator of overall health. When the sclera is white, it suggests no underlying health condition affecting the eyes or the body as a whole. On the other hand, a yellowish or reddish tint to the sclera may indicate liver problems, while a bluish tint could indicate problems with oxygenation. Additionally, bloodshot eyes can be a sign of fatigue or allergies. So, having a white sclera is generally considered a sign of good health. 
+People with white teeth are perceived as healthier than those with discolored teeth. It works a bit like the eyes: clear, white eyes read as a familiar visual cue of good health. The white part of the eye, called the sclera, can reflect what is happening elsewhere in the body — a [yellowish tint](https://my.clevelandclinic.org/health/symptoms/15367-adult-jaundice), for example, can be a sign of liver trouble (jaundice), and bloodshot or reddened eyes can point to fatigue or allergies. Bright, white eyes generally read as a sign of good health. 
 
 ## Choosing the Right Dentist for Your Smile
 
