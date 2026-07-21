@@ -3,7 +3,7 @@ title: "Hate the Dentist? Have Dental Anxiety? Get Connected to a Dentist Who Ca
 slug: "hate-the-dentist-have-dental-anxiety-get-connected-to-a-dentist-who-cares"
 datePublished: "2024-08-01T05:00:23"
 dateModified: "2026-07-21T00:00:00"
-excerpt: "If you were to rank the health care providers you had to see from the most enjoyable to the least enjoyable, visiting the dentist would likely be at the low end of the scale—hovering near the gynecologist. For many people, visiting the dentist isn’t a big deal. You go in, get a cleaning (hey, let’s"
+excerpt: "Dental anxiety is common, and avoiding care only makes it worse. See how a small, dentist-owned practice and a no-pressure meet-and-greet help you feel heard."
 featuredImage: "/images/articles/uploads/2024/07/dental-anxiety.jpg"
 status: "enhanced"
 articleSection: "Dental Anxiety & Comfort"
