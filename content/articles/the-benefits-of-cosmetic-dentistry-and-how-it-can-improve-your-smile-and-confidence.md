@@ -45,11 +45,6 @@ citations:
     publisher: "Cleveland Clinic"
     publisherType: "MedicalOrganization"
     description: "Cleveland Clinic notes that untreated misaligned teeth can lead to tooth decay and gum disease."
-  - name: "Adult Jaundice — Cleveland Clinic"
-    url: "https://my.clevelandclinic.org/health/symptoms/15367-adult-jaundice"
-    publisher: "Cleveland Clinic"
-    publisherType: "MedicalOrganization"
-    description: "Cleveland Clinic explains that a yellow tint to the skin and sclera (jaundice) reflects the liver's inability to process bilirubin."
 faq:
   - q: "What can cosmetic dentistry fix?"
     a: "Cosmetic dentistry is customized to what bothers you about your smile. Whitening addresses yellowed or discolored teeth; veneers, bonding, and crowns correct chips, cracks, and gaps; clear aligners straighten crooked teeth; and implants or bridges replace missing teeth. The right treatment depends on your goals, which a consultation sorts out."
