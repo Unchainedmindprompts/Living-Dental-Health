@@ -26,6 +26,7 @@ export type ArticleMeta = {
   dateModified: string;
   excerpt: string;
   featuredImage: string;
+  imageAlt?: string;
   alternativeHeadline?: string;
   articleSection?: string;
   keywords?: string[];
@@ -48,6 +49,7 @@ function metaFrom(slug: string, data: Record<string, unknown>): ArticleMeta {
     excerpt: String(data.excerpt ?? ""),
     featuredImage: String(data.featuredImage ?? ""),
   };
+  if (data.imageAlt) meta.imageAlt = String(data.imageAlt);
   if (data.alternativeHeadline)
     meta.alternativeHeadline = String(data.alternativeHeadline);
   if (data.articleSection) meta.articleSection = String(data.articleSection);

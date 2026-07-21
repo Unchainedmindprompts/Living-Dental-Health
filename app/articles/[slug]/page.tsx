@@ -113,7 +113,7 @@ export default function ArticlePage({
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={meta.featuredImage}
-              alt=""
+              alt={meta.imageAlt ?? ""}
               className="h-auto w-full rounded-[2px] object-cover"
             />
           </figure>
