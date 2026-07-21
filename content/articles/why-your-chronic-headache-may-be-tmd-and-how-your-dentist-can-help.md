@@ -3,7 +3,7 @@ title: "Why Your Chronic Headache May Be TMD and How Your Dentist Can Help"
 slug: "why-your-chronic-headache-may-be-tmd-and-how-your-dentist-can-help"
 datePublished: "2022-11-01T05:08:27"
 dateModified: "2026-07-21T00:00:00"
-excerpt: "Dentists are known for making beautiful smiles, but did you know that they can also help make your headache disappear? Many chronic headaches have a dental or jaw origin — from clenching, grinding, and a misaligned bite that strains the jaw joint. Here is how Dr. Andy Engel finds and treats the cause."
+excerpt: "Dentists are known for making beautiful smiles, but did you know that they can sometimes help make your headache disappear? Many chronic headaches have a dental or jaw origin — from clenching, grinding, and a misaligned bite that strains the jaw joint. Here is how Dr. Andy Engel finds and treats the cause."
 featuredImage: "/images/articles/uploads/2022/10/chronic-headaches-and-TMD-treatment-in-bend-or.jpg"
 imageAlt: "A patient with a chronic headache caused by TMD, evaluated by Dr. Andy Engel at Living Dental Health in Bend, Oregon."
 status: "enhanced"
@@ -65,7 +65,7 @@ faq:
   - q: "How does a dentist treat TMD headaches?"
     a: "Most cases respond well to a custom night guard that balances the bite and lets the jaw joint relax. More severe cases may use a TENS unit to guide the jaw to its most neutral position before a night guard is made, Botox to relax tight jaw muscles, or orthodontics like clear aligners to correct the bite itself."
 ---
-Dentists are known for making beautiful smiles, but did you know that they can also make your headache disappear? 
+Dentists are known for making beautiful smiles, but did you know that they can sometimes help make your headache disappear, too? 
 
 Chronic headaches, such as migraines, are remarkably common — [migraine is the third most common disorder in the world, affecting about 1 in 7 people](https://medlineplus.gov/genetics/condition/migraine/), and roughly 12% of Americans. Sadly, many people go through life medicating their headaches and then hiding in dark rooms when all they may really need to do is visit the dentist. 
 
