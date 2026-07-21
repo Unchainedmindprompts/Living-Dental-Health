@@ -3,7 +3,7 @@ title: "Unmasking the Damage of Clenching and Grinding Teeth (and How to Fight B
 slug: "unmasking-the-damage-of-clenching-and-grinding-teeth-and-how-to-fight-back"
 datePublished: "2025-07-01T05:44:41"
 dateModified: "2026-07-21T00:00:00"
-excerpt: "Have you ever woken up with a headache you can’t quite explain? Or notice a persistent soreness in your jaw or neck? You might be unknowingly engaging in a nocturnal battle with your teeth – the insidious habits of clenching and grinding. At Living Dental Health, we recently had an enlightening chat with our fantastic"
+excerpt: "Clenching and grinding can quietly wreck your teeth and jaw. Dr. Andy Engel explains the damage they cause, why we do it, and how a custom night guard fights back."
 featuredImage: "/images/articles/uploads/2025/06/LDH-Blog-Images.jpg"
 imageAlt: "Teeth worn from clenching and grinding, and the custom night guard used to protect them, at Living Dental Health in Bend, Oregon."
 status: "enhanced"

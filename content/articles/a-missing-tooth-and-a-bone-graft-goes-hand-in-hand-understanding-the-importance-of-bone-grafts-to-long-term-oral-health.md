@@ -3,7 +3,7 @@ title: "A Missing Tooth and a Bone Graft Goes Hand in Hand – Understanding the
 slug: "a-missing-tooth-and-a-bone-graft-goes-hand-in-hand-understanding-the-importance-of-bone-grafts-to-long-term-oral-health"
 datePublished: "2023-01-17T09:33:57"
 dateModified: "2026-07-20T00:00:00"
-excerpt: "Missing teeth are super cute in kids but not so much in adults. Thankfully, there are ways to replace adult teeth, restoring your smile to its former glory. But, before this can happen, you must ensure the tooth’s former home doesn’t collapse. In this blog, learn the importance and significance of bone grafting. First off,"
+excerpt: "After a tooth is lost, a bone graft preserves the site for a future implant and protects the neighboring teeth. Dr. Andy Engel explains why it matters — and does it in-house."
 featuredImage: "/images/articles/uploads/2023/01/bone-graft-in-bend-oregon-for-dental-implant.jpg"
 status: "enhanced"
 alternativeHeadline: "Why a bone graft after losing a tooth protects the neighboring teeth and preserves the site for a future dental implant — and how Dr. Andy performs it in-house."
