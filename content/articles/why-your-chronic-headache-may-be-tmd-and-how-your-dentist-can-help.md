@@ -26,6 +26,37 @@ mentions:
   - name: "Trigeminal nerve"
     sameAs: "https://en.wikipedia.org/wiki/Trigeminal_nerve"
   - id: "https://livingdentalhealth.com/full-mouth-reconstruction#procedure"
+citations:
+  - name: "Migraine — MedlinePlus Genetics, U.S. National Library of Medicine"
+    url: "https://medlineplus.gov/genetics/condition/migraine/"
+    publisher: "U.S. National Library of Medicine"
+    publisherType: "GovernmentOrganization"
+    description: "NIH MedlinePlus notes that migraine is the third most common disorder worldwide, affecting about 1 in 7 people."
+  - name: "Trigeminal Nerve: Anatomy, Function & Conditions — Cleveland Clinic"
+    url: "https://my.clevelandclinic.org/health/body/21581-trigeminal-nerve"
+    publisher: "Cleveland Clinic"
+    publisherType: "MedicalOrganization"
+    description: "Cleveland Clinic explains that the trigeminal nerve provides the movement information for all the muscles involved in chewing."
+  - name: "Teeth Grinding (Bruxism): Symptoms and Causes — Mayo Clinic"
+    url: "https://www.mayoclinic.org/diseases-conditions/bruxism/symptoms-causes/syc-20356095"
+    publisher: "Mayo Clinic"
+    publisherType: "MedicalOrganization"
+    description: "Mayo Clinic notes that bruxism can wear tooth enamel, damage teeth, and lead to jaw pain and headaches."
+  - name: "TMD (Temporomandibular Disorders) — NIDCR, NIH"
+    url: "https://www.nidcr.nih.gov/health-info/tmd"
+    publisher: "National Institute of Dental and Craniofacial Research"
+    publisherType: "GovernmentOrganization"
+    description: "The NIH's NIDCR classifies temporomandibular disorders, including headaches associated with a TMD."
+  - name: "Should You Use a Mouthguard for TMJ Relief? — Cleveland Clinic"
+    url: "https://health.clevelandclinic.org/should-you-use-a-dental-mouthguard-for-your-jaw-pain"
+    publisher: "Cleveland Clinic"
+    publisherType: "MedicalOrganization"
+    description: "Cleveland Clinic notes that occlusal guards are a first-line treatment for clenching and grinding and can protect teeth and reduce strain on the muscles and joint."
+  - name: "Occlusal Splints and Other Methods for Managing TMD — NCBI (NIH)"
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10770907/"
+    publisher: "National Center for Biotechnology Information"
+    publisherType: "GovernmentOrganization"
+    description: "Peer-reviewed review noting that, besides occlusal splints, TMD management methods include TENS and Botox injections."
 faq:
   - q: "Can a dentist really help with chronic headaches?"
     a: "Yes — when headaches stem from clenching, grinding, or a misaligned bite that strains the jaw joint, a dentist can treat the cause rather than just the symptom. At Living Dental Health, most of these cases do well with a custom-fit night guard, and for some patients Dr. Andy adds a TENS unit, Botox, or clear aligners."
@@ -36,15 +67,15 @@ faq:
 ---
 Dentists are known for making beautiful smiles, but did you know that they can also make your headache disappear? 
 
-Chronic headaches, such as migraines, affect more than 39 million men, women, and children throughout the country and more than 1 billion people worldwide. The prevalence of headaches is so significant that it is considered the third most prevalent illness in the world. Sadly, many people go through life medicating their headaches and then hiding in dark rooms when all they may really need to do is visit the dentist. 
+Chronic headaches, such as migraines, are remarkably common — [migraine is the third most common disorder in the world, affecting about 1 in 7 people](https://medlineplus.gov/genetics/condition/migraine/), and roughly 12% of Americans. Sadly, many people go through life medicating their headaches and then hiding in dark rooms when all they may really need to do is visit the dentist. 
 
-Many chronic headaches — and even some migraines — have a dental or jaw origin, and the trigeminal nerve is a big reason why. The trigeminal nerve is the big brother of the cranial nerve family, and it is responsible for stimulating the movement of the jaw muscles, which ties the jaw and headaches closely together.
+Many chronic headaches — and even some migraines — have a dental or jaw origin, and the [trigeminal nerve](https://my.clevelandclinic.org/health/body/21581-trigeminal-nerve) is a big reason why. The trigeminal nerve is the big brother of the cranial nerve family, and it is responsible for stimulating the movement of the jaw muscles, which ties the jaw and headaches closely together.
 
 ## Bruxism and Chronic Headaches
 
 Perhaps your partner has noticed your jaw moving back and forth at night while you sleep. Maybe you wake up in the morning with a headache? Or maybe you just clench your jaw while sitting at your computer working throughout the day to focus on your tasks (ahem, we don’t know anyone who does that). Whatever the reason, clenching or grinding your teeth (called [bruxism](/articles/unmasking-the-damage-of-clenching-and-grinding-teeth-and-how-to-fight-back)) not only wears down tooth enamel and can result in broken teeth, it places stress on the temporomandibular joint in the jaw. This is the connection point between your upper and lower jaw muscles. 
 
-Now, stop what you’re doing and find your temporomandibular joint. Massage it in a circular pattern. Does it feel sore or tender to the touch? Does massaging it help relieve tension in the joint? If so, you may have TMD or temporomandibular joint disorder. 
+Now, stop what you’re doing and find your temporomandibular joint. Massage it in a circular pattern. Does it feel sore or tender to the touch? Does massaging it help relieve tension in the joint? If so, you may have [TMD or temporomandibular joint disorder](https://www.nidcr.nih.gov/health-info/tmd). 
 
 ## Misaligned Bite and Chronic Headaches
 
@@ -52,11 +83,11 @@ The way your teeth sit in your mouth impacts your jaw. That’s why orthodontist
 
 ## How Your Dentist Can Treat Your Chronic Headaches and Migraines
 
-Depending on the cause of your headache, treatment options will vary. At Living Dental Health, the majority of cases we treat do well with specially-made night guards. We specialize in customizing the fit so there is appropriate balance throughout the jaw, which allows the condyles to relax. Night guards also help protect the teeth from damage caused by clenching and grinding while sleeping. 
+Depending on the cause of your headache, treatment options will vary. At Living Dental Health, the majority of cases we treat do well with [specially-made night guards](https://health.clevelandclinic.org/should-you-use-a-dental-mouthguard-for-your-jaw-pain). We specialize in customizing the fit so there is appropriate balance throughout the jaw, which allows the condyles to relax. Night guards also help protect the teeth from damage caused by clenching and grinding while sleeping. 
 
 Another treatment option available at our office for more severe cases uses a TENS unit. This treatment stimulates and aligns the jaws to the most balanced position relating to the nerves, muscles, jaws, and mandibular joint. It takes only minutes to bring the jaw muscles into their most neutral position. Once there, [Dr. Andy](/about) will take precise measurements to design a custom night guard. Combining TENSing and a night guard can alleviate the pain associated with chronic headaches and migraines. 
 
-And in some people, we may recommend treating headaches with Botox. Just as it relaxes the facial muscles to reduce the formation of wrinkles and lines, Botox helps relax tight jaw muscles and significantly decreases pain. 
+And in some people, we may recommend treating headaches with Botox. Just as it relaxes the facial muscles to reduce the formation of wrinkles and lines, Botox can help relax tight jaw muscles and ease the pain. 
 
 One final option we may use if jaw misalignment is the culprit is orthodontia. Our [Clear Correct Braces](/cosmetic-dentistry) can move teeth using a series of custom-made, removable clear aligners, we can straighten teeth and adjust your bite, so your jaw sits in a relaxed and balanced position. Plus, orthodontia can correct any tooth movement that often happens with age. 
 

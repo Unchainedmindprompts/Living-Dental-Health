@@ -27,6 +27,17 @@ mentions:
     sameAs: "https://en.wikipedia.org/wiki/Mouthguard"
   - id: "https://livingdentalhealth.com/full-mouth-reconstruction#procedure"
   - id: "https://livingdentalhealth.com/general-dentistry#crowns"
+citations:
+  - name: "Teeth Grinding (Bruxism): Symptoms and Causes — Mayo Clinic"
+    url: "https://www.mayoclinic.org/diseases-conditions/bruxism/symptoms-causes/syc-20356095"
+    publisher: "Mayo Clinic"
+    publisherType: "MedicalOrganization"
+    description: "Mayo Clinic notes that bruxism can wear tooth enamel, damage teeth, and lead to jaw pain and headaches."
+  - name: "Should You Use a Mouthguard for TMJ Relief? — Cleveland Clinic"
+    url: "https://health.clevelandclinic.org/should-you-use-a-dental-mouthguard-for-your-jaw-pain"
+    publisher: "Cleveland Clinic"
+    publisherType: "MedicalOrganization"
+    description: "Cleveland Clinic notes that occlusal guards are a first-line treatment for clenching and grinding, protecting the teeth and reducing strain on the muscles and joint."
 faq:
   - q: "What damage can clenching and grinding do to your teeth?"
     a: "More than most people realize. Over time it can cause bone recession and even tooth loss, and it cracks, chips, and wears down teeth — sometimes all the way into the nerve, which means a root canal. It can also create pits in the cusp tips and inflame the ligaments that hold teeth in place, causing cold sensitivity and pain when chewing."
