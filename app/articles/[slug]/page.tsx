@@ -34,6 +34,12 @@ export function generateMetadata({
       url,
       images: meta.featuredImage ? [meta.featuredImage] : undefined,
     },
+    twitter: {
+      card: "summary_large_image",
+      title: meta.title,
+      description: meta.excerpt,
+      images: meta.featuredImage ? [meta.featuredImage] : undefined,
+    },
   };
 }
 
