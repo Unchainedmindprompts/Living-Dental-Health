@@ -126,9 +126,9 @@ Our goal is never to give someone more medication than necessary. The goal is to
 
 ## What About Laughing Gas?
 
-Nitrous oxide — commonly known as laughing gas — is another option [used in dentistry](https://www.ncbi.nlm.nih.gov/books/NBK592406/), but it is not necessarily the best solution for every patient with significant anxiety. At Living Dental Health, I prefer to look at the individual patient rather than treating sedation as a one-size-fits-all service.
+You may have heard of nitrous oxide — laughing gas — as an option for anxious patients. It isn't what we use here. The sedation method at Living Dental Health is oral sedation with Halcion, which I find more effective and which doesn't leave you with the groggy, residual hangover that nitrous can.
 
-Some people may not need medication at all. Others may benefit more from oral sedation. The right choice depends on your medical history, your level of anxiety, the type and length of treatment being performed, and several other individual factors. That is a conversation we have together. Sedation should support good dental care. It should never replace good communication.
+That said, sedation of any kind is only one tool. Some people don't need medication at all — what helps most is a calm pace and good communication. Whether Halcion makes sense for you depends on your medical history, your level of anxiety, and the type and length of treatment being performed. That is a conversation we have together. Sedation should support good dental care; it should never replace good communication.
 
 ## Can You Drive After Oral Sedation?
 
