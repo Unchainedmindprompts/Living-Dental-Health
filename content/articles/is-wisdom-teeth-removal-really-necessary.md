@@ -3,7 +3,7 @@ title: "Is Wisdom Teeth Removal Really Necessary?"
 slug: "is-wisdom-teeth-removal-really-necessary"
 datePublished: "2023-09-01T01:00:28"
 dateModified: "2026-07-21T00:00:00"
-excerpt: "We are creatures of evolution and are grateful for three significant evolutionary changes: opposable thumbs, losing body hair, and larger brains. An area that hasn’t entirely kept up with evolution is wisdom teeth, also known as third molars. Our ancestors had larger mandibles so they could tear and chew meat. We don’t. Evolution made our"
+excerpt: "Wisdom teeth do not always need to be removed, but for many people they cause crowding, infection risk, cavities, or impaction. Dr. Andy Engel explains when wisdom teeth removal is recommended, why timing matters, and what patients in Bend can expect."
 featuredImage: "/images/articles/uploads/2023/08/wisdom-teeth-removal-in-bend-Oregon.jpg"
 imageAlt: "A dental X-ray showing wisdom teeth being evaluated for removal by Dr. Andy Engel at Living Dental Health in Bend, Oregon."
 status: "enhanced"
@@ -82,7 +82,7 @@ The frustrating thing about wisdom teeth is that they [typically erupt between 1
 
 As mentioned earlier, a smaller mouth can make cleaning teeth at the back challenging. To prevent recurrent cavities, dentists often recommend wisdom teeth removal in people with otherwise healthy teeth.
 
-The good news in all of this is that [wisdom teeth removal](/implants-surgery) is very common. Evolution has improved the procedure and shortened recovery time, especially when in the hands of an experienced dentist. Speaking of experience, Dr. Andy is an expert at wisdom teeth removal and has been doing the procedure for over 25 years. Many dentists around here weren’t even in college when he began doing wisdom teeth surgery. But we’re dating Dr. Andy, aren’t we? 
+The good news in all of this is that [wisdom teeth removal](/implants-surgery) is very common. Modern dental techniques have improved the procedure and shortened recovery time, especially in the hands of an experienced dentist. Dr. Andy has extensive experience with wisdom teeth removal and has been performing the procedure for over 25 years. Many dentists around here weren’t even in college when he began doing wisdom teeth surgery. But we’re dating Dr. Andy, aren’t we? 
 
 ## When it Comes to Wisdom Teeth Removal, Timing is Everything.
 
