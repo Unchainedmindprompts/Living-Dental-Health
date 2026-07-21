@@ -1073,52 +1073,131 @@ export function articlePostSchema(input: {
   datePublished: string;
   dateModified: string;
   featuredImage: string;
+  // Optional graph-enrichment (present on upgraded articles only). Anything
+  // left undefined/empty is dropped by sanitizeJsonLd, so migrated-as-is posts
+  // still emit clean, valid schema.
+  alternativeHeadline?: string;
+  articleSection?: string;
+  keywords?: string[];
+  about?: { name: string; sameAs?: string }[];
+  mentions?: { name?: string; sameAs?: string; id?: string }[];
+  citations?: {
+    name: string;
+    url: string;
+    publisher?: string;
+    publisherType?: string;
+    description?: string;
+  }[];
+  faq?: { q: string; a: string }[];
 }): JsonLdGraph {
-  const url = `https://livingdentalhealth.com/articles/${input.slug}`;
-  return {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BreadcrumbList",
-        "@id": `${url}#breadcrumbs`,
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://livingdentalhealth.com/",
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Articles",
-            "item": "https://livingdentalhealth.com/articles",
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": input.title,
-            "item": url,
-          },
-        ],
-      },
-      {
-        "@type": "BlogPosting",
-        "@id": `${url}#article`,
-        "headline": input.title,
-        "description": input.excerpt,
-        "datePublished": input.datePublished,
-        "dateModified": input.dateModified,
-        "url": url,
-        "image": input.featuredImage,
-        "mainEntityOfPage": url,
-        "inLanguage": "en-US",
-        "isPartOf": { "@id": "https://livingdentalhealth.com/articles#blog" },
-        "author": { "@id": "https://livingdentalhealth.com/#doctor" },
-        "publisher": { "@id": "https://livingdentalhealth.com/#business" },
-      },
-    ],
-  };
+  const base = "https://livingdentalhealth.com";
+  const url = `${base}/articles/${input.slug}`;
+  const imageUrl = input.featuredImage.startsWith("http")
+    ? input.featuredImage
+    : `${base}${input.featuredImage}`;
+  const image = { "@type": "ImageObject", "url": imageUrl };
+
+  const graph: JsonLdNode[] = [
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${url}#breadcrumbs`,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Articles",
+          "item": "https://livingdentalhealth.com/articles",
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": input.title,
+          "item": url,
+        },
+      ],
+    },
+    {
+      // The page itself — binds the article into the site graph and points
+      // its topic (about) at the practice entity.
+      "@type": "WebPage",
+      "@id": `${url}#webpage`,
+      "url": url,
+      "name": input.title,
+      "description": input.excerpt,
+      "inLanguage": "en-US",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
+      "about": { "@id": "https://livingdentalhealth.com/#business" },
+      "primaryImageOfPage": image,
+      "breadcrumb": { "@id": `${url}#breadcrumbs` },
+      "author": { "@id": "https://livingdentalhealth.com/#doctor" },
+      "publisher": { "@id": "https://livingdentalhealth.com/#business" },
+      "datePublished": input.datePublished,
+      "dateModified": input.dateModified,
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": `${url}#article`,
+      "headline": input.title,
+      "alternativeHeadline": input.alternativeHeadline,
+      "description": input.excerpt,
+      "datePublished": input.datePublished,
+      "dateModified": input.dateModified,
+      "url": url,
+      "image": image,
+      "mainEntityOfPage": { "@id": `${url}#webpage` },
+      "inLanguage": "en-US",
+      "articleSection": input.articleSection,
+      "keywords": input.keywords,
+      "isPartOf": { "@id": "https://livingdentalhealth.com/articles#blog" },
+      "author": { "@id": "https://livingdentalhealth.com/#doctor" },
+      "publisher": { "@id": "https://livingdentalhealth.com/#business" },
+      "about": (input.about ?? []).map((a) => ({
+        "@type": "Thing",
+        "name": a.name,
+        "sameAs": a.sameAs,
+      })),
+      // Wires the article to real-world entities (Wikipedia) AND to the
+      // practice's own service @ids — this is how each post strengthens the
+      // graph without repeating content.
+      "mentions": (input.mentions ?? []).map((m) =>
+        m.id
+          ? { "@id": m.id }
+          : { "@type": "Thing", "name": m.name, "sameAs": m.sameAs }
+      ),
+      // Authoritative corroboration (ADA, NIH, Cleveland Clinic, …).
+      "citation": (input.citations ?? []).map((c) => ({
+        "@type": "WebPage",
+        "name": c.name,
+        "url": c.url,
+        "publisher": c.publisher
+          ? { "@type": c.publisherType ?? "Organization", "name": c.publisher }
+          : undefined,
+        "description": c.description,
+      })),
+    },
+  ];
+
+  if (input.faq && input.faq.length > 0) {
+    graph.push({
+      "@type": "FAQPage",
+      "@id": `${url}#faq`,
+      "isPartOf": { "@id": `${url}#article` },
+      "inLanguage": "en-US",
+      "mainEntity": input.faq.map((f) => ({
+        "@type": "Question",
+        "name": f.q,
+        "acceptedAnswer": { "@type": "Answer", "text": f.a },
+      })),
+    });
+  }
+
+  return { "@context": "https://schema.org", "@graph": graph };
 }
 
 export const fullMouthReconstructionPageSchema: JsonLdGraph = {
