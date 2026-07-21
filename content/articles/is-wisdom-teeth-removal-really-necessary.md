@@ -23,6 +23,27 @@ mentions:
     sameAs: "https://en.wikipedia.org/wiki/Dental_extraction"
   - id: "https://livingdentalhealth.com/implants-surgery#wisdom-teeth"
   - id: "https://livingdentalhealth.com/implants-surgery#extractions"
+citations:
+  - name: "Impacted Wisdom Teeth: Symptoms and Causes — Mayo Clinic"
+    url: "https://www.mayoclinic.org/diseases-conditions/wisdom-teeth/symptoms-causes/syc-20373808"
+    publisher: "Mayo Clinic"
+    publisherType: "MedicalOrganization"
+    description: "Mayo Clinic on how impacted wisdom teeth can damage neighboring teeth, cause infection and pericoronitis, crowd other teeth, and be prone to cavities because they are hard to clean."
+  - name: "Wisdom Teeth Removal: When Is It Necessary? — Mayo Clinic"
+    url: "https://www.mayoclinic.org/diseases-conditions/wisdom-teeth/expert-answers/wisdom-teeth-removal/faq-20058558"
+    publisher: "Mayo Clinic"
+    publisherType: "MedicalOrganization"
+    description: "Mayo Clinic notes that wisdom teeth may not need removal if they are healthy, fully grown, correctly positioned, and cleanable — and that removal is generally easier at a younger age before the roots are fully formed."
+  - name: "Wisdom Teeth Removal: Procedure & Recovery — Cleveland Clinic"
+    url: "https://my.clevelandclinic.org/health/treatments/22119-wisdom-teeth-removal"
+    publisher: "Cleveland Clinic"
+    publisherType: "MedicalOrganization"
+    description: "Cleveland Clinic notes that wisdom teeth typically erupt between the ages of 17 and 25."
+  - name: "Wisdom Teeth Management — American Association of Oral and Maxillofacial Surgeons"
+    url: "https://aaoms.org/wp-content/uploads/2024/10/Ebook_Wisdom_Teeth_R.pdf"
+    publisher: "American Association of Oral and Maxillofacial Surgeons"
+    publisherType: "Organization"
+    description: "AAOMS notes that impacted teeth cannot break through the gums because there is not enough room, and that removal is easier when the patient is younger and the roots are not yet fully formed."
 faq:
   - q: "Is wisdom teeth removal really necessary?"
     a: "For most people, yes — probably. If your wisdom teeth are healthy, positioned correctly, biting properly once fully erupted, and can be cleaned well, they don't need to come out. But that describes very few of us; smaller modern jaws usually don't leave enough room for third molars to come in properly."
@@ -35,11 +56,11 @@ faq:
 ---
 We are creatures of evolution and are grateful for three significant evolutionary changes: opposable thumbs, losing body hair, and larger brains. An area that hasn’t entirely kept up with evolution is wisdom teeth, also known as third molars. Our ancestors had larger mandibles so they could tear and chew meat. We don’t. 
 
-Evolution made our jaws smaller, yet wisdom teeth still erupt. Smaller jaws mean wisdom teeth often don’t have the space needed to grow correctly. Now, just in case you are envisioning Steven Tyler’s generous-sized mouth, know that he is the exception, not the rule. But mouth size is only one of the issues wisdom teeth present. But the question of the hour is whether or not wisdom teeth removal is necessary. The short answer is probably. We will get to why in this blog. 
+Evolution made our jaws smaller, yet wisdom teeth still erupt. Smaller jaws mean wisdom teeth often don’t have [the space needed to grow correctly](https://aaoms.org/wp-content/uploads/2024/10/Ebook_Wisdom_Teeth_R.pdf). Now, just in case you are envisioning Steven Tyler’s generous-sized mouth, know that he is the exception, not the rule. But mouth size is only one of the issues wisdom teeth present. But the question of the hour is whether or not wisdom teeth removal is necessary. The short answer is probably. We will get to why in this blog. 
 
 ## Who Needs Wisdom Teeth Removal?
 
-Wisdom teeth removal isn’t needed if they don’t cause problems. If you are lucky enough to have teeth that are healthy, positioned correctly, biting properly once fully erupted, and can be cleaned properly, you don’t need to have them removed. But that’s not many of us. 
+Wisdom teeth removal isn’t needed if they don’t cause problems. If you are lucky enough to have teeth that are [healthy, positioned correctly, biting properly once fully erupted, and can be cleaned properly](https://www.mayoclinic.org/diseases-conditions/wisdom-teeth/expert-answers/wisdom-teeth-removal/faq-20058558), you don’t need to have them removed. But that’s not many of us. 
 
 ## What Happens When Wisdom Teeth Don’t Come in Properly?
 
@@ -47,7 +68,7 @@ Most people have problems because their mouths are smaller and cannot fit third 
 
 **Impacted**
 
-Often wisdom teeth remain hidden within the gums because they can’t emerge normally. Impacted teeth can result in an infection and damage other teeth’ roots. 
+Often wisdom teeth remain hidden within the gums because they can’t emerge normally. [Impacted teeth](https://www.mayoclinic.org/diseases-conditions/wisdom-teeth/symptoms-causes/syc-20373808) can result in an infection and damage other teeth’ roots. 
 
 **Partial Eruption**
 
@@ -55,7 +76,7 @@ Sometimes wisdom teeth partially emerge but do not fully erupt. Left untreated, 
 
 **Teeth Crowding**
 
-The frustrating thing about wisdom teeth is that they typically erupt between 17 and 24. By that time, most people have already had braces. If they don’t have enough space to come in properly, they crowd and can move existing teeth, putting that gorgeous smile at risk. 
+The frustrating thing about wisdom teeth is that they [typically erupt between 17 and 25](https://my.clevelandclinic.org/health/treatments/22119-wisdom-teeth-removal). By that time, most people have already had braces. If they don’t have enough space to come in properly, they crowd and can move existing teeth, putting that gorgeous smile at risk. 
 
 **Hygiene**
 

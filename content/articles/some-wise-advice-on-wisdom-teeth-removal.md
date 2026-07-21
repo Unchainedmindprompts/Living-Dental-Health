@@ -23,9 +23,20 @@ mentions:
     sameAs: "https://en.wikipedia.org/wiki/Dental_extraction"
   - id: "https://livingdentalhealth.com/implants-surgery#wisdom-teeth"
   - id: "https://livingdentalhealth.com/implants-surgery#cbct-imaging"
+citations:
+  - name: "Impacted Wisdom Teeth: Symptoms and Causes — Mayo Clinic"
+    url: "https://www.mayoclinic.org/diseases-conditions/wisdom-teeth/symptoms-causes/syc-20373808"
+    publisher: "Mayo Clinic"
+    publisherType: "MedicalOrganization"
+    description: "Mayo Clinic notes that when there isn't enough room, wisdom teeth become impacted and are harder to clean, raising the risk of infection and cavities."
+  - name: "Wisdom Teeth Management — American Association of Oral and Maxillofacial Surgeons"
+    url: "https://aaoms.org/wp-content/uploads/2024/10/Ebook_Wisdom_Teeth_R.pdf"
+    publisher: "American Association of Oral and Maxillofacial Surgeons"
+    publisherType: "Organization"
+    description: "AAOMS notes that impacted teeth cannot break through the gums because there is not enough room, and that removal is easier when the patient is younger and the roots are not yet fully formed."
 faq:
   - q: "Do most people really need their wisdom teeth removed?"
-    a: "Most do. Because modern jaws are smaller, the majority of wisdom teeth don't have room to erupt properly — they come in sideways or with twisted roots. And even when they come in straight, they sit so far back that they're hard to clean, so the risk of infection and cavities leads around 90% of people to have them removed."
+    a: "Most do. Because modern jaws are smaller, the majority of wisdom teeth don't have room to erupt properly — they come in sideways or with twisted roots. And even when they come in straight, they sit so far back that they're hard to clean, so the risk of infection and cavities leads most people to have them removed."
   - q: "How does Dr. Engel approach wisdom teeth removal?"
     a: "Strategically — he considers physics, not brute force. He anesthetizes every patient, offers oral sedation (a Halcion pill) to most, and studies each case with 2D panoramic and, when needed, 3D imaging. For teeth with awkward roots (about a third of his cases) he removes the tooth in sections to reduce dry socket, pain, and infection. He refers to an oral surgeon when a root wraps around a nerve or a patient has a rare blood condition."
   - q: "What is the best age to have wisdom teeth removed?"
@@ -37,7 +48,7 @@ Wisdom teeth, also known as third molars, are located at the back corners of the
 
 Most present-day mouths are not large enough to accommodate these teeth. Therefore the majority do not erupt properly. Thus, many wisdom teeth come in sideways or with roots that are twisted or in the shape of a corkscrew. Our caveman ancestors needed wisdom teeth as they ate a diet primarily consisting of raw foods – including meat. Their mandibles (jawbone) were also larger, allowing for space to accommodate the teeth. But today, our diets consist of mostly cooked foods that are primarily cut into manageable pieces to make eating easier, and we have smaller mandibles. 
 
-Yet, these teeth continue to be a part of our existence. And even if wisdom teeth come in straight and pain-free, the risk of infection and cavities –  because it is hard to clean teeth that are so far back in the mouth – has around 90% of people seeking removal.
+Yet, these teeth continue to be a part of our existence. And even if wisdom teeth come in straight and pain-free, the risk of infection and cavities –  because it is hard to clean teeth that are so far back in the mouth – leads most people to have them removed.
 
 ## Enter the Dentist
 

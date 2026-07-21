@@ -23,6 +23,12 @@ mentions:
     sameAs: "https://en.wikipedia.org/wiki/Dry_socket"
   - id: "https://livingdentalhealth.com/implants-surgery#wisdom-teeth"
   - id: "https://livingdentalhealth.com/sedation-dentistry#procedure"
+citations:
+  - name: "Wisdom Teeth Removal: Procedure & Recovery — Cleveland Clinic"
+    url: "https://my.clevelandclinic.org/health/treatments/22119-wisdom-teeth-removal"
+    publisher: "Cleveland Clinic"
+    publisherType: "MedicalOrganization"
+    description: "Cleveland Clinic overview of wisdom teeth removal — the procedure, typical age of eruption, and recovery, including guidance to avoid dry socket."
 faq:
   - q: "What is the ideal age to get wisdom teeth removed?"
     a: "Most people have their wisdom teeth out in their late teens or early twenties, and the ideal window is roughly between 17 and 26. That timeline can shift earlier if your wisdom teeth come in ahead of schedule, which is why Dr. Engel monitors their development over time."
