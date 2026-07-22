@@ -2,10 +2,32 @@
 title: "Meet Your New Dentist"
 slug: "meet-your-new-dentist"
 datePublished: "2021-03-31T15:55:29"
-dateModified: "2021-10-22T02:19:51"
-excerpt: "Introducing Dr. Andy Engel of Living Dental Health When you first meet Dr. Andy Engel of Living Dental Health, you are entranced by his calm demeanor and genuine interest in listening and truly hearing what you have to say. He is a dentist, right? There are plenty of jokes about dentists who like to ask"
+dateModified: "2026-07-22T00:00:00"
+excerpt: "Meet Dr. Andy Engel — from a Boise kid who took apart his toys to a Bend dentist who takes the time to know you. His story, his training, and his approach to care."
 featuredImage: "/images/articles/uploads/2021/08/Andrew-W.-Engel-DMD-horiz-web2.jpg"
-status: "migrated-as-is"
+imageAlt: "Dr. Andy Engel, DMD, of Living Dental Health in Bend, Oregon."
+status: "enhanced"
+articleSection: "Choosing a Dentist"
+alternativeHeadline: "The story, training, and patient-care philosophy of Dr. Andy Engel — the dentist behind Living Dental Health in Bend, Oregon."
+keywords:
+  - "Dr. Andy Engel Bend Oregon"
+  - "meet the dentist Bend"
+  - "about Dr. Engel"
+  - "Living Dental Health dentist"
+  - "dentist biography Bend Oregon"
+about:
+  - name: "Dentistry"
+    sameAs: "https://en.wikipedia.org/wiki/Dentistry"
+mentions:
+  - id: "https://livingdentalhealth.com/#doctor"
+  - id: "https://livingdentalhealth.com/full-mouth-reconstruction#webpage"
+faq:
+  - q: "Who is Dr. Andy Engel?"
+    a: "Dr. Andy Engel is the dentist and owner of Living Dental Health in Bend. Known for his calm demeanor and genuine interest in listening, he's a Boise-raised, Oregon-transplant who knew he wanted to be a dentist in eighth grade — because he loved fixing things and helping people."
+  - q: "What is Dr. Engel's background and training?"
+    a: "Dr. Engel earned his dental degree from OHSU, finished early, and pursued advanced training in full-mouth reconstruction and oral surgery, then aesthetics, implants, clear aligners, and tissue and bone grafting. He helped establish Century Dental Group when he moved to Bend in 1998 and founded Living Dental Health in 2013."
+  - q: "What is Dr. Engel's approach to patient care?"
+    a: "He's a bit of a detective — he works to understand each patient's needs, history, and goals, then pulls from a wide range of training to recommend the best option. His ideal patient is a good communicator, because he sees great outcomes as a team effort built on trust."
 ---
 #### **_Introducing Dr. Andy Engel of Living Dental Health_**
 
@@ -15,7 +37,7 @@ There are plenty of jokes about dentists who like to ask you all sorts of questi
 
 Hey, dentists are fluent in garbled speech. 
 
-But Dr. Engel is different. He wants to know about you as a person when you aren’t limited by suction devices, water sprayers, and sharp equipment. He’s been practicing dentistry in Bend for over 20 years, and he’s pretty darn good at it. In fact, he was going to be an oral surgeon until life – as it tends to do – happened. 
+But Dr. Engel is different. He wants to know about you as a person when you aren’t limited by suction devices, water sprayers, and sharp equipment. He’s been practicing dentistry in Bend for more than 25 years, and he’s pretty darn good at it. In fact, he was going to be an oral surgeon until life – as it tends to do – happened. 
 
 We sat down with Dr. Engel and asked him many questions about himself to get a better feel for who he is as a person and a dentist. And well, this made him a little uncomfortable. You see, he’s used to listening and getting to know his patients, not the other way around. But he was gracious enough to share many lovely details about his life and history. Here’s what we learned. 
 
@@ -30,3 +52,5 @@ When it comes to patient care, Dr. Engel is a bit of a detective. He strives to 
 His dream patient: someone who is a good communicator. 
 
 Dr. Engel firmly believes that his success in helping patients is dependent on the ability to work as a team with his patient to deliver exceptional results. Plus, Dr. Engel wants a patient he can get to know on a first-name basis, so when he sees them around town, he can say hi and pick up where they left off.
+
+Curious what a first visit looks like? Here’s [what to expect at your first appointment](/articles/understanding-your-first-dental-appointment-at-living-dental-health), and [why not all dentists are created equal](/articles/why-not-all-dentists-are-created-equal). Ready to meet him? [Schedule an appointment](/contact) with Dr. Andy.

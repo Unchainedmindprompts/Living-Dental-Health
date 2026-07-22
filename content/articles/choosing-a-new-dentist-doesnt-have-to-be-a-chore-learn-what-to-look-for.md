@@ -2,10 +2,35 @@
 title: "Choosing A New Dentist Doesn’t Have to Be a Chore – Learn What to Look For"
 slug: "choosing-a-new-dentist-doesnt-have-to-be-a-chore-learn-what-to-look-for"
 datePublished: "2023-06-02T17:40:17"
-dateModified: "2023-06-02T17:40:17"
-excerpt: "Moving to a new city is fun and exciting. But it can also be overwhelming, especially when you’ve got to find new healthcare providers. The pandemic created workforce shortages that are felt all across the U.S., including Bend. Long wait times to establish care with a dentist can create issues, especially when you’re struggling with"
+dateModified: "2026-07-22T00:00:00"
+excerpt: "New to Bend? Here's what to look for in a dentist — chairside manner, experience, office vibe, wait times, and the whole-health connection — so choosing the right one isn't a chore."
 featuredImage: "/images/articles/uploads/2023/06/how-to-find-a-new-dentist-in-bend-oregon.jpg"
-status: "migrated-as-is"
+imageAlt: "A patient meeting a new dentist in Bend, Oregon, illustrating what to look for when choosing a dental practice, at Living Dental Health."
+status: "enhanced"
+articleSection: "Choosing a Dentist"
+alternativeHeadline: "What to look for when choosing a new dentist in Bend — chairside manner, experience, office culture, appointment availability, and the oral-systemic health connection — from Living Dental Health."
+keywords:
+  - "choosing a new dentist Bend Oregon"
+  - "what to look for in a dentist"
+  - "finding a dentist after moving"
+  - "new dentist chairside manner"
+  - "dental emergency new patient Bend"
+about:
+  - name: "Dentistry"
+    sameAs: "https://en.wikipedia.org/wiki/Dentistry"
+mentions:
+  - name: "Dental fear"
+    sameAs: "https://en.wikipedia.org/wiki/Dental_fear"
+  - name: "Periodontal disease"
+    sameAs: "https://en.wikipedia.org/wiki/Periodontal_disease"
+  - id: "https://livingdentalhealth.com/#doctor"
+faq:
+  - q: "What should I look for when choosing a new dentist?"
+    a: "Look for good communication and chairside manner — someone who gets to know you before getting 'to business' — plus real experience, a welcoming office vibe, reasonable appointment wait times, and a dentist who understands the connection between oral health and whole-body health."
+  - q: "Can I be seen for a dental emergency as a new patient?"
+    a: "At Living Dental Health, yes — we see non-established patients for emergencies, though established patients get top priority for available appointments. Establishing care before an emergency means you'll be seen faster if one comes up."
+  - q: "Does my oral health really affect my overall health?"
+    a: "Yes. Gum disease is linked to serious conditions including heart disease, so taking care of your teeth supports your whole body — and getting to the root cause of recurring problems, like frequent cavities, can stop them from coming back."
 ---
 Moving to a new city is fun and exciting. But it can also be overwhelming, especially when you’ve got to find new healthcare providers. The pandemic created workforce shortages that are felt all across the U.S., including Bend. Long wait times to establish care with a dentist can create issues, especially when you’re struggling with a dental emergency. 
 
@@ -33,6 +58,6 @@ When you need to be seen by the dentist, you need to be seen. Many dentists in B
 
 ### On the Whole Health and Oral Health Connection
 
-Don’t let anyone tell you differently; your oral health is connected to your whole health. Gum disease is linked to several serious health conditions, including heart disease. So taking care of your teeth not only impacts how your breath smells but also how your body functions. Plus, getting to the root of an oral health problem can cause it to stop happening. Doesn’t that sound lovely? For example, suppose you have a problem with recurrent cavities. Rather than just filling them and letting you go your way, Dr. Andy wants to identify the underlying cause of why you continue to get cavities (despite good hygiene). If we can get to the root of the problem, we can likely make it stop. 
+Don’t let anyone tell you differently; [your oral health is connected to your whole health](/articles/the-connection-between-oral-health-and-whole-health). Gum disease is linked to several serious health conditions, including heart disease. So taking care of your teeth not only impacts how your breath smells but also how your body functions. Plus, getting to the root of an oral health problem can cause it to stop happening. Doesn’t that sound lovely? For example, suppose you have a problem with recurrent cavities. Rather than just filling them and letting you go your way, Dr. Andy wants to identify the underlying cause of why you continue to get cavities (despite good hygiene). If we can get to the root of the problem, we can likely make it stop. 
 
-Your health is important – it is even more critical than unpacking the boxes that are stacked along the walls. Take the time to find a dentist in Bend, OR, who will prioritize your health.  Check out reviews on Google to better understand the popular opinion of that provider. Want to see ours? Have a look at our Google profile by clicking [here](https://www.google.com/search?q=living+dental+health&oq=living+dent&aqs=chrome.0.0i355i512j46i175i199i512j69i57j0i512l2j0i22i30j69i60l2.2039j0j4&sourceid=chrome&ie=UTF-8).
+Your health is important – it is even more critical than unpacking the boxes that are stacked along the walls. Take the time to find a dentist in Bend, OR, who will prioritize your health. It helps to know [why not all dentists are created equal](/articles/why-not-all-dentists-are-created-equal) and [the three questions worth asking](/articles/three-crucial-questions-to-ask-when-choosing-the-best-dentist-in-bend-or).  Check out reviews on Google to better understand the popular opinion of that provider. Want to see ours? Have a look at our Google profile by clicking [here](https://www.google.com/search?q=living+dental+health&oq=living+dent&aqs=chrome.0.0i355i512j46i175i199i512j69i57j0i512l2j0i22i30j69i60l2.2039j0j4&sourceid=chrome&ie=UTF-8).
