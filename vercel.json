@@ -67,7 +67,12 @@
     },
     {
       "source": "/not-all-dentists-are-created-equall/",
-      "destination": "/articles/not-all-dentists-are-created-equall",
+      "destination": "/articles/why-not-all-dentists-are-created-equal",
+      "statusCode": 301
+    },
+    {
+      "source": "/articles/not-all-dentists-are-created-equall",
+      "destination": "/articles/why-not-all-dentists-are-created-equal",
       "statusCode": 301
     },
     {
