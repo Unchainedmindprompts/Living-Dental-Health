@@ -24,6 +24,12 @@ mentions:
   - id: "https://livingdentalhealth.com/#doctor"
   - id: "https://livingdentalhealth.com/full-mouth-reconstruction#webpage"
   - id: "https://livingdentalhealth.com/implants-surgery#implants"
+citations:
+  - name: "Dental Cone-beam Computed Tomography — U.S. FDA"
+    url: "https://www.fda.gov/radiation-emitting-products/medical-x-ray-imaging/dental-cone-beam-computed-tomography"
+    publisher: "U.S. Food and Drug Administration"
+    publisherType: "GovernmentOrganization"
+    description: "The FDA notes that dental cone-beam CT produces three-dimensional images useful for surgical planning of impacted teeth and dental implant planning, and is especially useful for evaluating bone."
 faq:
   - q: "What makes one dentist different from another?"
     a: "Beyond the license, dentists vary in experience, training, technology, and philosophy. Some can handle complex cases in-house — implants, full-mouth reconstruction, surgery — while others refer out, and some treat the root cause of a problem while others just patch the symptom. It's worth finding one whose range and approach fit your needs."
@@ -50,7 +56,7 @@ At many offices, a first appointment is quick: paperwork, X-rays, a hello, and a
 
 ## Technology Most Practices Don’t Have
 
-Every diagnostic test at Living Dental Health is done digitally, including X-rays. The office also has a [CT scanner for 3D imaging](/implants-surgery), used as needed. Is it normal for a general dentist to have a CT scanner? No. But for cases like dental implants or complicated wisdom-teeth extractions, 3D imaging lets Dr. Engel see 360 degrees around an area to guide treatment precisely.
+Every diagnostic test at Living Dental Health is done digitally, including X-rays. The office also has a [CT scanner for 3D imaging](/implants-surgery), used as needed. Is it normal for a general dentist to have a CT scanner? No. But for cases like dental implants or complicated wisdom-teeth extractions, [3D imaging lets Dr. Engel see 360 degrees around an area](https://www.fda.gov/radiation-emitting-products/medical-x-ray-imaging/dental-cone-beam-computed-tomography) to guide treatment precisely.
 
 ## Treating the Cause, Not Just the Symptom
 
