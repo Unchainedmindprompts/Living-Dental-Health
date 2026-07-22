@@ -2,34 +2,129 @@
 title: "The Connection Between Oral Health and Whole Health"
 slug: "the-connection-between-oral-health-and-whole-health"
 datePublished: "2023-02-07T13:15:03"
-dateModified: "2023-02-07T13:15:03"
-excerpt: "The health of your body is directly linked to the health of your mouth. This is called oral health. And while most of us are good about brushing and flossing every day, others aren’t. That’s why we sat down with Dental Hygienist, Nicole Nolan, to get the dirt on how oral health impacts overall health"
+dateModified: "2026-07-22T00:00:00"
+excerpt: "Your mouth is a gateway to your whole body. See how gum disease is linked to heart disease, diabetes, and pregnancy complications — and the simple habits that protect both."
 featuredImage: "/images/articles/uploads/2023/02/gum-disease-facts.jpg"
-status: "migrated-as-is"
+imageAlt: "A happy multigenerational family smiling together, reflecting how good oral health supports whole-body health at every age, at Living Dental Health in Bend, Oregon."
+status: "enhanced"
+articleSection: "Whole-Body Health"
+alternativeHeadline: "How gum disease is linked to heart disease, diabetes, and pregnancy complications — and why professional cleanings and good home care protect your whole body, from Living Dental Health in Bend, Oregon."
+keywords:
+  - "oral health and overall health"
+  - "gum disease and heart disease"
+  - "gum disease and diabetes"
+  - "oral systemic health Bend Oregon"
+  - "periodontal disease whole body health"
+about:
+  - name: "Periodontal disease"
+    sameAs: "https://en.wikipedia.org/wiki/Periodontal_disease"
+  - name: "Inflammation"
+    sameAs: "https://en.wikipedia.org/wiki/Inflammation"
+mentions:
+  - name: "Bacteremia"
+    sameAs: "https://en.wikipedia.org/wiki/Bacteremia"
+  - name: "Cardiovascular disease"
+    sameAs: "https://en.wikipedia.org/wiki/Cardiovascular_disease"
+  - name: "Diabetes"
+    sameAs: "https://en.wikipedia.org/wiki/Diabetes"
+  - name: "Preterm birth"
+    sameAs: "https://en.wikipedia.org/wiki/Preterm_birth"
+  - name: "Alzheimer's disease"
+    sameAs: "https://en.wikipedia.org/wiki/Alzheimer%27s_disease"
+  - id: "https://livingdentalhealth.com/general-dentistry#cleanings"
+  - id: "https://livingdentalhealth.com/oral-cancer-screening#webpage"
+  - id: "https://livingdentalhealth.com/implants-surgery#implants"
+citations:
+  - name: "Oral health: A window to your overall health — Mayo Clinic"
+    url: "https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/dental/art-20047475"
+    publisher: "Mayo Clinic"
+    publisherType: "MedicalOrganization"
+    description: "Mayo Clinic explains that oral bacteria and inflammation can contribute to disease elsewhere in the body, linking periodontitis to cardiovascular disease, endocarditis, diabetes, and pregnancy complications such as premature birth and low birth weight."
+  - name: "Tooth Decay with Baby Bottles — ADA MouthHealthy"
+    url: "https://www.mouthhealthy.org/all-topics-a-z/tooth-decay-with-baby-bottles"
+    publisher: "American Dental Association"
+    publisherType: "Organization"
+    description: "The ADA notes that cavity-causing bacteria can be passed from a mother or primary caregiver to an infant through saliva — for example on a shared feeding spoon or pacifier."
+  - name: "Halitosis (Bad Breath) — Johns Hopkins Medicine"
+    url: "https://www.hopkinsmedicine.org/health/conditions-and-diseases/halitosis-bad-breath"
+    publisher: "Johns Hopkins Medicine"
+    publisherType: "MedicalOrganization"
+    description: "Johns Hopkins notes that bad-smelling breath is a main symptom of gum disease, and that professional cleaning helps remove the bacteria and tartar causing inflammation at the gum line."
+  - name: "About Periodontal (Gum) Disease — CDC"
+    url: "https://www.cdc.gov/oral-health/about/gum-periodontal-disease.html"
+    publisher: "Centers for Disease Control and Prevention"
+    publisherType: "GovernmentOrganization"
+    description: "The CDC notes that hormonal changes such as pregnancy raise periodontitis risk, that untreated periodontitis can worsen diabetes, and that about 60% of adults 65 and older had periodontitis in 2009–2014."
+  - name: "Large Study Links Gum Disease with Dementia — National Institute on Aging (NIH)"
+    url: "https://www.nia.nih.gov/news/large-study-links-gum-disease-dementia"
+    publisher: "National Institute on Aging"
+    publisherType: "GovernmentOrganization"
+    description: "NIA reports that bacteria causing gum disease are associated with the development of Alzheimer's and related dementias, while emphasizing that population studies show association, not causality, and that clinical trials are still needed."
+  - name: "More Evidence of Link Between Severe Gum Disease and Cancer Risk — Johns Hopkins Medicine"
+    url: "https://www.hopkinsmedicine.org/news/newsroom/news-releases/2018/01/more-evidence-of-link-between-severe-gum-disease-and-cancer-risk"
+    publisher: "Johns Hopkins Medicine"
+    publisherType: "MedicalOrganization"
+    description: "A Johns Hopkins–led study found a 24% higher relative risk of cancer among people with severe periodontitis — highest for lung and colorectal cancer — while noting the exact mechanism connecting the two is still uncertain."
+  - name: "Dental care - adult — MedlinePlus (NIH)"
+    url: "https://medlineplus.gov/ency/article/001957.htm"
+    publisher: "U.S. National Library of Medicine"
+    publisherType: "GovernmentOrganization"
+    description: "MedlinePlus notes that many dentists recommend a professional cleaning every six months, and that people with unhealthy gums may need to be seen every three to four months."
+faq:
+  - q: "Can problems in my mouth really affect the rest of my body?"
+    a: "Yes. When gums are inflamed and bleeding, oral bacteria can enter the bloodstream, and chronic inflammation in the mouth is increasingly linked to inflammation elsewhere in the body. Research has connected gum disease to conditions affecting the heart, blood sugar, and pregnancy — which is why good oral care is part of taking care of your whole self."
+  - q: "Is gum disease linked to heart disease?"
+    a: "People with severe gum disease have higher rates of heart attack and stroke. Major health organizations describe this as an association rather than proof that gum disease causes heart disease — the likely common thread is inflammation. It matters most if you already have heart disease or artificial heart valves, where keeping your gums healthy is one more thing you can control."
+  - q: "How are diabetes and gum disease connected?"
+    a: "They work in both directions. High blood sugar makes gum infections more likely and harder to heal, and gum inflammation can in turn make blood sugar harder to control. If you're managing diabetes, treating gum disease is part of managing the condition, not just a cosmetic concern."
+  - q: "What's the simplest way to protect my whole-body health through my mouth?"
+    a: "Keep inflammation down: brush twice a day for two minutes, floss once a day (or use a water pik), and get a professional cleaning at least every six months so bacteria can't build up below the gumline where you can't reach. Regular exams also include a quick oral cancer screening."
 ---
-The health of your body is directly linked to the health of your mouth. This is called oral health.
+The health of your body is directly linked to the health of your mouth. Your mouth doesn't operate in isolation — and a growing body of research keeps strengthening that connection.
 
-And while most of us are good about brushing and flossing every day, others aren’t. That’s why we sat down with [Dental Hygienist, Nicole Nolan](/about), to get the dirt on how oral health impacts overall health and why you should care. 
+While most of us are good about brushing and flossing every day, others aren't. That's why we sat down with our dental hygienist, [Nicole Tarpey](/team), to explain how oral health influences overall health — and why you should care.
 
-“Inflammation can cause harm throughout your body,” said Nicole. “And inflammation in the mouth typically happens when oral hygiene isn’t good enough.” 
+"Inflammation can cause harm throughout your body," Nicole said. "And inflammation in the mouth typically happens when oral hygiene isn't good enough."
 
-You may brush your teeth every morning and night…and maybe even brush for the full two minutes, but skimping on your teeth today can lead to chronic health conditions tomorrow. Here’s the latest research into oral health and whole health.
+You may brush every morning and night — maybe even for the full two minutes — but skimping on your teeth today can contribute to health problems tomorrow. Here's what the research actually says about the link between oral health and whole health.
 
-1.  1.  **Bacteria in your mouth can travel to other parts of your body via your bloodstream.** (Source: AAOSH) According to Nicole, gum disease is the most preventable thing she sees from an oral health perspective. If you keep inflammation in your mouth down with proper home care, which includes brushing your teeth twice a day with a Sonicare toothbrush and flossing once daily, you will decrease the bacterial load in your mouth. This limits the bacteria that can travel to other parts of the body. 
-    2.  **Kissing spreads bacteria.** (source: AAOSH) Yeah, this one is tough to swallow (pun intended) in the month of LOVE. But really, when you kiss someone, you are sharing bacteria – including cavity bacteria. Even kissing your sweet, precious baby can be harmful to THEIR health. You can pass on your cavity bacteria to their perfect little bodies. We aren’t saying not to kiss. We are saying that you need to take care of your mouth to take care of others. 
-    3.  **People with severe gum disease have an increased risk of heart attacks, strokes, lung disease, and premature or low-weight babies.** (source: Mayo Clinic) Because bacteria can travel via your bloodstream, they can visit the heart, triggering inflammation in the heart’s vessels and infection in the heart’s valves. This is especially important for people with heart disease or artificial heart valves. 80-90% of heart disease can be prevented. Do what you can to prevent heart disease from happening to you. And if you already have heart disease, do what you can to manage it by taking extra care of your teeth.
-    4.  **Chronic gum disease is linked to a four times higher head and neck cancer risk.** (Tezal, M. Cancer Epidemiology Bio Markers, and Prevention) Bacteria in the mouth will eat away at bone below the gum line, resulting in bone loss. That is why people with severe periodontal (gum) disease have a much higher risk of tooth loss. For every millimeter of bone loss caused by chronic gum disease, you increase your risk of head and neck cancer by 400%.
-    5.  **The CDC reports that 70.1% of adults 65 and up have some form of periodontal disease.** As you age, the risk of health conditions increases. Receding gum lines is a normal part of aging, but gum recession also increases your risk of periodontal disease. Good home care and regular visits to the dentist can reduce this. You don’t have to wear dentures like your grandparents. If you want to keep your teeth as you age, take care of them now. 
-    6.  **Pregnant women with gum disease have only a 1 in 7 chance of giving birth to a healthy child.** (Source: AAOSH) Every pregnant person wants to deliver a healthy baby. But by not taking care of your teeth, the chance of this happening decreases significantly. 
-    7.  **Bad breath is often caused by gum disease.** When anaerobic bacteria travel below the gumline, it produces an acid with a distinct smell called perio breath. You may brush daily, but you can only clean to around 3 mm below your gumline. With time, bacteria travel deeper, making them untouchable…unless you are a dental hygienist with a tray of tools. So, if you love fresh-smelling breath, give your dental hygienist some love and get a cleaning at least every six months. 
-    8.  **There is a causal relationship between oral bacteria pathogens and Alzheimer’s disease.** (Source: Mayo Clinic) I don’t know about you, but the idea of getting Alzheimer’s is terrifying. Take care of your teeth and lower your risk of getting Alzheimer’s in the future.
-    9.  **If you have bleeding gums and diabetes, you have a higher risk of premature death.** (Source: AAOSH) 95% of adults with diabetes also have periodontal disease. **And 93% of people with gum disease are at risk for diabetes.** (Source: American Diabetes Association) Periodontal disease makes it more difficult to control blood sugars. Diabetes increases the risk of infection in the body. Can you see the cycle here? 
-    10.  **Gum disease increases your risk of pancreatic and kidney cancer by 63%.** (Source: Harvard). Is that whole ‘bacteria from your mouth traveling to other parts of your body’ starting to sink in? 
-    11.  **Gum disease can impact fertility.** (Source: NIH) Women with gum disease take longer to conceive than those without it. Studies have shown that men with gum disease can have a lower sperm count and reduced sperm motility. 
-    12.  **Herpes (aka cold sores) are contagious.** While not gum related, definitely kissing-related. If you have an active herpes outbreak, avoid kissing or sharing food or drinks until it is completely healed, as it can easily spread to others while in its active phase.
+## Your Mouth Is the Gateway
 
-Our mouths are the gateway to whole health. If you want to be your healthiest, start with your mouth. Take care of it by brushing twice daily for two minutes and flossing once daily. Nicole highly recommends getting a Sonicare toothbrush because it is the most effective. She also recommends a water pik for people with restorative work, such as [dental implants](/implants-surgery), bridges, or wider spaces between their teeth. And if you just don’t like to floss, using a water pik is better than nothing, so give it a go. 
+The mouth is one of the busiest entry points to the rest of the body. When gums are inflamed and bleeding, [oral bacteria can slip into the bloodstream](https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/dental/art-20047475) and travel elsewhere. Nicole calls gum disease "the most preventable thing I see." Keep inflammation down with good home care — brushing twice a day and flossing once — and you lower the bacterial load in your mouth, and with it the bacteria that can reach the rest of you.
 
-And don’t forget to see the dentist. Insurance typically covers cleanings every six months, but some people need them more frequently. In 90 days, bacteria can survive below the gum line. Since you can’t clean this area effectively, it is imperative that you take the extra time to get cleanings. 
+That's also why oral bacteria are, in a sense, shareable. The bacteria that cause cavities [can pass from a caregiver to a baby](https://www.mouthhealthy.org/all-topics-a-z/tooth-decay-with-baby-bottles) through shared spoons, cups, and kisses — not a reason to stop kissing your kids, just a reason to keep your own mouth healthy first.
 
-For more oral health tips, visit our website. If you are due for a dental cleaning, [schedule an appointmen](/contact)t at Living Dental Health today.
+And if fresh breath matters to you: [persistent bad breath is often a sign of gum disease](https://www.hopkinsmedicine.org/health/conditions-and-diseases/halitosis-bad-breath). It comes from bacteria living below the gumline, in the few millimeters a toothbrush simply can't reach — which is exactly what a hygienist's cleaning is for.
+
+## Gum Disease and Your Heart
+
+People with severe gum disease have [higher rates of heart attack, stroke, and other cardiovascular problems](https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/dental/art-20047475). It's worth being precise about what that means: major medical organizations describe this as an association, not proof that gum disease causes heart disease. The leading explanation is inflammation — the same inflammatory process that damages gums may also contribute to damage in blood vessels. This matters most if you already have heart disease or artificial heart valves, where oral bacteria entering the bloodstream carry added risk. Caring for your gums is one more lever you control.
+
+## Gum Disease and Diabetes: A Two-Way Street
+
+Diabetes and gum disease [feed each other](https://www.cdc.gov/oral-health/about/gum-periodontal-disease.html). High blood sugar makes gum infections more likely and harder to heal, and gum inflammation can in turn make blood sugar harder to control. If you're managing diabetes, treating gum disease isn't a cosmetic footnote — it's part of managing the condition. (We go deeper in [are people with diabetes doomed to have dental problems?](/articles/are-people-with-diabetes-doomed-to-have-dental-problems))
+
+## Pregnancy and Your Gums
+
+[Pregnancy hormones make gums more prone to inflammation](https://www.cdc.gov/oral-health/about/gum-periodontal-disease.html) — common enough that it has a name, pregnancy gingivitis. Gum disease during pregnancy has also been [associated with a higher risk of preterm birth and low birth weight](https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/dental/art-20047475). That's a reason to keep up your cleanings and home care while expecting, not a cause for panic. ([Healthy gums, healthy baby](/articles/pregnancy-and-oral-health-healthy-gums-make-a-healthy-baby) covers what to do.)
+
+## Your Brain and the Alzheimer's Question
+
+One of the most talked-about frontiers in this research is the possible link between gum disease and Alzheimer's. Scientists have [found periodontal bacteria in the brains of Alzheimer's patients](https://www.nia.nih.gov/news/large-study-links-gum-disease-dementia) and are actively studying whether chronic oral inflammation plays a role. It's an open question, not a settled one — but it's one more reason not to shrug off bleeding gums.
+
+## Gum Disease and Cancer Risk
+
+Researchers have found [associations between long-term gum disease and certain cancers](https://www.hopkinsmedicine.org/news/newsroom/news-releases/2018/01/more-evidence-of-link-between-severe-gum-disease-and-cancer-risk) — including lung, colorectal, and pancreatic cancers. These come from large population studies and show correlation, not proven cause. Still, they point the same direction as everything else here: chronic inflammation in the mouth is worth taking seriously.
+
+## What You Can Actually Do About It
+
+[Gum disease becomes more common with age](https://www.cdc.gov/oral-health/about/gum-periodontal-disease.html), and receding gums — a normal part of getting older — raise the risk further. The encouraging part is how much is within your control. Our mouths are the gateway to whole-body health, and the daily habits are simple:
+
+-   **Brush twice a day for two minutes.** Nicole recommends a Sonicare — she finds it the most effective.
+-   **Floss once a day.** If you truly won't floss, a water pik beats nothing, and it's especially helpful if you have [dental implants](/implants-surgery), bridges, or wider spaces between your teeth.
+-   **Get a professional cleaning.** Insurance typically covers [cleanings](/general-dentistry) every six months, and [some people need one every three to four months](https://medlineplus.gov/ency/article/001957.htm) if their gums aren't healthy — because bacteria steadily rebuild below the gumline where you can't reach.
+-   **Don't skip the [oral cancer screening](/oral-cancer-screening).** It's part of a normal exam and takes only seconds — [there's more to a dental visit than clean teeth](/articles/dentistry-is-more-than-your-teeth), and using [tobacco or vaping](/articles/tobacco-vaping-and-other-tobaccoless-products-and-oral-health-are-a-recipe-for-disaster) raises the stakes.
+
+Gum disease is, in Nicole's words, the most preventable problem she sees. If you're due for a cleaning, [schedule an appointment](/contact) at Living Dental Health.
+
+Want to go deeper on one connection? We've written more on [diabetes and your teeth](/articles/are-people-with-diabetes-doomed-to-have-dental-problems), [oral health during pregnancy](/articles/pregnancy-and-oral-health-healthy-gums-make-a-healthy-baby), [the link between stress, mental health, and your teeth](/articles/the-connection-between-mental-health-and-oral-health-and-how-it-can-ruin-your-teeth), [how your gut health affects your mouth](/articles/your-gut-health-could-be-ruining-your-teeth), and why [seeing the dentist before surgery](/articles/having-surgery-soon-seeing-the-dentist-first-can-save-your-life) — including [before a joint replacement](/articles/timing-dental-work-around-joint-replacement-surgery-how-a-simple-cleaning-can-impact-your-surgical-results) — can matter more than you'd think.

@@ -2,16 +2,49 @@
 title: "Timing Dental Work Around Joint Replacement Surgery: How a Simple Cleaning Can Impact Your Surgical Results"
 slug: "timing-dental-work-around-joint-replacement-surgery-how-a-simple-cleaning-can-impact-your-surgical-results"
 datePublished: "2024-11-01T05:00:04"
-dateModified: "2024-10-28T20:40:36"
-excerpt: "Bend is home to some of the most active people in the world. Active communities typically have higher rates of total joint replacement surgeries, which is certainly true in our little corner of the world. Most people are surprised to learn that major surgeries like hip and knee replacements have specific rules and timings for"
+dateModified: "2026-07-22T00:00:00"
+excerpt: "Hip and knee replacements come with specific rules for dental care — when to schedule cleanings, how long to wait afterward, and when antibiotics are needed. Here's how to time it right."
 featuredImage: "/images/articles/uploads/2024/10/total-joint-replacement-surgery-and-dentistry.jpg"
-status: "migrated-as-is"
+imageAlt: "A patient after joint replacement surgery, illustrating how to time dental cleanings and antibiotics around the procedure, at Living Dental Health in Bend, Oregon."
+status: "enhanced"
+articleSection: "Whole-Body Health"
+alternativeHeadline: "How to time dental cleanings and procedures before and after a hip or knee replacement, why a waiting period matters, and when preventive antibiotics are needed — from Living Dental Health in Bend, Oregon."
+keywords:
+  - "dental work and joint replacement"
+  - "antibiotics before dental cleaning joint replacement"
+  - "dental care after knee replacement"
+  - "hip replacement and dentist Bend Oregon"
+  - "premedication before dental appointment"
+about:
+  - name: "Joint replacement"
+    sameAs: "https://en.wikipedia.org/wiki/Joint_replacement"
+  - name: "Antibiotic prophylaxis"
+    sameAs: "https://en.wikipedia.org/wiki/Antibiotic_prophylaxis"
+mentions:
+  - name: "Amoxicillin"
+    sameAs: "https://en.wikipedia.org/wiki/Amoxicillin"
+  - name: "Bacteremia"
+    sameAs: "https://en.wikipedia.org/wiki/Bacteremia"
+  - id: "https://livingdentalhealth.com/general-dentistry#cleanings"
+citations:
+  - name: "Antibiotic Prophylaxis Prior to Dental Procedures — American Dental Association"
+    url: "https://www.ada.org/resources/ada-library/oral-health-topics/antibiotic-prophylaxis"
+    publisher: "American Dental Association"
+    publisherType: "Organization"
+    description: "The ADA notes that, in general, prophylactic antibiotics are not recommended before dental procedures for patients with prosthetic joint implants to prevent prosthetic joint infection."
+faq:
+  - q: "When should I have dental work done before a joint replacement?"
+    a: "Surgeons often recommend completing dental work several weeks before surgery, and most of our local surgeons follow this approach. Immunocompromised patients may need to wait longer, so ask your surgeon what they expect."
+  - q: "Why do I have to wait to see the dentist after a joint replacement?"
+    a: "Even a routine cleaning releases bacteria, and the mouth is very vascular, so bacteria can enter the bloodstream. If that bacteria reaches a recent surgical site it could cause a serious infection. Locally the waiting period averages about three months, but it varies by surgeon and your health."
+  - q: "Do I need antibiotics before dental appointments after a joint replacement?"
+    a: "The ADA no longer recommends routine antibiotics before dental work for most joint-replacement patients, but many orthopedic surgeons still request them. When they do, it's typically a single dose of amoxicillin or Keflex about an hour before the appointment. Because guidance varies, confirm your specific needs with your surgeon."
 ---
-Bend is home to some of the most active people in the world. Active communities typically have higher rates of total joint replacement surgeries, which is certainly true in our little corner of the world. Most people are surprised to learn that major surgeries like hip and knee replacements have specific rules and timings for dental treatments and even cleanings. In this month’s blog, we sat down with dental hygienist Nicole Tarpey to learn more about the connection between joint replacement surgery and dental care.
+Bend is home to some of the most active people in the world. Active communities typically have higher rates of total joint replacement surgeries, which is certainly true in our little corner of the world. Most people are surprised to learn that major surgeries like hip and knee replacements have specific rules and timings for dental treatments and even cleanings. In this month’s blog, we sat down with dental hygienist [Nicole Tarpey](/team) to learn more about the connection between joint replacement surgery and dental care.
 
 ## Before Joint Replacement Surgery – Timing Dental Work and Cleanings is Critical
 
-Ideally, you will know if you are scheduled for a major surgery and can plan for any dental work well in advance. The Mayo Clinic experts suggest scheduling dental procedures at least four to six weeks before surgery to ensure that you are in the best possible health leading into your operation. Most of our local surgeons also follow this protocol. Some patients, particularly immunocompromised, may need to wait longer between their dental visit and surgery. Nicole recommends talking to your surgeon to determine their expectations of you. If you are having surgery in the next couple of months and are due for a cleaning or dental procedure, call us so we can schedule you appropriately.
+Ideally, you will know if you are scheduled for a major surgery and can plan for any dental work well in advance. Surgeons often recommend completing any needed dental work several weeks before surgery, so you go in as healthy as possible. Most of our local surgeons follow this approach. Some patients, particularly immunocompromised, may need to wait longer between their dental visit and surgery. Nicole recommends talking to your surgeon to determine their expectations of you. If you are having surgery in the next couple of months and are due for a cleaning or dental procedure, call us so we can schedule you appropriately.
 
 ## After Joint Replacement Surgery – Understanding the Waiting Period
 
@@ -21,7 +54,7 @@ Most orthopedic surgeons recommend a waiting period before patients see their de
 
 ## The Role of Preventative Antibiotics Before Dental Appointments
 
-Once the waiting period has passed, local surgeons recommend that patients take antibiotics as a precaution against infection before undergoing any dental procedure – even cleanings. Generally, patients take a one-time dosage of amoxicillin or Keflex approximately one hour before the dental appointment.
+Guidance here has actually shifted in recent years. The [American Dental Association no longer recommends routine antibiotics before dental work](https://www.ada.org/resources/ada-library/oral-health-topics/antibiotic-prophylaxis) for most joint-replacement patients. In practice, though, many orthopedic surgeons still request them — so this is a decision to make together with your surgeon and dentist. When antibiotics are used, patients generally take a one-time dose of amoxicillin or Keflex approximately one hour before the dental appointment.
 
 “We have so many patients undergoing knee and hip replacements and find that many don’t recall their surgeon instructing them about a waiting period or needing to take an antibiotic before their dental appointment,” said Nicole.
 
@@ -34,3 +67,5 @@ The duration of these antibiotics’ prescriptions can also vary significantly. 
 Patients should communicate openly with their surgeon and dentist about upcoming procedures. Disclosing plans for joint replacement surgeries—or that they’ve happened recently—can help the dental office prepare appropriately. Nicole shared that at Living Dental Health, an alert can be added to their system to remind patients to take their pre-medications when necessary. However, this is only possible if the patient tells them about having surgery.
 
 If you have major surgery, don’t overlook the importance of your dental health and how it affects your surgical outcome. Consider this a PSA: Adhere to your surgeon’s recommendations on waiting periods and antibiotics, and maintain open communication with your dental and surgical teams. This proactive approach will help you enjoy a healthier, more active life afterward.
+
+The same idea applies to any operation — [seeing the dentist before surgery can protect your outcome](/articles/having-surgery-soon-seeing-the-dentist-first-can-save-your-life), because [your mouth is connected to the rest of your body](/articles/the-connection-between-oral-health-and-whole-health). If you have a joint replacement coming up or recently had one, [let us know](/contact) so we can time your care correctly.
