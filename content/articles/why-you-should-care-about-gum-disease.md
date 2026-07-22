@@ -2,10 +2,39 @@
 title: "The Icky Truth About Gum Disease and Why You Should Care"
 slug: "why-you-should-care-about-gum-disease"
 datePublished: "2021-07-26T16:22:19"
-dateModified: "2021-10-22T02:21:03"
-excerpt: "The importance of brushing your teeth twice a day is widely known and hard to debate. Even super busy and lackadaisical personalities eventually succumb to the calling of their lonely toothbrush. But flossing is thought by many to be something extra – and according to the ADA, around 55% of adults say that time is"
+dateModified: "2026-07-22T00:00:00"
+excerpt: "Bleeding gums are a red flag, not a normal thing. Learn what causes gum disease, why flossing and cleanings matter, and the health risks of ignoring it — from Living Dental Health in Bend."
 featuredImage: "/images/articles/uploads/2021/08/gum-disease.jpg"
-status: "migrated-as-is"
+imageAlt: "A close-up of teeth and gums being examined for gum disease at Living Dental Health in Bend, Oregon."
+status: "enhanced"
+articleSection: "Preventive Care"
+alternativeHeadline: "What causes gum disease, why flossing and twice-yearly cleanings matter, and the health risks of leaving periodontal disease untreated — from Living Dental Health in Bend, Oregon."
+keywords:
+  - "why gum disease matters"
+  - "bleeding gums and flossing"
+  - "periodontal disease causes"
+  - "gum disease prevention Bend Oregon"
+  - "importance of flossing"
+about:
+  - name: "Periodontal disease"
+    sameAs: "https://en.wikipedia.org/wiki/Periodontal_disease"
+  - name: "Dental floss"
+    sameAs: "https://en.wikipedia.org/wiki/Dental_floss"
+mentions:
+  - name: "Gingivitis"
+    sameAs: "https://en.wikipedia.org/wiki/Gingivitis"
+  - name: "Dental calculus"
+    sameAs: "https://en.wikipedia.org/wiki/Calculus_(dental)"
+  - name: "Tobacco smoking"
+    sameAs: "https://en.wikipedia.org/wiki/Tobacco_smoking"
+  - id: "https://livingdentalhealth.com/general-dentistry#cleanings"
+faq:
+  - q: "Why do my gums bleed when I floss?"
+    a: "Bleeding gums are usually a sign that you aren't flossing regularly — or an early sign of gum disease — not a reason to stop. Flossing gently every day helps your gums get healthier, and if the bleeding keeps up, see your dentist."
+  - q: "What causes gum disease?"
+    a: "Plaque and tartar from food left between the teeth are the main drivers, along with contributors like a sugary or high-carb diet, tobacco use, and hormonal changes during puberty, pregnancy, and menopause. Regular cleanings remove the tartar you can't reach at home."
+  - q: "Why should I care about gum disease?"
+    a: "Beyond being painful and expensive to treat, untreated gum disease is linked to broader health problems including diabetes, heart disease, and stroke. Your mouth offers a window into how the rest of your body is doing."
 ---
 The importance of brushing your teeth twice a day is widely known and hard to debate. Even super busy and lackadaisical personalities eventually succumb to the calling of their lonely toothbrush. But flossing is thought by many to be something extra – and according to the ADA, around 55% of adults say that time is why they don’t do it. Only around ⅓ of Americans age 30 and older admit to flossing their teeth regularly. 
 
@@ -27,8 +56,8 @@ But don’t forget about the dentist. Regular trips for a dental cleaning and an
 
 **Health Risks Associated with Periodontal Disease**
 
-Why should you care about gum disease? Well, do you like pain? Gum disease doesn’t feel very good and can be pretty darn expensive to treat. But gum disease, when left untreated, can also lead to various health problems, including diabetes, heart disease, and stroke.
+Why should you care about gum disease? Well, do you like pain? Gum disease doesn’t feel very good and can be pretty darn expensive to treat. But gum disease, when left untreated, is also [linked to various health problems, including diabetes, heart disease, and stroke](/articles/the-connection-between-oral-health-and-whole-health).
 
 More healthcare providers inquire about their patient’s teeth, gum tissue, tongue, and mouth health than ever before. General practitioners and naturopaths have realized how oral health provides a glimpse into how the body as a whole is doing. Poor oral health can mean there is something wrong inside the body. 
 
-The moral of the story is to take care of your teeth. Brush for two minutes (really) twice a day and floss before bed. Visit your dentist for a cleaning and examination every six months – or more as indicated by your dentist. You have the power to reverse, stop, or slow the progression of gum disease. Take advantage of this power while you can. Your teeth will thank you for it.
+For the fundamentals done right, see our [back-to-the-basics dental tips](/articles/back-to-the-basics), and learn [the difference between a regular and a deep cleaning](/articles/not-all-dental-cleanings-are-the-same-understanding-the-difference-between-prophy-and-perio-cleanings). The moral of the story is to take care of your teeth. Brush for two minutes (really) twice a day and floss before bed. Visit your dentist for a cleaning and examination every six months – or more as indicated by your dentist. You have the power to reverse, stop, or slow the progression of gum disease. Take advantage of this power while you can. Your teeth will thank you for it.
