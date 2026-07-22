@@ -28,6 +28,22 @@ mentions:
   - name: "Tooth whitening"
     sameAs: "https://en.wikipedia.org/wiki/Tooth_whitening"
   - id: "https://livingdentalhealth.com/general-dentistry#cleanings"
+citations:
+  - name: "Tooth Erosion: Stages, Causes & Treatment — Cleveland Clinic"
+    url: "https://my.clevelandclinic.org/health/diseases/tooth-erosion"
+    publisher: "Cleveland Clinic"
+    publisherType: "MedicalOrganization"
+    description: "Cleveland Clinic notes that you should wait at least 30 minutes to brush after eating, giving saliva time to wash away acids, because brushing too soon can damage softened enamel."
+  - name: "Cavities (Tooth Decay) — Cleveland Clinic"
+    url: "https://my.clevelandclinic.org/health/diseases/10946-cavities"
+    publisher: "Cleveland Clinic"
+    publisherType: "MedicalOrganization"
+    description: "Cleveland Clinic notes that acids from bacteria feeding on sugar dissolve tooth enamel to create cavities."
+  - name: "Floss/Interdental Cleaners — American Dental Association"
+    url: "https://www.ada.org/resources/ada-library/oral-health-topics/floss"
+    publisher: "American Dental Association"
+    publisherType: "Organization"
+    description: "The ADA notes that flossing removes plaque between teeth that a toothbrush can't reach and reduces the likelihood of gum disease and tooth decay."
 faq:
   - q: "Should I brush my teeth right after eating?"
     a: "Not right after acidic foods or drinks. Acid softens enamel, and brushing too soon can wear it away. Rinse with water and wait about 30 minutes before brushing to let your teeth remineralize."
@@ -40,15 +56,15 @@ The lines between truth and reality often get blurred due to fallacies. This is 
 
 **Myth:** Sugar is the leading cause of tooth decay.
 
-**Fact:** While sugar can contribute to tooth decay, it’s not the only culprit. The real issue is the bacteria in our mouths that feed on sugar and produce acids that can harm our teeth. It’s not just about how much sugar we consume but how often we consume it and how well we care for our teeth afterward.
+**Fact:** While sugar can contribute to tooth decay, it’s not the only culprit. The real issue is the [bacteria in our mouths that feed on sugar and produce acids](https://my.clevelandclinic.org/health/diseases/10946-cavities) that can harm our teeth. It’s not just about how much sugar we consume but how often we consume it and how well we care for our teeth afterward.
 
 **Myth:** You should brush your teeth immediately after every meal.
 
-**Fact:** While it’s essential to brush your teeth after eating (especially if you just ate something particularly potent like garlic or onions), it’s best to wait for at least 30 minutes after consuming acidic foods or drinks to allow teeth to remineralize. Acidic substances can soften the enamel, and brushing too soon can lead to enamel erosion. Instead, rinse your mouth with water after eating to kick start the remineralization process and wait the recommended 30 minutes to brush.
+**Fact:** While it’s essential to brush your teeth after eating (especially if you just ate something particularly potent like garlic or onions), it’s best to [wait at least 30 minutes after consuming acidic foods or drinks](https://my.clevelandclinic.org/health/diseases/tooth-erosion) to allow teeth to remineralize. Acidic substances can soften the enamel, and brushing too soon can lead to enamel erosion. Instead, rinse your mouth with water after eating to kick start the remineralization process and wait the recommended 30 minutes to brush.
 
 **Myth:** You should avoid flossing if your gums bleed.
 
-**Fact:** Many people believe they should stop flossing if their gums bleed to prevent further damage. But here’s the thing: bleeding gums can be a sign of [gum disease](/articles/why-you-should-care-about-gum-disease) (or flossing infrequently), and regular flossing helps improve gum health. So, if your gums bleed, it’s important to continue flossing gently and make an appointment with your dentist to address the issue. And yes, your dentist and hygienist can tell if you are flossing your teeth, so please do it – but not for us – for you – and anyone you enjoy kissing.
+**Fact:** Many people believe they should stop flossing if their gums bleed to prevent further damage. But here’s the thing: bleeding gums can be a sign of [gum disease](/articles/why-you-should-care-about-gum-disease) (or flossing infrequently), and [regular flossing helps improve gum health](https://www.ada.org/resources/ada-library/oral-health-topics/floss). So, if your gums bleed, it’s important to continue flossing gently and make an appointment with your dentist to address the issue. And yes, your dentist and hygienist can tell if you are flossing your teeth, so please do it – but not for us – for you – and anyone you enjoy kissing.
 
 **Myth:** You don’t have to brush baby teeth because they will fall out anyway.
 

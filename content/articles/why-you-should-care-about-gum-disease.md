@@ -28,6 +28,22 @@ mentions:
   - name: "Tobacco smoking"
     sameAs: "https://en.wikipedia.org/wiki/Tobacco_smoking"
   - id: "https://livingdentalhealth.com/general-dentistry#cleanings"
+citations:
+  - name: "About Periodontal (Gum) Disease — CDC"
+    url: "https://www.cdc.gov/oral-health/about/gum-periodontal-disease.html"
+    publisher: "Centers for Disease Control and Prevention"
+    publisherType: "GovernmentOrganization"
+    description: "The CDC notes that about 4 in 10 U.S. adults aged 30 or older had some level of periodontitis in 2009–2014."
+  - name: "Prevalence of Daily Flossing Among Adults — CDC (NHANES 2009–2014)"
+    url: "https://stacks.cdc.gov/view/cdc/77006/cdc_77006_DS1.pdf"
+    publisher: "Centers for Disease Control and Prevention"
+    publisherType: "GovernmentOrganization"
+    description: "The CDC reports that the overall daily flossing prevalence among U.S. adults aged 30 and older was about 32%."
+  - name: "Floss/Interdental Cleaners — American Dental Association"
+    url: "https://www.ada.org/resources/ada-library/oral-health-topics/floss"
+    publisher: "American Dental Association"
+    publisherType: "Organization"
+    description: "The ADA notes that interdental cleaning with floss removes plaque between teeth that a toothbrush can't reach, reducing the likelihood of gum disease and tooth decay."
 faq:
   - q: "Why do my gums bleed when I floss?"
     a: "Bleeding gums are usually a sign that you aren't flossing regularly — or an early sign of gum disease — not a reason to stop. Flossing gently every day helps your gums get healthier, and if the bleeding keeps up, see your dentist."
@@ -36,15 +52,15 @@ faq:
   - q: "Why should I care about gum disease?"
     a: "Beyond being painful and expensive to treat, untreated gum disease is linked to broader health problems including diabetes, heart disease, and stroke. Your mouth offers a window into how the rest of your body is doing."
 ---
-The importance of brushing your teeth twice a day is widely known and hard to debate. Even super busy and lackadaisical personalities eventually succumb to the calling of their lonely toothbrush. But flossing is thought by many to be something extra – and according to the ADA, around 55% of adults say that time is why they don’t do it. Only around ⅓ of Americans age 30 and older admit to flossing their teeth regularly. 
+The importance of brushing your teeth twice a day is widely known and hard to debate. Even super busy and lackadaisical personalities eventually succumb to the calling of their lonely toothbrush. But flossing is thought by many to be something extra, and plenty of people skip it — often citing a lack of time. In fact, [only about a third of Americans age 30 and older](https://stacks.cdc.gov/view/cdc/77006/cdc_77006_DS1.pdf) floss daily. 
 
-During a routine cleaning, the dental hygienist will ask about flossing frequency. You can tell a lie (or exaggerate like 55% of American adults) or tell the truth. 
+During a routine cleaning, the dental hygienist will ask about flossing frequency. You can tell a lie (or exaggerate) or tell the truth. 
 
 But before your cross your fingers and claim religious flossing, understand that your gums TELL your hygienist about your flossing habits. Bleeding gums is a huge red flag that you aren’t flossing regularly—another red flag: tartar buildup. 
 
 **Why is flossing important?**
 
-A toothbrush alone cannot remove all food particles from the teeth. You can have the very best toothbrush, and oral hygiene routine and STILL have food in between your teeth. If the food particles aren’t removed, they create bacteria colonies that promote inflammation and gum disease, also known as periodontal disease. The CDC reports that 47.2% of adults age 30 and over have periodontal disease. 
+[A toothbrush alone cannot remove all the plaque and food particles between teeth](https://www.ada.org/resources/ada-library/oral-health-topics/floss). You can have the very best toothbrush, and oral hygiene routine and STILL have food in between your teeth. If the food particles aren’t removed, they create bacteria colonies that promote inflammation and gum disease, also known as periodontal disease. The CDC reports that [about 4 in 10 adults age 30 and over](https://www.cdc.gov/oral-health/about/gum-periodontal-disease.html) have some form of periodontal disease. 
 
 **Causes of Periodontal Disease**
 

@@ -32,6 +32,11 @@ citations:
     publisher: "Mayo Clinic"
     publisherType: "MedicalOrganization"
     description: "Mayo Clinic notes that a healthy gum pocket depth is usually between 1 and 3 millimeters, and that pockets deeper than 4 mm may indicate periodontitis."
+  - name: "Dental care - adult — MedlinePlus (NIH)"
+    url: "https://medlineplus.gov/ency/article/001957.htm"
+    publisher: "U.S. National Library of Medicine"
+    publisherType: "GovernmentOrganization"
+    description: "MedlinePlus notes that many dentists recommend a professional cleaning every six months, and that people with unhealthy gums may need to be seen every three to four months."
 faq:
   - q: "What's the difference between a prophy and perio maintenance?"
     a: "A prophy is a routine preventive cleaning for healthy gums, usually every six months, that polishes away plaque and tartar above the gumline. Perio maintenance is for patients who've had a deep cleaning (scaling and root planing) for gum disease; it's done every three to four months and cleans below the gumline to control the infection."
@@ -44,7 +49,7 @@ Seeing our patients checking out their smiles in the mirror after a [dental clea
 
 ### **What does “prophy” mean?**
 
-A typical dental cleaning is a dental prophylaxis or prophy in dentist-speak. This preventative cleaning is for patients with healthy gums and is typically recommended every six months. Our skilled hygienists gently polish away plaque and tartar buildup from the surfaces of your teeth, the areas you can see and easily reach with your toothbrush. It helps keep your gums healthy and your smile sparkling. And the best part? Your insurance often recognizes its importance and frequently covers it at 100%! 
+A typical dental cleaning is a dental prophylaxis or prophy in dentist-speak. This preventative cleaning is for patients with healthy gums and is [typically recommended every six months](https://medlineplus.gov/ency/article/001957.htm). Our skilled hygienists gently polish away plaque and tartar buildup from the surfaces of your teeth, the areas you can see and easily reach with your toothbrush. It helps keep your gums healthy and your smile sparkling. And the best part? Your insurance often recognizes its importance and frequently covers it at 100%! 
 
 ### **What are all those numbers the hygienist calls out during my dental cleaning?** 
 
