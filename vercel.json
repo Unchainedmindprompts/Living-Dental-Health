@@ -167,7 +167,12 @@
     },
     {
       "source": "/essential-updates-from-your-bend-oregon-dentist-plus-why-time-trust-and-transparency-should-be-important-to-you/",
-      "destination": "/articles/essential-updates-from-your-bend-oregon-dentist-plus-why-time-trust-and-transparency-should-be-important-to-you",
+      "destination": "/articles/is-transparency-in-dentistry-possible-we-think-so",
+      "statusCode": 301
+    },
+    {
+      "source": "/articles/essential-updates-from-your-bend-oregon-dentist-plus-why-time-trust-and-transparency-should-be-important-to-you",
+      "destination": "/articles/is-transparency-in-dentistry-possible-we-think-so",
       "statusCode": 301
     },
     {
