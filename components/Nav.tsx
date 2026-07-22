@@ -89,12 +89,6 @@ export default function Nav() {
           >
             Call
           </a>
-          <span aria-hidden className="opacity-40">
-            |
-          </span>
-          <a href="/contact" className="transition-opacity hover:opacity-70">
-            Contact
-          </a>
         </nav>
       </div>
 
