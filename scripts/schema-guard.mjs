@@ -1,12 +1,14 @@
 #!/usr/bin/env node
 // schema-guard — launch gate for the Living Dental Health entity graph.
 //
-// Fails the build/commit if lib/schema.ts drifts on any of:
+// Fails the build/commit if the entity graph drifts on any of:
 //   1. Duplicate @id definitions            (one canonical node per @id)
 //   2. Dangling @id references              ({ "@id": ... } with no definition)
 //   3. Person-vs-business type              (#doctor must be Person; business
 //                                            types only on #business)
 //   4. www host leak on canonical surfaces  (apex is canonical; www 301s to it)
+//   5. Article entity references            (article about/mentions @ids must
+//                                            resolve to a node defined in schema)
 //
 // Pure Node (no deps). Exits 1 on any failure so it can gate prebuild + husky.
 // The wp-content article images (waiting on asset localization) live in
@@ -269,6 +271,32 @@ for (const file of surfaces) {
   });
 }
 
+// ── Check 5: article entity references resolve ──
+// Enhanced articles point at canonical service/procedure/entity nodes by @id in
+// their frontmatter about:/mentions: blocks (e.g. `- id: "…/implants-surgery#implants"`).
+// Those refs are injected into JSON-LD at runtime, so Check 2 (which reads only
+// lib/schema.ts) cannot see them. Enforce here that every internal @id an article
+// references resolves to a node defined in the graph — so the article layer can
+// never drift into a dangling reference.
+const ARTICLES_DIR = "content/articles";
+const INTERNAL_ID = /\bid:\s*["']?(https:\/\/livingdentalhealth\.com[^"'\s]+)/g;
+let articleRefCount = 0;
+if (fs.existsSync(ARTICLES_DIR)) {
+  for (const file of fs.readdirSync(ARTICLES_DIR)) {
+    if (!file.endsWith(".md")) continue;
+    const txt = fs.readFileSync(path.join(ARTICLES_DIR, file), "utf8");
+    // Only the YAML frontmatter carries `id:` entity references.
+    const fm = txt.startsWith("---") ? txt.slice(3).split(/\n---/)[0] : "";
+    for (const ref of new Set([...fm.matchAll(INTERNAL_ID)].map((m) => m[1]))) {
+      articleRefCount++;
+      if (!defined.has(ref))
+        fail(
+          `DANGLING article ref: content/articles/${file} references @id ${ref} — resolves to no node defined in ${SCHEMA_FILE}`
+        );
+    }
+  }
+}
+
 // ── Report ──
 if (failures.length) {
   console.error("\n✖ schema-guard FAILED — entity graph is not launch-safe:\n");
@@ -279,5 +307,5 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(
-  `✓ schema-guard passed — ${defs.length} @id defs, ${refs.length} refs, 0 duplicate, 0 dangling, types + host clean.`
+  `✓ schema-guard passed — ${defs.length} @id defs, ${refs.length} refs, ${articleRefCount} article entity refs, 0 duplicate, 0 dangling, types + host clean.`
 );
