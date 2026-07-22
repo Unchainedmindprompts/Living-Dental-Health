@@ -2,10 +2,34 @@
 title: "Is Transparency in Dentistry Possible? We Think So."
 slug: "is-transparency-in-dentistry-possible-we-think-so"
 datePublished: "2022-08-12T16:24:56"
-dateModified: "2022-08-12T16:24:56"
-excerpt: "Healthcare today seems shrouded in mystery and unknowns – especially if you’re a consumer. You think you will see one dentist and then get switched to another when you show up for your appointment. And all too frequently, those services that you thought were covered by insurance at 80% are only covered at 50%, unless"
+dateModified: "2026-07-22T00:00:00"
+excerpt: "Is transparency in dentistry possible? At Living Dental Health it's the goal — honest communication, respect for your time, and no surprise bills. Here's what that looks like, in Bend."
 featuredImage: "/images/articles/uploads/2022/08/good-communication-in-dentistry-in-bend-oregon.png"
-status: "migrated-as-is"
+imageAlt: "A dentist communicating openly with a patient about care and costs, illustrating transparency in dentistry, at Living Dental Health in Bend, Oregon."
+status: "enhanced"
+articleSection: "Choosing a Dentist"
+alternativeHeadline: "What transparency in dentistry looks like — honest communication, respect for your time, and clear pricing with no surprise bills — from Living Dental Health in Bend, Oregon."
+keywords:
+  - "transparency in dentistry"
+  - "honest dentist Bend Oregon"
+  - "dental pricing transparency"
+  - "no surprise dental bills"
+  - "customized dental care"
+about:
+  - name: "Dentistry"
+    sameAs: "https://en.wikipedia.org/wiki/Dentistry"
+mentions:
+  - name: "Dental insurance"
+    sameAs: "https://en.wikipedia.org/wiki/Dental_insurance"
+  - id: "https://livingdentalhealth.com/#doctor"
+  - id: "https://livingdentalhealth.com/#business"
+faq:
+  - q: "What does transparency in dentistry mean?"
+    a: "It means honest communication and no surprises — knowing what to expect at your appointment, understanding your treatment recommendations and billing up front, and having your time respected. At Living Dental Health, the motto is 'customized care with a gentle touch.'"
+  - q: "Will I know the cost before I agree to treatment?"
+    a: "That's the goal. Our team is trained to advocate for patients in both billing and treatment recommendations, so you get the details of your appointment, billing, and any recommendations up front and can make an informed decision."
+  - q: "Will I see the same dentist each visit?"
+    a: "Yes. A common frustration elsewhere is being switched to a different provider at check-in; at Living Dental Health, your care is built on an ongoing relationship with Dr. Andy."
 ---
 Healthcare today seems shrouded in mystery and unknowns – especially if you’re a consumer.
 
@@ -26,3 +50,5 @@ At Living Dental Health, we want our patients to feel heard and cared for. You s
 And if you’re like us, transparency in pricing can make or break a relationship. Our team is trained to advocate for patients – whether that means in billing or treatment recommendations. We believe that a well-informed patient is a happier patient. If you truly appreciate the details of your appointment, your billing, and any treatment recommendations made by Dr. Andy, you can make more informed decisions. You can learn more about the ins and outs of dental insurance in our article [here](/articles/how-going-out-of-network-for-dental-care-may-save-your-teeth-and-wallet). 
 
 Any care you receive is always up to you. You must live with your teeth. As your dental provider, we ensure you know everything you can to make the best decision for your health and happiness. What you do today will impact your tomorrow.
+
+Transparency is one of the biggest reasons [not all dentists are created equal](/articles/why-not-all-dentists-are-created-equal). If you're weighing your options, here's [what to look for in a dentist](/articles/choosing-a-new-dentist-doesnt-have-to-be-a-chore-learn-what-to-look-for) and how to [navigate dental insurance](/articles/navigating-dental-insurance-the-importance-of-choosing-the-right-dentist-over-an-insurance-plan). Have a question? [Just ask us.](/contact)
