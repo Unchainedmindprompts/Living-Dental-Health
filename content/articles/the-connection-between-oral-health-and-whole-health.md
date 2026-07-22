@@ -82,7 +82,7 @@ faq:
 ---
 The health of your body is directly linked to the health of your mouth. Your mouth doesn't operate in isolation — and a growing body of research keeps strengthening that connection.
 
-While most of us are good about brushing and flossing every day, others aren't. That's why we sat down with our dental hygienist, [Nicole Nolan](/about), to explain how oral health influences overall health — and why you should care.
+While most of us are good about brushing and flossing every day, others aren't. That's why we sat down with our dental hygienist, [Nicole Tarpey](/team), to explain how oral health influences overall health — and why you should care.
 
 "Inflammation can cause harm throughout your body," Nicole said. "And inflammation in the mouth typically happens when oral hygiene isn't good enough."
 
