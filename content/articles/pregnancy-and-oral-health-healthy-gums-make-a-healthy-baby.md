@@ -34,6 +34,11 @@ citations:
     publisher: "Centers for Disease Control and Prevention"
     publisherType: "GovernmentOrganization"
     description: "The CDC notes that about 60% to 75% of pregnant women have gingivitis, an early form of gum disease driven by changing hormones during pregnancy."
+  - name: "Oral Health Care During Pregnancy and Through the Lifespan — ACOG"
+    url: "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2013/08/oral-health-care-during-pregnancy-and-through-the-lifespan"
+    publisher: "American College of Obstetricians and Gynecologists"
+    publisherType: "Organization"
+    description: "ACOG notes an association between maternal periodontal disease and preterm birth, while cautioning that periodontal treatment during pregnancy has not been shown to reduce preterm birth or low birth weight."
 faq:
   - q: "Why are pregnant women more likely to have gum problems?"
     a: "Rising estrogen and progesterone during pregnancy make the gums extra sensitive and increase plaque, so gums become red, inflamed, and bleed easily. The CDC reports that about 60% to 75% of pregnant women have gingivitis, an early form of gum disease."
@@ -52,7 +57,7 @@ Progesterone can also increase plaque stickiness, making it harder to remove wit
 
 ## The Connection Between Gum Disease and Pregnancy Complications
 
-Research suggests that there is a link between gum disease during pregnancy and several complications, including an increased risk of a preterm birth. Gum disease can trigger an inflammatory response in the body, increasing the risk of pre-term labor. Women with gum disease also have a higher risk of delivering a baby with a low birth weight. 
+Research suggests a link between gum disease during pregnancy and complications like [preterm birth and low birth weight](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2013/08/oral-health-care-during-pregnancy-and-through-the-lifespan). Gum disease triggers an inflammatory response in the body that some studies associate with a higher risk of preterm labor. It's worth knowing this is an association rather than a proven cause — but it's one more reason to keep your gums healthy while expecting. 
 
 ## How to Protect Oral Health During Pregnancy
 

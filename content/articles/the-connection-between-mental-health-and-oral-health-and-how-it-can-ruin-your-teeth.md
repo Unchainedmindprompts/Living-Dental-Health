@@ -27,6 +27,12 @@ mentions:
     sameAs: "https://en.wikipedia.org/wiki/Mouthguard"
   - id: "https://livingdentalhealth.com/full-mouth-reconstruction#webpage"
   - id: "https://livingdentalhealth.com/general-dentistry#cleanings"
+citations:
+  - name: "Teeth Grinding (Bruxism): Symptoms and Causes — Mayo Clinic"
+    url: "https://www.mayoclinic.org/diseases-conditions/bruxism/symptoms-causes/syc-20356095"
+    publisher: "Mayo Clinic"
+    publisherType: "MedicalOrganization"
+    description: "Mayo Clinic notes that bruxism is often driven by emotions such as anxiety, stress, anger, and tension, and that extra stress can lead to teeth grinding and clenching."
 faq:
   - q: "What is bruxism?"
     a: "Bruxism is the involuntary grinding or clenching of teeth, especially during sleep. It's common in both adults and children and can cause excessive tooth wear, jaw pain, headaches, and even tooth loss — and in severe cases it can strain the temporomandibular joint (TMJ)."
@@ -41,7 +47,7 @@ Life can be stressful. Today’s fast-paced and demanding world expects so much 
 
 Which brings us to our blog for this month, bruxism. Bruxism is a medical condition characterized by the involuntary grinding or clenching of teeth, especially during sleep. It is a fairly common condition that affects both adults and children and can lead to some dental problems, such as excessive wear and tear of teeth, jaw pain, headaches, and even tooth loss. In severe cases, bruxism can also cause damage to the temporomandibular joint (TMJ), which connects the jaw to the skull, leading to chronic pain and discomfort. 
 
-You’re probably wondering why we started this blog talking about stress. Well, while the exact cause of bruxism is not known, it is often associated with stress, anxiety, and certain medications, such as those taken to treat ADHD. 
+You’re probably wondering why we started this blog talking about stress. Well, while the exact cause of bruxism is not known, it is [often associated with stress, anxiety](https://www.mayoclinic.org/diseases-conditions/bruxism/symptoms-causes/syc-20356095), and certain medications, such as those taken to treat ADHD. 
 
 ## Bruxism is a Natural Response to Stress
 

@@ -27,6 +27,17 @@ mentions:
     sameAs: "https://en.wikipedia.org/wiki/Xerostomia"
   - id: "https://livingdentalhealth.com/full-mouth-reconstruction#webpage"
   - id: "https://livingdentalhealth.com/general-dentistry#cleanings"
+citations:
+  - name: "Dental Erosion — American Dental Association"
+    url: "https://www.ada.org/resources/ada-library/oral-health-topics/dental-erosion"
+    publisher: "American Dental Association"
+    publisherType: "Organization"
+    description: "The ADA notes that dental erosion is caused by acids of intrinsic origin — often from acid reflux — and that gastroesophageal reflux disease (GERD) is a predisposing factor due to chronic regurgitation of gastric contents."
+  - name: "Information Sheet on pH of Home Oral Care Products — ADA Science & Research Institute"
+    url: "https://www.ada.org/-/media/project/ada-organization/ada/ada-org/files/resources/research/hpi/sci_2019information-sheet-on-ph-of-home-oral-care-products_final_aug2019.pdf"
+    publisher: "American Dental Association"
+    publisherType: "Organization"
+    description: "The ADA notes that the critical pH value for enamel dissolution is about pH 5.5, though the exact point of demineralization varies with the calcium and phosphate in saliva."
 faq:
   - q: "Can acid reflux or GERD damage your teeth?"
     a: "Yes. Stomach acid is highly acidic — around pH 1 to 2 — and tooth enamel dissolves in acid far weaker than that, so acid reaching the mouth (often the back teeth) can erode enamel over time. Research links GERD with significant tooth erosion, and because many people don't feel classic heartburn, it often goes unnoticed."
@@ -43,7 +54,7 @@ Stomach acid is quite acidic, with a pH between 1 and 2. Battery acid is also qu
 
 “The first time I saw a handful of cases of tooth erosion in patients who were otherwise healthy, I was surprised,” said Dr. Andy. “But recently, the cases have increased, and the damage is happening much more aggressively. I have seen cases where the patient was doing great six months ago and now has significant damage to their teeth.”
 
-Research has shown that about half of all people who have GERD (gastrointestinal reflux disorder) have significant tooth erosion compared to healthy people. Why is this? Well, tooth enamel can erode at a pH of 5. We already shared that stomach acid is between 1 and 2. That spicy meal you enjoyed last night visited you repeatedly in the form of burp bubbles and indigestion, likely bringing up acid. Over time, the acid can erode teeth. However, the amount of time it takes to cause damage to the teeth can vary depending on if you have other issues at play. 
+Research has shown that many people who have GERD (gastroesophageal reflux disease) [develop significant tooth erosion](https://www.ada.org/resources/ada-library/oral-health-topics/dental-erosion) compared to healthy people. Why is this? Well, tooth enamel can [erode at a pH of about 5.5](https://www.ada.org/-/media/project/ada-organization/ada/ada-org/files/resources/research/hpi/sci_2019information-sheet-on-ph-of-home-oral-care-products_final_aug2019.pdf). We already shared that stomach acid is between 1 and 2. That spicy meal you enjoyed last night visited you repeatedly in the form of burp bubbles and indigestion, likely bringing up acid. Over time, the acid can erode teeth. However, the amount of time it takes to cause damage to the teeth can vary depending on if you have other issues at play. 
 
 Some red-flag health issues that are **_very destructive and cause rapid enamel erosion_** and bacterial overgrowth include: 
 

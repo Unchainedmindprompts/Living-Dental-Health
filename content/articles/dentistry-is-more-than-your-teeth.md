@@ -30,6 +30,17 @@ mentions:
   - id: "https://livingdentalhealth.com/implants-surgery#implants"
   - id: "https://livingdentalhealth.com/oral-cancer-screening#webpage"
   - id: "https://livingdentalhealth.com/general-dentistry#cleanings"
+citations:
+  - name: "Cancer Treatments and Oral Health — NIDCR (NIH)"
+    url: "https://www.nidcr.nih.gov/health-info/cancer-treatments"
+    publisher: "National Institute of Dental and Craniofacial Research"
+    publisherType: "GovernmentOrganization"
+    description: "The NIH's NIDCR notes that head and neck radiation and chemotherapy can cause mouth problems ranging from dry mouth to life-threatening infections."
+  - name: "Periodontitis: Diagnosis and Treatment — Mayo Clinic"
+    url: "https://www.mayoclinic.org/diseases-conditions/periodontitis/diagnosis-treatment/drc-20354479"
+    publisher: "Mayo Clinic"
+    publisherType: "MedicalOrganization"
+    description: "Mayo Clinic notes that a healthy gum pocket depth is usually between 1 and 3 millimeters, and that pockets deeper than 4 mm may indicate periodontitis."
 faq:
   - q: "Why does bone matter so much in dentistry?"
     a: "The jawbone is the foundation that supports your teeth. Without enough healthy bone, options like dental implants become limited and problems are much harder to fix. Gum disease and tartar cause inflammation and bone loss, so protecting your gums protects the bone underneath."
@@ -58,11 +69,11 @@ But advances in technology have made this approach archaic, especially for denti
 
 The best way to care for your teeth is through good oral hygiene. This means flossing daily and brushing twice a day. If you don’t, tartar builds up, inflaming the tissue and resulting in bone loss.
 
-Good hygiene means visiting the dentist twice a year for a cleaning and examination. During a cleaning, you’ve probably heard them say numbers while probing your gumline and wondered what in the world they were doing. These numbers indicate periodontal health or gum recession. Anything between one to three is considered healthy. When you have four or greater, you are starting to lose bone and tissue around the teeth. Once these are gone, surgery is the only way to restore them.
+Good hygiene means visiting the dentist twice a year for a cleaning and examination. During a cleaning, you’ve probably heard them say numbers while probing your gumline and wondered what in the world they were doing. These numbers indicate periodontal health or gum recession. [Anything between one to three millimeters is considered healthy](https://www.mayoclinic.org/diseases-conditions/periodontitis/diagnosis-treatment/drc-20354479). When you have four or greater, it may signal gum disease — and possible loss of the bone and tissue around the teeth, which an X-ray can confirm. Once those are gone, surgery is often the only way to restore them.
 
 ## **The Conundrum Between Modern Medicine, Cancer, and Oral Health**
 
-Medical advancements have allowed us to do some amazing things. But these advancements can cause problems in other areas of the body. A perfect example of this is radiation and chemotherapy, which put the person receiving treatment at a greater risk of having an oral infection. That’s why it is essential to see your dentist more often to ensure your oral health doesn’t worsen. Dr. Andy recommends that people undergoing cancer treatments consider using CariFree as it addresses the pH levels in the mouth, replenishing lost minerals in the tooth’s structure. He also recommends drinking plenty of water to combat dry mouth, eating a low sugar and acid diet, and using a Sonicare toothbrush.
+Medical advancements have allowed us to do some amazing things. But these advancements can cause problems in other areas of the body. A perfect example of this is [radiation and chemotherapy, which can cause everything from dry mouth to serious oral infections](https://www.nidcr.nih.gov/health-info/cancer-treatments). That’s why it is essential to see your dentist more often to ensure your oral health doesn’t worsen. Dr. Andy recommends that people undergoing cancer treatments consider using CariFree as it addresses the pH levels in the mouth, replenishing lost minerals in the tooth’s structure. He also recommends drinking plenty of water to combat dry mouth, eating a low sugar and acid diet, and using a Sonicare toothbrush.
 
 Some medical conditions can compromise bone health, such as certain cancer treatments and even osteoporosis. Plus, many medications cause dry mouth. A dry mouth can lead to cavities because saliva helps wash away bacteria and food particles. Radiation and chemotherapy, in particular, can result in a higher chance of infection.
 
