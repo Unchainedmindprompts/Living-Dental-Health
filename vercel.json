@@ -11,7 +11,17 @@
       "statusCode": 301
     },
     {
+      "source": "/some-wise-advice-on-wisdom-teeth-removal",
+      "destination": "/articles/some-wise-advice-on-wisdom-teeth-removal",
+      "statusCode": 301
+    },
+    {
       "source": "/why-not-all-dentists-are-created-equal/",
+      "destination": "/articles/why-not-all-dentists-are-created-equal",
+      "statusCode": 301
+    },
+    {
+      "source": "/why-not-all-dentists-are-created-equal",
       "destination": "/articles/why-not-all-dentists-are-created-equal",
       "statusCode": 301
     },
@@ -21,7 +31,17 @@
       "statusCode": 301
     },
     {
+      "source": "/meet-your-new-dentist",
+      "destination": "/articles/meet-your-new-dentist",
+      "statusCode": 301
+    },
+    {
       "source": "/two-solutions-for-achieving-your-perfect-smile/",
+      "destination": "/articles/two-solutions-for-achieving-your-perfect-smile",
+      "statusCode": 301
+    },
+    {
+      "source": "/two-solutions-for-achieving-your-perfect-smile",
       "destination": "/articles/two-solutions-for-achieving-your-perfect-smile",
       "statusCode": 301
     },
@@ -31,7 +51,17 @@
       "statusCode": 301
     },
     {
+      "source": "/how-going-out-of-network-for-dental-care-may-save-your-teeth-and-wallet",
+      "destination": "/articles/how-going-out-of-network-for-dental-care-may-save-your-teeth-and-wallet",
+      "statusCode": 301
+    },
+    {
       "source": "/why-you-should-care-about-gum-disease/",
+      "destination": "/articles/why-you-should-care-about-gum-disease",
+      "statusCode": 301
+    },
+    {
+      "source": "/why-you-should-care-about-gum-disease",
       "destination": "/articles/why-you-should-care-about-gum-disease",
       "statusCode": 301
     },
@@ -41,7 +71,17 @@
       "statusCode": 301
     },
     {
+      "source": "/back-to-the-basics",
+      "destination": "/articles/back-to-the-basics",
+      "statusCode": 301
+    },
+    {
       "source": "/dental-gifts-you-never-knew-youd-love-to-have/",
+      "destination": "/articles/dental-gifts-you-never-knew-youd-love-to-have",
+      "statusCode": 301
+    },
+    {
+      "source": "/dental-gifts-you-never-knew-youd-love-to-have",
       "destination": "/articles/dental-gifts-you-never-knew-youd-love-to-have",
       "statusCode": 301
     },
@@ -51,7 +91,17 @@
       "statusCode": 301
     },
     {
+      "source": "/a-kissable-mouth-for-valentines",
+      "destination": "/articles/a-kissable-mouth-for-valentines",
+      "statusCode": 301
+    },
+    {
       "source": "/starting-the-new-year-with-a-confident-smile/",
+      "destination": "/articles/starting-the-new-year-with-a-confident-smile",
+      "statusCode": 301
+    },
+    {
+      "source": "/starting-the-new-year-with-a-confident-smile",
       "destination": "/articles/starting-the-new-year-with-a-confident-smile",
       "statusCode": 301
     },
@@ -61,12 +111,27 @@
       "statusCode": 301
     },
     {
+      "source": "/common-myths-surrounding-food-and-oral-health",
+      "destination": "/articles/common-myths-surrounding-food-and-oral-health",
+      "statusCode": 301
+    },
+    {
       "source": "/dentistry-is-more-than-your-teeth/",
       "destination": "/articles/dentistry-is-more-than-your-teeth",
       "statusCode": 301
     },
     {
+      "source": "/dentistry-is-more-than-your-teeth",
+      "destination": "/articles/dentistry-is-more-than-your-teeth",
+      "statusCode": 301
+    },
+    {
       "source": "/not-all-dentists-are-created-equall/",
+      "destination": "/articles/why-not-all-dentists-are-created-equal",
+      "statusCode": 301
+    },
+    {
+      "source": "/not-all-dentists-are-created-equall",
       "destination": "/articles/why-not-all-dentists-are-created-equal",
       "statusCode": 301
     },
@@ -81,7 +146,17 @@
       "statusCode": 301
     },
     {
+      "source": "/not-all-dentists-are-terrifying",
+      "destination": "/articles/not-all-dentists-are-terrifying",
+      "statusCode": 301
+    },
+    {
       "source": "/dont-shortchange-your-health-slow-down-when-you-eat/",
+      "destination": "/articles/dont-shortchange-your-health-slow-down-when-you-eat",
+      "statusCode": 301
+    },
+    {
+      "source": "/dont-shortchange-your-health-slow-down-when-you-eat",
       "destination": "/articles/dont-shortchange-your-health-slow-down-when-you-eat",
       "statusCode": 301
     },
@@ -91,7 +166,17 @@
       "statusCode": 301
     },
     {
+      "source": "/you-only-have-one-set-of-teeth-keep-them-for-life",
+      "destination": "/articles/you-only-have-one-set-of-teeth-keep-them-for-life",
+      "statusCode": 301
+    },
+    {
       "source": "/is-transparency-in-dentistry-possible-we-think-so/",
+      "destination": "/articles/is-transparency-in-dentistry-possible-we-think-so",
+      "statusCode": 301
+    },
+    {
+      "source": "/is-transparency-in-dentistry-possible-we-think-so",
       "destination": "/articles/is-transparency-in-dentistry-possible-we-think-so",
       "statusCode": 301
     },
@@ -101,7 +186,17 @@
       "statusCode": 301
     },
     {
+      "source": "/ten-most-frequently-asked-dental-questions",
+      "destination": "/articles/ten-most-frequently-asked-dental-questions",
+      "statusCode": 301
+    },
+    {
       "source": "/how-the-heck-did-dentists-become-so-scary/",
+      "destination": "/articles/how-the-heck-did-dentists-become-so-scary",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-the-heck-did-dentists-become-so-scary",
       "destination": "/articles/how-the-heck-did-dentists-become-so-scary",
       "statusCode": 301
     },
@@ -111,7 +206,17 @@
       "statusCode": 301
     },
     {
+      "source": "/why-your-chronic-headache-may-be-tmd-and-how-your-dentist-can-help",
+      "destination": "/articles/why-your-chronic-headache-may-be-tmd-and-how-your-dentist-can-help",
+      "statusCode": 301
+    },
+    {
       "source": "/three-tips-for-saving-money-on-your-health-and-dental-expenses/",
+      "destination": "/articles/three-tips-for-saving-money-on-your-health-and-dental-expenses",
+      "statusCode": 301
+    },
+    {
+      "source": "/three-tips-for-saving-money-on-your-health-and-dental-expenses",
       "destination": "/articles/three-tips-for-saving-money-on-your-health-and-dental-expenses",
       "statusCode": 301
     },
@@ -121,7 +226,17 @@
       "statusCode": 301
     },
     {
+      "source": "/a-missing-tooth-and-a-bone-graft-goes-hand-in-hand-understanding-the-importance-of-bone-grafts-to-long-term-oral-health",
+      "destination": "/articles/a-missing-tooth-and-a-bone-graft-goes-hand-in-hand-understanding-the-importance-of-bone-grafts-to-long-term-oral-health",
+      "statusCode": 301
+    },
+    {
       "source": "/the-connection-between-oral-health-and-whole-health/",
+      "destination": "/articles/the-connection-between-oral-health-and-whole-health",
+      "statusCode": 301
+    },
+    {
+      "source": "/the-connection-between-oral-health-and-whole-health",
       "destination": "/articles/the-connection-between-oral-health-and-whole-health",
       "statusCode": 301
     },
@@ -131,7 +246,17 @@
       "statusCode": 301
     },
     {
+      "source": "/celebrating-25-years-as-a-dentist-in-bend-or",
+      "destination": "/articles/celebrating-25-years-as-a-dentist-in-bend-or",
+      "statusCode": 301
+    },
+    {
       "source": "/always-be-learning-a-plea-for-continuing-education-in-dentistry/",
+      "destination": "/articles/always-be-learning-a-plea-for-continuing-education-in-dentistry",
+      "statusCode": 301
+    },
+    {
+      "source": "/always-be-learning-a-plea-for-continuing-education-in-dentistry",
       "destination": "/articles/always-be-learning-a-plea-for-continuing-education-in-dentistry",
       "statusCode": 301
     },
@@ -141,7 +266,17 @@
       "statusCode": 301
     },
     {
+      "source": "/should-you-remove-your-silver-fillings-this-dentist-says-yes-but-for-a-different-reason-than-youd-expect",
+      "destination": "/articles/should-you-remove-your-silver-fillings-this-dentist-says-yes-but-for-a-different-reason-than-youd-expect",
+      "statusCode": 301
+    },
+    {
       "source": "/choosing-a-new-dentist-doesnt-have-to-be-a-chore-learn-what-to-look-for/",
+      "destination": "/articles/choosing-a-new-dentist-doesnt-have-to-be-a-chore-learn-what-to-look-for",
+      "statusCode": 301
+    },
+    {
+      "source": "/choosing-a-new-dentist-doesnt-have-to-be-a-chore-learn-what-to-look-for",
       "destination": "/articles/choosing-a-new-dentist-doesnt-have-to-be-a-chore-learn-what-to-look-for",
       "statusCode": 301
     },
@@ -151,7 +286,17 @@
       "statusCode": 301
     },
     {
+      "source": "/understanding-radiation-exposure-in-dental-x-rays",
+      "destination": "/articles/understanding-radiation-exposure-in-dental-x-rays",
+      "statusCode": 301
+    },
+    {
       "source": "/dental-implants-because-having-teeth-is-in-style/",
+      "destination": "/articles/dental-implants-because-having-teeth-is-in-style",
+      "statusCode": 301
+    },
+    {
+      "source": "/dental-implants-because-having-teeth-is-in-style",
       "destination": "/articles/dental-implants-because-having-teeth-is-in-style",
       "statusCode": 301
     },
@@ -161,12 +306,27 @@
       "statusCode": 301
     },
     {
+      "source": "/is-wisdom-teeth-removal-really-necessary",
+      "destination": "/articles/is-wisdom-teeth-removal-really-necessary",
+      "statusCode": 301
+    },
+    {
       "source": "/gaps-are-meant-for-pumpkins-not-your-smile/",
       "destination": "/articles/gaps-are-meant-for-pumpkins-not-your-smile",
       "statusCode": 301
     },
     {
+      "source": "/gaps-are-meant-for-pumpkins-not-your-smile",
+      "destination": "/articles/gaps-are-meant-for-pumpkins-not-your-smile",
+      "statusCode": 301
+    },
+    {
       "source": "/essential-updates-from-your-bend-oregon-dentist-plus-why-time-trust-and-transparency-should-be-important-to-you/",
+      "destination": "/articles/is-transparency-in-dentistry-possible-we-think-so",
+      "statusCode": 301
+    },
+    {
+      "source": "/essential-updates-from-your-bend-oregon-dentist-plus-why-time-trust-and-transparency-should-be-important-to-you",
       "destination": "/articles/is-transparency-in-dentistry-possible-we-think-so",
       "statusCode": 301
     },
@@ -181,7 +341,17 @@
       "statusCode": 301
     },
     {
+      "source": "/your-gut-health-could-be-ruining-your-teeth",
+      "destination": "/articles/your-gut-health-could-be-ruining-your-teeth",
+      "statusCode": 301
+    },
+    {
       "source": "/the-benefits-of-cosmetic-dentistry-and-how-it-can-improve-your-smile-and-confidence/",
+      "destination": "/articles/the-benefits-of-cosmetic-dentistry-and-how-it-can-improve-your-smile-and-confidence",
+      "statusCode": 301
+    },
+    {
+      "source": "/the-benefits-of-cosmetic-dentistry-and-how-it-can-improve-your-smile-and-confidence",
       "destination": "/articles/the-benefits-of-cosmetic-dentistry-and-how-it-can-improve-your-smile-and-confidence",
       "statusCode": 301
     },
@@ -191,7 +361,17 @@
       "statusCode": 301
     },
     {
+      "source": "/the-connection-between-mental-health-and-oral-health-and-how-it-can-ruin-your-teeth",
+      "destination": "/articles/the-connection-between-mental-health-and-oral-health-and-how-it-can-ruin-your-teeth",
+      "statusCode": 301
+    },
+    {
       "source": "/having-surgery-soon-seeing-the-dentist-first-can-save-your-life/",
+      "destination": "/articles/having-surgery-soon-seeing-the-dentist-first-can-save-your-life",
+      "statusCode": 301
+    },
+    {
+      "source": "/having-surgery-soon-seeing-the-dentist-first-can-save-your-life",
       "destination": "/articles/having-surgery-soon-seeing-the-dentist-first-can-save-your-life",
       "statusCode": 301
     },
@@ -201,7 +381,17 @@
       "statusCode": 301
     },
     {
+      "source": "/dentistry-isnt-a-sprint-why-a-speedy-dentist-is-not-good-for-your-health",
+      "destination": "/articles/dentistry-isnt-a-sprint-why-a-speedy-dentist-is-not-good-for-your-health",
+      "statusCode": 301
+    },
+    {
       "source": "/the-advantages-of-clear-aligner-braces-for-adults/",
+      "destination": "/articles/the-advantages-of-clear-aligner-braces-for-adults",
+      "statusCode": 301
+    },
+    {
+      "source": "/the-advantages-of-clear-aligner-braces-for-adults",
       "destination": "/articles/the-advantages-of-clear-aligner-braces-for-adults",
       "statusCode": 301
     },
@@ -211,7 +401,17 @@
       "statusCode": 301
     },
     {
+      "source": "/eight-destructive-oral-habits-that-can-ruin-your-teeth",
+      "destination": "/articles/eight-destructive-oral-habits-that-can-ruin-your-teeth",
+      "statusCode": 301
+    },
+    {
       "source": "/nine-dental-myths-you-must-stop-believing/",
+      "destination": "/articles/nine-dental-myths-you-must-stop-believing",
+      "statusCode": 301
+    },
+    {
+      "source": "/nine-dental-myths-you-must-stop-believing",
       "destination": "/articles/nine-dental-myths-you-must-stop-believing",
       "statusCode": 301
     },
@@ -221,7 +421,17 @@
       "statusCode": 301
     },
     {
+      "source": "/hate-the-dentist-have-dental-anxiety-get-connected-to-a-dentist-who-cares",
+      "destination": "/articles/hate-the-dentist-have-dental-anxiety-get-connected-to-a-dentist-who-cares",
+      "statusCode": 301
+    },
+    {
       "source": "/whats-all-the-fuss-about-nightguards-and-do-they-really-work/",
+      "destination": "/articles/whats-all-the-fuss-about-nightguards-and-do-they-really-work",
+      "statusCode": 301
+    },
+    {
+      "source": "/whats-all-the-fuss-about-nightguards-and-do-they-really-work",
       "destination": "/articles/whats-all-the-fuss-about-nightguards-and-do-they-really-work",
       "statusCode": 301
     },
@@ -231,7 +441,17 @@
       "statusCode": 301
     },
     {
+      "source": "/what-to-expect-when-getting-your-wisdom-teeth-removed",
+      "destination": "/articles/what-to-expect-when-getting-your-wisdom-teeth-removed",
+      "statusCode": 301
+    },
+    {
       "source": "/timing-dental-work-around-joint-replacement-surgery-how-a-simple-cleaning-can-impact-your-surgical-results/",
+      "destination": "/articles/timing-dental-work-around-joint-replacement-surgery-how-a-simple-cleaning-can-impact-your-surgical-results",
+      "statusCode": 301
+    },
+    {
+      "source": "/timing-dental-work-around-joint-replacement-surgery-how-a-simple-cleaning-can-impact-your-surgical-results",
       "destination": "/articles/timing-dental-work-around-joint-replacement-surgery-how-a-simple-cleaning-can-impact-your-surgical-results",
       "statusCode": 301
     },
@@ -241,7 +461,17 @@
       "statusCode": 301
     },
     {
+      "source": "/navigating-dental-insurance-the-importance-of-choosing-the-right-dentist-over-an-insurance-plan",
+      "destination": "/articles/navigating-dental-insurance-the-importance-of-choosing-the-right-dentist-over-an-insurance-plan",
+      "statusCode": 301
+    },
+    {
       "source": "/pregnancy-and-oral-health-healthy-gums-make-a-healthy-baby/",
+      "destination": "/articles/pregnancy-and-oral-health-healthy-gums-make-a-healthy-baby",
+      "statusCode": 301
+    },
+    {
+      "source": "/pregnancy-and-oral-health-healthy-gums-make-a-healthy-baby",
       "destination": "/articles/pregnancy-and-oral-health-healthy-gums-make-a-healthy-baby",
       "statusCode": 301
     },
@@ -251,7 +481,17 @@
       "statusCode": 301
     },
     {
+      "source": "/three-crucial-questions-to-ask-when-choosing-the-best-dentist-in-bend-or",
+      "destination": "/articles/three-crucial-questions-to-ask-when-choosing-the-best-dentist-in-bend-or",
+      "statusCode": 301
+    },
+    {
       "source": "/dental-implants-vs-dental-bridges-filling-the-gap-in-your-smile/",
+      "destination": "/articles/dental-implants-vs-dental-bridges-filling-the-gap-in-your-smile",
+      "statusCode": 301
+    },
+    {
+      "source": "/dental-implants-vs-dental-bridges-filling-the-gap-in-your-smile",
       "destination": "/articles/dental-implants-vs-dental-bridges-filling-the-gap-in-your-smile",
       "statusCode": 301
     },
@@ -261,7 +501,17 @@
       "statusCode": 301
     },
     {
+      "source": "/are-people-with-diabetes-doomed-to-have-dental-problems",
+      "destination": "/articles/are-people-with-diabetes-doomed-to-have-dental-problems",
+      "statusCode": 301
+    },
+    {
       "source": "/tobacco-vaping-and-other-tobaccoless-products-and-oral-health-are-a-recipe-for-disaster/",
+      "destination": "/articles/tobacco-vaping-and-other-tobaccoless-products-and-oral-health-are-a-recipe-for-disaster",
+      "statusCode": 301
+    },
+    {
+      "source": "/tobacco-vaping-and-other-tobaccoless-products-and-oral-health-are-a-recipe-for-disaster",
       "destination": "/articles/tobacco-vaping-and-other-tobaccoless-products-and-oral-health-are-a-recipe-for-disaster",
       "statusCode": 301
     },
@@ -271,7 +521,17 @@
       "statusCode": 301
     },
     {
+      "source": "/not-all-dental-cleanings-are-the-same-understanding-the-difference-between-prophy-and-perio-cleanings",
+      "destination": "/articles/not-all-dental-cleanings-are-the-same-understanding-the-difference-between-prophy-and-perio-cleanings",
+      "statusCode": 301
+    },
+    {
       "source": "/unmasking-the-damage-of-clenching-and-grinding-teeth-and-how-to-fight-back/",
+      "destination": "/articles/unmasking-the-damage-of-clenching-and-grinding-teeth-and-how-to-fight-back",
+      "statusCode": 301
+    },
+    {
+      "source": "/unmasking-the-damage-of-clenching-and-grinding-teeth-and-how-to-fight-back",
       "destination": "/articles/unmasking-the-damage-of-clenching-and-grinding-teeth-and-how-to-fight-back",
       "statusCode": 301
     },
@@ -281,7 +541,17 @@
       "statusCode": 301
     },
     {
+      "source": "/understanding-your-first-dental-appointment-at-living-dental-health",
+      "destination": "/articles/understanding-your-first-dental-appointment-at-living-dental-health",
+      "statusCode": 301
+    },
+    {
       "source": "/blog/",
+      "destination": "/articles",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog",
       "destination": "/articles",
       "statusCode": 301
     },
@@ -291,7 +561,17 @@
       "statusCode": 301
     },
     {
+      "source": "/general-dentist-bend-or",
+      "destination": "/general-dentistry",
+      "statusCode": 301
+    },
+    {
       "source": "/cleanings/",
+      "destination": "/general-dentistry",
+      "statusCode": 301
+    },
+    {
+      "source": "/cleanings",
       "destination": "/general-dentistry",
       "statusCode": 301
     },
@@ -301,7 +581,17 @@
       "statusCode": 301
     },
     {
+      "source": "/dental-crowns",
+      "destination": "/general-dentistry",
+      "statusCode": 301
+    },
+    {
       "source": "/dental-bridges/",
+      "destination": "/general-dentistry",
+      "statusCode": 301
+    },
+    {
+      "source": "/dental-bridges",
       "destination": "/general-dentistry",
       "statusCode": 301
     },
@@ -311,7 +601,17 @@
       "statusCode": 301
     },
     {
+      "source": "/dental-fillings",
+      "destination": "/general-dentistry",
+      "statusCode": 301
+    },
+    {
       "source": "/dentures/",
+      "destination": "/general-dentistry",
+      "statusCode": 301
+    },
+    {
+      "source": "/dentures",
       "destination": "/general-dentistry",
       "statusCode": 301
     },
@@ -321,7 +621,17 @@
       "statusCode": 301
     },
     {
+      "source": "/migraines",
+      "destination": "/general-dentistry",
+      "statusCode": 301
+    },
+    {
       "source": "/family-dentist-in-bend-or/",
+      "destination": "/general-dentistry",
+      "statusCode": 301
+    },
+    {
+      "source": "/family-dentist-in-bend-or",
       "destination": "/general-dentistry",
       "statusCode": 301
     },
@@ -331,7 +641,17 @@
       "statusCode": 301
     },
     {
+      "source": "/cosmetic-dentistry-bend-or",
+      "destination": "/cosmetic-dentistry",
+      "statusCode": 301
+    },
+    {
       "source": "/porcelain-veneers/",
+      "destination": "/cosmetic-dentistry",
+      "statusCode": 301
+    },
+    {
+      "source": "/porcelain-veneers",
       "destination": "/cosmetic-dentistry",
       "statusCode": 301
     },
@@ -341,7 +661,17 @@
       "statusCode": 301
     },
     {
+      "source": "/teeth-whitening",
+      "destination": "/cosmetic-dentistry",
+      "statusCode": 301
+    },
+    {
       "source": "/clear-correct-braces/",
+      "destination": "/cosmetic-dentistry",
+      "statusCode": 301
+    },
+    {
+      "source": "/clear-correct-braces",
       "destination": "/cosmetic-dentistry",
       "statusCode": 301
     },
@@ -351,7 +681,17 @@
       "statusCode": 301
     },
     {
+      "source": "/smile-design",
+      "destination": "/cosmetic-dentistry",
+      "statusCode": 301
+    },
+    {
       "source": "/smile-gallery/",
+      "destination": "/before-and-after",
+      "statusCode": 301
+    },
+    {
+      "source": "/smile-gallery",
       "destination": "/before-and-after",
       "statusCode": 301
     },
@@ -361,7 +701,17 @@
       "statusCode": 301
     },
     {
+      "source": "/oral-surgery",
+      "destination": "/implants-surgery",
+      "statusCode": 301
+    },
+    {
       "source": "/dental-implants/",
+      "destination": "/implants-surgery",
+      "statusCode": 301
+    },
+    {
+      "source": "/dental-implants",
       "destination": "/implants-surgery",
       "statusCode": 301
     },
@@ -371,12 +721,27 @@
       "statusCode": 301
     },
     {
+      "source": "/dental-extractions",
+      "destination": "/implants-surgery",
+      "statusCode": 301
+    },
+    {
       "source": "/wisdom-teeth/",
       "destination": "/implants-surgery",
       "statusCode": 301
     },
     {
+      "source": "/wisdom-teeth",
+      "destination": "/implants-surgery",
+      "statusCode": 301
+    },
+    {
       "source": "/tissue-grafting/",
+      "destination": "/implants-surgery",
+      "statusCode": 301
+    },
+    {
+      "source": "/tissue-grafting",
       "destination": "/implants-surgery",
       "statusCode": 301
     },
@@ -391,7 +756,17 @@
       "statusCode": 301
     },
     {
+      "source": "/first-visit",
+      "destination": "/patient-info",
+      "statusCode": 301
+    },
+    {
       "source": "/in-office-dental-plan/",
+      "destination": "/patient-info#insurance",
+      "statusCode": 301
+    },
+    {
+      "source": "/in-office-dental-plan",
       "destination": "/patient-info#insurance",
       "statusCode": 301
     },
@@ -401,7 +776,17 @@
       "statusCode": 301
     },
     {
+      "source": "/post-op-instructions",
+      "destination": "/patient-info/post-op",
+      "statusCode": 301
+    },
+    {
       "source": "/meet-us/",
+      "destination": "/about",
+      "statusCode": 301
+    },
+    {
+      "source": "/meet-us",
       "destination": "/about",
       "statusCode": 301
     },
@@ -411,12 +796,27 @@
       "statusCode": 301
     },
     {
+      "source": "/contact-us",
+      "destination": "/contact",
+      "statusCode": 301
+    },
+    {
       "source": "/testimonials/",
       "destination": "/about",
       "statusCode": 301
     },
     {
+      "source": "/testimonials",
+      "destination": "/about",
+      "statusCode": 301
+    },
+    {
       "source": "/privacy-policy/",
+      "destination": "/privacy",
+      "statusCode": 301
+    },
+    {
+      "source": "/privacy-policy",
       "destination": "/privacy",
       "statusCode": 301
     }
