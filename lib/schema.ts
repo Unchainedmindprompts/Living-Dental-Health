@@ -108,7 +108,10 @@ const businessEnrichment: Record<string, unknown> = {
   "alternateName": "Living Dental Health Bend Oregon",
   "description":
     "Living Dental Health is a Bend, Oregon dental practice led by Dr. Andrew W. Engel, DMD, providing general dentistry, cosmetic dentistry, dental implants, oral surgery, preventive care, and patient-focused dental treatment for adults and families.",
-  "faxNumber": "+1-541-317-5038",
+  // faxNumber intentionally omitted: the line is shared with another dental
+  // practice at the same street address, and aggregators treat a shared fax as
+  // evidence the two businesses are the same entity. Publishing it fed that
+  // conflation. Not a ranking factor and not required.
   "email": "info@livingdentalhealth.com",
   "slogan": "Focused on customized care with a gentle touch",
   "openingHoursSpecification": [
