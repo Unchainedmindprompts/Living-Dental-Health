@@ -23,14 +23,14 @@ const SECTIONS = [
     id: "what-is-a-dental-implant",
     heading: "What a dental implant is",
     body:
-      "A dental implant replaces a missing tooth in three parts that work together. A titanium post is placed in the jawbone as an artificial root. As the area heals, the bone and implant integrate. A custom restoration — typically a crown — is then attached so the tooth can look and function as part of your smile. An implant is not the right treatment for every patient or every situation.",
+      "A dental implant replaces the root portion of a missing tooth. A titanium post is placed in the jawbone and allowed to integrate as the area heals. After healing, a custom restoration — typically a crown for a single missing tooth — is attached to restore appearance and function. An implant is not appropriate for every patient or situation.",
     detail: "implant post · healing and integration · custom restoration",
   },
   {
     id: "when-implants-may-be-considered",
     heading: "When implants may be considered",
     body:
-      "Implants may be considered for a missing tooth, a tooth that cannot predictably be saved, several missing teeth, or as part of planning a larger reconstruction. Whether an implant is appropriate is determined after an individual examination of your teeth, bone, and oral health — not from a web page.",
+      "Implants may be considered for a missing tooth, a tooth that cannot predictably be saved, several missing teeth, or as part of planning a larger reconstruction. Whether an implant is appropriate is determined after an individual examination of your teeth, bone, and oral health.",
     detail:
       "missing tooth · unsavable tooth · multiple teeth · reconstruction planning",
   },
@@ -38,7 +38,7 @@ const SECTIONS = [
     id: "treatment-process",
     heading: "The treatment process",
     body:
-      "Care typically begins with a consultation and examination. CBCT imaging is used when it is clinically appropriate. Dr. Engel then builds a treatment plan, places the implant, allows time for healing, and completes the final restoration. Healing time and the details of each step depend on the individual case. This page does not quote a single timeline, success rate, or fee.",
+      "Care typically begins with a consultation and examination. CBCT imaging is used when it is clinically appropriate. Dr. Engel then builds a treatment plan, places the implant, allows time for healing, and completes the final restoration. Healing time and the details of each step depend on the individual case.",
     detail:
       "consult · CBCT when appropriate · planning · placement · healing · restoration",
   },
@@ -49,22 +49,6 @@ const SECTIONS = [
       "Dr. Engel handles implant planning, placement, and restoration within Living Dental Health. The dentist who examines you is the dentist who plans the case and restores it. Some situations may still involve additional care or a referral when that is in the patient's best interest.",
     detail: "planned · placed · restored at Living Dental Health",
   },
-];
-
-const WHEN_CONSIDERED = [
-  "A missing tooth.",
-  "A tooth that cannot predictably be saved.",
-  "Multiple missing teeth.",
-  "Treatment planning involving a larger reconstruction.",
-];
-
-const PROCESS = [
-  "Consultation and examination.",
-  "CBCT imaging when clinically appropriate.",
-  "Treatment planning.",
-  "Implant placement.",
-  "Healing.",
-  "Final restoration.",
 ];
 
 export default function DentalImplantsPage() {
@@ -206,71 +190,6 @@ export default function DentalImplantsPage() {
           </div>
         </section>
 
-        {/* WHEN CONSIDERED — scannable list matching other service pages */}
-        <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">
-          <div
-            className="mx-auto max-w-[1100px] border-t pt-12 sm:pt-14"
-            style={{ borderColor: "rgba(28,26,23,0.18)" }}
-          >
-            <h2 className="font-serif text-[32px] leading-[1.05] text-charcoal sm:text-[44px]">
-              Situations we{" "}
-              <span className="font-serif-italic">evaluate</span>
-            </h2>
-            <p className="mt-6 max-w-[720px] font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft sm:text-[16px]">
-              These are common reasons patients ask about implants. Suitability
-              is determined after an individual examination.
-            </p>
-            <ul className="mt-8 grid gap-x-12 gap-y-4 sm:grid-cols-2">
-              {WHEN_CONSIDERED.map((c) => (
-                <li
-                  key={c}
-                  className="flex items-baseline gap-3 border-b pb-4 font-inter text-[15px] font-light text-charcoal-soft sm:text-[16px]"
-                  style={{ borderColor: "rgba(28,26,23,0.1)" }}
-                >
-                  <span
-                    aria-hidden
-                    className="text-[12px]"
-                    style={{ color: SAGE }}
-                  >
-                    ✦
-                  </span>
-                  {c}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-
-        {/* PROCESS STEPS */}
-        <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">
-          <div
-            className="mx-auto max-w-[1100px] border-t pt-12 sm:pt-14"
-            style={{ borderColor: "rgba(28,26,23,0.18)" }}
-          >
-            <h2 className="font-serif text-[32px] leading-[1.05] text-charcoal sm:text-[44px]">
-              How treatment{" "}
-              <span className="font-serif-italic">typically proceeds</span>
-            </h2>
-            <ol className="mt-8 grid gap-x-12 gap-y-4 sm:grid-cols-2">
-              {PROCESS.map((step, i) => (
-                <li
-                  key={step}
-                  className="flex items-baseline gap-3 border-b pb-4 font-inter text-[15px] font-light text-charcoal-soft sm:text-[16px]"
-                  style={{ borderColor: "rgba(28,26,23,0.1)" }}
-                >
-                  <span
-                    className="font-inter text-[11px] uppercase tracking-widest"
-                    style={{ color: SAGE }}
-                  >
-                    0{i + 1}
-                  </span>
-                  {step}
-                </li>
-              ))}
-            </ol>
-          </div>
-        </section>
-
         {/* RELATED — bone grafting + hub */}
         <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">
           <div
@@ -359,9 +278,8 @@ export default function DentalImplantsPage() {
               <span className="font-serif-italic">implant options</span>
             </h2>
             <p className="mx-auto mt-5 max-w-[480px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:text-[16px]">
-              Contact Living Dental Health to talk through whether an implant
-              is appropriate for your situation. A submitted message is a
-              request, not a booked appointment.
+              Contact Living Dental Health to talk with Dr. Engel about whether
+              a dental implant may be appropriate for your situation.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link
@@ -369,7 +287,7 @@ export default function DentalImplantsPage() {
                 className="inline-block rounded-full px-7 py-3 font-inter text-[12px] uppercase tracking-[0.24em] transition-colors"
                 style={{ backgroundColor: SAGE, color: "#F5F0E8" }}
               >
-                Contact us
+                Request an implant consultation
               </Link>
               <a
                 href="tel:5415505311"

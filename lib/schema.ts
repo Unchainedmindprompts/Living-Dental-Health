@@ -617,7 +617,7 @@ export const dentalImplantsFaq: { q: string; a: string }[] = [
   },
   {
     q: "How do I find out whether a dental implant is appropriate for me?",
-    a: "The first step is an examination at Living Dental Health. Dr. Engel will review your teeth, bone, and oral health and discuss whether an implant — or another option — is appropriate for your situation. You can call (541) 550-5311 or send a message through the contact page. A submitted contact is a request, not a booked appointment.",
+    a: "The first step is an examination at Living Dental Health. Dr. Engel will review your teeth, bone, and oral health and discuss whether an implant — or another option — is appropriate for your situation. Call (541) 550-5311 or use the contact page to request an implant consultation.",
   },
 ];
 
