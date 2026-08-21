@@ -602,6 +602,22 @@ const dentalImplantsProcedure: JsonLdNode = {
   },
 };
 
+// Canonical Bone Grafting procedure. The @id stays on the hub so the
+// site has one grafting identity. The human-facing url is the focused page.
+const boneGraftingProcedure: JsonLdNode = {
+  "@type": "MedicalProcedure",
+  "@id":
+    "https://livingdentalhealth.com/implants-surgery#bone-grafting",
+  "name": "Bone & Tissue Grafting",
+  "description":
+    "Bone and tissue grafting may be used to add or preserve bone or soft tissue when clinically appropriate, including as part of planning for dental implant treatment. Dr. Engel evaluates and performs grafting at Living Dental Health in Bend, Oregon.",
+  "url": "https://livingdentalhealth.com/bone-grafting",
+  "procedureType": "https://schema.org/SurgicalProcedure",
+  "provider": {
+    "@id": "https://livingdentalhealth.com/#doctor",
+  },
+};
+
 export const dentalImplantsFaq: { q: string; a: string }[] = [
   {
     q: "Does Dr. Andy Engel place and restore dental implants?",
@@ -662,20 +678,7 @@ export const implantsSurgeryPageSchema: JsonLdGraph = {
       "publisher": { "@id": "https://livingdentalhealth.com/#business" },
     },
     dentalImplantsProcedure,
-    {
-      "@type": "MedicalProcedure",
-      "@id":
-        "https://livingdentalhealth.com/implants-surgery#bone-grafting",
-      "name": "Bone & Tissue Grafting",
-      "description":
-        "Grafting rebuilds bone density lost through tooth loss, gum disease, or time so the jaw can support a dental implant. Dr. Engel performs bone and tissue grafting himself, with no separate specialist or additional referral.",
-      "url":
-        "https://livingdentalhealth.com/implants-surgery#bone-grafting",
-      "procedureType": "https://schema.org/SurgicalProcedure",
-      "provider": {
-        "@id": "https://livingdentalhealth.com/#doctor",
-      },
-    },
+    boneGraftingProcedure,
     {
       "@type": "MedicalProcedure",
       "@id":
@@ -834,6 +837,91 @@ export const dentalImplantsPageSchema: JsonLdGraph = {
         "@id": "https://livingdentalhealth.com/dental-implants#webpage",
       },
       "mainEntity": dentalImplantsFaq.map((f) => ({
+        "@type": "Question",
+        "name": f.q,
+        "acceptedAnswer": { "@type": "Answer", "text": f.a },
+      })),
+    },
+  ],
+};
+
+export const boneGraftingFaq: { q: string; a: string }[] = [
+  {
+    q: "Does Dr. Andy Engel perform bone grafting in Bend?",
+    a: "Yes. Dr. Engel evaluates and performs bone and tissue grafting at Living Dental Health in Bend, Oregon.",
+  },
+  {
+    q: "Will I need bone grafting before a dental implant?",
+    a: "Not every implant plan includes a graft. Bone grafting may be recommended when additional support is needed for implant placement. Dr. Engel decides this after reviewing your mouth and, when clinically appropriate, three-dimensional imaging.",
+  },
+  {
+    q: "How does Dr. Engel determine whether bone grafting is appropriate?",
+    a: "He examines the remaining bone, the gums, and the planned restoration. CBCT imaging may be used when clinically appropriate to see the jaw and surrounding structures in 3D. The recommendation follows that review of your specific situation.",
+  },
+  {
+    q: "How long does a bone graft take to heal?",
+    a: "Healing varies by patient, treatment area, and the procedure performed. Dr. Engel discusses what to expect for your case after the examination rather than using one timeline for every graft.",
+  },
+  {
+    q: "What is the difference between bone grafting and tissue grafting?",
+    a: "Bone grafting adds or preserves bone where volume is insufficient for planned treatment. Soft-tissue grafting addresses gum or other soft-tissue needs. Dr. Engel evaluates which, if either, may be appropriate.",
+  },
+];
+
+export const boneGraftingPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id":
+        "https://livingdentalhealth.com/bone-grafting#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Implants & Surgery",
+          "item": "https://livingdentalhealth.com/implants-surgery",
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Bone Grafting",
+          "item": "https://livingdentalhealth.com/bone-grafting",
+        },
+      ],
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://livingdentalhealth.com/bone-grafting#webpage",
+      "url": "https://livingdentalhealth.com/bone-grafting",
+      "inLanguage": "en-US",
+      "name": "Bone Grafting in Bend, Oregon | Living Dental Health",
+      "description":
+        "Dr. Andy Engel evaluates and performs bone grafting at Living Dental Health in Bend, Oregon, including grafting that may be recommended before dental implant placement.",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
+      "about": { "@id": "https://livingdentalhealth.com/#business" },
+      "mainEntity": {
+        "@id": "https://livingdentalhealth.com/implants-surgery#bone-grafting",
+      },
+      "breadcrumb": {
+        "@id": "https://livingdentalhealth.com/bone-grafting#breadcrumbs",
+      },
+      "publisher": { "@id": "https://livingdentalhealth.com/#business" },
+    },
+    boneGraftingProcedure,
+    {
+      "@type": "FAQPage",
+      "@id": "https://livingdentalhealth.com/bone-grafting#faq",
+      "isPartOf": {
+        "@id": "https://livingdentalhealth.com/bone-grafting#webpage",
+      },
+      "mainEntity": boneGraftingFaq.map((f) => ({
         "@type": "Question",
         "name": f.q,
         "acceptedAnswer": { "@type": "Answer", "text": f.a },

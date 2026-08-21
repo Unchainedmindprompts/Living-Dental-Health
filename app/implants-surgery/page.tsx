@@ -235,6 +235,17 @@ export default function ImplantsSurgeryPage() {
                     </Link>
                   </p>
                 )}
+                {s.id === "bone-grafting" && (
+                  <p className="mt-5">
+                    <Link
+                      href="/bone-grafting"
+                      className="font-inter text-[14px] font-light underline underline-offset-4 transition-opacity hover:opacity-70 sm:text-[15px]"
+                      style={{ color: SAGE }}
+                    >
+                      Learn more about bone grafting
+                    </Link>
+                  </p>
+                )}
               </article>
             ))}
           </div>
