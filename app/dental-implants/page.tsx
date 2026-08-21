@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     url: "https://livingdentalhealth.com/dental-implants",
     images: [
       {
-        url: "/implants-hero.webp",
+        url: "https://livingdentalhealth.com/implants-hero.webp",
         alt: "Dr. Andy Engel providing dental implant care at Living Dental Health in Bend, Oregon",
       },
     ],
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: PAGE_TITLE,
     description: PAGE_DESCRIPTION,
-    images: ["/implants-hero.webp"],
+    images: ["https://livingdentalhealth.com/implants-hero.webp"],
   },
 };
 
