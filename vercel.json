@@ -707,12 +707,7 @@
     },
     {
       "source": "/dental-implants/",
-      "destination": "/implants-surgery",
-      "statusCode": 301
-    },
-    {
-      "source": "/dental-implants",
-      "destination": "/implants-surgery",
+      "destination": "/dental-implants",
       "statusCode": 301
     },
     {

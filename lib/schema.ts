@@ -583,6 +583,44 @@ export const generalDentistryPageSchema: JsonLdGraph = {
   ],
 };
 
+// Canonical Dental Implants procedure. The @id stays on the hub so the
+// site has one implant identity. The human-facing url is the focused page.
+// Shared so both schema graphs can include the same node without defining
+// the @id twice in this file.
+const dentalImplantsProcedure: JsonLdNode = {
+  "@type": "MedicalProcedure",
+  "@id": "https://livingdentalhealth.com/implants-surgery#implants",
+  "name": "Dental Implants",
+  "description":
+    "A titanium post placed directly into the jawbone that fuses with the bone over time and supports a custom crown. Dr. Engel places and restores implants entirely in-house, from initial consultation through the final crown — single tooth or full arch.",
+  "url": "https://livingdentalhealth.com/dental-implants",
+  "procedureType": "https://schema.org/SurgicalProcedure",
+  "howPerformed":
+    "Placed and restored in-house by Dr. Engel under local anesthesia.",
+  "provider": {
+    "@id": "https://livingdentalhealth.com/#doctor",
+  },
+};
+
+export const dentalImplantsFaq: { q: string; a: string }[] = [
+  {
+    q: "Does Dr. Andy Engel place and restore dental implants?",
+    a: "Yes. Dr. Engel plans, places, and restores dental implants at Living Dental Health in Bend, Oregon. Suitability is determined after an individual examination.",
+  },
+  {
+    q: "What is CBCT imaging used for in implant planning?",
+    a: "CBCT (cone-beam computed tomography) produces a three-dimensional image of the teeth, jaw, sinuses, and surrounding structures. When clinically appropriate, Dr. Engel uses it to evaluate bone and plan implant placement with more detail than a two-dimensional X-ray can provide.",
+  },
+  {
+    q: "Will I need bone grafting before an implant?",
+    a: "Not always. Bone grafting may be recommended when there is not enough bone to support an implant — for example after tooth loss, gum disease, or time. Whether grafting is needed is determined after an individual examination.",
+  },
+  {
+    q: "How do I find out whether a dental implant is appropriate for me?",
+    a: "The first step is an examination at Living Dental Health. Dr. Engel will review your teeth, bone, and oral health and discuss whether an implant — or another option — is appropriate for your situation. You can call (541) 550-5311 or send a message through the contact page. A submitted contact is a request, not a booked appointment.",
+  },
+];
+
 export const implantsSurgeryPageSchema: JsonLdGraph = {
   "@context": "https://schema.org",
   "@graph": [
@@ -623,22 +661,7 @@ export const implantsSurgeryPageSchema: JsonLdGraph = {
       },
       "publisher": { "@id": "https://livingdentalhealth.com/#business" },
     },
-    {
-      "@type": "MedicalProcedure",
-      "@id":
-        "https://livingdentalhealth.com/implants-surgery#implants",
-      "name": "Dental Implants",
-      "description":
-        "A titanium post placed directly into the jawbone that fuses with the bone over time and supports a custom crown. Dr. Engel places and restores implants entirely in-house, from initial consultation through the final crown — single tooth or full arch.",
-      "url":
-        "https://livingdentalhealth.com/implants-surgery#implants",
-      "procedureType": "https://schema.org/SurgicalProcedure",
-      "howPerformed":
-        "Placed and restored in-house by Dr. Engel under local anesthesia.",
-      "provider": {
-        "@id": "https://livingdentalhealth.com/#doctor",
-      },
-    },
+    dentalImplantsProcedure,
     {
       "@type": "MedicalProcedure",
       "@id":
@@ -753,6 +776,68 @@ export const implantsSurgeryPageSchema: JsonLdGraph = {
           },
         },
       ],
+    },
+  ],
+};
+
+export const dentalImplantsPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id":
+        "https://livingdentalhealth.com/dental-implants#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Implants & Surgery",
+          "item": "https://livingdentalhealth.com/implants-surgery",
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Dental Implants",
+          "item": "https://livingdentalhealth.com/dental-implants",
+        },
+      ],
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://livingdentalhealth.com/dental-implants#webpage",
+      "url": "https://livingdentalhealth.com/dental-implants",
+      "inLanguage": "en-US",
+      "name": "Dental Implants in Bend, Oregon | Living Dental Health",
+      "description":
+        "Dr. Andy Engel plans, places, and restores dental implants at Living Dental Health in Bend, Oregon — from consultation and imaging through the final restoration.",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
+      "about": { "@id": "https://livingdentalhealth.com/#business" },
+      "mainEntity": {
+        "@id": "https://livingdentalhealth.com/implants-surgery#implants",
+      },
+      "breadcrumb": {
+        "@id": "https://livingdentalhealth.com/dental-implants#breadcrumbs",
+      },
+      "publisher": { "@id": "https://livingdentalhealth.com/#business" },
+    },
+    dentalImplantsProcedure,
+    {
+      "@type": "FAQPage",
+      "@id": "https://livingdentalhealth.com/dental-implants#faq",
+      "isPartOf": {
+        "@id": "https://livingdentalhealth.com/dental-implants#webpage",
+      },
+      "mainEntity": dentalImplantsFaq.map((f) => ({
+        "@type": "Question",
+        "name": f.q,
+        "acceptedAnswer": { "@type": "Answer", "text": f.a },
+      })),
     },
   ],
 };
