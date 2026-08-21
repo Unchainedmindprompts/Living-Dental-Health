@@ -82,7 +82,7 @@ The frustrating thing about wisdom teeth is that they [typically erupt between 1
 
 As mentioned earlier, a smaller mouth can make cleaning teeth at the back challenging. To prevent recurrent cavities, dentists often recommend wisdom teeth removal in people with otherwise healthy teeth.
 
-The good news in all of this is that [wisdom teeth removal](/implants-surgery) is very common. Modern dental techniques have improved the procedure and shortened recovery time, especially in the hands of an experienced dentist. Dr. Andy has extensive experience with wisdom teeth removal and has been performing the procedure for over 25 years. Many dentists around here weren’t even in college when he began doing wisdom teeth surgery. But we’re dating Dr. Andy, aren’t we? 
+The good news in all of this is that [wisdom teeth removal](/wisdom-teeth-removal) is very common. Modern dental techniques have improved the procedure and shortened recovery time, especially in the hands of an experienced dentist. Dr. Andy has extensive experience with wisdom teeth removal and has been performing the procedure for over 25 years. Many dentists around here weren’t even in college when he began doing wisdom teeth surgery. But we’re dating Dr. Andy, aren’t we? 
 
 ## When it Comes to Wisdom Teeth Removal, Timing is Everything.
 

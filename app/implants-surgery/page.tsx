@@ -246,6 +246,17 @@ export default function ImplantsSurgeryPage() {
                     </Link>
                   </p>
                 )}
+                {s.id === "wisdom-teeth" && (
+                  <p className="mt-5">
+                    <Link
+                      href="/wisdom-teeth-removal"
+                      className="font-inter text-[14px] font-light underline underline-offset-4 transition-opacity hover:opacity-70 sm:text-[15px]"
+                      style={{ color: SAGE }}
+                    >
+                      Wisdom teeth removal details →
+                    </Link>
+                  </p>
+                )}
               </article>
             ))}
           </div>
