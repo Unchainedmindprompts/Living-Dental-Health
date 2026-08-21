@@ -39,7 +39,7 @@ const SERVICES = [
     id: "clearcorrect",
     heading: "ClearCorrect",
     body:
-      "Dr. Engel has provided clear aligner therapy since 2001. He chose ClearCorrect specifically because it was developed by the founders of Invisalign — who left to build a product they believed was better. We agree. Custom-fitted clear aligners gradually shift your teeth with no metal, no wires, and no adjustments. Remove them for meals, wear them through your day, and get on with your life. Dr. Engel manages the entire process in-house.",
+      "Dr. Engel has provided clear aligner therapy since 2001 and is a certified ClearCorrect provider. ClearCorrect uses a series of custom-fitted, removable aligners to gradually shift teeth without metal brackets or wires. Patients remove them for meals and wear them as directed throughout the day. Dr. Engel plans and manages the entire process in-house.",
     detail:
       "clear aligner therapy since 2001 · certified provider · removable · 12–18 months · in-house",
     imageAlt:
@@ -94,7 +94,7 @@ const FAQ = [
   },
   {
     q: "What is ClearCorrect and how is it different from Invisalign?",
-    a: "ClearCorrect was developed by the founders of Invisalign who left to build a product they believed was better. Dr. Engel is a certified ClearCorrect provider and manages the entire process in-house.",
+    a: "ClearCorrect and Invisalign are separate brands of doctor-supervised clear aligner treatment. Living Dental Health offers ClearCorrect, using custom-fitted removable aligners to gradually move teeth without metal brackets or wires. Dr. Engel is a certified ClearCorrect provider and manages treatment in-house.",
   },
   {
     q: "Does Living Dental Health offer full mouth reconstruction?",

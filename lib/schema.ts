@@ -902,7 +902,7 @@ export const cosmeticDentistryPageSchema: JsonLdGraph = {
           "acceptedAnswer": {
             "@type": "Answer",
             "text":
-              "ClearCorrect was developed by the founders of Invisalign who left to build a product they believed was better. Dr. Engel is a certified ClearCorrect provider and manages the entire process in-house.",
+              "ClearCorrect and Invisalign are separate brands of doctor-supervised clear aligner treatment. Living Dental Health offers ClearCorrect, using custom-fitted removable aligners to gradually move teeth without metal brackets or wires. Dr. Engel is a certified ClearCorrect provider and manages treatment in-house.",
           },
         },
         {
