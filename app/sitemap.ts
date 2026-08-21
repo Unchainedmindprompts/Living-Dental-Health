@@ -25,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ["/general-dentistry", 0.9, "monthly"],
     ["/implants-surgery", 0.9, "monthly"],
     ["/dental-implants", 0.8, "monthly"],
+    ["/bone-grafting", 0.8, "monthly"],
     ["/full-mouth-reconstruction", 0.8, "monthly"],
     ["/sedation-dentistry", 0.8, "monthly"],
     ["/oral-cancer-screening", 0.8, "monthly"],
