@@ -618,6 +618,24 @@ const boneGraftingProcedure: JsonLdNode = {
   },
 };
 
+// Canonical Wisdom Teeth Removal procedure. The @id stays on the hub so the
+// site has one wisdom-teeth identity. The human-facing url is the focused page.
+const wisdomTeethProcedure: JsonLdNode = {
+  "@type": "MedicalProcedure",
+  "@id":
+    "https://livingdentalhealth.com/implants-surgery#wisdom-teeth",
+  "name": "Wisdom Teeth Removal",
+  "description":
+    "Evaluation and removal of one or more wisdom teeth when clinically appropriate. Dr. Engel reviews tooth position, surrounding structures, symptoms, and oral health to determine whether in-office treatment at Living Dental Health in Bend, Oregon is appropriate.",
+  "url": "https://livingdentalhealth.com/wisdom-teeth-removal",
+  "procedureType": "https://schema.org/SurgicalProcedure",
+  "howPerformed":
+    "When appropriate, performed in-office under local anesthesia after individual examination and imaging as needed.",
+  "provider": {
+    "@id": "https://livingdentalhealth.com/#doctor",
+  },
+};
+
 export const dentalImplantsFaq: { q: string; a: string }[] = [
   {
     q: "Does Dr. Andy Engel place and restore dental implants?",
@@ -679,21 +697,7 @@ export const implantsSurgeryPageSchema: JsonLdGraph = {
     },
     dentalImplantsProcedure,
     boneGraftingProcedure,
-    {
-      "@type": "MedicalProcedure",
-      "@id":
-        "https://livingdentalhealth.com/implants-surgery#wisdom-teeth",
-      "name": "Wisdom Teeth Removal",
-      "description":
-        "Removal of one or all four wisdom teeth, impacted or straightforward, handled in-office under local anesthesia. Patients are seen promptly and given clear post-op instructions for a smooth recovery.",
-      "url":
-        "https://livingdentalhealth.com/implants-surgery#wisdom-teeth",
-      "procedureType": "https://schema.org/SurgicalProcedure",
-      "howPerformed": "Performed in-office under local anesthesia.",
-      "provider": {
-        "@id": "https://livingdentalhealth.com/#doctor",
-      },
-    },
+    wisdomTeethProcedure,
     {
       "@type": "MedicalProcedure",
       "@id":
@@ -922,6 +926,97 @@ export const boneGraftingPageSchema: JsonLdGraph = {
         "@id": "https://livingdentalhealth.com/bone-grafting#webpage",
       },
       "mainEntity": boneGraftingFaq.map((f) => ({
+        "@type": "Question",
+        "name": f.q,
+        "acceptedAnswer": { "@type": "Answer", "text": f.a },
+      })),
+    },
+  ],
+};
+
+export const wisdomTeethFaq: { q: string; a: string }[] = [
+  {
+    q: "Does Dr. Andy Engel remove wisdom teeth in Bend?",
+    a: "Yes. Dr. Engel evaluates and removes wisdom teeth at Living Dental Health in Bend, Oregon when removal is clinically appropriate. He also determines whether in-office treatment is the right setting. Not every case is treated in the office; a referral may be recommended when that is more appropriate.",
+  },
+  {
+    q: "Do all wisdom teeth need to be removed?",
+    a: "No. Some wisdom teeth remain healthy and functional. Others may need treatment because of position, lack of space, symptoms, or disease. The decision is based on an individual examination and imaging when appropriate.",
+  },
+  {
+    q: "How does Dr. Engel determine whether wisdom teeth should be removed?",
+    a: "He reviews tooth position, eruption, symptoms, surrounding structures, and oral health. Imaging may be used when it is clinically useful. After that review, he discusses whether monitoring, removal, or referral is appropriate.",
+  },
+  {
+    q: "Can impacted wisdom teeth be removed at Living Dental Health?",
+    a: "Dr. Engel evaluates whether an impacted wisdom tooth can be removed in the office. Not every impacted or complex case is treated at Living Dental Health. A referral may be recommended when additional care is more appropriate.",
+  },
+  {
+    q: "What type of anesthesia is used for wisdom teeth removal?",
+    a: "Procedures performed at Living Dental Health use local anesthesia.",
+  },
+  {
+    q: "How long does recovery take after wisdom teeth removal?",
+    a: "There is no single recovery timeline. Healing varies by patient, the teeth being removed, and the procedure performed. Dr. Engel provides individualized post-operative instructions. General guidance is also on the post-operative instructions page.",
+  },
+];
+
+export const wisdomTeethPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id":
+        "https://livingdentalhealth.com/wisdom-teeth-removal#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Implants & Surgery",
+          "item": "https://livingdentalhealth.com/implants-surgery",
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Wisdom Teeth Removal",
+          "item": "https://livingdentalhealth.com/wisdom-teeth-removal",
+        },
+      ],
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id":
+        "https://livingdentalhealth.com/wisdom-teeth-removal#webpage",
+      "url": "https://livingdentalhealth.com/wisdom-teeth-removal",
+      "inLanguage": "en-US",
+      "name": "Wisdom Teeth Removal in Bend, Oregon | Living Dental Health",
+      "description":
+        "Dr. Andy Engel evaluates and removes wisdom teeth at Living Dental Health in Bend, Oregon, with individualized planning and clear post-operative guidance.",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
+      "about": { "@id": "https://livingdentalhealth.com/#business" },
+      "mainEntity": {
+        "@id": "https://livingdentalhealth.com/implants-surgery#wisdom-teeth",
+      },
+      "breadcrumb": {
+        "@id":
+          "https://livingdentalhealth.com/wisdom-teeth-removal#breadcrumbs",
+      },
+      "publisher": { "@id": "https://livingdentalhealth.com/#business" },
+    },
+    wisdomTeethProcedure,
+    {
+      "@type": "FAQPage",
+      "@id": "https://livingdentalhealth.com/wisdom-teeth-removal#faq",
+      "isPartOf": {
+        "@id": "https://livingdentalhealth.com/wisdom-teeth-removal#webpage",
+      },
+      "mainEntity": wisdomTeethFaq.map((f) => ({
         "@type": "Question",
         "name": f.q,
         "acceptedAnswer": { "@type": "Answer", "text": f.a },
