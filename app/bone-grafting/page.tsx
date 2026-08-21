@@ -143,9 +143,9 @@ export default function BoneGraftingPage() {
                   Dr. Engel evaluates and performs bone and tissue grafting
                   at Living Dental Health. Grafting may be recommended when
                   additional support is needed for an implant or another
-                  restorative plan. The recommendation is individualized and
-                  medically responsible — not a routine step for every
-                  implant patient.
+                  restorative plan. Whether grafting is appropriate is
+                  determined after an individual examination; it is not a
+                  routine step for every implant patient.
                 </p>
                 <Link
                   href="/contact"

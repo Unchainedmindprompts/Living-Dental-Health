@@ -610,7 +610,7 @@ const boneGraftingProcedure: JsonLdNode = {
     "https://livingdentalhealth.com/implants-surgery#bone-grafting",
   "name": "Bone & Tissue Grafting",
   "description":
-    "Grafting rebuilds bone density lost through tooth loss, gum disease, or time so the jaw can support a dental implant. Dr. Engel performs bone and tissue grafting himself, with no separate specialist or additional referral.",
+    "Bone and tissue grafting may be used to add or preserve bone or soft tissue when clinically appropriate, including as part of planning for dental implant treatment. Dr. Engel evaluates and performs grafting at Living Dental Health in Bend, Oregon.",
   "url": "https://livingdentalhealth.com/bone-grafting",
   "procedureType": "https://schema.org/SurgicalProcedure",
   "provider": {
