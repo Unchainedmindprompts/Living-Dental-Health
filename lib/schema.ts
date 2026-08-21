@@ -56,8 +56,10 @@ export function sanitizeJsonLd<T>(value: T): T {
   return value;
 }
 
-// NAP stub — emitted on EVERY page via the layout. Identity + name,
-// address, phone, geo, areaServed: enough to be a real local signal.
+// NAP stub — emitted via the layout on every page except `/`.
+// Identity + name, address, phone, geo, areaServed: enough to be a
+// real local signal. The homepage already defines the full #business
+// node in homeSchema, so the layout skips this stub there.
 // Deliberately omits sameAs so it is never duplicated across pages
 // (one entity = one sameAs set, defined on the home page only).
 const businessNapStub: JsonLdNode = {
@@ -300,7 +302,7 @@ const websiteEntity: JsonLdNode = {
   },
 };
 
-// Emitted on EVERY page via app/layout.tsx — NAP only.
+// Emitted via app/layout.tsx on every page except `/` — NAP only.
 export const napStubSchema: JsonLdGraph = {
   "@context": "https://schema.org",
   "@graph": [businessNapStub],
@@ -336,9 +338,9 @@ export const homeFaq: { q: string; a: string }[] = [
   },
 ];
 
-// Emitted on the home page only — the full source of truth. On the home
-// page this merges with the layout's NAP stub (same @id) into one
-// complete #business node; sameAs and the enrichment live here alone.
+// Emitted on the home page only — the full source of truth. The layout
+// does not emit the NAP stub on `/`, so this is the single #business
+// definition there. sameAs and the enrichment live here alone.
 export const homeSchema: JsonLdGraph = {
   "@context": "https://schema.org",
   "@graph": [

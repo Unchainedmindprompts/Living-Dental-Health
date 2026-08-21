@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Cormorant_Garamond, DM_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import { napStubSchema, sanitizeJsonLd } from "@/lib/schema";
@@ -50,15 +51,20 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = headers().get("x-pathname");
+  const emitNapStub = pathname !== "/";
+
   return (
     <html lang="en" className={`${cormorant.variable} ${dmSans.variable} ${inter.variable}`}>
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(sanitizeJsonLd(napStubSchema)),
-          }}
-        />
+        {emitNapStub && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(sanitizeJsonLd(napStubSchema)),
+            }}
+          />
+        )}
       </head>
       <body>{children}</body>
     </html>
