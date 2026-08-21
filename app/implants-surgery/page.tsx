@@ -224,6 +224,17 @@ export default function ImplantsSurgeryPage() {
                 <p className="mt-5 font-inter text-[12px] font-light uppercase tracking-[0.18em] text-warm-gray sm:text-[13px]">
                   {s.detail}
                 </p>
+                {s.id === "implants" && (
+                  <p className="mt-5">
+                    <Link
+                      href="/dental-implants"
+                      className="font-inter text-[14px] font-light underline underline-offset-4 transition-opacity hover:opacity-70 sm:text-[15px]"
+                      style={{ color: SAGE }}
+                    >
+                      Learn more about dental implants
+                    </Link>
+                  </p>
+                )}
               </article>
             ))}
           </div>
