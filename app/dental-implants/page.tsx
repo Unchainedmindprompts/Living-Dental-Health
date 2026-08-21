@@ -11,11 +11,32 @@ import {
 const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
 
+const PAGE_TITLE = "Dental Implants in Bend, Oregon | Living Dental Health";
+const PAGE_DESCRIPTION =
+  "Dr. Andy Engel plans, places, and restores dental implants at Living Dental Health in Bend, Oregon — from consultation and imaging through the final restoration.";
+
 export const metadata: Metadata = {
   alternates: { canonical: "/dental-implants" },
-  title: "Dental Implants in Bend, Oregon | Living Dental Health",
-  description:
-    "Dr. Andy Engel plans, places, and restores dental implants at Living Dental Health in Bend, Oregon — from consultation and imaging through the final restoration.",
+  title: PAGE_TITLE,
+  description: PAGE_DESCRIPTION,
+  openGraph: {
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+    url: "https://livingdentalhealth.com/dental-implants",
+    images: [
+      {
+        url: "/implants-hero.webp",
+        alt: "Dr. Andy Engel providing dental implant care at Living Dental Health in Bend, Oregon",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+    images: ["/implants-hero.webp"],
+  },
 };
 
 const SECTIONS = [
@@ -120,6 +141,13 @@ export default function DentalImplantsPage() {
                   through the final restoration, implant care stays with one
                   dentist who knows your case.
                 </p>
+                <Link
+                  href="/contact"
+                  className="mt-6 inline-block rounded-full px-7 py-3 font-inter text-[12px] uppercase tracking-[0.24em] transition-colors sm:mt-8"
+                  style={{ backgroundColor: SAGE, color: "#F5F0E8" }}
+                >
+                  Request an Implant Consultation
+                </Link>
               </div>
             </div>
           </div>
@@ -156,6 +184,16 @@ export default function DentalImplantsPage() {
               whether an implant is appropriate, what imaging is useful, and
               how the restoration should be designed before any surgical step
               begins.
+            </p>
+            <p className="mt-6 font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft sm:text-[16px]">
+              Dr. Engel has practiced dentistry in Bend since 1998.{" "}
+              <Link
+                href="/about"
+                className="underline underline-offset-4 transition-opacity hover:opacity-70"
+                style={{ color: SAGE }}
+              >
+                Meet Dr. Engel →
+              </Link>
             </p>
           </div>
         </section>
