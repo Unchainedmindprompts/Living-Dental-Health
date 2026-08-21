@@ -117,8 +117,7 @@ export default function PrivacyPage() {
 
           <h2 className={h2}>Disclosure of your information</h2>
           <p className={p}>
-            Our privacy means a great deal to us. We do not disclose your
-            personal information to any outside source.
+            Information submitted through this website may be processed by service providers that host the website and transmit contact-form emails on our behalf. We use this information to respond to inquiries, operate and secure the website, and comply with applicable legal requirements.
           </p>
 
           <h2 className={h2}>Changes to our Privacy Policy</h2>
