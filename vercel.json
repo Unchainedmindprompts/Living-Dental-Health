@@ -712,12 +712,7 @@
     },
     {
       "source": "/dental-extractions/",
-      "destination": "/implants-surgery",
-      "statusCode": 301
-    },
-    {
-      "source": "/dental-extractions",
-      "destination": "/implants-surgery",
+      "destination": "/dental-extractions",
       "statusCode": 301
     },
     {

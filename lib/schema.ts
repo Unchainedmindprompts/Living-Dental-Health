@@ -636,6 +636,24 @@ const wisdomTeethProcedure: JsonLdNode = {
   },
 };
 
+// Canonical Dental Extractions procedure. The @id stays on the hub so the
+// site has one extractions identity. The human-facing url is the focused page.
+const dentalExtractionsProcedure: JsonLdNode = {
+  "@type": "MedicalProcedure",
+  "@id":
+    "https://livingdentalhealth.com/implants-surgery#extractions",
+  "name": "Dental Extractions",
+  "description":
+    "Dental extractions may be performed when a tooth cannot be predictably preserved or removal is otherwise clinically appropriate. Dr. Engel evaluates the tooth and surrounding tissues at Living Dental Health in Bend, Oregon, and determines whether extraction, another treatment, or referral is the right next step.",
+  "url": "https://livingdentalhealth.com/dental-extractions",
+  "procedureType": "https://schema.org/SurgicalProcedure",
+  "howPerformed":
+    "When appropriate and can be handled in the office, performed under local anesthesia after examination and imaging as needed. Some situations may require a referral.",
+  "provider": {
+    "@id": "https://livingdentalhealth.com/#doctor",
+  },
+};
+
 export const dentalImplantsFaq: { q: string; a: string }[] = [
   {
     q: "Does Dr. Andy Engel place and restore dental implants?",
@@ -698,20 +716,7 @@ export const implantsSurgeryPageSchema: JsonLdGraph = {
     dentalImplantsProcedure,
     boneGraftingProcedure,
     wisdomTeethProcedure,
-    {
-      "@type": "MedicalProcedure",
-      "@id":
-        "https://livingdentalhealth.com/implants-surgery#extractions",
-      "name": "Dental Extractions",
-      "description":
-        "Removal of a tooth that cannot be saved, performed with gentle technique under local anesthesia. Dr. Engel discusses replacement options, including implants, at the time of extraction so patients leave with a clear plan.",
-      "url":
-        "https://livingdentalhealth.com/implants-surgery#extractions",
-      "procedureType": "https://schema.org/SurgicalProcedure",
-      "provider": {
-        "@id": "https://livingdentalhealth.com/#doctor",
-      },
-    },
+    dentalExtractionsProcedure,
     {
       "@type": "MedicalProcedure",
       "@id":
@@ -1017,6 +1022,97 @@ export const wisdomTeethPageSchema: JsonLdGraph = {
         "@id": "https://livingdentalhealth.com/wisdom-teeth-removal#webpage",
       },
       "mainEntity": wisdomTeethFaq.map((f) => ({
+        "@type": "Question",
+        "name": f.q,
+        "acceptedAnswer": { "@type": "Answer", "text": f.a },
+      })),
+    },
+  ],
+};
+
+export const dentalExtractionsFaq: { q: string; a: string }[] = [
+  {
+    q: "Does Dr. Andy Engel perform dental extractions in Bend?",
+    a: "Yes. Dr. Engel evaluates and performs dental extractions at Living Dental Health in Bend, Oregon when removal is clinically appropriate. He also determines whether in-office treatment is the right setting. Not every case is treated in the office; a referral may be recommended when that is more appropriate.",
+  },
+  {
+    q: "When does a tooth need to be extracted?",
+    a: "Extraction may be considered when a tooth is severely damaged, fractured, infected, non-restorable, or otherwise cannot be predictably preserved. Removal is not automatically the first choice. The decision is based on an individual examination and imaging when appropriate.",
+  },
+  {
+    q: "Can a badly damaged tooth always be saved?",
+    a: "No. Some damaged teeth can be preserved with other treatment. Others cannot be predictably restored. Dr. Engel evaluates the tooth and surrounding tissues before recommending preservation, extraction, or referral.",
+  },
+  {
+    q: "What type of anesthesia is used for dental extractions?",
+    a: "Procedures performed at Living Dental Health use local anesthesia.",
+  },
+  {
+    q: "Can Dr. Engel remove a tooth and discuss replacement options?",
+    a: "Replacement options may be discussed depending on the tooth's location, function, your oral health, and your goals. Not every extraction leads to an implant. Whether replacement is appropriate is determined after evaluation.",
+  },
+  {
+    q: "How long does recovery take after a dental extraction?",
+    a: "There is no single recovery timeline. Healing varies by the tooth, the patient, and the procedure performed. Dr. Engel provides individualized post-operative instructions. General guidance is also on the post-operative instructions page.",
+  },
+];
+
+export const dentalExtractionsPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id":
+        "https://livingdentalhealth.com/dental-extractions#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://livingdentalhealth.com/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Implants & Surgery",
+          "item": "https://livingdentalhealth.com/implants-surgery",
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Dental Extractions",
+          "item": "https://livingdentalhealth.com/dental-extractions",
+        },
+      ],
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id":
+        "https://livingdentalhealth.com/dental-extractions#webpage",
+      "url": "https://livingdentalhealth.com/dental-extractions",
+      "inLanguage": "en-US",
+      "name": "Dental Extractions in Bend, Oregon | Living Dental Health",
+      "description":
+        "Dr. Andy Engel evaluates and performs dental extractions in Bend, Oregon when removal is clinically appropriate. Learn what to expect, when a tooth may need removal, and how post-operative care is handled.",
+      "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
+      "about": { "@id": "https://livingdentalhealth.com/#business" },
+      "mainEntity": {
+        "@id": "https://livingdentalhealth.com/implants-surgery#extractions",
+      },
+      "breadcrumb": {
+        "@id":
+          "https://livingdentalhealth.com/dental-extractions#breadcrumbs",
+      },
+      "publisher": { "@id": "https://livingdentalhealth.com/#business" },
+    },
+    dentalExtractionsProcedure,
+    {
+      "@type": "FAQPage",
+      "@id": "https://livingdentalhealth.com/dental-extractions#faq",
+      "isPartOf": {
+        "@id": "https://livingdentalhealth.com/dental-extractions#webpage",
+      },
+      "mainEntity": dentalExtractionsFaq.map((f) => ({
         "@type": "Question",
         "name": f.q,
         "acceptedAnswer": { "@type": "Answer", "text": f.a },
