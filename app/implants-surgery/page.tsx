@@ -257,6 +257,17 @@ export default function ImplantsSurgeryPage() {
                     </Link>
                   </p>
                 )}
+                {s.id === "extractions" && (
+                  <p className="mt-5">
+                    <Link
+                      href="/dental-extractions"
+                      className="font-inter text-[14px] font-light underline underline-offset-4 transition-opacity hover:opacity-70 sm:text-[15px]"
+                      style={{ color: SAGE }}
+                    >
+                      Learn more about dental extractions
+                    </Link>
+                  </p>
+                )}
               </article>
             ))}
           </div>
