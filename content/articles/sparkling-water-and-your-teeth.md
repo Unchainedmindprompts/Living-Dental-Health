@@ -89,6 +89,11 @@ Home pH strips may satisfy your curiosity, but they cannot diagnose erosion or c
 
 ## Small habits that make a difference
 
+<figure style="margin: 2rem 0;">
+  <img src="/images/articles/sparkling-water-with-meal.webp" alt="A glass of sparkling water beside a roasted vegetable and grain salad on a sunlit dining table." width="1400" height="788" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto; border-radius: 12px;" />
+  <figcaption style="margin-top: 0.75rem; font-size: 0.875rem; line-height: 1.6;">Enjoy sparkling water with a meal rather than sipping it throughout the day.</figcaption>
+</figure>
+
 The [ADA's prevention guidance](https://www.ada.org/resources/ada-library/oral-health-topics/dental-erosion) supports reducing repeated acid exposure and rinsing with water afterward. Start here:
 
 - **Have acidic drinks with a meal.** Avoid stretching one drink into hours of repeated sipping.
@@ -100,6 +105,11 @@ The [ADA's prevention guidance](https://www.ada.org/resources/ada-library/oral-h
 Saliva helps clear and buffer acids. There is no exact recovery time that applies to every person or every drink, particularly when someone has a dry mouth.
 
 ## Where fluoride fits
+
+<figure style="margin: 2rem 0;">
+  <img src="/images/articles/everyday-enamel-care.webp" alt="A glass of plain water, a sage green toothbrush, and an unbranded toothpaste tube on a warm stone bathroom counter." width="1400" height="788" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto; border-radius: 12px;" />
+  <figcaption style="margin-top: 0.75rem; font-size: 0.875rem; line-height: 1.6;">Simple daily habits help protect your enamel.</figcaption>
+</figure>
 
 Brush twice daily with fluoride toothpaste and clean between your teeth. [NIDCR recommends fluoride for cavity prevention](https://www.nidcr.nih.gov/health-info/tooth-decay), including its role in helping repair early mineral loss.
 
