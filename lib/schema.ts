@@ -105,6 +105,11 @@ const businessNapStub: JsonLdNode = {
 
 // Non-NAP enrichment — merges onto #business by @id, home page only.
 const businessEnrichment: Record<string, unknown> = {
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "NPI",
+    "value": "1700144870",
+  },
   "alternateName": "Living Dental Health Bend Oregon",
   "description":
     "Living Dental Health is a Bend, Oregon dental practice led by Dr. Andrew W. Engel, DMD, providing general dentistry, cosmetic dentistry, dental implants, oral surgery, preventive care, and patient-focused dental treatment for adults and families.",
@@ -192,6 +197,7 @@ const businessEnrichment: Record<string, unknown> = {
     "panoramic dental X-rays",
   ],
   "sameAs": [
+    "https://npiregistry.cms.hhs.gov/provider-view/1700144870",
     "https://www.google.com/maps/place/Living+Dental+Health/@44.0413898,-121.3340262,17z/data=!3m1!4b1!4m6!3m5!1s0x54b8c7c4d1e44381:0xd160c3863d913f92!8m2!3d44.0413898!4d-121.3340262!16s%2Fg%2F1q2w9q7d5",
     "https://www.bing.com/maps?ss=id.ypid%3AYN37673BB561363F36&q=Living+Dental+Health",
     "https://maps.apple.com/place?place-id=IA9A533B964A8ECD6&address=930+SW+Yates+Dr%2C+Bend%2C+OR++97702%2C+United+States&coordinate=44.041362%2C-121.333961&name=Living+Dental+Health",
@@ -267,7 +273,7 @@ const doctorEntity: JsonLdNode = {
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "NPI",
-    "value": "1700144870",
+    "value": "1417943010",
   },
   "knowsAbout": [
     "full mouth reconstruction",
@@ -283,7 +289,7 @@ const doctorEntity: JsonLdNode = {
   ],
   "sameAs": [
     "https://www.healthgrades.com/dentist/dr-andrew-engel-yyh3w",
-    "https://npiregistry.cms.hhs.gov/provider-view/1700144870",
+    "https://npiregistry.cms.hhs.gov/provider-view/1417943010",
   ],
 };
 
