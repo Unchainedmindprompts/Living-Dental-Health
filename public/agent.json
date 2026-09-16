@@ -10,6 +10,7 @@
     "website": "https://livingdentalhealth.com/#website"
   },
   "type": ["Dentist", "LocalBusiness", "MedicalBusiness"],
+  "npi": "1700144870",
   "contact": {
     "telephone": "+1-541-550-5311",
     "email": "info@livingdentalhealth.com",
@@ -38,7 +39,7 @@
       "Doctor of Dental Medicine, Oregon Health Sciences University",
       "Over 1,000 hours of continuing education in Smile Design, Cosmetic Dentistry, and Full Mouth Reconstruction"
     ],
-    "npi": "1700144870",
+    "npi": "1417943010",
     "url": "https://livingdentalhealth.com/about"
   },
   "knowsAbout": [
