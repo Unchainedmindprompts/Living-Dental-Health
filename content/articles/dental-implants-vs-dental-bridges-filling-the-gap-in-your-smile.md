@@ -89,6 +89,11 @@ Read about [dental implant assessment and treatment at Living Dental Health](/de
 
 A traditional bridge uses crowns on supporting teeth to hold a replacement tooth across the gap. Those supporting teeth generally need reshaping. Other designs, including implant-supported bridges, work differently, so ask which type is being discussed. The [ADA’s bridge guide](https://www.mouthhealthy.org/all-topics-a-z/bridges) explains the role of the supporting foundation.
 
+<figure class="article-figure">
+  <img src="/images/articles/dental-implant-vs-bridge-support.svg" alt="Two ways to replace a tooth. The key difference is what supports the new tooth. Single implant: support from an implant in the jawbone. Traditional bridge: support from crowned neighboring teeth. The middle bridge tooth has no natural root. Simplified illustration, not to scale. Other bridge types differ. Living Dental Health patient guide." width="800" height="900" loading="lazy" decoding="async" />
+  <figcaption>An implant supports its own crown; a traditional tooth-supported bridge relies on neighboring teeth. Simplified illustration; treatment design varies.</figcaption>
+</figure>
+
 ## What determines which option fits your mouth?
 
 ### The condition of nearby teeth

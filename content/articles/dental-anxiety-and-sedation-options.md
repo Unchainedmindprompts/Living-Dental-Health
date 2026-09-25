@@ -88,6 +88,11 @@ The complimentary meet and greet at Living Dental Health is a conversation rathe
 
 Uncertainty can be part of the worry. Our [first-appointment guide](/articles/understanding-your-first-dental-appointment-at-living-dental-health) explains the exam, preparation, and separate cleaning visit. Ask which steps are planned and how you can pause if you need a break.
 
+<figure class="article-figure">
+  <img src="/images/articles/dental-anxiety-comfort-plan.svg" alt="A calmer dental visit. Start with a conversation about your comfort. 01 Tell us what worries you: share past experiences, discomfort, or the parts of a visit you find difficult. 02 Agree on a pause signal: choose a hand signal with your dentist so you can ask for a break. 03 Ask what happens next: discuss each step and your comfort options before treatment begins. Living Dental Health patient guide." width="800" height="845" loading="lazy" decoding="async" />
+  <figcaption>A comfort plan starts with communication. These steps complement the <a href="https://www.mouthhealthy.org/all-topics-a-z/anxiety">ADA’s advice on dental anxiety</a>.</figcaption>
+</figure>
+
 ## When might oral sedation be considered?
 
 If communication and other comfort measures are not enough, Dr. Engel can discuss the practice’s [oral sedation service](/sedation-dentistry). Living Dental Health uses Halcion, the brand name for triazolam, for selected patients. Suitability depends on medical history, medications, and the planned treatment.

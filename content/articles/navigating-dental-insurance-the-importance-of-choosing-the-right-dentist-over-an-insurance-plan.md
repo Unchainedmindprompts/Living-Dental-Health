@@ -77,6 +77,11 @@ An out-of-network dentist does not have that network agreement. Some plans contr
 
 Ask what happens if the dentist’s fee exceeds the amount your plan recognizes. That difference may affect your bill in addition to any deductible or coinsurance. Neither network status nor a reimbursement percentage is a complete cost estimate.
 
+<figure class="article-figure">
+  <img src="/images/articles/dental-insurance-network-comparison.svg" alt="Understand your dental benefits. Network status alone does not tell you the final cost. In-network: the dentist has a contract with your plan; contract terms affect covered-service fees. Out-of-network: the dentist has no contract with your plan; benefits and your share depend on the plan. Before you book, check network status, covered services, deductible, annual maximum, and estimated cost. Living Dental Health patient guide." width="800" height="860" loading="lazy" decoding="async" />
+  <figcaption>Confirm the details with your insurer and dental office before treatment. Network status does not guarantee coverage.</figcaption>
+</figure>
+
 ## Which benefit details should you check?
 
 The [ADA’s dental-plan guide](https://www.mouthhealthy.org/dental-care/choosing-the-right-dental-plan-for-you) explains the terms that often change what patients pay:

@@ -65,3 +65,9 @@ Sources were read during preparation. Sources support the associated patient inf
 Prepared as editorial drafts for review before publication. The existing schema identifies Dr. Engel as author; this update does not claim that he has clinically reviewed the rewritten text. Confirm the retained practice-specific meet-and-greet and first-visit policies before approval. Other pages retain existing content, including some broad sedation recovery statements that merit a separate clinical review; this change does not silently rewrite those service pages.
 
 The repository's CLAUDE.md names an older development branch, claude/build-homepage-v1Eye. Repository history shows the current deployed work and latest merged fixes target claude/connect-environment-image-R2F7h. Preserve existing work; do not force-update either branch.
+
+## Supporting article images
+
+Added one lazy-loaded, dimensioned figure to each of the six articles. The choosing-a-dentist article reuses the existing Dr. Engel portrait; first-visit guidance reuses the existing team photograph. Four original SVG explanations cover a dental-anxiety comfort plan, insurance networks, cleaning depth, and implant/bridge support. SVGs are deterministic, editable educational diagrams; no artificial patient or practice photographs were introduced. Each figure has descriptive alt text and a caption. Text-bearing diagrams have equivalent text in alt attributes.
+
+Visual review: all four SVGs rendered and inspected for clipping, contrast, and consistency with article explanations. Build passed (78 pages); all six rendered article audits passed for titles, descriptions, FAQs, canonicals, citations, internal links, image paths, and Person typing. No schema-visible drift found. Clinical diagrams are labeled simplified; they illustrate the existing article claims rather than individual treatment recommendations.

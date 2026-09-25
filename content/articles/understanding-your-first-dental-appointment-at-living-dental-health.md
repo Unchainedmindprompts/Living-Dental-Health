@@ -79,6 +79,11 @@ Ask your previous dental office to transfer recent records and X-rays. The [ADAâ
 
 Write down anything you do not want to forget: a sensitive tooth, bleeding gums, a change in your bite, or concerns about cost. If you have avoided care for a while, simply tell us. The starting point is where you are now.
 
+<figure class="article-figure">
+  <img src="/team.webp" alt="Dr. Andy Engel seated with members of the Living Dental Health team." width="1448" height="1086" loading="lazy" decoding="async" />
+  <figcaption>Familiar faces before your first visit. <a href="/team">Meet the Living Dental Health team.</a></figcaption>
+</figure>
+
 ## What does the comprehensive dental exam include?
 
 [Dr. Andy Engel](/about) reviews your concerns and dental history and evaluates your teeth, gums, bite, and overall oral condition. Imaging is recommended when it can provide information needed for your care. The [MedlinePlus overview of adult dental care](https://medlineplus.gov/ency/article/001957.htm) describes the role of examinations and professional care in identifying problems.

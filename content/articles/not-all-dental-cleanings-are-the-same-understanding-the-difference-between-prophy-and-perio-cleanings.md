@@ -87,6 +87,11 @@ It is not simply a premium version of a routine cleaning. Ask which findings sup
 
 Periodontal maintenance includes reassessing gum health and cleaning areas that need ongoing attention after periodontal therapy. It is not another name for the initial scaling and root planing procedure. Some patients need visits about every three to four months; your schedule depends on your condition and response.
 
+<figure class="article-figure">
+  <img src="/images/articles/regular-vs-deep-dental-cleaning.svg" alt="Where dental cleanings work. Different needs, different types of care. Regular cleaning: preventive cleaning for healthy gums. Deep cleaning: treats periodontitis below the gumline and along affected root surfaces. Green marks the focus of cleaning; the gumline is labeled. Simplified illustration. Your examination determines the type of care needed. Living Dental Health patient guide." width="800" height="915" loading="lazy" decoding="async" />
+  <figcaption>A simplified view of preventive cleaning and scaling and root planing. Periodontal maintenance is ongoing care after gum-disease treatment. <a href="https://www.mouthhealthy.org/all-topics-a-z/scaling-and-root-planing">Read the ADA’s explanation.</a></figcaption>
+</figure>
+
 ## How does the dentist decide which cleaning you need?
 
 Gum measurements are one part of the examination. The [National Institute of Dental and Craniofacial Research](https://www.nidcr.nih.gov/health-info/gum-disease) describes assessment of gum pockets, medical history, and X-rays that can reveal bone loss.

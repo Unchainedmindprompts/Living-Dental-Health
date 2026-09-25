@@ -81,6 +81,11 @@ Check the location, hours, and availability before booking. Ask how urgent probl
 
 The [American Dental Association’s guide to choosing a dentist](https://www.mouthhealthy.org/dental-care/how-to-choose-a-dentist/) recommends considering access, communication, benefits, and an introductory conversation. Bring your concerns, including any past experiences that make visits difficult.
 
+<figure class="article-figure article-figure-portrait">
+  <img src="/dr-andy.png" alt="Dr. Andy Engel, dentist and founder of Living Dental Health in Bend, Oregon." width="1120" height="1404" loading="lazy" decoding="async" />
+  <figcaption>Meet the dentist behind your care. <a href="/about">Learn about Dr. Andy Engel’s background and training.</a></figcaption>
+</figure>
+
 ## How do insurance and costs affect the choice?
 
 Ask whether the dentist participates in your **specific plan and network**, not simply whether the office can submit a claim. Different policies can have different benefits even when the insurer’s name is the same. The [ADA explains the differences between dental plan types](https://www.mouthhealthy.org/dental-care/types-of-dental-plans).
