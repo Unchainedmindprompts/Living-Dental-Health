@@ -71,3 +71,15 @@ The repository's CLAUDE.md names an older development branch, claude/build-homep
 Added one lazy-loaded, dimensioned figure to each of the six articles. The choosing-a-dentist article reuses the existing Dr. Engel portrait; first-visit guidance reuses the existing team photograph. Four original SVG explanations cover a dental-anxiety comfort plan, insurance networks, cleaning depth, and implant/bridge support. SVGs are deterministic, editable educational diagrams; no artificial patient or practice photographs were introduced. Each figure has descriptive alt text and a caption. Text-bearing diagrams have equivalent text in alt attributes.
 
 Visual review: all four SVGs rendered and inspected for clipping, contrast, and consistency with article explanations. Build passed (78 pages); all six rendered article audits passed for titles, descriptions, FAQs, canonicals, citations, internal links, image paths, and Person typing. No schema-visible drift found. Clinical diagrams are labeled simplified; they illustrate the existing article claims rather than individual treatment recommendations.
+
+## Evidence connections across the practice site
+
+Added a shared visible evidence block to home, biography, cosmetic dentistry, full mouth reconstruction, implants and general dentistry. Home now presents the evidence before article teasers. The gallery links each case back to the relevant treatment and doctor biography. Existing case IDs, images and descriptions are retained. No new patient outcome or credential was created.
+
+The same link inventory feeds WebPage relatedLink and mentions. Existing case ImageObjects identify the treatment they depict; matching treatment nodes reference those images with subjectOf. Canonical doctor/business identities are preserved. No implant outcomes are inferred from crown or veneer cases.
+
+Publisher-verified awards shown: CommunityVotes 2025 and 2026 Platinum Dental Hygiene Clinic, and 2025 Gold Dental Clinic. Direct source links appear beside exact category/year labels. The pre-existing 2026 Gold award schema claim was not expanded or used as new visible evidence in this change.
+
+PatientConnect365 receives a visible patient-review link. Individual review summaries from Meet My Dentist were withheld because original publication/date verification remains outstanding; no review quotes, stars, dates or Review schema were added.
+
+Validation: build and schema guard pass. Seven rendered page checks cover internal links and anchors, visible relatedLink correspondence, canonical graph reference resolution, single H1 and existing FAQ alignment. Case training and outcome wording is based on the existing practice material, not independent clinical certification.

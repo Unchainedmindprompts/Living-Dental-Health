@@ -1,3 +1,5 @@
+import CareEvidence from "@/components/CareEvidence";
+import { withCareEvidence } from "@/lib/schema";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -108,7 +110,7 @@ export default function CosmeticDentistryPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(sanitizeJsonLd(cosmeticDentistryPageSchema)),
+          __html: JSON.stringify(sanitizeJsonLd(withCareEvidence(cosmeticDentistryPageSchema, "cosmetic"))),
         }}
       />
       <main
@@ -202,6 +204,8 @@ export default function CosmeticDentistryPage() {
             </p>
           </div>
         </section>
+
+        <CareEvidence kind="cosmetic" awards={false} />
 
         {/* SERVICE SECTIONS — 2-up mocha panel grid */}
         <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">

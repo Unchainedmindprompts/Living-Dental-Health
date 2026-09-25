@@ -213,6 +213,10 @@ export default function BeforeAndAfterPage() {
                       {c.note}
                     </p>
                   )}
+                  <p className="mt-5 font-inter text-[14px] leading-relaxed">
+                    <Link className="underline underline-offset-4" href={c.procedure === "Full Mouth Reconstruction" ? "/full-mouth-reconstruction" : c.procedure === "Porcelain Crowns" ? "/general-dentistry#crowns" : "/cosmetic-dentistry#veneers"}>Explore this treatment</Link>
+                    {" · "}<Link className="underline underline-offset-4" href="/about">Dr. Engel’s background</Link>
+                  </p>
                 </article>
               ))}
             </div>

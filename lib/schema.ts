@@ -1,3 +1,4 @@
+import { careEvidence, EvidenceKey, EvidenceLink, practiceAwards } from "./care-evidence";
 type JsonLdNode = {
   "@type": string | string[];
   "@id"?: string;
@@ -2100,6 +2101,7 @@ export const beforeAndAfterPageSchema: JsonLdGraph = {
       "@type": "ImageObject",
       "@id": "https://livingdentalhealth.com/before-and-after#case-01",
       "contentUrl": "https://livingdentalhealth.com/case-01.webp",
+      "about": { "@id": "https://livingdentalhealth.com/cosmetic-dentistry#veneers" },
       "name": "Case 01",
       "caption":
         "Before and after porcelain veneers by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 01",
@@ -2114,6 +2116,7 @@ export const beforeAndAfterPageSchema: JsonLdGraph = {
       "@type": "ImageObject",
       "@id": "https://livingdentalhealth.com/before-and-after#case-02",
       "contentUrl": "https://livingdentalhealth.com/case-02.webp",
+      "about": { "@id": "https://livingdentalhealth.com/full-mouth-reconstruction#procedure" },
       "name": "Case 02",
       "caption":
         "Before and after full mouth reconstruction by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 02",
@@ -2128,6 +2131,7 @@ export const beforeAndAfterPageSchema: JsonLdGraph = {
       "@type": "ImageObject",
       "@id": "https://livingdentalhealth.com/before-and-after#case-03",
       "contentUrl": "https://livingdentalhealth.com/case-03.webp",
+      "about": { "@id": "https://livingdentalhealth.com/general-dentistry#crowns" },
       "name": "Case 03",
       "caption":
         "Before and after porcelain crowns by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 03",
@@ -2142,6 +2146,7 @@ export const beforeAndAfterPageSchema: JsonLdGraph = {
       "@type": "ImageObject",
       "@id": "https://livingdentalhealth.com/before-and-after#case-04",
       "contentUrl": "https://livingdentalhealth.com/case-04.webp",
+      "about": { "@id": "https://livingdentalhealth.com/general-dentistry#crowns" },
       "name": "Case 04",
       "caption":
         "Before and after porcelain crowns by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 04",
@@ -2156,6 +2161,7 @@ export const beforeAndAfterPageSchema: JsonLdGraph = {
       "@type": "ImageObject",
       "@id": "https://livingdentalhealth.com/before-and-after#case-05",
       "contentUrl": "https://livingdentalhealth.com/case-05.webp",
+      "about": { "@id": "https://livingdentalhealth.com/full-mouth-reconstruction#procedure" },
       "name": "Case 05",
       "caption":
         "Before and after full mouth reconstruction by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 05",
@@ -2170,6 +2176,7 @@ export const beforeAndAfterPageSchema: JsonLdGraph = {
       "@type": "ImageObject",
       "@id": "https://livingdentalhealth.com/before-and-after#case-06",
       "contentUrl": "https://livingdentalhealth.com/case-06.webp",
+      "about": { "@id": "https://livingdentalhealth.com/cosmetic-dentistry#smile-design" },
       "name": "Case 06",
       "caption":
         "Before and after crowns and veneers by Dr. Andy Engel at Living Dental Health in Bend, Oregon — Case 06",
@@ -2223,3 +2230,23 @@ export const privacyPageSchema: JsonLdGraph = {
   ],
 };
 
+
+// The visible evidence blocks and page relationships share one source of truth.
+export function withCareEvidence(schema: JsonLdGraph, key: EvidenceKey): JsonLdGraph {
+  const links = careEvidence[key].links as EvidenceLink[];
+  const relatedLink = links.map(link => link.href.startsWith("/") ? `https://livingdentalhealth.com${link.href}` : link.href);
+  if (key === "home" || key === "about") relatedLink.push(...practiceAwards.map(award => award.href));
+  return { ...schema, "@graph": schema["@graph"].map(node => {
+    const caseSubjects: Record<string, { "@id": string }[]> = {
+      "https://livingdentalhealth.com/cosmetic-dentistry#veneers": [{ "@id": "https://livingdentalhealth.com/before-and-after#case-01" }],
+      "https://livingdentalhealth.com/cosmetic-dentistry#smile-design": [{ "@id": "https://livingdentalhealth.com/before-and-after#case-06" }],
+      "https://livingdentalhealth.com/general-dentistry#crowns": [{ "@id": "https://livingdentalhealth.com/before-and-after#case-03" }, { "@id": "https://livingdentalhealth.com/before-and-after#case-04" }],
+      "https://livingdentalhealth.com/full-mouth-reconstruction#procedure": [{ "@id": "https://livingdentalhealth.com/before-and-after#case-02" }, { "@id": "https://livingdentalhealth.com/before-and-after#case-05" }]
+    };
+    const cases = node["@id"] ? caseSubjects[node["@id"]] : undefined;
+    if (cases) return { ...node, subjectOf: cases };
+    const type = node["@type"];
+    if (!["WebPage", "MedicalWebPage", "AboutPage"].includes(String(type))) return node;
+    return { ...node, relatedLink, mentions: [...(Array.isArray(node.mentions) ? node.mentions : []), ...links.filter(link => link.entity).map(link => ({ "@id": link.entity }))] };
+  }) };
+}

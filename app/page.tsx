@@ -1,3 +1,5 @@
+import CareEvidence from "@/components/CareEvidence";
+import { withCareEvidence } from "@/lib/schema";
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
@@ -83,7 +85,7 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(sanitizeJsonLd(homeSchema)),
+          __html: JSON.stringify(sanitizeJsonLd(withCareEvidence(homeSchema, "home"))),
         }}
       />
       <main id="top" className="min-h-screen bg-cream text-charcoal">
@@ -207,6 +209,8 @@ export default function HomePage() {
             ))}
           </div>
         </section>
+
+        <CareEvidence kind="home" awards={true} />
 
         {/* ARTICLES TEASER — contained, 1 featured charcoal card + 3 below */}
         <section

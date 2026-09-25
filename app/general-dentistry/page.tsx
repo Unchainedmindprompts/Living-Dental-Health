@@ -1,3 +1,5 @@
+import CareEvidence from "@/components/CareEvidence";
+import { withCareEvidence } from "@/lib/schema";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -99,7 +101,7 @@ export default function GeneralDentistryPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(sanitizeJsonLd(generalDentistryPageSchema)),
+          __html: JSON.stringify(sanitizeJsonLd(withCareEvidence(generalDentistryPageSchema, "general"))),
         }}
       />
       <main
@@ -285,6 +287,8 @@ export default function GeneralDentistryPage() {
             </a>
           </div>
         </section>
+        <CareEvidence kind="general" awards={false} />
+
       </main>
     </>
   );
