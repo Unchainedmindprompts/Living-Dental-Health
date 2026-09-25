@@ -1187,7 +1187,7 @@ export const cosmeticDentistryPageSchema: JsonLdGraph = {
         "https://livingdentalhealth.com/cosmetic-dentistry#veneers",
       "name": "Porcelain Veneers",
       "description":
-        "Ultra-thin custom-crafted porcelain shells bonded to the front of the teeth to permanently correct chips, discoloration, gaps, and uneven shapes. Each veneer is designed to complement the patient’s facial features and natural tooth color.",
+        "Ultra-thin custom-crafted porcelain shells bonded to the front of the teeth that can improve the appearance of chipped, discolored, uneven, or spaced teeth. Each veneer is designed to complement the patient’s facial features and natural tooth color.",
       "url":
         "https://livingdentalhealth.com/cosmetic-dentistry#veneers",
       "procedureType": "https://schema.org/TherapeuticProcedure",
