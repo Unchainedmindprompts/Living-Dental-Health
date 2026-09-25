@@ -83,3 +83,7 @@ Publisher-verified awards shown: CommunityVotes 2025 and 2026 Platinum Dental Hy
 PatientConnect365 receives a visible patient-review link. Individual review summaries from Meet My Dentist were withheld because original publication/date verification remains outstanding; no review quotes, stars, dates or Review schema were added.
 
 Validation: build and schema guard pass. Seven rendered page checks cover internal links and anchors, visible relatedLink correspondence, canonical graph reference resolution, single H1 and existing FAQ alignment. Case training and outcome wording is based on the existing practice material, not independent clinical certification.
+
+## Homepage presentation refinement
+
+Replaced the homepage evidence-card grid with a compact portrait, credentials, linked awards and gallery/reviews actions. Removed the second doctor biography section to avoid repeating the portrait and credentials. Case images remain on treatment/gallery pages; homepage keeps descriptive links to the same case anchors and doctor entity. Cleaned up internal-sounding case descriptions. Build and seven-page link/schema checks pass; rendered HTML confirms one dentist section and no clinical case images on home. Browser screenshot check unavailable because the browser download failed.
