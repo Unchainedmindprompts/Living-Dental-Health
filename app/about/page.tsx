@@ -1,3 +1,5 @@
+import CareEvidence from "@/components/CareEvidence";
+import { withCareEvidence } from "@/lib/schema";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Nav from "@/components/Nav";
@@ -45,7 +47,7 @@ export default function AboutPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(sanitizeJsonLd(aboutPageSchema)),
+          __html: JSON.stringify(sanitizeJsonLd(withCareEvidence(aboutPageSchema, "about"))),
         }}
       />
       <main
@@ -167,6 +169,8 @@ export default function AboutPage() {
           />
         </div>
       </section>
+
+        <CareEvidence kind="about" awards={true} />
 
       {/* CREDENTIALS */}
       <section className="mx-auto max-w-[1320px] px-6 pb-24 sm:pb-32">

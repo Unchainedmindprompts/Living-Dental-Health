@@ -1,3 +1,5 @@
+import CareEvidence from "@/components/CareEvidence";
+import { withCareEvidence } from "@/lib/schema";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -78,7 +80,7 @@ export default function DentalImplantsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(sanitizeJsonLd(dentalImplantsPageSchema)),
+          __html: JSON.stringify(sanitizeJsonLd(withCareEvidence(dentalImplantsPageSchema, "implants"))),
         }}
       />
       <main
@@ -276,6 +278,8 @@ export default function DentalImplantsPage() {
             />
           </div>
         </section>
+
+        <CareEvidence kind="implants" awards={false} />
 
         {/* FAQ — visible, mirrors FAQPage schema */}
         <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">

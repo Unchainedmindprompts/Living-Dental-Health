@@ -1,3 +1,5 @@
+import CareEvidence from "@/components/CareEvidence";
+import { withCareEvidence } from "@/lib/schema";
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
@@ -83,7 +85,7 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(sanitizeJsonLd(homeSchema)),
+          __html: JSON.stringify(sanitizeJsonLd(withCareEvidence(homeSchema, "home"))),
         }}
       />
       <main id="top" className="min-h-screen bg-cream text-charcoal">
@@ -207,6 +209,8 @@ export default function HomePage() {
             ))}
           </div>
         </section>
+
+        <CareEvidence kind="home" awards={true} />
 
         {/* ARTICLES TEASER — contained, 1 featured charcoal card + 3 below */}
         <section
@@ -364,69 +368,6 @@ export default function HomePage() {
                 />
               </svg>
             </Link>
-          </div>
-        </section>
-
-        <Rule />
-
-        {/* MEET THE DENTIST */}
-        <section
-          id="dentist"
-          className="mx-auto max-w-[1320px] px-5 py-14 sm:px-6 sm:py-20"
-        >
-          <div className="grid gap-8 lg:grid-cols-[auto_1fr] lg:items-start lg:gap-12">
-            <div className="relative mx-auto aspect-[4/5] w-full max-w-[320px] overflow-hidden bg-cream-deep sm:max-w-[380px] lg:mx-0 lg:w-[380px]">
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-warm-gray">
-                <LeafToothMark color="var(--sage-soft)" />
-                <p className="eyebrow">Dr. Andy · Portrait</p>
-              </div>
-              <Image
-                src="/dr-andy.png"
-                alt="Dr. Andy Engel, DMD"
-                fill
-                sizes="(min-width: 1024px) 380px, (min-width: 640px) 380px, 320px"
-                className="relative object-cover object-center"
-              />
-            </div>
-
-            <div>
-              <p className="eyebrow mb-3 sm:mb-4">Meet your dentist</p>
-              <h2 className="font-serif text-[32px] leading-[1.05] text-charcoal sm:text-[44px] lg:text-[56px]">
-                Dr. <span className="font-serif-italic">Andy Engel</span>, DMD
-              </h2>
-              <p className="mt-3 font-serif-italic text-[15px] text-warm-gray sm:mt-4 sm:text-[18px]">
-                — in Bend, Oregon since 1998 · known to patients as Dr. Andy —
-              </p>
-              <span className="my-5 block h-px w-14 bg-sage sm:my-7" />
-
-              <div className="space-y-5 text-charcoal-soft">
-                <p>
-                  Andy has cared for Bend families since 1998, the year he
-                  graduated from OHSU. He founded Living Dental Health in
-                  2013 to build something of his own — twenty-eight years
-                  now in the same town, with many of the same families. The
-                  practice grew the way good neighborhoods do: slowly, by
-                  referral, around a small team that learned each
-                  other's rhythms.
-                </p>
-                <p>
-                  His approach is unhurried and conservative. Cleanings and
-                  exams sit at the heart of it; cosmetic refinements and
-                  surgical care happen under the same roof when they're the
-                  right call. Patients tell us they appreciate being explained
-                  to, not pitched at — that's the gentle touch we mean.
-                </p>
-              </div>
-
-              <dl className="mt-10 grid grid-cols-1 gap-6 border-t border-rule pt-8 sm:grid-cols-2">
-                {CREDS.map((c) => (
-                  <div key={c.label}>
-                    <dt className="eyebrow mb-2">{c.label}</dt>
-                    <dd className="text-charcoal">{c.value}</dd>
-                  </div>
-                ))}
-              </dl>
-            </div>
           </div>
         </section>
 

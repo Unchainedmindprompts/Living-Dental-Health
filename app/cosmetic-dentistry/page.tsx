@@ -1,3 +1,5 @@
+import CareEvidence from "@/components/CareEvidence";
+import { withCareEvidence } from "@/lib/schema";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,9 +21,9 @@ const SERVICES = [
     id: "veneers",
     heading: "Porcelain Veneers",
     body:
-      "Veneers are ultra-thin porcelain shells custom-crafted to cover the front surface of your teeth. They correct chips, discoloration, gaps, and uneven shapes — permanently. Dr. Engel designs each veneer to complement your facial features and natural tooth color. The result looks like your best smile, not someone else’s.",
+      "Veneers are ultra-thin porcelain shells custom-crafted to cover the front surface of your teeth. They can improve the appearance of chipped, discolored, uneven, or spaced teeth. Dr. Engel designs each veneer to complement your facial features and natural tooth color. The result looks like your best smile, not someone else’s.",
     detail:
-      "custom crafted · permanent · porcelain · covers chips, gaps, discoloration",
+      "custom crafted · porcelain · tailored to your smile",
     imageAlt:
       "Patient smiling with porcelain veneers at Living Dental Health Bend Oregon",
   },
@@ -108,7 +110,7 @@ export default function CosmeticDentistryPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(sanitizeJsonLd(cosmeticDentistryPageSchema)),
+          __html: JSON.stringify(sanitizeJsonLd(withCareEvidence(cosmeticDentistryPageSchema, "cosmetic"))),
         }}
       />
       <main
@@ -157,8 +159,9 @@ export default function CosmeticDentistryPage() {
                 </h1>
                 <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:text-[17px] lg:mx-0 lg:max-w-[440px]">
                   From a single whitening treatment to a complete smile
-                  makeover, Dr. Engel combines 28 years of aesthetic training
-                  with a listening-first approach. No procedures you
+                  makeover, Dr. Engel combines experience practicing dentistry
+                  in Bend since 1998 with advanced training in cosmetic
+                  dentistry and a listening-first approach. No procedures you
                   don&rsquo;t want. Just your best smile.
                 </p>
               </div>
@@ -201,6 +204,8 @@ export default function CosmeticDentistryPage() {
             </p>
           </div>
         </section>
+
+        <CareEvidence kind="cosmetic" awards={false} />
 
         {/* SERVICE SECTIONS — 2-up mocha panel grid */}
         <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">

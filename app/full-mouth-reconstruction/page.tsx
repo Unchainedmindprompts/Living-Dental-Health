@@ -1,3 +1,5 @@
+import CareEvidence from "@/components/CareEvidence";
+import { withCareEvidence } from "@/lib/schema";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -102,7 +104,7 @@ export default function FullMouthReconstructionPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
-            sanitizeJsonLd(fullMouthReconstructionPageSchema)
+            sanitizeJsonLd(withCareEvidence(fullMouthReconstructionPageSchema, "reconstruction"))
           ),
         }}
       />
@@ -310,6 +312,8 @@ export default function FullMouthReconstructionPage() {
             </ul>
           </div>
         </section>
+
+        <CareEvidence kind="reconstruction" awards={false} />
 
         {/* TRUST BLOCK — 1,000 CE hours */}
         <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">
