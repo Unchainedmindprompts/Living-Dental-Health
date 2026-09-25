@@ -111,6 +111,12 @@ export default function ArticlePage({
           <h1 className="mt-4 font-serif text-[34px] leading-[1.08] text-charcoal sm:text-[46px] md:text-[52px]">
             {meta.title}
           </h1>
+          <p className="mt-4 font-inter text-[13px] leading-relaxed text-charcoal-soft">
+            Living Dental Health · <Link href="/about" className="underline underline-offset-4">About Dr. Andy Engel</Link>
+            {meta.dateModified.slice(0, 10) > meta.datePublished.slice(0, 10) ? (
+              <> · Updated <time dateTime={meta.dateModified}>{formatDate(meta.dateModified)}</time></>
+            ) : null}
+          </p>
         </header>
 
         {/* FEATURED IMAGE */}
@@ -150,7 +156,7 @@ export default function ArticlePage({
                     style={{ borderColor: "rgba(28,26,23,0.12)" }}
                   >
                     <dt className="font-serif text-[19px] leading-snug text-charcoal sm:text-[21px]">
-                      {f.q}
+                      <h3>{f.q}</h3>
                     </dt>
                     <dd className="mt-3 font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft">
                       {f.a}
