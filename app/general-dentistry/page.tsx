@@ -1,6 +1,7 @@
 import CareEvidence from "@/components/CareEvidence";
 import { withCareEvidence } from "@/lib/schema";
 import type { Metadata } from "next";
+import { serviceMetadata } from "@/lib/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
@@ -10,8 +11,9 @@ const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {
+  ...serviceMetadata("/general-dentistry", "General Dentistry in Bend, Oregon | Living Dental Health", "Cleanings, exams, fillings, crowns, and bridges in Bend, Oregon. Foundational care from Dr. Andy Engel with in-house digital X-rays and 3D CBCT imaging.", "/general-hero.webp"),
   alternates: { canonical: "/general-dentistry" },
-  title: "General Dentistry — Living Dental Health, Bend Oregon",
+  title: "General Dentistry in Bend, Oregon | Living Dental Health",
   description:
     "Cleanings, exams, fillings, crowns, and bridges in Bend, Oregon. Foundational care from Dr. Andy Engel with in-house digital X-rays and 3D CBCT imaging.",
 };
@@ -79,7 +81,7 @@ const FAQ = [
   },
   {
     q: "Does Living Dental Health offer digital X-rays and 3D CBCT imaging in-house?",
-    a: "Yes. Digital X-rays are taken on-site for every routine exam. For more complex cases, Dr. Engel uses in-house cone-beam CT (CBCT) — a true three-dimensional scan of the teeth, jaw, and sinuses — without referring patients to an outside imaging center.",
+    a: "Yes. Digital X-rays and 3D CBCT imaging are available in-house. Dr. Engel recommends imaging based on your individual needs, examination, and available records; not every visit requires new X-rays or a CBCT scan.",
   },
   {
     q: "Are tooth-colored fillings safe and how long do they last?",
@@ -144,10 +146,10 @@ export default function GeneralDentistryPage() {
                 >
                   &mdash; general dentistry &mdash;
                 </p>
-                <h1 className="mt-5 font-serif text-[40px] leading-[1.05] text-charcoal sm:text-[56px] lg:text-[64px]">
-                  Your foundation for a{" "}
-                  <span className="font-serif-italic">healthy life.</span>
+                <h1 className="mt-5 font-serif text-[40px] leading-[1.05] text-charcoal sm:text-[56px] lg:text-[54px]">
+                  General Dentistry in Bend, Oregon
                 </h1>
+                <p className="mt-4 font-serif-italic text-[22px] text-charcoal-soft">Your foundation for a healthy life.</p>
                 <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:text-[17px] lg:mx-0 lg:max-w-[440px]">
                   Most dental problems are preventable. We see patients every
                   six months not because it&rsquo;s routine &mdash; because it

@@ -1,115 +1,101 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-// Contact form handler.
-//
-// Sends each submission to the front desk via Resend. Set these in the
-// Vercel project's Environment Variables (Settings → Environment Variables):
-//   RESEND_API_KEY      — your Resend API key (starts with "re_")
-//   CONTACT_TO_EMAIL    — optional; where leads go (default below)
-//   CONTACT_FROM_EMAIL  — optional; a verified-domain sender (default below)
-//
-// Until RESEND_API_KEY is set, the handler safely no-ops (logs the lead and
-// returns ok) so the form never errors before email is wired up.
-type ContactPayload = {
-  name?: string;
-  email?: string;
-  phone?: string;
-  message?: string;
+export const runtime = "nodejs";
+const MAX_BYTES = 16_384;
+const limits = {
+  name: 100,
+  email: 254,
+  phone: 40,
+  message: 3000,
+  website: 200,
 };
-
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-const TO_EMAIL = process.env.CONTACT_TO_EMAIL || "info@livingdentalhealth.com";
-const FROM_EMAIL =
-  process.env.CONTACT_FROM_EMAIL ||
-  "Living Dental Health <noreply@livingdentalhealth.com>";
+type ContactPayload = Record<keyof typeof limits, string>;
+const failure = (error: string, status: number) =>
+  NextResponse.json({ error }, { status });
+const unavailable =
+  "Online requests are temporarily unavailable. Please call (541) 550-5311.";
 
 function escapeHtml(value: string): string {
   return value
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
 }
 
 export async function POST(req: Request) {
-  let body: ContactPayload;
+  const origin = req.headers.get("origin");
+  if (origin && origin !== new URL(req.url).origin)
+    return failure("Invalid request origin.", 403);
+  if (!req.headers.get("content-type")?.includes("application/json"))
+    return failure("JSON is required.", 415);
+  if (Number(req.headers.get("content-length")) > MAX_BYTES)
+    return failure("Request is too large.", 413);
+
+  let input: unknown;
   try {
-    body = (await req.json()) as ContactPayload;
-  } catch {
-    return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
-  }
-
-  const name = (body.name || "").trim();
-  const email = (body.email || "").trim();
-  const phone = (body.phone || "").trim();
-  const message = (body.message || "").trim();
-
-  if (!email || !EMAIL_RE.test(email)) {
-    return NextResponse.json(
-      { error: "A valid email address is required." },
-      { status: 422 }
-    );
-  }
-
-  const apiKey = process.env.RESEND_API_KEY;
-
-  // No key yet → don't error the visitor; log so the lead isn't lost in dev.
-  if (!apiKey) {
-    console.log("[contact-request:no-email-transport]", {
-      name,
-      email,
-      phone,
-      message,
-      receivedAt: new Date().toISOString(),
-    });
-    return NextResponse.json({ ok: true });
-  }
-
-  const resend = new Resend(apiKey);
-
-  const lines = [
-    `Name: ${name || "(not provided)"}`,
-    `Email: ${email}`,
-    `Phone: ${phone || "(not provided)"}`,
-    "",
-    "Message:",
-    message || "(no message)",
-  ];
-
-  try {
-    const { error } = await resend.emails.send({
-      from: FROM_EMAIL,
-      to: [TO_EMAIL],
-      replyTo: email,
-      subject: `New website inquiry${name ? ` from ${name}` : ""}`,
-      text: lines.join("\n"),
-      html: `
-        <h2>New website inquiry</h2>
-        <p><strong>Name:</strong> ${escapeHtml(name) || "(not provided)"}</p>
-        <p><strong>Email:</strong> ${escapeHtml(email)}</p>
-        <p><strong>Phone:</strong> ${escapeHtml(phone) || "(not provided)"}</p>
-        <p><strong>Message:</strong><br>${
-          escapeHtml(message).replace(/\n/g, "<br>") || "(no message)"
-        }</p>
-      `,
-    });
-
-    if (error) {
-      console.error("[contact-request:resend-error]", error);
-      return NextResponse.json(
-        { error: "Could not send your message. Please call us instead." },
-        { status: 502 }
-      );
+    const reader = req.body?.getReader();
+    if (!reader) return failure("Invalid request.", 400);
+    const chunks: Uint8Array[] = [];
+    let size = 0;
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      size += value.byteLength;
+      if (size > MAX_BYTES) {
+        await reader.cancel();
+        return failure("Request is too large.", 413);
+      }
+      chunks.push(value);
     }
+    input = JSON.parse(Buffer.concat(chunks).toString("utf8"));
+  } catch {
+    return failure("Invalid JSON.", 400);
+  }
+  if (!input || typeof input !== "object" || Array.isArray(input))
+    return failure("Invalid request.", 400);
+  const body = {} as ContactPayload;
+  for (const [key, limit] of Object.entries(limits)) {
+    const value = (input as Record<string, unknown>)[key] ?? "";
+    if (typeof value !== "string" || value.length > limit)
+      return failure("Please check your form fields.", 422);
+    body[key as keyof ContactPayload] = value.trim();
+  }
+  const { name, email, phone, message, website } = body;
+  if (website)
+    return failure("Unable to submit this request. Please call us.", 422);
+  if (
+    !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ||
+    /[\r\n]/.test(name + email + phone)
+  )
+    return failure("A valid email address is required.", 422);
 
+  // Never log patient contact details or report success without a delivery transport.
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) return failure(unavailable, 503);
+  try {
+    const { data, error } = await new Resend(apiKey).emails.send({
+      from:
+        process.env.CONTACT_FROM_EMAIL ||
+        "Living Dental Health <noreply@livingdentalhealth.com>",
+      to: [process.env.CONTACT_TO_EMAIL || "info@livingdentalhealth.com"],
+      replyTo: email,
+      subject: "New website appointment request",
+      text: [
+        `Name: ${name || "(not provided)"}`,
+        `Email: ${email}`,
+        `Phone: ${phone || "(not provided)"}`,
+        "",
+        "Message:",
+        message || "(no message)",
+      ].join("\n"),
+      html: `<h2>New website appointment request</h2><p><strong>Name:</strong> ${escapeHtml(name)}</p><p><strong>Email:</strong> ${escapeHtml(email)}</p><p><strong>Phone:</strong> ${escapeHtml(phone)}</p><p><strong>Message:</strong><br>${escapeHtml(message).replace(/\n/g, "<br>")}</p>`,
+    });
+    if (error || !data?.id) return failure(unavailable, 502);
     return NextResponse.json({ ok: true });
-  } catch (err) {
-    console.error("[contact-request:exception]", err);
-    return NextResponse.json(
-      { error: "Could not send your message. Please call us instead." },
-      { status: 502 }
-    );
+  } catch {
+    return failure(unavailable, 502);
   }
 }

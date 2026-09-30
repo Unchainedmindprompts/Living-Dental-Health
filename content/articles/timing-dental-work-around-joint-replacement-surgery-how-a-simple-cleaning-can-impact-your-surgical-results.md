@@ -1,4 +1,5 @@
 ---
+seoTitle: "Dental Care Before Joint Replacement Surgery"
 title: "Timing Dental Work Around Joint Replacement Surgery: How a Simple Cleaning Can Impact Your Surgical Results"
 slug: "timing-dental-work-around-joint-replacement-surgery-how-a-simple-cleaning-can-impact-your-surgical-results"
 datePublished: "2024-11-01T05:00:04"

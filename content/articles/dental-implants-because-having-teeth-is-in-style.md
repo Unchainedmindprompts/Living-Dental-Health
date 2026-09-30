@@ -2,7 +2,7 @@
 title: "Dental Implants – Because Having Teeth is in Style"
 slug: "dental-implants-because-having-teeth-is-in-style"
 datePublished: "2023-08-01T03:00:00"
-dateModified: "2026-07-20T00:00:00"
+dateModified: "2026-09-30T00:00:00"
 excerpt: "I remember going into my grandparent’s bathroom as a child and seeing their dentures soaking at night. Dentures were the norm until advancements in dentistry proved there was a longer-lasting and functional treatment available for missing teeth – dental implants. What is a Dental Implant? The majority of dental implants are made of medical-grade titanium."
 featuredImage: "/images/articles/uploads/2021/10/home-surgery.jpg"
 status: "enhanced"
@@ -80,3 +80,8 @@ Once you are fully healed, which takes 2-4 months, you are ready to place your c
 There are risks associated with getting a dental implant. However, there is a 98% success rate nationally. Regardless, please do your homework before getting it done because experience matters. Most local dentists will refer to an oral surgeon for the dental implant procedure, but these specialists don’t place the artificial tooth once the implant and abutment are fully healed. In this instance, the oral surgeon will refer back to the dentist for the crown. Have you ever heard the phrase, “too many cooks in the kitchen?” The more people involved in one procedure, the greater the risk of things going sideways. Each step in the dental implant procedure – from the bone graft to the crown placement – requires precision. [Dr. Andy](/about) has advanced training in bone grafts, dental implants, and dental crowns and has been placing implants for over 15 years. 
 
 If you are missing a tooth or need to have a tooth removed, know your options and choose the one that most appropriately fits your current needs and future goals. Consider functionality, convenience, and experience. And if you’d like to talk with Dr. Andy about your need for a dental implant, [call us](/contact) to get on the schedule. We are happy to help.
+
+
+## Discuss your options in Bend
+
+Explore [dental implant care in Bend](/dental-implants) with Dr. Andy Engel at Living Dental Health, or [request a consultation](/contact) to discuss your goals.

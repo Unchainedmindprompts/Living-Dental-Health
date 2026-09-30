@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { trackConversion } from "@/lib/analytics";
 
 const CREAM = "#F5F0E8";
 const SAGE_DEEP = "#556649";
@@ -11,6 +12,8 @@ const LABEL_COLOR = "rgba(245,240,232,0.72)";
 type Status = "idle" | "submitting" | "sent" | "error";
 
 export default function ContactForm() {
+  const sending = useRef(false);
+  const [website, setWebsite] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -20,6 +23,7 @@ export default function ContactForm() {
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    if (sending.current) return;
     setErrorMsg("");
 
     const trimmed = email.trim();
@@ -29,21 +33,27 @@ export default function ContactForm() {
       return;
     }
 
+    sending.current = true;
     setStatus("submitting");
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email: trimmed, phone, message }),
+        body: JSON.stringify({ name, email: trimmed, phone, message, website }),
       });
       if (!res.ok) {
         const data = (await res.json().catch(() => ({}))) as { error?: string };
         throw new Error(data.error || "Something went wrong. Please try again.");
       }
+      const result = await res.json();
+      if (result.ok !== true) throw new Error("Please call (541) 550-5311 to confirm your request.");
       setStatus("sent");
+      trackConversion("contact_request_sent");
     } catch (err) {
       setStatus("error");
       setErrorMsg(err instanceof Error ? err.message : "Something went wrong.");
+    } finally {
+      sending.current = false;
     }
   }
 
@@ -59,7 +69,7 @@ export default function ContactForm() {
           className="font-inter text-[11px] font-light uppercase tracking-widest"
           style={{ color: LABEL_COLOR }}
         >
-          Message sent
+          Request sent
         </p>
         <p className="mt-5 font-serif-italic text-[28px] leading-[1.2] sm:text-[32px]">
           Thanks — we&rsquo;ll be in touch.
@@ -68,7 +78,7 @@ export default function ContactForm() {
           className="mx-auto mt-4 max-w-[380px] font-inter text-[14px] font-light leading-[1.7]"
           style={{ color: "rgba(245,240,232,0.8)" }}
         >
-          Someone from the front desk will reach out within one business day.
+          Your appointment is not booked yet. Our front desk will contact you to confirm a visit, usually within one business day.
           For anything urgent, please call (541) 550&#8209;5311.
         </p>
       </div>
@@ -84,6 +94,7 @@ export default function ContactForm() {
       className="mx-auto max-w-[640px]"
       aria-describedby={errorMsg ? "contact-error" : undefined}
     >
+      <div hidden aria-hidden="true"><label>Leave this field empty<input name="website" value={website} onChange={(e) => setWebsite(e.target.value)} tabIndex={-1} autoComplete="off" /></label></div>
       <div className="grid gap-5 sm:grid-cols-2 sm:gap-6">
         <Field
           label="Name"
@@ -150,13 +161,13 @@ export default function ContactForm() {
             e.currentTarget.style.backgroundColor = CREAM;
           }}
         >
-          {submitting ? "Sending…" : "Send message"}
+          {submitting ? "Sending…" : "Request an appointment"}
         </button>
         <p
           className="font-inter text-[12px] font-light leading-[1.6]"
           style={{ color: LABEL_COLOR }}
         >
-          Only email is required. We&rsquo;ll usually reply within one business day.
+          Only email is required. Please do not include private medical details.
         </p>
       </div>
     </form>
@@ -211,6 +222,7 @@ function Field({
             id={name}
             name={name}
             rows={4}
+            maxLength={3000}
             value={value}
             onChange={(e) => onChange(e.target.value)}
             onFocus={() => setFocused(true)}
@@ -225,6 +237,7 @@ function Field({
             id={name}
             name={name}
             type={type}
+            maxLength={name === "email" ? 254 : name === "phone" ? 40 : 100}
             value={value}
             onChange={(e) => onChange(e.target.value)}
             onFocus={() => setFocused(true)}

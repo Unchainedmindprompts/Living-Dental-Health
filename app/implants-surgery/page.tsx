@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { serviceMetadata } from "@/lib/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
@@ -8,8 +9,9 @@ const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {
+  ...serviceMetadata("/implants-surgery", "Dental Implants & Oral Surgery in Bend, Oregon | Living Dental Health", "Dental implants, bone and tissue grafting, wisdom teeth, and in-house CBCT 3D imaging in Bend, Oregon with Dr. Andy Engel. Surgical work handled in-house.", "/implants-hero.webp"),
   alternates: { canonical: "/implants-surgery" },
-  title: "Implants & Oral Surgery — Living Dental Health, Bend",
+  title: "Dental Implants & Oral Surgery in Bend, Oregon | Living Dental Health",
   description:
     "Dental implants, bone and tissue grafting, wisdom teeth, and in-house CBCT 3D imaging in Bend, Oregon with Dr. Andy Engel. Surgical work handled in-house.",
 };
@@ -145,11 +147,9 @@ export default function ImplantsSurgeryPage() {
                   &mdash; implants &amp; surgery &mdash;
                 </p>
                 <h1 className="mt-5 font-serif text-[36px] leading-[1.05] text-charcoal sm:text-[52px] lg:text-[60px]">
-                  Surgical work, in-house.{" "}
-                  <span className="font-serif-italic">
-                    One dentist, one roof.
-                  </span>
+                  Dental Implants &amp; Oral Surgery in Bend, Oregon
                 </h1>
+                <p className="mt-4 font-serif-italic text-[22px] text-charcoal-soft">Surgical care with a dentist who knows you.</p>
                 <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:text-[17px] lg:mx-0 lg:max-w-[440px]">
                   Most general dentists send you to an oral surgeon. Dr. Engel
                   does it himself — implants, extractions, wisdom teeth, and

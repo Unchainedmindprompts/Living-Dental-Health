@@ -24,7 +24,7 @@ export function generateMetadata({
   const { meta } = article;
   const url = `https://livingdentalhealth.com/articles/${meta.slug}`;
   return {
-    title: `${meta.title} — Living Dental Health, Bend Oregon`,
+    title: `${meta.seoTitle || meta.title} | Living Dental Health`,
     description: meta.excerpt,
     alternates: { canonical: url },
     openGraph: {

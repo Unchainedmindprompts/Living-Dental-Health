@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { serviceMetadata } from "@/lib/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
@@ -11,9 +12,9 @@ const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {
+  ...serviceMetadata("/oral-cancer-screening", "Oral Cancer Screening in Bend, Oregon | Living Dental Health", "Routine oral cancer screening at every cleaning at Living Dental Health, Bend Oregon. Painless, one minute, and dramatically improves early outcomes.", "/service-preventive.webp"),
   alternates: { canonical: "/oral-cancer-screening" },
-  title:
-    "Oral Cancer Screening — Living Dental Health, Bend Oregon",
+  title: "Oral Cancer Screening in Bend, Oregon | Living Dental Health",
   description:
     "Routine oral cancer screening at every cleaning at Living Dental Health, Bend Oregon. Painless, one minute, and dramatically improves early outcomes.",
 };
@@ -130,10 +131,10 @@ export default function OralCancerScreeningPage() {
                 >
                   &mdash; oral cancer screening &mdash;
                 </p>
-                <h1 className="mt-5 font-serif text-[40px] leading-[1.05] text-charcoal sm:text-[56px] lg:text-[64px]">
-                  Early. Painless.{" "}
-                  <span className="font-serif-italic">Every visit.</span>
+                <h1 className="mt-5 font-serif text-[40px] leading-[1.05] text-charcoal sm:text-[56px] lg:text-[54px]">
+                  Oral Cancer Screening in Bend, Oregon
                 </h1>
+                <p className="mt-4 font-serif-italic text-[22px] text-charcoal-soft">A routine part of looking after you.</p>
                 <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:text-[17px] lg:mx-0 lg:max-w-[460px]">
                   Oral cancer screening is part of every cleaning and exam at
                   Living Dental Health &mdash; a quick, painless check that

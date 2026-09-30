@@ -22,6 +22,7 @@ export type ArticleFaq = { q: string; a: string };
 export type ArticleMeta = {
   slug: string;
   title: string;
+  seoTitle?: string;
   datePublished: string;
   dateModified: string;
   excerpt: string;
@@ -49,6 +50,7 @@ function metaFrom(slug: string, data: Record<string, unknown>): ArticleMeta {
     excerpt: String(data.excerpt ?? ""),
     featuredImage: String(data.featuredImage ?? ""),
   };
+  if (data.seoTitle) meta.seoTitle = String(data.seoTitle);
   if (data.imageAlt) meta.imageAlt = String(data.imageAlt);
   if (data.alternativeHeadline)
     meta.alternativeHeadline = String(data.alternativeHeadline);

@@ -1,6 +1,7 @@
 import CareEvidence from "@/components/CareEvidence";
 import { withCareEvidence } from "@/lib/schema";
 import type { Metadata } from "next";
+import { serviceMetadata } from "@/lib/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
@@ -10,8 +11,9 @@ const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {
+  ...serviceMetadata("/cosmetic-dentistry", "Cosmetic Dentistry in Bend, Oregon | Living Dental Health", "Teeth whitening, porcelain veneers, ClearCorrect, smile design, and full mouth reconstruction with Dr. Andy Engel in Bend, Oregon. No upsell, ever.", "/cosmetic-hero.webp"),
   alternates: { canonical: "/cosmetic-dentistry" },
-  title: "Cosmetic Dentistry — Living Dental Health, Bend Oregon",
+  title: "Cosmetic Dentistry in Bend, Oregon | Living Dental Health",
   description:
     "Teeth whitening, porcelain veneers, ClearCorrect, smile design, and full mouth reconstruction with Dr. Andy Engel in Bend, Oregon. No upsell, ever.",
 };
@@ -43,7 +45,7 @@ const SERVICES = [
     body:
       "Dr. Engel has provided clear aligner therapy since 2001 and is a certified ClearCorrect provider. ClearCorrect uses a series of custom-fitted, removable aligners to gradually shift teeth without metal brackets or wires. Patients remove them for meals and wear them as directed throughout the day. Dr. Engel plans and manages the entire process in-house.",
     detail:
-      "clear aligner therapy since 2001 · certified provider · removable · 12–18 months · in-house",
+      "clear aligner therapy since 2001 · certified provider · removable · individualized timing · in-house",
     imageAlt:
       "Patient holding ClearCorrect clear aligners at Living Dental Health Bend Oregon",
   },
@@ -61,9 +63,9 @@ const SERVICES = [
     id: "whitening",
     heading: "Teeth Whitening",
     body:
-      "Professional whitening delivers results that over-the-counter products simply can’t match — prescription-strength whitening, custom bleaching, and other custom options. Dr. Engel can brighten your smile several shades using a controlled, safe process. Fast, effective, and one of the most affordable ways to transform your appearance.",
+      "Professional whitening and custom bleaching options can help brighten natural teeth. Dr. Engel considers your goals, sensitivity, and existing dental work before recommending a plan. Results vary, and whitening does not change the color of crowns, veneers, or tooth-colored fillings.",
     detail:
-      "prescription-strength · custom bleaching · professional-grade · safe and controlled",
+      "custom bleaching · individualized planning · professional guidance",
     imageAlt:
       "Patient with a brighter smile after professional teeth whitening at Living Dental Health Bend Oregon",
   },
@@ -153,10 +155,10 @@ export default function CosmeticDentistryPage() {
                 >
                   &mdash; cosmetic dentistry &mdash;
                 </p>
-                <h1 className="mt-5 font-serif text-[40px] leading-[1.05] text-charcoal sm:text-[56px] lg:text-[64px]">
-                  Your smile,{" "}
-                  <span className="font-serif-italic">redesigned.</span>
+                <h1 className="mt-5 font-serif text-[40px] leading-[1.05] text-charcoal sm:text-[56px] lg:text-[54px]">
+                  Cosmetic Dentistry in Bend, Oregon
                 </h1>
+                <p className="mt-4 font-serif-italic text-[22px] text-charcoal-soft">Your smile, redesigned.</p>
                 <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:text-[17px] lg:mx-0 lg:max-w-[440px]">
                   From a single whitening treatment to a complete smile
                   makeover, Dr. Engel combines experience practicing dentistry
@@ -205,6 +207,11 @@ export default function CosmeticDentistryPage() {
           </div>
         </section>
 
+        <div className="mx-auto flex max-w-[1100px] flex-wrap gap-4 px-6 pb-10">
+          <Link href="/teeth-whitening" className="rounded-full border border-sage px-6 py-3 text-sage">Explore teeth whitening</Link>
+          <Link href="/clear-correct-braces" className="rounded-full border border-sage px-6 py-3 text-sage">Explore ClearCorrect aligners</Link>
+          <Link href="/contact" className="rounded-full bg-sage px-6 py-3 text-cream">Request a cosmetic consultation</Link>
+        </div>
         <CareEvidence kind="cosmetic" awards={false} />
 
         {/* SERVICE SECTIONS — 2-up mocha panel grid */}

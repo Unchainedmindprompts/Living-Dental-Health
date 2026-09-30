@@ -656,26 +656,6 @@
       "statusCode": 301
     },
     {
-      "source": "/teeth-whitening/",
-      "destination": "/cosmetic-dentistry",
-      "statusCode": 301
-    },
-    {
-      "source": "/teeth-whitening",
-      "destination": "/cosmetic-dentistry",
-      "statusCode": 301
-    },
-    {
-      "source": "/clear-correct-braces/",
-      "destination": "/cosmetic-dentistry",
-      "statusCode": 301
-    },
-    {
-      "source": "/clear-correct-braces",
-      "destination": "/cosmetic-dentistry",
-      "statusCode": 301
-    },
-    {
       "source": "/smile-design/",
       "destination": "/cosmetic-dentistry",
       "statusCode": 301
@@ -717,12 +697,12 @@
     },
     {
       "source": "/wisdom-teeth/",
-      "destination": "/implants-surgery",
+      "destination": "/wisdom-teeth-removal",
       "statusCode": 301
     },
     {
       "source": "/wisdom-teeth",
-      "destination": "/implants-surgery",
+      "destination": "/wisdom-teeth-removal",
       "statusCode": 301
     },
     {

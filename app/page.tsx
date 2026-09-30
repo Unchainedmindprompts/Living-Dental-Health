@@ -40,8 +40,8 @@ const SERVICES = [
     ],
   },
   {
-    title: "Oral Surgery",
-    href: "/implants-surgery",
+    title: "Dental Implants & Surgery",
+    href: "/dental-implants",
     image: "/service-implants.webp",
     imageAlt:
       "Dr. Andy Engel consulting with a patient about oral surgery and dental implants",
@@ -116,6 +116,10 @@ export default function HomePage() {
             Phil&rsquo;s Trailhead. If you&rsquo;re looking for a dentist who
             will still know your name in ten years, you&rsquo;ve found him.
           </p>
+          <div className="mt-7 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Link href="/contact" className="rounded-full bg-sage px-7 py-3.5 text-[13px] font-medium text-cream transition-colors hover:bg-charcoal">Request an Appointment</Link>
+            <a href="tel:+15415505311" className="text-[14px] text-charcoal underline underline-offset-4">Call (541) 550-5311</a>
+          </div>
         </header>
 
         {/* HERO */}
@@ -489,7 +493,7 @@ export default function HomePage() {
               <p>© 2026 Living Dental Health, PLLC</p>
               <div className="flex gap-6">
                 <a href="/privacy" className="sweep">Privacy</a>
-                <a href="#accessibility" className="sweep">Accessibility</a>
+                <a href="/accessibility" className="sweep">Accessibility</a>
                 <a href="/privacy" className="sweep">HIPAA Notice</a>
               </div>
             </div>
@@ -530,7 +534,7 @@ function FooterCol({
                   {l}
                 </a>
               ) : (
-                <span>{l}</span>
+                title === "Practice" ? <a className="sweep" href={({ About: "/about", Services: "/#services", "Smile Gallery": "/before-and-after", "New Patients": "/patient-info" } as Record<string, string>)[l]}>{l}</a> : <span>{l}</span>
               )}
             </li>
           );

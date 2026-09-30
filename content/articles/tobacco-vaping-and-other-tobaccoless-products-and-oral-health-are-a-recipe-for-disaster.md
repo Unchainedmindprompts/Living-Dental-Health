@@ -1,4 +1,5 @@
 ---
+seoTitle: "Tobacco, Vaping, and Your Oral Health"
 title: "Tobacco, Vaping, and Other Tobaccoless Products are an Oral Health Recipe for Disaster"
 slug: "tobacco-vaping-and-other-tobaccoless-products-and-oral-health-are-a-recipe-for-disaster"
 datePublished: "2025-05-01T05:00:32"

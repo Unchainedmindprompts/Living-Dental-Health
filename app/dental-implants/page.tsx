@@ -279,6 +279,15 @@ export default function DentalImplantsPage() {
           </div>
         </section>
 
+        <section className="mx-auto max-w-[1100px] px-6 pb-16">
+          <h2 className="font-serif text-[34px] leading-tight">Planning the cost and timing of your implant care</h2>
+          <div className="mt-6 grid gap-8 md:grid-cols-2">
+            <div><h3 className="font-serif text-[25px]">What affects the total cost?</h3><p className="mt-3 text-[15px] leading-relaxed text-charcoal-soft">Your plan may include imaging, removal of a tooth, grafting if needed, implant placement, and the final restoration. The number of teeth involved and the condition of your mouth affect the scope. Ask for an estimate that explains each stage and what is included.</p></div>
+            <div><h3 className="font-serif text-[25px]">How do timing and payment fit together?</h3><p className="mt-3 text-[15px] leading-relaxed text-charcoal-soft">Care often takes place in stages, with healing time between them. Dr. Engel explains the proposed sequence after your examination. The practice offers CareCredit for larger treatment plans; the team can discuss available options and help you understand questions to ask your insurer.</p><Link href="/patient-info#insurance" className="mt-4 inline-block text-sage underline underline-offset-4">Insurance and financing information</Link></div>
+          </div>
+          <p className="mt-7 text-[15px] leading-relaxed text-charcoal-soft">Start by telling us which tooth or teeth concern you, whether you have recent dental records, and what you hope to achieve. We will arrange an examination so you can discuss implants and alternatives with Dr. Engel.</p>
+          <Link href="/contact" className="mt-6 inline-block rounded-full bg-sage px-7 py-3 text-cream">Request an implant consultation</Link>
+        </section>
         <CareEvidence kind="implants" awards={false} />
 
         {/* FAQ — visible, mirrors FAQPage schema */}

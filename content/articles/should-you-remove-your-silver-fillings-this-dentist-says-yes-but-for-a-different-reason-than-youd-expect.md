@@ -1,4 +1,5 @@
 ---
+seoTitle: "Should You Replace Silver Fillings?"
 title: "Should You Remove Your Silver Fillings?  This Dentist Says Yes, But for a Different Reason Than You’d Expect"
 slug: "should-you-remove-your-silver-fillings-this-dentist-says-yes-but-for-a-different-reason-than-youd-expect"
 datePublished: "2023-05-01T05:00:44"

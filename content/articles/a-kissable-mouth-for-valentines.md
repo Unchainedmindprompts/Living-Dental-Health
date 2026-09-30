@@ -9,7 +9,6 @@ status: "migrated-as-is"
 ---
 ![](/images/articles/uploads/2021/10/smile-design-header.jpg "smile-design-header")
 
-# Tips for Having the Most Kissable Mouth This Valentine’s Day and Beyond
 
 February is affectionately (or not depending on your current relationship status) known as the month of love. It is also heart health month (go figure). So we wanted to provide some tips you could benefit from because who doesn’t love a good kiss? And whether you’re kissing your child, your partner, or your parent, these tips will help you feel more confident before leaning in.
 

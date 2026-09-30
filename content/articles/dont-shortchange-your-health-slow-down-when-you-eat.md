@@ -9,7 +9,6 @@ status: "migrated-as-is"
 ---
 ![Health food for the teeth](/images/articles/uploads/2022/05/healthy-food.jpeg "Health food for the teeth")
 
-# Don’t Shortchange Your Health – Slow Down When You Eat.
 
 You’ve heard the saying, “You are what you eat,” but did you know that the food you eat and even the speed with which you eat your food has been found to have significant life-saving benefits.
 

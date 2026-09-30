@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { serviceMetadata } from "@/lib/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
@@ -11,11 +12,11 @@ const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {
+  ...serviceMetadata("/sedation-dentistry", "Sedation Dentistry in Bend, Oregon | Living Dental Health", "Mild oral Halcion sedation for anxious patients and oral surgery in Bend, Oregon. A calm pace, individual assessment, and a clear recovery plan.", "/sedation-hero.webp"),
   alternates: { canonical: "/sedation-dentistry" },
-  title:
-    "Sedation Dentistry — Living Dental Health, Bend Oregon",
+  title: "Sedation Dentistry in Bend, Oregon | Living Dental Health",
   description:
-    "Mild oral Halcion sedation for anxious patients and oral surgery in Bend, Oregon. Calm pace, gentle approach, out of your system in about 24 hours.",
+    "Mild oral Halcion sedation for anxious patients and oral surgery in Bend, Oregon. A calm pace, individual assessment, and a clear recovery plan.",
 };
 
 // Live phase copy. Andy's personal voice can be woven into these blocks later.
@@ -46,11 +47,11 @@ const PHASES = [
   },
   {
     id: "twenty-four-hours",
-    heading: "Out of Your System by Tomorrow",
+    heading: "Plan for a Supported Recovery",
     body:
-      "Halcion is short-acting. It's generally cleared from your system within about 24 hours of the dose, so you're back to yourself the next day. You will need a responsible adult to drive you to and from the appointment and stay with you for the rest of the day — that's the standard of care for any oral sedation.",
+      "Recovery varies. Arrange for a responsible adult to drive you to and from your appointment and stay with you afterward as directed. Dr. Engel will explain when to take any prescribed medication and when it is appropriate to resume driving and other activities.",
     detail:
-      "~24-hour clearance · no driving same day · ride home required",
+      "individual recovery plan · supervision · ride home required",
   },
 ];
 
@@ -72,7 +73,7 @@ const FAQ = [
   },
   {
     q: "How long does Halcion stay in my system?",
-    a: "Halcion is short-acting and generally clears your body within about 24 hours. You'll feel like yourself by the next day. Don't drive, operate machinery, or make important decisions for the rest of the day after taking it.",
+    a: "The effects and recovery time vary from person to person. Follow Dr. Engel's specific instructions about your medication, supervision, driving, and return to normal activities. Do not assume you are ready to drive simply because it is the next day.",
   },
   {
     q: "Will I need someone to drive me home?",
@@ -127,15 +128,15 @@ export default function SedationDentistryPage() {
                 >
                   &mdash; sedation &amp; comfort &mdash;
                 </p>
-                <h1 className="mt-5 font-serif text-[40px] leading-[1.05] text-charcoal sm:text-[56px] lg:text-[64px]">
-                  A calmer{" "}
-                  <span className="font-serif-italic">way through.</span>
+                <h1 className="mt-5 font-serif text-[40px] leading-[1.05] text-charcoal sm:text-[56px] lg:text-[54px]">
+                  Sedation Dentistry in Bend, Oregon
                 </h1>
+                <p className="mt-4 font-serif-italic text-[22px] text-charcoal-soft">A calmer way through.</p>
                 <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:text-[17px] lg:mx-0 lg:max-w-[460px]">
                   Mild oral sedation with Halcion, used selectively, alongside
                   a calm and unhurried approach that&rsquo;s standard at
-                  Living Dental Health. You arrive relaxed, the visit passes
-                  quickly, and you&rsquo;re back to yourself by tomorrow.
+                  Living Dental Health. We plan your care, transportation, and
+                  recovery instructions around your individual needs.
                 </p>
               </div>
             </div>

@@ -9,7 +9,6 @@ status: "migrated-as-is"
 ---
 ![](/images/articles/uploads/2021/09/iStock-1139907631.jpg "Brushing my teeth")
 
-# Dental Gifts You Never Knew You’d Love to Have
 
 Yes! We have almost made it through another year. And as we pat ourselves on the back for a pandemic year survived (kind of), we gulp in earnest and realize that the start of December also means we are in the throes of the gift-giving season.
 
