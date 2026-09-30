@@ -13,17 +13,20 @@ Living Dental Health LLC has a separate organization National Provider Identifie
 ## Authority and Recognition
 
 - CommunityVotes Bend 2026 Platinum Winner — Dental Hygiene Clinic
-- CommunityVotes Bend 2026 Gold Winner — Dental Clinic
 - CommunityVotes Bend 2025 Platinum Winner — Dental Hygiene Clinic
 - CommunityVotes Bend 2025 Gold Winner — Dental Clinic
 
-Source: results published at bend.communityvotes.com (2025 and 2026 healthcare category leaderboards). Back-to-back Platinum recognition in Dental Hygiene Clinic and back-to-back Gold in Dental Clinic. Visible link on the Living Dental Health homepage.
+Source: results published at bend.communityvotes.com (2025 and 2026 healthcare category leaderboards). Platinum recognition in Dental Hygiene Clinic in 2025 and 2026; Gold in Dental Clinic in 2025. Visible link on the Living Dental Health homepage.
 
 ## Core service pages
 
 - [General Dentistry](https://livingdentalhealth.com/general-dentistry): cleanings, exams, fillings, crowns, bridges, dentures. Digital X-rays + in-house 3D CBCT imaging.
 - [Cosmetic Dentistry](https://livingdentalhealth.com/cosmetic-dentistry): teeth whitening, porcelain veneers, dental bonding, ClearCorrect clear aligners, smile design, full mouth reconstruction.
 - [Implants & Surgery](https://livingdentalhealth.com/implants-surgery): dental implants, wisdom teeth removal, extractions, bone and tissue grafting, and in-house CBCT (cone-beam CT) 3D imaging.
+
+- [Dental Implants](https://livingdentalhealth.com/dental-implants): assessment, imaging, placement and restoration planning.
+- [Teeth Whitening](https://livingdentalhealth.com/teeth-whitening): professional whitening, expectations and consultation.
+- [ClearCorrect Aligners](https://livingdentalhealth.com/clear-correct-braces): dentist-supervised clear aligners, planning and follow-up.
 
 ## Differentiator: in-house CBCT 3D imaging
 
@@ -32,7 +35,7 @@ Most general dentists in Bend take two-dimensional panoramic X-rays in-house and
 ## Pillar treatments
 
 - [Full Mouth Reconstruction](https://livingdentalhealth.com/full-mouth-reconstruction): comprehensive rebuild of teeth and bite, performed in-house with precision-driven planning to prevent TMJ, headaches, and speech or chewing problems.
-- [Sedation Dentistry](https://livingdentalhealth.com/sedation-dentistry): mild oral sedation with Halcion (triazolam), cleared from the system within ~24 hours. Used selectively for oral surgery and dental anxiety.
+- [Sedation Dentistry](https://livingdentalhealth.com/sedation-dentistry): mild oral sedation with Halcion (triazolam), with individualized recovery instructions. Used selectively for oral surgery and dental anxiety.
 - [Oral Cancer Screening](https://livingdentalhealth.com/oral-cancer-screening): painless visual and palpation exam, part of every cleaning and routine exam.
 
 ## About and trust

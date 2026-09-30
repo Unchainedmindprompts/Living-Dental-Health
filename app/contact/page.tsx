@@ -52,9 +52,9 @@ export default function ContactPage() {
             className="mx-auto mt-8 max-w-[620px] font-inter text-[16px] font-light leading-[1.7] sm:text-[18px]"
             style={{ color: SOFT }}
           >
-            We&rsquo;re not a click-to-book practice. We&rsquo;re a call-us,
-            know-your-name practice. Drop us a line and we&rsquo;ll find a time
-            that works.
+            Tell us how to reach you and we&rsquo;ll find a time that works.
+            This is an appointment request; our team will contact you to confirm
+            a visit. Prefer to talk? Call (541) 550-5311.
           </p>
         </section>
 

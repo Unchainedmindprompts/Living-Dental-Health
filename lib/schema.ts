@@ -1,3 +1,4 @@
+import { cosmeticServices } from "./cosmetic-services";
 import { careEvidence, EvidenceKey, EvidenceLink, practiceAwards } from "./care-evidence";
 type JsonLdNode = {
   "@type": string | string[];
@@ -114,7 +115,6 @@ const businessEnrichment: Record<string, unknown> = {
   "alternateName": "Living Dental Health Bend Oregon",
   "description":
     "Living Dental Health is a Bend, Oregon dental practice led by Dr. Andrew W. Engel, DMD, providing general dentistry, cosmetic dentistry, dental implants, oral surgery, preventive care, and patient-focused dental treatment for adults and families.",
-  "faxNumber": "+1-541-317-5038",
   "email": "info@livingdentalhealth.com",
   "slogan": "Focused on customized care with a gentle touch",
   "openingHoursSpecification": [
@@ -129,7 +129,6 @@ const businessEnrichment: Record<string, unknown> = {
   "foundingDate": "2013",
   "award": [
     "CommunityVotes Bend 2026 Platinum Winner — Dental Hygiene Clinic",
-    "CommunityVotes Bend 2026 Gold Winner — Dental Clinic",
     "CommunityVotes Bend 2025 Platinum Winner — Dental Hygiene Clinic",
     "CommunityVotes Bend 2025 Gold Winner — Dental Clinic",
   ],
@@ -451,7 +450,7 @@ export const generalDentistryPageSchema: JsonLdGraph = {
       "@id": "https://livingdentalhealth.com/general-dentistry#webpage",
       "url": "https://livingdentalhealth.com/general-dentistry",
       "inLanguage": "en-US",
-      "name": "General Dentistry — Living Dental Health, Bend Oregon",
+      "name": "General Dentistry in Bend, Oregon",
       "description":
         "Cleanings, exams, fillings, crowns, and bridges in Bend, Oregon. Foundational care from Dr. Andy Engel with in-house digital X-rays and 3D CBCT imaging.",
       "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
@@ -555,7 +554,7 @@ export const generalDentistryPageSchema: JsonLdGraph = {
           "acceptedAnswer": {
             "@type": "Answer",
             "text":
-              "Yes. Digital X-rays are taken on-site for every routine exam. For more complex cases, Dr. Engel uses in-house cone-beam CT (CBCT) — a true three-dimensional scan of the teeth, jaw, and sinuses — without referring patients to an outside imaging center.",
+              "Yes. Digital X-rays and 3D CBCT imaging are available in-house. Dr. Engel recommends imaging based on your individual needs, examination, and available records; not every visit requires new X-rays or a CBCT scan.",
           },
         },
         {
@@ -707,7 +706,7 @@ export const implantsSurgeryPageSchema: JsonLdGraph = {
       "@id": "https://livingdentalhealth.com/implants-surgery#webpage",
       "url": "https://livingdentalhealth.com/implants-surgery",
       "inLanguage": "en-US",
-      "name": "Implants & Oral Surgery — Living Dental Health, Bend",
+      "name": "Dental Implants & Oral Surgery in Bend, Oregon",
       "description":
         "Dental implants, bone and tissue grafting, wisdom teeth, and in-house CBCT 3D imaging in Bend, Oregon with Dr. Andy Engel. Surgical work handled in-house.",
       "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
@@ -1155,7 +1154,7 @@ export const cosmeticDentistryPageSchema: JsonLdGraph = {
       "@id": "https://livingdentalhealth.com/cosmetic-dentistry#webpage",
       "url": "https://livingdentalhealth.com/cosmetic-dentistry",
       "inLanguage": "en-US",
-      "name": "Cosmetic Dentistry — Living Dental Health, Bend Oregon",
+      "name": "Cosmetic Dentistry in Bend, Oregon",
       "description":
         "Teeth whitening, porcelain veneers, ClearCorrect, smile design, and full mouth reconstruction with Dr. Andy Engel in Bend, Oregon. No upsell, ever.",
       "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
@@ -1174,9 +1173,9 @@ export const cosmeticDentistryPageSchema: JsonLdGraph = {
         "https://livingdentalhealth.com/cosmetic-dentistry#whitening",
       "name": "Teeth Whitening",
       "description":
-        "Professional teeth whitening — prescription-strength whitening, custom bleaching, and other custom options — brightening the smile several shades in a controlled, safe process; results over-the-counter products can’t match.",
+        "Professional teeth whitening and custom bleaching options, planned around the patient’s goals, sensitivity, existing dental work, and individual needs.",
       "url":
-        "https://livingdentalhealth.com/cosmetic-dentistry#whitening",
+        "https://livingdentalhealth.com/teeth-whitening",
       "procedureType": "https://schema.org/TherapeuticProcedure",
       "provider": {
         "@id": "https://livingdentalhealth.com/#doctor",
@@ -1216,9 +1215,9 @@ export const cosmeticDentistryPageSchema: JsonLdGraph = {
         "https://livingdentalhealth.com/cosmetic-dentistry#clearcorrect",
       "name": "ClearCorrect Clear Aligners",
       "description":
-        "Custom-fitted removable clear aligners that gradually shift the teeth with no metal or wires. Dr. Engel has provided clear aligner therapy since 2001, is a certified ClearCorrect provider, and manages the entire process in-house, typically over 12–18 months.",
+        "Custom-fitted removable clear aligners that gradually shift the teeth with no metal or wires. Dr. Engel has provided clear aligner therapy since 2001, is a certified ClearCorrect provider, and manages the process in-house, with timing based on the individual treatment plan.",
       "url":
-        "https://livingdentalhealth.com/cosmetic-dentistry#clearcorrect",
+        "https://livingdentalhealth.com/clear-correct-braces",
       "procedureType": "https://schema.org/TherapeuticProcedure",
       "provider": {
         "@id": "https://livingdentalhealth.com/#doctor",
@@ -1600,7 +1599,7 @@ export const fullMouthReconstructionPageSchema: JsonLdGraph = {
         "https://livingdentalhealth.com/full-mouth-reconstruction#webpage",
       "url": "https://livingdentalhealth.com/full-mouth-reconstruction",
       "inLanguage": "en-US",
-      "name": "Full Mouth Reconstruction — Living Dental Health, Bend",
+      "name": "Full Mouth Reconstruction in Bend, Oregon",
       "description":
         "Full mouth reconstruction in Bend, Oregon with Dr. Andy Engel. Over 1,000 CE hours and precision planning that protects your bite, jaw, and oral health.",
       "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
@@ -1695,9 +1694,9 @@ export const sedationDentistryPageSchema: JsonLdGraph = {
       "@id": "https://livingdentalhealth.com/sedation-dentistry#webpage",
       "url": "https://livingdentalhealth.com/sedation-dentistry",
       "inLanguage": "en-US",
-      "name": "Sedation Dentistry — Living Dental Health, Bend Oregon",
+      "name": "Sedation Dentistry in Bend, Oregon",
       "description":
-        "Mild oral Halcion sedation for anxious patients and oral surgery in Bend, Oregon. Calm pace, gentle approach, out of your system in about 24 hours.",
+        "Mild oral Halcion sedation for anxious patients and oral surgery in Bend, Oregon. A calm pace, individual assessment, and a clear recovery plan.",
       "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
       "about": { "@id": "https://livingdentalhealth.com/#business" },
       "mainEntity": {
@@ -1715,7 +1714,7 @@ export const sedationDentistryPageSchema: JsonLdGraph = {
       "name": "Sedation Dentistry",
       "alternateName": "Oral Sedation Dentistry",
       "description":
-        "Mild oral sedation with Halcion (triazolam) for patients with dental anxiety, those scheduled for oral surgery, or anyone who would prefer a more relaxed visit. Used selectively at Living Dental Health alongside a calm, unhurried approach to every appointment. Halcion is fully cleared from the system within about 24 hours.",
+        "Mild oral sedation with Halcion (triazolam) for patients with dental anxiety, those scheduled for oral surgery, or anyone who would prefer a more relaxed visit. Used selectively at Living Dental Health alongside a calm, unhurried approach to every appointment. Recovery and aftercare instructions are individualized.",
       "url":
         "https://livingdentalhealth.com/sedation-dentistry",
       "procedureType": "https://schema.org/TherapeuticProcedure",
@@ -1748,7 +1747,7 @@ export const sedationDentistryPageSchema: JsonLdGraph = {
           "acceptedAnswer": {
             "@type": "Answer",
             "text":
-              "Halcion is short-acting and generally clears your body within about 24 hours. You'll feel like yourself by the next day. Don't drive, operate machinery, or make important decisions for the rest of the day after taking it.",
+              "The effects and recovery time vary from person to person. Follow Dr. Engel's specific instructions about your medication, supervision, driving, and return to normal activities. Do not assume you are ready to drive simply because it is the next day.",
           },
         },
         {
@@ -1793,7 +1792,7 @@ export const oralCancerScreeningPageSchema: JsonLdGraph = {
       "@id": "https://livingdentalhealth.com/oral-cancer-screening#webpage",
       "url": "https://livingdentalhealth.com/oral-cancer-screening",
       "inLanguage": "en-US",
-      "name": "Oral Cancer Screening — Living Dental Health, Bend Oregon",
+      "name": "Oral Cancer Screening in Bend, Oregon",
       "description":
         "Routine oral cancer screening at every cleaning at Living Dental Health, Bend Oregon. Painless, one minute, and dramatically improves early outcomes.",
       "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
@@ -2250,3 +2249,131 @@ export function withCareEvidence(schema: JsonLdGraph, key: EvidenceKey): JsonLdG
     return { ...node, relatedLink, mentions: [...(Array.isArray(node.mentions) ? node.mentions : []), ...links.filter(link => link.entity).map(link => ({ "@id": link.entity }))] };
   }) };
 }
+
+export const whiteningPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://livingdentalhealth.com/teeth-whitening#webpage",
+      "url": "https://livingdentalhealth.com/teeth-whitening",
+      "name": "Teeth Whitening in Bend, Oregon",
+      "description": "Professional teeth whitening with Dr. Andy Engel in Bend, Oregon. Discuss your goals, sensitivity, existing dental work, and an individualized whitening plan.",
+      "isPartOf": {
+        "@id": "https://livingdentalhealth.com/#website"
+      },
+      "about": {
+        "@id": "https://livingdentalhealth.com/cosmetic-dentistry#whitening"
+      },
+      "mainEntity": {
+        "@id": "https://livingdentalhealth.com/cosmetic-dentistry#whitening"
+      },
+      "publisher": {
+        "@id": "https://livingdentalhealth.com/#business"
+      },
+      "author": {
+        "@id": "https://livingdentalhealth.com/#doctor"
+      },
+      "breadcrumb": {
+        "@id": "https://livingdentalhealth.com/teeth-whitening#breadcrumbs"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://livingdentalhealth.com/teeth-whitening#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://livingdentalhealth.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cosmetic Dentistry",
+          "item": "https://livingdentalhealth.com/cosmetic-dentistry"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Teeth Whitening",
+          "item": "https://livingdentalhealth.com/teeth-whitening"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://livingdentalhealth.com/teeth-whitening#faq",
+      "isPartOf": {
+        "@id": "https://livingdentalhealth.com/teeth-whitening#webpage"
+      },
+      "mainEntity": cosmeticServices.whitening.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } }))
+    }
+  ]
+};
+
+export const alignersPageSchema: JsonLdGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://livingdentalhealth.com/clear-correct-braces#webpage",
+      "url": "https://livingdentalhealth.com/clear-correct-braces",
+      "name": "ClearCorrect Clear Aligners in Bend, Oregon",
+      "description": "Explore ClearCorrect clear aligners with Dr. Andy Engel in Bend, Oregon. Learn about assessment, treatment planning, everyday wear, cost factors, and follow-up.",
+      "isPartOf": {
+        "@id": "https://livingdentalhealth.com/#website"
+      },
+      "about": {
+        "@id": "https://livingdentalhealth.com/cosmetic-dentistry#clearcorrect"
+      },
+      "mainEntity": {
+        "@id": "https://livingdentalhealth.com/cosmetic-dentistry#clearcorrect"
+      },
+      "publisher": {
+        "@id": "https://livingdentalhealth.com/#business"
+      },
+      "author": {
+        "@id": "https://livingdentalhealth.com/#doctor"
+      },
+      "breadcrumb": {
+        "@id": "https://livingdentalhealth.com/clear-correct-braces#breadcrumbs"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://livingdentalhealth.com/clear-correct-braces#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://livingdentalhealth.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cosmetic Dentistry",
+          "item": "https://livingdentalhealth.com/cosmetic-dentistry"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "ClearCorrect Aligners",
+          "item": "https://livingdentalhealth.com/clear-correct-braces"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://livingdentalhealth.com/clear-correct-braces#faq",
+      "isPartOf": {
+        "@id": "https://livingdentalhealth.com/clear-correct-braces#webpage"
+      },
+      "mainEntity": cosmeticServices.aligners.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } }))
+    }
+  ]
+};

@@ -1,3 +1,4 @@
+import ConversionTracking from "@/components/ConversionTracking";
 import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans, Inter } from "next/font/google";
 import "./globals.css";
@@ -60,7 +61,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>{children}</body>
+      <body>{children}<ConversionTracking /></body>
     </html>
   );
 }

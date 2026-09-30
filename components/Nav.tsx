@@ -8,6 +8,9 @@ type Link = { label: string; href: string };
 const TREATMENTS: Link[] = [
   { label: "General Dentistry", href: "/general-dentistry" },
   { label: "Cosmetic Dentistry", href: "/cosmetic-dentistry" },
+  { label: "Dental Implants", href: "/dental-implants" },
+  { label: "Teeth Whitening", href: "/teeth-whitening" },
+  { label: "ClearCorrect Aligners", href: "/clear-correct-braces" },
   { label: "Implants & Surgery", href: "/implants-surgery" },
   { label: "Full Mouth Reconstruction", href: "/full-mouth-reconstruction" },
   { label: "Sedation Dentistry", href: "/sedation-dentistry" },
@@ -81,7 +84,7 @@ export default function Nav() {
         </a>
         <nav
           aria-label="Quick links"
-          className="hidden items-center gap-5 md:flex"
+          className="flex items-center gap-5"
         >
           <a
             href="tel:5415505311"
@@ -122,7 +125,7 @@ export default function Nav() {
             }
             onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = SAGE)}
           >
-            Contact
+            Request an appointment
           </a>
         )}
       </div>
@@ -175,7 +178,7 @@ export default function Nav() {
 
         {/* Columns */}
         <div
-          className="grid h-full grid-cols-1 content-center gap-y-12 overflow-y-auto px-6 pb-32 pt-24 sm:px-12 md:grid-cols-3 md:gap-x-12 md:px-20 md:pt-28 lg:grid-cols-3 lg:gap-x-16 lg:px-20 xl:px-28"
+          className="grid h-full grid-cols-1 content-start gap-y-8 overflow-y-auto px-6 pb-32 pt-24 sm:px-12 md:grid-cols-3 md:gap-x-12 md:px-20 md:pt-28 lg:grid-cols-3 lg:gap-x-16 lg:px-20 xl:px-28"
         >
           {COLUMNS.map((col, idx) => (
             <div

@@ -9,7 +9,11 @@
     "doctor": "https://livingdentalhealth.com/#doctor",
     "website": "https://livingdentalhealth.com/#website"
   },
-  "type": ["Dentist", "LocalBusiness", "MedicalBusiness"],
+  "type": [
+    "Dentist",
+    "LocalBusiness",
+    "MedicalBusiness"
+  ],
   "npi": "1700144870",
   "contact": {
     "telephone": "+1-541-550-5311",
@@ -33,7 +37,10 @@
   },
   "owner": {
     "name": "Andrew W. Engel DMD",
-    "alternateName": ["Dr. Andy Engel", "Dr. Andrew Engel"],
+    "alternateName": [
+      "Dr. Andy Engel",
+      "Dr. Andrew Engel"
+    ],
     "credentials": [
       "BS in General Science with Minor in Chemistry, University of Oregon",
       "Doctor of Dental Medicine, Oregon Health Sciences University",
@@ -73,12 +80,6 @@
       "category": "Dental Hygiene Clinic",
       "source": "CommunityVotes Bend",
       "url": "https://bend.communityvotes.com/2026/01/healthcare/dental-hygiene-clinic"
-    },
-    {
-      "name": "CommunityVotes Bend 2026 Gold Winner",
-      "category": "Dental Clinic",
-      "source": "CommunityVotes Bend",
-      "url": "https://bend.communityvotes.com/2026/01/healthcare/dental-clinic"
     },
     {
       "name": "CommunityVotes Bend 2025 Platinum Winner",

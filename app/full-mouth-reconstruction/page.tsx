@@ -1,6 +1,7 @@
 import CareEvidence from "@/components/CareEvidence";
 import { withCareEvidence } from "@/lib/schema";
 import type { Metadata } from "next";
+import { serviceMetadata } from "@/lib/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
@@ -13,8 +14,9 @@ const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {
+  ...serviceMetadata("/full-mouth-reconstruction", "Full Mouth Reconstruction in Bend, Oregon | Living Dental Health", "Full mouth reconstruction in Bend, Oregon with Dr. Andy Engel. Over 1,000 CE hours and precision planning that protects your bite, jaw, and oral health.", "/fmr-hero.webp"),
   alternates: { canonical: "/full-mouth-reconstruction" },
-  title: "Full Mouth Reconstruction — Living Dental Health, Bend",
+  title: "Full Mouth Reconstruction in Bend, Oregon | Living Dental Health",
   description:
     "Full mouth reconstruction in Bend, Oregon with Dr. Andy Engel. Over 1,000 CE hours and precision planning that protects your bite, jaw, and oral health.",
 };
@@ -145,10 +147,10 @@ export default function FullMouthReconstructionPage() {
                 >
                   &mdash; full mouth reconstruction &mdash;
                 </p>
-                <h1 className="mt-5 font-serif text-[40px] leading-[1.05] text-charcoal sm:text-[56px] lg:text-[64px]">
-                  Built right,{" "}
-                  <span className="font-serif-italic">the first time.</span>
+                <h1 className="mt-5 font-serif text-[40px] leading-[1.05] text-charcoal sm:text-[56px] lg:text-[54px]">
+                  Full Mouth Reconstruction in Bend, Oregon
                 </h1>
+                <p className="mt-4 font-serif-italic text-[22px] text-charcoal-soft">Care planned around your teeth, bite, and goals.</p>
                 <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:text-[17px] lg:mx-0 lg:max-w-[460px]">
                   Full mouth reconstruction is a precise endeavor. A poorly
                   executed rebuild causes TMJ pain, headaches, speech

@@ -1,4 +1,5 @@
 ---
+seoTitle: "Bone Grafts After Tooth Loss: What to Know"
 title: "A Missing Tooth and a Bone Graft Goes Hand in Hand – Understanding the Importance of Bone Grafts to Long-Term Oral Health"
 slug: "a-missing-tooth-and-a-bone-graft-goes-hand-in-hand-understanding-the-importance-of-bone-grafts-to-long-term-oral-health"
 datePublished: "2023-01-17T09:33:57"

@@ -2,7 +2,7 @@
 title: "The Benefits of Cosmetic Dentistry and How it Can Improve Your Smile and Confidence"
 slug: "the-benefits-of-cosmetic-dentistry-and-how-it-can-improve-your-smile-and-confidence"
 datePublished: "2024-01-11T15:01:21"
-dateModified: "2026-07-21T00:00:00"
+dateModified: "2026-09-30T00:00:00"
 excerpt: "Smiling releases endorphins that ease stress and can give your immune system a boost — but the biggest benefit of cosmetic dentistry is confidence. How whitening, veneers, bonding, and smile design improve not just your smile, but your oral health and how others see you, with Dr. Andy Engel in Bend, Oregon."
 featuredImage: "/images/articles/uploads/2024/01/cosmetic-dentistry-in-bend-oregon.jpg"
 imageAlt: "A confident, natural smile after cosmetic dentistry with Dr. Andy Engel at Living Dental Health in Bend, Oregon."
@@ -86,3 +86,8 @@ If you’re considering cosmetic dentistry, the first step is to consult a denti
 “When I look over the last 25 years, one of the more rewarding things I’ve done for patients is to help create a smile that fits them,” said [Dr. Andy](/about). “Seeing their reaction upon looking in the mirror is incredibly heartwarming and joyous. Being exposed to tears of joy isn’t a bad way to spend your day at the office.”
 
 With advances in dental technology and techniques, cosmetic dentistry in Bend, Oregon, is more accessible and affordable than ever. So why not take the first step towards a brighter, more confident smile today? Learn more about the [smile design services](/cosmetic-dentistry) we offer on our website. You can also schedule a consult with Dr. Andy to discuss options for enhancing your smile. And don’t forget to check out our [smile gallery](/cosmetic-dentistry) for a few transformations to whet your whistle.
+
+
+## Discuss your options in Bend
+
+Explore [professional teeth whitening in Bend](/teeth-whitening) with Dr. Andy Engel at Living Dental Health, or [request a consultation](/contact) to discuss your goals.
