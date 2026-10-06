@@ -677,6 +677,14 @@ export const dentalImplantsFaq: { q: string; a: string }[] = [
     q: "How do I find out whether a dental implant is appropriate for me?",
     a: "The first step is an examination at Living Dental Health. Dr. Engel will review your teeth, bone, and oral health and discuss whether an implant — or another option — is appropriate for your situation. Call (541) 550-5311 or use the contact page to request an implant consultation.",
   },
+  {
+    q: "What will I wear while the implant heals?",
+    a: "Ask about a temporary tooth when you discuss your treatment plan. The options and timing depend on the site and the procedures involved. Healing may take several months or longer; your plan should explain what happens before the final restoration is ready.",
+  },
+  {
+    q: "Will an implant need care after the crown is fitted?",
+    a: "Yes. Daily cleaning and professional follow-up are important. An implant is not a lifetime guarantee, and its crown or other components may need repair or replacement. Ask how to clean around your restoration and what follow-up is recommended for you.",
+  },
 ];
 
 export const implantsSurgeryPageSchema: JsonLdGraph = {
@@ -1127,6 +1135,29 @@ export const dentalExtractionsPageSchema: JsonLdGraph = {
   ],
 };
 
+export const cosmeticDentistryFaq: { q: string; a: string }[] = [
+  {
+    q: "Does Dr. Engel offer cosmetic dentistry in Bend Oregon?",
+    a: "Yes. Dr. Andrew Engel at Living Dental Health provides cosmetic dentistry including teeth whitening, porcelain veneers, dental bonding, ClearCorrect clear aligners, smile design, and full mouth reconstruction at 930 SW Yates Dr, Bend OR 97702.",
+  },
+  {
+    q: "What is ClearCorrect and how is it different from Invisalign?",
+    a: "ClearCorrect and Invisalign are separate brands of doctor-supervised clear aligner treatment. Living Dental Health offers ClearCorrect, using custom-fitted removable aligners to gradually move teeth without metal brackets or wires. Dr. Engel is a certified ClearCorrect provider and manages treatment in-house.",
+  },
+  {
+    q: "Does Living Dental Health offer full mouth reconstruction?",
+    a: "Yes. Dr. Engel completed advanced training at Oregon Health Sciences University in full mouth reconstruction and oral surgery. He performs complex reconstructive cases in-house including bone and tissue grafting, implants, crowns, and veneers.",
+  },
+  {
+    q: "Do I need veneers, or could whitening be enough?",
+    a: "It depends on what you want to change. Whitening addresses the color of natural teeth; veneers can change shape and cover some imperfections or discoloration. Dr. Engel examines your teeth and discusses your goals before recommending an option. Not everyone needs veneers.",
+  },
+  {
+    q: "Can I see a preview before deciding on treatment?",
+    a: "For some cosmetic plans, Dr. Engel uses a diagnostic wax-up: a model of your teeth showing the proposed changes. It helps you discuss shape and appearance and helps him plan the bite with the lab. It is a planning tool, not a guarantee of the final result, and is not needed for every treatment.",
+  },
+];
+
 export const cosmeticDentistryPageSchema: JsonLdGraph = {
   "@context": "https://schema.org",
   "@graph": [
@@ -1156,7 +1187,7 @@ export const cosmeticDentistryPageSchema: JsonLdGraph = {
       "inLanguage": "en-US",
       "name": "Cosmetic Dentistry in Bend, Oregon",
       "description":
-        "Teeth whitening, porcelain veneers, ClearCorrect, smile design, and full mouth reconstruction with Dr. Andy Engel in Bend, Oregon. No upsell, ever.",
+        "Explore cosmetic dentistry in Bend with Dr. Andy Engel: a listening-first consultation, whitening and veneer options, and thoughtful smile planning.",
       "isPartOf": { "@id": "https://livingdentalhealth.com/#website" },
       "about": { "@id": "https://livingdentalhealth.com/#business" },
       "mainEntity": {
@@ -1243,7 +1274,7 @@ export const cosmeticDentistryPageSchema: JsonLdGraph = {
         "https://livingdentalhealth.com/cosmetic-dentistry#reconstruction",
       "name": "Full Mouth Reconstruction",
       "description":
-        "A coordinated rebuild of the entire mouth for patients with significant damage, bone loss, missing teeth, or severe bite issues. Drawing on advanced OHSU training, Dr. Engel combines implants, bone grafting, crowns, veneers, and orthodontia in-house — the complex case most dentists refer out.",
+        "A coordinated rebuild of the entire mouth for patients with significant damage, bone loss, missing teeth, or severe bite issues. Drawing on advanced OHSU training, Dr. Engel combines implants, bone grafting, crowns, veneers, and orthodontia in-house, with the combination and sequence based on the individual examination and treatment goals.",
       "url":
         "https://livingdentalhealth.com/cosmetic-dentistry#reconstruction",
       "procedureType": "https://schema.org/SurgicalProcedure",
@@ -1255,37 +1286,11 @@ export const cosmeticDentistryPageSchema: JsonLdGraph = {
       "@type": "FAQPage",
       "@id": "https://livingdentalhealth.com/cosmetic-dentistry#faq",
       "isPartOf": { "@id": "https://livingdentalhealth.com/cosmetic-dentistry#webpage" },
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Does Dr. Engel offer cosmetic dentistry in Bend Oregon?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text":
-              "Yes. Dr. Andrew Engel at Living Dental Health provides cosmetic dentistry including teeth whitening, porcelain veneers, dental bonding, ClearCorrect clear aligners, smile design, and full mouth reconstruction at 930 SW Yates Dr, Bend OR 97702.",
-          },
-        },
-        {
-          "@type": "Question",
-          "name":
-            "What is ClearCorrect and how is it different from Invisalign?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text":
-              "ClearCorrect and Invisalign are separate brands of doctor-supervised clear aligner treatment. Living Dental Health offers ClearCorrect, using custom-fitted removable aligners to gradually move teeth without metal brackets or wires. Dr. Engel is a certified ClearCorrect provider and manages treatment in-house.",
-          },
-        },
-        {
-          "@type": "Question",
-          "name":
-            "Does Living Dental Health offer full mouth reconstruction?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text":
-              "Yes. Dr. Engel completed advanced training at Oregon Health Sciences University in full mouth reconstruction and oral surgery. He performs complex reconstructive cases in-house including bone and tissue grafting, implants, crowns, and veneers.",
-          },
-        },
-      ],
+      "mainEntity": cosmeticDentistryFaq.map((f) => ({
+        "@type": "Question",
+        "name": f.q,
+        "acceptedAnswer": { "@type": "Answer", "text": f.a },
+      })),
     },
   ],
 };

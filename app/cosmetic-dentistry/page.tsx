@@ -5,17 +5,17 @@ import { serviceMetadata } from "@/lib/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
-import { cosmeticDentistryPageSchema, sanitizeJsonLd } from "@/lib/schema";
+import { cosmeticDentistryFaq, cosmeticDentistryPageSchema, sanitizeJsonLd } from "@/lib/schema";
 
 const SAGE = "#6B7C5C";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {
-  ...serviceMetadata("/cosmetic-dentistry", "Cosmetic Dentistry in Bend, Oregon | Living Dental Health", "Teeth whitening, porcelain veneers, ClearCorrect, smile design, and full mouth reconstruction with Dr. Andy Engel in Bend, Oregon. No upsell, ever.", "/cosmetic-hero.webp"),
+  ...serviceMetadata("/cosmetic-dentistry", "Cosmetic Dentistry in Bend, Oregon | Living Dental Health", "Explore cosmetic dentistry in Bend with Dr. Andy Engel: a listening-first consultation, whitening and veneer options, and thoughtful smile planning.", "/cosmetic-hero.webp"),
   alternates: { canonical: "/cosmetic-dentistry" },
   title: "Cosmetic Dentistry in Bend, Oregon | Living Dental Health",
   description:
-    "Teeth whitening, porcelain veneers, ClearCorrect, smile design, and full mouth reconstruction with Dr. Andy Engel in Bend, Oregon. No upsell, ever.",
+    "Explore cosmetic dentistry in Bend with Dr. Andy Engel: a listening-first consultation, whitening and veneer options, and thoughtful smile planning.",
 };
 
 const SERVICES = [
@@ -73,9 +73,9 @@ const SERVICES = [
     id: "reconstruction",
     heading: "Full Mouth Reconstruction",
     body:
-      "Full mouth reconstruction addresses both function and aesthetics at the highest level of complexity. For patients with significant damage, bone loss, missing teeth, or severe bite issues, Dr. Engel draws on his advanced OHSU training to rebuild the entire mouth — structurally and cosmetically. Procedures may include implants, bone grafting, crowns, veneers, and orthodontia, all coordinated by one doctor who knows your full history. This is the case most dentists refer out. Dr. Engel does it here.",
+      "Full mouth reconstruction addresses both function and aesthetics at the highest level of complexity. For patients with significant damage, bone loss, missing teeth, or severe bite issues, Dr. Engel draws on his advanced OHSU training to rebuild the entire mouth — structurally and cosmetically. Procedures may include implants, bone grafting, crowns, veneers, and orthodontia, all coordinated by one doctor who knows your full history. The combination and sequence depend on your examination and treatment goals.",
     detail:
-      "advanced OHSU training · in-house grafting · implants and crowns · most complex cases accepted",
+      "advanced OHSU training · in-house grafting · implants and crowns · individualized treatment planning",
     imageAlt:
       "Patient after full mouth reconstruction at Living Dental Health Bend Oregon",
   },
@@ -89,21 +89,6 @@ const CONCERNS = [
   "Worn or short teeth",
   "Crooked or misshapen teeth",
   "Low confidence about your smile",
-];
-
-const FAQ = [
-  {
-    q: "Does Dr. Engel offer cosmetic dentistry in Bend Oregon?",
-    a: "Yes. Dr. Andrew Engel at Living Dental Health provides cosmetic dentistry including teeth whitening, porcelain veneers, dental bonding, ClearCorrect clear aligners, smile design, and full mouth reconstruction at 930 SW Yates Dr, Bend OR 97702.",
-  },
-  {
-    q: "What is ClearCorrect and how is it different from Invisalign?",
-    a: "ClearCorrect and Invisalign are separate brands of doctor-supervised clear aligner treatment. Living Dental Health offers ClearCorrect, using custom-fitted removable aligners to gradually move teeth without metal brackets or wires. Dr. Engel is a certified ClearCorrect provider and manages treatment in-house.",
-  },
-  {
-    q: "Does Living Dental Health offer full mouth reconstruction?",
-    a: "Yes. Dr. Engel completed advanced training at Oregon Health Sciences University in full mouth reconstruction and oral surgery. He performs complex reconstructive cases in-house including bone and tissue grafting, implants, crowns, and veneers.",
-  },
 ];
 
 export default function CosmeticDentistryPage() {
@@ -160,11 +145,10 @@ export default function CosmeticDentistryPage() {
                 </h1>
                 <p className="mt-4 font-serif-italic text-[22px] text-charcoal-soft">Your smile, redesigned.</p>
                 <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:text-[17px] lg:mx-0 lg:max-w-[440px]">
-                  From a single whitening treatment to a complete smile
-                  makeover, Dr. Engel combines experience practicing dentistry
-                  in Bend since 1998 with advanced training in cosmetic
-                  dentistry and a listening-first approach. No procedures you
-                  don&rsquo;t want. Just your best smile.
+                  What would you like to change about your smile — and what
+                  would you like to keep? Dr. Andy Engel starts by listening,
+                  then helps you explore whitening, veneers, or a more involved
+                  plan that fits your teeth and your goals.
                 </p>
               </div>
             </div>
@@ -197,12 +181,12 @@ export default function CosmeticDentistryPage() {
             style={{ borderColor: "rgba(28,26,23,0.18)" }}
           >
             <p className="font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft sm:text-[16px]">
-              Dr. Engel spent years in advanced training specifically in
-              aesthetics, full mouth reconstruction, and cosmetic procedures
-              — on top of his surgical background. At Living Dental Health,
-              cosmetic dentistry starts with a conversation, not a treatment
-              plan. He&rsquo;ll spend time understanding your goals before
-              recommending anything.
+              You do not need to arrive knowing which procedure to ask for.
+              Tell Dr. Engel what you notice in photos, what feels different
+              when you smile, or which tooth has been bothering you. He has
+              practiced dentistry in Bend since 1998, and his cosmetic
+              consultations bring your priorities together with an examination
+              of your mouth and teeth.
             </p>
           </div>
         </section>
@@ -212,6 +196,28 @@ export default function CosmeticDentistryPage() {
           <Link href="/clear-correct-braces" className="rounded-full border border-sage px-6 py-3 text-sage">Explore ClearCorrect aligners</Link>
           <Link href="/contact" className="rounded-full bg-sage px-6 py-3 text-cream">Request a cosmetic consultation</Link>
         </div>
+        <section className="mx-auto max-w-[1100px] px-6 pb-16 sm:pb-20" aria-labelledby="smile-planning">
+          <p className="font-inter text-[11px] uppercase tracking-widest text-sage">From conversation to a considered plan</p>
+          <h2 id="smile-planning" className="mt-3 font-serif text-[32px] leading-tight sm:text-[44px]">A smile that still feels like you</h2>
+          <div className="mt-8 grid gap-8 md:grid-cols-3">
+            <div>
+              <h3 className="font-serif text-[25px]">Start with what matters to you</h3>
+              <p className="mt-3 font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft">Dr. Engel asks about your needs, goals, and wishes, then looks at your teeth before making recommendations. A small change may be enough; a smile makeover does not automatically mean a full set of veneers.</p>
+              <Link href="/articles/starting-the-new-year-with-a-confident-smile" className="mt-4 inline-block text-sage underline underline-offset-4">How the cosmetic consultation works</Link>
+            </div>
+            <div>
+              <h3 className="font-serif text-[25px]">Compare the ways to get there</h3>
+              <p className="mt-3 font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft">Color, shape, spacing, and worn dental work call for different conversations. Whitening may address staining; veneers, bonding, crowns, or aligners may be considered for other concerns. Discuss the scope and cost of the options before choosing.</p>
+              <Link href="/articles/two-solutions-for-achieving-your-perfect-smile" className="mt-4 inline-block text-sage underline underline-offset-4">Whitening and veneers: what each can change</Link>
+            </div>
+            <div>
+              <h3 className="font-serif text-[25px]">Make the plan easier to picture</h3>
+              <p className="mt-3 font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft">For veneer and other cosmetic plans where it is useful, a diagnostic wax-up models proposed changes on a copy of your teeth. It gives you something concrete to discuss and helps Dr. Engel and the lab plan appearance and bite together.</p>
+              <Link href="/before-and-after#case-01" className="mt-4 inline-block text-sage underline underline-offset-4">See wax-up planning in a real veneer case</Link>
+            </div>
+          </div>
+          <p className="mt-8 max-w-[760px] font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft">Before moving forward, bring questions about the number of visits, any changes to your natural teeth, and how to care for the result. Ask which follow-up visits your plan will need. A wax-up helps guide the conversation; individual results vary.</p>
+        </section>
         <CareEvidence kind="cosmetic" awards={false} />
 
         {/* SERVICE SECTIONS — 2-up mocha panel grid */}
@@ -285,12 +291,11 @@ export default function CosmeticDentistryPage() {
               No upsell. <span className="font-serif-italic">Ever.</span>
             </h2>
             <p className="mx-auto mt-6 max-w-[620px] font-inter text-[15px] font-light leading-[1.75] sm:text-[16px]">
-              Dr. Engel firmly believes a dentist should never sell you
-              procedures you don&rsquo;t want. A cosmetic recommendation only
-              comes after spending considerable time learning about you, your
-              goals, and what will genuinely serve you best. His dream patient
-              is a good communicator — someone he can work with as a team to
-              deliver a result they&rsquo;re proud of.
+              Your priorities belong in the treatment plan. Tell Dr. Engel
+              what you hope to change, what concerns you about treatment, and
+              what your budget needs to cover. The goal is to understand your
+              options together and choose a next step you feel comfortable with.
+              <Link href="/articles/the-benefits-of-cosmetic-dentistry-and-how-it-can-improve-your-smile-and-confidence" className="mt-5 block underline underline-offset-4">Read about choosing care around your goals</Link>
             </p>
           </div>
         </section>
@@ -325,7 +330,7 @@ export default function CosmeticDentistryPage() {
               Common <span className="font-serif-italic">questions</span>
             </h2>
             <dl className="mt-8 space-y-8">
-              {FAQ.map((item) => (
+              {cosmeticDentistryFaq.map((item) => (
                 <div
                   key={item.q}
                   className="border-b pb-8"
@@ -368,7 +373,7 @@ export default function CosmeticDentistryPage() {
             </h2>
             <p className="mx-auto mt-5 max-w-[480px] font-inter text-[15px] font-light leading-[1.7] text-warm-gray sm:text-[16px]">
               Start with a consultation. Dr. Engel will walk you through
-              exactly what&rsquo;s possible and what to expect — no pressure,
+              the options for your teeth and what to expect — no pressure,
               no hard sell.
             </p>
             <a
