@@ -53,15 +53,15 @@ const SECTIONS = [
     id: "when-implants-may-be-considered",
     heading: "When implants may be considered",
     body:
-      "Implants may be considered for a missing tooth, a tooth that cannot predictably be saved, several missing teeth, or as part of planning a larger reconstruction. Whether an implant is appropriate is determined after an individual examination of your teeth, bone, and oral health.",
+      "Implants may be considered for a missing tooth, a tooth that cannot predictably be saved, several missing teeth, or as part of planning a larger reconstruction. Dr. Engel considers your remaining teeth, bone support, gum health, and medical history. Your priorities, healing needs, timeline, and budget also matter when comparing an implant with a bridge or another option.",
     detail:
       "missing tooth · unsavable tooth · multiple teeth · reconstruction planning",
   },
   {
     id: "treatment-process",
-    heading: "The treatment process",
+    heading: "Plan the implant and the tooth together",
     body:
-      "Care typically begins with a consultation and examination. CBCT imaging is used when it is clinically appropriate. Dr. Engel then builds a treatment plan, places the implant, allows time for healing, and completes the final restoration. Healing time and the details of each step depend on the individual case.",
+      "The final tooth is part of the plan from the beginning. Dr. Engel evaluates the site and uses CBCT imaging when clinically appropriate to assess bone and nearby structures. His planning approach includes impressions and a surgical guide to plan the position of the implant and future crown. Ask how these planning steps apply to your case.",
     detail:
       "consult · CBCT when appropriate · planning · placement · healing · restoration",
   },
@@ -138,10 +138,10 @@ export default function DentalImplantsPage() {
                   Dental Implants in Bend, Oregon
                 </h1>
                 <p className="mx-auto mt-5 max-w-[560px] font-inter text-[15px] font-light leading-[1.7] text-charcoal-soft sm:text-[17px] lg:mx-0 lg:max-w-[440px]">
-                  Dr. Engel plans, places, and restores dental implants
-                  in-house at Living Dental Health. From the first examination
-                  through the final restoration, implant care stays with one
-                  dentist who knows your case.
+                  A missing tooth can leave you with a lot of questions.
+                  Dr. Andy Engel helps you understand your options, then plans,
+                  places, and restores dental implants at Living Dental Health
+                  when an implant is right for your mouth.
                 </p>
                 <Link
                   href="/contact"
@@ -230,6 +230,27 @@ export default function DentalImplantsPage() {
           </div>
         </section>
 
+        <section className="mx-auto max-w-[1100px] px-6 pb-16 sm:pb-20" aria-labelledby="implant-stages">
+          <p className="font-inter text-[11px] uppercase tracking-widest text-sage">Know what comes next</p>
+          <h2 id="implant-stages" className="mt-3 font-serif text-[32px] leading-tight sm:text-[44px]">From placement to your final tooth</h2>
+          <div className="mt-8 grid gap-8 md:grid-cols-3">
+            <div>
+              <h3 className="font-serif text-[25px]">Prepare for the surgical visit</h3>
+              <p className="mt-3 font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft">Your plan identifies whether a tooth needs removal or a bone graft is needed, and when those steps fit. Neither applies to every patient. Before placement, discuss anesthesia, any anxiety about treatment, and the recovery instructions for your procedure.</p>
+            </div>
+            <div>
+              <h3 className="font-serif text-[25px]">Allow time for healing</h3>
+              <p className="mt-3 font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft">The implant needs time to integrate with the bone before the final restoration. Healing can take several months or longer, particularly when other procedures are involved. Ask what you will wear during that time and how readiness for the next stage will be assessed.</p>
+            </div>
+            <div>
+              <h3 className="font-serif text-[25px]">Restore, then keep caring for it</h3>
+              <p className="mt-3 font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft">For a single tooth, a connector called an abutment supports the crown. Dr. Engel plans its color and shape in relation to your other teeth, as well as how it feels and functions. Daily cleaning and professional follow-up remain important; the crown and implant components may need attention over time.</p>
+            </div>
+          </div>
+          <p className="mt-8 max-w-[760px] font-inter text-[15px] font-light leading-[1.75] text-charcoal-soft">An implant involves surgery. Ask Dr. Engel about the risks for your situation, including infection, injury to nearby structures, or an implant not integrating, and how those compare with the alternatives.</p>
+          <Link href="/articles/dental-implants-vs-dental-bridges-filling-the-gap-in-your-smile" className="mt-4 inline-block text-sage underline underline-offset-4">Compare implants and bridges, including healing and maintenance</Link>
+        </section>
+
         {/* RELATED — bone grafting + hub */}
         <section className="mx-auto max-w-[1320px] px-6 pb-20 sm:pb-24">
           <div
@@ -271,7 +292,7 @@ export default function DentalImplantsPage() {
           <div className="relative h-[360px] w-full overflow-hidden rounded-xl bg-cream-deep">
             <Image
               src="/implants-secondary.webp"
-              alt="Patient enjoying life with a restored smile after implant and surgical care at Living Dental Health in Bend, Oregon"
+              alt="Smiling person outdoors"
               fill
               sizes="(min-width: 1320px) 1320px, 100vw"
               className="object-cover object-center"
@@ -282,7 +303,7 @@ export default function DentalImplantsPage() {
         <section className="mx-auto max-w-[1100px] px-6 pb-16">
           <h2 className="font-serif text-[34px] leading-tight">Planning the cost and timing of your implant care</h2>
           <div className="mt-6 grid gap-8 md:grid-cols-2">
-            <div><h3 className="font-serif text-[25px]">What affects the total cost?</h3><p className="mt-3 text-[15px] leading-relaxed text-charcoal-soft">Your plan may include imaging, removal of a tooth, grafting if needed, implant placement, and the final restoration. The number of teeth involved and the condition of your mouth affect the scope. Ask for an estimate that explains each stage and what is included.</p></div>
+            <div><h3 className="font-serif text-[25px]">What affects the total cost?</h3><p className="mt-3 text-[15px] leading-relaxed text-charcoal-soft">Your plan may include imaging, removal of a tooth, grafting if needed, implant placement, and the final restoration. The number of teeth involved and the condition of your mouth affect the scope. Ask for an itemized estimate that includes any temporary tooth, connector, final crown, and follow-up as well as the surgical steps. Comparing placement fees alone can leave out part of the treatment.</p></div>
             <div><h3 className="font-serif text-[25px]">How do timing and payment fit together?</h3><p className="mt-3 text-[15px] leading-relaxed text-charcoal-soft">Care often takes place in stages, with healing time between them. Dr. Engel explains the proposed sequence after your examination. The practice offers CareCredit for larger treatment plans; the team can discuss available options and help you understand questions to ask your insurer.</p><Link href="/patient-info#insurance" className="mt-4 inline-block text-sage underline underline-offset-4">Insurance and financing information</Link></div>
           </div>
           <p className="mt-7 text-[15px] leading-relaxed text-charcoal-soft">Start by telling us which tooth or teeth concern you, whether you have recent dental records, and what you hope to achieve. We will arrange an examination so you can discuss implants and alternatives with Dr. Engel.</p>
