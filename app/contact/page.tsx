@@ -3,10 +3,10 @@ import Nav from "@/components/Nav";
 import ContactForm from "@/components/ContactForm";
 import { contactPageSchema, sanitizeJsonLd } from "@/lib/schema";
 
-const SAGE = "#6B7C5C";
+const SAGE = "#556649";
 const CREAM = "#F5F0E8";
-const LABEL = "rgba(245,240,232,0.72)";
-const SOFT = "rgba(245,240,232,0.85)";
+const LABEL = CREAM;
+const SOFT = CREAM;
 const RULE = "rgba(245,240,232,0.18)";
 
 export const metadata: Metadata = {
@@ -74,7 +74,7 @@ export default function ContactPage() {
           <a
             href="tel:+15415505311"
             aria-label="Call Living Dental Health at (541) 550-5311"
-            className="mt-4 inline-block font-serif text-[34px] leading-none transition-opacity hover:opacity-80 sm:text-[44px]"
+            className="mt-4 inline-block font-serif text-[34px] leading-none hover:underline underline-offset-4 sm:text-[44px]"
             style={{ color: CREAM, letterSpacing: "-0.01em" }}
           >
             (541) 550&#8209;5311
@@ -96,7 +96,7 @@ export default function ContactPage() {
               </p>
               <a
                 href="mailto:info@livingdentalhealth.com"
-                className="mt-4 inline-block font-serif-italic text-[20px] leading-tight transition-opacity hover:opacity-80 sm:text-[22px]"
+                className="mt-4 inline-block font-serif-italic text-[20px] leading-tight hover:underline underline-offset-4 sm:text-[22px]"
                 style={{ color: CREAM }}
               >
                 info@livingdentalhealth.com

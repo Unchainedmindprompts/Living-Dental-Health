@@ -5,7 +5,7 @@ import Nav from "@/components/Nav";
 import { articlePostSchema, sanitizeJsonLd } from "@/lib/schema";
 import { formatDate, getArticle, getArticleSlugs } from "@/lib/articles";
 
-const SAGE = "#6B7C5C";
+const SAGE = "#556649";
 const SAGE_LABEL = "#9CAF88";
 
 export const dynamicParams = false;
@@ -172,7 +172,7 @@ export default function ArticlePage({
         <div className="mx-auto max-w-[680px] px-6 pb-28">
           <Link
             href="/articles"
-            className="inline-flex items-center gap-2 font-inter text-[12px] uppercase tracking-[0.18em] transition-opacity hover:opacity-70"
+            className="inline-flex items-center gap-2 font-inter text-[12px] uppercase tracking-[0.18em] hover:underline underline-offset-4"
             style={{ color: SAGE }}
           >
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>

@@ -7,7 +7,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import { generalDentistryPageSchema, sanitizeJsonLd } from "@/lib/schema";
 
-const SAGE = "#6B7C5C";
+const SAGE = "#556649";
 const SAGE_LABEL = "#9CAF88";
 
 export const metadata: Metadata = {

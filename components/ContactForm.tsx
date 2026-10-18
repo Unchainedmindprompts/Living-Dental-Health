@@ -7,7 +7,7 @@ const CREAM = "#F5F0E8";
 const SAGE_DEEP = "#556649";
 const FIELD_BORDER = "rgba(245,240,232,0.45)";
 const FIELD_BORDER_FOCUS = "rgba(245,240,232,1)";
-const LABEL_COLOR = "rgba(245,240,232,0.72)";
+const LABEL_COLOR = CREAM;
 
 type Status = "idle" | "submitting" | "sent" | "error";
 
@@ -76,7 +76,7 @@ export default function ContactForm() {
         </p>
         <p
           className="mx-auto mt-4 max-w-[380px] font-inter text-[14px] font-light leading-[1.7]"
-          style={{ color: "rgba(245,240,232,0.8)" }}
+          style={{ color: CREAM }}
         >
           Your appointment is not booked yet. Our front desk will contact you to confirm a visit, usually within one business day.
           For anything urgent, please call (541) 550&#8209;5311.

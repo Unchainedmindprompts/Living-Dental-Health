@@ -9,8 +9,8 @@
   --ivory: #faf7f1;
   --charcoal: #1c1a17;
   --charcoal-soft: #3a3631;
-  --warm-gray: #807a6f;
-  --sage: #6b7f5e;
+  --warm-gray: #625c52;
+  --sage: #556649;
   --sage-deep: #5c6b4a;
   --sage-soft: #b6c0a6;
   --rule: rgba(28, 26, 23, 0.1);
@@ -165,10 +165,10 @@ body {
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
-  transition: opacity 0.2s ease;
+  transition: text-decoration-thickness 0.2s ease;
 }
 .article-prose a:hover {
-  opacity: 0.7;
+  text-decoration-thickness: 2px;
 }
 .article-prose strong {
   color: var(--charcoal);

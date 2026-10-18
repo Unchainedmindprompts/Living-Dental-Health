@@ -36,8 +36,8 @@ const COLUMNS: { label: string; items: Link[] }[] = [
   { label: "Patient Info", items: PATIENT },
 ];
 
-const SAGE = "#6B7C5C";
-const SAGE_DEEP = "#556649";
+const SAGE = "#556649";
+const SAGE_DEEP = "#45563B";
 const CREAM = "#F5F0E8";
 const CHARCOAL = "#1C1A17";
 
@@ -78,7 +78,7 @@ export default function Nav() {
       >
         <a
           href="/"
-          className="whitespace-nowrap transition-opacity hover:opacity-70"
+          className="whitespace-nowrap hover:underline underline-offset-4"
         >
           Living Dental Health <span className="opacity-60">·</span> Bend, OR
         </a>
@@ -88,7 +88,7 @@ export default function Nav() {
         >
           <a
             href="tel:5415505311"
-            className="transition-opacity hover:opacity-70"
+            className="hover:underline underline-offset-4"
           >
             Call
           </a>
@@ -152,7 +152,7 @@ export default function Nav() {
         <a
           href="/"
           onClick={() => setOpen(false)}
-          className="absolute left-4 top-6 z-10 font-serif text-[18px] italic leading-none transition-opacity hover:opacity-70 sm:left-8 sm:top-8 sm:text-[20px]"
+          className="absolute left-4 top-6 z-10 font-serif text-[18px] italic leading-none hover:underline underline-offset-4 sm:left-8 sm:top-8 sm:text-[20px]"
           style={{ color: CREAM }}
         >
           Living Dental Health
@@ -163,7 +163,7 @@ export default function Nav() {
           type="button"
           onClick={() => setOpen(false)}
           aria-label="Close menu"
-          className="absolute right-4 top-6 z-10 flex items-center gap-3 font-inter text-[12px] font-light uppercase tracking-widest transition-opacity hover:opacity-70 sm:right-8 sm:top-8"
+          className="absolute right-4 top-6 z-10 flex items-center gap-3 font-inter text-[12px] font-light uppercase tracking-widest hover:underline underline-offset-4 sm:right-8 sm:top-8"
           style={{ color: CREAM }}
         >
           <span
@@ -193,7 +193,7 @@ export default function Nav() {
             >
               <p
                 className="mb-6 font-inter text-[11px] font-light uppercase tracking-widest"
-                style={{ color: "rgba(245,240,232,0.7)" }}
+                style={{ color: CREAM }}
               >
                 {col.label}
               </p>

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-const SAGE = "#6B7C5C";
+const SAGE = "#556649";
 
 const SERVICES = [
   {
@@ -351,7 +351,7 @@ export default function HomePage() {
           <div className="mt-12 text-center sm:mt-14">
             <Link
               href="/articles"
-              className="group inline-flex items-center gap-2 font-inter text-[12px] uppercase tracking-[0.2em] transition-opacity hover:opacity-70 sm:text-[13px]"
+              className="group inline-flex items-center gap-2 font-inter text-[12px] uppercase tracking-[0.2em] hover:underline underline-offset-4 sm:text-[13px]"
               style={{ color: SAGE }}
             >
               View all articles
@@ -433,7 +433,7 @@ export default function HomePage() {
                   {...(isExternal
                     ? { target: "_blank", rel: "noopener noreferrer" }
                     : {})}
-                  className={`${cellClass} transition-opacity hover:opacity-70`}
+                  className={`${cellClass} transition-colors hover:bg-cream-deep`}
                 >
                   {inner}
                 </a>
